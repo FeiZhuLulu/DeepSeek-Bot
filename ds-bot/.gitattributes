@@ -1,0 +1,3 @@
+# The client bundle is compared byte for byte with a fresh build (npm test and
+# build-client.mjs --check). Checked out with CRLF on Windows it always reads as stale.
+client.js text eol=lf

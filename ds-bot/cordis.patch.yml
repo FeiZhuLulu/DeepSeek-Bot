@@ -1,0 +1,17 @@
+# Mounts the Bot team host plugin; the browser half is discovered through the
+# package's dsh.client manifest and ./client export.
+- insert:
+    - id: bot
+      name: ds-bot
+    # Web search with the current conversation route's own key, else a keyless
+    # results-page fallback (see README "Web search").
+    - id: web-search-auto
+      name: ds-bot/web-search
+
+# A config override replaces the whole entry config, so fetchProvider is
+# restated. A profile patch that names another searchProvider (exa, perplexity,
+# deepseek-official) wins over this one.
+- id: web
+  config:
+    searchProvider: auto
+    fetchProvider: http

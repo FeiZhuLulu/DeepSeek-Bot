@@ -1,0 +1,297 @@
+// API-level smoke test of the Bot team on a mock bench (dev/bench.sh). It drives the main
+// flows through POST /api/bot, waits for the team to go quiet after each step, and checks
+// the saved state and the mock model's log. Run it on a freshly reset bench whose check
+// line is low enough for a few long replies to cross it, yet well above the ~16k tokens
+// of system prompt and tools, so a condensed part can fall back below it:
+//
+//   CONTEXT_WINDOW=100000 CHECK_RATIO=0.45 dev/bench.sh smoke 3096 8796 reset && node dev/smoke.mjs smoke 3096
+//
+// `--out <file>` writes a normalized transcript (names instead of ids, sorted where the
+// order depends on timing), so two runs, before and after a refactor, can be diffed.
+import { readFileSync, writeFileSync } from 'node:fs'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const [name, port, ...rest] = process.argv.slice(2)
+if (!name || !port) {
+  console.error('usage: node dev/smoke.mjs <bench-name> <web-port> [--out <file>]')
+  process.exit(2)
+}
+const outFile = rest[0] === '--out' ? rest[1] : undefined
+const ROOT = dirname(dirname(dirname(fileURLToPath(import.meta.url))))
+const HOME = join(ROOT, `.dsh-test-${name}`)
+const BASE = `http://127.0.0.1:${port}`
+const QUIET_MS = 2500
+const STEP_TIMEOUT_MS = 120_000
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
+const readJson = path => JSON.parse(readFileSync(path, 'utf8'))
+const mockLog = () => {
+  try {
+    return readFileSync(join(HOME, 'mock.jsonl'), 'utf8').split('\n').filter(Boolean).map(line => JSON.parse(line))
+  } catch (error) {
+    if (error.code === 'ENOENT') return []
+    throw error
+  }
+}
+
+async function login() {
+  const log = readFileSync(join(HOME, 'web.log'), 'utf8')
+  const url = log.match(new RegExp(`http://127\\.0\\.0\\.1:${port}/\\?token=[^\\s]+`))?.[0]
+  if (!url) throw new Error('no login URL in web.log')
+  const response = await fetch(url, { redirect: 'manual' })
+  const cookies = response.headers.getSetCookie().map(cookie => cookie.split(';')[0])
+  if (cookies.length === 0) throw new Error(`login returned no cookie (${response.status})`)
+  return cookies.join('; ')
+}
+
+const cookie = await login()
+async function api(endpoint, payload = {}) {
+  const response = await fetch(`${BASE}/api/bot`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', cookie },
+    body: JSON.stringify({ endpoint, payload }),
+  })
+  const result = await response.json()
+  if (!result.ok) throw new Error(`${endpoint}: ${result.error?.message ?? JSON.stringify(result)}`)
+  return result.value
+}
+
+const state = () => readJson(join(HOME, 'bot', 'state.json'))
+const botNamed = wanted => Object.values(state().bots).find(bot => bot.name === wanted)
+const roomNamed = wanted => Object.values(state().rooms).find(room => room.name === wanted)
+
+// Quiet: no Bot shows an activity and the mock has taken no call for QUIET_MS. Deliveries
+// start a moment after a turn ends, so activity alone is not enough.
+async function settle() {
+  const deadline = Date.now() + STEP_TIMEOUT_MS
+  let calls = mockLog().length
+  let since = Date.now()
+  while (Date.now() < deadline) {
+    await sleep(400)
+    const { activity = {} } = await api('state')
+    const now = mockLog().length
+    if (now !== calls || Object.keys(activity).length > 0) {
+      calls = now
+      since = Date.now()
+    } else if (Date.now() - since >= QUIET_MS) {
+      return
+    }
+  }
+  throw new Error('the team did not go quiet')
+}
+
+// Ids differ between runs, so the transcript names Bots, groups and Sessions by owner.
+function normalized() {
+  const current = state()
+  const nameOf = id => current.bots[id]?.name ?? current.rooms[id]?.name ?? (id ? 'unknown' : null)
+  const sessionOwner = (sessionId) => {
+    for (const bot of Object.values(current.bots)) {
+      if (bot.id === sessionId || bot.sessionId === sessionId || (bot.segments ?? []).some(part => part.sessionId === sessionId)) return bot.name
+    }
+    for (const room of Object.values(current.rooms)) {
+      if (room.id === sessionId) return `group ${room.name}`
+      for (const [botId, groupSession] of Object.entries(room.sessions ?? {})) {
+        if (groupSession === sessionId) return `${nameOf(botId)} in ${room.name}`
+      }
+    }
+    return 'unknown'
+  }
+  const sorted = list => [...list].sort()
+  return {
+    bots: Object.values(current.bots).map(bot => ({
+      name: bot.name,
+      role: bot.role,
+      model: bot.model ?? null,
+      main: current.mainBotIds.includes(bot.id),
+      pinned: bot.pinned === true,
+      hidden: bot.hidden === true,
+      parts: 1 + (bot.segments ?? []).length,
+      createdBy: nameOf(bot.createdBy),
+    })).sort((a, b) => a.name.localeCompare(b.name)),
+    rooms: Object.values(current.rooms).map(room => ({
+      name: room.name,
+      members: sorted(room.members.map(nameOf)),
+      admin: nameOf(room.admin),
+      mode: room.mode,
+      notice: room.notice,
+      log: sorted((room.log ?? []).map(line => `${line.kind ?? 'say'} ${line.who}: ${String(line.text).slice(0, 48)}`)),
+      groupSessions: sorted(Object.keys(room.sessions ?? {}).map(nameOf)),
+    })),
+    exchanges: sorted(current.exchanges.map(entry => `${entry.role} ${nameOf(entry.from) ?? 'You'} -> ${nameOf(entry.to)}: ${entry.text.slice(0, 40)}`)),
+    questions: sorted(Object.keys(current.questions ?? {}).map(sessionOwner)),
+  }
+}
+
+// What the mock said during a step, without timing-dependent order, clock times or filler
+// length.
+const said = calls => calls.flatMap(call => (call.out ?? []).map(block => (block.type === 'tool_use'
+  ? `tool ${block.name} ${JSON.stringify(block.input).slice(0, 60)}`
+  : block.type === 'text' ? `text ${block.text.replace(/…\(\d+\)$/, '…').replace(/\d\d-\d\d \d\d:\d\d/g, 'MM-DD hh:mm').slice(0, 60)}` : block.type))).sort()
+
+const transcript = []
+const failures = []
+async function step(title, run, check) {
+  const before = mockLog().length
+  const started = Date.now()
+  let value
+  try {
+    value = await run()
+    await settle()
+  } catch (error) {
+    failures.push(`${title}: ${error.message}`)
+    console.log(`FAIL ${title}: ${error.message}`)
+    return undefined
+  }
+  const calls = mockLog().slice(before)
+  const problem = (() => {
+    try { return check?.(value, calls) } catch (error) { return error.message }
+  })()
+  transcript.push({ step: title, said: said(calls), state: normalized() })
+  if (problem) {
+    failures.push(`${title}: ${problem}`)
+    console.log(`FAIL ${title}: ${problem}`)
+  } else {
+    console.log(`ok   ${title} (${((Date.now() - started) / 1000).toFixed(1)} s, ${calls.length} model calls)`)
+  }
+  return value
+}
+const expect = (condition, message) => (condition ? undefined : message)
+const saidText = (calls, pattern) => calls.some(call => (call.out ?? []).some(block => block.type === 'text' && pattern.test(block.text)))
+
+const send = (sessionId, text) => api('send', { sessionId, text })
+const chief = () => botNamed('Chief')
+
+let models = []
+await step('bootstrap: Chief waits for a model', () => api('state'), (value, calls) => {
+  const current = state()
+  const bots = Object.values(current.bots)
+  models = value.models ?? []
+  return expect(bots.length === 1 && bots[0].name === 'Chief' && current.mainBotIds[0] === bots[0].id, 'expected one Main Bot named Chief')
+    ?? expect(bots[0].model === undefined && bots[0].kickoff !== undefined, 'Chief should hold its greeting until a model is picked')
+    ?? expect(value.bots[0].waiting === true, 'the view should show Chief as waiting')
+    ?? expect(calls.length === 0, `Chief called the model ${calls.length} times before it had one`)
+    ?? expect(models.length > 0, 'no models listed for the model card')
+})
+
+await step('user picks a model; Chief greets and asks', () => api('update-bot', { id: chief().id, model: models.at(-1).ref }), () => {
+  const current = state()
+  return expect(chief().model === models.at(-1).ref, `Chief runs on ${chief().model}`)
+    ?? expect(chief().kickoff === undefined, 'the greeting is still held')
+    ?? expect(current.questions?.[chief().sessionId ?? chief().id], 'expected Chief to leave a question card')
+})
+
+await step('Chief creates Writer, who replies', () => send(chief().id, '创建一个叫Writer的bot'), () => {
+  const writer = botNamed('Writer')
+  if (!writer) return 'no Writer'
+  const kinds = state().exchanges.filter(entry => [entry.from, entry.to].includes(writer.id)).map(entry => entry.role)
+  return expect(writer.createdBy === chief().id, 'Writer should be created by Chief')
+    ?? expect(kinds.includes('request') && kinds.includes('reply'), `expected a request and a reply, got ${kinds}`)
+})
+
+await step('user creates Coder, who keeps the default model', () => api('create-bot', { name: 'Coder', role: 'Engineer', instructions: 'Write code.' }), (bot) => {
+  const coder = botNamed('Coder')
+  return expect(coder && coder.id === bot.id && coder.role === 'Engineer', 'Coder not saved as asked')
+    ?? expect(typeof coder.model === 'string' && coder.model.includes('/'), `Coder has no model of its own: ${coder.model}`)
+    ?? expect(!Object.values(state().bots).some(entry => 'lab' in entry), 'a Bot still has a lab')
+})
+
+await step('Chief creates a group', () => send(chief().id, '建群 研发群: Writer, Coder'), () => {
+  const room = roomNamed('研发群')
+  if (!room) return 'no group 研发群'
+  const names = room.members.map(id => state().bots[id]?.name).sort()
+  return expect(names.includes('Writer') && names.includes('Coder'), `members ${names}`)
+})
+
+await step('user talks in the group', () => send(roomNamed('研发群').id, '大家好'), () => {
+  const log = roomNamed('研发群').log ?? []
+  return expect(log.some(line => line.who === 'User' && line.text === '大家好'), 'no user line')
+    ?? expect(log.some(line => line.who !== 'User' && line.kind === undefined), 'no Bot answered')
+})
+
+await step('admin calls everyone', () => send(roomNamed('研发群').id, '讨论'), () => {
+  const log = roomNamed('研发群').log ?? []
+  const at = log.findLastIndex(line => line.who === 'User' && line.text === '讨论')
+  const answers = log.slice(at + 1).filter(line => line.who !== 'User' && line.kind === undefined)
+  return expect(answers.length >= 2, `expected at least two answers, got ${answers.length}`)
+})
+
+await step('Chief posts to the group', () => send(chief().id, '群发 研发群: 今天下午开会'), () => {
+  const log = roomNamed('研发群').log ?? []
+  return expect(log.some(line => line.who === 'Chief' && line.text.includes('今天下午开会')), 'post missing from the group log')
+})
+
+await step('Chief sets the group notice', () => send(chief().id, '改群 研发群 公告: 周五交付'), () => expect(roomNamed('研发群').notice === '周五交付', 'notice not set'))
+
+await step('Chief reads the group', () => send(chief().id, '看群 研发群'), (_value, calls) => expect(saidText(calls, /^群里最近/), 'no read_group_chat answer'))
+
+for (const round of [1, 2, 3]) {
+  await step(`Writer writes long reply ${round}`, () => send(botNamed('Writer').id, `长文 30 第${round}篇`), round < 3 ? undefined : () => {
+    const writer = botNamed('Writer')
+    return expect((writer.segments ?? []).length >= 1 && writer.sessionId !== writer.id, 'Writer did not switch to a new part')
+  })
+}
+
+await step('Writer searches its own chat across parts', () => send(botNamed('Writer').id, '查记录 长文'), (_value, calls) => expect(saidText(calls, /共 \d+ 段/), 'read_own_chat did not span parts'))
+
+// `earlier` pages backwards from the part the chat shows now.
+await step('earlier part pages load', () => api('earlier', { sessionId: botNamed('Writer').sessionId }), page => expect(Array.isArray(page?.items) && page.items.some(item => item.kind === 'user'), `no user lines in the part before (${JSON.stringify(page).slice(0, 80)})`))
+
+// Work still under way (the mock steward reads 阶段未完 in the latest user message): the
+// part is condensed in place with DS Bot's checkpoint, not switched, and the condensed
+// messages stay searchable. Then work that reaches a stopping point switches again.
+const writerParts = () => (botNamed('Writer').segments ?? []).length
+const partsBeforeWork = writerParts()
+const workMark = mockLog().length
+for (const round of [1, 2, 3]) {
+  await step(`Writer keeps working ${round}`, () => send(botNamed('Writer').id, `长文 30 阶段未完 第${round}节`))
+}
+await step('Writer condensed in place, not switched', () => api('state'), () => {
+  const calls = mockLog().slice(workMark)
+  return expect(saidText(calls, /"action":"compact"/), 'the steward did not say compact')
+    ?? expect(saidText(calls, /checkpoint 提示词/), 'no checkpoint was written')
+    ?? expect(!saidText(calls, /backend 提示词/), 'the backend\'s own summary ran for a Bot')
+    ?? expect(writerParts() === partsBeforeWork, `Writer switched (${partsBeforeWork} -> ${writerParts()} earlier parts)`)
+})
+await step('Writer finds a condensed message', () => send(botNamed('Writer').id, '查记录 阶段未完 第1节'), (_value, calls) => expect(saidText(calls, /聊过 [1-9]\d* 条.*第1节/), 'read_own_chat lost the condensed message'))
+const wrapMark = mockLog().length
+for (const round of [1, 2, 3, 4]) {
+  await step(`Writer wraps up ${round}`, () => send(botNamed('Writer').id, `长文 30 收尾 第${round}节`), round < 4 ? undefined : () => {
+    const calls = mockLog().slice(wrapMark)
+    return expect(saidText(calls, /"action":"switch"/), 'the steward did not say switch')
+      ?? expect(writerParts() > partsBeforeWork, 'Writer did not move on after the work was done')
+  })
+}
+
+await step('exchange log between Chief and Writer', () => api('exchange', { a: chief().id, b: botNamed('Writer').id }), entries => expect(entries.length >= 2, `got ${entries.length}`))
+
+await step('update Writer', () => api('update-bot', { id: botNamed('Writer').id, role: 'Copywriter', instructions: 'Write the copy.' }), () => {
+  const writer = botNamed('Writer')
+  return expect(writer.role === 'Copywriter' && writer.instructions === 'Write the copy.', 'update not saved')
+})
+
+await step('pin Coder', () => api('set-flags', { id: botNamed('Coder').id, pinned: true }), () => expect(botNamed('Coder').pinned === true, 'not pinned'))
+
+await step('make Coder a Main Bot and back', async () => {
+  await api('set-main', { id: botNamed('Coder').id, main: true })
+  const both = state().mainBotIds.length
+  await api('set-main', { id: botNamed('Coder').id, main: false })
+  return both
+}, both => expect(both === 2 && state().mainBotIds.length === 1, `main counts ${both}, ${state().mainBotIds.length}`))
+
+await step('duplicate Coder', () => api('duplicate-bot', { id: botNamed('Coder').id }), copy => expect(copy && state().bots[copy.id] && copy.id !== botNamed('Coder').id, 'no copy'))
+
+await step('set prefs', () => api('set-prefs', { theme: 'dark', accent: '#336699' }), () => expect(state().prefs.theme === 'dark' && state().prefs.accent === '#336699', 'prefs not saved'))
+
+await step('delete the group', () => api('delete-room', { id: roomNamed('研发群').id }), () => expect(Object.keys(state().rooms).length === 0, 'group still there'))
+
+await step('delete the copy', async () => {
+  const copy = Object.values(state().bots).find(bot => bot.name !== 'Coder' && bot.name.startsWith('Coder'))
+  if (!copy) throw new Error('no copy to delete')
+  await api('delete-bot', { id: copy.id })
+  return copy.id
+}, id => expect(state().bots[id] === undefined, 'copy still there'))
+
+if (outFile) writeFileSync(outFile, `${JSON.stringify(transcript, null, 2)}\n`)
+console.log(failures.length === 0 ? `\nsmoke: all ${transcript.length} steps passed` : `\nsmoke: ${failures.length} failed\n${failures.join('\n')}`)
+process.exit(failures.length === 0 ? 0 : 1)

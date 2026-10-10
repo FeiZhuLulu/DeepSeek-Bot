@@ -1,0 +1,67 @@
+DS Bot
+Copyright 2026 FeiZhuLulu and the DS Bot contributors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+==============================================================================
+Third-party code in this repository
+==============================================================================
+
+DeepSeek Harness (https://github.com/deepseek-ai/deepseek-harness)
+MIT License, Copyright (c) 2026 DeepSeek
+
+  - ds-bot/dev/desktop-linux/launch.mts follows the steps of
+    apps/desktop/scripts/dev.ts in DeepSeek Harness and reuses a few of its
+    lines (the release record and the Electron launch arguments). It is a
+    developer script for screenshots on Linux and is not in the npm package.
+
+  Full license text:
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+No other third-party code is copied into this repository. At run time the
+plugin uses the @deepseek-ai/* packages of the DeepSeek Harness install it
+runs in; they are not bundled. esbuild is a build tool only.
+
+==============================================================================
+Projects that gave us ideas (no code copied)
+==============================================================================
+
+We thank these projects for the designs they published. DS Bot learned from
+their ideas; it does not contain their code.
+
+  - AgentMemoryRepo (https://github.com/AgentMemoryRepo/agentmemoryrepo), MIT:
+    the Markdown format of Bot memory (one entry per line with [key: value]
+    metadata, a MEMORY.md index that links topic files).
+  - OpenAI Codex (https://github.com/openai/codex), Apache-2.0:
+    keeping the user's messages next to the summary in a checkpoint, and
+    message anchors for searching earlier chat.
+  - OpenMausBot (https://github.com/milind-soni/OpenMausBot), Apache-2.0:
+    group chat rounds and @mention relays between Bots.
+  - Hermes Agent (https://github.com/NousResearch/hermes-agent) and
+    Hermes Bot Mode (https://github.com/NousResearch/Hermes-Bot-Mode), MIT:
+    one Session per member per group chat, and the list of earlier user
+    messages that the plugin, not the model, writes into the handoff.
+  - OpenCode (https://github.com/sst/opencode), MIT;
+    goose (https://github.com/block/goose), Apache-2.0;
+    pi (https://github.com/badlogic/pi-mono), MIT;
+    Gemini CLI (https://github.com/google-gemini/gemini-cli), Apache-2.0:
+    when to condense a long conversation, and what a handoff note holds.
+  - obelisk (https://github.com/tommy0103/obelisk), AGPL-3.0:
+    searching a Bot's own chat with a SQLite FTS5 index ranked by BM25.

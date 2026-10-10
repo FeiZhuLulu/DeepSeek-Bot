@@ -1,0 +1,12176 @@
+// Generated from src/client by `npm run build` (scripts/build-client.mjs). Do not edit by hand.
+window.__ModuleLoader__.load({
+  id: 'ds-bot',
+  factory: (require) => {
+const module = { exports: {} }
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+  for (var name in all)
+    __defProp(target, name, { get: all[name], enumerable: true });
+};
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+  }
+  return to;
+};
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+
+// src/client/index.js
+var index_exports = {};
+__export(index_exports, {
+  apply: () => apply,
+  inject: () => inject
+});
+module.exports = __toCommonJS(index_exports);
+
+// src/client/i18n.js
+var NAMESPACE = "ds-bot";
+var ZH = {
+  // Shared
+  "Main Bot": "主 Bot",
+  Working: "工作中",
+  "Waiting for your answer": "等你回答",
+  "Unread activity": "有未读",
+  Search: "搜索",
+  "New chat": "新对话",
+  "New…": "新建",
+  "Animation": "动画",
+  "Bot animation": "Bot 动画",
+  "Quiet": "安静",
+  "Normal": "正常",
+  "Lively": "活泼",
+  Settings: "设置",
+  Usage: "用量",
+  Account: "账户",
+  Cancel: "取消",
+  Delete: "删除",
+  Duplicate: "复制一份",
+  Hidden: "已隐藏",
+  Admin: "管理员",
+  Add: "添加",
+  Close: "关闭",
+  Copy: "复制",
+  Copied: "已复制",
+  You: "你",
+  you: "你",
+  Bot: "Bot",
+  "a Bot": "一个 Bot",
+  "a group chat": "一个群聊",
+  " and ": "、",
+  and: "和",
+  "{count} members": "{count} 位成员",
+  "Loading…": "加载中…",
+  "Edit Bot": "编辑 Bot",
+  "Make Main Bot": "设为主 Bot",
+  "Remove Main Bot role": "取消主 Bot",
+  "Bot settings": "Bot 设置",
+  "Create group chat": "新建群聊",
+  "Delete group": "删除群聊",
+  "Open {name}'s chat": "打开 {name} 的对话",
+  "New Bot": "新 Bot",
+  // Sidebar and account menu
+  "Bot list": "Bot 列表",
+  "Setting up your Main Bot…": "正在设置你的主 Bot…",
+  "Connect plugins": "连接插件",
+  "Plugin compatibility is not fully verified.": "插件兼容性未完全验证",
+  "Automation tasks": "自动化任务",
+  Connectors: "连接器",
+  "Search connectors": "搜索连接器",
+  "No connectors": "暂无连接器",
+  "Repositories, issues, and pull requests": "仓库、issue 和 PR",
+  "Connecting…": "正在连接…",
+  "Could not connect: {error}": "连接失败：{error}",
+  "Connected as {account}": "已连接：{account}",
+  Connected: "已连接",
+  Disconnect: "断开",
+  Connect: "连接",
+  "GitHub token": "GitHub token",
+  "Create a token on GitHub": "去 GitHub 生成 token",
+  "Could not reach GitHub": "连不上 GitHub",
+  "GitHub did not accept this token": "GitHub 不接受这个 token",
+  "GitHub did not say who this token belongs to": "GitHub 没有返回这个 token 的账号",
+  "Paste a token first": "请先粘贴 token",
+  "GitHub addresses must start with https://": "GitHub 地址必须以 https:// 开头",
+  "This DSH cannot load connectors": "这个 DSH 不能加载连接器",
+  "No such connector": "没有这个连接器",
+  "Classic Agent mode": "经典 Agent 模式",
+  "Switch": "切换",
+  "Switch to classic Agent mode": "切换经典 Agent 模式",
+  "{model} is not available anymore. Pick another model for me.": "{model} 已经不可用了。给我换一个模型吧。",
+  "Hi, I'm {name}. I don't have a model yet. How do you want to set one up?": "你好，我是 {name}。我还没有可用的模型。你想怎么配置？",
+  "Hi, I'm {name}. Pick a model for me first. You can change it later in my details.": "你好，我是 {name}。先给我选一个模型吧，以后可以在我的详情里换。",
+  "Mode": "模式",
+  "Sign in to DeepSeek": "登录 DeepSeek 账号",
+  "Enter a DeepSeek API key": "填入 DeepSeek API key",
+  "Open settings to set up a custom model": "打开设置配置自定义模型",
+  "DS Bot": "DS Bot",
+  // Header
+  "Message {name}": "给 {name} 发消息",
+  Message: "发消息",
+  "View conversation details": "查看对话详情",
+  "1 new message": "1 条新消息",
+  "{count} new messages": "{count} 条新消息",
+  "New messages": "新消息",
+  "Dismiss new messages": "关闭新消息提示",
+  New: "新",
+  // New chat
+  "Create new Bot": "新建 Bot",
+  "Create new Bot “{name}”": "新建 Bot「{name}」",
+  "Add to group chat": "加入群聊",
+  "Message Bot": "给 Bot 发消息",
+  "To:": "发给：",
+  "Remove {name}": "移除 {name}",
+  Recipient: "收件人",
+  Recipients: "收件人",
+  "Search Bots…": "搜索 Bot…",
+  "Start a chat with…": "和谁聊…",
+  "Close new chat": "关闭新对话",
+  "No Bots match": "没有匹配的 Bot",
+  "Type a name to create a Bot": "输入名字来新建 Bot",
+  "Send message": "发送",
+  // Details drawer
+  Details: "详情",
+  Browser: "浏览器",
+  About: "简介",
+  "Show less": "收起",
+  "Show more": "展开",
+  "Admin leads": "管理员主持",
+  "Plain messages go to the admin, who calls others with @Name.": "普通消息先给管理员，由管理员用 @名字 点名其他成员。",
+  Everyone: "所有人",
+  "Every member answers in turn, admin first.": "每位成员轮流回答，管理员先说。",
+  "Members · {count}": "成员 · {count}",
+  "Leave the group without an admin": "让群聊不设管理员",
+  Unset: "取消",
+  "Make admin": "设为管理员",
+  "Remove {name} from the group": "把 {name} 移出群聊",
+  "Remove from group": "移出群聊",
+  "Add member": "添加成员",
+  "{name} leads this group: it can call members with @Name, change the group, and post here.": "{name} 主持这个群：可以用 @名字 点名成员、修改群设置、在群里发言。",
+  "No admin yet. An admin can call members with @Name, change the group, and post here.": "还没有管理员。管理员可以用 @名字 点名成员、修改群设置、在群里发言。",
+  "Who answers": "谁来回答",
+  "Choose an admin first": "先选一个管理员",
+  "@mentions always pick who answers.": "@提及总是指定由谁回答。",
+  Notice: "群公告",
+  "Shared instructions every member reads before speaking…": "每位成员发言前都会读到的共同说明…",
+  "Group notice": "群公告",
+  "Back to details": "返回详情",
+  "Close details": "关闭详情",
+  "Copied conversation": "已复制对话",
+  "Share conversation": "分享对话",
+  "Copy conversation as Markdown": "把对话复制为 Markdown",
+  "This conversation is not part of your Bot team.": "这个对话不属于你的 Bot 团队。",
+  "Admin {name}": "管理员 {name}",
+  "No admin": "无管理员",
+  "Bot name": "Bot 名字",
+  "Group name": "群名",
+  "Name after members": "按成员命名",
+  "Rename {name}": "重命名 {name}",
+  Rename: "重命名",
+  "Add instructions in Bot settings": "在 Bot 设置里添加说明",
+  "No scheduled tasks yet. To add one, tell the Bot in its chat what to do and when.": "还没有定时任务。要添加，在对话里告诉 Bot 做什么、什么时候做。",
+  "The browser is in the DSH Desktop app.": "浏览器在 DSH 桌面版应用里。",
+  "New tab": "新标签页",
+  "Close tab": "关闭标签页",
+  "Open {title}": "打开 {title}",
+  "Conversation details": "对话详情",
+  "Panel tabs": "面板标签页",
+  "Close panel": "关闭面板",
+  // Bot settings
+  "Choose a PNG, JPEG, WebP, or GIF image": "请选择 PNG、JPEG、WebP 或 GIF 图片",
+  "Choose an image smaller than 25 MB": "请选择小于 25 MB 的图片",
+  "That image is too large": "图片太大了",
+  Model: "模型",
+  "Avatar editor": "形象编辑",
+  "Avatar source": "形象来源",
+  Upload: "上传",
+  "Reset character to default": "恢复默认形象",
+  Reset: "恢复默认",
+  "Character shape": "形状",
+  "Character color": "颜色",
+  "Drag, drop, or paste an image": "拖入或粘贴一张图片",
+  Replace: "替换",
+  "Browse files": "选择文件",
+  "Remove photo": "移除照片",
+  "Edit Bot avatar": "编辑 Bot 形象",
+  Name: "名字",
+  Instructions: "说明",
+  "What this Bot is responsible for…": "这个 Bot 负责什么…",
+  "Pick the model this Bot runs on.": "选择这个 Bot 使用的模型。",
+  "This model is not available now. Pick another one.": "这个模型现在不可用，请换一个。",
+  "Every message of this Bot runs on it.": "这个 Bot 的每条消息都用它。",
+  "Applies from the next message.": "从下一条消息开始生效。",
+  Profile: "资料",
+  Label: "标签",
+  "Optional. Shown under the name.": "可选，显示在名字下方。",
+  "Research, admin…": "研究、行政…",
+  "What this Bot does": "这个 Bot 做什么",
+  "Its job on the team. Part of the Bot's system prompt.": "它在团队里的分工，会写进 Bot 的系统提示词。",
+  "A copy with the same job and model, and fresh memory.": "复制分工和模型，记忆从零开始。",
+  "Delete {name}?": "删除 {name}？",
+  "Delete Bot": "删除 Bot",
+  "Click again to delete. Its chats are archived.": "再点一次删除，它的对话会归档。",
+  "Removes the Bot from the team.": "把这个 Bot 从团队里移除。",
+  "Pick a model and {name} can start.": "选好模型，{name} 就能开始工作。",
+  "The only Main Bot. To hand the role to another Bot, use Main Bot on the Bots page.": "这是唯一的主 Bot。要把主 Bot 交给别的 Bot，请到「Bot」页的主 Bot 里换。",
+  Change: "更换",
+  "Can create and change Bots, and runs every group chat.": "可以创建和修改 Bot，并管理所有群聊。",
+  Sidebar: "侧栏",
+  "Kept above the other chats.": "排在其他对话上面。",
+  "Search still finds it.": "仍然可以搜索到。",
+  Manage: "管理",
+  // Group chat settings
+  "Leave it empty to name the group after its members.": "留空就按成员命名。",
+  "Every member reads it before speaking in this group.": "每位成员在这个群里发言前都会读到。",
+  "Add a Bot first: a group chat needs at least two.": "请先添加一个 Bot：群聊至少要两个。",
+  "Click again to delete. Its history is archived.": "再点一次删除，聊天记录会归档。",
+  "Removes the group chat. Its members stay on the team.": "删除这个群聊，成员仍留在团队里。",
+  "Add a notice in group settings": "在群设置里添加群公告",
+  // Create Bot
+  "Create Bot": "创建 Bot",
+  "Back to new chat": "返回新对话",
+  Look: "形象",
+  Shuffle: "随机",
+  "Replace photo": "更换照片",
+  "Upload photo": "上传照片",
+  "A Bot named {name} already exists": "已经有叫 {name} 的 Bot 了",
+  "The Bot runs on this model. You can change it later in its details.": "Bot 会使用这个模型。以后可以在详情里修改。",
+  "Add a provider and a model in DeepSeek Harness first, or pick one in the Bot's chat later.": "请先在 DeepSeek Harness 里添加服务商和模型，或者稍后在 Bot 的对话里选择。",
+  "Creating…": "创建中…",
+  Create: "创建",
+  // Model menu
+  Default: "默认",
+  "Model: {model}": "模型：{model}",
+  none: "无",
+  "Choose a model": "选择模型",
+  "{provider} · not available": "{provider} · 不可用",
+  "Model for {name}": "{name} 的模型",
+  "No models are set up in DeepSeek Harness yet.": "DeepSeek Harness 里还没有设置模型。",
+  "Models and providers…": "模型和服务商…",
+  Models: "模型",
+  "Harness default": "Harness 默认",
+  Saving: "保存中",
+  "Manage models": "管理模型",
+  // Shapes
+  Whale: "鲸鱼",
+  Star: "星星",
+  Moon: "月亮",
+  Wave: "声波",
+  Squircle: "圆角方",
+  Bull: "牛角",
+  Blossom: "花朵",
+  Gumdrop: "软糖",
+  Peanut: "花生",
+  Bubbles: "泡泡",
+  Saucer: "飞碟",
+  Sprout: "嫩芽",
+  Bunny: "兔子",
+  Kitty: "小猫",
+  Beacon: "灯塔",
+  Plus: "加号",
+  Magnet: "磁铁",
+  Acorn: "橡果",
+  Pebbles: "石子",
+  Cushion: "靠垫",
+  Ring: "圆环",
+  Gem: "宝石",
+  // Colors
+  Black: "黑",
+  Brown: "棕",
+  Red: "红",
+  Orange: "橙",
+  Yellow: "黄",
+  Green: "绿",
+  Cyan: "青",
+  Blue: "蓝",
+  Violet: "紫",
+  Magenta: "品红",
+  Gray: "灰",
+  Aurora: "极光",
+  Deepseek: "DeepSeek 蓝",
+  Charcoal: "炭黑",
+  Graphite: "石墨",
+  Rose: "玫瑰",
+  Sky: "天蓝",
+  Tangerine: "橘",
+  Cobalt: "钴蓝",
+  // Themes
+  DeepSeek: "DeepSeek",
+  Mono: "黑白",
+  Paper: "纸张",
+  Moonlight: "月光",
+  // Settings dialog
+  General: "通用",
+  Bots: "Bot",
+  "Group chats": "群聊",
+  Secrets: "密钥",
+  Appearance: "外观",
+  Theme: "主题",
+  "Colors for the whole team, on every device.": "整个团队的配色，所有设备同步。",
+  Accent: "强调色",
+  "Unread marks, badges, and the brand mark.": "未读标记、徽标和品牌标志。",
+  "Theme accent": "主题强调色",
+  "Custom accent": "自定义强调色",
+  "Bots · {count}": "Bot · {count}",
+  "First in the sidebar. Pick another Bot to hand it the role; {name} then stops being a Main Bot.": "排在侧栏最上面。选另一个 Bot 就会把主 Bot 交给它，{name} 随之不再是主 Bot。",
+  "Choose a Bot…": "选择一个 Bot…",
+  "Also a Main Bot.": "也是主 Bot。",
+  "Move to first": "移到最前",
+  "Add a Main Bot": "添加主 Bot",
+  "Main Bots can create and change Bots, and run every group chat.": "主 Bot 可以创建和修改 Bot，并管理所有群聊。",
+  "Group chats · {count}": "群聊 · {count}",
+  "No group chats yet.": "还没有群聊。",
+  "A group chat lets several Bots work on one thing with you.": "在群聊里，几个 Bot 和你一起做一件事。",
+  "Back to group chats": "返回群聊列表",
+  "DS Bot settings": "DS Bot 设置",
+  "Settings pages": "设置页面",
+  "Models, providers, and the rest of DeepSeek Harness": "模型、服务商和 DeepSeek Harness 的其他设置",
+  "Harness settings": "Harness 设置",
+  "Back to Bots": "返回 Bot 列表",
+  "Close settings": "关闭设置",
+  // Context menu
+  Unpin: "取消置顶",
+  Pin: "置顶",
+  Pinned: "已置顶",
+  "Mark as Unread": "标为未读",
+  "Rename Bot": "重命名 Bot",
+  "Group settings": "群设置",
+  "Rename group": "重命名群聊",
+  "Copy conversation ID": "复制对话 ID",
+  "Hide from sidebar": "从侧栏隐藏",
+  "{name} actions": "{name} 的操作",
+  // The DSH Agent's own row and Session list. "DSH Agent" is a product name and
+  // stays in English.
+  "Add DSH Agent": "添加 DSH Agent",
+  "Remove DSH Agent": "移除 DSH Agent",
+  "New session": "新会话",
+  Archive: "归档",
+  "Session actions": "会话操作",
+  "Plain dsh session": "原生 dsh 会话",
+  "just now": "刚刚",
+  "{n} min": "{n} 分钟",
+  "{n} h": "{n} 小时",
+  "{n} d": "{n} 天",
+  // Plugin updates
+  "DS Bot {version} is available": "DS Bot {version} 可以更新",
+  "Updating DS Bot…": "正在更新 DS Bot…",
+  "DS Bot {version} is installed. Restart DSH to use it.": "DS Bot {version} 已安装，重启 DSH 后生效",
+  "DS Bot update": "DS Bot 更新",
+  "DS Bot {version}": "DS Bot {version}",
+  "Update installed": "更新已安装",
+  "Restart DSH to start using DS Bot {version}.": "重启 DSH 后开始使用 DS Bot {version}。",
+  "You have {version}.": "当前版本 {version}。",
+  "The update did not finish: {reason}": "更新没有完成：{reason}",
+  "What's new": "更新说明",
+  "Updating…": "正在更新…",
+  // Command palette
+  Messages: "消息",
+  Commands: "命令",
+  "Search Bots, chats and messages": "搜索 Bot、对话和消息",
+  "Clear search": "清除搜索",
+  Results: "结果",
+  "No results": "没有结果",
+  "Try a Bot name or words from a message": "试试 Bot 名字或消息里的词",
+  // Bot exchange
+  "Bot exchange": "Bot 间对话",
+  "Bot exchange transcript": "Bot 间对话记录",
+  "No messages yet": "还没有消息",
+  "Close Chat": "关闭",
+  // Time and usage
+  "Today {time}": "今天 {time}",
+  "Yesterday {time}": "昨天 {time}",
+  "{tokens} tok · Cache hit {hit}%": "{tokens} tok · 缓存命中 {hit}%",
+  // Transcript
+  Footnotes: "脚注",
+  "Remove reaction {emoji}": "移除表情 {emoji}",
+  "Add reaction": "添加表情",
+  Reply: "回复",
+  "More message actions": "更多操作",
+  More: "更多",
+  Reactions: "表情",
+  "Message actions": "消息操作",
+  Download: "下载",
+  "Thought it through": "思考过程",
+  "Earlier messages": "更早的消息",
+  "Loading earlier messages…": "正在加载更早的消息…",
+  "Couldn’t load earlier messages · Retry": "更早的消息没加载出来 · 重试",
+  "Load earlier": "加载更早的消息",
+  "1 image": "1 张图片",
+  "{count} images": "{count} 张图片",
+  "Replies from": "群聊回复：",
+  "Reply from": "收到回复：",
+  "Message from": "收到消息：",
+  "{count} messages with": "{count} 条消息，来自",
+  "Routine started": "例行任务开始",
+  Update: "更新",
+  "Thinking about it": "想一想",
+  "Weighing the options": "权衡一下",
+  "Working out a plan": "理一下思路",
+  "Sorting out the details": "梳理细节",
+  "On it": "在做了",
+  "Busy with it": "正在处理",
+  "Moving ahead": "推进中",
+  "Taking care of it": "处理中",
+  "Making headway": "有进展了",
+  "Searching online": "上网搜索",
+  "Reading a page": "阅读网页",
+  "Running shell commands": "运行命令",
+  "Opening a file": "打开文件",
+  "Looking through files": "查找文件",
+  "Writing changes": "写入修改",
+  "Working on an image": "处理图片",
+  "Creating a group": "创建群聊",
+  "Updating the group": "更新群聊",
+  "Deleting the group": "删除群聊",
+  "Posting in the group": "在群里发言",
+  "Checking the keys": "查看密钥",
+  "Asking {name}": "询问 {name}",
+  "Asking another Bot": "询问其他 Bot",
+  "Creating {name}": "创建 {name}",
+  "Updating {name}": "更新 {name}",
+  "Checking the team": "查看团队",
+  "Reading {name}": "阅读 {name}",
+  "Looking back through the chat": "翻看聊天记录",
+  "{name} looked up its own chat": "{name} 查看了自己的对话",
+  "{name} looked up its own chat for “{text}”": "{name} 在自己的对话里查找「{text}」",
+  "{name} is typing…": "{name} 正在输入…",
+  "Couldn't message {name}": "没能给 {name} 发消息",
+  Messaged: "已发消息给",
+  Created: "已创建",
+  Updated: "已更新",
+  "Created group": "已创建群聊",
+  "Couldn't create the group": "没能创建群聊",
+  "Updated group": "已更新群聊",
+  "Couldn't update the group": "没能更新群聊",
+  "Deleted group": "已删除群聊",
+  "Couldn't delete the group": "没能删除群聊",
+  "Posted in": "已发到",
+  "Couldn't post in the group": "没能在群里发言",
+  Read: "已读取",
+  // Questions
+  "Your own answer": "你自己的回答",
+  "Type your own answer": "输入你自己的回答",
+  Selected: "已选",
+  Skip: "跳过",
+  Submit: "提交",
+  "Choose all that apply": "可多选",
+  "Dismiss question": "关闭问题",
+  Dismiss: "关闭",
+  Dismissed: "已关闭",
+  "Your answer": "你的回答",
+  // Secrets
+  "All Bots": "所有 Bot",
+  "No Bot": "没有 Bot",
+  "Paste or type the key": "粘贴或输入密钥",
+  "Only {name}": "只给 {name}",
+  "Who may use it": "谁可以用",
+  "Cancel the request": "取消请求",
+  "This page is not on HTTPS: the key crosses the network unencrypted.": "这个页面不是 HTTPS：密钥会以明文经过网络。",
+  "Let {bot} use {name}?": "允许 {bot} 使用 {name}？",
+  "{name} needs a key": "{name} 需要一个密钥",
+  "Saved for {scope}": "已保存，可用范围：{scope}",
+  "Value of {name}": "{name} 的值",
+  "{bot} never sees the value. It reaches {bot}'s shell as ": "{bot} 永远看不到这个值。它会作为下面的环境变量进入 {bot} 的 shell：",
+  " At least {count} characters.": " 至少 {count} 个字符。",
+  "At least {count} characters.": "至少 {count} 个字符。",
+  "Replace value": "替换值",
+  "Saving…": "保存中…",
+  Save: "保存",
+  "Allowing…": "允许中…",
+  Allow: "允许",
+  "{bot} asked for {name}": "{bot} 请求了 {name}",
+  "Allowed {bot} to use {name}": "已允许 {bot} 使用 {name}",
+  "Saved {name}": "已保存 {name}",
+  Canceled: "已取消",
+  Done: "完成",
+  "{bot} is using {name}": "{bot} 正在使用 {name}",
+  "a saved key": "一个已保存的密钥",
+  "Chosen Bots": "指定的 Bot",
+  "Who may use {name}": "谁可以用 {name}",
+  "Save access": "保存权限",
+  "Replace the value": "替换值",
+  "New value of {name}": "{name} 的新值",
+  "Replaced. Bots get the new value from their next command.": "已替换。Bot 从下一条命令开始拿到新值。",
+  "a deleted Bot": "一个已删除的 Bot",
+  "Asked by {name}": "由 {name} 请求",
+  "added {time}": "添加于 {time}",
+  "last used {time}": "上次使用 {time}",
+  "not used yet": "还没用过",
+  "Delete {name}? Bots lose it at once.": "删除 {name}？Bot 会立刻失去它。",
+  Keep: "保留",
+  "Key name": "密钥名",
+  "NAME, e.g. GITHUB_TOKEN": "名字，例如 GITHUB_TOKEN",
+  "What it is for": "用途",
+  Value: "值",
+  "New keys are for all Bots; narrow it down afterwards.": "新密钥默认所有 Bot 可用，之后可以收窄。",
+  "Save key": "保存密钥",
+  "Keys your Bots asked for. Bots never see the values: they use them as ": "你的 Bot 请求过的密钥。Bot 永远看不到值：它们在 shell 里通过 ",
+  " in their shell, and every value is replaced by ": " 使用，而且发给模型之前，每个值都会被替换成 ",
+  " before anything goes to a model.": "。",
+  "Secrets · {count}": "密钥 · {count}",
+  "No keys yet. When a Bot needs one, it shows a card in its chat.": "还没有密钥。Bot 需要时，会在对话里弹出一张卡片。",
+  "Add a key": "添加密钥",
+  // Memory
+  Memory: "记忆",
+  "Nothing saved yet": "还没有保存内容",
+  "1 entry": "1 条",
+  "{count} entries": "{count} 条",
+  "Manage {name}'s memory": "管理 {name} 的记忆",
+  "{name}'s memory": "{name} 的记忆",
+  "Memory summary": "记忆摘要",
+  "All entries": "全部记忆",
+  "Memory options": "记忆选项",
+  "Close memory": "关闭记忆",
+  "Back to the summary": "返回摘要",
+  "Regenerate summary": "重新生成摘要",
+  "Updated {time}": "更新于 {time}",
+  "Updated just now": "刚刚更新",
+  "Writing the summary…": "正在生成摘要…",
+  "The summary is out of date: {reason}": "摘要不是最新的：{reason}",
+  "The summary could not be written: {reason}": "摘要没能生成：{reason}",
+  "{name} has not saved anything yet": "{name} 还没有记住任何内容",
+  "Bots keep lasting preferences, decisions, and what you ask them to remember. Tell {name} below, or in its chat.": "Bot 会记住长期的偏好、做过的决定，以及你让它记住的事。可以在下面告诉 {name}，也可以在对话里说。",
+  "Team memory": "团队记忆",
+  "Every Bot reads it": "所有 Bot 都会读",
+  "MEMORY.md, which every conversation reads": "MEMORY.md，每次对话都会读",
+  "{used} of {limit} characters": "{used} / {limit} 字符",
+  "by you": "由你添加",
+  "by {name}": "由 {name} 添加",
+  "Remove from memory": "从记忆中删除",
+  "Click again to remove": "再点一次删除",
+  Remove: "删除",
+  "Ask or update": "询问或更新",
+  "Ask about or update {name}'s memory": "询问或更新 {name} 的记忆",
+  Send: "发送",
+  "Added: {text}": "已添加：{text}",
+  "Added to team memory: {text}": "已加入团队记忆：{text}",
+  "Updated: {text}": "已更新：{text}",
+  "Removed: {text}": "已删除：{text}",
+  "Removed from team memory: {text}": "已从团队记忆删除：{text}",
+  "Not changed: {text} ({reason})": "没有改动：{text}（{reason}）",
+  "Saving to memory": "正在记下",
+  "Updating memory": "正在更新记忆",
+  "Checking memory": "正在查看记忆",
+  "Memory updated": "记忆已更新",
+  "Team memory updated": "团队记忆已更新",
+  "Updated {name}'s memory": "已更新 {name} 的记忆",
+  "Memory updated. Open {name}'s memory": "记忆已更新，打开 {name} 的记忆",
+  // Browser
+  "Close browser": "关闭浏览器",
+  "Open browser": "打开浏览器",
+  "Open this Bot's browser": "打开这个 Bot 的浏览器",
+  "{name}'s browser": "{name} 的浏览器",
+  "Resize panel": "调整面板宽度",
+  "{name} read this page": "{name} 读了这个页面",
+  "{name}'s browser. {name} can read the page shown here.": "{name} 的浏览器。{name} 能读取这里显示的页面。",
+  Back: "后退",
+  Forward: "前进",
+  Stop: "停止",
+  Reload: "刷新",
+  Address: "地址",
+  "Search or enter address": "搜索或输入网址",
+  "This page didn’t load": "页面没有加载出来",
+  "Try again": "重试",
+  "Open a page here and {name} can read it with you. Logins and cookies stay with {name}; other Bots never see them.": "在这里打开网页，{name} 就能和你一起读。登录状态和 cookie 只属于 {name}，其他 Bot 看不到。",
+  "Only http and https addresses open here.": "这里只能打开 http 和 https 地址。",
+  "The page crashed.": "页面崩溃了。",
+  "The browser blocked the new window.": "浏览器拦截了新窗口。",
+  "Open the issue": "打开问题页面",
+  "Cloud metadata addresses do not open here.": "这里不能打开云元数据地址。",
+  // Voice
+  "Dictation is not available in this browser": "这个浏览器不支持听写",
+  "Microphone access is blocked": "麦克风权限被阻止了",
+  "Couldn't hear that": "没听清",
+  "Couldn't start dictation": "无法开始听写",
+  "Stop dictation": "停止听写",
+  Dictate: "听写",
+  "Start voice chat": "开始语音对话",
+  "Voice chat": "语音对话",
+  Listening: "在听",
+  Thinking: "思考中",
+  "Thinking…": "思考中…",
+  Speaking: "在说",
+  Paused: "已暂停",
+  "Voice chat is not available in this browser": "这个浏览器不支持语音对话",
+  "Voice chat with {name}": "和 {name} 语音对话",
+  "Resume listening": "继续听",
+  Pause: "暂停",
+  "End voice chat": "结束语音对话",
+  // Usage page
+  "24 hours": "24 小时",
+  "7 days": "7 天",
+  "30 days": "30 天",
+  "12 weeks": "12 周",
+  "12 months": "12 个月",
+  "Per hour": "按小时",
+  "Per day": "按天",
+  "Per week": "按周",
+  "Per month": "按月",
+  Output: "输出",
+  Input: "输入",
+  "Cache hit": "缓存命中",
+  "Deleted Bot": "已删除的 Bot",
+  Deleted: "已删除",
+  "Deleted group chat": "已删除的群聊",
+  "Group chat": "群聊",
+  "Own chat": "单聊",
+  Conversations: "对话",
+  "Compaction and handoff": "压缩与交接",
+  "Image reading": "识图",
+  Titles: "标题",
+  Other: "其他",
+  "Last {range}": "最近 {range}",
+  tokens: "Token",
+  "Compared with the {range} before": "与再往前 {range} 相比",
+  "{share}% of all usage in the last {range}": "占最近 {range}全部用量的 {share}%",
+  Calls: "调用次数",
+  "Cache hit rate": "缓存命中率",
+  "Tokens over time": "Token 走势",
+  "{count} tokens": "{count} Token",
+  "{tokens} tokens · {calls} calls": "{tokens} Token · {calls} 次调用",
+  "Active on 1 day in the last year": "近一年有 1 天在用",
+  "Active on {count} days in the last year": "近一年有 {count} 天在用",
+  Light: "少",
+  Heavy: "多",
+  "Unknown model": "未知模型",
+  "More Bots": "其余 Bot",
+  "More models": "其余模型",
+  "Reading your chats…": "正在读取聊天记录…",
+  "No usage yet.": "还没有用量。",
+  "Token usage shows up here after a model is called.": "调用模型之后，这里会显示 Token 用量。",
+  "Nothing in this range.": "这段时间没有用量。",
+  "Who used it": "谁在用",
+  "What for": "用途",
+  Activity: "活跃度",
+  "Time range": "时间范围",
+  "All usage": "全部用量",
+  "Group usage by": "用量分组",
+  "By Bot": "按 Bot",
+  "By model": "按模型",
+  "Still reading older chats; totals may grow.": "还在读取较早的聊天记录，数字可能还会变大。",
+  Custom: "自定义",
+  "Custom range": "自定义时间范围",
+  "This month": "本月",
+  "Last month": "上个月",
+  "This year": "今年",
+  "Previous month": "往前一个月",
+  "Next month": "往后一个月",
+  "Pick the first day": "选择开始日期",
+  "Pick the last day": "选择结束日期",
+  "1 day": "1 天",
+  "{count} days": "{count} 天",
+  "Compared with the day before": "与前一天相比",
+  "Compared with the {count} days before": "与再往前 {count} 天相比",
+  "{share}% of all usage from {span}": "占 {span} 全部用量的 {share}%",
+  // Feedback and errors
+  Feedback: "反馈",
+  "Report a problem": "报告问题",
+  "What happened?": "发生了什么？",
+  "What you did, what you expected, and what happened instead. It goes into the issue.": "你做了什么、期望什么、实际发生了什么。会写进 issue。",
+  "For example: I asked Writer in the group chat and it showed an error.": "例如：我在群聊里问 Writer，它显示出错了。",
+  Diagnostics: "诊断信息",
+  "Versions, system, models, and the latest errors. Saved keys, tokens, and your home folder are hidden.": "版本、系统、模型和最近的错误。已保存的密钥、令牌和你的用户目录都已隐藏。",
+  Show: "查看",
+  Hide: "收起",
+  "GitHub issue": "GitHub issue",
+  "Opens a new issue in the DS Bot repository with all of this filled in. Nothing is sent until you submit it there.": "在 DS Bot 仓库新建一个 issue，并填好以上内容。你在 GitHub 上提交之前，什么都不会发出。",
+  "Report on GitHub": "在 GitHub 上报告",
+  "Copied the diagnostics.": "已复制诊断信息。",
+  "Could not copy. Select the text below and copy it.": "无法复制。请选中下面的文字手动复制。",
+  "Opened a new GitHub issue with the diagnostics filled in. Check it before you submit.": "已打开新的 GitHub issue，诊断信息已填好。提交前请检查一遍。",
+  "Opened a new GitHub issue. The diagnostics are long, so they are on the clipboard: paste them into the issue.": "已打开新的 GitHub issue。诊断信息太长，已复制到剪贴板，请粘贴到 issue 里。",
+  "Opened a new GitHub issue. Copy the diagnostics below into it.": "已打开新的 GitHub issue。请把下面的诊断信息复制进去。",
+  "Downloaded the log. Keys, tokens, and your home folder are hidden in it.": "已下载日志。里面的密钥、令牌和用户目录都已隐藏。",
+  "Cleared the error log.": "已清空错误日志。",
+  "Recent errors": "最近的错误",
+  "Recent errors · {count}": "最近的错误 · {count}",
+  "No errors recorded.": "没有错误记录。",
+  "Failed model calls and DS Bot problems show here, newest first.": "模型调用失败和 DS Bot 的问题会显示在这里，最新的在前。",
+  "Model call": "模型调用",
+  "This window": "这个窗口",
+  "Error log": "错误日志",
+  "Kept on this computer across restarts, up to about 1 MB.": "保存在这台电脑上，重启后仍在，最多约 1 MB。",
+  Clear: "清空",
+  "Settings → Feedback has the details.": "详情见 设置 → 反馈。",
+  "Could not reach DSH. Check that it is still running.": "连不上 DSH，请确认它还在运行。",
+  "{name} could not answer: {reason}": "{name} 没能回答：{reason}",
+  "Unknown error": "未知错误",
+  "The API key was rejected": "API 密钥无效",
+  "The account is out of quota": "账户额度已用尽",
+  "Too many requests to the model": "模型请求太频繁",
+  "The conversation is too long for the model": "对话太长，超出模型上限",
+  "The model service refused the request": "模型服务拒绝了请求",
+  "The model service failed": "模型服务出错",
+  "The model took too long to answer": "模型响应超时",
+  "Could not reach the model service": "连不上模型服务",
+  "Its group conversation could not open": "它的群聊会话打不开",
+  // The composer's +
+  "Add files": "添加文件",
+  "Scheduled task": "定时任务",
+  "Send to": "发给",
+  "Scheduled task: {text}": "定时任务：{text}",
+  // New group chats
+  "Choose the group admin": "选择群管理员",
+  "Group admin": "群管理员",
+  "Who to chat with…": "想和谁聊…",
+  "Add at least one more Bot": "再至少添加一个 Bot",
+  Members: "成员",
+  // Connectors and scheduled tasks
+  "Scheduled tasks": "定时任务",
+  "Every day": "每天",
+  "Every {count} days": "每 {count} 天",
+  "Every hour": "每小时",
+  "Every {count} hours": "每 {count} 小时",
+  "Every {count} minutes": "每 {count} 分钟",
+  "Once, {time}": "一次，{time}",
+  "Every day at {time}": "每天 {time}",
+  "Every {days} at {time}": "每{days} {time}",
+  "Every weekday at {time}": "每个工作日 {time}",
+  "Every weekend at {time}": "每个周末 {time}",
+  "On the schedule {expression}": "按计划 {expression}",
+  "Next: {time}": "下次 {time}",
+  Finished: "已结束",
+  "in {name}": "在 {name}",
+  "Click again to delete": "再点一次删除",
+  "Delete task": "删除任务",
+  Once: "一次",
+  "Every week": "每周",
+  Repeat: "重复",
+  minutes: "分钟",
+  hours: "小时",
+  days: "天",
+  "Morning briefing": "早间简报",
+  "What to do": "要做什么",
+  "Sum up what changed since yesterday and what needs me today.": "总结一下昨天以来的变化，以及今天需要我处理的事。",
+  When: "什么时候",
+  "Date and time": "日期和时间",
+  Days: "星期",
+  Time: "时间",
+  Every: "每",
+  "How many": "数量",
+  Unit: "单位",
+  "Create task": "创建任务",
+  "Turn on Automation tasks in DSH": "在 DSH 里打开「自动化任务」",
+  "Switch on Automation tasks on the Plugins page in Harness settings.": "在 Harness 设置的插件页启用「自动化任务」。",
+  "Open Harness settings": "打开 Harness 设置",
+  "New task": "新建任务",
+  "No scheduled tasks yet.": "还没有定时任务。",
+  "No scheduled tasks yet. Add one": "还没有定时任务，去添加",
+  "Automation tasks are off in DSH": "DSH 的「自动化任务」没有打开",
+  "No such Bot": "没有这个 Bot",
+  "No such Bot or group chat": "没有这个 Bot 或群聊",
+  "Give the task a name": "给任务起个名字",
+  "Say what the Bot should do": "写下 Bot 要做什么",
+  "Pick a date and time": "选一个日期和时间",
+  "Pick a time in the future": "选一个将来的时间",
+  "Pick a time of day": "选一个时间",
+  "Pick at least one day": "至少选一天",
+  "Repeat every 1 minute to 7 days": "重复间隔要在 1 分钟到 7 天之间",
+  "Pick when it runs": "选择什么时候运行",
+  "No such task": "没有这个任务"
+};
+var HOST_ERRORS = [
+  [/^Model (.+) is not available\. Available: (.*)$/, "模型 $1 不可用。可用的：$2"],
+  [/^A Bot named (.+) already exists$/, "已经有叫 $1 的 Bot 了"],
+  [/^Name (.*) is not available$/, "名字 $1 不可用"],
+  [/^Another group chat is already called "(.+)"$/, "已经有叫「$1」的群聊了"],
+  [/^A group chat holds at most (\d+) Bots$/, "一个群聊最多 $1 个 Bot"],
+  [/^Reply mode must be one of (.+)$/, "回复模式只能是 $1"],
+  [/^Only the user, a Main Bot, or the admin of "(.+)" can change it$/, "只有你、主 Bot 或「$1」的管理员可以修改"],
+  [/^A key must have at least (\d+) characters$/, "密钥至少 $1 个字符"],
+  [/^A key can have at most (\d+) characters$/, "密钥最多 $1 个字符"],
+  [/^(.+) is not saved yet$/, "$1 还没有保存"],
+  [/^The Bot team in (.+) is open in another dsh \((.+)\)\. This window shows the team but cannot change it; close the other one and reload\.$/, "$1 里的 Bot 团队已在另一个 dsh 中打开（$2）。这个窗口只能查看，不能修改；关掉另一个后刷新。"],
+  [/^HTTP (\d+)$/, "请求失败（HTTP $1）"],
+  [/^GitHub answered (\d+)$/, "GitHub 返回了 $1"],
+  [/^Keep the name under (\d+) characters$/, "名字不能超过 $1 个字"],
+  // Memory changes the memory panel asked for; the whole message is matched.
+  [/^This looks like a key, token, or password[\s\S]*$/, "看起来像密钥、令牌或密码，记忆不会保存这类内容"],
+  [/^An entry holds at most (\d+) characters; this one has (\d+)\.[\s\S]*$/, "一条记忆最多 $1 个字符，这条有 $2 个"],
+  [/^[\s\S]*'s MEMORY\.md would have (\d+) of its (\d+) characters\.[\s\S]*$/, "主记忆会超过 $2 个字符的上限，请先删掉一些"],
+  [/^The topic \[\[(.+?)\]\] in [\s\S]* would have (\d+) of its (\d+) characters\.[\s\S]*$/, "主题 $1 会超过 $3 个字符的上限"],
+  [/^[\s\S]* already has (\d+) topics, the most it holds\.[\s\S]*$/, "主题已经有 $1 个，不能再加新主题"],
+  [/^There is no entry (.+)\.$/, "没有第 $1 条"],
+  [/^No entry in [\s\S]* matches "([\s\S]*)"\.[\s\S]*$/, "找不到「$1」这条记忆"],
+  [/^"([\s\S]*)" matches (\d+) entries in [\s\S]*$/, "「$1」对应了 $2 条记忆，请说得更具体"],
+  [/^Memory cannot change now: [\s\S]*$/, "现在不能修改记忆：另一个 dsh 正在使用这个 Bot 团队"]
+];
+var HOST_ZH = {
+  "Request failed": "请求失败",
+  "Avatar images must be PNG, JPEG, WebP, or GIF": "头像图片必须是 PNG、JPEG、WebP 或 GIF",
+  "Avatar image is too large": "头像图片太大了",
+  "A Bot needs a name": "Bot 需要一个名字",
+  "Unknown Bot": "找不到这个 Bot",
+  "Unknown conversation": "找不到这个对话",
+  "A group chat needs at least two Bots": "群聊至少要两个 Bot",
+  "The admin must be a member of the group": "管理员必须是群成员",
+  "Unknown group chat": "找不到这个群聊",
+  "Hand the admin role to another member instead of leaving the group without one": "请把管理员交给其他成员，不要让群聊没有管理员",
+  "Hand the admin role to another member before leaving the group": "离开群聊前，请先把管理员交给其他成员",
+  "The team needs at least one Main Bot": "团队至少要有一个主 Bot",
+  "Only a Main Bot can be replaced": "只能替换主 Bot",
+  "A Main Bot cannot be deleted; remove its Main Bot role first": "主 Bot 不能删除，请先取消它的主 Bot 身份",
+  "Unknown theme": "未知主题",
+  "Accent must be a #rrggbb color": "强调色必须是 #rrggbb 格式",
+  "Type the key first": "请先输入密钥",
+  "Choose every Bot or a list of Bots": "请选择所有 Bot 或指定的 Bot",
+  "This request is gone": "这个请求已经不存在了",
+  "This request was already answered": "这个请求已经处理过了",
+  "A name uses capitals, digits, and underscores, and starts with a letter": "名字只能用大写字母、数字和下划线，并以字母开头",
+  "No such key": "没有这个密钥",
+  "Type a question or a change first": "请先输入问题或要改的内容",
+  "No model is available. Add one in Harness settings.": "没有可用的模型，请先在 Harness 设置里添加模型。",
+  "Memory is turned off on this host": "这台主机关闭了记忆功能",
+  "The model wrote nothing": "模型没有输出内容",
+  "Write the entry to save.": "请写下要保存的内容。"
+};
+Object.assign(ZH, HOST_ZH);
+var fill = (text, params) => params ? text.replace(/\{(\w+)\}/g, (match, name) => name in params ? String(params[name]) : match) : text;
+var service = null;
+var bound = null;
+function installLocale(locale) {
+  if (!locale || typeof locale.register !== "function" || typeof locale.bind !== "function") return () => {
+  };
+  service = locale;
+  bound = locale.bind(NAMESPACE);
+  const off = locale.register(NAMESPACE, "zh", ZH);
+  return () => {
+    if (service === locale) {
+      service = null;
+      bound = null;
+    }
+    if (typeof off === "function") off();
+  };
+}
+function t(key, params) {
+  return bound ? bound(key, params) : fill(key, params);
+}
+function hostText(message) {
+  if (!language().startsWith("zh")) return message;
+  if (Object.hasOwn(ZH, message)) return t(message);
+  for (const [pattern, template] of HOST_ERRORS) {
+    if (pattern.test(message)) return message.replace(pattern, template);
+  }
+  return message;
+}
+function language() {
+  const active = service?.getLocale?.().active;
+  return typeof active === "string" ? active : "en";
+}
+var dateLocale = () => language().startsWith("zh") ? "zh-CN" : "en-US";
+var DICTIONARY = { zh: ZH };
+
+// src/client/diagnostics.js
+var MAX = 30;
+var REPEAT_MS = 5 * 60 * 1e3;
+var entries = [];
+var noted = /* @__PURE__ */ new WeakSet();
+var markNoted = (error) => {
+  if (error !== null && typeof error === "object") noted.add(error);
+  return error;
+};
+function noteClientError(where, error) {
+  if (error !== null && typeof error === "object") {
+    if (noted.has(error)) return;
+    noted.add(error);
+  }
+  const message = String(error?.message ?? error ?? "error").slice(0, 300);
+  const code = typeof error?.code === "string" ? error.code : void 0;
+  const text = `${where}: ${message}`;
+  const now = Date.now();
+  const last = entries.at(-1);
+  if (last && last.text === text && now - last.time < REPEAT_MS) {
+    last.time = now;
+    last.count = (last.count ?? 1) + 1;
+    return;
+  }
+  entries.push({ time: now, level: "error", text, ...code ? { code } : {} });
+  if (entries.length > MAX) entries.splice(0, entries.length - MAX);
+}
+var quietly = (where) => (error) => noteClientError(where, error);
+var clearClientErrors = () => {
+  entries.length = 0;
+};
+var clientErrors = () => entries.map((entry) => entry.count > 1 ? { ...entry, text: `${entry.text} (×${entry.count})` } : { ...entry });
+function clientFacts() {
+  return {
+    surface: window.dshDesktop ? "DSH Desktop" : "DSH Web",
+    language: language(),
+    userAgent: navigator.userAgent
+  };
+}
+var FAILURES = {
+  AUTH: "The API key was rejected",
+  QUOTA: "The account is out of quota",
+  ACCOUNT_QUOTA: "The account is out of quota",
+  RATE_LIMIT: "Too many requests to the model",
+  CONTEXT_WINDOW_EXCEEDED: "The conversation is too long for the model",
+  INVALID_REQUEST: "The model service refused the request",
+  SERVER: "The model service failed",
+  TIMEOUT: "The model took too long to answer",
+  TRANSPORT: "Could not reach the model service",
+  SESSION: "Its group conversation could not open"
+};
+function failureLabel(code, message) {
+  if (FAILURES[code]) return t(FAILURES[code]);
+  return message || code || t("Unknown error");
+}
+var URL_LIMIT = 7e3;
+var WHAT_MAX = 2e3;
+var PASTE_NOTE = "DS Bot copied the diagnostics to the clipboard. Paste them here.";
+function issueUrl(base, { what = "", diagnostics }) {
+  const text = what.trim().slice(0, WHAT_MAX);
+  const title = text.split("\n")[0].slice(0, 80);
+  const build = (body) => `${base}?${new URLSearchParams({ template: "bug.yml", ...title ? { title } : {}, ...text ? { what: text } : {}, diagnostics: body })}`;
+  const full2 = build(diagnostics);
+  return full2.length <= URL_LIMIT ? { url: full2, inline: true } : { url: build(PASTE_NOTE), inline: false };
+}
+
+// src/client/api.js
+var ROUTE = "api/bot";
+var REFUSALS = /* @__PURE__ */ new Set(["bot/refused", "bot/invalid", "bot/read-only", "bot/not-found", "bot/browser-off"]);
+var call = async (endpoint, payload, signal) => {
+  let response;
+  try {
+    response = await fetch(ROUTE, {
+      method: "POST",
+      credentials: "same-origin",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ endpoint, payload: payload ?? null }),
+      signal
+    });
+  } catch (error) {
+    if (error?.name === "AbortError") throw error;
+    noteClientError(endpoint, Object.assign(new Error(`network error: ${error?.message ?? error}`), { code: "NETWORK" }));
+    throw markNoted(Object.assign(new Error(t("Could not reach DSH. Check that it is still running.")), { code: "NETWORK", cause: error }));
+  }
+  if (!response.ok) {
+    const error = Object.assign(new Error(hostText(`HTTP ${response.status}`)), { code: `HTTP_${response.status}` });
+    noteClientError(endpoint, error);
+    throw error;
+  }
+  const result = await response.json();
+  if (!result.ok) {
+    const code = result.error?.code ?? "bot/error";
+    const message = hostText(result.error?.message ?? "Request failed");
+    const error = Object.assign(new Error(code === "bot/internal" ? `${message} ${t("Settings → Feedback has the details.")}` : message), { code });
+    if (!REFUSALS.has(code)) {
+      noteClientError(endpoint, Object.assign(new Error(result.error?.message ?? "Request failed"), { code }));
+      markNoted(error);
+    }
+    throw error;
+  }
+  return result.value;
+};
+
+// src/client/inks.js
+var INKS = {
+  deepseek: ["#4D6BFE", "#6A84FF"],
+  charcoal: ["#141416", "#F1F2F4"],
+  graphite: ["#2D2D2D", "#D6D6DA"],
+  rose: ["#EC2F6B", "#FF5A7A"],
+  sky: ["#0AA8D6", "#2EE6E0"],
+  tangerine: ["#FF6900", "#FF8A2E"],
+  cobalt: ["#082DFF", "#5C78FF"],
+  black: ["#000000", "#FFFFFF"],
+  brown: ["#A27952", "#855C36"],
+  red: ["#FF3E51", "#E02135"],
+  orange: ["#FF781C", "#FF6700"],
+  yellow: ["#FFAF38", "#FF9800"],
+  green: ["#00C972", "#009957"],
+  cyan: ["#1CC3B0", "#00A592"],
+  blue: ["#2A92FE", "#0E74E0"],
+  violet: ["#A97EFE", "#804EE0"],
+  magenta: ["#FF5EB1", "#E02A88"],
+  gray: ["#959595", "#777777"],
+  aurora: ["#00B8D4", "#2EE6E0"]
+};
+var GRADIENTS = { aurora: [[0, "#A4FFB0"], [0.42, "#00F0E4"], [1, "#2E9EF7"]] };
+var ACCENT_INKS = ["deepseek", "charcoal", "graphite", "rose", "sky", "tangerine", "cobalt"];
+var LEGACY_INKS = { kimi: "charcoal", zai: "graphite", minimax: "rose", stepfun: "sky", mimo: "tangerine", qwen: "cobalt" };
+var isHex = (color) => typeof color === "string" && /^#[0-9a-f]{6}$/i.test(color);
+var luminance = (hex) => [1, 3, 5].map((index) => parseInt(hex.slice(index, index + 2), 16) / 255).map((channel) => channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4).reduce((sum, channel, index) => sum + channel * [0.2126, 0.7152, 0.0722][index], 0);
+var inkName = (color) => INKS[color] ? color : INKS[LEGACY_INKS[color]] ? LEGACY_INKS[color] : "gray";
+var inkFill = (color) => isHex(color) ? color : `var(--bt-ink-${inkName(color)})`;
+var inkText = (color) => color === "black" ? "var(--bt-ink-gray)" : inkFill(color);
+var paintCss = (color) => GRADIENTS[color] ? `linear-gradient(135deg,${GRADIENTS[color].map(([offset, value]) => `${value} ${offset * 100}%`).join(",")})` : inkFill(color);
+
+// src/client/characters.js
+var CHARACTERS = {
+  whale: { label: "Whale", body: "M65.3 20.9l5.1 .1 4.8 .9 4.8 1.7 4.3 2.3 3.8 3.1 3 3.4 2.3 3.8 1.6 4.3 .9 4.3 0 4.8-.8 4.8-1.4 4.3-2.3 4.3-3.2 4.3-3.4 3.3-4.3 3.1-7.2 3.5-7.6 1.7-7.2 .1-9.6-1.6-3.3-1-2.9-1.7-8.8-8.9-6-4.7-3.3-.5-7.7 1.1-4.8-.1-4.7-1.2-1.9-1.2-1-1-.5-1.5 .4-1.4 1.1-1.3 1.9-1.3 4.7-1.5 7.7-.6 1.1-.5 .7-1 0-1.4-2.8-7.2-1.2-5.3-.1-4.3 .4-1.4 .9-1.2 1.9-.2 2 1 2.2 2.3 2.2 3.4 3.2 7.6 1.9 9.7 .5-.1 1.1-7.2 1.8-4.8 3.2-5.2 3.9-4.3 4.9-3.9 5.6-2.9 5.8-1.9z", paints: [["M93.3 55.8l1-.3 .1 1.2-2.4 5.3-3.4 4.8-3.8 3.8-4.8 3.4-5.7 2.8-4.8 1.5-4.8 .4 20.1-17.4 5.2-3.7z", "#fff", 1]], shade: "M88.6 29.5l2.4 2.9 1.9 2.8 2.4 6.3 .5 3.3 .1 5.3-1.5 6.6-1.9 4.3-2 3.3-4.8 5.4-5.7 4.3-7.2 3.3-6.2 1.5-6.7 .1-3.3-.2-9.6-1.8-3.3-1.5-2.4-1.9-8.6-8.9-5.3-3.9-3.3-.1-2.9 .2-3.3 .8-5.8 0-4.3-1-2.9-1.9 .6-.6 3.8-1.3 10.5-2.5 4.3 .9 1.4-.1 2.2-1.7 .5-1.4-.3-1.5-1.2-1.4-2.2-1.4-1.2-1.9-.6-12 .4-3.3 .5-.5 2.9 3.8 2.4 4.8 1.9 5.7 .7 5.8 .7 2.8 2.1 2.4 2.7 5.5 3.8 4.3 2.9 2.2 3.3 1 3.4-.4 6.2-3 7.1-4.5 7.3-5.6 6.6-5.9 5.9-6.5 3.7-5.3 1.7-4.2 .1-2.9z", light: "M55.6 22.8l1.9-.3 1.5 .3 .6 1 .1 .9-2 4.3-3.8 5.3-5.8 6.2-5.4 4.4-4.8 2.3-1.4 0-1.2-.5-.8-1.9 .5-3.3 2.5-4.8 3.3-4.3 2.4-2.4 5.3-3.9zM19.3 28.1l-1.4 2 .3-1.1zM21.7 49.1l.6 .5-.3 .5-.8 0zM35.8 52l1.2-.4 .9 .7 .7 1.6-.4 .9-1.2 .1-2.6-.5zM7.2 52.9l-2.9 2.9 1.2-1.6z", eyes: [[72.5, 48.4, 9.3, 23, -15.8], [85.6, 43.4, 7, 22.9, -21.2]] },
+  star: { label: "Star", body: "M40.1 4.4l1.5-.4 1.9 .1 5.2 1.1 1.9 .9 13.2 14.9 17.1-.8 5.2 1.1 1.8 .9 1.7 1.6 .7 2.4-.4 1.9-9.7 23.6 5.6 23.7 .1 1.9-.6 1.4-2.1 1.8-2.3 .5-19.9-1.8-16.6 15.5-1.9 1-1.9 .3-7-1.5-2.6-2.1-.9-2.4-2.8-24.1-16-13.6-1.1-1.5-.5-1.9 .4-1.9 1.2-1.5 18.9-13.6 7.1-24.6 1-1.7z", shade: "M52 7.7l14.3 16.1 1 2.9 .3 3.1 19.4-1.3 2-1.4 .7-2.3-.4-1 .5 .5 .5 1.9-.4 1.9-9.8 23.2 5.5 23.1 .1 3.4-2 2.4-2.8 .8-19.4-2.1-1.9 1.4-14.7 14-2.4 1.4-3.3 .1-4.7-1-2-1 .6-.2 3.3 .8 2.8 .1 5.1-2.1 .7-.9 .4-2.4-2.6-22.7-.3-.3-1.4 .2-1.4 .7-5.7 .7-5.6-1.2-16.7-13.8 1-.1 5.2 1 3.8-1.1 1-.7 1.9-.4 .4-.4 1.5 .3 .4-.4 1 .2 18-12.8 6.7-23.5 0-1.8-.4-.5-.3-1.9 .4-2.4z", light: "M40.1 4.4l2-.1 4.7 1 .7 1-.5 1.4-2.8 1.5-6.6 23.1 .7 1.2 .6 .3-18.1 12.5-1.8 2.1-3.4 .7-5.2-1.2-.3-.4 .3-.9 1.4-1.4 18.3-12.9 .9-2.3 6.4-22.7 .8-1.4z", eyes: [[53.9, 53.4, 7.2, 18.8, -10], [65.1, 49.2, 7.2, 18.8, -10]] },
+  moon: { label: "Moon", body: "M45.8 4.2l4.7-.2 4.2 .4 10.2 2.4 3.7 1.6 3.6 2.1 3.3 2.5 3 3.1 4.6 6.7 3.4 8.3 1.5 8.8 .1 4.6-.8 7.8-2.6 8.8-3.9 7.7-5.1 6.7-6.1 5.3-4.1 2.6-3.6 1.6-27.2 10.2-2.8 .7-2.6 0-5.7-1.3-2-.8-1.9-1.7-1.1-2.6-6.5-37.7-.2-5.2 .8-7.7 1.3-5.2 3.1-7.8 4.2-6.7 3-3.6 3.9-3.6 6.3-4.2 4.1-1.8z", paints: [["M57.6 9.9l.2-.3 .2 .3 2 4.7 1.9 1.9 2.6 .5 1.5-.7 1.1-1.1 .4 .4-.1 1.6-.7 1.5-2.2 2.5-1.6 .7-2 0-1.6-.8-1.3-1.4-.8-2-.4-2.6 .1-3.1z", "#1783FF", 1]], shade: "M74.3 13.5l2.1 1.5 .3-.4-.3-.6 2.1 2.1 4.6 6.7 3.1 7.4 1.5 7.6 .1 10.4-.6 4.6-2.5 8.3-4.2 8.2-3.1 4.2-5.7 5.7-6.2 4.2-4.6 2-28 10.3-4.1 0-5.2-1.1-2-.9-.5-.7 .5 .5 1.5 0 3.6 1 2.6-.3 5.7-2.1 2.1-2.1-5.4-31.5-.2-4.1 .4-1.1-.1-2.6 .5-3.6 1.8-7.7 2.8-6.7 1.9-3.1 3.9-5.2 3.2-3.1 2.5-2 5.2-2.9 3.1-1.1 3.1-.8 2.1 0 .5-.4 2.6 .2 1-.3 1.6 .4 1-.5 2.1 .8 1-.8 2.1 1.2z", light: "M38 6.3l1.7-.3 2.5 .2 .6 .4 1.5 0 .5 .5 1.6 .3-3.1 1.3 .4 .7-2.5 1.6-.5 1-2.5 2.1-2.7 2.9-6.2 7.9-1.5 2.7-1 .9-1.2 2.6-1.4 1-1.3 3.7-1.3 .3-6-1.4-1 3.6-.8 0 .9-3.6-.5-1 1.1-3.6 2.7-5.7 4.1-6.2 5.7-5.8 3.1-2.4 3.6-2.2z", eyes: [[51.6, 48.5, 8.4, 22.1, -10], [66.8, 42.9, 8.4, 22.1, -10]] },
+  wave: { label: "Wave", body: "M46.1 4l6.1 .3 9.6 2.1 4.5 1.8 4.1 2.4 3.5 2.8 4.4 4.8 2.6 4 2.1 4.1 2.2 6 4.8 26 .5 5.3-.3 4.1-1.2 3.8-1.5 2.8-2.4 2.5-2.1 1.4-3.1 1-3 .3-8.1-1.5-3.2 5.3-2.1 2.1-2.5 1.5-2.8 1-3 .4-9.1-1.6-2.7 4.2-3.4 3.1-4 1.7-4.6 .1-7-1.5-3.5-1.9-3.4-3.5-2.1-4-1.5-5.6-3.7-20.7-.6-5.6-.1-5 .5-6.1 2.3-9.6 2.3-5.5 2.7-4.9 2.7-3.7 3.2-3.6 4.2-3.6 4.7-2.9 4.4-2 4-1.2z", paints: [["M61.6 48.5l2.2-.3 2 1.1 1.1 2.2 .3 3-.6 3.1-1.5 3.5-2.5 4.1-2.4 2.8-5-2.2-3-2.2-2.3-3-.7-3.5 .6-2.6 1.8-2.1 1.6-.7 1.5 0 1.5 .6 1.5 1.3 2-3.6z", "#fff", 0.4]], shade: "M69.3 13.6l2.6 1.3 .5-.3 .5-1.3 2 1.7 .5 0 2.5 2.7 3.5 5.5 3.6 8.6 1.5 6.6 3.5 19.7 .5 5.5-.4 4.6-2 5-1 1.6-2.6 2.5-3 1.5-2.1 .5-4 0-6.6-1.4-1.4 2.9-1.9 2.5-2.7 2.6-3.1 1.5-2.5 .6-4 .1-7.1-1.5-1.5 2.8-2.6 3-2 1.6-3 1.4-4.5 .6-7.1-1.5-3.6-1.5-3.5-3.1 6.6 1.5 2.8-.5 .5-.5-.3-.5 3.2-2-.4-1 1.4-1.5-.3-1 .7-1.6-.2-2.5-3.4-19.2 .3-.5-.6-5 .5-.5-.1-4.6 .4-.5 .3-4 1-4.1 1.5-4.5 3.8-7.7 5.5-6.9 3.1-2.6 6.5-3.9 7.6-2.2 3.1 0 .5-.4 3 .5 1-.5 2.5 1z", light: "M36.5 6.1l2-.3 .5 .6 4.1 .5 1 .7-3.3 1.5-.3 1.2-3 2-.3 .8-2.8 2.6-3.5 4-3.9 5-2 3.6-1 .5-1.7 4-1.5 .5-1.4 4.6-1.6 .2-.5-.4-5.6-.9-.4-.4 1.4-5.1 1.5-3.5 2.6-5.1 4-5.5 6.6-6.2 4-2.5z", eyes: [[47.5, 37.2, 8.4, 22.1, -10], [61.6, 31.9, 8.4, 22.1, -10]] },
+  squircle: { label: "Squircle", body: "M54.5 4.2l3.9-.2 3.7 .3 11.6 2.7 3.1 1.6 2.8 1.9 2.6 2.7 2.2 3.1 2.4 4.8 1.9 5.8 3.7 19.4 .8 11.1-.4 4.7-1 4.7-1.3 3.5-1.8 3.4-4.8 5.8-6.4 4.7-8 4-14.2 5.3-9.5 2.2-7.4 .1-10.5-2.2-5.3-2.5-4.3-3.7-3.3-4.8-2.7-6.3-2.4-9.5-2.8-17.9-.2-7.8 1.3-7.9 2.2-5.3 2.8-4.2 4.1-4.2 4.3-3.1 6.3-3.4 11.6-4.6 7.9-2.7z", shade: "M80.5 11.6l2.1 2.1 2.1 3.2 3.2 7.3 2.1 8.4 2.7 15.8 .5 7.9-.6 7.4-2 6.3-3.8 6.3-4.2 4.3-2.6 2-6.9 3.8-15.2 6.2-9.5 2.7-6.8 .6-6.2-.7-8.5-2-5.8-3.2-3.2-3.3 .5 .4 1.1-.2 5.8 1.4 2.1-.8 1.4-.7-.3-.5 1.4-1.1-.1-1 .8-.5 0-1.1 1.1-1 .1-2.1 .4-.6-.2-3.6-2.4-17.9-.2-9.5 .8-5.3 1.1-3.6 1.2-2.7 2.2-3.5 2.7-2.8 3.1-2.5 5.8-3.2 17.9-6.9 5.3-1.4 8.4-1.4 1.6-1.1 .5 .1 .9-1.5z", light: "M39.4 8.4l1.2 0-1.6 .7-1-.1 1-.1zM36.8 9.5l1 0 .6 .9 4.2 .6 .7 .6-3.8-.4-.3 .4 1.9 .3 .1 .7-3.2 1.6-6.9 5.8-5.3 6-4.7 6.1-3.8 3.7-.2 .5-1.8 .1-6.8-1.7 .4-3.6 2.1-4.2 2.2-3.2 4.2-4.3 4.2-3 3.1-1.8 5.3-2.5zM35.1 10.5l1.7 0-.5 .4zM36.5 11.1l.3-.5 2.2 .1 .4 .4-.4 .3z", eyes: [[52.6, 52.4, 8.4, 22.1, -10], [67.3, 46.9, 8.4, 22.1, -10]] },
+  zed: { label: "Bull", body: "M77 4.4l1.1-.4 1.1 .2 1.2 1.3 2 9.8 2.2 5.9 .4 2.8-.3 2.1-.8 1.7-4.7 5.1-1.3 1.9-.4 1.7 .1 1.6 1 1.7 4.4 .2 3.8 1.3 2 1.7 .6 1.6-.3 1.7-.7 1.1-3.5 2.7 1.7 6 .4 5.9-.8 6.6-1.9 6-3.4 5.9-4.4 5.3-5.5 4.4-6 3.1-6.5 2-7.1 .7-6.5-.7-6.5-2.1-6-3.4-4.8-4.4-3.5-4.9-3.1-6.7-3.3 1.1-2.7 .3-2-.6-1.1-1.1-.3-2.2 .9-2.7 2.9-3.8 4.6-3.8 1.8-7.1-6.3-1.8-1.6-1.3-1.3-1.8-.6-2.7 0-6.6-1.4-8.7 .2-1.1 1.5-1.4 1.1-.1 1 .5 5.5 7.9 2.2 2.2 2.7 1.4 4.9 .4 .5-.1 6.5-5.1 6.6-3.2 6-1.6 8.7-.7 3.8-.9 2.7-1.5 3.9-3.2 3-3.8 2.4-4.9 2.1-10z", paints: [["M61 36.5l1.9 .7 1.4 2-.7 5.4 .3 .4 2.8-1.2 1.1 0 1 .9 .5 1.6-.5 .8-1 .5-7.1 2.4-1.1-.5-.9-1.6 1.4-5.4-.5-.6-3.3 1.1-1.1-.1-1.6-1-1-1.6 .5-.9z", "#fff", 1]], shade: "M80.2 5.5l.6 1.6 1.3 8.2 2.5 6 .2 3.7-.1 1.1-1.2 2.2-5.2 5.4-1.1 3.3 .9 2.7 3.8 3.9 1.6 .1 4.4-1.4 1.2 1.2 .1 1.1-.2 1.7-.6 1.1-3.6 2.7 .9 2.2 1.1 5.4 .1 6-1.1 6.5-2.3 6-3.8 6-6 6-4.9 3.3-5.9 2.6-7.1 1.7-7.1 .1-6-1.1-5.9-2.3-4.4-2.7-4.4-4.5 3.8 .4 5.5-1.5 7.6-3.9 6.8-4.7 7.9-6.5 7.1-6.9 5.4-6.5 4.4-6.7 1.8-4.4 .4-3.2-.3-1.1-3.3-3.8-.8-2.8 .8-2.7 6.2-7 .8-2.2-.1-2.7-1.7-4.4-.8-8.2zM14.9 29.9l.1-.5 4 6.5 2.3 2.7-1.4 .1-2-.6-3.6-7.1zM24.3 44.6l1-.3 1.1 .2 3.3 2.9 1.7 .5 .3 1.6-.5 2.2-1 1.6-1.6 1.5-1.6 .7-1.7 .1-3.2-2.2-2.2 0-2.7-.6-2.9-1.6 3.9-1.6 2.2-1.7 2.2-2.3zM21 68.6l.5-.5 1.1 .1 1.1 .5 .8 1 .6 2.7-.1 1.1-.7 1.1-.6 .1-2.2-1.2-2.7 1.1-3.8 .6-2.7-1.2 3.4-1.6z", light: "M77 4.4l.6-.2 .1 .7-1.2 .8-.1-.8zM74.2 15.8l.6 1.1 .1 2.7-.6 2.2-1 1.6-5.5 5-1.7 .7-3.3 .3 .1-.6 2.1-1.2 4.2-3.6 2.7-3.9zM11.7 28.9l.8 0-.1 .5-1.2 .8-.1-.8zM44.3 32.1l3.1 0 .8 1.1 0 1.1-1.9 4.3-3 4.1-1.7-1.1-2.1-.8-4.4-.6-4.4 .1 5.5-4.4zM22 54.4l.6 0-.3 .6 .2 .5 2.3 2.7 .4 1.7-1 .9-4.8 2.3-7.1 7.8 0-1.8 2.1-3.3 6.4-5.4 1.2-4.3z", eyes: [[61.8, 69, 9.5, 22.3, -10.5], [78.4, 62.7, 6.9, 22.2, -11.2]] },
+  hex: { label: "Blossom", body: "M38.8 4.2l2.6-.1 6 1.3 2 1.3 3 3.3 12-4.5 2-.5 6.5 1.1 2.9 1.6 4.9 6 .8 2 .3 2-.2 2.5-1.9 7-1.3 2.2-1.9 1.8 2.9 1.3 1.8 1.7 10.1 12.5 1.5 3 .1 4-1.8 7-.9 2-2.8 2.7-7.1 2.7-5.2 20-.8 2-1.4 1.9-1.5 1.1-6.5 2.6-3 .2-6.5-1.6-2-1.4-4-4.9-16 5.7-2 .1-4.5-1-3-1.2-5.2-6-1.3-3 0-3.5 2-8.5-10.8-13.4-1.4-3-.3-2 .3-2.5 1.7-6.5 1.8-3 2.2-1.8 5.9-2.2 2.1-.4 2.5 .3 .4-.4-.7-2.5 .1-2.5 4.8-18.5 1-2.5 2.9-2.9z", shade: "M49.7 7.7l.2-.4 .5 .4 2 2.3 0 .7 1.6 1.5 1 2 .1 1.5-.3 .5 .6 1.3 17.5-6.5 2.5-1.3 1-1.5 4.5 6 .6 1.5 .3 3-1.9 8-1 2-3 3-.3 1 .4 .5-1.7 3 .1 .5-.5 .5 0 .7 5.5-2.2 1.5-1.5 2 2 8 10 1 1.5 1 2.5-.1 4-1.9 7-1.1 1.9-2.9 2.5-6.8 2.5-4.7 19-1.5 3.5-2.5 2.5-6.5 2.6-4 0-5.5-1.4-2.2-1.7-3.2-4 4.9 .8 2.5-1.4 1.5-2.6 .7-2.3 1.7-6.5-.4-.3-.6 .8-.7 3.5-1.1 1.5 .3 .5-.3 .5-.7-.5-1.4-5.5-.5 1-.2 2-.9 1-.1 1.5-1.1 2-2.7 2.8-1 .4-1 .1-15.5 5.8-3-.1-4.5-1-2-1-2-2-2.2-3 .2-.2 4 .9 2-1.1 1.7-1.6 1.3-3.2 1.7-6.3 1.1-2.5-.3-.3-.5 .2-6.5-.3-.5-.5-2 0-.5-.5-1.7-.1-10.4-13.4 4.1 .7 3.1-1.7 1.3-2 2.5-8.5 .9-1.5 1.7-1.3 6.5-2.7 2-1.5-.3-.5 .3-.5 1.5-1.2 1.5-3 5.6-20.3 1.9-2 6-2.4 1.1-.6zM73.2 31.2l1.5 0-.8 1-34 12.7-1 .1-1.5-.5-2 .8-1.9-2.6 .4-.9 2 .5 1.5 1 .5-.4 1 .5 1-.3 1 .4 3-1.5 1 .1 3-1.6 1 .1 3-1.6 1 .1 3-1.6 2.5-.5 1.5-1 2.5-.5 1.5-1 2.5-.5 1.5-1 2.5-.5 1.5-1 1 0zM61.3 74.6l.1-.2 .4 .2-.4 1.7z", light: "M33.4 6.2l3 .1 1.9 .9-.1 .5-1.8 2.5-3.4 3.5-4.5 17-3.6-.9-1 .4 0-1 4.4-16.5 0-1.5 2.1-3.1zM68.2 6.2l1.2 0zM14.9 37.7l3.5 .9 .4 .6-.3 1-5 5.5-1.1 4.6-2.5-.5-2 .1 0-1.7 1-4.5 1-2.5 2-2.1zM19.4 71.6l4 .7 1.8 .8-1.2 1-1.1 5.1-4.5-.5-.5-.6 1.4-5z", eyes: [[49.8, 55.5, 6.7, 17.7, -10], [61.6, 51.1, 6.7, 17.7, -10]] },
+  gumdrop: { body: "M38.7 4.5l4.4-.5 4.6 .8 4.1 1.9 3.7 3.2 23.2 36.6 2.3 5 1.4 5.1 .7 6.4-.7 6.4-1.8 6.1-3.1 5.7-4.1 5.1-5.2 4.2-5.8 3.1-6 1.8-6.4 .6-6.4-.6-6-1.8-5.9-3.1-5.1-4.2-4.1-5.1-3-5.4-1.9-6.4-.7-6 .5-5.9 9-41.6 2-4.1 2.6-3.2 3.4-2.5z", shade: "M54.9 9.5l1.9 2.3 22.9 36.5 1.8 4.6 .9 3.7 .6 4.1-.1 5.9-1.4 6.4-2.3 5.5-3.7 5.4-4.1 4.2-4.5 3.3-7.3 3.2-6.4 1.2-6.4 0-5.1-.9-5.9-2.1-5.5-3.3-4.6-4.1 .5-.3 4.1 .8 5.5-1 6.4-2.6 7.3-4.5 7.2-5.7 6.5-6.4 5.5-6.9 3.5-5.9-18.1-37 1.1-3.7 .2-2.3z", light: "M37.1 4.9l2.5 0 .8 1.4-.5 2.1-1.8 2.9-3.2 3.2-3.2 2.1-2.3 .7-1.8-.1-.7-.9 .1-1.8 2.4-4.1 2.7-2.8z", eyes: [[52.1, 40.3, 9.7, 22.9, -15.2], [64.8, 35.6, 6.3, 23, -27]] },
+  peanut: { body: "M43.5 4l6.6 .7 5.8 2.2 5.4 3.8 4.1 4.7 2 3.8 1.4 4.3 1.3 11.9 1 4.3 1.6 3.8 5.8 10.5 1.4 3.8 .8 4.3 .1 6.2-1 5.7-2.1 5.5-3.2 4.9-4.1 4.3-4.8 3.4-5.6 2.4-5.7 1.3-6.1 .1-5.8-1.1-5.7-2.2-4.7-3.1-4.3-4.1-3.3-4.8-2.5-5.7-1.2-5.7-.1-6.7 1.7-9 .4-4.3-.5-4.7-2.5-9.6-.6-3.8 .2-5.2 1.2-5.2 1.5-3.4 2.2-3.3 2.5-2.9 2.8-2.3 3.4-2.1 3.4-1.4 3.8-.9z", shade: "M62.7 12.6l2.6 2.8 2.8 5.8 1.1 4.2 1 11.9 1 3.4 2.3 4.7 4.2 6.7 1.9 4.7 .9 3.8 .2 2.9-.1 6.2-.5 3.3-1.9 5.3-3.4 5.7-3.4 3.8-4.2 3.3-5.7 2.9-4.8 1.4-5.7 .6-6.2-.6-3.8-1-5.2-2.3-4.8-3.4-2.9-2.8 3.9 .8 5.2-.7 6.2-2.5 5.7-3.3 6.7-5.1 6.2-5.9 5.1-6.2 3.5-5.7-1.1-2.8-2.4-2.4-3.2-1.7-11.5-4.1-2.7-1.8-1.6-2.4-.2-2.4 .8-2.9 7.8-8 4.9-7.7 1.6-5.2z", light: "M35.9 5.4l3.2-.2 1.3 .7 .5 1-.5 3.3-2.9 4.8-4.1 4.1-4.8 3.3-4.2 1.5-1.5 0-1.4-.6-.7-1.2 .2-2.4 1.9-3.8 2.4-3.3 4.3-3.9z", eyes: [[50.9, 31.5, 8.7, 20.5, -11.9], [64.2, 26.5, 5.7, 20.3, -16.3]] },
+  saucer: { body: "M45 22.7l6.7 .1 6.7 1.9 4.3 2.5 3.5 3.1 2.8 3.5 2.5 4.5 6.8 .9 5.6 1.2 4.5 1.6 3.5 2.1 2.8 2.8 1.3 3.5-.5 3.5-2 3.5-2.6 2.8-3.5 2.8-4.5 2.8-5.1 2.6-12 4.4-13.6 3.1-13.6 1.5-12.6-.3-5.5-.7-5-1.2-4.1-1.6-3.5-2-2.8-3.1-1.1-3 .5-3.5 2-3.6 2.7-3 3.7-2.9 10.3-5.6 .7-5.1 1.5-4.5 2.6-4.5 3.1-3.5 3-2.4 3.5-2 3.5-1.4z", shade: "M66.5 31.3l.3-.2 .6 .7 1.9 2.5 2 4.5 1.6 1.5 .1 1.5-1.7 1.7-3 1.2-3.1 .5-3.1-.3 4-8.1 .7-3.5zM94.9 47.4l1.1 3-.5 3.5-2.1 3.5-4 4.1-5 3.5-6.1 3.1-7 2.9-6.6 2.1-8 2-9.1 1.5-6.5 .6-11.6 0-4.5-.2-8-1.4-4.6-1.5-3.6-2.1 4.1 1.2 5.1 .8 7 .3 6-.2 15.1-1.9 15.6-3.6 14.5-5.1 5.4-2.5 5.3-3.1 4-3 2.3-2.5 1.2-2.1zM7.3 71l.7 .5z", light: "M40.6 23.7l2.8 0 .8 .5 .7 1.5-.8 3.6-2.6 4-3.9 4-4.5 3.2-4.6 1.7-2.5-.4-1-1.4 0-1.6 .9-2.5 2.1-3.5 2.6-3 3-2.6 3.5-2.1zM22.4 47.4l.7 0-.5 .5 0 1.5 .4 .8 2 1.4 3 1.2 9.1 2 15.1 1.1-.2 1.5-2.2 3.6-3 2.5-4.9 2.5-6 2-7.9 1.5-6.5 .5-7.1-.4-4.9-1.1-3-1.5-1.6-1.7-.6-2.3 1.1-3.1 2.9-3.5 4.1-3.5 4.1-2.6z", eyes: [[53.6, 45, 7.8, 18.4, -14.5], [66.2, 40.3, 5, 18.3, -25.1]] },
+  bunny: { body: "M49.3 4.4l1.5-.4 2 1.2 1.6 2.7 1.2 3.4 1.6 8.9 .2 6-.2 6.4 .6 3 2.4 2.5 5.4 3 3.4 2.4 5.1 5.5 2.4 3.9 1.7 4 1.1 4.4 .4 4.5-.5 5.9-1.6 5.5-2.8 5.4-3.6 4.5-4.6 3.8-4.9 2.7-5.5 1.7-5.9 .7-6-.5-5.4-1.7-4.9-2.5-4.7-3.7-3.8-4.5-2.7-4.9-1.8-5.5-.7-5.9 .6-6.5 1.9-5.9 3.1-5.4 4.6-5.5-.4-2-3.4-8.4-1.8-6.9-.6-6.9 .3-3 .6-2 1.3-1.4 2-.1 2.5 1.5 2.1 2.5 4 6.9 2.1 5.5 1.7 5.9 1.5 2.1 1.8-1.6 .7-2-.4-12.4 1-8.9 1.6-4.9z", shade: "M52.7 5.4l2.1 3.5 1.9 7.4 .7 7.9-.5 8.4 .8 3.6-4.4-2.5-2.1-2.6 1.4-17.3zM31.2 15.3l.3-.5 2 2.5 2.9 4.9 2.5 6 1.7 6.4 1.4 2.5 0 .5-1.1 .9-4.5 1.9-2.4 .2-1.2-.6zM71.5 46l3.6 4.4 2.9 6 1.5 6.4 .1 5.5-1.1 6.3-2 5-3.4 5.4-3.5 3.6-4 2.9-6.4 3-4 1-6.9 .5-5.9-1-5.5-2-5.4-3.5-3.6-3.4 2.6 .7 2.5 .1 2.9-.5 4-1.3 8.4-4.6 8.7-6.8 7.4-7.9 5.3-7.9 1.3-3 1-3.5 .2-2.9-.2-2z", light: "M49.3 4.4l.6 0-3.6 6.2 1-3.7zM26 13.3l.5-.4 .2 .4-1.7 2.2 0-.7zM44.8 34.6l.5-.1 1.2 1.1 .8 1 0 .7-.5 .3-4-.5zM45.1 42.5l.8 0-.3 1-2.4 4.5-3.8 4.4-4.1 3.5-3.8 2.4-4 1.6-2.9 .1-1.8-1.1-.4-2.5 1.1-3.5 3.5-5.4 3-3.1 .2 1.6 .8 .8 3 .1 4.4-1.2z", eyes: [[59.2, 69.2, 8.2, 19.3, -12], [72.9, 64, 5.6, 19.1, -15.4]] },
+  kitty: { body: "M62.4 4.2l1.6-.1 1.5 1.2 7.4 21.3 3.7 6.4 6.2 7.4 3.1 5.9 1.5 4.8 .7 5.3-.2 5.4-1.1 5.3-3 7.4-4.4 6.4-5.3 5.4-6.9 4.6-7.5 3.1-8 1.7-8 .2-7.4-1.4-4.3-1.5-3.7-1.8-3.8-2.5-3.1-2.7-2.7-3-2.5-3.7-1.9-3.7-1.4-4.3-.9-5.3 .1-5.8 1.4-7 1.6-4.2 2-3.8 .8-3.2 .2-20.2 1.1-1.4 1.1-.3 1.1 .3 12.2 9.7 5.9-2.5 8-2.1 3.2-1.8 2.3-2.4 8.3-16z", shade: "M64.9 5.8l.1-.3 .7 .3 6.5 19.7 3.1 5.9 2.5 3.2-1.6-.8-2.6-2.4-5.1-8zM79.4 36.7l2.2 2.1 1.6 2.2 3.3 6.9 1.5 6.9-.1 6.4-1.6 7.5-3.1 6.9-3.8 5.3-5.3 5.4-6.4 4.3-7 3.1-6.3 1.6-4.3 .6-5.3 0-7.5-1.1-5.8-2-5.9-3.3-5.9-5.4 2.7 .7 3.2-.1 3.7-.8 5.2-1.9 10.3-5.5 11-7.8 10.7-9.6 7.8-9.1 3-4.6 1.6-3.4 .7-3.2z", light: "M62.4 4.2l.5-.1 0 .6-.8 1.1-4.5 14.4 .2 2.7-.3 1.6-1.1 1-2 .6-6.9-.5 2.6-1.3 3.1-3 8.1-16zM18.7 20.7l1.1-.5 0 .8-1.1 .9-.6-.1zM39.5 27.7l2.6-.3 1.9 .8 .4 1.6-.7 1.8-4.2-1.5-5.4 .2 0-.5zM16 47.4l.3 4.2 1.6 2.2 3 2.1-.6 .5-3.7 .6-1.1-.3-1.1-1.1-.4-1.8 .4-2.7z", eyes: [[59.6, 65.1, 9.4, 22.6, -11.9], [77.5, 58.4, 7, 22.5, -14]] },
+  beacon: { body: "M40 4.1l2.7 0 2.5 .9 2 1.7 1.1 2.1 .5 2-.2 2.1-2.1 4.1-.4 1.6 1.5 7.7 9-3.1 4.1-.2 18.5 4 3.1 1.6 2.4 2.3 1.3 2.1 .9 2.6 5.8 33.4-.4 3.1-1.3 3.1-2 2.5-2.6 1.9-41.7 15.7-4.1 .7-19.6-4-3.5-1.9-2.5-2.5-1.2-2.1-.8-2.6-5.7-32.9 .4-3.1 1-2.7 1.7-2.5 2.4-1.9 28.4-10.9-1.5-9.3-.7-1-3.5-3.3-.9-1.9-.4-2 .5-2.6 1.1-2.1 1.7-1.5z", shade: "M47.1 7.2l.4 0 .8 1.6 .3 2-.2 2.6-2.5 4.7 1.5 8.2 0 2 .5 .6 .1 1.5 .5 1-1.2 .4-1.3-.4-.3-.5-1.9-10.3-4.1-1.5-3.2-2.6 3.1-.9 3.2-2.2 2.5-2.6zM84.2 30.9l1.2 1.1 1.5 3.6 5.7 32.4 0 2.6-1 3.6-1 1.5-3.1 3.2-4.2 1.9-40.6 15-4.2 0-16.4-3.6-3.6-1.4-2.6-2.2 .5 .4 17.5 3.4 3.8-1.2 5-3.4 1-1.3-5.4-30.3 .2-.6 3.1-3.4 40.2-15.1 2-3.6z", light: "M38.5 4.7l2 0-.1 1-.8 1.4-2.6 2.2-1 .4-1.1-.1-.1-.8 .7-1.6 1.5-1.6zM55 23.7l1.1 .1-1.6 .6-.9-.2 .9 0zM52.4 24.7l1 0-3 1.2-.9-.1 2.4-.6zM48.3 26.3l1 0-1.5 .6zM40 29.4l1.1 0-3.1 1.2-.9-.2 2.5-.5zM35.9 30.9l1 0-3 1.2-.9-.1 2.5-.6zM31.8 32.5l1 0-3 1.2-.9-.2 2.4-.5zM40.2 33l.4-.4 1-.1 1.6 .8 3 .7-1.5 .5-4.1 0-.9-1zM27.7 34l1 0-3 1.2-1-.2 2.5-.5zM23.6 35.6l1 0-3 1.1-1-.1 2.5-.5zM19.4 37.1l1 0-2.4 .8-.5 .7 15.4 3.3 .5 .3 .3 1.1-1.1 2.6-3.3 3.3-3.1 1.5-17.5-3.6-.6-1.2 .5-1.6 3.2-3.7 2.1-1.4 2.5-1.1 1 0 .6-.5 1 0z", eyes: [[55.5, 65.3, 8.4, 22.1, -10], [74.2, 58.3, 8.4, 22.1, -10]] },
+  plus: { body: "M44.6 4.3l3.3-.1 11.9 2.5 2.5 1.3 1.3 1.4 .7 1.6 2.1 11.4 4.1-1.2 2.1 0 12.3 2.6 2.8 1.6 1.2 1.5 .7 1.5 3.8 21.6-.5 3.1-1 1.5-1.3 1.3-17 6.6 3.4 20.4-.4 2.5-1.2 2.1-2.3 1.6-19 6.9-2-.2-11.9-2.5-2.5-1.3-1.3-1.4-.7-1.6-2.1-11.4-4.1 1.2-2.1 0-12.3-2.6-2.8-1.6-1.2-1.5-.7-1.5-3.8-21.6 .5-3.1 1-1.5 1.3-1.3 17-6.6-3.4-20.4 .2-2 1.1-2.2 2.6-2z", shade: "M63.2 9.4l.7 .6 .5 1.5 2.1 13.3 .6 .6 0 2.5 .5 .5 .1 2.6 .5 .5 .1 2.1-.8 3.1 19-7.1 1-1.2 1-2.1 1.1 2.1 .4 2.6 3.2 18 0 3.1-1 2-2.2 2.1-15.9 5.8-.8 .8 3.6 19.5-.1 2.6-1.5 2.6-2.2 1.6-16.4 6.1-2.1 .6-2.5 0-12.4-2.7-2.2-1.5 12.5 2.5 2.4-1 2.7-2-3.9-22.1-3.8 3.5-1 .4-2.6 .5-1.5 1-2.6 .5-1.5 1-2.6 .4-1.5 1-4.6 1.5-2.5 0-11.9-2.6-2.7-1.6 12.4 2.3 2.6-.9 2.4-1.9-3.4-20.5 .3-.5 1.7-1.8 18.6-6.9 .3-.6-.7-1-3.8-22.1 2.1-2.1 16.4-6.1 .6-.5z", light: "M28.4 10.5l1.1 .5 10.2 2.1 .5 .4-.1 1.1-1.9 2.3-2.1 1-12.3-2.5-.1-1.3 1-1.6 1.2-1zM11.4 43.3l11.4 2.2 1 .6 0 .8-1.5 2.3-2.6 1.4-12.3-2.6-.2-1.1 .6-1 2.2-2.1z", eyes: [[54.5, 53.1, 6.1, 15.9, -10], [64.5, 49.4, 6.1, 15.9, -10]] },
+  magnet: { body: "M71.9 4.2l1.2-.2 12.1 2.6 .5 .3 .6 1 6.2 35.6 .6 5.8-.1 5.7-.7 5.8-1.5 5.7-2.2 5.8-4.2 7.3-5.5 6.5-6.5 5-7.1 3.4-6.3 1.3-6.3 0-15.2-3.1-5.2-1.8-5.2-3-4.6-4.1-4-5.2-2.9-5.8-2.4-7.8-6.4-36.2 25-9.5 13.1 2.9 .5 .9 6.3 35.3 1.8-3.9 .5-4.7-6.3-36.1 .4-.6z", shade: "M86.2 9.5l.5 1 5.8 33 .6 4.7 0 5.2-.6 5.8-2.1 8.4-3.1 7.3-3.7 5.8-6.3 6.8-5.7 4.1-5.8 2.7-6.8 1.5-6.3 0-15.2-3.1-5.7-2-5.2-3.2-5.9-5.8 .1-.7 11.5 2.5 .3-3.4-1.9-13.6-5.7-32.4 1-.1 18.3-6.9 .9-.9 .4-1 6.1 35 1.6 2.1 .1 .6 4 4.7 3.2 1.1 3.6-.6 3.2-1.9 2.4-2.8 1.9-4.2 .6-3.7-6.4-36.6 19.3-7.1 .8-.8z", light: "M53.6 54.5l.7-.4 12 2.8 .6 1.8-.6 2.1-2.1 2.4-2.6 1-1.5 0-6.3-1.4-1.6-2.6-.2-2.1z", eyes: [[59.6, 82.1, 6.1, 15.9, -10], [72, 77.5, 6.1, 15.9, -10]] },
+  acorn: { body: "M47.6 4l2.1 .6 1.3 1.5 .4 1.5-.4 5.2 .3 .3 8.8-.1 7.7 1 7.3 2.1 5.7 2.9 3.6 2.9 2.6 3 1.8 3.4 .9 3.7 0 4.1-1 3.6-1.7 2.2-3.9 3 2.9 8.3 .9 8.3-.9 8.3-2.7 7.7-4.2 6.8-2.9 3.1-3.2 2.6-6.7 3.8-3.7 1.2-4.1 .8-7.2 0-7.3-1.7-7-3.6-5.9-5.1-4.8-6.3-3.3-7.3-1.8-7.7-.1-8.3-4.5-1.5-2.6-1.7-2.6-4.1-1.1-4.1 0-4.2 1.2-4.1 2.2-4.1 2.8-3.7 5.2-4.6 6.3-3.8 7.2-3.2 8.3-2.3 .9-8.3 1.2-1.4z", shade: "M50.6 6.1l.1-.5 .6 2-.6 5.7 .2 2.1-1.2 .2-1.2-.7 .5-6.8zM85.8 23.7l1.7 2 1.6 3.7 .6 2.6-.1 4.1-.5 2.6-1.1 2.1-2.1 2-2.9 2.1 1.4 3.1 1.6 5.2 .9 8.8-.5 5.7-1.4 5.7-2.2 5.1-2.6 4.2-5.1 5.7-5.2 3.6-4.7 2.2-6.2 1.5-7.7 .1-5.7-1.2-6.8-3-4.6-3.2-4.2-4.2 2.1 1 2.1 .3 3.1-.3 3.1-.9 6.4-3.1 6.5-4.6 6.6-5.8 5.9-6.4 5.6-7.9 4-7.4-2.4 .4-.5 .5-1.1 0-.5 .5-1 0-.5 .5-1.1 0-.5 .5-1 0-.5 .6-1.6-.1-.5 .5-1.6 0-.5 .5-3.6 .5-.5 .5-2.1-.1-.5 .6-2.1-.1-.5 .7-3.1-.2-.5 .5-3.1 0-.5 .7-4.7-.2-.5 .7-15.6-.3 0-.3 8.3-.6 11.4-2.4 11.4-3.8 10.5-4.8 9.2-5.7 6-5.2 2.2-2.6 1.6-2.9 .5-1.7z", light: "M46 4.5l1.1-.1 0 .6-1.5 1.6-1.1 .2-.1-.7zM38.5 15.9l5 0 3.3 1.6 1.6 3.1 .1 3.1-.9 3.1-1.9 3.1-3.2 3.6-4 3.1-3.6 2.1-8.5 3.2-4.1 .7-4.2 .1-3.1-.5-2.6-1.5-1.1-2 .1-2.1 .5-1.5 2.1-3.7 4.1-4.6 3.7-3.1 5.1-3.2 6.3-3z", eyes: [[63.6, 63.3, 9.6, 22.7, -11.9], [79.5, 57.3, 6.5, 22.5, -15.5]] },
+  pebbles: { body: "M47.3 4.5l2.7-.4 2.7 .1 13.7 3 4.3 2.1 3.3 3.4 1.3 2.2 1 2.8 2 12-.5 4.3-3.1 7.7 .2 .5 8.4 1.9 2.7 1 3.3 2.1 2.7 2.8 2.4 4.3 1.4 6.5 .1 4.4-.8 3.8-1.3 2.7-2 2.8-2.4 2.2-2.7 1.6-45.5 17-3.3 .6-3.2-.2-19.2-4.2-4.9-2.8-3.4-3.8-1.9-4.4-1.3-7.7 .2-3.2 .8-2.8 1.3-2.7 2-2.7 3.2-2.8 7.9-3.8 2.5-2.2-.4-1.6-5.4-6.1-1.8-3.8-2.3-12.5 .2-3.3 .7-2.7 2.6-4.4 2.2-2 2.2-1.4z", shade: "M73.2 12.2l.4 0 1.5 2.2 1.2 3.3 1.8 11.4-.2 4.4-3.3 7.6 0 1.1 .6 1.1-1.2 1.3-26.8 10.1-3.2 .5-5.8-.4-15.2-3.3-1.4-.5-3.5-3.8 .2-.3 1.6 .2 10.9 2.2 2.8-.5 4.4-2.2 5-3.8 .1-.6-1.5-8.7 4-4.5 24.2-9.2 2.4-3.8zM90.9 48.8l2.8 3.8 1 2.8 1.2 6 0 4.3-1.1 3.9-1.7 3.2-3.8 3.9-2.7 1.7-42.1 15.8-5.5 1.6-3.8 0-18-3.8-4.9-2.1-3.4-2.9 17.6 3.8 2.7-.2 3.3-1.2 4.3-2.6 4.4-3.6-.4-3.8 4.4-4.9 42.5-16 2.1-3.1 1.1-2.8 .5-3.3z", light: "M45.6 5.1l1.5 0-.4 .2-22.9 8.5 11.4 2.5 .6 .8 0 1.6-1.5 2.8-1.9 2.2-2.8 2.1-3.1 1.2-13.2-2.8-.1-2.2 1.2-2.2 1.7-2.2 2.7-2.2 2.2-1.1 2.2-.5 .5-.5 2.8-.6 1.6-1.1 2.7-.5 1.7-1.1 2.7-.6 1.6-1 2.8-.6 1.6-1.1 2.8-.5zM21.6 53.2l15.8 3.6 1.2 .7-.1 .9-.8 .8-3.1 1.6-1.3 3.8-3 3.8-3.3 2.5-3.3 1.4-18-3.6-.6-1.3 .6-2.2 1.6-2.7 1.7-1.8 3.8-2.8 5.5-2.2z", eyes: [[51.2, 34.1, 6.9, 18.1, -10], [66.4, 28.4, 6.9, 18.1, -10]] },
+  cushion: { body: "M64.2 4.4l3.3-.4 2.8 .2 3.9 .8 2.8 1.1 2.7 1.7 2.4 2.1 1.9 2.4 1.5 2.8 1.2 3.9 7.1 40.6-.1 5-1.4 4.5-1.6 2.9-1.9 2.2-2.2 1.9-2.8 1.7-45.6 17.1-3.4 .9-3.4 .2-4.5-.7-3.4-1.2-3.3-2-2.9-2.7-2.3-3.4-1.5-3.9-7.3-41.7 .1-5 1.4-4.5 1.6-2.9 1.9-2.2 2.2-1.9 2.8-1.7z", shade: "M82.1 10l2.9 4 1.6 4.5 7.3 42.2-.5 5.1-1.1 3.3-1.7 2.9-4.6 4.5-3.3 1.7-46.8 17.4-5.6 .2-4-.7-3.3-1.2-3.4-2.2-1.7-1.8 .6 .4 3.3 .2 4.5-1.2 5.1-2.8 5.3-4.4-6.9-39.4 5-5.7 43.9-16.4 2.3-3.6 1.1-2.8 .5-3.6z", light: "M62.3 4.9l1.8 .1-43.4 16.1 1.1 .4 .8 .9 .1 1.7-1.6 3.4-2.6 3-3.4 2.7-3.4 1.5-3.4-.2-.8-.8-.2-1.2 .4-1.6 1.7-2.9 3.4-3.5 2.3-1.6 3.4-1.6 5.6-1.8 .6-.5 1.1 0 .5-.6 2.3-.5 .6-.6 1.1 0 .6-.6 2.2-.5 .6-.6 1.1 0 .6-.6 2.2-.5 .6-.6 1.1 0 .6-.5 2.2-.6 .6-.6 1.1 0 .6-.5 2.2-.6 .6-.5 1.1-.1 .6-.5 2.2-.6 .6-.5 1.1-.1 .6-.5 2.2-.6 .6-.5 1.1 0 .6-.6 2.2-.6 .6-.5 1.1 0z", eyes: [[51.1, 57.2, 8.4, 22.1, -10], [69.9, 50.1, 8.4, 22.1, -10]] },
+  ring: { body: "M48.1 4.3l8-.1 7.8 1.8 7.3 3.5 6.7 5.4 5.2 6.7 4.1 8.3 2.3 8.9 .7 9-1 9.5-2.5 8.9-4.1 8.3-5.3 7.3-6.6 6.1-7.3 4.5-7.8 2.7-8.4 .9-7.2-.8-7.3-2.5-6.7-4.1-5.6-5.3-4.5-6.5-3.5-7.8-2-8.4-.6-8.4 .9-8.9 2.2-8.4 3.5-7.8 4.9-7.2 5.8-6.1 6.3-4.5 7.1-3.3zM50.5 33.8l2.3-.3 1.7 .4 1.6 1.1 2 2.2 1.3 2.8 .8 2.7 .4 3.4-.1 3.3-1.4 6.2-3 5.6-2.2 2.4-2.2 1.6-2.3 1-2.2 .3-1.7-.4-1.6-1.1-2.8-3.7-1.5-5.2-.1-5.5 1.2-5.6 2.4-5 3.6-4z", shade: "M76.2 14.9l1.1-.5 3.4 3.8 2.8 3.9 2.3 4.5 1.6 3.9 1.6 5.6 1.1 8.3-.4 10.1-1.3 6.1-2.6 7.8-4.6 8.3-4.4 5.6-6.2 5.7-6.1 3.8-7.2 2.9-6.2 1.1-7.8-.1-7.2-1.7-3.9-1.6-4-2.2-5.5-4.5-2.8-3.4 1.7-.6 2.4-2.1 2-2.8 1.2-2.8 1.2-5 1.1-13.4 1.4-7.8 2.5-7.8 3.8-7.3 3.3-4.5 3.4-3.4 3.9-3.1 4.4-2.6 3.9-1.5 4.5-1.1 12.3-.9zM50.5 33.8l.6-.3 2.8 0 1.6 .9 2.7 2.8 3 1.4 3.3 .5 6.1 .2 3.9 .9 1.7 1 1.7 1.6 2.1 4.4 .7 4.5-.3 5-1.2 5-1.9 4.5-2.8 4.2-3.3 3.6-3.9 2.8-3.9 1.7-3.4 .6-3.3-.1-3.4-1.1-2.5-1.7-2.5-3-3.6-7-2.9-3.4-2.1-5-.6-5.6 .6-4.4 1-3.4 2.3-4.4 1.4-2.1 2.3-2.2 2.7-1.7z", light: "M41.1 5.9l.5 .1 .2 .5-.3 .6-12.4 13.3-13.1 18.1-2.3 2.1-1.1 0-.2-1.2 .2-2.8 1.6-5 4.6-8.3 3.9-5.1 4.4-4.4 4.5-3.4 5-2.8zM60.5 53.3l1.2-.3 1.1 .6 1.1 1.3 .8 1.8-.2 3.3-1.5 2.8-2 1.7-2.6 1-7.3 .2 2.2-1.4 2.6-2.6z", eyes: [[56.2, 84.6, 5.3, 13.3, -6.8], [71.7, 78.8, 5.1, 13.4, -6.5]] },
+  gem: { body: "M57 9.3l2.9-.4 14.9 3.5 19.6 14.1 1 1.4 .6 1.6-.5 2.6-27.1 56.5-1.6 1.8-2.1 .7-15.9-3.4-42.9-30.7-1.3-1.6-.6-1.6 .5-2.6 12-25.2 1.1-1.5 1.5-1z", shade: "M75.7 14.6l.1-.4 .6 .2 16.9 12.3 1.1 .7 .5-.2 .5 .7 .6 2.6-.5 1.6-26.4 55.1-1.2 2.1-1.1 1.1-1.6 .6-2.1 0-14.3-3.3-42.8-30.7 1.5-.2 11.6 2.5 2.2-.7 2.8-2.6 11.9-24.9 .6-.8 38.2-14.2z", light: "M19.1 23.6l1.1-.4 .5 .5 11.7 2.2 1 .9-.2 .5-1.8 2.7-11.7 24.4-1.6 .6-13.3-2.8-.5-.5 12.1-25.4 1.2-1.7z", eyes: [[51.4, 42.9, 6.7, 17.7, -10], [66.1, 37.4, 6.7, 17.7, -10]] }
+};
+var PICKER_SHAPES = Object.keys(CHARACTERS);
+var PICKER_COLUMNS = 6;
+var DEFAULT_SHAPES = ["star", "moon", "gumdrop", "peanut", "bunny", "kitty", "acorn"];
+var FALLBACK_SHAPE = "gumdrop";
+var MAIN_LOOK = Object.freeze({ shape: "whale", color: "deepseek" });
+var CHARACTER_COLORS = ["black", "brown", "red", "orange", "yellow", "green", "cyan", "blue", "violet", "magenta", "gray", "aurora"];
+var DEFAULT_COLORS = CHARACTER_COLORS.filter((color) => !["black", "gray", "brown"].includes(color) && !GRADIENTS[color]);
+var isColor = (color) => isHex(color) || Object.hasOwn(INKS, color);
+function fnv1a(text) {
+  let value = 2166136261;
+  for (let index = 0; index < text.length; index += 1) value = Math.imul(value ^ text.charCodeAt(index), 16777619);
+  return value >>> 0;
+}
+function defaultColor(id) {
+  const t2 = fnv1a(id) + 1831565813 | 0;
+  let n = Math.imul(t2 ^ t2 >>> 15, 1 | t2);
+  n = n + Math.imul(n ^ n >>> 7, 61 | n) ^ n;
+  return DEFAULT_COLORS[Math.floor(((n ^ n >>> 14) >>> 0) / 4294967296 * DEFAULT_COLORS.length)];
+}
+function defaultShape(id) {
+  let value = fnv1a(id) | 0;
+  value = Math.imul(value ^ value >>> 16, 73244475);
+  value = Math.imul(value ^ value >>> 13, 3266489909);
+  return DEFAULT_SHAPES[((value ^ value >>> 16) >>> 0) % DEFAULT_SHAPES.length];
+}
+var colorOf = (bot) => isColor(bot?.color) ? bot.color : bot?.id ? defaultColor(String(bot.id)) : "black";
+function lookOf(bot) {
+  const avatar = bot?.avatar ?? {};
+  return {
+    shape: hasShape(avatar.shape) ? avatar.shape : bot?.id ? defaultShape(String(bot.id)) : FALLBACK_SHAPE,
+    image: avatar.image,
+    color: colorOf(bot)
+  };
+}
+var SHAPES = {};
+for (const [id, character] of Object.entries(CHARACTERS)) {
+  const layers = [
+    ...(character.paints ?? []).map(([d, fill2, opacity]) => `<path d="${d}" fill="${fill2}" fill-opacity="${opacity}"/>`),
+    `<path d="${character.shade}" fill="#000" fill-opacity=".14"/>`,
+    `<path d="${character.light}" fill="#fff" fill-opacity=".16"/>`
+  ].join("");
+  SHAPES[id] = { label: character.label ?? id[0].toUpperCase() + id.slice(1), size: 100, path: character.body, layers, eyes: character.eyes };
+}
+var hasShape = (id) => typeof id === "string" && Object.hasOwn(SHAPES, id);
+var shapeId = (id) => hasShape(id) ? id : FALLBACK_SHAPE;
+var shapeOf = (id) => SHAPES[shapeId(id)];
+function bodyOf(def, paint, flat = false) {
+  if (def.path) return `<g fill-rule="evenodd"><path d="${def.path}" fill="${paint}"/>${flat ? "" : def.layers}</g>`;
+  try {
+    return def.body(paint);
+  } catch {
+    return "";
+  }
+}
+var eyeMarkup = ([cx, cy, w, h29, tilt]) => `<g transform="translate(${cx} ${cy}) rotate(${tilt})"><rect class="bt-eye" x="${-w / 2}" y="${-h29 / 2}" width="${w}" height="${h29}" rx="${w / 2}"/></g>`;
+var happyEyeMarkup = ([cx, cy, w, h29, tilt]) => `<g transform="translate(${cx} ${cy}) rotate(${tilt})"><path class="bt-eye-happy" opacity="0" d="M${-w * 0.62} ${h29 * 0.14}Q0 ${-h29 * 0.42} ${w * 0.62} ${h29 * 0.14}" fill="none" stroke="#000" stroke-width="${w * 0.5}" stroke-linecap="round"/></g>`;
+var maskBox = (size) => `maskUnits="userSpaceOnUse" x="${-size}" y="${-size}" width="${size * 3}" height="${size * 3}"`;
+var holes = (def, eyes) => `<rect x="${-def.size}" y="${-def.size}" width="${def.size * 3}" height="${def.size * 3}" fill="#fff"/>${eyes}`;
+var MASK_ID = "%MASK%";
+var markSerial = 0;
+var nextMarkSerial = () => markSerial += 1;
+var markupCache = /* @__PURE__ */ new Map();
+function characterMarkup(shape, color) {
+  const key = `${shape}|${color}`;
+  let markup = markupCache.get(key);
+  if (markup === void 0) {
+    const def = shapeOf(shape);
+    const eyes = `<g class="bt-gaze"><g class="bt-eyes" fill="#000">${def.eyes.map(eyeMarkup).join("")}${def.eyes.map(happyEyeMarkup).join("")}</g></g>`;
+    const stops = GRADIENTS[color];
+    const gradient = stops ? `<linearGradient id="${MASK_ID}g" gradientUnits="userSpaceOnUse" x1="18" y1="10" x2="78" y2="92">${stops.map(([offset, value]) => `<stop offset="${offset}" stop-color="${value}"/>`).join("")}</linearGradient>` : "";
+    const body = `<g mask="url(#${MASK_ID})">${bodyOf(def, stops ? `url(#${MASK_ID}g)` : inkFill(color))}</g>`;
+    markup = `<defs>${gradient}<mask id="${MASK_ID}" ${maskBox(def.size)}>${holes(def, eyes)}</mask></defs><g class="bt-b">${def.wrap ? `<g transform="${def.wrap}">${body}</g>` : body}</g>`;
+    markupCache.set(key, markup);
+  }
+  return markup;
+}
+var svgUrl = (inner, size) => `url("data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size} ${size}">${inner}</svg>`)}")`;
+var maskCache = /* @__PURE__ */ new Map();
+function maskOf(shape) {
+  let mask = maskCache.get(shape);
+  if (mask === void 0) {
+    const def = shapeOf(shape);
+    const body = `<g mask="url(#e)">${bodyOf(def, "#000", true)}</g>`;
+    mask = svgUrl(`<mask id="e" ${maskBox(def.size)}>${holes(def, def.eyes.map(eyeMarkup).join("").replaceAll('class="bt-eye"', 'fill="#000"'))}</mask>${def.wrap ? `<g transform="${def.wrap}">${body}</g>` : body}`, def.size);
+    maskCache.set(shape, mask);
+  }
+  return mask;
+}
+var DEFAULT_MASK = maskOf(FALLBACK_SHAPE);
+
+// src/client/sources.js
+function createSource(initial) {
+  let value = initial;
+  const listeners2 = /* @__PURE__ */ new Set();
+  return {
+    getSnapshot: () => value,
+    subscribe: (listener) => {
+      listeners2.add(listener);
+      return () => {
+        listeners2.delete(listener);
+      };
+    },
+    set(next) {
+      const resolved = typeof next === "function" ? next(value) : next;
+      if (resolved === value) return;
+      value = resolved;
+      for (const listener of [...listeners2]) listener();
+    }
+  };
+}
+var EMPTY_ROSTER = { revision: -1, mainBotId: null, mainBotIds: [], bots: [], rooms: [], agents: [], exchangeTurns: {}, questions: {}, secrets: [], secretRequests: {}, models: [], defaultModel: null, modelsKey: null, prefs: {}, byId: {}, roomsById: {}, agentsById: {}, agentOf: {}, ready: false };
+var isMainOf = (roster, id) => id !== void 0 && (roster.mainBotIds ?? []).includes(id);
+function indexRoster(value) {
+  const byId = {};
+  for (const bot of value.bots) {
+    for (const id of [...bot.parts ?? [], bot.sessionId ?? bot.id, bot.id]) byId[id] = bot;
+  }
+  const roomsById = {};
+  for (const room2 of value.rooms) roomsById[room2.id] = room2;
+  const agentsById = {};
+  const agentOf = {};
+  for (const agent of value.agents ?? []) {
+    agentsById[agent.id] = agent;
+    for (const sessionId of agent.sessions ?? []) agentOf[sessionId] = agent.id;
+  }
+  return { ...value, agents: value.agents ?? [], byId, roomsById, agentsById, agentOf, ready: true };
+}
+function isAgentSession(roster, cache, sessionId) {
+  if (sessionId === void 0 || sessionId === null || sessionId === "") return false;
+  if (roster.ready) return roster.agentOf[sessionId] !== void 0;
+  return cache.has(sessionId);
+}
+
+// src/client/themes.js
+var THEME_KEYS = ["bg", "sidebar", "bubble", "card", "text", "user", "userText", "accent"];
+var THEMES = {
+  deepseek: {
+    label: "DeepSeek",
+    light: { bg: "#fcfcfc", sidebar: "#f7f7f7", bubble: "#eeeeee", card: "#ffffff", text: "#141414", user: "#070707", userText: "#fcfcfc", accent: "#4d6bfe" },
+    dark: { bg: "#141414", sidebar: "#1b1b1b", bubble: "#262626", card: "#1f1f1f", text: "#f2f2f2", user: "#f2f2f2", userText: "#141414", accent: "#5b7bff" }
+  },
+  mono: {
+    label: "Mono",
+    light: { bg: "#ffffff", sidebar: "#f9f9f9", bubble: "#f0f0f0", card: "#ffffff", text: "#0d0d0d", user: "#0d0d0d", userText: "#ffffff", accent: "#0d0d0d" },
+    dark: { bg: "#0f0f0f", sidebar: "#171717", bubble: "#242424", card: "#1c1c1c", text: "#f4f4f4", user: "#f4f4f4", userText: "#0f0f0f", accent: "#f4f4f4" }
+  },
+  paper: {
+    label: "Paper",
+    light: { bg: "#faf9f5", sidebar: "#f3f0e8", bubble: "#ebe7dc", card: "#ffffff", text: "#1f1e1b", user: "#2b2a26", userText: "#faf9f5", accent: "#d97757" },
+    dark: { bg: "#1f1e1b", sidebar: "#262521", bubble: "#34322d", card: "#2a2925", text: "#f3f0e8", user: "#f3f0e8", userText: "#1f1e1b", accent: "#e08a6d" }
+  },
+  moonlight: {
+    label: "Moonlight",
+    light: { bg: "#f7f9fc", sidebar: "#eef2f8", bubble: "#e5ebf5", card: "#ffffff", text: "#121826", user: "#1e3a8a", userText: "#ffffff", accent: "#1e86ff" },
+    dark: { bg: "#0b1020", sidebar: "#10172a", bubble: "#1a2340", card: "#141c33", text: "#e8edf7", user: "#3b6fd8", userText: "#ffffff", accent: "#4f9dff" }
+  }
+};
+var rgba = (hex, alpha) => `rgba(${[1, 3, 5].map((index) => parseInt(hex.slice(index, index + 2), 16)).join(",")},${alpha})`;
+function themeVars(mode, dark, accent = mode.accent) {
+  return {
+    "--bt-ink": mode.text,
+    "--bt-ink-2": rgba(mode.text, 0.6),
+    "--bt-ink-3": rgba(mode.text, 0.36),
+    "--bt-bubble": mode.bubble,
+    "--bt-sidebar": mode.sidebar,
+    "--bt-main": mode.bg,
+    "--bt-card": mode.card,
+    "--bt-line": rgba(mode.text, 0.08),
+    "--bt-line-2": rgba(mode.text, 0.15),
+    "--bt-hover": dark ? "rgba(160,160,160,.12)" : "rgba(119,119,119,.09)",
+    "--bt-active": dark ? "rgba(160,160,160,.2)" : "rgba(119,119,119,.17)",
+    "--bt-accent": accent,
+    "--bt-accent-ink": luminance(accent) > 0.45 ? "#141414" : "#ffffff",
+    "--bt-user": mode.user,
+    "--bt-user-ink": mode.userText,
+    "--bt-tag-bg": rgba(mode.text, dark ? 0.09 : 0.06),
+    "--bt-tag-ink": rgba(mode.text, 0.58)
+  };
+}
+var declarations = (vars) => Object.entries(vars).map(([name, value]) => `${name}:${value}`).join(";");
+var themeCss = (theme, accent) => `html body{${declarations(themeVars(theme.light, false, accent ?? theme.light.accent))}}
+html body[data-ds-dark-theme]{${declarations(themeVars(theme.dark, true, accent ?? theme.dark.accent))}}
+${theme.css ?? ""}`;
+var shellTokens = ({ light, dark }) => ({
+  "--dsw-alias-bg-base": { light: light.bg, dark: dark.bg },
+  "--dsw-specific-sidebar-fill": { light: light.sidebar, dark: dark.sidebar },
+  "--dsw-specific-input-major": { light: light.bg, dark: dark.sidebar },
+  "--dsw-alias-label-primary": { light: light.text, dark: dark.text },
+  "--dsw-alias-label-secondary": { light: rgba(light.text, 0.74), dark: rgba(dark.text, 0.74) },
+  "--dsw-alias-label-tertiary": { light: rgba(light.text, 0.6), dark: rgba(dark.text, 0.6) }
+});
+var conversationTokens = ({ light, dark }) => ({
+  "--dsw-specific-bubble": { light: light.user, dark: dark.user }
+});
+var customThemes = {};
+var registry = createSource(0);
+var isPoint = (point) => Array.isArray(point) && point.length === 2 && point.every(Number.isFinite);
+function registerShape(id, shape) {
+  if (typeof id !== "string" || !/^[a-z][\w-]{0,31}$/.test(id)) throw new Error("Shape ids are lowercase words");
+  if (typeof shape?.body !== "function" || typeof shape.body("#000") !== "string") throw new Error("A shape needs body(paint) returning SVG markup");
+  const at = shape.eyes?.at;
+  if (!Array.isArray(at) || at.length !== 2 || !at.every(isPoint)) throw new Error("A shape needs eyes.at: two [x, y] points");
+  const size = Number.isFinite(shape.size) && shape.size > 0 ? shape.size : 100;
+  const pick2 = (key, fallback) => Number.isFinite(shape.eyes[key]) ? shape.eyes[key] : fallback;
+  const eyes = at.map(([x, y]) => [x, y, pick2("w", size * 0.1), pick2("h", size * 0.23), pick2("tilt", -27)]);
+  const previous = SHAPES[id];
+  SHAPES[id] = {
+    label: String(shape.label ?? id),
+    size,
+    body: shape.body,
+    eyes,
+    ...typeof shape.wrap === "string" ? { wrap: shape.wrap } : {}
+  };
+  const refresh = () => {
+    markupCache.clear();
+    maskCache.delete(id);
+    registry.set((value) => value + 1);
+  };
+  refresh();
+  return () => {
+    if (previous) SHAPES[id] = previous;
+    else delete SHAPES[id];
+    refresh();
+  };
+}
+function registerTheme(id, theme) {
+  if (typeof id !== "string" || !/^[a-z][\w-]{0,31}$/.test(id)) throw new Error("Theme ids are lowercase words");
+  for (const mode of ["light", "dark"]) {
+    for (const key of THEME_KEYS) if (!isHex(theme?.[mode]?.[key])) throw new Error(`Theme ${mode}.${key} must be a #rrggbb color`);
+  }
+  const previous = customThemes[id];
+  customThemes[id] = { label: String(theme.label ?? id), light: theme.light, dark: theme.dark, css: typeof theme.css === "string" ? theme.css : "" };
+  registry.set((value) => value + 1);
+  return () => {
+    if (previous) customThemes[id] = previous;
+    else delete customThemes[id];
+    registry.set((value) => value + 1);
+  };
+}
+var allThemes = () => ({ ...THEMES, ...customThemes });
+
+// src/client/text.js
+var MENTION_ORIGIN = "https://bots.local/";
+var escapeRegExp = (text) => text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+function linkMentions(text, bots, selfId) {
+  if (!text || bots.length === 0 || text.includes("```") || !text.includes("@")) return text;
+  const names = bots.filter((bot) => bot.name).sort((a, b) => b.name.length - a.name.length);
+  if (!names.some((bot) => bot.id !== selfId)) return text;
+  const byName = new Map(names.map((bot) => [bot.name.toLowerCase(), bot]));
+  const pattern = new RegExp(`(\\[[^\\]]*\\]\\([^)]*\\)|\`[^\`]*\`)|(?<![A-Za-z0-9_.])@(${names.map((bot) => escapeRegExp(bot.name)).join("|")})(?![A-Za-z0-9_-])`, "gi");
+  return text.replace(pattern, (match, skip, name) => {
+    if (skip) return skip;
+    const bot = byName.get(name.toLowerCase());
+    return bot && bot.id !== selfId ? `[${name}](${MENTION_ORIGIN}${bot.id})` : match;
+  });
+}
+function mentionTarget(event) {
+  const anchor = event.target instanceof Element ? event.target.closest(`a[href^="${MENTION_ORIGIN}"]`) : null;
+  return anchor ? anchor.getAttribute("href").slice(MENTION_ORIGIN.length) : null;
+}
+function clock(ms) {
+  return new Date(ms).toLocaleTimeString(dateLocale(), { hour: "numeric", minute: "2-digit" });
+}
+function dayLabel(ms) {
+  const date = new Date(ms);
+  const today = /* @__PURE__ */ new Date();
+  const sameDay = date.toDateString() === today.toDateString();
+  return sameDay ? t("Today {time}", { time: clock(ms) }) : `${date.toLocaleDateString(dateLocale(), { weekday: "short", month: "short", day: "numeric" })} ${clock(ms)}`;
+}
+function relativeShort(ms) {
+  const diff = Math.max(0, Date.now() - ms);
+  if (diff < 6e4) return t("just now");
+  if (diff < 36e5) return t("{n} min", { n: Math.floor(diff / 6e4) });
+  if (diff < 864e5) return t("{n} h", { n: Math.floor(diff / 36e5) });
+  if (diff < 30 * 864e5) return t("{n} d", { n: Math.floor(diff / 864e5) });
+  return new Date(ms).toLocaleDateString(dateLocale(), { month: "short", day: "numeric" });
+}
+var contentText = (content) => (content ?? []).filter((block) => block?.type === "text").map((block) => block.text).join("\n");
+var HEADER = /^\[(Message from|Reply from|Group chat|Group post from|Bot team setup|Handoff · part|Secret card)[^\]]*\]\n?/;
+var currentPart = (bot) => bot.sessionId ?? bot.id;
+function reminderPrompts(text) {
+  const one = /^reminder_prompt_json: (.*)$/m.exec(text);
+  const batch = /^reminders_json: (.*)$/m.exec(text);
+  try {
+    const prompts = [...one ? [JSON.parse(one[1])] : [], ...batch ? JSON.parse(batch[1]).map((entry) => entry.reminder_prompt) : []];
+    return prompts.filter((prompt) => typeof prompt === "string" && prompt.trim() !== "");
+  } catch {
+    return [];
+  }
+}
+var stripHeader = (text) => text.replace(HEADER, "");
+function latestMemoryChange(news, ids) {
+  const at = (id) => news?.[id]?.seen ? news[id].at ?? 0 : 0;
+  return ids.reduce((best, id) => at(id) > at(best) ? id : best, ids[0] ?? null);
+}
+function summaryBlocks(text) {
+  const blocks = [];
+  let paragraph = [];
+  const flush = () => {
+    if (paragraph.length > 0) blocks.push({ kind: "p", text: paragraph.join(" ") });
+    paragraph = [];
+  };
+  for (const raw of String(text ?? "").split("\n")) {
+    const line = raw.trim().replace(/\*\*|__/g, "");
+    const heading = /^#{1,6}\s+(.+)$/.exec(line);
+    if (heading) {
+      flush();
+      blocks.push({ kind: "h", text: heading[1].trim() });
+    } else if (line === "") {
+      flush();
+    } else {
+      paragraph.push(line.replace(/^[-*•]\s+/, ""));
+    }
+  }
+  flush();
+  return blocks;
+}
+function isHiddenTurn(roster, sessionId, turn) {
+  if (sessionId === void 0 || turn === void 0) return false;
+  return (roster.exchangeTurns[sessionId] ?? []).includes(turn);
+}
+var toolName = (root) => root.name || root.call?.name;
+function toolArgs(root) {
+  if (typeof root.args?.text === "function") {
+    return { text: (key) => root.args.text(key) ?? void 0, value: (key) => typeof root.args.value === "function" ? root.args.value(key) : void 0 };
+  }
+  let parsed;
+  const object = () => {
+    if (parsed === void 0) {
+      try {
+        parsed = JSON.parse(root.argsRaw ?? root.call?.argsRaw ?? "");
+      } catch {
+        parsed = null;
+      }
+      if (typeof parsed !== "object" || Array.isArray(parsed)) parsed = null;
+    }
+    return parsed;
+  };
+  return {
+    text: (key) => {
+      const value = object()?.[key];
+      return typeof value === "string" ? value : void 0;
+    },
+    value: (key) => object()?.[key]
+  };
+}
+function commRunOf(order, peers, turn, hiddenTurns = []) {
+  const turns = [];
+  for (const entry of order) {
+    const peer = peers[entry];
+    const hidden = hiddenTurns.includes(entry);
+    if (hidden && peer === void 0) continue;
+    turns.push({ turn: entry, peer, hidden });
+  }
+  const at = turns.findIndex((entry) => entry.turn === turn);
+  if (at === -1 || turns[at].peer === void 0) return null;
+  const previous = turns[at - 1];
+  if (previous?.peer !== void 0 && previous.hidden) return "folded";
+  let count = 0;
+  const peerIds = [];
+  for (let index = at; index < turns.length; index += 1) {
+    const entry = turns[index];
+    if (entry.peer === void 0 || index > at && !turns[index - 1].hidden) break;
+    count += entry.hidden ? 2 : 1;
+    if (!peerIds.includes(entry.peer)) peerIds.push(entry.peer);
+  }
+  return { count, peerIds };
+}
+function previewOf(list, id, hiddenTurns = []) {
+  const outline = list.projectionsBySession?.[id]?.values?.turnOutline ?? list.byId[id]?.projectionValues?.turnOutline;
+  if (!Array.isArray(outline)) return "";
+  for (let index = outline.length - 1; index >= 0; index -= 1) {
+    const entry = outline[index];
+    if (hiddenTurns.includes(entry.turn)) continue;
+    const text = entry.response || entry.prompt || "";
+    if (text !== "") return stripHeader(text).replace(/\s+/g, " ").trim();
+  }
+  return "";
+}
+var formatTokens = (count) => count >= 1e6 ? `${(count / 1e6).toFixed(1)}M` : count >= 1e3 ? `${(count / 1e3).toFixed(1)}K` : String(count);
+function usageOf(list, ids) {
+  let input = 0;
+  let cacheRead = 0;
+  let output = 0;
+  for (const id of ids) {
+    const usage = list.projectionsBySession?.[id]?.values?.tokenUsage;
+    if (!usage) continue;
+    input += (usage.uncachedInputTokens ?? 0) + (usage.cacheReadTokens ?? 0) + (usage.cacheWriteTokens ?? 0);
+    cacheRead += usage.cacheReadTokens ?? 0;
+    output += usage.outputTokens ?? 0;
+  }
+  if (input + output === 0) return "";
+  const hit = input > 0 ? Math.round(cacheRead / input * 100) : 0;
+  return t("{tokens} tok · Cache hit {hit}%", { tokens: formatTokens(input + output), hit });
+}
+
+// src/client/motion.js
+var import_react = require("react");
+var reducedMotion = () => window.matchMedia?.("(prefers-reduced-motion: reduce)").matches === true;
+function springEasing(stiffness, damping) {
+  const w0 = Math.sqrt(stiffness);
+  const zeta = damping / (2 * w0);
+  const at = (t2) => {
+    if (zeta >= 1) return 1 - (1 + w0 * t2) * Math.exp(-w0 * t2);
+    const wd = w0 * Math.sqrt(1 - zeta * zeta);
+    return 1 - Math.exp(-zeta * w0 * t2) * (Math.cos(wd * t2) + zeta * w0 / wd * Math.sin(wd * t2));
+  };
+  let end = 0.05;
+  while (end < 2 && Math.abs(1 - at(end)) > 1e-3) end += 0.01;
+  const points = Array.from({ length: 25 }, (_, index) => (index === 24 ? 1 : at(end * index / 24)).toFixed(4));
+  return { duration: Math.round(end * 1e3), easing: `linear(${points.join(",")})`, stiffness, damping };
+}
+var SPRING_SHAPE = springEasing(400, 31.2);
+var SPRING_TAP = springEasing(900, 48);
+var SPRING_LIST = springEasing(484, 35.2);
+var SPRING_STRETCH = springEasing(320, 20);
+var SPRING_POP = springEasing(500, 22);
+var SPRING_LEAD = springEasing(784, 48.2);
+var SPRING_TRAIL = springEasing(289, 29.2);
+var QUICK_EDGES = { lead: springEasing(900, 51), trail: springEasing(400, 34) };
+var spring = (curve, ...properties) => properties.map((property) => `${property} ${curve.duration}ms ${curve.easing}`).join(",");
+function liveSprings(apply2) {
+  const values = /* @__PURE__ */ new Map();
+  let frame = 0;
+  let last = 0;
+  const read = () => Object.fromEntries([...values].map(([key, value]) => [key, value.x]));
+  const step = (now) => {
+    const dt = Math.min(0.5, Math.max(1e-3, (now - last) / 1e3));
+    last = now;
+    const steps = Math.ceil(dt * 240);
+    const h29 = dt / steps;
+    let moving = false;
+    for (const value of values.values()) {
+      for (let index = 0; index < steps; index += 1) {
+        value.v += (-value.k * (value.x - value.to) - value.c * value.v) * h29;
+        value.x += value.v * h29;
+      }
+      if (Math.abs(value.x - value.to) < 0.05 && Math.abs(value.v) < 1) {
+        value.x = value.to;
+        value.v = 0;
+      } else moving = true;
+    }
+    apply2(read());
+    frame = moving ? requestAnimationFrame(step) : 0;
+  };
+  return {
+    target: () => values.size ? Object.fromEntries([...values].map(([key, value]) => [key, value.to])) : null,
+    set(targets, curves, jump) {
+      for (const [key, to] of Object.entries(targets)) {
+        const value = values.get(key);
+        const { stiffness: k, damping: c } = curves[key];
+        if (!value || jump) values.set(key, { x: to, v: 0, to, k, c });
+        else Object.assign(value, { to, k, c });
+      }
+      if (jump) {
+        cancelAnimationFrame(frame);
+        frame = 0;
+        apply2(read());
+        return;
+      }
+      if (!frame) {
+        last = performance.now();
+        frame = requestAnimationFrame(step);
+      }
+    },
+    stop: () => cancelAnimationFrame(frame)
+  };
+}
+var CHOSEN = '[aria-pressed="true"],[aria-selected="true"],[aria-current="page"]';
+function useGlide(key, { axis = "x", selector = CHOSEN, lead = SPRING_LEAD, trail = SPRING_TRAIL, box: given } = {}) {
+  const ownBox = (0, import_react.useRef)(null);
+  const box = given ?? ownBox;
+  const thumb = (0, import_react.useRef)(null);
+  const own = (0, import_react.useRef)(null);
+  if (own.current === null) {
+    own.current = {
+      key: void 0,
+      node: null,
+      observer: null,
+      springs: liveSprings(({ start, end }) => {
+        const knob = thumb.current;
+        if (!knob) return;
+        knob.style.transform = axis === "x" ? `translateX(${start}px)` : `translateY(${start}px)`;
+        knob.style[axis === "x" ? "width" : "height"] = `${Math.max(0, end - start)}px`;
+      })
+    };
+  }
+  const place = (jump) => {
+    const container = box.current;
+    const knob = thumb.current;
+    if (!container || !knob) return;
+    const chosen = container.querySelector(selector);
+    if (!chosen) {
+      knob.dataset.hidden = "";
+      return;
+    }
+    const start = axis === "x" ? chosen.offsetLeft : chosen.offsetTop;
+    const end = start + (axis === "x" ? chosen.offsetWidth : chosen.offsetHeight);
+    const { springs } = own.current;
+    const before = springs.target();
+    const hidden = knob.dataset.hidden !== void 0;
+    if (jump && !hidden && before?.start === start && before?.end === end && container.dataset.glide !== void 0) return;
+    delete knob.dataset.hidden;
+    const forward = before === null || start >= before.start;
+    springs.set({ start, end }, forward ? { start: trail, end: lead } : { start: lead, end: trail }, jump || hidden || before === null || reducedMotion());
+    container.dataset.glide = "";
+  };
+  (0, import_react.useLayoutEffect)(() => {
+    const state = own.current;
+    const node = box.current;
+    if (node === state.node && key === state.key) return;
+    const fresh = node !== state.node;
+    state.key = key;
+    if (fresh) {
+      state.observer?.disconnect();
+      state.node = node;
+      state.observer = node && typeof ResizeObserver === "function" ? new ResizeObserver(() => place(true)) : null;
+      state.observer?.observe(node);
+    }
+    place(fresh);
+  });
+  (0, import_react.useEffect)(() => () => {
+    own.current.observer?.disconnect();
+    own.current.springs.stop();
+  }, []);
+  return { box, thumb };
+}
+function Segmented({ label, value, className, children }) {
+  const glide = useGlide(value);
+  return (0, import_react.createElement)(
+    "div",
+    { ref: glide.box, className: className ? `bt-seg ${className}` : "bt-seg", role: "group", "aria-label": label },
+    (0, import_react.createElement)("span", { ref: glide.thumb, className: "bt-thumb", "aria-hidden": true }),
+    children
+  );
+}
+function useFlip(list, key, selector, id = (node) => node.dataset.flip) {
+  const tops = (0, import_react.useRef)(null);
+  (0, import_react.useLayoutEffect)(() => {
+    const container = list.current;
+    if (!container) return;
+    const next = /* @__PURE__ */ new Map();
+    const moving = tops.current !== null && !reducedMotion();
+    for (const node of container.querySelectorAll(selector)) {
+      const name = id(node);
+      const top = node.offsetTop;
+      next.set(name, top);
+      if (!moving) continue;
+      const before = tops.current.get(name);
+      if (before === void 0) {
+        node.animate([{ opacity: 0, filter: "blur(4px)" }, { opacity: 1, filter: "blur(0)" }], { duration: 180, easing: "ease-out" });
+      } else if (Math.abs(before - top) > 0.5) {
+        node.animate([{ transform: `translateY(${before - top}px)` }, { transform: "none" }], { duration: SPRING_LIST.duration, easing: SPRING_LIST.easing });
+      }
+    }
+    tops.current = next;
+  }, [key]);
+}
+function useMorph(box, key) {
+  const last = (0, import_react.useRef)({ key, height: null });
+  (0, import_react.useLayoutEffect)(() => {
+    const node = box.current;
+    const state = last.current;
+    if (!node) {
+      last.current = { key, height: null };
+      return;
+    }
+    const running = node.getAnimations().filter((animation2) => animation2.id === "bt-morph");
+    if (key === state.key) {
+      if (running.length === 0) state.height = node.offsetHeight;
+      return;
+    }
+    const from = running.length ? node.offsetHeight : state.height;
+    for (const animation2 of running) animation2.cancel();
+    const to = node.offsetHeight;
+    last.current = { key, height: to };
+    if (from === null || Math.abs(from - to) < 1 || reducedMotion()) return;
+    node.dataset.morph = "";
+    const animation = node.animate([{ height: `${from}px` }, { height: `${to}px` }], { duration: SPRING_SHAPE.duration, easing: SPRING_SHAPE.easing, id: "bt-morph" });
+    animation.onfinish = () => {
+      delete node.dataset.morph;
+    };
+    animation.oncancel = () => {
+      if (!node.getAnimations().some((other) => other.id === "bt-morph" && other !== animation)) delete node.dataset.morph;
+    };
+  });
+}
+function useLinger(value, ms) {
+  const [kept, setKept] = (0, import_react.useState)(value);
+  (0, import_react.useEffect)(() => {
+    if (value) {
+      setKept(value);
+      return void 0;
+    }
+    const timer = setTimeout(() => setKept(value), reducedMotion() ? 0 : ms);
+    return () => clearTimeout(timer);
+  }, [value]);
+  return [value || kept, !value && Boolean(kept)];
+}
+
+// src/client/styles.js
+var SHELL_CSS = `
+body{--bt-ink:#141414;--bt-ink-2:rgba(20,20,20,.6);--bt-ink-3:rgba(20,20,20,.36);--bt-bubble:#eeeeee;--bt-sidebar:#f7f7f7;--bt-main:#fcfcfc;--bt-line:rgba(20,20,20,.08);--bt-line-2:rgba(20,20,20,.15);--bt-line-weak:rgba(20,20,20,.1);--bt-hover:rgba(119,119,119,.09);--bt-active:rgba(119,119,119,.17);--bt-card:#ffffff;--bt-accent:#4d6bfe;--bt-green:#00c972;--bt-star:#ff9800;--bt-user:#070707;--bt-user-ink:#fcfcfc;--bt-tag-bg:rgba(20,20,20,.06);--bt-tag-ink:rgba(20,20,20,.56)}
+body[data-ds-dark-theme]{--bt-ink:#f2f2f2;--bt-ink-2:rgba(242,242,242,.6);--bt-ink-3:rgba(242,242,242,.36);--bt-bubble:#262626;--bt-sidebar:#1b1b1b;--bt-main:#141414;--bt-line:rgba(255,255,255,.08);--bt-line-2:rgba(255,255,255,.15);--bt-line-weak:rgba(255,255,255,.1);--bt-hover:rgba(160,160,160,.12);--bt-active:rgba(160,160,160,.2);--bt-card:#1f1f1f;--bt-user:#f2f2f2;--bt-user-ink:#141414;--bt-tag-bg:rgba(255,255,255,.09);--bt-tag-ink:rgba(242,242,242,.62)}
+${Object.entries(INKS).map(([name, [light]]) => `body{--bt-ink-${name}:${light}}`).join("")}
+${Object.entries(INKS).map(([name, [, dark]]) => `body[data-ds-dark-theme]{--bt-ink-${name}:${dark}}`).join("")}
+.bt-mark{display:inline-block;flex:none;position:relative;line-height:0}
+.bt-mark svg{width:100%;height:100%;overflow:visible}
+.bt-mark-img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;box-shadow:inset 0 0 0 1px var(--bt-line)}
+.bt-mark .bt-b,.bt-mark .bt-eye,.bt-mark .bt-eyes,.bt-mark .bt-gaze{transform-box:fill-box}
+.bt-mark .bt-b{transform-origin:50% 100%}
+.bt-mark .bt-eye,.bt-mark .bt-eyes{transform-origin:center}
+/* Motion levels (Settings → Bots → Animation) set body[data-bt-motion]: quiet moves a
+   mark only for its state; normal, the default, adds petting, pokes and eyes that follow
+   the pointer; lively adds blinks and fidgets at rest and a question riding on the head. */
+body[data-bt-motion=lively] .bt-mark[data-live]:is([data-state=idle],[data-state=alert]) .bt-eye{animation:bt-blink-idle 5s linear infinite;animation-delay:var(--bt-delay,0s)}
+body[data-bt-motion=lively] .bt-mark[data-live][data-state=idle]:is([data-fidget=hop],[data-fidget=sway],[data-fidget=stretch]) :is(.bt-b,.bt-mark-img){animation:var(--bt-fidget) 9s ease-in-out var(--bt-fidget-delay,0s) infinite}
+body[data-bt-motion=lively] .bt-mark[data-live][data-state=idle][data-fidget=hop]{--bt-fidget:bt-fidget-hop}
+body[data-bt-motion=lively] .bt-mark[data-live][data-state=idle][data-fidget=sway]{--bt-fidget:bt-fidget-sway}
+body[data-bt-motion=lively] .bt-mark[data-live][data-state=idle][data-fidget=stretch]{--bt-fidget:bt-fidget-stretch}
+body[data-bt-motion=lively] .bt-mark[data-live][data-state=idle][data-fidget=look] .bt-eyes{animation:bt-fidget-look 9s ease-in-out var(--bt-fidget-delay,0s) infinite}
+@keyframes bt-fidget-hop{0%,8%,100%{transform:none}3%{transform:translateY(-10%) scale(.97,1.04)}5.5%{transform:translateY(0) scale(1.05,.95)}}
+@keyframes bt-fidget-sway{0%,10%,100%{transform:none}2.5%{transform:rotate(-8deg)}5%{transform:rotate(7deg)}7.5%{transform:rotate(-3deg)}}
+@keyframes bt-fidget-stretch{0%,9%,100%{transform:none}4%{transform:scale(.94,1.08)}7%{transform:scale(1.03,.97)}}
+@keyframes bt-fidget-look{0%,22%,100%{transform:none}3%,9%{transform:translateX(-14%)}12%,19%{transform:translateX(14%)}}
+body[data-bt-motion=lively] .bt-badge-alert{right:auto;bottom:auto;left:50%;top:calc(var(--bt-size,36px) * -.14);translate:-50% 0;animation:bt-q-ride 1.3s cubic-bezier(.3,.7,.4,1) infinite}
+body[data-bt-motion=lively] :is(.bt-row,.bt-tile)>.bt-mark:hover .bt-badge-alert{animation:none}
+@keyframes bt-q-ride{0%,55%,100%{transform:translateY(0)}20%{transform:translateY(calc(var(--bt-size,36px) * -.14))}40%{transform:translateY(0)}}
+/* Petting: with the pointer on a sidebar avatar or just around it (a ring a fifth of its
+   size wide), a resting mark leans into the pointer and keeps nuzzling it, its eyes
+   closed in a happy arc, and springs back when the pointer leaves. */
+:is(.bt-row,.bt-tile)>:is(.bt-mark,.bt-cluster)::before{content:'';position:absolute;inset:-20%;border-radius:50%}
+.bt-mark[data-live] .bt-b,.bt-mark[data-live] .bt-mark-img{transition:rotate .5s cubic-bezier(.34,1.56,.64,1),translate .5s cubic-bezier(.34,1.56,.64,1),scale .3s ease-out}
+.bt-mark[data-live] .bt-eye{transition:scale .14s ease-in}
+.bt-mark[data-live] .bt-eye-happy{transition:opacity .12s ease-out}
+body:not([data-bt-motion=quiet]) :is(.bt-row,.bt-tile)>:is(.bt-mark,.bt-cluster):hover .bt-mark[data-live]:is([data-state=idle],[data-state=alert]):not(.bt-mark-poke) :is(.bt-b,.bt-mark-img){rotate:8deg;translate:5% -1%;animation:bt-nuzzle .78s ease-in-out .32s infinite}
+body:not([data-bt-motion=quiet]) :is(.bt-row,.bt-tile)>:is(.bt-mark,.bt-cluster):hover .bt-mark[data-live]:is([data-state=idle],[data-state=alert]) .bt-eye{scale:1 0;animation:none}
+body:not([data-bt-motion=quiet]) :is(.bt-row,.bt-tile)>:is(.bt-mark,.bt-cluster):hover .bt-mark[data-live]:is([data-state=idle],[data-state=alert]) .bt-eye-happy{opacity:1;transition-delay:.1s}
+@keyframes bt-nuzzle{50%{rotate:14deg;translate:8% -3%;scale:1.03 .97}}
+.bt-mark[data-gaze] .bt-b{translate:calc(var(--bt-gx,0) * 5%) calc(var(--bt-gy,0) * 4%);transition:translate .18s ease-out}
+.bt-mark[data-gaze] .bt-gaze{transform:translate(calc(var(--bt-gx,0) * 12%),calc(var(--bt-gy,0) * 11%));transition:transform .18s ease-out}
+body[data-bt-motion=quiet] .bt-mark[data-gaze] .bt-b{translate:none}
+body[data-bt-motion=quiet] .bt-mark[data-gaze] .bt-gaze{transform:none}
+.bt-mark[data-state=thinking] .bt-b{animation:bt-ponder 2.2s ease-in-out infinite}
+.bt-mark[data-state=thinking] .bt-eyes{animation:bt-squint 2.2s ease-in-out infinite}
+.bt-mark[data-state=searching] .bt-b{animation:bt-seek 1s ease-in-out infinite}
+.bt-mark[data-state=searching] .bt-eyes{animation:bt-scan 1.6s ease-in-out infinite}
+.bt-mark[data-state=working] .bt-b{animation:bt-bob 1.6s ease-in-out infinite}
+.bt-mark[data-state=working]:is([data-shape=star],[data-shape=hex],[data-shape=plus],[data-shape=gem],[data-shape=magnet],[data-shape=ring]) .bt-b{animation:bt-wiggle 1.4s ease-in-out infinite;transform-origin:50% 50%}
+.bt-mark[data-state=working]:is([data-shape=gumdrop],[data-shape=peanut],[data-shape=cushion],[data-shape=squircle],[data-shape=moon],[data-shape=wave]) .bt-b{animation:bt-squash 1.2s ease-in-out infinite}
+.bt-mark[data-state=working] .bt-eye{animation:bt-blink 2.4s ease-in-out infinite}
+.bt-mark[data-state=sending] .bt-b{animation:bt-dash 1.1s cubic-bezier(.4,0,.2,1) infinite}
+.bt-mark[data-state=orbit] .bt-b{animation:bt-sway 2.6s ease-in-out infinite;transform-origin:50% 50%}
+.bt-mark[data-state=orbit] .bt-eyes{animation:bt-roll 2.6s linear infinite}
+/* A question for you hops twice when it arrives and the badge keeps it in view after;
+   a lively mark keeps hopping. */
+.bt-mark[data-state=alert] .bt-b{animation:bt-hop 1.3s cubic-bezier(.3,.7,.4,1) 2}
+.bt-mark[data-shape=image]:not([data-state=idle]) .bt-mark-img{animation:bt-bob 1.6s ease-in-out infinite}
+.bt-mark[data-shape=image][data-state=alert] .bt-mark-img{animation:bt-hop 1.3s cubic-bezier(.3,.7,.4,1) 2}
+body[data-bt-motion=lively] .bt-mark[data-state=alert] :is(.bt-b,.bt-mark-img){animation-iteration-count:infinite}
+.bt-mark[data-state=done] .bt-b{animation:bt-done 1.8s linear 1}
+.bt-mark[data-shape=image][data-state=done] .bt-mark-img{animation:bt-done 1.8s linear 1;transform-origin:50% 100%}
+@keyframes bt-done{0%{transform:none;animation-timing-function:cubic-bezier(.4,0,.2,1)}13.3%{transform:scale(1.12,.88);animation-timing-function:cubic-bezier(.4,0,.2,1)}25.6%{transform:scale(.93,1.09);animation-timing-function:cubic-bezier(.4,0,.2,1)}37.8%{transform:scale(1.04,.97);animation-timing-function:cubic-bezier(.4,0,.2,1)}51.1%,100%{transform:none}}
+.bt-mark-poke .bt-b{animation:bt-poke .8s cubic-bezier(.3,.7,.4,1) 1!important;transform-origin:50% 60%!important}
+.bt-mark-poke .bt-mark-img{animation:bt-poke-img .6s ease-out 1!important}
+.bt-mark[data-poke]{cursor:pointer}
+body[data-bt-motion=quiet] .bt-mark-poke :is(.bt-b,.bt-mark-img){animation:none!important}
+body[data-bt-motion=quiet] .bt-mark[data-poke]{cursor:default}
+@keyframes bt-bob{0%,100%{transform:translateY(0) rotate(0)}30%{transform:translateY(-4%) rotate(-5deg)}65%{transform:translateY(0) rotate(4deg)}}
+@keyframes bt-wiggle{0%,100%{transform:rotate(0) scale(1)}25%{transform:rotate(-12deg) scale(1.04)}75%{transform:rotate(12deg) scale(1.04)}}
+@keyframes bt-squash{0%,100%{transform:scale(1,1)}30%{transform:scale(1.08,.9)}55%{transform:translateY(-4%) scale(.94,1.08)}80%{transform:scale(1.02,.98)}}
+@keyframes bt-ponder{0%,100%{transform:translateY(0) rotate(4deg)}50%{transform:translateY(-3%) rotate(7deg)}}
+@keyframes bt-squint{0%,100%{transform:translate(0,-4%) scaleY(.7)}50%{transform:translate(5%,-5%) scaleY(.78)}}
+@keyframes bt-seek{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-5%) rotate(-1deg)}}
+@keyframes bt-scan{0%,100%{transform:translateX(-12%)}50%{transform:translateX(12%)}}
+@keyframes bt-dash{0%,100%{transform:translateX(0) rotate(0)}35%{transform:translateX(9%) rotate(7deg)}55%{transform:translateX(-2%) rotate(-3deg)}}
+@keyframes bt-sway{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(10deg)}}
+@keyframes bt-roll{0%,100%{transform:translate(12%,0)}25%{transform:translate(0,9%)}50%{transform:translate(-12%,0)}75%{transform:translate(0,-9%)}}
+@keyframes bt-hop{0%,55%,100%{transform:translateY(0) scale(1,1)}20%{transform:translateY(-14%) scale(.96,1.05)}40%{transform:translateY(0) scale(1.06,.94)}}
+@keyframes bt-poke{0%{transform:none}55%{transform:translateY(-16%) rotate(360deg)}78%{transform:translateY(0) scale(1.08,.92) rotate(360deg)}100%{transform:rotate(360deg)}}
+@keyframes bt-poke-img{0%,100%{transform:scale(1)}40%{transform:scale(1.14) rotate(-6deg)}}
+/* Idle clip: two .26s blinks (lid to 3%, then a 6% overshoot) at 1.48s and 3.46s. */
+@keyframes bt-blink-idle{0%,29.6%,35%,69.2%,74.6%,100%{transform:scaleY(1)}32.2%,71.8%{transform:scaleY(.03)}33.8%,73.4%{transform:scaleY(1.06)}}
+@keyframes bt-blink{0%,42%,50%,100%{transform:scaleY(1)}46%{transform:scaleY(.03)}48%{transform:scaleY(1.06)}}
+@media (prefers-reduced-motion:reduce){.bt-mark *{animation:none!important;transition:none!important}}
+.bt-badge{position:absolute;right:0;bottom:0;width:12px;height:12px;border-radius:50%;corner-shape:round;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 1.5px var(--bt-sidebar)}
+.bt-badge-admin{background:color-mix(in srgb,var(--bt-star) 82%,var(--bt-sidebar))}
+.bt-badge-admin svg{width:7px;height:7px}
+.bt-badge-main{right:calc(var(--bt-size,36px) * -.07);bottom:calc(var(--bt-size,36px) * -.07);width:clamp(14px,calc(var(--bt-size,36px) * .36),22px);height:clamp(14px,calc(var(--bt-size,36px) * .36),22px);border-radius:0;box-shadow:none}
+.bt-badge-main svg{width:100%;height:100%;overflow:visible}
+.bt-badge-main path{fill:var(--bt-star);stroke:var(--bt-sidebar);stroke-width:2.6;stroke-linejoin:round;paint-order:stroke}
+.bt-badge-alert{background:color-mix(in srgb,var(--bt-accent) 78%,var(--bt-sidebar));color:var(--bt-accent-ink,#fff);font-size:8.5px;line-height:12px;font-weight:600;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+.bt-badge-working{background:color-mix(in srgb,var(--bt-green) 82%,var(--bt-sidebar));width:8px;height:8px;right:1px;bottom:1px}
+.bt-cluster{position:relative;display:inline-block;flex:none;line-height:0}
+.bt-cluster>*{position:absolute}
+.bt-cluster-more,.bt-cluster-you{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:var(--bt-active);color:var(--bt-ink-3);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;font-weight:500;line-height:1;font-variant-numeric:tabular-nums}
+.bt-cluster-you{background:color-mix(in srgb,var(--bt-ink) 12%,transparent)}
+.bt-stack{display:inline-flex;align-items:center;flex:none;line-height:0}
+.bt-stack>*+*{margin-left:calc(var(--bt-stack-size) * -.3)}
+.bt-stack-more{font-size:11px;line-height:16px;color:var(--bt-ink-3);margin-left:3px!important}
+
+.bt-side{display:flex;flex-direction:column;min-height:0;flex:1 1 auto;gap:2px;padding:0 12px 8px 0;color:var(--bt-ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+.bt-side-top{display:flex;justify-content:flex-end;align-items:center;gap:8px;padding:6px 5px 0 0}
+.bt-brand{display:inline-flex;align-items:center;gap:6px;margin-right:auto;padding:4px 8px 4px 4px;border:0;border-radius:8px;background:none;cursor:pointer;font-family:inherit;font-size:15px;line-height:20px;font-weight:600;letter-spacing:-.01em;color:var(--bt-ink);white-space:nowrap}
+.bt-brand-whale{display:inline-flex;color:var(--bt-accent)}
+.bt-round{width:36px;height:36px;border-radius:50%;border:1px solid var(--bt-line);background:var(--bt-main);color:var(--bt-ink);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0;transition:background-color .12s ease,transform .12s ease}
+.bt-round:hover{background:var(--bt-hover)}
+.bt-round:active{transform:scale(.94)}
+.bt-list{display:flex;flex-direction:column;gap:3px;overflow-y:auto;min-height:0;flex:1 1 auto}
+.bt-tile-wrap{display:flex;justify-content:center;padding:20px 0 15px}
+.bt-tile{display:flex;flex-direction:column;align-items:center;gap:4px;width:95px;padding:6px 8px 4px;border-radius:12px;border:0;background:transparent;color:var(--bt-ink);cursor:pointer;font-family:inherit;transition:background-color .12s ease}
+.bt-tile:hover{background:var(--bt-hover)}
+.bt-tile[aria-current=page]{background:var(--bt-active)}
+.bt-tile-name{font-size:13px;line-height:18px;font-weight:400;max-width:84px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-chip{font-size:11px;line-height:16px;padding:1px 4px;border-radius:4px;background:var(--bt-hover);border:1px solid var(--bt-line);color:var(--bt-ink-2);white-space:nowrap;max-width:84px;overflow:hidden;text-overflow:ellipsis}
+.bt-row{display:flex;align-items:center;gap:8px;min-height:54px;padding:8px;border:0;border-radius:10px;background:transparent;color:var(--bt-ink);text-align:left;cursor:pointer;width:100%;box-sizing:border-box;font-family:inherit;transition:background-color .12s ease}
+.bt-row:hover{background:var(--bt-hover)}
+.bt-row[aria-current=page]{background:var(--bt-active)}
+.bt-row-body{display:flex;flex-direction:column;min-width:0;flex:1 1 auto}
+.bt-row-name{display:flex;align-items:center;gap:6px;min-width:0;font-size:14px;line-height:20px;font-weight:400}
+.bt-row-title{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bt-tag{flex:none;max-width:96px;font-size:12px;line-height:16px;font-weight:400;padding:1px 6px;border-radius:4px;background:var(--bt-tag-bg);color:var(--bt-tag-ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bt-row-preview{font-size:13px;line-height:18px;color:var(--bt-ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bt-unread{width:8px;height:8px;border-radius:50%;background:#1084fe;flex:none;margin-right:2px;animation:bt-fade .13s cubic-bezier(.22,1,.36,1)}
+.bt-rail{align-items:center;padding:0 0 8px}
+.bt-rail .bt-row{justify-content:center;padding:6px 0;min-height:44px}
+.bt-side-foot{display:flex;padding-top:8px}
+.bt-connect{flex:1;height:36px;border-radius:999px;border:1px solid var(--bt-line);background:var(--bt-main);color:var(--bt-ink);font-family:inherit;font-size:14px;line-height:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:background-color .12s ease}
+.bt-connect:hover{background:var(--bt-hover)}
+.bt-connect svg{flex:none;width:15px;height:15px}
+.bt-connect-wrap{position:relative;display:flex;flex:1 1 auto;min-width:0}
+.bt-connect-warn{flex:none;width:16px;height:16px;border-radius:50%;background:#E5484D;color:#fff;font-size:11px;line-height:16px;font-weight:700;display:inline-flex;align-items:center;justify-content:center}
+.bt-connect-tip{position:fixed;box-sizing:border-box;width:max-content;max-width:260px;padding:8px 12px;border-radius:10px;background:var(--bt-main);border:.5px solid var(--bt-line-2);box-shadow:0 8px 24px -4px rgba(0,0,0,.14);color:var(--bt-ink);font-size:12px;line-height:17px;white-space:normal;text-align:center;z-index:70;transform-origin:bottom left;animation:bt-tip-in ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing}}
+@keyframes bt-tip-in{from{opacity:0;transform:scale(.96);filter:blur(4px)}}
+@media (prefers-reduced-motion:reduce){.bt-connect-tip{animation:none}}
+
+.bt-head{position:relative;display:flex;justify-content:center;align-items:center;height:40px;flex:none;pointer-events:none}
+.bt-pill{pointer-events:auto;display:inline-flex;align-items:center;gap:8px;height:40px;padding:7.5px 13.5px 7.5px 7.5px;border-radius:999px;background:var(--bt-main);border:.5px solid var(--bt-line-2);box-shadow:0 2px 8px -1px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);color:var(--bt-ink);font-family:inherit;font-size:14px;line-height:20px;cursor:pointer;max-width:70%;box-sizing:border-box;transition:background-color .12s ease,transform ${SPRING_TAP.duration}ms ${SPRING_TAP.easing}}
+.bt-pill:hover{background:color-mix(in srgb,var(--bt-main),#777 9%)}
+.bt-pill:active{transform:scale(.965)}
+.bt-pill-name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:500}
+.bt-pill-mem{flex:none;display:inline-flex;width:0;margin-left:-8px;overflow:hidden;transition:${spring(SPRING_SHAPE, "width", "margin-left")}}
+.bt-pill[data-memory=updated] .bt-pill-mem{width:var(--bt-mem-w);margin-left:0;transition:${spring(SPRING_STRETCH, "width", "margin-left")}}
+.bt-pill-mem-in{flex:none;display:inline-flex;align-items:center;gap:5px;white-space:nowrap;color:var(--bt-ink-2);font-size:13px;font-weight:500;opacity:0;filter:blur(6px);transform:translateX(-8px);transition:opacity .14s ease,filter .18s ease,${spring(SPRING_SHAPE, "transform")}}
+.bt-pill-mem-in::before{content:"";flex:none;width:1px;height:14px;margin-right:4px;background:var(--bt-line-2)}
+.bt-pill[data-memory=updated] .bt-pill-mem-in{opacity:1;filter:none;transform:none;transition-delay:70ms}
+.bt-pill-mem-ico{flex:none;display:inline-flex;width:16px;height:16px;color:var(--bt-accent)}
+.bt-pill-mem-ico svg{width:16px;height:16px}
+.bt-pill[data-memory=updated] .bt-pill-mem-ico{animation:bt-mem-pop ${SPRING_POP.duration}ms ${SPRING_POP.easing} 90ms both}
+@keyframes bt-mem-pop{from{transform:scale(.4) rotate(-14deg)}to{transform:none}}
+.bt-sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){.bt-pill-mem,.bt-pill-mem-in{transition:none!important}.bt-pill-mem-in{filter:none;transform:none}.bt-pill[data-memory=updated] .bt-pill-mem-ico{animation:none}}
+.bt-swap{color:var(--bt-ink-3);font-size:12px}
+.bt-pill-go{flex:none;display:inline-flex;align-items:center;justify-content:flex-end;width:0;margin-left:-8px;overflow:hidden;opacity:0;filter:blur(6px);transform:translateX(-6px);color:var(--bt-ink-2);transition:width ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing},margin-left ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing},transform ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing},opacity .18s ease,filter .18s ease}
+.bt-pill-go svg{flex:none;transition:transform ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing}}
+.bt-pill:hover .bt-pill-go,.bt-pill:focus-visible .bt-pill-go,.bt-pill[aria-expanded=true] .bt-pill-go{width:18px;margin-left:0;opacity:1;filter:none;transform:none}
+.bt-pill[aria-expanded=true] .bt-pill-go svg{transform:rotate(180deg)}
+.bt-pill[data-memory=updated]:is(:hover,:focus-visible,[aria-expanded=true]) .bt-pill-go{width:0;margin-left:-8px;opacity:0;filter:blur(6px);transform:translateX(-6px)}
+@media (prefers-reduced-motion:reduce){.bt-pill,.bt-pill-go,.bt-pill-go svg{transition:none!important}.bt-pill-go{filter:none}.bt-pill:active{transform:none}}
+
+.bt-astack{display:flex;flex-direction:column;align-items:flex-start;gap:4px;margin:0}
+.bt-bubble{max-width:min(80%,560px,calc(100% - 82px));background:var(--bt-bubble);color:var(--bt-ink);border-radius:18px;padding:7px 12px;font-size:var(--dsh-content-font-size,14px);line-height:calc(var(--dsh-content-font-size,14px) + 8px);box-sizing:border-box;overflow-wrap:anywhere}
+.bt-msg:not(:first-child)>.bt-msg-line>.bt-bubble{border-start-start-radius:6px}
+.bt-msg:not(:last-child)>.bt-msg-line>.bt-bubble{border-end-start-radius:6px}
+.bt-bubble [class*="_markdown"]>*+*{margin-top:10px}
+.bt-bubble [class*="_markdown"]{color:inherit!important;font-size:inherit!important;line-height:inherit!important}
+.bt-bubble p{margin:0}
+.bt-bubble p + p{margin-top:6px}
+.bt-bubble ul,.bt-bubble ol{margin:4px 0;padding-left:20px}
+.bt-bubble a[href^="${MENTION_ORIGIN}"]{text-decoration:none;font-weight:400;cursor:pointer;white-space:nowrap}
+.bt-bubble a[href^="${MENTION_ORIGIN}"]::before{content:"";display:inline-block;width:16px;height:16px;margin-right:3px;vertical-align:-3px;background:currentColor;-webkit-mask:${DEFAULT_MASK} center/contain no-repeat;mask:${DEFAULT_MASK} center/contain no-repeat}
+.bt-group-msg{display:flex;flex-direction:column;gap:4px;margin:16px 0 0}
+.bt-group-msg:first-child{margin-top:0}
+.bt-lead{flex:none;display:flex;margin-bottom:1px}
+button.bt-lead{border:0;background:none;padding:0;cursor:pointer}
+/* Rows without the avatar start where the bubble beside it starts: 22px avatar + 8px gap. */
+.bt-astack[data-lead]>.bt-msg:not(:last-child)>.bt-msg-line,.bt-astack[data-lead] .bt-reacts{margin-left:30px}
+.bt-group-name{font-size:12px;line-height:16px;font-weight:500;margin-left:42px}
+.bt-x{border:0;background:none;color:var(--bt-ink-2);cursor:pointer;width:24px;height:24px;border-radius:6px;font-size:16px;line-height:24px;padding:0;transition:background-color .12s ease,color .12s ease,${spring(SPRING_TAP, "scale")}}
+.bt-x:hover{background:var(--bt-hover);color:var(--bt-ink)}
+
+.bt-q{margin:0 auto 8px;width:100%;max-width:var(--dsh-chat-content-width,748px);display:flex;flex-direction:column;gap:10px;background:var(--bt-bubble);border-radius:16px;padding:12px;box-sizing:border-box;color:var(--bt-ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;animation:bt-q-in ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing} backwards,bt-veil-in .2s ease-out backwards}
+@keyframes bt-q-in{from{transform:translateY(10px) scale(.97)}}
+.bt-q-settled{animation:none}
+.bt-q-head{display:flex;align-items:flex-start;gap:8px;min-width:0}
+.bt-q-text{flex:1 1 0;min-width:0;display:flex;flex-direction:column}
+.bt-q-title{margin:0;font-size:14px;line-height:20px;font-weight:500;overflow-wrap:anywhere}
+.bt-q-detail{font-size:13px;line-height:18px;color:var(--bt-ink-2)}
+.bt-q-x{flex:none;width:20px;height:20px;border:0;padding:0;border-radius:6px;background:none;color:var(--bt-ink-2);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background-color .12s ease,color .12s ease,${spring(SPRING_TAP, "scale")}}
+.bt-q-x svg{width:14px;height:14px}
+.bt-q-x:hover{background:var(--bt-hover);color:var(--bt-ink)}
+.bt-q-x:focus-visible,.bt-q-opt:focus-visible{outline:2px solid var(--bt-accent);outline-offset:-2px}
+.bt-q-list{display:flex;flex-direction:column;width:100%;min-width:0;box-sizing:border-box;background:var(--bt-main);border:.5px solid var(--bt-line-weak);border-radius:8px;overflow:hidden}
+.bt-q-opt{display:flex;align-items:center;gap:8px;width:100%;min-width:0;box-sizing:border-box;margin:0;border:0;border-radius:0;background:transparent;padding:9px 8px;font:inherit;color:var(--bt-ink);text-align:start;cursor:pointer;transition:background-color .12s ease}
+.bt-q-opt+.bt-q-opt{border-top:.5px solid var(--bt-line-weak)}
+.bt-q-opt:first-child{border-top-left-radius:7.5px;border-top-right-radius:7.5px}
+.bt-q-opt:last-child{border-bottom-left-radius:7.5px;border-bottom-right-radius:7.5px}
+button.bt-q-opt:hover{background:var(--bt-hover)}
+button.bt-q-opt:active{background:var(--bt-active)}
+.bt-q-opt[aria-pressed=true]{background:var(--bt-active)}
+.bt-key{flex:none;box-sizing:border-box;min-width:18px;height:18px;padding:1px 4px;border-radius:4px;border:.5px solid color-mix(in srgb,var(--bt-ink) 5%,transparent);background:var(--bt-active);color:color-mix(in srgb,var(--bt-ink) 61%,transparent);font-size:11px;line-height:15px;text-align:center;font-variant-numeric:tabular-nums}
+.bt-q-body{flex:1 1 auto;min-width:0;display:flex;flex-direction:column}
+.bt-q-label{font-size:14px;line-height:20px;white-space:normal;overflow-wrap:anywhere}
+.bt-q-desc{font-size:13px;line-height:18px;color:var(--bt-ink-2);overflow-wrap:anywhere}
+.bt-q-check{flex:none;display:inline-flex;align-items:center;color:var(--bt-ink-2);animation:bt-check-pop ${SPRING_POP.duration}ms ${SPRING_POP.easing} backwards}
+.bt-q-settled .bt-q-check{animation:none}
+.bt-q-check svg{width:16px;height:16px}
+.bt-q-settled .bt-key{opacity:.4}
+.bt-q-settled .bt-q-label{color:color-mix(in srgb,var(--bt-ink) 45%,transparent)}
+.bt-q-dismissed .bt-q-title{color:var(--bt-ink-2)}
+.bt-q-badge{flex:none;height:20px;padding:0 7px;border-radius:999px;border:1px dotted var(--bt-line-2);color:var(--bt-ink-2);font-size:12px;line-height:18px;box-sizing:border-box}
+.bt-q-custom{display:flex;align-items:flex-start;gap:8px;width:100%;min-width:0}
+.bt-q-field{flex:1 1 0;min-width:0;display:flex;box-sizing:border-box;min-height:32px;padding:5px 11px;border-radius:8px;border:.5px solid var(--bt-line-weak);background:var(--bt-main);cursor:text;transition:border-color .12s ease}
+.bt-q-field:focus-within{border-color:var(--bt-line-2)}
+.bt-q-input{flex:1;width:100%;min-width:0;max-height:120px;margin:0;padding:0;border:0;outline:none;background:transparent;color:var(--bt-ink);font:inherit;font-size:14px;line-height:20px;resize:none;overflow-y:hidden;white-space:pre-wrap;overflow-wrap:anywhere}
+.bt-q-input:not(:placeholder-shown){field-sizing:content}
+.bt-q-input::placeholder{color:var(--bt-ink-3)}
+.bt-q-submit,.bt-q-btn{flex:none;height:36px;padding:0 14px;border:0;border-radius:999px;font:inherit;font-size:14px;font-weight:500;cursor:pointer;transition:opacity .12s ease,background-color .12s ease,${spring(SPRING_TAP, "scale")}}
+.bt-q-submit{background:var(--bt-accent);color:var(--bt-accent-ink,#fff);animation:bt-q-submit-in ${SPRING_TAP.duration}ms ${SPRING_TAP.easing} backwards,bt-veil-in .16s ease-out backwards}
+@keyframes bt-q-submit-in{from{transform:translateX(8px) scale(.9)}}
+.bt-q-submit:hover:not(:disabled){opacity:.86}
+.bt-q-submit:disabled{opacity:.4;cursor:default}
+.bt-q-btn{background:var(--bt-hover);color:var(--bt-ink)}
+.bt-q-btn:hover{background:var(--bt-active)}
+.bt-q-foot{display:flex;justify-content:flex-end;gap:8px}
+.bt-q-raised{width:calc(var(--dsh-chat-content-width,748px) - 32px);max-width:calc(100% - 32px);gap:0;padding:0;background:var(--bt-main);box-shadow:0 2px 8px rgba(20,20,20,.035),inset 0 0 0 .5px color-mix(in srgb,var(--bt-ink) 5%,transparent)}
+.bt-q-raised .bt-q-head{padding:14px 16px 4px 20px}
+.bt-q-raised .bt-q-head:last-child{padding-bottom:16px}
+.bt-q-raised .bt-q-title{font-size:15px;line-height:22px;font-weight:600}
+.bt-q-raised .bt-q-list{gap:1px;padding:8px;border:0;border-radius:0;background:none;overflow:visible}
+.bt-q-raised .bt-q-opt{align-items:flex-start;gap:4px;padding:7px;border:0;border-radius:16px;color:var(--bt-ink-2)}
+.bt-q-raised button.bt-q-opt:hover{color:var(--bt-ink)}
+.bt-q-raised .bt-q-opt[aria-pressed=true]{background:transparent;color:var(--bt-ink)}
+.bt-q-raised .bt-q-opt[aria-pressed=true]:hover{background:var(--bt-hover)}
+.bt-q-raised .bt-key{width:24px;min-width:24px;height:24px;padding:0;border:0;border-radius:8px;background:var(--bt-hover);color:var(--bt-ink-2);font-size:12px;line-height:24px;font-weight:500;transition:background-color .12s ease,color .12s ease}
+.bt-q-raised .bt-q-opt[aria-pressed=true] .bt-key,.bt-q-ownrow:focus-within .bt-key,.bt-q-ownrow[data-filled] .bt-key{background:var(--bt-user);color:var(--bt-user-ink)}
+.bt-q-raised .bt-q-body{padding:2px 6px 0}
+.bt-q-raised .bt-q-desc{color:color-mix(in srgb,var(--bt-ink) 61%,transparent)}
+.bt-q-ownrow{cursor:text}
+.bt-q-ownrow .bt-q-input{color:var(--bt-ink)}
+.bt-q-raised .bt-q-foot{padding:0 8px 8px}
+@media (prefers-reduced-motion:reduce){.bt-q{animation:bt-fade .12s ease-out backwards}.bt-q-settled{animation:none}.bt-q-submit{animation:none}}
+
+.bt-newchat{flex:1;display:flex;flex-direction:column;min-width:0;position:relative;animation:bt-veil-in .18s ease-out}
+.bt-to{display:flex;align-items:center;flex-wrap:wrap;gap:6px;min-height:48px;padding:6px 12px;border-bottom:1px solid var(--bt-line);font-size:14px;box-sizing:border-box}
+.bt-to-label{color:var(--bt-ink-2)}
+.bt-to input{flex:1;min-width:120px;border:0;outline:none;background:none;color:var(--bt-ink);font-size:14px;height:26px}
+.bt-token{display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 6px 0 4px;border-radius:999px;background:var(--bt-hover);font-size:13px;animation:bt-check-pop ${SPRING_POP.duration}ms ${SPRING_POP.easing}}
+.bt-token button{border:0;background:none;color:var(--bt-ink-2);cursor:pointer;padding:0 2px}
+.bt-admin-star{flex:none;display:inline-flex;align-items:center;justify-content:center;width:12px;height:12px;border-radius:50%;corner-shape:round;background:color-mix(in srgb,var(--bt-star) 82%,var(--bt-sidebar));vertical-align:-1px}
+.bt-to-star{display:inline-flex;margin-right:-2px;animation:bt-check-pop ${SPRING_POP.duration}ms ${SPRING_POP.easing}}
+.bt-to .bt-to-create{flex:none;height:28px;padding:0 12px;font-size:13px;animation:bt-q-submit-in ${SPRING_TAP.duration}ms ${SPRING_TAP.easing},bt-veil-in .16s ease-out}
+.bt-drop{position:absolute;top:48px;left:32px;width:min(550px,calc(100% - 64px));display:flex;flex-direction:column;padding:6px;max-height:min(420px,60vh);overflow-y:auto;background:var(--bt-card);border:1px solid var(--bt-line-2);border-radius:12px;box-shadow:0 6px 20px -4px rgba(0,0,0,.12);box-sizing:border-box;z-index:1;transform-origin:24px 0;animation:bt-pop-drop ${SPRING_TAP.duration}ms ${SPRING_TAP.easing},bt-veil-in .14s ease-out}
+.bt-option{display:flex;align-items:center;gap:10px;border:0;background:none;border-radius:8px;padding:7px 8px;min-height:36px;box-sizing:border-box;font-size:13px;line-height:18px;color:var(--bt-ink);cursor:pointer;text-align:left;width:100%}
+.bt-option[aria-selected=true]{background:var(--bt-active)}
+.bt-drop-list>.bt-option:not([aria-selected=true]):hover{background:var(--bt-hover)}
+.bt-option-label{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bt-option-hint{font-size:11px;color:var(--bt-ink-2);flex:none;animation:bt-veil-in .16s ease-out}
+.bt-option-icon{width:22px;height:22px;border-radius:50%;background:var(--bt-hover);color:var(--bt-ink-2);display:inline-flex;align-items:center;justify-content:center;flex:none}
+.bt-hint{padding:14px;text-align:center;font-size:13px;color:var(--bt-ink-2)}
+.bt-nc-spacer{flex:1}
+.bt-nc-compose{padding:0 16px 14px;display:flex;justify-content:center}
+.bt-nc-card{display:flex;align-items:flex-end;gap:6px;width:100%;max-width:var(--dsh-chat-content-width,748px);min-height:44px;padding:4px 6px;border-radius:22px;border:1px solid var(--bt-line-2);background:var(--bt-main);box-shadow:0 2px 8px -2px rgba(0,0,0,.06);box-sizing:border-box}
+.bt-nc-plus{width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:var(--bt-ink-2);background:var(--bt-hover);flex:none}
+.bt-nc-card textarea{flex:1;resize:none;border:0;outline:none;background:none;color:var(--bt-ink);font:inherit;font-size:14px;line-height:20px;padding:7px 4px;min-height:34px;max-height:140px;box-sizing:border-box}
+.bt-nc-send{width:34px;height:34px;border-radius:50%;border:0;background:var(--bt-accent);color:var(--bt-accent-ink,#fff);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;flex:none}
+.bt-nc-send:disabled{opacity:.3;cursor:default}
+.bt-create{flex:1;display:flex;flex-direction:column;min-width:0}
+.bt-create-head{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:48px;padding:6px 12px;border-bottom:1px solid var(--bt-line);box-sizing:border-box}
+.bt-create-gap{width:28px}
+.bt-create-title{font-size:14px;line-height:20px;font-weight:500}
+.bt-create-body{flex:1;overflow-y:auto;padding:28px 16px 32px;display:flex;justify-content:center}
+.bt-create-card{width:100%;max-width:400px;display:flex;flex-direction:column;gap:18px;animation:bt-q-in ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing} both,bt-veil-in .22s ease-out both}
+.bt-create-preview{display:flex;flex-direction:column;align-items:center;gap:10px}
+.bt-create-pop{display:inline-flex;animation:bt-create-pop ${SPRING_POP.duration}ms ${SPRING_POP.easing} both}
+@keyframes bt-create-pop{from{transform:scale(.72);opacity:.4}}
+.bt-create-name{font-size:17px;line-height:24px;font-weight:500;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-create-step{font-size:12px;line-height:16px;color:var(--bt-ink-2);margin-bottom:-10px}
+.bt-create-looks{display:flex;flex-direction:column;gap:10px;padding:10px;border:1px solid var(--bt-line);border-radius:12px;background:var(--bt-card)}
+.bt-create-lookbar{justify-content:center}
+.bt-create-foot{display:flex;justify-content:flex-end;gap:8px;padding-top:4px}
+.bt-create-go{height:36px;padding:0 20px}
+@media (prefers-reduced-motion:reduce){.bt-create-card,.bt-create-pop{animation:none}}
+.bt-send{height:40px;min-width:40px;border-radius:999px;border:0;background:var(--bt-accent);color:var(--bt-accent-ink,#fff);font-size:14px;padding:0 14px;cursor:pointer}
+.bt-send:disabled{opacity:.35;cursor:default}
+.bt-error{padding:0 14px 10px;color:#e02135;font-size:12px}
+
+.bt-pane{position:fixed;top:var(--dsh-frame-chrome-top,0px);right:0;bottom:0;z-index:45;pointer-events:auto;background:var(--bt-main);color:var(--bt-ink);display:flex;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+.bt-dialog{flex:1;display:flex;flex-direction:column;min-width:0}
+.bt-dialog .bt-head{height:62px}
+.bt-dialog-log{flex:1;overflow-y:auto;padding:8px 16px 20px;width:100%;max-width:var(--dsh-chat-content-width,748px);margin:0 auto;box-sizing:border-box}
+.bt-dialog-foot{display:flex;justify-content:center;padding:10px 10px 16px}
+.bt-exchange{animation:bt-sheet-in ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing} both,bt-veil-in .24s ease-out both}
+.bt-exchange[data-leaving]{animation:bt-sheet-out .22s cubic-bezier(.4,0,1,1) forwards;pointer-events:none}
+@keyframes bt-sheet-in{from{transform:translateY(24px)}}
+@keyframes bt-sheet-out{to{opacity:0;transform:translateY(16px);filter:blur(4px)}}
+.bt-exchange .bt-dialog{position:relative}
+.bt-exchange .bt-dialog-log{max-width:none;margin:0;padding:39px max(16px,calc((100% - 960px)/2)) 76px;scrollbar-width:thin}
+.bt-exchange .bt-dialog-foot{position:absolute;left:0;right:0;bottom:0;height:76px;box-sizing:border-box;align-items:flex-end;padding:0 0 28px;background:var(--bt-main);z-index:3;animation:bt-foot-in .3s cubic-bezier(.22,1,.36,1) .3s both}
+.bt-exchange .bt-dialog-foot::before{content:"";position:absolute;left:0;right:0;bottom:100%;height:40px;background:linear-gradient(to top,var(--bt-main),transparent);pointer-events:none}
+.bt-exchange[data-leaving] .bt-dialog-foot{animation:bt-foot-out .22s cubic-bezier(.4,0,1,1) forwards}
+@keyframes bt-foot-in{from{opacity:0;transform:translateY(6px)}}
+@keyframes bt-foot-out{to{opacity:0;transform:translateY(6px)}}
+@media (prefers-reduced-motion:reduce){.bt-exchange,.bt-exchange .bt-dialog-foot{animation-duration:.01s}}
+.bt-soft{height:36px;border-radius:999px;border:0;background:var(--bt-hover);color:var(--bt-ink);padding:0 16px;font-size:14px;cursor:pointer}
+.bt-soft:hover{background:var(--bt-active)}
+.bt-time{display:block;text-align:center;font-size:12px;line-height:16px;color:var(--bt-ink-2);padding:6px 0}
+
+.bt-panel{position:fixed;top:var(--dsh-frame-chrome-top,0px);right:0;bottom:0;width:var(--bt-panel-w,320px);pointer-events:auto;z-index:40;background:var(--bt-main);border-left:.5px solid var(--bt-line-2);display:flex;flex-direction:column;color:var(--bt-ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;box-sizing:border-box;animation:bt-pane-in .3s cubic-bezier(.2,0,0,1);transition:width ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing}}
+.bt-panel[data-leaving]{transform:translateX(100%);transition:transform .3s cubic-bezier(.2,0,0,1);pointer-events:none}
+.bt-panel[data-instant]{transition:none}
+@keyframes bt-pane-in{from{transform:translateX(100%)}}
+[class*="_centerCol"]{transition:margin-right ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing}}
+.bt-panel-grip{position:absolute;left:-5px;top:0;bottom:0;width:8px;cursor:col-resize;z-index:3;touch-action:none}
+.bt-panel-grip:hover,.bt-panel[data-dragging] .bt-panel-grip{background:linear-gradient(to right,transparent 4px,var(--bt-line-2) 4px,var(--bt-line-2) 6px,transparent 6px)}
+.bt-drag-shield{position:fixed;inset:0;z-index:45;cursor:col-resize}
+.bt-panel-view{flex:1;min-height:0;display:flex;flex-direction:column}
+.bt-drawer-top{display:flex;justify-content:flex-end;gap:8px;padding:12px 17px 6px 12px}
+.bt-drawer-id{display:flex;flex-direction:column;align-items:center;padding:14px 16px 0}
+.bt-drawer-id>.bt-mark,.bt-drawer-id>.bt-cluster{margin-bottom:16px}
+.bt-drawer-name{font-size:17px;line-height:24px;font-weight:500;border:0;background:none;color:inherit;cursor:text;padding:0 6px;border-radius:6px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-drawer-name:hover{background:var(--bt-hover)}
+.bt-drawer-name-input{font-size:17px;line-height:24px;text-align:center;border:.5px solid var(--bt-line-2);border-radius:6px;padding:0 6px;background:var(--bt-main);color:var(--bt-ink);outline:none;font-weight:500}
+.bt-drawer-role{font-size:12px;line-height:16px;color:var(--bt-ink-3);margin-top:6px;text-align:center}
+.bt-tabs{position:relative;display:flex;justify-content:center;gap:2px;margin:16px 16px 0}
+.bt-tab{position:relative;z-index:1;border:0;background:none;border-radius:9999px;padding:4px 8px;font-size:13px;line-height:20px;color:var(--bt-ink-2);cursor:pointer;white-space:nowrap}
+.bt-tab:hover{color:var(--bt-ink)}
+.bt-tab[aria-selected=true]{background:var(--bt-hover);color:var(--bt-ink)}
+.bt-tabs>.bt-thumb{top:0;bottom:0;border-radius:9999px;background:var(--bt-hover)}
+.bt-tabs[data-glide] .bt-tab[aria-selected=true]{background:transparent}
+.bt-drawer-body{flex:1;overflow-y:auto;padding:20px 16px 16px;font-size:13px;line-height:18px;display:flex;flex-direction:column;gap:16px}
+.bt-empty{text-align:center;color:var(--bt-ink-3);font-size:13px;line-height:18px;padding:8px 12px}
+.bt-section-title{font-size:12px;color:var(--bt-ink-2);margin-bottom:6px}
+.bt-muted{color:var(--bt-ink-2)}
+.bt-swatches{display:flex;flex-wrap:wrap;gap:6px}
+.bt-swatch{width:22px;height:22px;border-radius:50%;border:2px solid transparent;cursor:pointer;padding:0;box-shadow:inset 0 0 0 1px var(--bt-line-2)}
+.bt-swatch[aria-pressed=true]{border-color:var(--bt-ink)}
+.bt-textarea{width:100%;box-sizing:border-box;min-height:120px;border:1px solid var(--bt-line);border-radius:8px;padding:8px;background:var(--bt-card);color:var(--bt-ink);font:inherit;resize:vertical}
+.bt-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.bt-kv{display:flex;justify-content:space-between;gap:8px;font-size:12px;line-height:20px;color:var(--bt-ink-2)}
+.bt-kv span:last-child{color:var(--bt-ink);font-variant-numeric:tabular-nums}
+.bt-danger{color:#e02135}
+
+/* Bot settings: fields, the avatar editor popover, and the details-pane sub-view. */
+.bt-field{display:flex;flex-direction:column;gap:6px}
+.bt-field-label{font-size:13px;line-height:18px;font-weight:500}
+.bt-input{width:100%;box-sizing:border-box;height:36px;border:1px solid var(--bt-line);border-radius:8px;padding:0 10px;background:var(--bt-card);color:var(--bt-ink);font:inherit;font-size:13px;outline:none}
+.bt-input:focus{border-color:var(--bt-line-2)}
+.bt-input-area{height:auto;min-height:96px;padding:8px 10px;line-height:18px;resize:vertical}
+.bt-note{font-size:12px;line-height:16px;color:var(--bt-ink-3)}
+.bt-soft-sm{height:28px;padding:0 12px;font-size:12px}
+.bt-set-avatar{display:flex;justify-content:center;padding:4px 0}
+.bt-avatar-anchor{position:relative}
+.bt-avatar-trigger{position:relative;width:64px;height:64px;border:0;border-radius:50%;background:none;cursor:pointer;padding:0}
+.bt-avatar-pencil{position:absolute;right:-2px;bottom:-2px;width:22px;height:22px;border-radius:50%;background:var(--bt-main);border:1px solid var(--bt-line-2);color:var(--bt-ink-2);display:flex;align-items:center;justify-content:center;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.bt-avedit{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);width:300px;background:var(--bt-main);border:1px solid var(--bt-line);border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.18);padding:10px;z-index:70;display:flex;flex-direction:column;gap:10px;color:var(--bt-ink);transform-origin:top center;animation:bt-pop-drop ${SPRING_TAP.duration}ms ${SPRING_TAP.easing},bt-veil-in .16s ease-out}
+.bt-bs .bt-avedit{transform-origin:32px 0}
+.bt-avedit-top{display:flex;align-items:center;justify-content:space-between}
+.bt-avedit-tabs{position:relative;display:flex;gap:2px;background:var(--bt-hover);border-radius:999px;padding:2px}
+.bt-avedit-tab{position:relative;z-index:1;border:0;background:none;border-radius:999px;padding:3px 10px;font-size:12px;line-height:16px;color:var(--bt-ink-2);cursor:pointer}
+.bt-avedit-tab[aria-selected=true]{background:var(--bt-main);color:var(--bt-ink)}
+.bt-avedit-tabs>.bt-thumb{top:2px;bottom:2px;border-radius:999px;background:var(--bt-main);box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.bt-avedit-tabs[data-glide] .bt-avedit-tab[aria-selected=true]{background:transparent}
+.bt-avedit-reset{color:var(--bt-ink-3)}
+.bt-avedit-reset:hover{color:var(--bt-ink)}
+.bt-shapes{display:flex;flex-direction:column;gap:2px}
+.bt-shape-row{display:grid;grid-template-columns:repeat(6,1fr);gap:2px}
+.bt-shape{position:relative;aspect-ratio:1;border:0;border-radius:8px;background:none;color:var(--bt-ink);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.bt-shape:hover{background:var(--bt-hover)}
+.bt-shape .bt-ring{position:absolute;left:50%;top:50%;width:36px;height:36px;translate:-50% -50%;overflow:visible;opacity:0;scale:.82;pointer-events:none;transition:opacity .14s ease,${spring(SPRING_POP, "scale")}}
+.bt-shape[aria-pressed=true] .bt-ring{opacity:1;scale:1}
+.bt-colors{display:flex;justify-content:space-between}
+.bt-color{width:22px;height:22px;border-radius:50%;border:2px solid transparent;padding:2px;background:none;cursor:pointer;box-sizing:border-box;transition:border-color .14s ease,${spring(SPRING_TAP, "scale")}}
+.bt-color[aria-pressed=true] span{animation:bt-check-pop ${SPRING_POP.duration}ms ${SPRING_POP.easing}}
+.bt-color span{display:block;width:100%;height:100%;border-radius:50%}
+.bt-color[aria-pressed=true]{border-color:var(--bt-ink)}
+.bt-dropzone{border:1.5px dashed var(--bt-line-2);border-radius:10px;padding:18px 12px;display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--bt-ink-2);font-size:12px;line-height:16px;text-align:center}
+.bt-dropzone[data-over]{border-color:var(--bt-accent);color:var(--bt-ink)}
+.bt-dropzone img{width:64px;height:64px;border-radius:50%;object-fit:cover}
+.bt-set-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.bt-about{white-space:pre-wrap;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+.bt-about[data-open]{display:block;-webkit-line-clamp:unset}
+.bt-more{border:0;background:none;color:var(--bt-ink-3);font-size:12px;line-height:16px;cursor:pointer;padding:2px 0}
+.bt-more:hover{color:var(--bt-ink)}
+.bt-subhead{display:flex;align-items:center;gap:4px;padding:10px 12px 4px}
+.bt-subhead-title{flex:1;font-size:15px;line-height:24px;font-weight:600;padding-left:4px}
+.bt-icon-btn{width:28px;height:28px;border-radius:50%;border:0;background:none;color:var(--bt-ink-2);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.bt-icon-btn:hover{background:var(--bt-hover);color:var(--bt-ink)}
+.bt-set-body{gap:20px}
+.bt-drawer-model{display:flex;flex-direction:column}
+.bt-drawer-model .bt-note{margin-top:6px}
+
+/* Settings dialog: a 198px page list beside the page. */
+.bt-settings-layer{position:fixed;inset:var(--dsh-frame-chrome-top,0px) 0 0;z-index:60;display:flex;align-items:center;justify-content:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+.bt-scrim{position:absolute;inset:0;background:rgba(0,0,0,.32);animation:bt-fade .22s ease-out}
+body[data-ds-dark-theme] .bt-scrim{background:rgba(0,0,0,.5)}
+.bt-settings{--bt-set-w:min(800px,calc(100vw - 48px));--bt-set-h:min(620px,calc(100vh - 2*max(32px,var(--dsh-frame-overlay-top,32px))));position:relative;width:var(--bt-set-w);height:var(--bt-set-h);background:var(--bt-main);border-radius:16px;border:.5px solid var(--bt-line-2);box-shadow:0 24px 80px rgba(0,0,0,.24);display:flex;overflow:hidden;color:var(--bt-ink);transition:${spring(SPRING_SHAPE, "width", "height")};animation:bt-dialog-rise ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing},bt-veil-in .2s ease-out}
+.bt-settings[data-wide]{--bt-set-w:min(1100px,calc(100vw - 48px));--bt-set-h:min(780px,calc(100vh - 2*max(32px,var(--dsh-frame-overlay-top,32px))))}
+:is(.bt-settings-layer,.bt-mem-layer)[data-leaving]{pointer-events:none}
+:is(.bt-settings-layer,.bt-mem-layer)[data-leaving] .bt-scrim{opacity:0;transition:opacity .16s ease-in}
+:is(.bt-settings-layer,.bt-mem-layer)[data-leaving]>[role=dialog]{animation:bt-dialog-sink .16s cubic-bezier(.4,0,1,1) forwards}
+@keyframes bt-dialog-rise{from{transform:translateY(12px) scale(.96)}}
+@keyframes bt-dialog-sink{to{opacity:0;transform:translateY(6px) scale(.975);filter:blur(3px)}}
+@media (prefers-reduced-motion:reduce){.bt-settings{transition:none}.bt-settings,.bt-scrim,.bt-settings-page>*{animation:bt-fade .12s ease-out!important}}
+.bt-settings-nav{position:relative;width:198px;flex:none;padding:16px 8px;border-right:.5px solid var(--bt-line);display:flex;flex-direction:column;gap:2px;background:var(--bt-sidebar);box-sizing:border-box}
+.bt-settings-item{position:relative;z-index:1;display:flex;align-items:center;gap:8px;padding:6px 8px;border:0;border-radius:8px;background:none;color:var(--bt-ink-2);font:inherit;font-size:13px;line-height:20px;cursor:pointer;text-align:left;transition:background-color .12s ease,color .12s ease}
+.bt-settings-item:hover{color:var(--bt-ink);background:var(--bt-hover)}
+.bt-settings-item[aria-current=page]{background:var(--bt-active);color:var(--bt-ink)}
+.bt-settings-nav>.bt-thumb{left:8px;right:8px;border-radius:8px;background:var(--bt-active)}
+.bt-settings-nav[data-glide] .bt-settings-item[aria-current=page]{background:transparent}
+.bt-settings-shell{margin-top:auto}
+/* Usage while another page is open: out of the flow at Usage's own width, so it keeps
+   its layout, and not rendered. */
+.bt-settings-usage[data-off]{position:absolute;top:0;left:198px;width:calc(min(1100px,calc(100vw - 48px)) - 198px);height:100%;box-sizing:border-box;content-visibility:hidden;pointer-events:none}
+/* The page column takes the dialog's final size at once, so while the dialog resizes
+   only its edge moves and the page does not lay out again every frame. */
+.bt-settings-main{flex:none;display:flex;flex-direction:column;min-width:0;width:calc(var(--bt-set-w) - 198px);height:var(--bt-set-h)}
+.bt-settings-head{display:flex;align-items:center;gap:6px;padding:16px 56px 4px 20px}
+.bt-settings-head h2{margin:0;font-size:15px;line-height:24px;font-weight:600;animation:bt-veil-in .2s ease-out}
+.bt-settings-head>.bt-icon-btn{animation:bt-back-in ${SPRING_TAP.duration}ms ${SPRING_TAP.easing},bt-veil-in .16s ease-out}
+@keyframes bt-back-in{from{translate:6px 0;scale:.8}}
+.bt-settings-scroll{flex:1;overflow-y:auto;padding:12px 20px 24px;display:flex;flex-direction:column;gap:20px;scrollbar-width:thin}
+.bt-settings-page>:not(.bt-us){animation:bt-page-up ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing} backwards,bt-veil-in .22s ease-out backwards}
+.bt-settings-page[data-move=in]>:not(.bt-us){animation-name:bt-page-in,bt-veil-in}
+.bt-settings-page[data-move=out]>:not(.bt-us){animation-name:bt-page-out,bt-veil-in}
+.bt-settings-page>:nth-child(2){animation-delay:30ms}
+.bt-settings-page>:nth-child(3){animation-delay:60ms}
+.bt-settings-page>:nth-child(4){animation-delay:90ms}
+.bt-settings-page>:nth-child(n+5){animation-delay:120ms}
+@keyframes bt-page-up{from{transform:translateY(10px)}}
+@keyframes bt-page-in{from{transform:translateX(18px)}}
+@keyframes bt-page-out{from{transform:translateX(-18px)}}
+.bt-settings-close{position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;border:0;background:var(--bt-hover);color:var(--bt-ink-2);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.bt-settings-close:hover{background:var(--bt-active);color:var(--bt-ink)}
+.bt-settings-form{display:flex;flex-direction:column;gap:16px}
+.bt-set-section h3{font-size:13px;line-height:18px;font-weight:600;margin:0 0 8px;padding:0 4px}
+.bt-set-card{border:1px solid var(--bt-line);border-radius:12px;background:var(--bt-card);display:flex;flex-direction:column}
+.bt-set-card>*+*{border-top:.5px solid var(--bt-line)}
+.bt-set-row{display:flex;align-items:center;gap:12px;padding:10px 12px;border:0;background:none;color:var(--bt-ink);font:inherit;font-size:13px;line-height:18px;text-align:left;width:100%;box-sizing:border-box;border-radius:0}
+button.bt-set-row{cursor:pointer}
+button.bt-set-row:hover{background:var(--bt-hover)}
+.bt-set-card>.bt-set-row+.bt-set-row{border-top:.5px solid var(--bt-line)}
+.bt-set-row:first-child{border-top-left-radius:12px;border-top-right-radius:12px}
+.bt-set-row:last-child{border-bottom-left-radius:12px;border-bottom-right-radius:12px}
+.bt-set-copy{flex:1;display:flex;flex-direction:column;gap:2px;min-width:0}
+.bt-set-hint{font-size:12px;line-height:16px;color:color-mix(in srgb,var(--bt-ink-2) 50%,var(--bt-ink-3))}
+.bt-set-control{flex:none;display:flex;align-items:center;gap:6px}
+.bt-set-value{font-size:13px;color:var(--bt-ink-2);text-align:right}
+.bt-set-bot{flex:1;display:flex;align-items:center;gap:8px;min-width:0}
+.bt-set-paste{flex-direction:column;align-items:stretch;gap:8px}
+.bt-chevron{color:var(--bt-ink-3);display:inline-flex;flex:none}
+
+/* Settings → Connectors. */
+.bt-connector{display:flex;flex-direction:column;gap:10px;padding:12px}
+.bt-connector-head{display:flex;align-items:center;gap:12px;min-width:0}
+.bt-connector-mark{flex:none;width:36px;height:36px;border-radius:10px;background:var(--bt-card);border:.5px solid var(--bt-line);display:flex;align-items:center;justify-content:center;color:var(--bt-ink)}
+.bt-connector-text{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.bt-connector-name{font-size:14px;line-height:20px;font-weight:500}
+.bt-connector-status{font-size:12px;line-height:16px;color:var(--bt-ink-3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-connector[data-state=ready] .bt-connector-status{color:var(--bt-ink-2)}
+.bt-connector[data-state=error] .bt-connector-status{color:#e02135;white-space:normal}
+.bt-connector-actions{flex:none;display:flex;gap:6px}
+.bt-connector-form{display:flex;flex-direction:column;gap:8px;padding-left:48px;animation:bt-q-in ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing},bt-veil-in .2s ease-out}
+.bt-connector-form-row{display:flex;align-items:center;gap:6px}
+.bt-connector-link{flex:1;font-size:12px;color:var(--bt-ink-2)}
+.bt-connector-error{padding-left:48px;font-size:12px;line-height:16px;color:#e02135}
+
+/* Shell chrome reshaped for the team view. Selectors use stable data attributes where the
+   shell offers them and CSS-module name suffixes elsewhere. */
+[class*="_logoRow"],[class*="_newSession"],nav[class*="_panelList"]{display:none!important}
+[class*="_footArea"]{display:flex!important;flex-direction:row-reverse;align-items:center;gap:9px;padding:8px 6px 6px!important}
+[class*="_footArea"]>[class*="_footerActions"]{flex:1 1 auto;min-width:0}
+[class*="_footArea"]>[class*="_settingsArea"]{flex:none;width:auto!important}
+[class*="_footArea"] button[aria-label="Settings"]{width:auto!important;padding:0!important;background:none!important;border-radius:50%!important;height:auto!important}
+[class*="_widthHandle"]{display:none!important}
+
+.bt-voice-pane{flex-direction:column;align-items:center;justify-content:center;animation:bt-fade .2s ease-out}
+.bt-voice-stage{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:24px;max-width:560px;text-align:center}
+.bt-voice-orb{position:relative;width:200px;height:200px;display:grid;place-items:center;margin-bottom:8px}
+.bt-voice-ring{position:absolute;inset:34px;border-radius:50%;background:var(--bt-hover);transform:scale(calc(1 + var(--bt-level,0) * .55));transition:transform .08s linear}
+.bt-voice-ring-2{inset:14px;background:none;box-shadow:inset 0 0 0 1px var(--bt-line-2);transform:scale(calc(.94 + var(--bt-level,0) * .3));opacity:.8}
+.bt-voice-stage[data-phase=thinking] .bt-voice-ring{animation:bt-voice-breathe 1.6s ease-in-out infinite}
+.bt-voice-stage[data-phase=speaking] .bt-voice-ring{animation:bt-voice-speak .9s ease-in-out infinite}
+@keyframes bt-voice-breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+@keyframes bt-voice-speak{0%,100%{transform:scale(1.04)}30%{transform:scale(1.2)}60%{transform:scale(1.1)}}
+.bt-voice-orb>.bt-mark{position:relative}
+.bt-voice-name{font-size:16px;line-height:22px;font-weight:500}
+.bt-voice-status{font-size:13px;line-height:18px;color:var(--bt-ink-2);min-height:18px}
+.bt-voice-caption{min-height:44px;font-size:15px;line-height:22px;color:var(--bt-ink);animation:bt-blur-in .25s ease-out;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.bt-voice-note{font-size:12px;color:#e02135}
+.bt-voice-bar{display:flex;gap:16px;padding:0 0 32px}
+.bt-voice-btn{position:relative;width:52px;height:52px;border-radius:50%;border:0;background:var(--bt-hover);color:var(--bt-ink);display:grid;place-items:center;cursor:pointer;transition:background-color .15s ease,transform .12s ease}
+.bt-voice-btn:hover{background:var(--bt-active)}
+.bt-voice-btn:active{transform:scale(.94)}
+.bt-voice-btn[aria-pressed=true]{background:var(--bt-user);color:var(--bt-user-ink)}
+.bt-voice-slash{position:absolute;width:24px;height:2px;border-radius:1px;background:currentColor;transform:rotate(-45deg)}
+.bt-voice-end{background:#ff3e51;color:#fff}
+.bt-voice-end:hover{background:#e02135}
+@keyframes bt-fade{from{opacity:0}to{opacity:1}}
+@keyframes bt-blur-in{from{opacity:0;filter:blur(2px)}to{opacity:1;filter:blur(0)}}
+@media (prefers-reduced-motion:reduce){.bt-voice-pane,.bt-voice-caption,.bt-voice-ring{animation:none!important}}
+.bt-msg{display:flex;flex-direction:column;align-items:flex-start;max-width:min(80%,560px,calc(100% - 82px))}
+/* The bubble's row: reactions hang below it, so the hover toolbar (and a group
+   sender's avatar) line up with the bubble alone. */
+.bt-msg-line{position:relative;display:flex;align-items:flex-end;gap:8px;max-width:100%}
+.bt-msg-line>.bt-bubble{max-width:none;min-width:0}
+/* The same bubble width as beside an avatar column: 80% of (100% - 30px), plus the 30px. */
+.bt-astack[data-lead]>.bt-msg{max-width:min(calc(80% + 6px),590px,calc(100% - 52px))}
+.bt-tools{position:absolute;top:50%;left:100%;margin-left:6px;transform:translateY(-50%);display:flex;gap:2px;opacity:0;visibility:hidden;transition:opacity .12s ease,visibility .12s}
+.bt-tools::after{content:"";position:absolute;top:-8px;bottom:-8px;right:100%;width:128px;z-index:-1}
+.bt-msg:hover>.bt-msg-line>.bt-tools,.bt-msg:focus-within>.bt-msg-line>.bt-tools,.bt-tools[data-open]{opacity:1;visibility:visible}
+.bt-tool{width:24px;height:24px;border:0;padding:0;border-radius:6px;background:none;color:var(--bt-ink-2);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background-color .12s ease,color .12s ease}
+.bt-tool:hover,.bt-tool[aria-expanded=true]{background:var(--bt-hover);color:var(--bt-ink)}
+.bt-tool:active{background:var(--bt-active)}
+.bt-tool:focus-visible{outline:2px solid var(--bt-accent);outline-offset:-2px}
+.bt-react-strip{position:fixed;z-index:60;pointer-events:auto;display:flex;gap:2px;padding:4px;border-radius:999px;background:var(--bt-main);border:.5px solid var(--bt-line-2);box-shadow:0 10px 20px -3px rgba(0,0,0,.08),0 4px 6px -4px rgba(0,0,0,.06);transform:translate(-50%,-100%);transform-origin:bottom center;animation:bt-pop-lift ${SPRING_TAP.duration}ms ${SPRING_TAP.easing},bt-veil-in .14s ease-out}
+.bt-react-strip button{width:32px;height:32px;border:0;border-radius:50%;background:none;font-size:18px;line-height:1;cursor:pointer;transition:background-color .12s ease,${spring(SPRING_POP, "transform")};animation:bt-check-pop ${SPRING_POP.duration}ms ${SPRING_POP.easing} backwards}
+.bt-react-strip button:nth-child(2){animation-delay:20ms}
+.bt-react-strip button:nth-child(3){animation-delay:40ms}
+.bt-react-strip button:nth-child(4){animation-delay:60ms}
+.bt-react-strip button:nth-child(n+5){animation-delay:80ms}
+.bt-react-strip button:hover{background:var(--bt-hover);transform:scale(1.15)}
+.bt-react-strip button:active{transform:scale(.92)}
+.bt-reacts{display:flex;gap:4px;margin-top:4px}
+.bt-react{height:22px;min-width:30px;padding:0 6px;border-radius:999px;border:.5px solid var(--bt-line-2);background:var(--bt-main);font-size:13px;line-height:20px;cursor:pointer;animation:bt-react-pop ${SPRING_POP.duration}ms ${SPRING_POP.easing};transition:background-color .12s ease,${spring(SPRING_TAP, "scale")}}
+.bt-react:hover{background:var(--bt-hover)}
+.bt-react:active{scale:.92}
+@keyframes bt-react-pop{from{transform:scale(.6);opacity:0}}
+.bt-bubble a[href^="${MENTION_ORIGIN}"] svg{display:none}
+.bt-you{width:36px;height:36px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--bt-ink) 5%,var(--bt-sidebar));color:var(--bt-ink-2);box-shadow:inset 0 0 0 1px var(--bt-line);transition:background-color .12s ease}
+button:hover .bt-you{background:color-mix(in srgb,var(--bt-ink) 9%,var(--bt-sidebar))}
+.bt-you-wrap{display:inline-flex;padding:0}
+.bt-connect-foot{width:100%;height:36px}
+
+.bt-menu{position:fixed;pointer-events:auto;z-index:60;min-width:200px;padding:6px;border-radius:12px;background:var(--bt-main);border:.5px solid var(--bt-line-2);box-shadow:0 10px 20px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1),0 0 0 1px rgba(228,228,228,.04);display:flex;flex-direction:column;gap:2px;transform-origin:var(--bt-origin,top left);animation:bt-pop-drop ${SPRING_TAP.duration}ms ${SPRING_TAP.easing},bt-veil-in .14s ease-out;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;box-sizing:border-box}
+.bt-menu button{display:flex;align-items:center;gap:4px;width:100%;min-height:30px;text-align:left;border:0;background:none;border-radius:6px;padding:6px 8px;font:inherit;font-size:13px;line-height:18px;color:var(--bt-ink);cursor:pointer;box-sizing:border-box}
+.bt-menu button:hover{background:var(--bt-hover)}
+.bt-menu button svg{flex:none;width:16px;height:16px;margin:0 1px}
+.bt-menu .bt-danger{color:#c21d2e}
+.bt-menu-sep{height:.5px;flex:none;background:var(--bt-line-2);margin:4px 8px}
+.bt-menu-up{--bt-origin:bottom left;animation-name:bt-pop-lift,bt-veil-in}
+.bt-menu[data-leaving]{pointer-events:none;animation:bt-pop-out .12s cubic-bezier(.4,0,1,1) forwards}
+.bt-menu-label{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-menu-hint{flex:none;color:var(--bt-ink-3);font-size:12px;font-variant-numeric:tabular-nums}
+.bt-palette-layer{position:fixed;inset:var(--dsh-frame-chrome-top,0px) 0 0;z-index:70;pointer-events:auto;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+.bt-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.46);animation:bt-fade .22s ease-out}
+.bt-palette{position:absolute;top:50%;left:50%;width:min(560px,92vw);transform:translate(-50%,-50%);display:flex;flex-direction:column;border-radius:12px;background:var(--bt-main);border:1px solid var(--bt-line-2);box-shadow:0 24px 48px -12px rgba(0,0,0,.25);overflow:hidden;color:var(--bt-ink);animation:bt-palette-in ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing},bt-veil-in .2s ease-out}
+.bt-palette-layer[data-leaving]{pointer-events:none}
+.bt-palette-layer[data-leaving] .bt-backdrop{opacity:0;transition:opacity .16s ease-in}
+.bt-palette-layer[data-leaving] .bt-palette{animation:bt-dialog-sink .16s cubic-bezier(.4,0,1,1) forwards}
+@keyframes bt-palette-in{from{translate:0 -10px;scale:.96}}
+.bt-palette-head{display:flex;align-items:center;gap:4px;padding:14px 10px 14px 14px;border-bottom:.5px solid var(--bt-line-2)}
+.bt-palette-glyph{display:inline-flex;width:18px;height:18px;align-items:center;justify-content:center;color:var(--bt-ink-3);margin-right:4px}
+.bt-palette-head input{flex:1;min-width:0;border:0;outline:none;background:none;color:var(--bt-ink);font:inherit;font-size:15px;line-height:22px;padding:0}
+.bt-palette-head input::placeholder{color:var(--bt-ink-3)}
+.bt-palette-clear{width:18px;height:18px;border:0;padding:0;border-radius:6px;background:none;color:var(--bt-ink-3);display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.bt-palette-clear:hover{color:var(--bt-ink)}
+.bt-palette-clear svg{width:12px;height:12px}
+.bt-palette-list{position:relative;height:402px;overflow-y:auto;padding:8px;display:flex;flex-direction:column;gap:2px;box-sizing:border-box}
+.bt-palette-list>.bt-thumb,.bt-drop-list>.bt-thumb{left:0;right:0;border-radius:8px;background:var(--bt-active)}
+.bt-palette-list>.bt-thumb{left:8px;right:8px}
+:is(.bt-palette-list,.bt-drop-list)[data-glide] [aria-selected=true]{background:transparent}
+:is(.bt-palette-row,.bt-palette-section,.bt-drop-list>.bt-option){position:relative;z-index:1}
+.bt-palette-section{padding:8px 8px 4px;font-size:12px;line-height:16px;color:var(--bt-ink-3);flex:none}
+.bt-palette-section:first-of-type{padding-top:0}
+.bt-palette-row{flex:none;display:flex;align-items:center;gap:8px;height:49px;padding:6px 10px 6px 8px;border:0;border-radius:8px;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer;box-sizing:border-box;width:100%}
+.bt-palette-row[aria-selected=true]{background:var(--bt-active)}
+.bt-palette-lead{flex:none;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center}
+.bt-palette-cmd{width:24px;height:24px;border-radius:50%;background:var(--bt-hover);display:inline-flex;align-items:center;justify-content:center;color:var(--bt-ink-2)}
+.bt-palette-cmd svg{width:14px;height:14px}
+.bt-palette-agent{width:24px;height:24px;border-radius:50%;background:var(--bt-hover);display:inline-flex;align-items:center;justify-content:center;color:var(--bt-ink)}
+.bt-palette-text{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px}
+.bt-palette-title{font-size:14px;line-height:20px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-palette-sub{font-size:12px;line-height:16px;color:var(--bt-ink-3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-palette-badge{flex:none;font-size:11px;line-height:16px;padding:0 6px;border-radius:4px;background:var(--bt-tag-bg);color:var(--bt-tag-ink)}
+.bt-palette-empty{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:0 16px;text-align:center;animation:bt-veil-in .22s ease-out}
+.bt-palette-empty-icon{color:var(--bt-line-2)}
+.bt-palette-empty-icon svg{width:32px;height:32px}
+.bt-palette-empty-label{font-size:14px;font-weight:500;color:var(--bt-ink-2)}
+.bt-palette-empty-hint{font-size:13px;line-height:16px;color:var(--bt-ink-3)}
+@media (prefers-reduced-motion:reduce){.bt-palette{animation:bt-fade .1s ease-out}}
+.bt-account-menu{width:224px}
+.bt-account{flex:none;width:36px;height:36px;border:0;padding:0;background:none;border-radius:50%;cursor:pointer;display:inline-flex}
+.bt-account:hover .bt-you,.bt-account[aria-expanded=true] .bt-you{background:color-mix(in srgb,var(--bt-ink) 9%,var(--bt-sidebar))}
+/* Popover keyframes move translate and scale, which compose with a transform the popover
+   already has. */
+@keyframes bt-pop-drop{from{translate:0 -4px;scale:.96}}
+@keyframes bt-pop-lift{from{translate:0 4px;scale:.96}}
+@keyframes bt-pop-out{to{opacity:0;scale:.97;filter:blur(2px)}}
+@keyframes bt-veil-in{from{opacity:0;filter:blur(6px)}}
+@keyframes bt-check-pop{from{opacity:0;scale:.4}}
+@media (prefers-reduced-motion:reduce){.bt-menu,.bt-avedit,.bt-react-strip{animation:bt-fade .1s ease-out}.bt-react-strip button,.bt-q-check,.bt-color[aria-pressed=true] span{animation:none}}
+.bt-brand:hover{background:var(--bt-hover)}
+.bt-drop-list{position:relative;display:flex;flex-direction:column;gap:2px}
+.bt-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+.bt-pick{display:flex;flex-direction:column;align-items:center;gap:4px;padding:7px 2px 6px;border-radius:10px;border:1px solid transparent;background:none;color:var(--bt-ink);cursor:pointer;font:inherit;font-size:11px;line-height:14px;min-width:0}
+.bt-pick:hover{background:var(--bt-hover)}
+.bt-pick[aria-pressed=true]{border-color:var(--bt-line-2);background:var(--bt-hover)}
+.bt-pick>span:last-child:not(.bt-mark){max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-pick:hover .bt-mark[data-state=idle] .bt-eye{animation:bt-blink .5s linear 1}
+.bt-select{width:100%;height:34px;box-sizing:border-box;border-radius:8px;border:1px solid var(--bt-line);background:var(--bt-card);color:var(--bt-ink);padding:0 8px;font:inherit;font-size:13px}
+.bt-note{font-size:12px;line-height:16px;color:var(--bt-ink-2);margin-top:6px}
+.bt-swatch-sep{width:1px;height:22px;background:var(--bt-line-2);margin:0 2px}
+.bt-swatch-custom{position:relative;overflow:hidden;background:conic-gradient(#ff3e51,#ffaf38,#00c972,#1cc3b0,#2a92fe,#a97efe,#ff5eb1,#ff3e51);box-sizing:border-box}
+.bt-swatch-custom[data-on=true]{border-color:var(--bt-ink)}
+.bt-swatch-custom input{position:absolute;inset:-4px;width:calc(100% + 8px);height:calc(100% + 8px);opacity:0;cursor:pointer;border:0;padding:0}
+.bt-swatch-default{background:linear-gradient(135deg,var(--bt-card) 0 46%,var(--bt-line-2) 46% 54%,var(--bt-card) 54%);box-shadow:inset 0 0 0 1px var(--bt-line-2)}
+.bt-states{display:flex;flex-wrap:wrap;gap:4px}
+.bt-state{border:1px solid var(--bt-line);background:none;border-radius:999px;font:inherit;font-size:11px;line-height:16px;padding:2px 8px;color:var(--bt-ink-2);cursor:pointer}
+.bt-state:hover{color:var(--bt-ink)}
+.bt-state[aria-pressed=true]{background:var(--bt-active);border-color:var(--bt-line-2);color:var(--bt-ink)}
+.bt-theme-chip{position:relative;width:46px;height:30px;border-radius:8px;box-shadow:inset 0 0 0 1px var(--bt-line-2);background:linear-gradient(90deg,var(--ls) 0 36%,var(--lb) 36%);overflow:hidden}
+.bt-theme-chip i{position:absolute;right:7px;bottom:7px;width:10px;height:10px;border-radius:50%;background:var(--la)}
+body[data-ds-dark-theme] .bt-theme-chip{background:linear-gradient(90deg,var(--ds) 0 36%,var(--db) 36%)}
+body[data-ds-dark-theme] .bt-theme-chip i{background:var(--da)}
+.bt-tabs{flex-wrap:wrap}
+.bt-soft:disabled{opacity:.4;cursor:default}
+.bt-group-role{margin-left:6px;font-size:11px;line-height:14px;padding:1px 5px;border-radius:4px;background:var(--bt-tag-bg);color:var(--bt-tag-ink);vertical-align:1px}
+.bt-members{display:flex;flex-direction:column;gap:1px}
+.bt-member{display:flex;align-items:center;gap:4px;min-height:40px;padding:0 4px 0 6px;border-radius:8px;animation:bt-rise .18s ease-out}
+.bt-member:hover{background:var(--bt-hover)}
+.bt-member-name{flex:1;min-width:0;display:flex;align-items:center;gap:10px;border:0;background:none;padding:6px 0;color:var(--bt-ink);font:inherit;font-size:14px;line-height:20px;cursor:pointer;text-align:left}
+.bt-member-name>span:last-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-chip-admin{background:var(--bt-tag-bg);color:var(--bt-tag-ink);border-color:transparent}
+.bt-mini{flex:none;border:0;background:none;border-radius:6px;padding:2px 6px;font:inherit;font-size:12px;line-height:18px;color:var(--bt-ink-2);cursor:pointer}
+.bt-mini:hover{background:var(--bt-active);color:var(--bt-ink)}
+.bt-member .bt-mini,.bt-member .bt-x{opacity:0;transition:opacity .15s ease}
+.bt-member:hover .bt-mini,.bt-member:hover .bt-x,.bt-member .bt-mini:focus-visible,.bt-member .bt-x:focus-visible{opacity:1}
+.bt-add{color:var(--bt-ink-2);margin-top:2px}
+.bt-add:hover,.bt-addlist .bt-option:hover{background:var(--bt-hover);color:var(--bt-ink)}
+.bt-addlist{display:flex;flex-direction:column;margin-top:4px;padding:4px;border:1px solid var(--bt-line);border-radius:10px;background:var(--bt-card);animation:bt-rise .16s ease-out}
+.bt-seg{position:relative;display:flex;gap:2px;padding:2px;border-radius:10px;background:var(--bt-hover)}
+.bt-motion-seg{width:216px}
+.bt-seg button{position:relative;z-index:1;flex:1;height:30px;border:0;border-radius:8px;background:none;font:inherit;font-size:13px;color:var(--bt-ink-2);cursor:pointer;transition:background-color .15s ease,color .15s ease,box-shadow .15s ease,${spring(SPRING_TAP, "scale")}}
+.bt-seg button[aria-pressed=true]{background:var(--bt-card);color:var(--bt-ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.bt-seg button:disabled{opacity:.4;cursor:default}
+.bt-seg button:active:not(:disabled){scale:.96}
+.bt-seg>.bt-thumb{top:2px;bottom:2px;border-radius:8px;background:var(--bt-card);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.bt-seg[data-glide] button[aria-pressed=true]{background:transparent;box-shadow:none}
+@keyframes bt-rise{from{opacity:0;transform:translateY(-3px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.bt-member,.bt-addlist{animation:none}}
+
+/* Memory dialog: a summary of every entry, the entries behind the menu, "Ask or update" below. */
+.bt-mem-row{display:flex;align-items:center;gap:8px;width:100%;height:36px;padding:0 8px 0 10px;border:.5px solid var(--bt-line-2);border-radius:10px;background:var(--bt-card);color:var(--bt-ink);font:inherit;font-size:13px;cursor:pointer;box-sizing:border-box;transition:background-color .12s ease}
+.bt-mem-row:hover{background:var(--bt-hover)}
+.bt-mem-row>svg{flex:none;color:var(--bt-ink-2)}
+.bt-mem-row-copy{flex:1;text-align:left}
+.bt-mem-row-go{display:inline-flex;align-items:center;gap:2px;color:var(--bt-ink-3);font-size:12px}
+.bt-mem-layer{position:fixed;inset:var(--dsh-frame-chrome-top,0px) 0 0;z-index:61;display:flex;align-items:center;justify-content:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+.bt-mem-scrim{animation:bt-fade .2s ease-out}
+.bt-mem{position:relative;width:min(680px,calc(100vw - 48px));height:min(760px,calc(100vh - 2*max(32px,var(--dsh-frame-overlay-top,32px))));background:var(--bt-main);border-radius:20px;border:.5px solid var(--bt-line-2);box-shadow:0 24px 80px rgba(0,0,0,.24);display:flex;flex-direction:column;overflow:hidden;color:var(--bt-ink);animation:bt-dialog-rise ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing},bt-veil-in .2s ease-out}
+.bt-mem-head{position:relative;display:flex;align-items:center;gap:8px;height:60px;flex:none;padding:0 14px 0 24px;border-bottom:.5px solid var(--bt-line);box-sizing:border-box}
+.bt-mem-head .bt-icon-btn{width:32px;height:32px;flex:none}
+.bt-mem-head [aria-haspopup] svg{width:18px;height:18px;stroke-width:2.6}
+.bt-mem-head>.bt-icon-btn:first-child{margin-left:-10px}
+.bt-mem-head h2{margin:0;font-size:17px;line-height:24px;font-weight:600;white-space:nowrap}
+.bt-mem-status{font-size:13px;line-height:18px;color:var(--bt-ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;font-variant-numeric:tabular-nums}
+.bt-mem-head-gap{flex:1}
+.bt-mem-menu{position:absolute;top:52px;right:50px;min-width:220px;--bt-origin:top right}
+.bt-mem-menu button:disabled{opacity:.4;cursor:default;background:none}
+.bt-mem-body{flex:1;overflow-y:auto;padding:22px 28px 24px;scrollbar-width:thin;display:flex;flex-direction:column;gap:12px}
+.bt-mem-summary{transition:opacity .3s ease}
+.bt-mem-summary[data-stale]{opacity:.55}
+.bt-mem-summary h3{margin:20px 0 6px;font-size:17px;line-height:26px;font-weight:600}
+.bt-mem-summary h3:first-child{margin-top:0}
+.bt-mem-summary p{margin:0;font-size:15px;line-height:26px}
+.bt-mem-summary>*{animation:bt-mem-line .45s cubic-bezier(.16,1,.3,1) both}
+.bt-mem-summary>:nth-child(2){animation-delay:.03s}
+.bt-mem-summary>:nth-child(3){animation-delay:.06s}
+.bt-mem-summary>:nth-child(4){animation-delay:.09s}
+.bt-mem-summary>:nth-child(5){animation-delay:.12s}
+.bt-mem-summary>:nth-child(6){animation-delay:.15s}
+.bt-mem-summary>:nth-child(n+7){animation-delay:.18s}
+@keyframes bt-mem-line{from{opacity:0;transform:translateY(4px)}}
+.bt-mem-skel{display:flex;flex-direction:column;gap:24px}
+.bt-mem-skel-block{display:flex;flex-direction:column;gap:10px}
+.bt-mem-skel-block span{display:block;height:12px;border-radius:6px;background:linear-gradient(90deg,var(--bt-hover) 25%,var(--bt-active) 50%,var(--bt-hover) 75%);background-size:200% 100%;animation:bt-mem-skel 1.4s ease-in-out infinite}
+.bt-mem-skel-block .bt-mem-skel-head{width:30%;height:16px;margin-bottom:2px}
+@keyframes bt-mem-skel{from{background-position:150% 0}to{background-position:-50% 0}}
+.bt-mem-skel-label{font-size:13px;line-height:18px;color:var(--bt-ink-3)}
+.bt-mem-empty{margin:auto;max-width:400px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;padding:24px 0;animation:bt-mem-line .45s cubic-bezier(.16,1,.3,1) both}
+.bt-mem-empty-mark{width:48px;height:48px;border-radius:50%;background:var(--bt-hover);display:flex;align-items:center;justify-content:center;color:var(--bt-ink-2);margin-bottom:4px}
+.bt-mem-empty-mark svg{width:22px;height:22px}
+.bt-mem-empty-title{font-size:15px;line-height:22px;font-weight:600}
+.bt-mem-empty-text{font-size:13px;line-height:20px;color:var(--bt-ink-2)}
+.bt-mem-failed{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;background:var(--bt-hover);font-size:13px;line-height:18px;color:var(--bt-ink-2)}
+.bt-mem-failed>span{flex:1;min-width:0;overflow-wrap:anywhere}
+.bt-mem-entries{display:flex;flex-direction:column;gap:28px;animation:bt-page-in ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing},bt-veil-in .22s ease-out}
+.bt-mem-section-head{display:flex;align-items:baseline;gap:8px;margin-bottom:4px}
+.bt-mem-section-head h3{margin:0;font-size:15px;line-height:22px;font-weight:600}
+.bt-mem-section-head span{font-size:12px;line-height:16px;color:var(--bt-ink-3)}
+.bt-mem-section-head .bt-mem-size{margin-left:auto;font-variant-numeric:tabular-nums;white-space:nowrap}
+.bt-mem-topic{font-size:12px;line-height:16px;color:var(--bt-ink-2);margin:14px 0 2px 4px;font-weight:500}
+.bt-mem-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.bt-mem-entry{display:flex;align-items:center;gap:10px;padding:9px 4px;border-bottom:.5px solid var(--bt-line);transition:opacity .2s ease}
+.bt-mem-entry[data-busy]{opacity:.4}
+.bt-mem-entry-copy{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.bt-mem-entry-text{font-size:14px;line-height:20px;overflow-wrap:anywhere}
+.bt-mem-entry-meta{font-size:12px;line-height:16px;color:var(--bt-ink-3);font-variant-numeric:tabular-nums}
+.bt-mem-remove{flex:none;height:28px;min-width:28px;border-radius:999px;border:0;background:none;color:var(--bt-ink-3);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0 6px;font:inherit;font-size:12px;opacity:0;transition:opacity .12s ease,background-color .12s ease,color .12s ease}
+.bt-mem-entry:hover .bt-mem-remove,.bt-mem-remove:focus-visible,.bt-mem-remove[data-confirm]{opacity:1}
+.bt-mem-remove:hover{background:var(--bt-hover);color:var(--bt-ink)}
+.bt-mem-remove[data-confirm]{background:rgba(224,33,53,.1);color:#e02135;padding:0 10px}
+@media (hover:none){.bt-mem-remove{opacity:1}}
+.bt-mem-none{font-size:13px;line-height:18px;color:var(--bt-ink-3);padding:8px 4px}
+.bt-mem-foot{flex:none;padding:8px 20px 20px;display:flex;flex-direction:column;gap:10px}
+.bt-mem-reply{border-radius:16px;background:var(--bt-hover);padding:8px 8px 12px 16px;display:flex;flex-direction:column;gap:6px;max-height:36vh;overflow-y:auto;scrollbar-width:thin;transform-origin:50% 100%;animation:bt-pop-lift ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing},bt-veil-in .2s ease-out}
+.bt-mem-reply-head{display:flex;align-items:center;gap:8px;min-height:24px}
+.bt-mem-reply-asked{flex:1;min-width:0;font-size:12px;line-height:16px;color:var(--bt-ink-3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-mem-reply .bt-icon-btn{width:24px;height:24px;flex:none}
+.bt-mem-reply-text{font-size:14px;line-height:21px;padding-right:8px;overflow-wrap:anywhere}
+.bt-mem-changes{list-style:none;margin:2px 0 0;padding:0 8px 0 0;display:flex;flex-direction:column;gap:4px}
+.bt-mem-changes li{display:flex;align-items:flex-start;gap:6px;font-size:13px;line-height:18px;color:var(--bt-ink-2);overflow-wrap:anywhere}
+.bt-mem-changes li svg{flex:none;margin-top:1px;color:#e02135;animation:bt-check-pop ${SPRING_POP.duration}ms ${SPRING_POP.easing} .12s backwards}
+.bt-mem-changes li[data-ok] svg{color:var(--bt-green)}
+.bt-mem-ask{display:flex;align-items:center;gap:8px;height:52px;padding:0 8px 0 22px;border-radius:999px;border:.5px solid var(--bt-line-2);background:var(--bt-card);box-shadow:0 4px 16px rgba(0,0,0,.06);box-sizing:border-box;transition:border-color .15s ease,box-shadow .15s ease}
+.bt-mem-ask:focus-within{border-color:var(--bt-ink-3);box-shadow:0 4px 20px rgba(0,0,0,.1)}
+.bt-mem-input{flex:1;min-width:0;border:0;background:none;outline:none;color:var(--bt-ink);font:inherit;font-size:15px;line-height:22px;padding:0}
+.bt-mem-input::placeholder{color:var(--bt-ink-3)}
+.bt-mem-send{flex:none;width:36px;height:36px;border-radius:50%;border:0;background:var(--bt-ink);color:var(--bt-main);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;transition:opacity .15s ease,${spring(SPRING_TAP, "scale")}}
+.bt-mem-send:disabled{opacity:.22;cursor:default}
+.bt-mem-send:not(:disabled):active{scale:.92}
+.bt-mem-send>*{animation:bt-check-pop ${SPRING_POP.duration}ms ${SPRING_POP.easing}}
+.bt-mem-spin{width:14px;height:14px;border-radius:50%;border:2px solid currentColor;border-right-color:transparent;box-sizing:border-box;animation:bt-mem-spin .7s linear infinite}
+@keyframes bt-mem-spin{to{transform:rotate(360deg)}}
+@media (max-width:640px){.bt-mem{width:100vw;height:100%;border-radius:0;border:0}.bt-mem-body{padding:18px 18px 20px}.bt-mem-foot{padding:8px 12px 12px}}
+@media (prefers-reduced-motion:reduce){.bt-mem,.bt-mem-scrim,.bt-mem-summary>*,.bt-mem-empty,.bt-mem-reply,.bt-mem-skel-block span,.bt-mem-entries,.bt-mem-send>*,.bt-mem-changes li svg{animation:none}}
+
+.bt-thumb{position:absolute;left:0;top:0;z-index:0;pointer-events:none;transition:opacity .14s ease}
+.bt-thumb[data-hidden]{opacity:0}
+[data-morph]{overflow:hidden!important}
+.bt-veil{animation:bt-veil-in .22s ease-out}
+.bt-with-icon{display:inline-flex;align-items:center;gap:4px}
+.bt-with-icon svg{width:14px;height:14px}
+.bt-tag-admin{display:inline-flex;align-items:center;gap:4px}
+.bt-create-inline{padding:18px 16px;border:1px solid var(--bt-line);border-radius:12px;background:var(--bt-card)}
+.bt-create-inline .bt-create-card{max-width:none}
+.bt-panel-view>[data-move=in]{animation:bt-page-in ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing} backwards,bt-veil-in .2s ease-out backwards}
+.bt-panel-view>[data-move=out]{animation:bt-page-out ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing} backwards,bt-veil-in .2s ease-out backwards}
+.bt-panel-view>:is([data-move=in],[data-move=out]):nth-child(2){animation-delay:25ms}
+.bt-panel-view>:is([data-move=in],[data-move=out]):nth-child(n+3){animation-delay:50ms}
+.bt-panel-view>.bt-drawer-body[data-move=tab]{animation:bt-veil-in .2s ease-out}
+.bt-drawer-name-input{animation:bt-veil-in .16s ease-out}
+.bt-pop-in{display:inline-flex;animation:bt-check-pop ${SPRING_POP.duration}ms ${SPRING_POP.easing}}
+:is(.bt-soft,.bt-send,.bt-icon-btn,.bt-settings-close,.bt-mini,.bt-tab,.bt-nc-send,.bt-avedit-tab,.bt-shape,.bt-pick,.bt-swatch,.bt-palette-clear){transition:background-color .12s ease,color .12s ease,border-color .12s ease,opacity .12s ease,${spring(SPRING_TAP, "scale")}}
+:is(.bt-icon-btn,.bt-settings-close,.bt-nc-send,.bt-shape,.bt-swatch,.bt-color,.bt-x,.bt-q-x,.bt-palette-clear):active:not(:disabled){scale:.9}
+:is(.bt-soft,.bt-send,.bt-mini,.bt-tab,.bt-avedit-tab,.bt-pick,.bt-q-submit,.bt-q-btn):active:not(:disabled){scale:.96}
+@media (prefers-reduced-motion:reduce){.bt-thumb{transition:none}.bt-panel-view>[data-move],.bt-drawer-name-input,.bt-veil,.bt-pop-in,.bt-token,.bt-drop,.bt-newchat,.bt-option-hint,.bt-connector-form,.bt-settings-head>*{animation:none}}
+`;
+var CONVERSATION_CSS = `
+.bt-think{font-size:13px;line-height:18px;color:var(--bt-ink-2);margin:2px 0 4px;max-width:min(560px,78%)}
+.bt-think summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:6px}
+.bt-think summary::-webkit-details-marker{display:none}
+.bt-think-text{white-space:pre-wrap;margin-top:6px;padding-left:10px;border-left:2px solid var(--bt-line-2)}
+.bt-event{display:flex;justify-content:center;align-items:center;gap:2px;min-height:24px;margin:2px 0;font-size:12px;line-height:16px;color:var(--bt-ink-2);flex-wrap:wrap}
+.bt-event>span{padding:0 2px}
+.bt-event button{border:0;background:none;color:inherit;font:inherit;display:inline-flex;align-items:center;gap:4px;cursor:pointer;height:24px;padding:4px 6px 4px 4px;border-radius:999px;box-sizing:border-box;transition:background-color .12s ease}
+.bt-event button:hover{background:var(--bt-hover)}
+.bt-event button:active{background:var(--bt-active)}
+.bt-time-sep{display:flex;justify-content:center;align-items:center;height:28px;margin:14px 0 8px;font-size:12px;line-height:16px;color:var(--bt-ink-2);white-space:nowrap}
+[class*="_scroll"]>[class*="_column"]::before{content:var(--bt-first-sep,none);display:block;flex:none;height:28px;margin:17px 0 12px;font-size:12px;line-height:28px;text-align:center;color:var(--bt-ink-2);white-space:nowrap}
+.bt-activity{display:flex;align-items:center;gap:10px;margin:8px 0 4px 2px;font-size:14px;color:var(--bt-ink-2)}
+.bt-group-replies{display:contents}
+/* The plugin holds the work-details mode at verbose, which renders no step groups.
+   These rules keep every group flat anyway: before that write lands, when the Host
+   refuses it, or on a page whose settings stay process-local. */
+[data-step-process]>div:first-child{display:none!important}
+[data-step-process]>[data-step-process-body]{display:block!important;content-visibility:visible!important;max-height:none!important;overflow:visible!important;mask-image:none!important;scrollbar-gutter:auto!important}
+[class*="_flowItem"]:has(> [data-slot="conversation.chat.node"]:empty){display:none!important}
+[class*="_header"]:has(.bt-head){border-bottom-color:transparent!important;box-shadow:none!important}
+/* The transcript runs under a floating header pill. */
+header[class*="_header"]:has(.bt-head){position:absolute!important;top:0;left:0;right:0;z-index:8;display:flex!important;padding:10px 0 0!important;background:transparent!important;pointer-events:none;justify-content:center}
+header[class*="_header"]:has(.bt-head)::before{content:"";position:absolute;inset:0 0 auto;height:60px;background:linear-gradient(to bottom,var(--bt-main),color-mix(in srgb,var(--bt-main) 0%,transparent));pointer-events:none;z-index:-1}
+header[class*="_header"]:has(.bt-head)>[class*="_headerLeading"]{position:absolute;left:12px;top:10px;pointer-events:auto}
+header[class*="_header"] .bt-head{flex:1 1 auto;width:100%}
+[class*="_body"]:has(> [class*="_scrollBody"]){--dsh-chat-content-width:min(960px,100%)}
+/* Every team Session belongs to a Bot or a group, so a blank one is an empty chat, not
+   the shell's new-session hero: no headline, no workspace or mode picker, and the
+   composer stays docked at the bottom. */
+[data-content-phase=hero] [class*="_scrollBody"]{justify-content:flex-end!important}
+[data-content-phase=hero] [class*="_composerHero"]{align-self:stretch!important;width:auto!important;padding-bottom:0!important}
+[data-content-phase=hero] [class*="_composerHero"]>[class$="_root"],[data-content-phase=hero] [class*="_heroWorkspaceRow"]{display:none!important}
+[data-content-phase=hero] [class*="_composerHero"] [class*="_input"]{min-height:0!important}
+/* The right sides give back the scrollbar gutter so both edges sit 16px from the column. */
+[class*="_scroll"]:has(> [class*="_column"]){padding:60px 11px 16px 16px!important}
+/* The shell's running status only hosts the activity row (.bt-typing). */
+[data-chat-running]{display:block!important;width:100%;min-height:0!important;margin:0!important;padding:0!important}
+[data-chat-running]>span:not([role=status]){display:none!important}
+[data-chat-running]:has(> .bt-typing){margin-top:var(--dsh-chat-flow-gap,12px)!important}
+.bt-typing{display:flex;align-items:center;gap:12px;height:36px;min-width:0;padding-inline-start:8px;transform-origin:0 50%;animation:bt-typing-in ${SPRING_TAP.duration}ms ${SPRING_TAP.easing} backwards}
+.bt-typing[data-exiting]{animation:bt-typing-out .14s cubic-bezier(.22,1,.36,1) forwards}
+.bt-typing>.bt-mark,.bt-typing>.bt-cluster{flex-shrink:0}
+.bt-typing>.bt-mark{cursor:pointer;transition:filter .16s ease-out}
+.bt-typing>.bt-mark:hover{filter:drop-shadow(0 2px 4px rgba(0,0,0,.18))}
+.bt-typing>.bt-mark .bt-eyes{transition:scale .28s cubic-bezier(.4,.06,.18,1)}
+.bt-typing>.bt-mark:hover .bt-eyes{scale:1.18}
+.bt-typing-text{display:flex;align-items:center;flex:1 1 auto;min-width:0;animation:bt-typing-label .22s ease-out .2s backwards}
+.bt-typing-label{display:inline-flex;align-items:center;gap:6px;min-width:0;animation:bt-typing-label .22s ease-out backwards}
+.bt-typing-label>.bt-shimmer{font-size:14px;line-height:22px;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-typing-time{flex-shrink:0;font-size:12px;line-height:22px;color:var(--bt-ink-3);white-space:nowrap}
+@keyframes bt-typing-in{from{opacity:0;transform:scale(.9)}}
+@keyframes bt-typing-out{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.92);filter:blur(3px)}}
+@keyframes bt-typing-label{from{opacity:0;filter:blur(5px);transform:translateY(3px)}}
+/* Shimmer: a stepped sweep clipped to the text. */
+.bt-shimmer{color:transparent;background:linear-gradient(90deg,var(--bt-shimmer-base) 0%,var(--bt-shimmer-base) 25%,var(--bt-ink) 60%,var(--bt-shimmer-base) 75%,var(--bt-shimmer-base) 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;animation:bt-shimmer 2.2s steps(60) infinite;--bt-shimmer-base:color-mix(in srgb,var(--bt-ink) 40%,transparent)}
+@keyframes bt-shimmer{from{background-position:200% 0}to{background-position:-200% 0}}
+/* New rows slide up; a reply that replaces the activity row grows out of its corner. */
+[data-bt-enter="new"]{animation:bt-row-in ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing}}
+[data-bt-enter="after-collapse"]{transform-origin:0 100%;animation:bt-row-after .24s cubic-bezier(.23,1,.32,1) .38s backwards}
+@keyframes bt-row-in{from{transform:translateY(12px)}to{transform:none}}
+@keyframes bt-row-after{0%{opacity:0;transform:translateY(12px) scale(.94)}55%{opacity:1}100%{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+.bt-typing,.bt-typing[data-exiting]{animation-name:bt-fade-in;animation-duration:.12s;transform:none}
+.bt-typing[data-exiting]{animation-name:bt-fade-out}
+.bt-typing-text,.bt-typing-label{animation-name:bt-fade-in;animation-delay:0s}
+.bt-shimmer{animation:none;background:none;color:var(--bt-ink-2)}
+[data-bt-enter="new"]{animation:none}
+[data-bt-enter="after-collapse"]{animation:bt-fade-in .12s ease-out}
+}
+@keyframes bt-fade-in{from{opacity:0}to{opacity:1}}
+@keyframes bt-fade-out{from{opacity:1}to{opacity:0}}
+[data-composer-card]{display:flex!important;flex-direction:row;flex-wrap:wrap;align-items:center;gap:0!important;min-height:44px;border-radius:22px!important;padding:7.5px!important;box-sizing:border-box;background:var(--bt-main)!important;border:.5px solid var(--bt-line-2)!important;box-shadow:0 2px 8px -1px rgba(0,0,0,.05),0 1px 2px rgba(0,0,0,.03),0 0 0 1px rgba(228,228,228,.04)!important;transition:border-color .15s ease,background-color .15s ease,${spring(SPRING_SHAPE, "border-radius")}!important}
+[data-composer-card]:hover,[data-composer-card]:focus-within{border-color:color-mix(in srgb,var(--bt-ink) 30%,transparent)!important}
+[data-composer-card]:has(> [data-slot="conversation.input.attachments"] *),[data-composer-card]:has([data-composer-input] br + *),[data-composer-card]:has([data-composer-input] > :nth-child(2)){border-radius:18px!important}
+[class*="_root"]:has(> [data-composer-card]){padding:0 11px 13px 16px!important}
+[class*="_root"]:has(> [data-composer-card])>[data-composer-card]{max-width:min(992px,100%)!important}
+[data-composer-card]>[class*="_row"]{display:contents!important}
+[data-composer-card] [class*="_tools"]{order:1;flex:none;align-self:flex-end;margin:0}
+[data-composer-card]>[data-input-scroll]{order:2;flex:1 1 0;min-width:0;padding:0 8px!important;margin:0!important}
+[data-composer-card] [class*="_trailing"]{order:3;flex:none;align-self:flex-end;margin:0}
+[data-composer-card]>[data-slot="conversation.input.attachments"]{order:0;flex-basis:100%}
+[data-composer-card] [data-composer-input]{min-height:24px;padding:2px 0!important}
+[data-composer-card] [data-composer-placeholder]{left:0!important;top:2px!important}
+[data-composer-placeholder]{font-size:0!important;line-height:0!important}
+[data-composer-placeholder]::after{content:var(--bt-placeholder,"Message");display:block;font-size:14px;line-height:24px;color:color-mix(in srgb,var(--bt-ink) 36%,transparent)}
+/* The team's "+" (ComposerPlus) takes the seat of the shell's command-menu button. */
+[data-composer-card] button[class*="_add"]{display:none!important}
+.bt-plus{flex:none;width:28px;height:28px;padding:0;border:0;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--bt-ink) 5%,transparent);box-shadow:inset 0 0 0 .5px var(--bt-line);color:var(--bt-ink-2);cursor:pointer;transition:background-color .15s ease,color .15s ease,${spring(SPRING_TAP, "scale")}}
+.bt-plus:hover,.bt-plus[aria-expanded=true]{background:color-mix(in srgb,var(--bt-ink) 10%,transparent);color:var(--bt-ink)}
+.bt-plus:active{scale:.9}
+.bt-plus svg{width:14px;height:14px;transition:${spring(SPRING_POP, "rotate")}}
+.bt-plus[aria-expanded=true] svg{rotate:45deg}
+.bt-plus-menu{min-width:180px}
+[data-composer-card] [class*="_tools"]{gap:0!important}
+[data-composer-card] [class*="_modes"]:empty{display:none!important}
+[data-composer-card] [class*="_activity"]:not(:has([data-slot] > *)){display:none!important}
+[data-composer-card] [class*="_trailing"]{gap:8px}
+[data-composer-card] [class*="_standardControls"]{display:flex;align-items:center;gap:8px}
+[data-composer-card] button[class*="_primary"]{width:28px!important;height:28px!important;background:var(--bt-accent)!important;color:var(--bt-accent-ink,#fff)!important;border-radius:50%!important;transition:opacity .15s ease,${spring(SPRING_TAP, "scale")};animation:bt-icon-swap ${SPRING_POP.duration}ms ${SPRING_POP.easing}}
+[data-composer-card] button[class*="_primary"]:hover:not(:disabled){opacity:.9}
+[data-composer-card] button[class*="_primary"]:active:not(:disabled){scale:.9}
+@keyframes bt-icon-swap{from{opacity:0;transform:scale(.5) rotate(-30deg)}}
+[data-composer-card] button[class*="_primary"] svg{width:14px;height:14px}
+[data-composer-card] button[class*="_primary"]:disabled{display:none!important}
+[data-composer-dock]{display:none!important}
+.bt-mic,.bt-voice{flex:none;width:28px;height:28px;border-radius:50%;border:0;padding:0;display:inline-grid;place-items:center;cursor:pointer;transition:background-color .15s ease,color .15s ease,${spring(SPRING_TAP, "scale")}}
+.bt-mic{background:color-mix(in srgb,var(--bt-ink) 5%,transparent);box-shadow:inset 0 0 0 .5px var(--bt-line);color:var(--bt-ink-2)}
+.bt-mic:hover{background:color-mix(in srgb,var(--bt-ink) 10%,transparent);color:var(--bt-ink)}
+.bt-mic[aria-pressed=true]{background:#ff3e51;color:#fff;animation:bt-mic-pulse 1.4s ease-in-out infinite}
+@keyframes bt-mic-pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,62,81,.35)}50%{box-shadow:0 0 0 5px rgba(255,62,81,0)}}
+.bt-voice{display:none;background:var(--bt-accent);color:var(--bt-accent-ink,#fff);animation:bt-icon-swap ${SPRING_POP.duration}ms ${SPRING_POP.easing}}
+.bt-voice:hover{opacity:.9}
+.bt-mic:active,.bt-voice:active{scale:.9}
+[data-composer-card]:has(button[class*="_primary"]:disabled) .bt-voice{display:inline-grid}
+body[data-bt-room] .bt-voice{display:none!important}
+body[data-bt-room] [data-composer-card]:has(button[class*="_primary"]:disabled) .bt-mic:not([aria-pressed=true]){background:var(--bt-accent);color:var(--bt-accent-ink,#fff)}
+.bt-mic-note{position:absolute;right:12px;bottom:calc(100% + 8px);padding:5px 10px;border-radius:8px;background:var(--bt-user);color:var(--bt-user-ink);font-size:12px;line-height:16px;white-space:nowrap;pointer-events:none;animation:bt-rise .16s ease-out}
+[data-chain-overlay-fallback="conversation.composer"]:has(~ .bt-q){display:block!important;order:2}
+.bt-q{order:1}
+div:has(> nav [class*="_marks"]){display:none!important}
+/* The theme paints --dsw-specific-bubble in the user color, and that token backs every
+   user-side bubble: sent, steering mid-turn, not yet admitted, question replies. */
+[class*="_userRow"] [class*="_bubble"],[data-chat-flow-kind=question-reply] [class*="_bubble"],[data-chat-flow-kind=command-input] [class*="_bubble"]{color:var(--bt-user-ink)!important;border-radius:18px!important;padding:7px 12px!important;font-size:var(--dsh-content-font-size,14px)!important;line-height:calc(var(--dsh-content-font-size,14px) + 8px)!important}
+[class*="_userRow"] [class*="_bubble"] [class*="_markdown"],[class*="_userRow"] [class*="_bubble"] a{color:inherit}
+/* Sent messages get the hover toolbar below; steering and unsent bubbles keep none. */
+[class*="_userRow"] [class*="_actions"]{display:none!important}
+[data-chat-flow-kind=user] [class*="_userRow"]{flex-direction:row-reverse;align-items:center;justify-content:flex-start}
+[data-chat-flow-kind=user] [class*="_actions"]{display:flex!important;height:24px!important;gap:2px!important;opacity:0!important;visibility:hidden;transition:opacity .12s ease,visibility .12s!important;flex:none}
+[data-chat-flow-kind=user] [class*="_userRow"]:hover [class*="_actions"],[data-chat-flow-kind=user] [class*="_userRow"]:focus-within [class*="_actions"]{opacity:1!important;visibility:visible}
+[data-chat-flow-kind=user] [class*="_actions"] [class*="_timeStart"]{display:none}
+[data-chat-flow-kind=user] [class*="_actions"] button{width:24px;height:24px;border-radius:6px;color:var(--bt-ink-2)}
+[data-chat-flow-kind=user] [class*="_actions"] button:hover{background:var(--bt-hover);color:var(--bt-ink)}
+[data-chat-flow-kind=user] [class*="_actions"] svg{width:15px;height:15px}
+.bt-q-inline{display:flex;margin:4px 0 6px}
+[data-chat-flow-kind=assistant-step]+[data-step-process]:has(.bt-q-inline){margin-top:0!important}
+[data-chat-flow-kind=question-reply]:has(.bt-q-inline),[data-chat-group-key]:has([data-chat-flow-kind=question-reply] .bt-q-inline),[data-chat-group-key]:has(.bt-q-gone){margin-top:0!important}
+.bt-q-inline .bt-q{margin:0;max-width:min(550px,86%);order:0}
+.bt-q-dock{width:100%;display:flex;justify-content:center}
+.bt-q-dock .bt-q{margin:0 auto 8px}
+[class*="_toBottomSlot"]{justify-content:center!important;padding-right:0!important}
+[data-conversation-scroll] [class*="_toBottomSlot"]{bottom:calc(var(--dsh-composer-height,152px) + 8px)!important}
+[class*="_toBottomSlot"]>button{width:36px!important;height:36px!important;margin-top:-36px!important;background:var(--bt-main)!important;color:var(--bt-ink)!important;box-shadow:0 0 0 .5px var(--bt-line-2),0 2px 8px -2px rgba(0,0,0,.12)!important;animation:bt-tobottom-in ${SPRING_TAP.duration}ms ${SPRING_TAP.easing},bt-veil-in .16s ease-out;transition:background-color .12s ease,${spring(SPRING_TAP, "scale")}}
+[class*="_toBottomSlot"]>button:active{scale:.9}
+[class*="_toBottomSlot"]>button:hover{background:color-mix(in srgb,var(--bt-ink) 4%,var(--bt-main))!important}
+[class*="_toBottomSlot"]>button svg{display:none}
+[class*="_toBottomSlot"]>button::before{content:"";width:20px;height:20px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 4v12M5 11l5 5 5-5'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 4v12M5 11l5 5 5-5'/%3E%3C/svg%3E") center/contain no-repeat}
+@keyframes bt-tobottom-in{from{translate:0 8px;scale:.8}}
+[data-bt-news] [class*="_toBottomSlot"]>button{visibility:hidden!important;pointer-events:none!important}
+.bt-news{position:fixed;z-index:30;transform:translateX(-50%);display:inline-flex;align-items:center;overflow:hidden;border-radius:999px;background:#0c64c1;color:#fcfcfc;box-shadow:inset 0 0 0 1px rgba(20,20,20,.05),0 1px 3px 0 rgba(0,0,0,.12);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;animation:bt-news-in ${SPRING_TAP.duration}ms ${SPRING_TAP.easing},bt-veil-in .16s ease-out}
+@keyframes bt-news-in{from{translate:0 8px;scale:.9}}
+.bt-news[data-direction=up]{animation-name:bt-news-in-up,bt-veil-in}
+@keyframes bt-news-in-up{from{translate:0 -8px;scale:.9}}
+.bt-news-jump{display:inline-flex;align-items:center;gap:2px;margin:0;padding:4px 26px 4px 4px;border:0;border-radius:0;background:transparent;color:inherit;font:inherit;font-size:13px;line-height:18px;white-space:nowrap;cursor:pointer;outline:none}
+.bt-news-ico{flex:none;display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px}
+.bt-news-ico svg{width:16px;height:16px}
+.bt-news-x{position:absolute;right:4px;top:50%;z-index:1;transform:translateY(-50%);width:20px;height:20px;padding:0;border:0;border-radius:999px;background:transparent;color:inherit;opacity:.75;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.bt-news-x svg{width:12px;height:12px}
+.bt-news-x:hover{opacity:1;background:rgba(20,20,20,.5)}
+@media (prefers-reduced-motion:reduce){.bt-news,[class*="_toBottomSlot"]>button{animation:none}}
+.bt-new-sep{display:flex;align-items:center;gap:8px;margin:14px 0 8px;padding:2px 0;font-size:11px;line-height:14px;font-weight:500;letter-spacing:.02em;text-transform:uppercase;color:#0c64c1;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+.bt-new-sep::before,.bt-new-sep::after{content:"";flex:1;height:1px;background:color-mix(in srgb,#0c64c1 20%,transparent)}
+.bt-open-new{display:flex;flex-direction:column}
+.bt-open-new .bt-new-sep{margin:18px 0 0}
+.bt-open-new .bt-time-sep{height:16px;margin:32px 0 2px}
+.bt-earlier{display:flex;flex-direction:column;gap:6px}
+.bt-earlier-top{display:flex;justify-content:center;align-items:center;height:34px;flex:none}
+.bt-earlier-top .bt-soft{height:28px;font-size:12px;padding:0 12px}
+.bt-urow{display:flex;justify-content:flex-end}
+.bt-ububble{max-width:min(560px,78%);background:var(--bt-user);color:var(--bt-user-ink);border-radius:18px;padding:7px 12px;font-size:14px;line-height:20px;box-sizing:border-box;overflow-wrap:anywhere}
+.bt-ububble [class*="_markdown"],.bt-ububble a{color:inherit!important}
+.bt-ububble p{margin:0;line-height:22px}
+.bt-uimages{display:block;font-size:12px;opacity:.7}
+.bt-earlier .bt-event{margin:4px 0}
+.bt-part-line{display:flex;align-items:center;gap:10px;margin:10px 0 6px;font-size:11px;line-height:14px;color:var(--bt-ink-3)}
+.bt-part-line::before,.bt-part-line::after{content:"";flex:1;height:1px;background:var(--bt-line)}
+`;
+function installStyles(text, tag) {
+  const style = document.createElement("style");
+  style.dataset.dshBot = tag;
+  style.textContent = text;
+  document.head.appendChild(style);
+  return style;
+}
+var FRAGMENT_SELECTOR = /\[class\*="(_[\w-]+)"\]/g;
+var CLASS_TOKEN = /\.((?:\\.|[\w-])+)/g;
+function sheetClassNames(sheet) {
+  const names = [];
+  const visit = (rules) => {
+    for (const rule of rules) {
+      if (rule.selectorText) for (const match of rule.selectorText.matchAll(CLASS_TOKEN)) names.push(match[1]);
+      if (rule.cssRules) visit(rule.cssRules);
+    }
+  };
+  try {
+    visit(sheet.cssRules);
+  } catch {
+  }
+  return names;
+}
+function compileFragmentSelectors(text, names) {
+  const compiled = /* @__PURE__ */ new Map();
+  return text.replace(FRAGMENT_SELECTOR, (whole, fragment) => {
+    if (!compiled.has(fragment)) {
+      const exact = [];
+      for (const name of names) if (name.includes(fragment)) exact.push(`.${name}`);
+      compiled.set(fragment, exact.length ? `:is(${exact.join(",")})` : whole);
+    }
+    return compiled.get(fragment);
+  });
+}
+function installCompiledStyles(text, tag) {
+  const style = installStyles("", tag);
+  const cache = /* @__PURE__ */ new WeakMap();
+  const render = () => {
+    const names = /* @__PURE__ */ new Set();
+    for (const sheet of document.styleSheets) {
+      if (sheet.ownerNode?.dataset?.dshBot) continue;
+      let list = cache.get(sheet);
+      if (!list) {
+        list = sheetClassNames(sheet);
+        cache.set(sheet, list);
+      }
+      for (const name of list) names.add(name);
+    }
+    const next = compileFragmentSelectors(text, names);
+    if (style.textContent !== next) style.textContent = next;
+  };
+  render();
+  let timer;
+  const schedule = () => {
+    clearTimeout(timer);
+    timer = setTimeout(render, 120);
+  };
+  const onLoad = (event) => {
+    if (event.target instanceof HTMLLinkElement) schedule();
+  };
+  const observer = new MutationObserver(schedule);
+  observer.observe(document.head, { childList: true });
+  document.addEventListener("load", onLoad, true);
+  return () => {
+    observer.disconnect();
+    document.removeEventListener("load", onLoad, true);
+    clearTimeout(timer);
+    style.remove();
+  };
+}
+
+// src/client/mark.js
+var import_react2 = require("react");
+var STATES = ["idle", "thinking", "searching", "working", "sending", "orbit", "alert", "done"];
+var botState = (running, activity, alert) => running ? STATES.includes(activity) ? activity : "working" : alert ? "alert" : "idle";
+var toolState = (name) => /^(message_bot|create_bot|update_bot|create_group|update_group|delete_group|post_to_group)$/.test(name) ? "sending" : /search|fetch|browse|read|grep|glob|list|recall/i.test(name) ? "searching" : "working";
+function useGaze(ref, enabled) {
+  (0, import_react2.useEffect)(() => {
+    if (!enabled) return void 0;
+    let frame = 0;
+    let point = null;
+    const place = () => {
+      frame = 0;
+      const node = ref.current;
+      if (!node || !point) return;
+      const box = node.getBoundingClientRect();
+      const clamp = (value) => Math.max(-1, Math.min(1, value));
+      node.style.setProperty("--bt-gx", clamp((point.x - box.left - box.width / 2) / 160).toFixed(2));
+      node.style.setProperty("--bt-gy", clamp((point.y - box.top - box.height / 2) / 160).toFixed(2));
+    };
+    const onMove = (event) => {
+      point = { x: event.clientX, y: event.clientY };
+      if (!frame) frame = requestAnimationFrame(place);
+    };
+    const onLeave = () => {
+      point = null;
+      ref.current?.style.setProperty("--bt-gx", "0");
+      ref.current?.style.setProperty("--bt-gy", "0");
+    };
+    window.addEventListener("pointermove", onMove, { passive: true });
+    document.documentElement.addEventListener("pointerleave", onLeave);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("pointermove", onMove);
+      document.documentElement.removeEventListener("pointerleave", onLeave);
+    };
+  }, [enabled]);
+}
+var FIDGETS = ["hop", "sway", "stretch", "look"];
+function BotMark({ bot, look: given, size = 36, state = "idle", live = false, gaze = false, pokeable = false, label }) {
+  const look = given ?? lookOf(bot);
+  const ref = (0, import_react2.useRef)(null);
+  const maskId = (0, import_react2.useRef)("");
+  if (maskId.current === "") maskId.current = `bt-mark-${nextMarkSerial()}`;
+  const [poked, setPoked] = (0, import_react2.useState)(false);
+  useGaze(ref, gaze);
+  const common = {
+    ref,
+    className: poked ? "bt-mark bt-mark-poke" : "bt-mark",
+    "data-shape": look.image ? "image" : shapeId(look.shape),
+    "data-state": STATES.includes(state) ? state : "idle",
+    "data-live": live ? "" : void 0,
+    "data-fidget": live ? FIDGETS[fnv1a(`${bot?.id ?? ""}:fidget`) % FIDGETS.length] : void 0,
+    "data-gaze": gaze ? "" : void 0,
+    "data-poke": pokeable ? "" : void 0,
+    style: { width: size, height: size, ...live ? { "--bt-delay": `${-(fnv1a(String(bot?.id ?? "")) % 5e3) / 1e3}s`, "--bt-fidget-delay": `${-(fnv1a(`${bot?.id ?? ""}:when`) % 9e3) / 1e3}s` } : {} },
+    role: label ? "img" : void 0,
+    "aria-label": label,
+    "aria-hidden": label ? void 0 : true,
+    onClick: pokeable ? () => setPoked(true) : void 0,
+    onAnimationEnd: poked ? (event) => {
+      if (/^bt-poke/.test(event.animationName)) setPoked(false);
+    } : void 0
+  };
+  if (look.image) return (0, import_react2.createElement)("span", common, (0, import_react2.createElement)("img", { className: "bt-mark-img", src: look.image, alt: "", draggable: false }));
+  const box = shapeOf(look.shape).size;
+  return (0, import_react2.createElement)("span", common, (0, import_react2.createElement)("svg", { viewBox: `0 0 ${box} ${box}`, dangerouslySetInnerHTML: { __html: characterMarkup(look.shape, look.color).replaceAll(MASK_ID, maskId.current) } }));
+}
+function StarIcon({ size = 8 }) {
+  return (0, import_react2.createElement)(
+    "svg",
+    { width: size, height: size, viewBox: "0 0 10 10", "aria-hidden": true },
+    (0, import_react2.createElement)("path", { d: "M5 .6l1.3 2.8 3 .3-2.3 2 .7 3L5 7.2 2.3 8.7l.7-3L.7 3.7l3-.3z", fill: "#fff" })
+  );
+}
+function AdminStar() {
+  return (0, import_react2.createElement)("span", { className: "bt-admin-star", role: "img", "aria-label": t("Admin") }, (0, import_react2.createElement)(StarIcon, { size: 7 }));
+}
+function MainStar() {
+  return (0, import_react2.createElement)(
+    "svg",
+    { viewBox: "0 0 20 20", "aria-hidden": true },
+    (0, import_react2.createElement)("path", { d: "M10 2.4l2.29 5.04 5.51.63-4.09 3.74 1.11 5.42L10 14.5l-4.82 2.73 1.11-5.42L2.2 8.07l5.51-.63z" })
+  );
+}
+function useSettled(state) {
+  const prev = (0, import_react2.useRef)(state);
+  const [settled, setSettled] = (0, import_react2.useState)(false);
+  (0, import_react2.useEffect)(() => {
+    const was = prev.current;
+    prev.current = state;
+    if (state !== "idle") {
+      setSettled(false);
+      return void 0;
+    }
+    if (was === "idle" || was === "alert") return void 0;
+    setSettled(true);
+    const timer = setTimeout(() => setSettled(false), 1800);
+    return () => clearTimeout(timer);
+  }, [state]);
+  return settled;
+}
+function BotAvatar({ bot, size, state = "idle", main, admin, badge = true, live = true, gaze = false, pokeable = false }) {
+  const settled = useSettled(state);
+  if (bot === void 0) return (0, import_react2.createElement)(BotMark, { size });
+  const badgeKind = !badge ? null : state === "alert" ? "alert" : state !== "idle" ? "working" : admin ? "admin" : main ? "main" : null;
+  return (0, import_react2.createElement)(
+    "span",
+    { className: "bt-mark", style: { width: size, height: size, "--bt-size": `${size}px` } },
+    (0, import_react2.createElement)(BotMark, { bot, size, state: settled ? "done" : state, live, gaze, pokeable }),
+    badgeKind === "working" ? (0, import_react2.createElement)("span", { className: "bt-badge bt-badge-working", "aria-label": t("Working"), role: "img" }) : null,
+    badgeKind === "alert" ? (0, import_react2.createElement)("span", { className: "bt-badge bt-badge-alert", "aria-label": t("Waiting for your answer"), role: "img" }, "?") : null,
+    badgeKind === "admin" ? (0, import_react2.createElement)("span", { className: "bt-badge bt-badge-admin", "aria-label": t("Admin"), role: "img" }, (0, import_react2.createElement)(StarIcon)) : null,
+    badgeKind === "main" ? (0, import_react2.createElement)("span", { className: "bt-badge bt-badge-main", "aria-label": t("Main Bot"), role: "img" }, (0, import_react2.createElement)(MainStar)) : null
+  );
+}
+function clusterSeats(count, frame) {
+  if (count === 1) return [[0, 0, frame]];
+  if (count === 2) return [[0, 0, frame * 2 / 3], [frame / 3, frame / 3, frame * 2 / 3]];
+  if (count === 3) {
+    const size = frame * 5 / 9;
+    const rest = frame - size;
+    return [[rest / 2, 0, size], [0, rest, size], [rest, rest, size]];
+  }
+  const half = frame / 2;
+  return [[0, 0, half], [half, 0, half], [0, half, half], [half, half, half]];
+}
+function RoomAvatar({ room: room2, roster, size = 36 }) {
+  const members = room2.members.map((id) => roster.byId[id]).filter(Boolean);
+  const people = members.length === 1 ? [members[0], null] : members;
+  const seat = (bot, seatSize, key) => bot ? (0, import_react2.createElement)(BotMark, { key, bot, size: seatSize }) : (0, import_react2.createElement)("span", { key, className: "bt-cluster-you", style: { width: seatSize * 0.92, height: seatSize * 0.92, margin: seatSize * 0.04 } });
+  if (people.length === 0) return (0, import_react2.createElement)(BotMark, { size });
+  if (size <= 20 && people.length > 1) {
+    return (0, import_react2.createElement)(
+      "span",
+      { className: "bt-stack", style: { "--bt-stack-size": `${size}px` } },
+      people.slice(0, 3).map((bot, index) => seat(bot, size, bot?.id ?? `you-${index}`)),
+      people.length > 3 ? (0, import_react2.createElement)("span", { className: "bt-stack-more" }, `+${people.length - 3}`) : null
+    );
+  }
+  const seats = clusterSeats(Math.min(people.length, 4), size);
+  const overflow = people.length > 4 ? people.length - 3 : 0;
+  const gap = size / 14;
+  const rings = seats.map(([x, y, s]) => ({ cx: x + s / 2, cy: y + s / 2, r: s * 0.48 + gap }));
+  return (0, import_react2.createElement)(
+    "span",
+    { className: "bt-cluster", style: { width: size, height: size } },
+    seats.map(([x, y, s], index) => {
+      const holes2 = rings.slice(index + 1).filter((ring) => Math.hypot(ring.cx - x - s / 2, ring.cy - y - s / 2) < ring.r + s * 0.46).map((ring) => `radial-gradient(circle at ${ring.cx - x}px ${ring.cy - y}px,transparent ${ring.r}px,#000 ${ring.r + 0.5}px)`);
+      const style = { left: x, top: y, width: s, height: s };
+      if (holes2.length > 0) Object.assign(style, { WebkitMaskImage: holes2.join(","), maskImage: holes2.join(","), WebkitMaskComposite: "source-in", maskComposite: "intersect" });
+      if (overflow > 0 && index === 3) {
+        return (0, import_react2.createElement)("span", { key: "more", className: "bt-cluster-more", style: { ...style, width: s * 0.92, height: s * 0.92, margin: s * 0.04, fontSize: Math.max(8, Math.round(s * 0.36)) } }, `+${overflow}`);
+      }
+      const bot = people[index];
+      return (0, import_react2.createElement)("span", { key: bot?.id ?? "you", style }, seat(bot, s));
+    })
+  );
+}
+
+// src/client/icons.js
+var import_react3 = require("react");
+function PlusIcon() {
+  return (0, import_react3.createElement)("svg", { width: 18, height: 18, viewBox: "0 0 20 20", "aria-hidden": true }, (0, import_react3.createElement)("path", { d: "M10 3.5v13M3.5 10h13", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round" }));
+}
+function SearchIcon() {
+  return (0, import_react3.createElement)("svg", { width: 16, height: 16, viewBox: "0 0 20 20", "aria-hidden": true }, (0, import_react3.createElement)("circle", { cx: 8.5, cy: 8.5, r: 5.5, stroke: "currentColor", strokeWidth: 1.6, fill: "none" }), (0, import_react3.createElement)("path", { d: "M13 13l4 4", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round" }));
+}
+function PeopleIcon() {
+  return (0, import_react3.createElement)(
+    "svg",
+    { width: 14, height: 14, viewBox: "0 0 20 20", fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round", "aria-hidden": true },
+    (0, import_react3.createElement)("circle", { cx: 7.5, cy: 7, r: 3 }),
+    (0, import_react3.createElement)("path", { d: "M2 16.5c.6-2.8 2.8-4.5 5.5-4.5s4.9 1.7 5.5 4.5" }),
+    (0, import_react3.createElement)("path", { d: "M13 4.3a3 3 0 0 1 0 5.4M15 12.4c1.6.6 2.6 2 3 4.1" })
+  );
+}
+function ArrowUpIcon() {
+  return (0, import_react3.createElement)("svg", { width: 16, height: 16, viewBox: "0 0 20 20", "aria-hidden": true }, (0, import_react3.createElement)("path", { d: "M10 16V4M5 9l5-5 5 5", stroke: "currentColor", strokeWidth: 1.8, fill: "none", strokeLinecap: "round", strokeLinejoin: "round" }));
+}
+function MicIcon({ size = 16 }) {
+  return (0, import_react3.createElement)(
+    "svg",
+    { width: size, height: size, viewBox: "0 0 20 20", fill: "none", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round", "aria-hidden": true },
+    (0, import_react3.createElement)("rect", { x: 7, y: 2.5, width: 6, height: 10, rx: 3, fill: "currentColor", stroke: "none" }),
+    (0, import_react3.createElement)("path", { d: "M4.5 9.5a5.5 5.5 0 0 0 11 0M10 15v2.5" })
+  );
+}
+function WaveIcon({ size = 16 }) {
+  return (0, import_react3.createElement)(
+    "svg",
+    { width: size, height: size, viewBox: "0 0 20 20", fill: "currentColor", "aria-hidden": true },
+    [[3, 7.5, 5], [6.5, 4.5, 11], [10, 2.5, 15], [13.5, 5.5, 9], [17, 8, 4]].map(([x, y, height]) => (0, import_react3.createElement)("rect", { key: x, x: x - 1, y, width: 2, height, rx: 1 }))
+  );
+}
+function ShareIcon() {
+  return (0, import_react3.createElement)(
+    "svg",
+    { width: 16, height: 16, viewBox: "0 0 20 20", fill: "none", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true },
+    (0, import_react3.createElement)("path", { d: "M10 12.5V3M6.5 6.5L10 3l3.5 3.5M4 11v4.5A1.5 1.5 0 0 0 5.5 17h9a1.5 1.5 0 0 0 1.5-1.5V11" })
+  );
+}
+function CloseIcon() {
+  return (0, import_react3.createElement)("svg", { width: 16, height: 16, viewBox: "0 0 20 20", "aria-hidden": true }, (0, import_react3.createElement)("path", { d: "M5 5l10 10M15 5L5 15", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round" }));
+}
+var ChevronLeftIcon = () => (0, import_react3.createElement)("svg", { width: 16, height: 16, viewBox: "0 0 20 20", fill: "none", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true }, (0, import_react3.createElement)("path", { d: "M12.5 4.5L7 10l5.5 5.5" }));
+var ChevronRightIcon = () => (0, import_react3.createElement)("svg", { width: 14, height: 14, viewBox: "0 0 20 20", fill: "none", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true }, (0, import_react3.createElement)("path", { d: "M7.5 4.5L13 10l-5.5 5.5" }));
+var lineIcon = (paths) => function LineIcon() {
+  return (0, import_react3.createElement)(
+    "svg",
+    { width: 15, height: 15, viewBox: "0 0 20 20", fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true },
+    paths.map((d, index) => (0, import_react3.createElement)("path", { key: index, d }))
+  );
+};
+var CLOUD = "M6.5 15.25H5.75a3.25 3.25 0 0 1-.55-6.45 4.75 4.75 0 0 1 9.2-1.1 3.75 3.75 0 0 1 .1 7.55H13.5";
+function CloudDownloadIcon({ done = false }) {
+  return (0, import_react3.createElement)(
+    "svg",
+    { width: 16, height: 16, viewBox: "0 0 20 20", fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true },
+    (0, import_react3.createElement)("path", { d: CLOUD }),
+    done ? (0, import_react3.createElement)("path", { d: "M7.75 13.25l1.75 1.75 3-3.25" }) : (0, import_react3.createElement)("g", { className: "bt-cloud-arrow" }, (0, import_react3.createElement)("path", { d: "M10 9.75v7" }), (0, import_react3.createElement)("path", { d: "M7.75 14.5L10 16.75l2.25-2.25" }))
+  );
+}
+var SmileIcon = lineIcon(["M10 3.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13z", "M7.3 11.6a3.4 3.4 0 0 0 5.4 0", "M7.75 8.25h.01M12.25 8.25h.01"]);
+var ReplyIcon = lineIcon(["M8 5L4 9l4 4", "M4 9h7.5a4.5 4.5 0 0 1 4.5 4.5V15"]);
+var DotsIcon = lineIcon(["M5 10h.01M10 10h.01M15 10h.01"]);
+var CheckIcon = lineIcon(["M4.5 10.5l3.5 3.5 7.5-8"]);
+var ArrowDownIcon = lineIcon(["M10 4v12", "M5 11l5 5 5-5"]);
+var DownloadIcon = lineIcon(["M10 3.5v9", "M6.5 9.5L10 13l3.5-3.5", "M4 16h12"]);
+var GaugeIcon = lineIcon(["M3.5 13.5a6.5 6.5 0 1 1 13 0", "M10 13.5l3-4", "M10 13.5h.01"]);
+var PlugIcon = lineIcon(["M7 3v4M13 3v4", "M5 7h10v2.5a5 5 0 0 1-10 0z", "M10 14.5V17"]);
+var CalendarIcon = lineIcon(["M5.5 5h9A1.5 1.5 0 0 1 16 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 4 14.5v-8A1.5 1.5 0 0 1 5.5 5z", "M4 8.75h12", "M7.25 3.5v3M12.75 3.5v3"]);
+var ConnectorIcon = lineIcon(["M7 10a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z", "M18 10a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z", "M7 10h6"]);
+var SwitchIcon = lineIcon(["M4 7h9.5M10.5 3.5L14 7l-3.5 3.5", "M16 13H6.5M9.5 9.5L6 13l3.5 3.5"]);
+var PaperclipIcon = lineIcon(["M15.5 9.5l-5.6 5.6a3.4 3.4 0 0 1-4.8-4.8l6.1-6.1a2.25 2.25 0 0 1 3.2 3.2l-6 6a1.1 1.1 0 0 1-1.6-1.6l5.5-5.5"]);
+var ClockIcon = lineIcon(["M10 3.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13z", "M10 6.5V10l2.5 1.5"]);
+var GearIcon = lineIcon(["M10 7.4a2.6 2.6 0 1 1 0 5.2 2.6 2.6 0 0 1 0-5.2z", "M7.85 4.4l.29-1.87a7.7 7.7 0 0 1 3.72 0l.29 1.87a6 6 0 0 1 1.63.94l1.76-.69a7.7 7.7 0 0 1 1.86 3.23l-1.47 1.18a6 6 0 0 1 0 1.88l1.47 1.18a7.7 7.7 0 0 1-1.86 3.23l-1.76-.69a6 6 0 0 1-1.63.94l-.29 1.87a7.7 7.7 0 0 1-3.72 0l-.29-1.87a6 6 0 0 1-1.63-.94l-1.76.69a7.7 7.7 0 0 1-1.86-3.23l1.47-1.18a6 6 0 0 1 0-1.88L2.6 7.88a7.7 7.7 0 0 1 1.86-3.23l1.76.69a6 6 0 0 1 1.63-.94z"]);
+var PinIcon = lineIcon(["M12.5 3l4.5 4.5-3 1.5-2.5 2.5.5 3.5-1.5 1.5L7 13 3.5 16.5", "M7 13l-3.5-3.5L5 8l3.5.5L11 6l1.5-3"]);
+function PinMarkIcon() {
+  return (0, import_react3.createElement)(
+    "svg",
+    { width: 12, height: 12, viewBox: "0 0 20 20", fill: "currentColor", "aria-hidden": true },
+    (0, import_react3.createElement)(
+      "g",
+      { transform: "rotate(45 10 10)" },
+      (0, import_react3.createElement)("path", { d: "M8 2.5h4a.9.9 0 0 1 0 1.8h-.4v4.1c0 1.4 1.1 2.6 2.6 3.1l.7.3v1.5H5.1v-1.5l.7-.3c1.5-.5 2.6-1.7 2.6-3.1V4.3H8a.9.9 0 0 1 0-1.8z" }),
+      (0, import_react3.createElement)("path", { d: "M9.35 13.3h1.3v3.6L10 18l-.65-1.1z" })
+    )
+  );
+}
+var UnreadIcon = lineIcon(["M10 3.5a4.5 4.5 0 0 0-4.5 4.5v3L4 13.5h12L14.5 11V8", "M8.3 16a1.8 1.8 0 0 0 3.4 0", "M15.5 3.2a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2z"]);
+var PencilIcon = lineIcon(["M9 4H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-3", "M14.3 3.7a1.6 1.6 0 0 1 2.3 2.3L10.5 12l-3 .8.8-3z"]);
+var StarLineIcon = lineIcon(["M10 3l2.1 4.3 4.7.7-3.4 3.3.8 4.7L10 13.8 5.8 16l.8-4.7L3.2 8l4.7-.7z"]);
+var CopyIcon = lineIcon(["M8.5 7h6A1.5 1.5 0 0 1 16 8.5v6a1.5 1.5 0 0 1-1.5 1.5h-6A1.5 1.5 0 0 1 7 14.5v-6A1.5 1.5 0 0 1 8.5 7z", "M4 12.5V5.5A1.5 1.5 0 0 1 5.5 4H13"]);
+var HideIcon = lineIcon(["M3 3l14 14", "M8.6 5.2A7.6 7.6 0 0 1 10 5c4.5 0 7 5 7 5a12.6 12.6 0 0 1-2 2.6M12.2 14.5A6.8 6.8 0 0 1 10 15c-4.5 0-7-5-7-5a12.4 12.4 0 0 1 3-3.4", "M8.5 8.5a2 2 0 0 0 3 3"]);
+var TrashIcon = lineIcon(["M3.5 5.5h13", "M8 5.5V4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1.5", "M5 5.5l.7 10A1.5 1.5 0 0 0 7.2 17h5.6a1.5 1.5 0 0 0 1.5-1.5l.7-10", "M8.5 9v4.5M11.5 9v4.5"]);
+var DuplicateIcon = lineIcon(["M7 7h8.5v9.5H7z", "M4.5 13V3.5H13", "M11.25 9.5v4.5M9 11.75h4.5"]);
+var SlidersIcon = lineIcon(["M4 6.5h5M12.5 6.5H16M4 13.5h4M11.5 13.5H16", "M10.5 4.5v4M9.5 11.5v4"]);
+var MemoryIcon = lineIcon(["M5.5 3.5h8A1.5 1.5 0 0 1 15 5v10a1.5 1.5 0 0 1-1.5 1.5h-8z", "M5.5 3.5v13", "M8.5 7.5h3.5M8.5 10.5h2.5", "M12 3.5v4l1-.8 1 .8"]);
+var ChatsIcon = lineIcon(["M3.5 5.5A1.5 1.5 0 0 1 5 4h7a1.5 1.5 0 0 1 1.5 1.5V10A1.5 1.5 0 0 1 12 11.5H8L5 14v-2.5A1.5 1.5 0 0 1 3.5 10z", "M13.5 7.5H15A1.5 1.5 0 0 1 16.5 9v4.5A1.5 1.5 0 0 1 15 15v2l-2.5-2h-3A1.5 1.5 0 0 1 8 13.5V13"]);
+var SETTINGS_ICONS = { general: GearIcon, bots: PeopleIcon, groups: ChatsIcon, usage: GaugeIcon };
+
+// src/client/questions.js
+var import_react4 = require("react");
+var keyLetter = (index) => String.fromCharCode(65 + index);
+var optionsOf = (question) => (question?.options ?? []).map((option) => typeof option === "string" ? { label: option } : option);
+var isTypingTarget = (node) => node instanceof HTMLInputElement || node instanceof HTMLTextAreaElement || node instanceof HTMLSelectElement || node instanceof HTMLElement && node.isContentEditable;
+function useOptionKeys(count, onPick, ownRef) {
+  const pick2 = (0, import_react4.useRef)(onPick);
+  pick2.current = onPick;
+  (0, import_react4.useEffect)(() => {
+    if (count === 0) return void 0;
+    const onKey = (event) => {
+      if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.altKey || event.shiftKey || event.key.length !== 1) return;
+      if (isTypingTarget(event.target) || isTypingTarget(document.activeElement)) return;
+      if (document.querySelector('[role="dialog"], [aria-modal="true"]') !== null) return;
+      const index = event.key.toUpperCase().charCodeAt(0) - 65;
+      if (index >= 0 && index < count) {
+        event.preventDefault();
+        pick2.current(index);
+      } else if (index === count && ownRef.current) {
+        event.preventDefault();
+        ownRef.current.focus();
+      }
+    };
+    document.addEventListener("keydown", onKey, true);
+    return () => document.removeEventListener("keydown", onKey, true);
+  }, [count, ownRef]);
+}
+function QuestionView({ question, onAnswer, onDismiss, ownAnswer = false, raised = false }) {
+  const [own, setOwn] = (0, import_react4.useState)("");
+  const [picked, setPicked] = (0, import_react4.useState)([]);
+  const ownRef = (0, import_react4.useRef)(null);
+  const titleId = (0, import_react4.useId)();
+  const options = optionsOf(question);
+  const multi = question.multiSelect === true;
+  const custom = own.trim();
+  const canSubmit = multi ? picked.length > 0 || custom !== "" : custom !== "";
+  const choose = (label) => {
+    if (multi) {
+      setPicked((current) => current.includes(label) ? current.filter((item) => item !== label) : [...current, label]);
+      return;
+    }
+    onAnswer({ selected: [label] });
+  };
+  const submit = () => {
+    if (!canSubmit) return;
+    onAnswer({ selected: multi ? picked : [], ...custom ? { custom } : {} });
+  };
+  useOptionKeys(options.length, (index) => choose(options[index].label), ownRef);
+  const ownLetter = options.length > 0 ? keyLetter(options.length) : void 0;
+  const field = ownAnswer ? (0, import_react4.createElement)("textarea", {
+    ref: ownRef,
+    rows: 1,
+    value: own,
+    autoComplete: "off",
+    spellCheck: false,
+    className: "bt-q-input",
+    "aria-label": t("Your own answer"),
+    placeholder: t("Type your own answer"),
+    "aria-keyshortcuts": ownLetter?.toLowerCase(),
+    onChange: (event) => setOwn(event.target.value),
+    onKeyDown: (event) => {
+      if (event.key !== "Enter" || event.shiftKey || event.nativeEvent.isComposing) return;
+      event.preventDefault();
+      submit();
+    }
+  }) : null;
+  const rows = options.map((option, optionIndex) => {
+    const selected = multi && picked.includes(option.label);
+    return (0, import_react4.createElement)(
+      "button",
+      {
+        key: option.label,
+        type: "button",
+        className: "bt-q-opt",
+        "aria-pressed": multi ? selected : void 0,
+        "aria-keyshortcuts": keyLetter(optionIndex).toLowerCase(),
+        onClick: () => choose(option.label)
+      },
+      (0, import_react4.createElement)("span", { className: "bt-key", "aria-hidden": true }, keyLetter(optionIndex)),
+      (0, import_react4.createElement)(
+        "span",
+        { className: "bt-q-body" },
+        (0, import_react4.createElement)("span", { className: "bt-q-label" }, option.label),
+        option.description ? (0, import_react4.createElement)("span", { className: "bt-q-desc" }, option.description) : null
+      ),
+      selected && !raised ? (0, import_react4.createElement)("span", { className: "bt-q-check", title: t("Selected") }, (0, import_react4.createElement)(CheckIcon)) : null
+    );
+  });
+  if (raised && field) {
+    rows.push((0, import_react4.createElement)(
+      "label",
+      { key: "own", className: "bt-q-opt bt-q-ownrow", "data-filled": custom !== "" ? "" : void 0 },
+      ownLetter ? (0, import_react4.createElement)("span", { className: "bt-key", "aria-hidden": true }, ownLetter) : null,
+      (0, import_react4.createElement)("span", { className: "bt-q-body" }, field)
+    ));
+  }
+  let foot = null;
+  if (raised && multi) {
+    foot = (0, import_react4.createElement)(
+      "div",
+      { className: "bt-q-foot" },
+      (0, import_react4.createElement)("button", { type: "button", className: "bt-q-btn", onClick: onDismiss }, t("Skip")),
+      (0, import_react4.createElement)("button", { type: "submit", className: "bt-q-submit", disabled: !canSubmit }, t("Submit"))
+    );
+  } else if ((raised || multi) && canSubmit) {
+    foot = (0, import_react4.createElement)("div", { className: "bt-q-foot" }, (0, import_react4.createElement)("button", { type: "submit", className: "bt-q-submit" }, t("Submit")));
+  }
+  return (0, import_react4.createElement)(
+    "form",
+    {
+      className: raised ? "bt-q bt-q-raised" : "bt-q",
+      "aria-labelledby": titleId,
+      onSubmit: (event) => {
+        event.preventDefault();
+        submit();
+      }
+    },
+    (0, import_react4.createElement)(
+      "div",
+      { className: "bt-q-head" },
+      (0, import_react4.createElement)(
+        "div",
+        { className: "bt-q-text" },
+        (0, import_react4.createElement)("p", { className: "bt-q-title", id: titleId }, question.header ? `${question.header} · ` : "", question.question),
+        question.detail ? (0, import_react4.createElement)("div", { className: "bt-q-detail" }, question.detail) : null,
+        raised && multi ? (0, import_react4.createElement)("div", { className: "bt-q-detail" }, t("Choose all that apply")) : null
+      ),
+      (0, import_react4.createElement)("button", { type: "button", className: "bt-q-x", "aria-label": t("Dismiss question"), title: t("Dismiss"), onClick: onDismiss }, (0, import_react4.createElement)(CloseIcon))
+    ),
+    rows.length > 0 ? (0, import_react4.createElement)("div", { className: "bt-q-list", role: "group" }, rows) : null,
+    field && !raised ? (0, import_react4.createElement)(
+      "div",
+      { className: "bt-q-custom" },
+      (0, import_react4.createElement)("label", { className: "bt-q-field" }, field),
+      !multi && canSubmit ? (0, import_react4.createElement)("button", { type: "submit", className: "bt-q-submit" }, t("Submit")) : null
+    ) : null,
+    foot
+  );
+}
+function SettledQuestion({ question, answer }) {
+  const options = optionsOf(question);
+  const prompt = question?.question ?? "";
+  const chosen = [...answer.selected ?? [], ...answer.custom ? [answer.custom] : []];
+  if (chosen.length === 0) {
+    return (0, import_react4.createElement)(
+      "div",
+      { className: "bt-q bt-q-settled bt-q-dismissed", role: "group", "aria-label": prompt },
+      (0, import_react4.createElement)(
+        "div",
+        { className: "bt-q-head" },
+        (0, import_react4.createElement)("div", { className: "bt-q-text" }, (0, import_react4.createElement)("p", { className: "bt-q-title" }, prompt)),
+        (0, import_react4.createElement)("span", { className: "bt-q-badge" }, t("Dismissed"))
+      )
+    );
+  }
+  return (0, import_react4.createElement)(
+    "div",
+    { className: "bt-q bt-q-settled", role: "group", "aria-label": prompt },
+    prompt ? (0, import_react4.createElement)("div", { className: "bt-q-head" }, (0, import_react4.createElement)("div", { className: "bt-q-text" }, (0, import_react4.createElement)("p", { className: "bt-q-title" }, prompt))) : null,
+    (0, import_react4.createElement)("div", { className: "bt-q-list", role: "group", "aria-label": t("Your answer") }, chosen.map((label, index) => {
+      const optionIndex = options.findIndex((option) => option.label === label);
+      return (0, import_react4.createElement)(
+        "div",
+        { key: `${label}-${index}`, className: "bt-q-opt" },
+        optionIndex >= 0 ? (0, import_react4.createElement)("span", { className: "bt-key", "aria-hidden": true }, keyLetter(optionIndex)) : null,
+        (0, import_react4.createElement)("span", { className: "bt-q-body" }, (0, import_react4.createElement)("span", { className: "bt-q-label" }, label)),
+        (0, import_react4.createElement)("span", { className: "bt-q-check", title: t("Selected") }, (0, import_react4.createElement)(CheckIcon))
+      );
+    }))
+  );
+}
+function QuestionCard({ matched }) {
+  const pending = matched;
+  const questions = pending.questions ?? [];
+  const [index, setIndex] = (0, import_react4.useState)(0);
+  const [answers, setAnswers] = (0, import_react4.useState)([]);
+  const question = questions[index];
+  if (question === void 0) return null;
+  const onAnswer = (answer) => {
+    const next = [...answers, { id: question.id, ...answer }];
+    if (index + 1 < questions.length) {
+      setAnswers(next);
+      setIndex(index + 1);
+      return;
+    }
+    pending.answer({ answers: next });
+  };
+  return (0, import_react4.createElement)(QuestionView, { key: index, question, onAnswer, onDismiss: () => pending.dismiss(), ownAnswer: true, raised: true });
+}
+function PendingQuestion({ sessionId, question, actions, inline }) {
+  const [answered, setAnswered] = (0, import_react4.useState)(null);
+  if (answered === question.id) return null;
+  const onAnswer = (answer) => {
+    setAnswered(question.id);
+    void actions.answerQuestion(sessionId, question.id, { selected: answer.selected ?? [], custom: answer.custom ?? "" }).catch(() => setAnswered(null));
+  };
+  const onDismiss = () => {
+    setAnswered(question.id);
+    void actions.dismissQuestion(sessionId);
+  };
+  return (0, import_react4.createElement)(
+    "div",
+    { className: inline ? "bt-q-inline" : "bt-q-dock" },
+    (0, import_react4.createElement)(QuestionView, { key: question.id, question, onAnswer, onDismiss, ownAnswer: question.allowCustom === true, raised: !inline })
+  );
+}
+function QuestionDock({ sessionId, useRoster, actions }) {
+  const question = useRoster((value) => value.questions?.[sessionId]);
+  if (question === void 0 || question.callId) return null;
+  return (0, import_react4.createElement)(PendingQuestion, { sessionId, question, actions, inline: false });
+}
+function AnsweredCell({ node }) {
+  const data = node.data ?? {};
+  const questions = Array.isArray(data.questions) ? data.questions : [];
+  if (questions.length === 0) {
+    return data.text ? (0, import_react4.createElement)("div", { className: "bt-urow" }, (0, import_react4.createElement)("div", { className: "bt-ububble" }, data.text)) : null;
+  }
+  const answers = Array.isArray(data.answers) ? data.answers : [];
+  return (0, import_react4.createElement)("div", { className: "bt-q-inline" }, questions.map((question) => (0, import_react4.createElement)(SettledQuestion, {
+    key: question.id,
+    question,
+    answer: answers.find((answer) => answer.id === question.id) ?? { selected: [] }
+  })));
+}
+
+// src/client/secret-card.js
+var import_react5 = require("react");
+var MIN_VALUE = 4;
+var KeyIcon = () => (0, import_react5.createElement)(
+  "svg",
+  { width: 15, height: 15, viewBox: "0 0 20 20", fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true },
+  (0, import_react5.createElement)("path", { d: "M7 9.5a3.5 3.5 0 1 1 0 .01z" }),
+  (0, import_react5.createElement)("path", { d: "M10.4 10.6L17 10.6M14.5 10.6v2.4M16.6 10.6v1.8" })
+);
+var LockIcon = () => (0, import_react5.createElement)(
+  "svg",
+  { width: 14, height: 14, viewBox: "0 0 20 20", fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true },
+  (0, import_react5.createElement)("path", { d: "M6.5 9V7a3.5 3.5 0 0 1 7 0v2" }),
+  (0, import_react5.createElement)("rect", { x: 4.5, y: 9, width: 11, height: 8, rx: 2 })
+);
+var WarnIcon = () => (0, import_react5.createElement)(
+  "svg",
+  { width: 14, height: 14, viewBox: "0 0 20 20", fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true },
+  (0, import_react5.createElement)("path", { d: "M10 3.5l7 12.5H3z" }),
+  (0, import_react5.createElement)("path", { d: "M10 8.5v3.5M10 14.2h.01" })
+);
+var MASK_BY_CSS = typeof CSS !== "undefined" && typeof CSS.supports === "function" && CSS.supports("-webkit-text-security", "disc");
+var insecure = () => typeof location !== "undefined" && location.protocol === "http:" && !/^(localhost|127(?:\.\d{1,3}){3}|\[::1\])$/.test(location.hostname);
+var scopeLabel = (scope, roster) => {
+  if (scope === "all") return t("All Bots");
+  const names = (scope ?? []).map((id) => roster.byId[id]?.name).filter(Boolean);
+  return names.length === 0 ? t("No Bot") : names.join(t(" and "));
+};
+var when = (time) => Number.isFinite(time) ? new Date(time).toLocaleString(dateLocale(), { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "";
+function MaskedInput({ value, onChange, onEnter, label, autoFocus = false }) {
+  return (0, import_react5.createElement)("input", {
+    className: "bt-secret-input",
+    type: MASK_BY_CSS ? "text" : "password",
+    "data-masked": MASK_BY_CSS ? "" : void 0,
+    value,
+    autoFocus,
+    autoComplete: MASK_BY_CSS ? "off" : "new-password",
+    autoCorrect: "off",
+    autoCapitalize: "off",
+    spellCheck: false,
+    "data-1p-ignore": "",
+    "data-lpignore": "true",
+    "data-bwignore": "",
+    "data-form-type": "other",
+    "aria-label": label,
+    placeholder: t("Paste or type the key"),
+    onChange: (event) => onChange(event.target.value),
+    onKeyDown: (event) => {
+      if (event.key !== "Enter" || event.nativeEvent.isComposing) return;
+      event.preventDefault();
+      onEnter?.();
+    }
+  });
+}
+function ScopeSwitch({ value, onChange, bot }) {
+  const options = [["all", t("All Bots")], ["bot", t("Only {name}", { name: bot.name })]];
+  return (0, import_react5.createElement)(
+    "div",
+    { className: "bt-secret-scope", role: "radiogroup", "aria-label": t("Who may use it") },
+    (0, import_react5.createElement)("span", { className: "bt-secret-glide", "data-at": value === "all" ? 0 : 1, "aria-hidden": true }),
+    options.map(([id, text]) => (0, import_react5.createElement)("button", {
+      key: id,
+      type: "button",
+      role: "radio",
+      "aria-checked": value === id,
+      className: "bt-secret-seg",
+      onClick: () => onChange(id)
+    }, text))
+  );
+}
+function SecretHead({ bot, title, detail, name, onClose }) {
+  return (0, import_react5.createElement)(
+    "div",
+    { className: "bt-q-head bt-secret-head" },
+    (0, import_react5.createElement)("span", { className: "bt-secret-who" }, (0, import_react5.createElement)(BotMark, { bot, size: 28 }), (0, import_react5.createElement)("span", { className: "bt-secret-lock" }, (0, import_react5.createElement)(LockIcon))),
+    (0, import_react5.createElement)(
+      "div",
+      { className: "bt-q-text" },
+      (0, import_react5.createElement)("p", { className: "bt-q-title" }, title),
+      (0, import_react5.createElement)("div", { className: "bt-q-detail" }, (0, import_react5.createElement)("code", { className: "bt-secret-name" }, name), detail ? ` · ${detail}` : "")
+    ),
+    onClose ? (0, import_react5.createElement)("button", { type: "button", className: "bt-q-x", "aria-label": t("Cancel the request"), title: t("Cancel"), onClick: onClose }, (0, import_react5.createElement)(CloseIcon)) : null
+  );
+}
+function SecretCard({ bot, request, roster, actions }) {
+  const [value, setValue] = (0, import_react5.useState)("");
+  const [scope, setScope] = (0, import_react5.useState)("all");
+  const [replacing, setReplacing] = (0, import_react5.useState)(false);
+  const [busy, setBusy] = (0, import_react5.useState)(false);
+  const [error, setError] = (0, import_react5.useState)("");
+  const noteId = (0, import_react5.useId)();
+  const secret = (roster.secrets ?? []).find((entry) => entry.name === request.name);
+  const run = (promise) => {
+    setBusy(true);
+    setError("");
+    return Promise.resolve(promise).then(() => setValue(""), (failure) => setError(failure?.message ?? String(failure))).finally(() => setBusy(false));
+  };
+  const cancel = () => run(actions.secretCancel(request.id));
+  const long = value.trim().length >= MIN_VALUE;
+  const save = () => {
+    if (long && !busy) void run(actions.secretSet({ requestId: request.id, value, scope }));
+  };
+  const allow = () => {
+    if (!busy) void run(actions.secretAllow(request.id));
+  };
+  const filling = request.kind === "fill" || replacing;
+  const warn = insecure() ? (0, import_react5.createElement)("div", { className: "bt-secret-warn", role: "note" }, (0, import_react5.createElement)(WarnIcon), t("This page is not on HTTPS: the key crosses the network unencrypted.")) : null;
+  return (0, import_react5.createElement)(
+    "div",
+    { className: "bt-q bt-secret", role: "group", "aria-describedby": noteId, "data-kind": request.kind },
+    (0, import_react5.createElement)(SecretHead, {
+      bot,
+      title: request.kind === "allow" ? t("Let {bot} use {name}?", { bot: bot.name, name: request.name }) : t("{name} needs a key", { name: bot.name }),
+      detail: request.purpose,
+      name: request.name,
+      onClose: busy ? void 0 : cancel
+    }),
+    request.kind === "allow" ? (0, import_react5.createElement)("div", { className: "bt-secret-saved" }, (0, import_react5.createElement)(KeyIcon), t("Saved for {scope}", { scope: scopeLabel(secret?.scope, roster) })) : null,
+    filling ? (0, import_react5.createElement)(
+      "div",
+      { className: "bt-secret-body" },
+      (0, import_react5.createElement)("label", { className: "bt-q-field bt-secret-field" }, (0, import_react5.createElement)(MaskedInput, { value, onChange: setValue, onEnter: save, label: t("Value of {name}", { name: request.name }), autoFocus: replacing })),
+      request.kind === "fill" ? (0, import_react5.createElement)(ScopeSwitch, { value: scope, onChange: setScope, bot }) : null
+    ) : null,
+    (0, import_react5.createElement)(
+      "div",
+      { className: "bt-secret-note", id: noteId },
+      t("{bot} never sees the value. It reaches {bot}'s shell as ", { bot: bot.name }),
+      (0, import_react5.createElement)("code", null, `$DSH_SECRET_${request.name}`),
+      ".",
+      filling && value !== "" && !long ? t(" At least {count} characters.", { count: MIN_VALUE }) : ""
+    ),
+    warn,
+    error ? (0, import_react5.createElement)("div", { className: "bt-secret-error", role: "alert" }, error) : null,
+    (0, import_react5.createElement)(
+      "div",
+      { className: "bt-q-foot" },
+      request.kind === "allow" && !replacing ? (0, import_react5.createElement)("button", { type: "button", className: "bt-q-btn", disabled: busy, onClick: () => setReplacing(true) }, t("Replace value")) : null,
+      (0, import_react5.createElement)("button", { type: "button", className: "bt-q-btn", disabled: busy, onClick: cancel }, t("Cancel")),
+      filling ? (0, import_react5.createElement)("button", { type: "button", className: "bt-q-submit", disabled: !long || busy, onClick: save }, busy ? t("Saving…") : t("Save")) : (0, import_react5.createElement)("button", { type: "button", className: "bt-q-submit", disabled: busy, onClick: allow }, busy ? t("Allowing…") : t("Allow"))
+    )
+  );
+}
+function SettledSecret({ bot, request, roster }) {
+  const canceled = request.status === "canceled";
+  const text = canceled ? t("{bot} asked for {name}", { bot: bot.name, name: request.name }) : request.status === "allowed" ? t("Allowed {bot} to use {name}", { bot: bot.name, name: request.name }) : t("Saved {name}", { name: request.name });
+  return (0, import_react5.createElement)(
+    "div",
+    { className: "bt-q bt-q-settled bt-secret bt-secret-done", role: "group", "aria-label": text, "data-status": request.status },
+    (0, import_react5.createElement)(
+      "div",
+      { className: "bt-q-head" },
+      (0, import_react5.createElement)("span", { className: "bt-secret-who" }, (0, import_react5.createElement)(BotMark, { bot, size: 22 })),
+      (0, import_react5.createElement)("div", { className: "bt-q-text" }, (0, import_react5.createElement)(
+        "p",
+        { className: "bt-q-title" },
+        text,
+        canceled ? null : (0, import_react5.createElement)("span", { className: "bt-secret-scope-tag" }, ` · ${scopeLabel(request.scope, roster)}`)
+      )),
+      canceled ? (0, import_react5.createElement)("span", { className: "bt-q-badge" }, t("Canceled")) : (0, import_react5.createElement)("span", { className: "bt-q-check bt-secret-check", title: t("Done") }, (0, import_react5.createElement)(CheckIcon))
+    )
+  );
+}
+function RequestView({ bot, request, roster, actions }) {
+  return request.status === "pending" ? (0, import_react5.createElement)(SecretCard, { key: `${request.id}:${request.kind}`, bot, request, roster, actions }) : (0, import_react5.createElement)(SettledSecret, { bot, request, roster });
+}
+function SecretToolCell({ sessionId, callId, name, done, content, roster, actions }) {
+  const bot = roster.byId[sessionId];
+  if (!bot) return null;
+  const request = (roster.secretRequests?.[bot.id] ?? []).find((entry) => entry.callId === callId);
+  if (request) return (0, import_react5.createElement)("div", { className: "bt-q-inline" }, (0, import_react5.createElement)(RequestView, { bot, request, roster, actions }));
+  if (done && /already saved/.test(contentText(content))) {
+    return (0, import_react5.createElement)("div", { className: "bt-event" }, (0, import_react5.createElement)("span", { className: "bt-secret-event" }, (0, import_react5.createElement)(KeyIcon), t("{bot} is using {name}", { bot: bot.name, name: name ?? t("a saved key") })));
+  }
+  return null;
+}
+function SecretDock({ sessionId, useRoster, actions }) {
+  const roster = useRoster((value) => value);
+  const bot = roster.byId[sessionId];
+  if (!bot || currentPart(bot) !== sessionId) return null;
+  const waiting = (roster.secretRequests?.[bot.id] ?? []).filter((entry) => entry.status === "pending" && (!entry.callId || entry.sessionId !== sessionId));
+  if (waiting.length === 0) return null;
+  return (0, import_react5.createElement)("div", { className: "bt-q-dock bt-secret-dock" }, waiting.map((request) => (0, import_react5.createElement)(SecretCard, { key: `${request.id}:${request.kind}`, bot, request, roster, actions })));
+}
+function ScopeEditor({ secret, roster, onSave }) {
+  const [mode, setMode] = (0, import_react5.useState)(secret.scope === "all" ? "all" : "some");
+  const [picked, setPicked] = (0, import_react5.useState)(secret.scope === "all" ? [] : secret.scope);
+  const toggle = (id) => setPicked((list) => list.includes(id) ? list.filter((item) => item !== id) : [...list, id]);
+  const same = mode === "all" ? secret.scope === "all" : secret.scope !== "all" && [...picked].sort().join() === [...secret.scope].sort().join();
+  return (0, import_react5.createElement)(
+    "div",
+    { className: "bt-secret-edit-block" },
+    (0, import_react5.createElement)("div", { className: "bt-secret-edit-label" }, t("Who may use it")),
+    (0, import_react5.createElement)(
+      "div",
+      { className: "bt-secret-radios", role: "radiogroup", "aria-label": t("Who may use {name}", { name: secret.name }) },
+      [["all", t("All Bots")], ["some", t("Chosen Bots")]].map(([id, text]) => (0, import_react5.createElement)(
+        "label",
+        { key: id, className: "bt-secret-radio" },
+        (0, import_react5.createElement)("input", { type: "radio", name: `scope-${secret.name}`, checked: mode === id, onChange: () => setMode(id) }),
+        text
+      ))
+    ),
+    mode === "some" ? (0, import_react5.createElement)("div", { className: "bt-secret-bots" }, roster.bots.map((bot) => (0, import_react5.createElement)("button", {
+      key: bot.id,
+      type: "button",
+      className: "bt-secret-bot",
+      "aria-pressed": picked.includes(bot.id),
+      onClick: () => toggle(bot.id)
+    }, (0, import_react5.createElement)(BotAvatar, { bot, size: 20, badge: false, live: false }), bot.name, picked.includes(bot.id) ? (0, import_react5.createElement)(CheckIcon) : null))) : null,
+    (0, import_react5.createElement)(
+      "div",
+      { className: "bt-secret-row-actions" },
+      (0, import_react5.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", disabled: same, onClick: () => onSave(mode === "all" ? "all" : picked) }, t("Save access"))
+    )
+  );
+}
+function ValueEditor({ secret, onSave }) {
+  const [value, setValue] = (0, import_react5.useState)("");
+  const [replaced, setReplaced] = (0, import_react5.useState)(false);
+  const long = value.trim().length >= MIN_VALUE;
+  const save = () => {
+    if (!long) return;
+    void Promise.resolve(onSave(value)).then((ok) => {
+      if (ok) {
+        setValue("");
+        setReplaced(true);
+      }
+    });
+  };
+  const edit = (next) => {
+    setValue(next);
+    setReplaced(false);
+  };
+  return (0, import_react5.createElement)(
+    "div",
+    { className: "bt-secret-edit-block" },
+    (0, import_react5.createElement)("div", { className: "bt-secret-edit-label" }, t("Replace the value")),
+    (0, import_react5.createElement)(
+      "div",
+      { className: "bt-secret-inline" },
+      (0, import_react5.createElement)("label", { className: "bt-q-field bt-secret-field" }, (0, import_react5.createElement)(MaskedInput, { value, onChange: edit, onEnter: save, label: t("New value of {name}", { name: secret.name }) })),
+      (0, import_react5.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", disabled: !long, onClick: save }, t("Replace"))
+    ),
+    value !== "" && !long ? (0, import_react5.createElement)("div", { className: "bt-set-hint" }, t("At least {count} characters.", { count: MIN_VALUE })) : replaced ? (0, import_react5.createElement)("div", { className: "bt-set-hint bt-secret-ok", role: "status" }, (0, import_react5.createElement)(CheckIcon), t("Replaced. Bots get the new value from their next command.")) : null
+  );
+}
+function SecretRow({ secret, roster, actions, run, open, onToggle }) {
+  const [confirm, setConfirm] = (0, import_react5.useState)(false);
+  (0, import_react5.useEffect)(() => {
+    if (!open) setConfirm(false);
+  }, [open]);
+  const asker = secret.requestedBy ? roster.byId[secret.requestedBy]?.name ?? t("a deleted Bot") : t("you");
+  const allowed = secret.scope === "all" ? [] : secret.scope.map((id) => roster.byId[id]).filter(Boolean);
+  const meta = [t("Asked by {name}", { name: asker }), t("added {time}", { time: when(secret.createdAt) }), secret.lastUsedAt ? t("last used {time}", { time: when(secret.lastUsedAt) }) : t("not used yet")].join(" · ");
+  return (0, import_react5.createElement)(
+    "div",
+    { className: "bt-secret-item", "data-open": open ? "" : void 0 },
+    (0, import_react5.createElement)(
+      "button",
+      { type: "button", className: "bt-set-row bt-secret-summary", "aria-expanded": open, onClick: onToggle },
+      (0, import_react5.createElement)(
+        "span",
+        { className: "bt-set-copy" },
+        (0, import_react5.createElement)("span", { className: "bt-secret-title" }, (0, import_react5.createElement)(KeyIcon), (0, import_react5.createElement)("code", { className: "bt-secret-name" }, secret.name), secret.purpose ? (0, import_react5.createElement)("span", { className: "bt-secret-purpose" }, secret.purpose) : null),
+        (0, import_react5.createElement)("span", { className: "bt-set-hint" }, meta)
+      ),
+      (0, import_react5.createElement)(
+        "span",
+        { className: "bt-set-control" },
+        secret.scope === "all" ? (0, import_react5.createElement)("span", { className: "bt-tag" }, t("All Bots")) : allowed.length === 0 ? (0, import_react5.createElement)("span", { className: "bt-tag" }, t("No Bot")) : (0, import_react5.createElement)("span", { className: "bt-secret-faces", title: allowed.map((bot) => bot.name).join(", ") }, allowed.slice(0, 5).map((bot) => (0, import_react5.createElement)(BotAvatar, { key: bot.id, bot, size: 20, badge: false, live: false })))
+      )
+    ),
+    open ? (0, import_react5.createElement)(
+      "div",
+      { className: "bt-secret-edit" },
+      (0, import_react5.createElement)(ScopeEditor, { key: JSON.stringify(secret.scope), secret, roster, onSave: (scope) => run(actions.secretUpdate(secret.name, scope)) }),
+      (0, import_react5.createElement)(ValueEditor, { secret, onSave: (value) => run(actions.secretSet({ name: secret.name, value })) }),
+      (0, import_react5.createElement)(
+        "div",
+        { className: "bt-secret-row-actions" },
+        confirm ? [
+          (0, import_react5.createElement)("span", { key: "q", className: "bt-set-hint" }, t("Delete {name}? Bots lose it at once.", { name: secret.name })),
+          (0, import_react5.createElement)("button", { key: "no", type: "button", className: "bt-soft bt-soft-sm", onClick: () => setConfirm(false) }, t("Keep")),
+          (0, import_react5.createElement)("button", { key: "yes", type: "button", className: "bt-soft bt-soft-sm bt-secret-danger", onClick: () => run(actions.secretDelete(secret.name)) }, t("Delete"))
+        ] : (0, import_react5.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm bt-secret-danger", onClick: () => setConfirm(true) }, (0, import_react5.createElement)(TrashIcon), t("Delete"))
+      )
+    ) : null
+  );
+}
+function AddSecret({ actions, run, onDone }) {
+  const [name, setName] = (0, import_react5.useState)("");
+  const [purpose, setPurpose] = (0, import_react5.useState)("");
+  const [value, setValue] = (0, import_react5.useState)("");
+  const ready = /^[A-Za-z][\w-]{0,63}$/.test(name.trim()) && value.trim().length >= MIN_VALUE;
+  const save = () => {
+    if (!ready) return;
+    void run(actions.secretSet({ name, purpose, value, scope: "all" })).then((ok) => {
+      if (ok) {
+        setValue("");
+        onDone();
+      }
+    });
+  };
+  return (0, import_react5.createElement)(
+    "div",
+    { className: "bt-set-row bt-set-paste bt-secret-add" },
+    (0, import_react5.createElement)("input", { className: "bt-input", "aria-label": t("Key name"), placeholder: t("NAME, e.g. GITHUB_TOKEN"), value: name, spellCheck: false, autoComplete: "off", autoFocus: true, onChange: (event) => setName(event.target.value.toUpperCase()) }),
+    (0, import_react5.createElement)("input", { className: "bt-input", "aria-label": t("What it is for"), placeholder: t("What it is for"), value: purpose, autoComplete: "off", onChange: (event) => setPurpose(event.target.value) }),
+    (0, import_react5.createElement)("label", { className: "bt-q-field bt-secret-field" }, (0, import_react5.createElement)(MaskedInput, { value, onChange: setValue, onEnter: save, label: t("Value") })),
+    (0, import_react5.createElement)(
+      "div",
+      { className: "bt-secret-row-actions" },
+      (0, import_react5.createElement)("span", { className: "bt-set-hint" }, t("New keys are for all Bots; narrow it down afterwards.")),
+      (0, import_react5.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: onDone }, t("Cancel")),
+      (0, import_react5.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", disabled: !ready, onClick: save }, t("Save key"))
+    )
+  );
+}
+function SecretsPage({ roster, actions, run, Section }) {
+  const [open, setOpen] = (0, import_react5.useState)(null);
+  const [adding, setAdding] = (0, import_react5.useState)(false);
+  const secrets = roster.secrets ?? [];
+  return [
+    (0, import_react5.createElement)(
+      "p",
+      { key: "about", className: "bt-secret-about" },
+      t("Keys your Bots asked for. Bots never see the values: they use them as "),
+      (0, import_react5.createElement)("code", null, "$DSH_SECRET_NAME"),
+      t(" in their shell, and every value is replaced by "),
+      (0, import_react5.createElement)("code", null, "[secret:NAME]"),
+      t(" before anything goes to a model.")
+    ),
+    (0, import_react5.createElement)(
+      Section,
+      { key: "list", title: t("Secrets · {count}", { count: secrets.length }) },
+      secrets.length === 0 && !adding ? (0, import_react5.createElement)("div", { className: "bt-set-row" }, (0, import_react5.createElement)("span", { className: "bt-set-hint" }, t("No keys yet. When a Bot needs one, it shows a card in its chat."))) : null,
+      secrets.map((secret) => (0, import_react5.createElement)(SecretRow, { key: secret.name, secret, roster, actions, run, open: open === secret.name, onToggle: () => setOpen(open === secret.name ? null : secret.name) })),
+      adding ? (0, import_react5.createElement)(AddSecret, { actions, run, onDone: () => setAdding(false) }) : null
+    ),
+    adding ? null : (0, import_react5.createElement)("div", { key: "add", className: "bt-actions" }, (0, import_react5.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: () => setAdding(true) }, t("Add a key")))
+  ];
+}
+var SECRET_CSS = `
+.bt-secret-head{align-items:center;gap:10px}
+.bt-secret-who{position:relative;flex:none;display:inline-flex}
+.bt-secret-lock{position:absolute;right:-5px;bottom:-4px;width:16px;height:16px;border-radius:50%;background:var(--bt-main);color:var(--bt-ink-2);display:inline-flex;align-items:center;justify-content:center;box-shadow:0 0 0 1.5px var(--bt-bubble)}
+.bt-secret-lock svg{width:11px;height:11px}
+.bt-secret-name{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;line-height:16px;padding:1px 6px;border-radius:5px;background:var(--bt-hover);color:var(--bt-ink)}
+.bt-secret-body{display:flex;flex-direction:column;gap:8px}
+.bt-secret-field{align-items:center;min-height:36px}
+.bt-secret-input{flex:1;width:100%;min-width:0;margin:0;padding:0;border:0;outline:none;background:transparent;color:var(--bt-ink);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px;line-height:20px;letter-spacing:.04em}
+.bt-secret-input[data-masked]{-webkit-text-security:disc}
+.bt-secret-input::placeholder{color:var(--bt-ink-3);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;letter-spacing:0}
+.bt-secret-scope{position:relative;display:inline-grid;grid-template-columns:1fr 1fr;align-self:flex-start;padding:2px;border-radius:999px;background:var(--bt-hover)}
+.bt-secret-glide{position:absolute;top:2px;bottom:2px;left:2px;width:calc(50% - 2px);border-radius:999px;background:var(--bt-main);box-shadow:0 1px 3px rgba(20,20,20,.08),inset 0 0 0 .5px color-mix(in srgb,var(--bt-ink) 6%,transparent);transition:${spring(SPRING_SHAPE, "transform")}}
+.bt-secret-glide[data-at="1"]{transform:translateX(100%)}
+.bt-secret-seg{position:relative;z-index:1;height:28px;padding:0 14px;border:0;border-radius:999px;background:none;color:var(--bt-ink-2);font:inherit;font-size:13px;white-space:nowrap;cursor:pointer;transition:color .16s ease}
+.bt-secret-seg[aria-checked=true]{color:var(--bt-ink);font-weight:500}
+.bt-secret-seg:focus-visible{outline:2px solid var(--bt-accent);outline-offset:-2px}
+/* A key card asks the user to act, so the process group carrying it stays open in every
+   work-details mode (same override as .bt-group-replies in styles.js). */
+[data-step-process]:has(.bt-secret)>div:first-child{display:none!important}
+[data-step-process]:has(.bt-secret)>[data-step-process-body]{display:block!important;content-visibility:visible!important;max-height:none!important;overflow:visible!important;mask-image:none!important;scrollbar-gutter:auto!important}
+.bt-secret-ok{display:flex;align-items:center;gap:4px;margin-top:6px;animation:bt-secret-in .22s cubic-bezier(.22,1,.36,1)}
+.bt-secret-ok svg{width:13px;height:13px;color:#16a34a}
+@keyframes bt-secret-in{from{opacity:0;transform:translateY(-2px)}}
+.bt-secret-saved{display:flex;align-items:center;gap:6px;font-size:13px;line-height:18px;color:var(--bt-ink-2)}
+.bt-secret-note{font-size:12px;line-height:17px;color:var(--bt-ink-3)}
+.bt-secret-note code,.bt-secret-about code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11.5px}
+.bt-secret-warn{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:8px;font-size:12px;line-height:16px;color:#b25e09;background:color-mix(in srgb,#f59e0b 12%,transparent)}
+.bt-secret-error{font-size:12px;line-height:16px;color:#e02135}
+.bt-secret .bt-q-btn:disabled{opacity:.5;cursor:default}
+.bt-secret-done .bt-q-head{align-items:center}
+.bt-secret-done .bt-q-title{font-size:13px;line-height:18px;color:var(--bt-ink-2);font-weight:500}
+.bt-secret-scope-tag{font-weight:400;color:var(--bt-ink-3)}
+.bt-secret-check{color:var(--bt-green,#22a06b);animation:bt-secret-pop ${SPRING_POP.duration}ms ${SPRING_POP.easing} backwards}
+.bt-secret-done{animation:bt-secret-settle .32s cubic-bezier(.22,1,.36,1) backwards}
+@keyframes bt-secret-pop{from{opacity:0;transform:scale(.4)}}
+@keyframes bt-secret-settle{from{opacity:.4;transform:scale(.985)}}
+.bt-secret-event{display:inline-flex;align-items:center;gap:5px}
+.bt-secret-dock{flex-direction:column;align-items:center}
+.bt-secret-dock .bt-q{max-width:min(550px,calc(100% - 32px))}
+.bt-secret-about{margin:0 0 12px;padding:0 4px;font-size:12px;line-height:17px;color:var(--bt-ink-2)}
+.bt-secret-title{display:flex;align-items:center;gap:6px;min-width:0;color:var(--bt-ink)}
+.bt-secret-title svg{flex:none;color:var(--bt-ink-2)}
+.bt-secret-purpose{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--bt-ink-2)}
+.bt-secret-faces{display:inline-flex}
+.bt-secret-faces>*+*{margin-left:-6px}
+.bt-secret-edit{display:flex;flex-direction:column;gap:14px;padding:4px 12px 14px;animation:bt-q-in ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing} backwards,bt-veil-in .2s ease-out backwards}
+.bt-secret-edit-block{display:flex;flex-direction:column;gap:8px}
+.bt-secret-edit-label{font-size:12px;line-height:16px;font-weight:600;color:var(--bt-ink-2)}
+.bt-secret-radios{display:flex;gap:16px;font-size:13px}
+.bt-secret-radio{display:inline-flex;align-items:center;gap:6px;cursor:pointer}
+.bt-secret-bots{display:flex;flex-wrap:wrap;gap:6px}
+.bt-secret-bot{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 10px 0 5px;border-radius:999px;border:.5px solid var(--bt-line);background:var(--bt-card);color:var(--bt-ink-2);font:inherit;font-size:12px;cursor:pointer;transition:background-color .12s ease,color .12s ease,border-color .12s ease}
+.bt-secret-bot[aria-pressed=true]{background:var(--bt-active);color:var(--bt-ink);border-color:var(--bt-line-2)}
+.bt-secret-bot svg{width:13px;height:13px}
+.bt-secret-inline{display:flex;gap:8px;align-items:center}
+.bt-secret-row-actions{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+.bt-secret-row-actions .bt-set-hint{flex:1}
+.bt-secret-danger{color:#e02135;display:inline-flex;align-items:center;gap:4px}
+.bt-secret-danger svg{width:13px;height:13px}
+.bt-secret-add .bt-input{height:34px}
+@media (prefers-reduced-motion:reduce){.bt-secret-glide{transition:none}.bt-secret-check,.bt-secret-done,.bt-secret-ok,.bt-secret-edit{animation:none}}
+`;
+
+// src/client/cells.js
+var import_react6 = require("react");
+var import_react_dom = require("react-dom");
+var import_dsh_client_ui_primitives = require("@deepseek-ai/dsh-client-ui-primitives");
+var mdLabels = () => ({ code: { copyLabel: t("Copy"), copiedLabel: t("Copied") }, footnotes: t("Footnotes") });
+function Bubbles({ texts, roster, selfId, actions, streaming, sessionId, msgKey, useUi, lead }) {
+  const onClick = (event) => {
+    const target = mentionTarget(event);
+    if (target === null) return;
+    event.preventDefault();
+    event.stopPropagation();
+    actions.openSession(target);
+  };
+  const reactions = useUi ? useUi((state) => msgKey ? state.reactions?.[msgKey] ?? null : null) : null;
+  return (0, import_react6.createElement)(
+    "div",
+    { className: "bt-astack", "data-lead": lead ? "" : void 0, onClickCapture: onClick },
+    texts.map((text, index) => {
+      const key = msgKey ? `${msgKey}:${index}` : void 0;
+      const picked = key ? reactions?.[index] ?? [] : [];
+      const last = index === texts.length - 1;
+      const live = streaming && last;
+      return (0, import_react6.createElement)(
+        "div",
+        { key: index, className: "bt-msg" },
+        (0, import_react6.createElement)(
+          "div",
+          { className: "bt-msg-line" },
+          lead && last ? lead : null,
+          (0, import_react6.createElement)(
+            "div",
+            { className: "bt-bubble" },
+            (0, import_react6.createElement)(import_dsh_client_ui_primitives.MarkdownText, { text: linkMentions(text, roster.bots, selfId), streaming: live, labels: mdLabels(), variant: "compact" })
+          ),
+          live ? null : (0, import_react6.createElement)(MessageTools, { text, name: roster.byId[selfId]?.name ?? t("Bot"), sessionId, react: key ? (emoji) => actions.toggleReaction(msgKey, index, emoji) : void 0, actions })
+        ),
+        picked.length ? (0, import_react6.createElement)("div", { className: "bt-reacts" }, picked.map((emoji) => (0, import_react6.createElement)("button", {
+          key: emoji,
+          type: "button",
+          className: "bt-react",
+          "aria-label": t("Remove reaction {emoji}", { emoji }),
+          onClick: () => actions.toggleReaction(msgKey, index, emoji)
+        }, emoji))) : null
+      );
+    })
+  );
+}
+var REACTIONS = ["👍", "❤️", "😂", "😮", "😢", "🙏"];
+function useDismiss(open, close, refs) {
+  (0, import_react6.useEffect)(() => {
+    if (!open) return void 0;
+    const onDown = (event) => {
+      if (refs.some((ref) => ref.current?.contains(event.target))) return;
+      close();
+    };
+    const onKey = (event) => {
+      if (event.key === "Escape") {
+        event.stopPropagation();
+        close();
+      }
+    };
+    window.addEventListener("mousedown", onDown);
+    window.addEventListener("keydown", onKey, true);
+    return () => {
+      window.removeEventListener("mousedown", onDown);
+      window.removeEventListener("keydown", onKey, true);
+    };
+  }, [open]);
+}
+function MessageTools({ text, name, sessionId, react, actions }) {
+  const [panel, setPanel] = (0, import_react6.useState)(null);
+  const [place, setPlace] = (0, import_react6.useState)(null);
+  const [copied, setCopied] = (0, import_react6.useState)(false);
+  const tools = (0, import_react6.useRef)(null);
+  const pop = (0, import_react6.useRef)(null);
+  const close = () => setPanel(null);
+  useDismiss(panel !== null, close, [tools, pop]);
+  const open = (kind, event) => {
+    if (panel === kind) {
+      close();
+      return;
+    }
+    const rect = event.currentTarget.getBoundingClientRect();
+    const below = rect.bottom + 220 < window.innerHeight;
+    setPlace(kind === "react" ? { left: rect.left + rect.width / 2, top: rect.top - 6, "--bt-origin": "bottom center" } : { left: Math.min(rect.left, window.innerWidth - 208), ...below ? { top: rect.bottom + 4 } : { bottom: window.innerHeight - rect.top + 4, "--bt-origin": "bottom left" } });
+    setPanel(kind);
+  };
+  const copy2 = () => {
+    void navigator.clipboard?.writeText(text).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1e3);
+    });
+  };
+  const download2 = () => {
+    const url = URL.createObjectURL(new Blob([text], { type: "text/markdown" }));
+    const link = Object.assign(document.createElement("a"), { href: url, download: `${name}-message.md` });
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1e3);
+  };
+  const item = (label, Icon, run) => (0, import_react6.createElement)("button", { key: label, type: "button", role: "menuitem", onClick: () => {
+    close();
+    run();
+  } }, (0, import_react6.createElement)(Icon), label);
+  return (0, import_react6.createElement)(
+    "div",
+    { ref: tools, className: "bt-tools", "data-open": panel !== null || void 0 },
+    react ? (0, import_react6.createElement)("button", { type: "button", className: "bt-tool", "aria-label": t("Add reaction"), title: t("Add reaction"), "aria-expanded": panel === "react", onClick: (event) => open("react", event) }, (0, import_react6.createElement)(SmileIcon)) : null,
+    sessionId ? (0, import_react6.createElement)("button", { type: "button", className: "bt-tool", "aria-label": t("Reply"), title: t("Reply"), onClick: () => actions.quote(sessionId, text) }, (0, import_react6.createElement)(ReplyIcon)) : null,
+    (0, import_react6.createElement)("button", { type: "button", className: "bt-tool", "aria-label": t("More message actions"), title: t("More"), "aria-haspopup": "menu", "aria-expanded": panel === "more", onClick: (event) => open("more", event) }, copied ? (0, import_react6.createElement)(CheckIcon) : (0, import_react6.createElement)(DotsIcon)),
+    panel === "react" ? (0, import_react_dom.createPortal)((0, import_react6.createElement)(
+      "div",
+      { ref: pop, className: "bt-react-strip", role: "menu", "aria-label": t("Reactions"), style: place },
+      REACTIONS.map((emoji) => (0, import_react6.createElement)("button", { key: emoji, type: "button", role: "menuitem", "aria-label": emoji, onClick: () => {
+        close();
+        react(emoji);
+      } }, emoji))
+    ), document.body) : null,
+    panel === "more" ? (0, import_react_dom.createPortal)((0, import_react6.createElement)(
+      "div",
+      { ref: pop, className: "bt-menu", role: "menu", "aria-label": t("Message actions"), style: place },
+      item(t("Copy"), CopyIcon, copy2),
+      item(t("Download"), DownloadIcon, download2)
+    ), document.body) : null
+  );
+}
+function ThinkingRow({ text, running }) {
+  if (running || !text) return null;
+  return (0, import_react6.createElement)(
+    "details",
+    { className: "bt-think" },
+    (0, import_react6.createElement)("summary", null, t("Thought it through")),
+    (0, import_react6.createElement)("div", { className: "bt-think-text" }, text)
+  );
+}
+function AssistantCell({ node, groupPart, sessionId, useRoster, useUi, actions }) {
+  const roster = useRoster((value) => value);
+  const data = node.data;
+  const hidden = Boolean(roster.roomsById[sessionId]) || isHiddenTurn(roster, sessionId, data.turn);
+  const texts = groupPart === "reasoning" ? [] : data.blocks.filter((block) => block.kind === "text" && block.text.trim() !== "").map((block) => block.text);
+  const running = data.status === "running";
+  useLiveNote(actions, sessionId, `text:${node.key ?? data.seq}`, !hidden && running && texts.length > 0 ? { text: true } : null);
+  if (hidden) return null;
+  const reasoning = groupPart === "response" ? "" : data.blocks.filter((block) => block.kind === "reasoning").map((block) => block.text).join("\n").trim();
+  const thinkingLive = running && texts.length === 0 && data.blocks.some((block) => block.kind === "reasoning");
+  if (texts.length === 0 && !reasoning) return null;
+  return (0, import_react6.createElement)(
+    import_react6.Fragment,
+    null,
+    reasoning ? (0, import_react6.createElement)(ThinkingRow, { text: reasoning, running: thinkingLive }) : null,
+    texts.length ? (0, import_react6.createElement)(Bubbles, { texts, roster, selfId: roster.byId[sessionId]?.id ?? sessionId, actions, streaming: running, sessionId, msgKey: `${sessionId}:${data.turn}:${node.key ?? data.seq ?? ""}`, useUi }) : null
+  );
+}
+function EventLine({ prefix, bots, joiner = t("and"), onOpen }) {
+  const parts = [];
+  parts.push((0, import_react6.createElement)("span", { key: "p" }, prefix));
+  bots.forEach((bot, index) => {
+    if (index > 0) parts.push((0, import_react6.createElement)("span", { key: `j${index}` }, joiner));
+    parts.push((0, import_react6.createElement)(
+      "button",
+      { key: bot.id ?? index, type: "button", onClick: () => onOpen?.(bot) },
+      (0, import_react6.createElement)(BotMark, { bot, size: 16 }),
+      bot.name
+    ));
+  });
+  return (0, import_react6.createElement)("div", { className: "bt-event" }, parts);
+}
+function GroupMessage({ bot, text, room: room2, roster, actions, msgKey, useUi }) {
+  const lead = (0, import_react6.createElement)(
+    "button",
+    { type: "button", className: "bt-lead", "aria-label": t("Open {name}'s chat", { name: bot.name }), onClick: () => actions.openSession(bot.id) },
+    (0, import_react6.createElement)(BotMark, { bot, size: 22 })
+  );
+  return (0, import_react6.createElement)(
+    "div",
+    { className: "bt-group-msg" },
+    (0, import_react6.createElement)(
+      "span",
+      { className: "bt-group-name", style: { color: inkText(colorOf(bot)) } },
+      bot.name,
+      room2?.admin === bot.id ? (0, import_react6.createElement)("span", { className: "bt-group-role" }, t("Admin")) : null
+    ),
+    (0, import_react6.createElement)(Bubbles, { texts: [text], roster, selfId: bot.id, actions, sessionId: room2?.id, msgKey, useUi, lead })
+  );
+}
+function GroupEvent({ prefix, room: room2, name, roster, actions }) {
+  return (0, import_react6.createElement)(
+    "div",
+    { className: "bt-event" },
+    (0, import_react6.createElement)("span", null, prefix),
+    room2 ? (0, import_react6.createElement)("button", { type: "button", onClick: () => actions.openSession(room2.id) }, (0, import_react6.createElement)(RoomAvatar, { room: room2, roster, size: 16 }), room2.name) : name ? (0, import_react6.createElement)("span", null, name) : null
+  );
+}
+function MemoryEvent({ sessionId, scope, result, roster, actions, findBot }) {
+  if (!/^(Saved to|Updated in|Removed from) /.test(result)) return null;
+  const self2 = roster.byId[sessionId];
+  const team = /^(team|团队|共享)$/i.test(String(scope ?? "").trim());
+  const other = team || !scope ? void 0 : findBot(scope);
+  const target = other && other.id !== self2?.id ? other : self2;
+  if (!target) return null;
+  const label = team ? t("Team memory updated") : target === self2 ? t("Memory updated") : t("Updated {name}'s memory", { name: target.name });
+  return (0, import_react6.createElement)(
+    "div",
+    { className: "bt-event" },
+    (0, import_react6.createElement)("button", { type: "button", title: result, onClick: () => actions.openMemory(target.id) }, (0, import_react6.createElement)(MemoryIcon), label)
+  );
+}
+function PartLine({ time }) {
+  return (0, import_react6.createElement)("div", { className: "bt-part-line", role: "separator" }, Number.isFinite(time) ? (0, import_react6.createElement)("span", null, dayLabel(time)) : null);
+}
+var scrollParent = (node) => {
+  for (let at = node.parentElement; at; at = at.parentElement) {
+    if (/(auto|scroll)/.test(getComputedStyle(at).overflowY)) return at;
+  }
+  return null;
+};
+function EarlierParts({ sessionId, roster, actions }) {
+  const [view, setView] = (0, import_react6.useState)({ items: [], cursor: void 0, loading: true, failed: false, startedAt: null });
+  const top = (0, import_react6.useRef)(null);
+  const busy = (0, import_react6.useRef)(false);
+  const alive = (0, import_react6.useRef)(true);
+  const restore = (0, import_react6.useRef)(null);
+  const load = (cursor) => {
+    if (busy.current) return;
+    busy.current = true;
+    setView((current) => ({ ...current, loading: true, failed: false }));
+    actions.earlier(sessionId, cursor).then((page) => {
+      busy.current = false;
+      if (!alive.current) return;
+      const scroller = top.current && scrollParent(top.current);
+      if (scroller) restore.current = { scroller, fromEnd: scroller.scrollHeight - scroller.scrollTop };
+      setView((current) => ({ items: [...page.items, ...current.items], cursor: page.cursor, loading: false, failed: false, startedAt: page.startedAt ?? current.startedAt }));
+    }, () => {
+      busy.current = false;
+      if (alive.current) setView((current) => ({ ...current, loading: false, failed: true }));
+    });
+  };
+  (0, import_react6.useEffect)(() => {
+    alive.current = true;
+    load(void 0);
+    return () => {
+      alive.current = false;
+    };
+  }, [sessionId]);
+  (0, import_react6.useLayoutEffect)(() => {
+    const pending = restore.current;
+    restore.current = null;
+    if (pending) pending.scroller.scrollTop = pending.scroller.scrollHeight - pending.fromEnd;
+  }, [view.items]);
+  (0, import_react6.useEffect)(() => {
+    const node = top.current;
+    if (!node || view.loading || view.failed || !view.cursor || typeof IntersectionObserver !== "function") return void 0;
+    const observer = new IntersectionObserver((entries2) => {
+      if (entries2.some((entry) => entry.isIntersecting)) load(view.cursor);
+    }, { root: scrollParent(node), rootMargin: "600px 0px 0px 0px" });
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [view.cursor, view.loading, view.failed]);
+  const selfId = roster.byId[sessionId]?.id;
+  const rows = [];
+  for (const item of view.items) {
+    const last = rows.at(-1);
+    if (item.kind === "bot" && last?.kind === "bot") last.texts.push(item.text);
+    else rows.push(item.kind === "bot" ? { kind: "bot", texts: [item.text] } : item);
+  }
+  return (0, import_react6.createElement)(
+    "div",
+    { className: "bt-earlier", role: "feed", "aria-label": t("Earlier messages"), "aria-busy": view.loading },
+    (0, import_react6.createElement)(
+      "div",
+      { ref: top, className: "bt-earlier-top" },
+      view.loading ? (0, import_react6.createElement)(Shimmer, null, t("Loading earlier messages…")) : view.failed ? (0, import_react6.createElement)("button", { type: "button", className: "bt-soft", onClick: () => load(view.cursor) }, t("Couldn’t load earlier messages · Retry")) : view.cursor ? (0, import_react6.createElement)("button", { type: "button", className: "bt-soft", onClick: () => load(view.cursor) }, t("Load earlier")) : null
+    ),
+    rows.map((row, index) => {
+      const key = rows.length - index;
+      switch (row.kind) {
+        case "divider":
+          return (0, import_react6.createElement)(PartLine, { key, time: row.time });
+        case "user":
+          return (0, import_react6.createElement)("div", { key, className: "bt-urow" }, (0, import_react6.createElement)(
+            "div",
+            { className: "bt-ububble" },
+            row.text ? (0, import_react6.createElement)(import_dsh_client_ui_primitives.MarkdownText, { text: row.text, labels: mdLabels(), variant: "compact" }) : null,
+            row.images ? (0, import_react6.createElement)("span", { className: "bt-uimages" }, row.images === 1 ? t("1 image") : t("{count} images", { count: row.images })) : null
+          ));
+        case "answer":
+          return (0, import_react6.createElement)(AnsweredCell, { key, node: { data: row } });
+        case "bot":
+          return (0, import_react6.createElement)(Bubbles, { key, texts: row.texts, roster, selfId, actions });
+        case "event": {
+          if (row.role === "report") return (0, import_react6.createElement)(GroupEvent, { key, prefix: t("Replies from"), room: roster.roomsById[row.roomId], name: t("a group chat"), roster, actions });
+          const other = roster.byId[row.botId] ?? { id: row.botId, name: row.name ?? t("a Bot"), color: "gray" };
+          return (0, import_react6.createElement)(EventLine, { key, prefix: row.role === "reply" ? t("Reply from") : t("Message from"), bots: [other], onOpen: () => {
+            if (selfId && other.id) actions.openExchange(selfId, other.id);
+          } });
+        }
+        default:
+          return null;
+      }
+    }),
+    (0, import_react6.createElement)(PartLine, { time: view.startedAt })
+  );
+}
+function TriggerCell({ node, sessionId, useRoster, useSessions, useTurnClock, useUi, actions }) {
+  const roster = useRoster((value) => value);
+  const data = node.data;
+  const source = data.source !== null && typeof data.source === "object" ? data.source : {};
+  const selfId = roster.byId[sessionId]?.id ?? sessionId;
+  const relayed = source.kind === "bot" && source.handoff !== true && (source.role === "request" || source.role === "reply") && typeof source.senderSessionId === "string";
+  const turn = node.location?.turn?.turn ?? data.turn;
+  (0, import_react6.useLayoutEffect)(() => {
+    if (relayed) actions.noteTurnPeer(sessionId, turn, source.senderSessionId);
+  }, [relayed, sessionId, turn, source.senderSessionId]);
+  const order = useSessions((list) => {
+    const outline = list.projectionsBySession?.[sessionId]?.values?.turnOutline ?? list.byId[sessionId]?.projectionValues?.turnOutline;
+    return Array.isArray(outline) ? outline.map((entry) => entry.turn).join(",") : "";
+  });
+  const peers = useTurnClock((state) => {
+    if (!relayed) return "";
+    const turns = state[sessionId] ?? {};
+    return Object.keys(turns).filter((key) => turns[key].peer !== void 0).map((key) => `${key}:${turns[key].peer}`).join(",");
+  });
+  const visit = useUi((state) => state.visits?.[sessionId]);
+  const hiddenTurns = roster.exchangeTurns[sessionId];
+  const unreadOpening = useTurnClock((state) => {
+    const first = openingTurn(state[sessionId], order, hiddenTurns);
+    return first?.turn === turn && unseenSince(visit, first.start) ? clockLabel(first.start) : "";
+  });
+  const body = triggerBody();
+  return unreadOpening ? (0, import_react6.createElement)(import_react6.Fragment, null, (0, import_react6.createElement)("div", { className: "bt-open-new" }, (0, import_react6.createElement)(NewDivider), (0, import_react6.createElement)("div", { className: "bt-time-sep", role: "separator" }, unreadOpening)), body) : body;
+  function triggerBody() {
+    if (source.kind === "bot") {
+      if (source.handoff === true) return roster.roomsById[sessionId] ? null : (0, import_react6.createElement)(EarlierParts, { sessionId, roster, actions });
+      if (source.role === "kickoff" || source.role === "room") return null;
+      if (source.role === "secret") return null;
+      if (source.role === "post") {
+        const room2 = roster.roomsById[sessionId];
+        const poster = roster.byId[source.senderSessionId] ?? { id: source.senderSessionId, name: source.senderName ?? t("a Bot"), color: "gray" };
+        return (0, import_react6.createElement)(GroupMessage, { bot: poster, text: stripHeader(contentText(data.content)), room: room2, roster, actions, msgKey: `${sessionId}:${data.turn}:post`, useUi });
+      }
+      if (source.role === "report") {
+        return (0, import_react6.createElement)(GroupEvent, { prefix: t("Replies from"), room: roster.roomsById[source.roomId], name: t("a group chat"), roster, actions });
+      }
+      const run = relayed ? commRunOf(
+        order.split(",").filter(Boolean).map(Number),
+        Object.fromEntries(peers.split(",").filter(Boolean).map((pair) => [Number(pair.slice(0, pair.indexOf(":"))), pair.slice(pair.indexOf(":") + 1)])),
+        turn,
+        hiddenTurns
+      ) : null;
+      if (run === "folded") return null;
+      const sender = roster.byId[source.senderSessionId] ?? { id: source.senderSessionId, name: source.senderName ?? t("a Bot"), color: "gray" };
+      const count = run?.count ?? (isHiddenTurn(roster, sessionId, turn) ? 2 : 1);
+      const bots = [sender];
+      for (const peer of (run?.peerIds ?? []).map((id) => roster.byId[id]).filter(Boolean)) {
+        if (!bots.some((bot) => bot.id === peer.id)) bots.push(peer);
+      }
+      return (0, import_react6.createElement)(EventLine, {
+        prefix: count > 1 ? t("{count} messages with", { count }) : t("Message from"),
+        bots,
+        onOpen: (bot) => actions.openExchange(selfId, bot.id)
+      });
+    }
+    if (source.kind === "schedule") {
+      const prompts = reminderPrompts(contentText(data.content));
+      return (0, import_react6.createElement)("div", { className: "bt-event" }, prompts.length > 0 ? t("Scheduled task: {text}", { text: prompts.join(" · ").slice(0, 80) }) : t("Routine started"));
+    }
+    if (source.kind === "user-question-reply") return null;
+    return (0, import_react6.createElement)("div", { className: "bt-event" }, contentText(data.content).slice(0, 80) || t("Update"));
+  }
+}
+function NewDivider() {
+  return (0, import_react6.createElement)("div", { className: "bt-new-sep", role: "separator", "aria-label": t("New messages") }, (0, import_react6.createElement)("span", null, t("New")));
+}
+function TurnProcessCell({ node, sessionId, turnProcess, useRoster, useUi, useTurnClock, actions }) {
+  const open = turnProcess === void 0 || !turnProcess.foldable || turnProcess.open;
+  (0, import_react6.useEffect)(() => {
+    if (!open) turnProcess.setOpen(true);
+  }, [open, turnProcess]);
+  const turn = node?.location?.turn?.turn ?? node?.data?.turn;
+  const start = node?.location?.turn?.start?.time;
+  const hidden = useRoster((roster) => isHiddenTurn(roster, sessionId, turn));
+  (0, import_react6.useEffect)(() => {
+    actions.noteTurnTime(sessionId, turn, "first", start);
+  }, [sessionId, turn, start]);
+  const visit = useUi((state) => state.visits?.[sessionId]);
+  const fresh = useTurnClock((state) => {
+    const own = state[sessionId]?.[turn];
+    return !hidden && typeof visit?.seen === "number" && own?.first !== void 0 && own.first <= visit.seen && own.end !== void 0 && own.end > visit.seen && own.end <= visit.entered;
+  });
+  return fresh ? (0, import_react6.createElement)(NewDivider) : null;
+}
+function Nothing() {
+  return null;
+}
+var SEPARATOR_GAP_MS = 30 * 60 * 1e3;
+function clockLabel(time, now = Date.now()) {
+  const date = new Date(time);
+  const midnight = (value) => new Date(value.getFullYear(), value.getMonth(), value.getDate()).getTime();
+  const days = Math.round((midnight(new Date(now)) - midnight(date)) / 864e5);
+  const clock3 = date.toLocaleTimeString(dateLocale(), { hour: "numeric", minute: "2-digit" });
+  if (days === 0) return t("Today {time}", { time: clock3 });
+  if (days === 1) return t("Yesterday {time}", { time: clock3 });
+  const sameYear = date.getFullYear() === new Date(now).getFullYear();
+  return `${date.toLocaleDateString(dateLocale(), { weekday: "short", month: "short", day: "numeric", ...sameYear ? {} : { year: "numeric" } })} ${clock3}`;
+}
+function nextTurnStart(turns, turn) {
+  let next;
+  for (const key in turns) {
+    const candidate = Number(key);
+    if (candidate > turn && turns[key].first !== void 0 && (next === void 0 || candidate < next)) next = candidate;
+  }
+  return next === void 0 ? void 0 : turns[next].first;
+}
+function openingTurn(turns, firstTurns, hiddenTurns) {
+  if (!turns || !firstTurns) return null;
+  const start = nextTurnStart(turns, -Infinity);
+  if (start === void 0) return null;
+  const turn = Number(Object.keys(turns).filter((key) => turns[key].first === start)[0]);
+  const listed = firstTurns.split(",").map(Number);
+  const earlier = listed.filter((entry) => entry < turn);
+  return listed.includes(turn) && earlier.every((entry) => hiddenTurns?.includes(entry)) ? { turn, start } : null;
+}
+var unseenSince = (visit, time) => typeof visit?.seen === "number" && time > visit.seen && time <= visit.entered;
+function TurnTailCell({ node, sessionId, useTurnClock, useUi, actions }) {
+  const data = node.data;
+  (0, import_react6.useEffect)(() => {
+    actions.noteTurnTime(sessionId, data.turn, "end", data.time);
+  }, [sessionId, data.turn, data.time]);
+  const label = useTurnClock((state) => {
+    const start = nextTurnStart(state[sessionId] ?? {}, data.turn);
+    return start !== void 0 && start - data.time >= SEPARATOR_GAP_MS ? clockLabel(start) : "";
+  });
+  const visit = useUi((state) => state.visits?.[sessionId]);
+  const fresh = useTurnClock((state) => {
+    if (typeof visit?.seen !== "number" || data.time > visit.seen) return false;
+    const start = nextTurnStart(state[sessionId] ?? {}, data.turn);
+    return start !== void 0 && start > visit.seen && start <= visit.entered;
+  });
+  if (!label && !fresh) return null;
+  return (0, import_react6.createElement)(
+    import_react6.Fragment,
+    null,
+    label ? (0, import_react6.createElement)("div", { className: "bt-time-sep", role: "separator" }, label) : null,
+    fresh ? (0, import_react6.createElement)(NewDivider) : null
+  );
+}
+function Shimmer({ children }) {
+  return (0, import_react6.createElement)("span", { className: "bt-shimmer" }, children);
+}
+var PHRASES = {
+  thinking: ["Thinking about it", "Weighing the options", "Working out a plan", "Sorting out the details"],
+  working: ["On it", "Busy with it", "Moving ahead", "Taking care of it", "Making headway"]
+};
+var TOOL_PHRASES = [
+  [/web_?search|search_?web/i, "Searching online"],
+  [/fetch|browse|browser|web/i, "Reading a page"],
+  [/shell|bash|exec|command|terminal/i, "Running shell commands"],
+  [/^(read|view|cat)\b|read_/i, "Opening a file"],
+  [/grep|glob|list_dir|^ls$|find|search/i, "Looking through files"],
+  [/write|edit|patch|apply|replace/i, "Writing changes"],
+  [/image|photo|draw/i, "Working on an image"]
+];
+var GROUP_PHRASES = { create_group: "Creating a group", update_group: "Updating the group", delete_group: "Deleting the group", post_to_group: "Posting in the group" };
+function toolActivity(name, arg, findBot) {
+  switch (name) {
+    case "ask_user":
+      return null;
+    case "request_secret":
+      return null;
+    case "list_secrets":
+      return { label: t("Checking the keys"), state: "searching" };
+    case "ask_user_question":
+      return { label: t("Waiting for your answer"), state: "alert" };
+    case "group_relay":
+      return { relay: true, state: "orbit" };
+    case "message_bot": {
+      const target = findBot(arg("to"));
+      return { label: target ? t("Asking {name}", { name: target.name }) : t("Asking another Bot"), state: "sending" };
+    }
+    case "create_bot":
+      return { label: t("Creating {name}", { name: arg("name") ?? t("a Bot") }), state: "sending" };
+    case "update_bot": {
+      const target = findBot(arg("name")) ?? findBot(arg("bot"));
+      return { label: t("Updating {name}", { name: target?.name ?? t("a Bot") }), state: "sending" };
+    }
+    case "list_bots":
+      return { label: t("Checking the team"), state: "searching" };
+    case "read_group_chat":
+      return { label: t("Reading {name}", { name: arg("group") ?? t("a group chat") }), state: "searching" };
+    case "read_own_chat":
+      return { label: t("Looking back through the chat"), state: "searching" };
+    case "remember":
+      return { label: t("Saving to memory"), state: "working" };
+    case "forget":
+      return { label: t("Updating memory"), state: "working" };
+    case "recall":
+      return { label: t("Checking memory"), state: "searching" };
+    default:
+      if (GROUP_PHRASES[name]) return { label: t(GROUP_PHRASES[name]), state: "sending" };
+      const phrase = TOOL_PHRASES.find(([pattern]) => pattern.test(name))?.[1];
+      return { label: phrase ? t(phrase) : null, state: toolState(name) };
+  }
+}
+function useLiveNote(actions, sessionId, id, entry) {
+  const key = entry ? JSON.stringify(entry) : "";
+  (0, import_react6.useEffect)(() => {
+    if (!key) return void 0;
+    actions.noteLive(sessionId, id, JSON.parse(key));
+    return () => actions.noteLive(sessionId, id, null);
+  }, [sessionId, id, key]);
+}
+function GroupReplies({ sessionId, callId, done, content, roster, actions, useUi }) {
+  const [live, setLive] = (0, import_react6.useState)({ replies: [], speaking: null });
+  (0, import_react6.useEffect)(() => {
+    if (done) return void 0;
+    let stop = false;
+    let timer;
+    let seen = "";
+    const tick = async () => {
+      const result = await actions.roomProgress(sessionId);
+      if (stop) return;
+      const entry = (result ?? []).find((item) => item.callId === callId) ?? (result ?? [])[0];
+      const key = entry ? JSON.stringify([entry.replies, entry.speaking]) : "";
+      if (entry && key !== seen) {
+        seen = key;
+        setLive({ replies: entry.replies ?? [], speaking: entry.speaking ?? null });
+      }
+      timer = setTimeout(tick, document.hidden ? 5e3 : 1e3);
+    };
+    void tick();
+    return () => {
+      stop = true;
+      clearTimeout(timer);
+    };
+  }, [done, sessionId, callId]);
+  let replies = live.replies;
+  if (done) {
+    try {
+      replies = JSON.parse(contentText(content)).replies ?? [];
+    } catch {
+      replies = [];
+    }
+  }
+  const pending = done || !live.speaking ? [] : [live.speaking];
+  if (replies.length === 0 && pending.length === 0) return null;
+  const room2 = roster.roomsById[sessionId];
+  return (0, import_react6.createElement)(
+    "div",
+    { className: "bt-group-replies" },
+    replies.map((reply, index) => {
+      const bot = roster.byId[reply.botId] ?? { id: reply.botId, name: reply.name, color: reply.color ?? "gray" };
+      if (reply.kind === "failed") {
+        return (0, import_react6.createElement)(
+          "div",
+          { key: `${reply.botId}-${index}`, className: "bt-event bt-event-error", role: "status", title: [reply.code, reply.status, reply.text].filter(Boolean).join(" · ") },
+          t("{name} could not answer: {reason}", { name: bot.name, reason: failureLabel(reply.code, reply.text) })
+        );
+      }
+      if (reply.kind === "lookup") {
+        return (0, import_react6.createElement)(
+          "div",
+          { key: `${reply.botId}-${index}`, className: "bt-event" },
+          reply.text ? t("{name} looked up its own chat for “{text}”", { name: bot.name, text: reply.text }) : t("{name} looked up its own chat", { name: bot.name })
+        );
+      }
+      return (0, import_react6.createElement)(GroupMessage, { key: `${reply.botId}-${index}`, bot, text: reply.text, room: room2, roster, actions, msgKey: callId ? `${sessionId}:${callId}:${index}` : void 0, useUi });
+    }),
+    pending.map((id) => {
+      const bot = roster.byId[id];
+      if (!bot) return null;
+      return (0, import_react6.createElement)(
+        "div",
+        { key: `pending-${id}`, className: "bt-activity" },
+        (0, import_react6.createElement)(BotMark, { bot, size: 22, state: "thinking" }),
+        (0, import_react6.createElement)(Shimmer, null, t("{name} is typing…", { name: bot.name }))
+      );
+    })
+  );
+}
+function ToolCell({ node, sessionId, useRoster, useUi, actions }) {
+  const roster = useRoster((value) => value);
+  const root = node.data.root;
+  const done = root.kind === "tool-result";
+  const turn = node.location?.turn?.turn ?? root.turn;
+  const hidden = isHiddenTurn(roster, sessionId, turn);
+  const tool = toolName(root);
+  const { text: arg, value: argValue } = toolArgs(root);
+  const findBot = (nameOrId) => roster.byId[nameOrId] ?? roster.bots.find((bot) => bot.name.toLowerCase() === String(nameOrId ?? "").toLowerCase());
+  useLiveNote(actions, sessionId, `tool:${root.callId ?? node.key}`, done || hidden ? null : toolActivity(tool, arg, findBot));
+  if (hidden) return null;
+  switch (tool) {
+    case "message_bot": {
+      const target = findBot(arg("to")) ?? { name: arg("to") ?? "…", color: "gray" };
+      if (done && root.isError) return (0, import_react6.createElement)("div", { className: "bt-event" }, t("Couldn't message {name}", { name: target.name }));
+      return (0, import_react6.createElement)(EventLine, { prefix: t("Messaged"), bots: [target], onOpen: (bot) => bot.id && actions.openExchange(self?.id ?? sessionId, bot.id) });
+    }
+    case "create_bot": {
+      const created = findBot(arg("name"));
+      if (!done || created === void 0) return null;
+      return (0, import_react6.createElement)(EventLine, { prefix: t("Created"), bots: [created], onOpen: (bot) => actions.openSession(bot.id) });
+    }
+    case "update_bot": {
+      const target = findBot(arg("name")) ?? findBot(arg("bot"));
+      return done && target ? (0, import_react6.createElement)(EventLine, { prefix: t("Updated"), bots: [target], onOpen: (bot) => actions.openSession(bot.id) }) : null;
+    }
+    case "group_relay":
+      return (0, import_react6.createElement)(GroupReplies, { sessionId, callId: root.callId, done, content: root.content, roster, actions, useUi });
+    case "create_group":
+    case "update_group":
+    case "delete_group":
+    case "post_to_group": {
+      const verbs = {
+        create_group: ["Created group", "Couldn't create the group"],
+        update_group: ["Updated group", "Couldn't update the group"],
+        delete_group: ["Deleted group", "Couldn't delete the group"],
+        post_to_group: ["Posted in", "Couldn't post in the group"]
+      }[tool];
+      if (!done) return null;
+      const result = contentText(root.content);
+      const named = /^(Created group|Updated|Nothing changed in|Deleted|Posted in) "([^"]+)"/.exec(result);
+      if (root.isError || !named) return (0, import_react6.createElement)("div", { className: "bt-event", title: result }, t(verbs[1]));
+      const name = named[2];
+      const room2 = roster.rooms.find((entry) => entry.name === name);
+      return (0, import_react6.createElement)(GroupEvent, { prefix: t(verbs[0]), room: tool === "delete_group" ? void 0 : room2, name, roster, actions });
+    }
+    case "ask_user": {
+      const question = roster.questions?.[sessionId];
+      if (!question || question.callId !== root.callId) return (0, import_react6.createElement)("span", { className: "bt-q-gone", hidden: true });
+      return (0, import_react6.createElement)(PendingQuestion, { sessionId, question, actions, inline: true });
+    }
+    case "request_secret":
+      return (0, import_react6.createElement)(SecretToolCell, { sessionId, callId: root.callId, name: arg("name"), done, content: root.content, roster, actions });
+    case "ask_user_question": {
+      if (!done) return null;
+      let parsed = null;
+      try {
+        parsed = JSON.parse(contentText(root.content));
+      } catch {
+        parsed = null;
+      }
+      const answer = parsed?.answers?.[0];
+      const question = argValue("questions")?.[0];
+      if (!answer) return null;
+      return (0, import_react6.createElement)("div", { className: "bt-q-inline" }, (0, import_react6.createElement)(SettledQuestion, { question, answer }));
+    }
+    case "read_group_chat": {
+      if (!done) return null;
+      const room2 = roster.rooms.find((entry) => entry.name === arg("group"));
+      return room2 ? (0, import_react6.createElement)(GroupEvent, { prefix: t("Read"), room: room2, roster, actions }) : null;
+    }
+    case "remember":
+    case "forget":
+      return done && !root.isError ? (0, import_react6.createElement)(MemoryEvent, { sessionId, scope: arg("scope"), result: contentText(root.content), roster, actions, findBot }) : null;
+    default:
+      return null;
+  }
+}
+
+// src/client/activity-row.js
+var import_react7 = require("react");
+var import_react_dom2 = require("react-dom");
+var PHRASE_HOLD_MS = 800;
+var drawPhrase = (pool) => t(pool[Math.min(pool.length - 1, Math.floor(Math.random() * pool.length))]);
+function elapsedLabel(ms) {
+  const minutes = Math.floor(ms / 6e4);
+  if (minutes < 60) return `${Math.max(1, minutes)}m`;
+  const hours = Math.floor(minutes / 60);
+  return minutes % 60 === 0 ? `${hours}h` : `${hours}h ${minutes % 60}m`;
+}
+function useRunningHost(active) {
+  const [host, setHost] = (0, import_react7.useState)(null);
+  (0, import_react7.useEffect)(() => {
+    if (!active) {
+      setHost(null);
+      return void 0;
+    }
+    let frame = 0;
+    const find = () => {
+      frame = 0;
+      const node = document.querySelector("[data-chat-flow] > [data-chat-running]");
+      setHost((prev) => prev === node ? prev : node);
+    };
+    const observer = new MutationObserver(() => {
+      if (!frame) frame = requestAnimationFrame(find);
+    });
+    observer.observe(document.querySelector("[data-conversation-scroll]") ?? document.body, { childList: true, subtree: true });
+    find();
+    return () => {
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+    };
+  }, [active]);
+  return host;
+}
+function useRowEntrances(replacing) {
+  const check = (0, import_react7.useRef)(replacing);
+  check.current = replacing;
+  (0, import_react7.useEffect)(() => {
+    const seen = /* @__PURE__ */ new WeakSet();
+    const started = Date.now();
+    let column = null;
+    let frame = 0;
+    const settle = (event) => {
+      if (event.target !== event.currentTarget || !/^bt-row/.test(event.animationName)) return;
+      delete event.currentTarget.dataset.btEnter;
+      event.currentTarget.removeEventListener("animationend", settle);
+    };
+    const scan = () => {
+      frame = 0;
+      const next = document.querySelector("[data-chat-flow]");
+      if (next !== column) {
+        observer.disconnect();
+        column = next;
+        if (column) observer.observe(column, { childList: true, subtree: true });
+      }
+      if (!column) return;
+      const items = [...column.querySelectorAll(":scope > [data-chat-flow-key]")];
+      let last = -1;
+      items.forEach((item, index) => {
+        if (seen.has(item)) last = index;
+      });
+      const fresh = items.filter((item) => !seen.has(item) && item.offsetHeight > 0);
+      for (const item of fresh) seen.add(item);
+      if (last < 0 || Date.now() - started < 800 || fresh.length > 3) return;
+      for (const item of fresh) {
+        if (items.indexOf(item) < last) continue;
+        const reply = [void 0, "assistant-step", "tool-call"].includes(item.dataset.chatFlowKind);
+        item.dataset.btEnter = reply && check.current() ? "after-collapse" : "new";
+        item.addEventListener("animationend", settle);
+      }
+    };
+    const observer = new MutationObserver(() => {
+      if (!frame) frame = requestAnimationFrame(scan);
+    });
+    scan();
+    return () => {
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+    };
+  }, []);
+}
+function ActivityIndicator({ sessionId, useRoster, useSessionStatus, useLive, actions }) {
+  const roster = useRoster((value) => value);
+  const running = useSessionStatus((map) => map.get(sessionId)?.running === true);
+  const liveKey = useLive((state) => JSON.stringify(state[sessionId] ?? {}));
+  const bot = roster.byId[sessionId];
+  const room2 = roster.roomsById[sessionId];
+  const entries2 = (0, import_react7.useMemo)(() => Object.values(JSON.parse(liveKey)), [liveKey]);
+  const streaming = entries2.some((entry) => entry.text);
+  const tools = entries2.filter((entry) => !entry.text).sort((a, b) => a.at - b.at);
+  const relaying = tools.some((entry) => entry.relay);
+  const visible = running && !streaming && !relaying && (bot !== void 0 || room2 !== void 0);
+  const tool = tools.at(-1);
+  const want = !visible ? null : tool ? { key: tool.label ? `tool:${tool.label}` : "working", label: tool.label, pool: PHRASES.working, state: tool.state ?? "working" } : { key: "thinking", pool: PHRASES.thinking, state: "thinking" };
+  const [shown, setShown] = (0, import_react7.useState)(null);
+  const wantKey = want?.key ?? null;
+  const markState = (0, import_react7.useRef)("thinking");
+  if (want) markState.current = want.state;
+  (0, import_react7.useEffect)(() => {
+    if (wantKey === null || shown?.key === wantKey) return void 0;
+    const make = () => setShown({ key: wantKey, text: want.label ?? drawPhrase(want.pool), at: Date.now() });
+    const wait = shown ? shown.at + PHRASE_HOLD_MS - Date.now() : 0;
+    if (wait <= 0) {
+      make();
+      return void 0;
+    }
+    const timer = setTimeout(make, wait);
+    return () => clearTimeout(timer);
+  }, [wantKey, shown]);
+  const [phase, setPhase] = (0, import_react7.useState)(null);
+  const endedAt = (0, import_react7.useRef)(0);
+  const shift = (0, import_react7.useRef)(null);
+  const leaving = (0, import_react7.useRef)(false);
+  leaving.current = phase !== null && !visible;
+  (0, import_react7.useEffect)(() => {
+    if (visible) {
+      setPhase("in");
+      return void 0;
+    }
+    setPhase((current) => current === "in" ? "out" : current);
+    const timer = setTimeout(() => {
+      shift.current = document.querySelector("[data-conversation-scroll]")?.scrollTop ?? null;
+      setPhase((current) => current === "out" ? null : current);
+    }, 140);
+    return () => clearTimeout(timer);
+  }, [visible]);
+  (0, import_react7.useLayoutEffect)(() => {
+    if (phase !== null) return;
+    endedAt.current = Date.now();
+    setShown(null);
+    const before = shift.current;
+    shift.current = null;
+    const scroller = document.querySelector("[data-conversation-scroll]");
+    if (before === null || !scroller || reducedMotion()) return;
+    const delta = before - scroller.scrollTop;
+    if (delta > 0) scroller.querySelector("[data-chat-flow]")?.animate([{ transform: `translateY(${-delta}px)` }, { transform: "none" }], { duration: 140, easing: "cubic-bezier(.23,1,.32,1)" });
+  }, [phase]);
+  (0, import_react7.useEffect)(() => {
+    if (!running) actions.clearLive(sessionId);
+  }, [running, sessionId]);
+  useRowEntrances(() => leaving.current || Date.now() - endedAt.current < 300);
+  const [now, setNow] = (0, import_react7.useState)(Date.now);
+  (0, import_react7.useEffect)(() => {
+    if (phase !== "in") return void 0;
+    const timer = setInterval(() => setNow(Date.now()), 1e4);
+    return () => clearInterval(timer);
+  }, [phase]);
+  const host = useRunningHost(running);
+  if (!host || phase === null || !shown) return null;
+  const elapsed = now - shown.at >= 6e4 ? elapsedLabel(now - shown.at) : null;
+  return (0, import_react_dom2.createPortal)((0, import_react7.createElement)(
+    "div",
+    { className: "bt-typing", "data-exiting": phase === "out" ? "" : void 0, "aria-hidden": true },
+    bot ? (0, import_react7.createElement)(BotMark, { bot, size: 28, state: markState.current, live: true, pokeable: true }) : (0, import_react7.createElement)(RoomAvatar, { room: room2, roster, size: 28 }),
+    (0, import_react7.createElement)(
+      "span",
+      { className: "bt-typing-text" },
+      (0, import_react7.createElement)(
+        "span",
+        { key: `${shown.key}:${shown.at}`, className: "bt-typing-label" },
+        (0, import_react7.createElement)(Shimmer, null, `${shown.text}…`),
+        elapsed ? (0, import_react7.createElement)("span", { className: "bt-typing-time" }, `· ${elapsed}`) : null
+      )
+    )
+  ), host);
+}
+
+// src/client/sidebar.js
+var import_react8 = require("react");
+var import_react_dom3 = require("react-dom");
+var import_dsh_client_ui_primitives2 = require("@deepseek-ai/dsh-client-ui-primitives");
+function useMarkedUnread(id, active, marked, actions) {
+  (0, import_react8.useEffect)(() => {
+    if (active && marked) actions.clearUnread(id);
+  }, [active, marked]);
+}
+var PinMark = () => (0, import_react8.createElement)("span", { className: "bt-pin", "aria-hidden": true }, (0, import_react8.createElement)(PinMarkIcon));
+function BotRow({ bot, roster, actions, useSessions, useSessionStatus, useSessionRetainInfo, useActivity, wide, marked }) {
+  const id = bot.id;
+  const part = currentPart(bot);
+  const preview = useSessions((list) => previewOf(list, part, roster.exchangeTurns[part]));
+  const running = useSessionStatus((map) => map.get(part)?.running === true);
+  const active = useSessionRetainInfo(part, (info) => (info?.retainedBy?.mainView ?? 0) > 0);
+  const unread = useSessionStatus((map) => map.get(part)?.completionUnread === true || map.get(part)?.pendingInteraction !== void 0) || marked && !active;
+  useMarkedUnread(id, active, marked, actions);
+  const main = isMainOf(roster, id);
+  const tile = roster.mainBotId === id;
+  const alert = roster.questions?.[part] !== void 0;
+  const doing = useActivity((map) => map[id]);
+  const state = botState(running, doing, alert);
+  if (bot.hidden && !active && !main) return null;
+  const onContextMenu = (event) => {
+    event.preventDefault();
+    actions.openMenu({ kind: "bot", id, x: event.clientX, y: event.clientY });
+  };
+  const pinned = bot.pinned === true && !tile;
+  const label = [bot.name, main ? t("Main Bot") : "", pinned ? t("Pinned") : "", running ? t("Working") : "", alert ? t("Waiting for your answer") : "", unread ? t("Unread activity") : ""].filter(Boolean).join(", ");
+  if (tile && wide) {
+    return (0, import_react8.createElement)("div", { className: "bt-tile-wrap" }, (0, import_react8.createElement)(
+      "button",
+      {
+        type: "button",
+        className: "bt-tile",
+        "aria-label": label,
+        "aria-current": active ? "page" : void 0,
+        "data-bot-id": id,
+        title: preview || bot.name,
+        onClick: () => actions.openSession(id),
+        onContextMenu
+      },
+      (0, import_react8.createElement)(BotAvatar, { bot, size: 60, state, main: true }),
+      (0, import_react8.createElement)("span", { className: "bt-tile-name" }, bot.name),
+      bot.role ? (0, import_react8.createElement)("span", { className: "bt-chip" }, bot.role) : null
+    ));
+  }
+  return (0, import_react8.createElement)(
+    "button",
+    {
+      type: "button",
+      className: "bt-row",
+      "aria-label": label,
+      "aria-current": active ? "page" : void 0,
+      "data-bot-id": id,
+      title: wide ? void 0 : bot.name,
+      onClick: () => actions.openSession(id),
+      onContextMenu
+    },
+    (0, import_react8.createElement)(BotAvatar, { bot, size: 36, state, main }),
+    pinned && !wide ? (0, import_react8.createElement)(PinMark) : null,
+    wide ? (0, import_react8.createElement)(
+      "span",
+      { className: "bt-row-body" },
+      (0, import_react8.createElement)("span", { className: "bt-row-name" }, (0, import_react8.createElement)("span", { className: "bt-row-title" }, bot.name), pinned ? (0, import_react8.createElement)(PinMark) : null),
+      preview ? (0, import_react8.createElement)("span", { className: "bt-row-preview" }, preview) : null
+    ) : null,
+    wide && unread && !active ? (0, import_react8.createElement)("span", { className: "bt-unread", "aria-hidden": true }) : null
+  );
+}
+function RoomRow({ room: room2, roster, actions, useSessions, useSessionStatus, useSessionRetainInfo, wide, marked }) {
+  const id = room2.id;
+  const fallback = useSessions((list) => previewOf(list, id));
+  const preview = room2.preview?.replace(/\s+/g, " ").trim() || fallback;
+  const active = useSessionRetainInfo(id, (info) => (info?.retainedBy?.mainView ?? 0) > 0);
+  const unread = useSessionStatus((map) => map.get(id)?.completionUnread === true) || marked && !active;
+  useMarkedUnread(id, active, marked, actions);
+  if (room2.hidden && !active) return null;
+  const pinned = room2.pinned === true;
+  return (0, import_react8.createElement)(
+    "button",
+    {
+      type: "button",
+      className: "bt-row",
+      "aria-label": pinned ? `${room2.name}, ${t("Pinned")}` : room2.name,
+      "aria-current": active ? "page" : void 0,
+      "data-room-id": id,
+      onClick: () => actions.openSession(id),
+      onContextMenu: (event) => {
+        event.preventDefault();
+        actions.openMenu({ kind: "room", id, x: event.clientX, y: event.clientY });
+      }
+    },
+    (0, import_react8.createElement)(RoomAvatar, { room: room2, roster, size: 36 }),
+    pinned && !wide ? (0, import_react8.createElement)(PinMark) : null,
+    wide ? (0, import_react8.createElement)(
+      "span",
+      { className: "bt-row-body" },
+      (0, import_react8.createElement)("span", { className: "bt-row-name" }, (0, import_react8.createElement)("span", { className: "bt-row-title" }, room2.name), pinned ? (0, import_react8.createElement)(PinMark) : null),
+      preview ? (0, import_react8.createElement)("span", { className: "bt-row-preview" }, preview) : null
+    ) : null,
+    wide && unread && !active ? (0, import_react8.createElement)("span", { className: "bt-unread", "aria-hidden": true }) : null
+  );
+}
+function AgentSessionRow({ session, agent, actions, renaming, index }) {
+  const input = (0, import_react8.useRef)(null);
+  (0, import_react8.useLayoutEffect)(() => {
+    if (!renaming) return;
+    input.current?.focus();
+    input.current?.select();
+  }, [renaming]);
+  if (renaming) {
+    const commit = (keep) => {
+      const value = input.current?.value ?? "";
+      if (!keep || value.trim() === "" || value.trim() === session.title) {
+        actions.endAgentRename();
+        return;
+      }
+      void (async () => {
+        try {
+          await actions.renameAgentSession(agent.id, session.id, value);
+          actions.endAgentRename();
+        } catch (error) {
+          actions.reportError(error, "agent-rename");
+        }
+      })();
+    };
+    return (0, import_react8.createElement)(
+      "div",
+      { className: "bt-agent-sub-row bt-agent-edit", style: { "--i": index } },
+      (0, import_react8.createElement)("input", {
+        ref: input,
+        defaultValue: session.title,
+        "aria-label": t("Rename"),
+        onKeyDown: (event) => {
+          if (event.nativeEvent.isComposing) return;
+          if (event.key === "Enter") commit(true);
+          else if (event.key === "Escape") commit(false);
+        },
+        onBlur: () => commit(true)
+      })
+    );
+  }
+  return (0, import_react8.createElement)(
+    "button",
+    {
+      type: "button",
+      className: "bt-agent-sub-row",
+      "aria-current": session.active ? "page" : void 0,
+      style: { "--i": index },
+      onClick: () => actions.openAgentSession(session.id),
+      onContextMenu: (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        actions.openMenu({ kind: "agent-session", id: session.id, agentId: agent.id, x: event.clientX, y: event.clientY });
+      }
+    },
+    (0, import_react8.createElement)("span", { className: "bt-agent-sub-title" }, session.title),
+    (0, import_react8.createElement)("span", { className: "bt-agent-sub-time" }, session.at > 0 ? relativeShort(session.at) : "")
+  );
+}
+function AgentRow({ agent, actions, useSessions, useSessionStatus, useUi, wide, marked }) {
+  const info = useSessions((list) => JSON.stringify(agent.sessions.map((id) => {
+    const row = list.byId[id];
+    return {
+      id,
+      // A blank Session's title is the workspace folder name; show the label instead.
+      title: row?.blank === true ? "" : row?.displayTitle ?? row?.title ?? "",
+      at: row?.updatedAt ?? 0,
+      running: row?.running === true,
+      active: (row?.retainedBy?.mainView ?? 0) > 0
+    };
+  }).sort((a, b) => b.at - a.at)));
+  const statusInfo = useSessionStatus((map) => JSON.stringify(agent.sessions.map((id) => ({
+    id,
+    running: map.get(id)?.running === true,
+    unread: map.get(id)?.completionUnread === true
+  }))));
+  const statuses = Object.fromEntries(JSON.parse(statusInfo).map((entry) => [entry.id, entry]));
+  const sessions = JSON.parse(info).map((session) => ({
+    ...session,
+    running: statuses[session.id]?.running ?? session.running,
+    unread: statuses[session.id]?.unread ?? false,
+    title: session.title === "" ? t("New session") : session.title
+  }));
+  const renaming = useUi((value) => value.renameAgent);
+  const active = sessions.some((session) => session.active);
+  const running = sessions.some((session) => session.running);
+  const unread = sessions.some((session) => session.unread) || marked && !active;
+  useMarkedUnread(agent.id, active, marked, actions);
+  const preview = sessions[0]?.title ?? t("New session");
+  const label = ["DSH Agent", running ? t("Working") : "", unread ? t("Unread activity") : ""].filter(Boolean).join(", ");
+  const open = active && wide;
+  return (0, import_react8.createElement)(
+    "div",
+    { className: "bt-agent" },
+    (0, import_react8.createElement)(
+      "button",
+      {
+        type: "button",
+        className: "bt-row",
+        "aria-label": label,
+        "aria-current": active ? "page" : void 0,
+        "data-agent-id": agent.id,
+        title: wide ? void 0 : "DSH Agent",
+        onClick: () => actions.openAgent(agent.id),
+        onContextMenu: (event) => {
+          event.preventDefault();
+          actions.openMenu({ kind: "agent", id: agent.id, x: event.clientX, y: event.clientY });
+        }
+      },
+      (0, import_react8.createElement)("span", { className: `bt-agent-ava${running ? " bt-run" : ""}` }, (0, import_react8.createElement)(import_dsh_client_ui_primitives2.FishLogo, { size: 22 })),
+      wide ? (0, import_react8.createElement)(
+        "span",
+        { className: "bt-row-body" },
+        (0, import_react8.createElement)("span", { className: "bt-row-name" }, "DSH Agent"),
+        preview ? (0, import_react8.createElement)("span", { className: "bt-row-preview" }, preview) : null
+      ) : null,
+      wide && unread && !active ? (0, import_react8.createElement)("span", { className: "bt-unread", "aria-hidden": true }) : null
+    ),
+    (0, import_react8.createElement)(
+      "div",
+      { className: "bt-agent-sub", "data-open": open || void 0 },
+      (0, import_react8.createElement)(
+        "div",
+        { className: "bt-agent-sub-in" },
+        (0, import_react8.createElement)(
+          "button",
+          { type: "button", className: "bt-agent-sub-row bt-agent-new", style: { "--i": 0 }, onClick: () => {
+            void actions.newAgentSession(agent.id).catch((error) => actions.reportError(error, "agent-session"));
+          } },
+          (0, import_react8.createElement)(PlusIcon),
+          (0, import_react8.createElement)("span", { className: "bt-agent-sub-title" }, t("New session"))
+        ),
+        sessions.map((session, index) => (0, import_react8.createElement)(AgentSessionRow, {
+          key: session.id,
+          session,
+          agent,
+          actions,
+          index: index + 1,
+          renaming: renaming === session.id
+        }))
+      )
+    )
+  );
+}
+var GLIDE = springEasing(1e3, 63);
+function useListGlide(listRef, layout, key) {
+  const tops = (0, import_react8.useRef)({ layout, map: /* @__PURE__ */ new Map() });
+  (0, import_react8.useLayoutEffect)(() => {
+    const list = listRef.current;
+    if (!list) return;
+    const next = /* @__PURE__ */ new Map();
+    const still = reducedMotion() || tops.current.layout !== layout;
+    for (const row of list.querySelectorAll("[data-bot-id],[data-room-id],[data-agent-id]")) {
+      const id = row.dataset.botId ?? row.dataset.roomId ?? row.dataset.agentId;
+      const top = row.offsetTop;
+      next.set(id, top);
+      const before = tops.current.map.get(id);
+      if (!still && before !== void 0 && Math.abs(before - top) > 0.5) {
+        row.animate([{ transform: `translateY(${before - top}px)` }, { transform: "none" }], GLIDE);
+      }
+    }
+    tops.current = { layout, map: next };
+  }, [layout, key]);
+}
+function TeamSidebar(props) {
+  const { wide, useRoster, useUi, useSessions, actions } = props;
+  const listRef = (0, import_react8.useRef)(null);
+  const roster = useRoster((value) => value);
+  const markedUnread = useUi((value) => value.unread);
+  props.useRegistry((value) => value);
+  const updated = useSessions((list) => {
+    const stamps = {};
+    for (const id of list.ids) stamps[id] = list.byId[id]?.updatedAt ?? 0;
+    return JSON.stringify(stamps);
+  });
+  const order = (0, import_react8.useMemo)(() => {
+    const stamps = JSON.parse(updated);
+    const entries2 = [
+      ...roster.bots.filter((bot) => bot.id !== roster.mainBotId).map((bot) => ({ kind: "bot", item: bot, at: stamps[currentPart(bot)] ?? bot.createdAt })),
+      ...roster.rooms.map((room2) => ({ kind: "room", item: room2, at: stamps[room2.id] ?? room2.createdAt })),
+      // The Agent sorts by its most recent Session, falling back to when it was added.
+      ...(roster.agents ?? []).map((agent) => ({ kind: "agent", item: agent, at: Math.max(0, ...agent.sessions.map((id) => stamps[id] ?? 0)) || agent.createdAt }))
+    ];
+    return entries2.sort((a, b) => Number(Boolean(b.item.pinned)) - Number(Boolean(a.item.pinned)) || b.at - a.at);
+  }, [roster, updated]);
+  const main = roster.byId[roster.mainBotId];
+  useListGlide(listRef, wide, order.map((entry) => entry.item.id).join(","));
+  useLandOnMainBot(roster, useSessions, actions);
+  const rowProps = { roster, actions, useSessions, useUi, useSessionStatus: props.useSessionStatus, useSessionRetainInfo: props.useSessionRetainInfo, useActivity: props.useActivity, wide };
+  const typeToSearch = (event) => {
+    if (event.defaultPrevented || event.key.length !== 1 || event.key === " " || event.metaKey || event.ctrlKey || event.altKey || event.nativeEvent.isComposing) return;
+    if (event.target instanceof Element && event.target.closest("input,textarea,[contenteditable]")) return;
+    event.preventDefault();
+    actions.openPalette(event.key);
+  };
+  return (0, import_react8.createElement)(
+    "div",
+    { className: wide ? "bt-side" : "bt-side bt-rail", onKeyDown: typeToSearch },
+    wide ? (0, import_react8.createElement)(
+      "div",
+      { className: "bt-side-top" },
+      (0, import_react8.createElement)("span", { className: "bt-brand" }, (0, import_react8.createElement)(BrandMark, { size: 22 }), (0, import_react8.createElement)(BrandName)),
+      (0, import_react8.createElement)(UpdateButton, { useUpdate: props.useUpdate, actions }),
+      (0, import_react8.createElement)("button", { type: "button", className: "bt-round", "aria-label": t("Search"), title: t("Search"), onClick: () => actions.openPalette() }, (0, import_react8.createElement)(SearchIcon)),
+      (0, import_react8.createElement)("button", { type: "button", className: "bt-round", "aria-label": t("New…"), title: t("New…"), onClick: () => actions.openNewChat("new") }, (0, import_react8.createElement)(PlusIcon))
+    ) : (0, import_react8.createElement)(
+      import_react8.Fragment,
+      null,
+      (0, import_react8.createElement)(UpdateButton, { useUpdate: props.useUpdate, actions }),
+      (0, import_react8.createElement)("button", { type: "button", className: "bt-round", "aria-label": t("New…"), title: t("New…"), onClick: () => actions.openNewChat("new") }, (0, import_react8.createElement)(PlusIcon))
+    ),
+    wide && roster.readOnly ? (0, import_react8.createElement)("div", { className: "bt-hint bt-read-only", role: "status" }, hostText(roster.readOnly)) : null,
+    (0, import_react8.createElement)(
+      "div",
+      { ref: listRef, className: "bt-list", role: "region", "aria-label": t("Bot list") },
+      main ? (0, import_react8.createElement)(BotRow, { ...rowProps, bot: main, marked: markedUnread[main.id] === true }) : roster.ready ? null : (0, import_react8.createElement)("div", { className: "bt-hint" }, t("Setting up your Main Bot…")),
+      order.map((entry) => entry.kind === "bot" ? (0, import_react8.createElement)(BotRow, { key: entry.item.id, ...rowProps, bot: entry.item, marked: markedUnread[entry.item.id] === true }) : entry.kind === "room" ? (0, import_react8.createElement)(RoomRow, { key: entry.item.id, ...rowProps, room: entry.item, marked: markedUnread[entry.item.id] === true }) : (0, import_react8.createElement)(AgentRow, { key: entry.item.id, ...rowProps, agent: entry.item, marked: markedUnread[entry.item.id] === true }))
+    )
+  );
+}
+function UpdateButton({ useUpdate, actions }) {
+  const update = useUpdate((value) => value);
+  const [open, setOpen] = (0, import_react8.useState)(false);
+  const [box, setBox] = (0, import_react8.useState)(null);
+  const [error, setError] = (0, import_react8.useState)("");
+  const button = (0, import_react8.useRef)(null);
+  (0, import_react8.useEffect)(() => {
+    if (!open) return void 0;
+    const onDown = (event) => {
+      if (event.target instanceof Element && (event.target.closest(".bt-update-pop") || button.current?.contains(event.target))) return;
+      setOpen(false);
+    };
+    const onKey = (event) => {
+      if (event.key === "Escape") {
+        event.stopPropagation();
+        setOpen(false);
+        button.current?.focus();
+      }
+    };
+    window.addEventListener("mousedown", onDown);
+    window.addEventListener("keydown", onKey, true);
+    return () => {
+      window.removeEventListener("mousedown", onDown);
+      window.removeEventListener("keydown", onKey, true);
+    };
+  }, [open]);
+  const phase = update?.phase ?? "idle";
+  if (!update?.available && phase === "idle") return null;
+  const toggle = () => {
+    const rect = button.current?.getBoundingClientRect();
+    if (rect) setBox({ left: Math.max(8, Math.min(rect.left, window.innerWidth - 288)), top: rect.bottom + 6 });
+    setOpen((value) => !value);
+  };
+  const start = () => {
+    setError("");
+    void actions.installUpdate().catch((failure) => setError(hostText(failure?.message ?? String(failure))));
+  };
+  const label = phase === "installing" ? t("Updating DS Bot…") : phase === "installed" ? t("DS Bot {version} is installed. Restart DSH to use it.", { version: update.installed ?? update.latest }) : t("DS Bot {version} is available", { version: update.latest });
+  const message = error || (phase === "failed" ? update.error : "");
+  return (0, import_react8.createElement)(
+    import_react8.Fragment,
+    null,
+    (0, import_react8.createElement)("button", {
+      ref: button,
+      type: "button",
+      className: "bt-round bt-update",
+      "data-phase": phase,
+      "aria-label": label,
+      title: label,
+      "aria-haspopup": "dialog",
+      "aria-expanded": open,
+      onClick: toggle
+    }, (0, import_react8.createElement)(CloudDownloadIcon, { done: phase === "installed" }), phase === "failed" ? (0, import_react8.createElement)("span", { className: "bt-update-dot", "aria-hidden": true }) : null),
+    open && box ? (0, import_react_dom3.createPortal)((0, import_react8.createElement)(
+      "div",
+      { className: "bt-update-pop", role: "dialog", "aria-label": t("DS Bot update"), style: box },
+      (0, import_react8.createElement)("div", { className: "bt-update-title" }, phase === "installed" ? t("Update installed") : t("DS Bot {version}", { version: update.latest })),
+      (0, import_react8.createElement)("div", { className: "bt-update-text" }, phase === "installed" ? t("Restart DSH to start using DS Bot {version}.", { version: update.installed ?? update.latest }) : t("You have {version}.", { version: update.current })),
+      message ? (0, import_react8.createElement)("div", { className: "bt-update-error", role: "alert" }, t("The update did not finish: {reason}", { reason: message })) : null,
+      (0, import_react8.createElement)(
+        "div",
+        { className: "bt-update-actions" },
+        update.notesUrl ? (0, import_react8.createElement)("a", { className: "bt-update-notes", href: update.notesUrl, target: "_blank", rel: "noopener noreferrer" }, t("What's new")) : null,
+        phase === "installed" ? null : (0, import_react8.createElement)("button", {
+          type: "button",
+          className: "bt-update-go",
+          disabled: phase === "installing",
+          onClick: start
+        }, phase === "installing" ? t("Updating…") : phase === "failed" ? t("Try again") : t("Update"))
+      )
+    ), document.body) : null
+  );
+}
+function ConnectPlugins({ wide, actions }) {
+  const tipId = (0, import_react8.useId)();
+  const [tip, setTip] = (0, import_react8.useState)(false);
+  const timer = (0, import_react8.useRef)(0);
+  const button = (0, import_react8.useRef)(null);
+  const [box, setBox] = (0, import_react8.useState)(null);
+  (0, import_react8.useEffect)(() => () => clearTimeout(timer.current), []);
+  if (!wide) return null;
+  const show = () => {
+    clearTimeout(timer.current);
+    timer.current = setTimeout(() => {
+      const rect = button.current?.getBoundingClientRect();
+      if (!rect) return;
+      const left = Math.max(8, Math.min(rect.left, window.innerWidth - 268));
+      setBox({ left, bottom: window.innerHeight - rect.top + 10 });
+      setTip(true);
+    }, 250);
+  };
+  const hide = () => {
+    clearTimeout(timer.current);
+    setTip(false);
+  };
+  return (0, import_react8.createElement)(
+    "span",
+    { className: "bt-connect-wrap" },
+    (0, import_react8.createElement)(
+      "button",
+      {
+        ref: button,
+        type: "button",
+        className: "bt-connect bt-connect-foot",
+        "aria-describedby": tip ? tipId : void 0,
+        onMouseEnter: show,
+        onMouseLeave: hide,
+        onFocus: show,
+        onBlur: hide,
+        onClick: () => actions.selectPanel("plugins")
+      },
+      (0, import_react8.createElement)(PlugIcon),
+      t("Connect plugins"),
+      (0, import_react8.createElement)("span", { className: "bt-connect-warn", "aria-hidden": true }, "!")
+    ),
+    tip && box ? (0, import_react_dom3.createPortal)((0, import_react8.createElement)(
+      "span",
+      { role: "tooltip", id: tipId, className: "bt-connect-tip", style: box },
+      t("Plugin compatibility is not fully verified.")
+    ), document.body) : null
+  );
+}
+function YouAvatar() {
+  return (0, import_react8.createElement)(
+    "span",
+    { className: "bt-you-wrap" },
+    (0, import_react8.createElement)("span", { className: "bt-you", "aria-hidden": true }, (0, import_react8.createElement)(BotMark, { look: MAIN_LOOK, size: 24 })),
+    (0, import_react8.createElement)("span", { style: { position: "absolute", width: 1, height: 1, overflow: "hidden", clip: "rect(0 0 0 0)" } }, t("Settings"))
+  );
+}
+var openShellSettings = null;
+var openShellOnboarding = null;
+var shellShortcuts = null;
+function holdShellShortcuts(shortcuts) {
+  shellShortcuts = shortcuts;
+  return () => {
+    if (shellShortcuts === shortcuts) shellShortcuts = null;
+  };
+}
+function openHarnessSettings() {
+  requestAnimationFrame(() => {
+    if (openShellSettings) {
+      openShellSettings();
+      return;
+    }
+    const desktop = document.querySelector('button[aria-haspopup="menu"][data-signed-out]');
+    if (desktop) openThroughMenu(desktop);
+    else pressSettingsShortcut();
+  });
+}
+function openHarnessOnboarding(id) {
+  requestAnimationFrame(() => {
+    if (openShellOnboarding) openShellOnboarding(id);
+    else openHarnessSettings();
+  });
+}
+function openThroughMenu(trigger) {
+  const before = new Set(document.querySelectorAll('[role="menu"]'));
+  trigger.click();
+  let frames = 0;
+  const look = () => {
+    const menu = [...document.querySelectorAll('[role="menu"]')].find((node) => !before.has(node));
+    const item = menu?.querySelector('button[role="menuitem"]');
+    if (item) item.click();
+    else if (++frames < 30) requestAnimationFrame(look);
+    else pressSettingsShortcut();
+  };
+  requestAnimationFrame(look);
+}
+function pressSettingsShortcut() {
+  const binding = shellShortcuts?.catalog.getSnapshot().find((row) => row.id === "settings.open")?.binding;
+  if (!binding) return;
+  const held = new Set(binding.modifiers);
+  window.dispatchEvent(new KeyboardEvent("keydown", {
+    code: binding.code,
+    key: binding.code === "Comma" ? "," : "",
+    bubbles: true,
+    cancelable: true,
+    ctrlKey: held.has("control"),
+    altKey: held.has("alt"),
+    shiftKey: held.has("shift"),
+    metaKey: held.has("meta")
+  }));
+}
+function AccountLauncher({ seat = true, settingsOpen, openSettings, openOnboarding, actions }) {
+  const [open, setOpen] = (0, import_react8.useState)(false);
+  (0, import_react8.useLayoutEffect)(() => {
+    if (!seat) return void 0;
+    actions.seatAccount(true);
+    return () => actions.seatAccount(false);
+  }, [seat]);
+  const [box, setBox] = (0, import_react8.useState)(null);
+  const button = (0, import_react8.useRef)(null);
+  (0, import_react8.useEffect)(() => {
+    if (settingsOpen) setOpen(false);
+  }, [settingsOpen]);
+  (0, import_react8.useEffect)(() => {
+    if (!openSettings) return void 0;
+    openShellSettings = openSettings;
+    return () => {
+      if (openShellSettings === openSettings) openShellSettings = null;
+    };
+  }, [openSettings]);
+  (0, import_react8.useEffect)(() => {
+    if (!openOnboarding) return void 0;
+    openShellOnboarding = openOnboarding;
+    return () => {
+      if (openShellOnboarding === openOnboarding) openShellOnboarding = null;
+    };
+  }, [openOnboarding]);
+  (0, import_react8.useEffect)(() => {
+    if (!open) return void 0;
+    const onDown = (event) => {
+      if (event.target instanceof Element && (event.target.closest(".bt-account-menu") || button.current?.contains(event.target))) return;
+      setOpen(false);
+    };
+    const onKey = (event) => {
+      if (event.key === "Escape") {
+        event.stopPropagation();
+        setOpen(false);
+        button.current?.focus();
+      }
+    };
+    window.addEventListener("mousedown", onDown);
+    window.addEventListener("keydown", onKey, true);
+    return () => {
+      window.removeEventListener("mousedown", onDown);
+      window.removeEventListener("keydown", onKey, true);
+    };
+  }, [open]);
+  const toggle = () => {
+    const rect = button.current?.getBoundingClientRect();
+    if (rect) setBox({ left: rect.left, bottom: window.innerHeight - rect.top + 5 });
+    setOpen((value) => !value);
+  };
+  const groups = [
+    [
+      [t("Usage"), GaugeIcon, () => actions.openSettings("usage")],
+      [t("Connectors"), ConnectorIcon, () => actions.openConnectors()],
+      [t("Automation tasks"), ClockIcon, () => actions.selectPanel("schedules")],
+      [t("Bot settings"), GearIcon, () => actions.openSettings("general")]
+    ],
+    [
+      [t("Switch to classic Agent mode"), SwitchIcon, () => actions.setSurface("agent")]
+    ]
+  ];
+  return (0, import_react8.createElement)(
+    import_react8.Fragment,
+    null,
+    (0, import_react8.createElement)(
+      "button",
+      { ref: button, type: "button", className: "bt-account", "aria-label": t("Account"), "aria-haspopup": "menu", "aria-expanded": open, onClick: toggle },
+      (0, import_react8.createElement)("span", { className: "bt-you", "aria-hidden": true }, (0, import_react8.createElement)(BotMark, { look: MAIN_LOOK, size: 24 }))
+    ),
+    open && box ? (0, import_react_dom3.createPortal)((0, import_react8.createElement)(
+      "div",
+      { className: "bt-menu bt-menu-up bt-account-menu", role: "menu", "aria-label": t("Account"), style: box },
+      groups.map((group, index) => (0, import_react8.createElement)(
+        import_react8.Fragment,
+        { key: index },
+        index > 0 ? (0, import_react8.createElement)("div", { className: "bt-menu-sep", role: "separator" }) : null,
+        group.map(([label, Icon, run, hint]) => (0, import_react8.createElement)("button", {
+          key: label,
+          type: "button",
+          role: "menuitem",
+          onClick: () => {
+            setOpen(false);
+            void Promise.resolve(run()).catch((error) => actions.reportError(error, "menu"));
+          }
+        }, (0, import_react8.createElement)(Icon), (0, import_react8.createElement)("span", { className: "bt-menu-label" }, label), hint ? (0, import_react8.createElement)("span", { className: "bt-menu-hint" }, hint) : null))
+      ))
+    ), document.body) : null
+  );
+}
+function useLandOnMainBot(roster, useSessions, actions) {
+  const mainView = useSessions((list) => {
+    const row = Object.values(list.byId).find((session) => (session?.retainedBy?.mainView ?? 0) > 0);
+    return row ? `${row.id}|${row.blank ? 1 : 0}` : "";
+  });
+  const lastBot = (0, import_react8.useRef)(null);
+  (0, import_react8.useEffect)(() => {
+    if (!roster.ready || !roster.mainBotId) return void 0;
+    const [id, blank2] = mainView.split("|");
+    const bot = id === "" ? void 0 : roster.byId[id];
+    if (bot !== void 0) {
+      lastBot.current = { botId: bot.id, sessionId: id };
+      if (currentPart(bot) !== id) actions.landOn(bot.id);
+      return void 0;
+    }
+    if (id !== "" && (roster.roomsById[id] || (actions.isAgentSession?.(id) ?? roster.agentOf[id] !== void 0) || blank2 !== "1")) {
+      lastBot.current = null;
+      return void 0;
+    }
+    const last = lastBot.current;
+    const timer = setTimeout(() => actions.landOn(roster.mainBotId, last), last ? 0 : 400);
+    return () => clearTimeout(timer);
+  }, [mainView, roster]);
+}
+function FooterAccount(props) {
+  const seated = props.useUi((value) => value.accountSeated === true);
+  if (seated) return null;
+  return (0, import_react8.createElement)("span", { className: "bt-foot-account" }, (0, import_react8.createElement)(AccountLauncher, { ...props, seat: false }));
+}
+function BotReturn({ wide, useSurface, actions }) {
+  const mode = useSurface((value) => value.mode);
+  if (mode !== "agent") return null;
+  return (0, import_react8.createElement)(
+    "button",
+    { type: "button", className: "bt-return", "aria-label": t("DS Bot"), title: t("DS Bot"), onClick: () => actions.setSurface("bot") },
+    (0, import_react8.createElement)(BotMark, { look: MAIN_LOOK, size: 20 }),
+    wide ? (0, import_react8.createElement)("span", { className: "bt-return-name" }, t("DS Bot")) : null
+  );
+}
+var RETURN_CSS = `
+.bt-return{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:0 14px;border:0;border-radius:999px;background:none;color:inherit;font:inherit;font-size:14px;line-height:20px;cursor:pointer;transition:background-color .12s ease}
+.bt-return:hover{background:rgba(127,127,127,.14)}
+.bt-return:active{transform:scale(.96)}
+.bt-return .bt-mark{display:inline-flex;flex:none;line-height:0}
+.bt-return .bt-mark svg{width:100%;height:100%;overflow:visible}
+/* Shell styles carry --bt-ink-deepseek and Agent mode withdraws them; pin it here. */
+.bt-return .bt-mark{--bt-ink-deepseek:#4D6BFE}
+.bt-return-name{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+`;
+function BrandMark({ size = 24 }) {
+  return (0, import_react8.createElement)("span", { className: "bt-brand-whale" }, (0, import_react8.createElement)(BotMark, { look: MAIN_LOOK, size }));
+}
+function BrandName() {
+  return (0, import_react8.createElement)("span", { style: { fontWeight: 600, fontSize: 14 } }, "DS Bot");
+}
+var SIDEBAR_CSS = `
+.bt-side-top .bt-brand{cursor:default;padding-left:6px}
+.bt-side-top .bt-brand:hover{background:none}
+.bt-brand .bt-mark{flex:none}
+.bt-pin{flex:none;display:inline-flex;color:var(--bt-ink-3)}
+.bt-rail .bt-row{position:relative}
+.bt-rail .bt-pin{position:absolute;top:3px;left:calc(50% + 12px)}
+.bt-side .bt-read-only{margin:4px 8px 6px;padding:8px 10px;border-radius:10px;background:var(--bt-hover);font-size:12px;line-height:1.45;text-align:left}
+[class*="_footArea"]:has(.bt-foot-account){display:flex!important;flex-direction:row!important;align-items:center;gap:6px}
+[class*="_footArea"]:has(.bt-foot-account)>[class*="_footerActions"],[class*="_footArea"]:has(.bt-foot-account)>[class*="_footerActions"]>div{display:contents!important}
+.bt-foot-account{order:-1;flex:none;display:inline-flex}
+[class*="_footArea"]:has(.bt-foot-account) .bt-connect-foot{order:0;flex:1 1 auto;min-width:0;width:auto}
+[class*="_footArea"]:has(.bt-foot-account)>[class*="_settingsArea"]{order:1;flex:none}
+[class*="_footArea"]:has(.bt-foot-account)>[class*="_settingsArea"] button[class*="_trigger"] [class*="_label"]{display:none!important}
+
+/* The update cloud springs in when a newer DS Bot shows up; its arrow drops in a
+   loop while the install runs. */
+.bt-round.bt-update{position:relative;color:var(--bt-accent,#4D6BFE);animation:bt-update-in ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing}}
+.bt-round.bt-update svg{width:17px;height:17px}
+.bt-round.bt-update[data-phase=installed]{color:var(--bt-ink-2)}
+@keyframes bt-update-in{from{opacity:0;transform:scale(.6);filter:blur(4px)}}
+.bt-update[data-phase=installing] .bt-cloud-arrow{animation:bt-cloud-drop 1.1s cubic-bezier(.45,0,.55,1) infinite}
+@keyframes bt-cloud-drop{0%{transform:translateY(-3px);opacity:0}35%{opacity:1}70%{transform:translateY(1px);opacity:1}100%{transform:translateY(2px);opacity:0}}
+.bt-update-dot{position:absolute;top:6px;right:6px;width:7px;height:7px;border-radius:50%;background:#E5484D;box-shadow:0 0 0 1.5px var(--bt-sidebar)}
+.bt-update-pop{position:fixed;z-index:60;width:280px;padding:14px 14px 12px;border-radius:14px;background:var(--bt-main);border:.5px solid var(--bt-line-2);box-shadow:0 10px 20px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);color:var(--bt-ink);box-sizing:border-box;transform-origin:top left;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;animation:bt-update-pop ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing}}
+@keyframes bt-update-pop{from{opacity:0;transform:scale(.96);filter:blur(4px)}}
+.bt-update-title{font-size:14px;line-height:20px;font-weight:600}
+.bt-update-text{margin-top:2px;font-size:12.5px;line-height:18px;color:var(--bt-ink-2)}
+.bt-update-error{margin-top:8px;font-size:12px;line-height:17px;color:#c21d2e;overflow-wrap:anywhere;max-height:90px;overflow:auto}
+.bt-update-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-top:12px}
+.bt-update-notes{margin-right:auto;font-size:12.5px;color:var(--bt-ink-2);text-decoration:none}
+.bt-update-notes:hover{color:var(--bt-ink);text-decoration:underline}
+.bt-update-go{height:30px;padding:0 14px;border:0;border-radius:999px;background:var(--bt-accent,#4D6BFE);color:var(--bt-accent-ink,#fff);font:inherit;font-size:13px;font-weight:500;cursor:pointer;transition:opacity .12s ease,transform .12s ease}
+.bt-update-go:hover:not(:disabled){opacity:.9}
+.bt-update-go:active:not(:disabled){transform:scale(.96)}
+.bt-update-go:disabled{opacity:.6;cursor:default}
+@media (prefers-reduced-motion:reduce){.bt-round.bt-update,.bt-update-pop,.bt-update .bt-cloud-arrow{animation:none}}
+
+/* The DSH Agent row and its expanding Session list. The black whale is the
+   harness's own mark, so the row reads as "plain dsh" next to the Bot marks. */
+.bt-agent-ava{flex:none;width:36px;height:36px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--bt-hover);color:var(--bt-ink)}
+.bt-agent-ava.bt-run{animation:bt-agent-pulse 1.4s ease-in-out infinite}
+@keyframes bt-agent-pulse{0%,100%{opacity:1}50%{opacity:.55}}
+.bt-agent-sub{display:grid;grid-template-rows:0fr;transition:grid-template-rows ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing}}
+.bt-agent-sub[data-open]{grid-template-rows:1fr}
+.bt-agent-sub-in{overflow:hidden;min-height:0;margin-left:44px}
+.bt-agent-sub-row{display:flex;align-items:center;gap:8px;width:100%;padding:5px 10px 5px 8px;border:0;border-radius:8px;background:none;color:var(--bt-ink-2);font:inherit;font-size:13px;line-height:20px;text-align:left;cursor:pointer}
+.bt-agent-sub-row:hover{background:var(--bt-hover);color:var(--bt-ink)}
+.bt-agent-sub-row[aria-current=page]{background:var(--bt-hover);color:var(--bt-ink);font-weight:500}
+.bt-agent-sub-title{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-agent-sub-time{flex:none;font-size:11px;color:var(--bt-ink-3)}
+.bt-agent-new{color:var(--bt-ink-3)}
+.bt-agent-new svg{width:14px;height:14px;flex:none}
+.bt-agent-edit{padding:3px 10px 3px 4px}
+.bt-agent-edit input{width:100%;border:0;border-radius:6px;background:var(--bt-hover);color:var(--bt-ink);font:inherit;font-size:13px;line-height:20px;padding:2px 8px;outline:none;box-shadow:inset 0 0 0 .5px var(--bt-line-2)}
+.bt-agent-sub[data-open] .bt-agent-sub-row{animation:bt-agent-row-in .24s ease both;animation-delay:calc(var(--i, 0)*30ms)}
+@keyframes bt-agent-row-in{from{opacity:0;filter:blur(4px)}to{opacity:1;filter:blur(0)}}
+@media (prefers-reduced-motion:reduce){.bt-agent-sub{transition:none}.bt-agent-sub .bt-agent-sub-row{animation:none}}
+`;
+
+// src/client/header.js
+var import_react9 = require("react");
+var import_react_dom4 = require("react-dom");
+var GoArrow = () => (0, import_react9.createElement)("svg", { width: 14, height: 14, viewBox: "-12 -12 24 24", fill: "none", stroke: "currentColor", strokeWidth: 2.2, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true }, (0, import_react9.createElement)("path", { d: "M-7 0H7M2 -5L7 0L2 5" }));
+var MEMORY_NOTICE_MS = 3200;
+var noNews = (select) => select({});
+function useMemoryNotice(ids, useMemoryNews) {
+  const seen = useMemoryNews((map) => Math.max(0, ...ids.map((id) => map?.[id]?.seen ?? 0)));
+  const [shown, setShown] = (0, import_react9.useState)(false);
+  (0, import_react9.useEffect)(() => {
+    const left = seen + MEMORY_NOTICE_MS - Date.now();
+    setShown(seen > 0 && left > 0);
+    if (seen === 0 || left <= 0) return void 0;
+    const timer = setTimeout(() => setShown(false), left);
+    return () => clearTimeout(timer);
+  }, [seen]);
+  return shown;
+}
+function MemoryNotice({ shown }) {
+  const inner = (0, import_react9.useRef)(null);
+  const [width, setWidth] = (0, import_react9.useState)(0);
+  const label = t("Memory updated");
+  (0, import_react9.useLayoutEffect)(() => {
+    if (shown) setWidth(inner.current?.scrollWidth ?? 0);
+  }, [label, shown]);
+  return (0, import_react9.createElement)(
+    "span",
+    { className: "bt-pill-mem", "aria-hidden": true, style: { "--bt-mem-w": `${width}px` } },
+    (0, import_react9.createElement)("span", { className: "bt-pill-mem-in", ref: inner }, (0, import_react9.createElement)("span", { className: "bt-pill-mem-ico" }, (0, import_react9.createElement)(MemoryIcon)), label)
+  );
+}
+function HeaderPill({ sessionId, useRoster, useSessions, useSessionStatus, useActivity, useMemoryNews, useTurnClock, useUi, useLive, actions }) {
+  const roster = useRoster((value) => value);
+  const title = useSessions((list) => list.byId[sessionId]?.displayTitle ?? list.byId[sessionId]?.title ?? "");
+  const firstTurns = useSessions((list) => {
+    const outline = list.projectionsBySession?.[sessionId]?.values?.turnOutline ?? list.byId[sessionId]?.projectionValues?.turnOutline;
+    return Array.isArray(outline) ? outline.slice(0, 8).map((entry) => entry.turn).join(",") : "";
+  });
+  const hiddenTurns = roster.exchangeTurns?.[sessionId];
+  const visit = useUi((state) => state.visits?.[sessionId]);
+  const opening = useTurnClock((state) => {
+    const first = openingTurn(state[sessionId], firstTurns, hiddenTurns);
+    return first && !unseenSince(visit, first.start) ? clockLabel(first.start) : "";
+  });
+  (0, import_react9.useEffect)(() => {
+    if (opening) document.body.style.setProperty("--bt-first-sep", JSON.stringify(opening));
+    else document.body.style.removeProperty("--bt-first-sep");
+    return () => document.body.style.removeProperty("--bt-first-sep");
+  }, [opening]);
+  const running = useSessionStatus((map) => map.get(sessionId)?.running === true);
+  const owner = roster.byId[sessionId]?.id ?? sessionId;
+  const doing = useActivity((map) => map[owner]);
+  const bot = roster.byId[sessionId];
+  const room2 = roster.roomsById[sessionId];
+  const detailsOpen = useUi((state) => state.details === sessionId);
+  const name = bot?.name ?? room2?.name ?? "";
+  const useNews = useMemoryNews ?? noNews;
+  const memoryIds = bot ? [bot.id] : room2?.members ?? [];
+  const notice = useMemoryNotice(memoryIds, useNews);
+  const changed = useNews((map) => latestMemoryChange(map, memoryIds));
+  (0, import_react9.useEffect)(() => {
+    document.body.style.setProperty("--bt-placeholder", JSON.stringify(name ? t("Message {name}", { name }) : t("Message")));
+  }, [name, t("Message")]);
+  (0, import_react9.useEffect)(() => {
+    actions.beginVisit(sessionId);
+    return () => actions.endVisit(sessionId);
+  }, [sessionId]);
+  (0, import_react9.useEffect)(() => {
+    if (room2) document.body.dataset.btRoom = "";
+    else delete document.body.dataset.btRoom;
+    return () => {
+      delete document.body.dataset.btRoom;
+    };
+  }, [Boolean(room2)]);
+  const memoryNotice = notice && changed !== null && roster.memory !== false;
+  return (0, import_react9.createElement)(
+    "div",
+    { className: "bt-head" },
+    (0, import_react9.createElement)(
+      "button",
+      {
+        type: "button",
+        className: "bt-pill",
+        "aria-expanded": detailsOpen,
+        "data-memory": memoryNotice ? "updated" : void 0,
+        "aria-label": memoryNotice ? t("Memory updated. Open {name}'s memory", { name: roster.byId[changed]?.name ?? name }) : t("View conversation details"),
+        onClick: () => memoryNotice ? actions.openMemory(changed) : actions.toggleDetails(sessionId)
+      },
+      bot ? (0, import_react9.createElement)(BotAvatar, { bot, size: 24, state: botState(running, doing, roster.questions?.[currentPart(bot)] !== void 0), badge: false }) : room2 ? (0, import_react9.createElement)(RoomAvatar, { room: room2, roster, size: 24 }) : null,
+      (0, import_react9.createElement)("span", { className: "bt-pill-name" }, bot?.name ?? room2?.name ?? (title || t("New chat"))),
+      (0, import_react9.createElement)(MemoryNotice, { shown: memoryNotice }),
+      (0, import_react9.createElement)("span", { className: "bt-pill-go", "aria-hidden": true }, (0, import_react9.createElement)(GoArrow))
+    ),
+    (0, import_react9.createElement)("span", { className: "bt-sr", role: "status" }, memoryNotice ? t("Memory updated") : ""),
+    (0, import_react9.createElement)(NewMessagePills, { key: sessionId, sessionId, useSessions, useUi, useTurnClock }),
+    (0, import_react9.createElement)(ActivityIndicator, { key: `activity:${sessionId}`, sessionId, useRoster, useSessionStatus, useLive, actions })
+  );
+}
+function useTranscriptView() {
+  const [view, setView] = (0, import_react9.useState)(null);
+  (0, import_react9.useEffect)(() => {
+    let frame = 0;
+    let watched = null;
+    const observer = new MutationObserver(() => schedule());
+    const measure = () => {
+      frame = 0;
+      const scroller = document.querySelector("[data-conversation-scroll]");
+      if (scroller !== watched) {
+        observer.disconnect();
+        watched = scroller;
+        if (scroller) observer.observe(scroller, { childList: true, subtree: true });
+      }
+      if (!scroller) {
+        setView(null);
+        return;
+      }
+      const box = scroller.getBoundingClientRect();
+      const headerBottom = document.querySelector('header[class*="_header"]')?.getBoundingClientRect().bottom ?? box.top + 50;
+      const sep = scroller.querySelector(".bt-new-sep");
+      let divider = null;
+      if (sep) {
+        const at = sep.getBoundingClientRect();
+        divider = at.bottom <= headerBottom ? "above" : at.top >= box.bottom ? "below" : "in-view";
+      }
+      const composer = parseFloat(getComputedStyle(scroller).getPropertyValue("--dsh-composer-height")) || 152;
+      const next = {
+        unpinned: scroller.querySelector('[class*="_toBottomSlot"]>button') !== null,
+        divider,
+        center: Math.round(box.left + box.width / 2),
+        top: Math.round(headerBottom + 8),
+        bottom: Math.round(window.innerHeight - box.bottom + composer + 8)
+      };
+      setView((prev) => prev && Object.keys(next).every((key) => prev[key] === next[key]) ? prev : next);
+    };
+    const schedule = () => {
+      if (!frame) frame = requestAnimationFrame(measure);
+    };
+    document.addEventListener("scroll", schedule, true);
+    window.addEventListener("resize", schedule);
+    schedule();
+    return () => {
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+      document.removeEventListener("scroll", schedule, true);
+      window.removeEventListener("resize", schedule);
+    };
+  }, []);
+  return view;
+}
+function NewMessagePills({ sessionId, useSessions, useUi, useTurnClock }) {
+  const replies = useSessions((list) => {
+    const outline = list.projectionsBySession?.[sessionId]?.values?.turnOutline ?? list.byId[sessionId]?.projectionValues?.turnOutline;
+    return Array.isArray(outline) ? outline.reduce((count, entry) => count + (entry.response ? 1 : 0), 0) : 0;
+  });
+  const visit = useUi((state) => state.visits?.[sessionId]);
+  const unread = useTurnClock((state) => {
+    if (typeof visit?.seen !== "number") return 0;
+    let count = 0;
+    for (const entry of Object.values(state[sessionId] ?? {})) {
+      if (entry.first !== void 0 && entry.first > visit.seen && entry.first <= visit.entered) count += 1;
+    }
+    return count;
+  });
+  const view = useTranscriptView();
+  const unpinned = view?.unpinned === true;
+  const [release, setRelease] = (0, import_react9.useState)({ base: null, dismissed: false });
+  const [above, setAbove] = (0, import_react9.useState)({ seen: false, dismissed: false });
+  (0, import_react9.useEffect)(() => {
+    setRelease({ base: unpinned ? replies : null, dismissed: false });
+  }, [unpinned]);
+  (0, import_react9.useEffect)(() => {
+    if (view?.divider === "in-view") setAbove((state) => state.seen ? state : { ...state, seen: true });
+  }, [view?.divider]);
+  const fresh = release.base === null ? 0 : replies - release.base;
+  const showDown = unpinned && fresh > 0 && !release.dismissed;
+  const showUp = view?.divider === "above" && !above.seen && !above.dismissed;
+  (0, import_react9.useEffect)(() => {
+    const scroller = document.querySelector("[data-conversation-scroll]");
+    if (!scroller) return void 0;
+    scroller.toggleAttribute("data-bt-news", showDown);
+    return () => scroller.removeAttribute("data-bt-news");
+  }, [showDown]);
+  if (!view || !showDown && !showUp) return null;
+  const label = (count) => count === 1 ? t("1 new message") : count > 0 ? t("{count} new messages", { count }) : t("New messages");
+  const pill = (direction, count, style, onJump, onDismiss) => (0, import_react9.createElement)(
+    "div",
+    { className: "bt-news", "data-direction": direction, style },
+    (0, import_react9.createElement)(
+      "button",
+      { type: "button", className: "bt-news-jump", onClick: onJump },
+      (0, import_react9.createElement)("span", { className: "bt-news-ico" }, (0, import_react9.createElement)(direction === "up" ? ArrowUpIcon : ArrowDownIcon)),
+      label(count)
+    ),
+    (0, import_react9.createElement)("button", {
+      type: "button",
+      className: "bt-news-x",
+      "aria-label": t("Dismiss new messages"),
+      onClick: (event) => {
+        event.stopPropagation();
+        onDismiss();
+      }
+    }, (0, import_react9.createElement)(CloseIcon))
+  );
+  const toLatest = () => {
+    const scroller = document.querySelector("[data-conversation-scroll]");
+    const back = scroller?.querySelector('[class*="_toBottomSlot"]>button');
+    if (back) back.click();
+    else scroller?.scrollTo({ top: scroller.scrollHeight, behavior: "smooth" });
+  };
+  const toDivider = () => document.querySelector("[data-conversation-scroll] .bt-new-sep")?.scrollIntoView({ block: "center", behavior: "smooth" });
+  return (0, import_react_dom4.createPortal)(
+    (0, import_react9.createElement)(
+      import_react9.Fragment,
+      null,
+      showUp ? pill("up", unread, { left: view.center, top: view.top }, toDivider, () => setAbove((state) => ({ ...state, dismissed: true }))) : null,
+      showDown ? pill("down", fresh, { left: view.center, bottom: view.bottom }, toLatest, () => setRelease((state) => ({ ...state, dismissed: true }))) : null
+    ),
+    document.body
+  );
+}
+
+// src/client/composer.js
+var import_react10 = require("react");
+var import_react_dom5 = require("react-dom");
+var speechApi = () => window.SpeechRecognition ?? window.webkitSpeechRecognition;
+var keepComposerFocus = (event) => event.preventDefault();
+function useDictation(onText) {
+  const [listening, setListening] = (0, import_react10.useState)(false);
+  const [note, setNote] = (0, import_react10.useState)("");
+  const recognition = (0, import_react10.useRef)(null);
+  const latest = (0, import_react10.useRef)(onText);
+  latest.current = onText;
+  (0, import_react10.useEffect)(() => () => recognition.current?.abort(), []);
+  (0, import_react10.useEffect)(() => {
+    if (!note) return void 0;
+    const timer = setTimeout(() => setNote(""), 2600);
+    return () => clearTimeout(timer);
+  }, [note]);
+  const start = ({ continuous = true, onEnd } = {}) => {
+    const Api = speechApi();
+    if (!Api) {
+      setNote(t("Dictation is not available in this browser"));
+      return false;
+    }
+    const engine = new Api();
+    engine.lang = navigator.language || "zh-CN";
+    engine.interimResults = true;
+    engine.continuous = continuous;
+    engine.onresult = (event) => {
+      let interim = "";
+      for (let index = event.resultIndex; index < event.results.length; index += 1) {
+        const result = event.results[index];
+        const text = result[0]?.transcript ?? "";
+        if (result.isFinal) {
+          if (text.trim()) latest.current(text, true);
+        } else interim += text;
+      }
+      if (interim) latest.current(interim, false);
+    };
+    engine.onerror = (event) => {
+      if (event.error === "aborted" || event.error === "no-speech") return;
+      setNote(event.error === "not-allowed" || event.error === "service-not-allowed" ? t("Microphone access is blocked") : t("Couldn't hear that"));
+    };
+    engine.onend = () => {
+      setListening(false);
+      recognition.current = null;
+      onEnd?.();
+    };
+    recognition.current = engine;
+    try {
+      engine.start();
+      setListening(true);
+      return true;
+    } catch {
+      setNote(t("Couldn't start dictation"));
+      return false;
+    }
+  };
+  const stop = () => recognition.current?.stop();
+  return { listening, note, start, stop };
+}
+function ComposerVoice({ sessionId, inputActions, actions, useUi }) {
+  const dictation = useDictation((text, final) => {
+    if (final && inputActions) inputActions.insertText(text, inputActions.captureInsertion());
+  });
+  const quote = useUi((state) => state.quote?.sessionId === sessionId ? state.quote : null);
+  (0, import_react10.useEffect)(() => {
+    if (!quote || !inputActions) return;
+    actions.clearQuote(quote.token);
+    const excerpt = quote.text.replace(/\s+/g, " ").trim();
+    const line = `> ${excerpt.length > 200 ? `${excerpt.slice(0, 200)}…` : excerpt}
+
+`;
+    inputActions.insertText(line, inputActions.captureInsertion());
+    const box = document.querySelector('[class*="_centerCol"] [role=textbox][contenteditable=true]');
+    if (box instanceof HTMLElement) {
+      box.focus();
+      const selection = window.getSelection();
+      selection?.selectAllChildren(box);
+      selection?.collapseToEnd();
+    }
+  }, [quote?.token]);
+  if (sessionId === void 0) return null;
+  return (0, import_react10.createElement)(
+    import_react10.Fragment,
+    null,
+    (0, import_react10.createElement)("button", {
+      type: "button",
+      className: "bt-mic",
+      "aria-label": dictation.listening ? t("Stop dictation") : t("Dictate"),
+      "aria-pressed": dictation.listening,
+      title: dictation.listening ? t("Stop dictation") : t("Dictate"),
+      onMouseDown: keepComposerFocus,
+      onClick: () => dictation.listening ? dictation.stop() : dictation.start()
+    }, (0, import_react10.createElement)(MicIcon)),
+    (0, import_react10.createElement)("button", {
+      type: "button",
+      className: "bt-voice",
+      "aria-label": t("Start voice chat"),
+      title: t("Voice chat"),
+      onMouseDown: keepComposerFocus,
+      onClick: () => actions.openVoice(sessionId)
+    }, (0, import_react10.createElement)(WaveIcon, { size: 18 })),
+    dictation.note ? (0, import_react10.createElement)("span", { className: "bt-mic-note", role: "status" }, dictation.note) : null
+  );
+}
+function ComposerPlus({ sessionId, useRoster, actions }) {
+  const roster = useRoster((value) => value);
+  const [open, setOpen] = (0, import_react10.useState)(null);
+  const [shown, leaving] = useLinger(open, 120);
+  const button = (0, import_react10.useRef)(null);
+  const menu = (0, import_react10.useRef)(null);
+  (0, import_react10.useEffect)(() => {
+    if (!open) return void 0;
+    const onDown = (event) => {
+      if (![button.current, menu.current].some((node) => node?.contains(event.target))) setOpen(null);
+    };
+    const onKey = (event) => {
+      if (event.key === "Escape") {
+        event.stopPropagation();
+        setOpen(null);
+      }
+    };
+    window.addEventListener("mousedown", onDown, true);
+    window.addEventListener("keydown", onKey, true);
+    return () => {
+      window.removeEventListener("mousedown", onDown, true);
+      window.removeEventListener("keydown", onKey, true);
+    };
+  }, [open]);
+  const target = roster.byId?.[sessionId]?.id ?? roster.roomsById?.[sessionId]?.id;
+  if (sessionId === void 0 || target === void 0) return null;
+  const toggle = () => {
+    if (open) {
+      setOpen(null);
+      return;
+    }
+    const rect = button.current.getBoundingClientRect();
+    setOpen({ left: rect.left, bottom: window.innerHeight - rect.top + 8 });
+  };
+  const attach = () => {
+    setOpen(null);
+    button.current?.closest("[data-composer-card]")?.querySelector("input[type=file]")?.click();
+  };
+  const schedule = () => {
+    setOpen(null);
+    actions.openSettings("schedules", target);
+  };
+  return (0, import_react10.createElement)(
+    import_react10.Fragment,
+    null,
+    (0, import_react10.createElement)("button", {
+      ref: button,
+      type: "button",
+      className: "bt-plus",
+      "aria-label": t("Add"),
+      title: t("Add"),
+      "aria-haspopup": "menu",
+      "aria-expanded": Boolean(open),
+      onMouseDown: keepComposerFocus,
+      onClick: toggle
+    }, (0, import_react10.createElement)(PlusIcon)),
+    shown ? (0, import_react_dom5.createPortal)((0, import_react10.createElement)(
+      "div",
+      {
+        ref: menu,
+        className: "bt-menu bt-menu-up bt-plus-menu",
+        role: "menu",
+        "aria-label": t("Add"),
+        style: { left: shown.left, bottom: shown.bottom },
+        "data-leaving": leaving || void 0
+      },
+      (0, import_react10.createElement)("button", { type: "button", role: "menuitem", onClick: attach }, (0, import_react10.createElement)(PaperclipIcon), (0, import_react10.createElement)("span", { className: "bt-menu-label" }, t("Add files"))),
+      (0, import_react10.createElement)("button", { type: "button", role: "menuitem", onClick: schedule }, (0, import_react10.createElement)(ClockIcon), (0, import_react10.createElement)("span", { className: "bt-menu-label" }, t("Scheduled task")))
+    ), document.body) : null
+  );
+}
+
+// src/client/overlay-hooks.js
+var import_react11 = require("react");
+var escapeLayers = [];
+var onEscapeKey = (event) => {
+  if (event.key === "Escape") escapeLayers.at(-1)?.current();
+};
+function useEscape(onClose) {
+  const ref = (0, import_react11.useRef)(onClose);
+  ref.current = onClose;
+  (0, import_react11.useEffect)(() => {
+    if (escapeLayers.length === 0) window.addEventListener("keydown", onEscapeKey);
+    escapeLayers.push(ref);
+    return () => {
+      escapeLayers.splice(escapeLayers.indexOf(ref), 1);
+      if (escapeLayers.length === 0) window.removeEventListener("keydown", onEscapeKey);
+    };
+  }, []);
+}
+function usePaneLeft() {
+  const [paneLeft, setPaneLeft] = (0, import_react11.useState)(280);
+  (0, import_react11.useLayoutEffect)(() => {
+    const column = document.querySelector('[class*="_footArea"]')?.parentElement;
+    if (column) setPaneLeft(Math.round(column.getBoundingClientRect().right));
+  }, []);
+  return paneLeft;
+}
+
+// src/client/palette.js
+var import_react12 = require("react");
+var import_dsh_client_ui_primitives3 = require("@deepseek-ai/dsh-client-ui-primitives");
+var PALETTE_EXIT_MS = 160;
+function CommandPalette({ start, token, roster, actions, useSessions }) {
+  const [query, setQuery] = (0, import_react12.useState)(start ?? "");
+  const [cursor, setCursor] = (0, import_react12.useState)(0);
+  const [leaving, setLeaving] = (0, import_react12.useState)(false);
+  const wanted = query.trim().toLowerCase();
+  const close = () => {
+    if (leaving) return;
+    setLeaving(true);
+    setTimeout(() => actions.closePalette(token), PALETTE_EXIT_MS);
+  };
+  useEscape(close);
+  const ids = [...roster.bots.map(currentPart), ...roster.rooms.map((item) => item.id)];
+  const found = useSessions((list) => {
+    if (wanted.length < 2) return "[]";
+    const hits = [];
+    for (const id of ids) {
+      const outline = list.projectionsBySession?.[id]?.values?.turnOutline ?? list.byId[id]?.projectionValues?.turnOutline;
+      if (!Array.isArray(outline)) continue;
+      const hidden = roster.exchangeTurns[id] ?? [];
+      for (let index2 = outline.length - 1; index2 >= 0 && hits.length < 30; index2 -= 1) {
+        const entry = outline[index2];
+        if (hidden.includes(entry.turn)) continue;
+        for (const raw of [entry.response, entry.prompt]) {
+          const text = stripHeader(raw ?? "").replace(/\s+/g, " ").trim();
+          const at = text.toLowerCase().indexOf(wanted);
+          if (at < 0) continue;
+          const from = Math.max(0, at - 24);
+          hits.push([id, entry.turn, (from > 0 ? "…" : "") + text.slice(from, at + wanted.length + 60)]);
+          break;
+        }
+      }
+    }
+    return JSON.stringify(hits);
+  });
+  const matchesName = (...fields) => wanted === "" || fields.some((field) => (field ?? "").toLowerCase().includes(wanted));
+  const sections = [];
+  const people = [
+    ...roster.bots.filter((bot) => matchesName(bot.name, bot.role)).map((bot) => ({
+      key: bot.id,
+      avatar: (0, import_react12.createElement)(BotAvatar, { bot, size: 24, badge: false, live: false }),
+      title: bot.name,
+      subtitle: [bot.role, isMainOf(roster, bot.id) ? t("Main Bot") : ""].filter(Boolean).join(" · "),
+      badge: bot.hidden ? t("Hidden") : void 0,
+      run: async () => {
+        if (bot.hidden) await actions.setFlags(bot.id, { hidden: false });
+        actions.openSession(bot.id);
+      }
+    })),
+    ...roster.rooms.filter((room2) => matchesName(room2.name)).map((room2) => ({
+      key: room2.id,
+      avatar: (0, import_react12.createElement)(RoomAvatar, { room: room2, roster, size: 24 }),
+      title: room2.name,
+      subtitle: t("{count} members", { count: room2.members.length }),
+      badge: room2.hidden ? t("Hidden") : void 0,
+      run: async () => {
+        if (room2.hidden) await actions.setFlags(room2.id, { hidden: false });
+        actions.openSession(room2.id);
+      }
+    }))
+  ];
+  if (people.length) sections.push([t("Bots"), people]);
+  const agents = (roster.agents ?? []).filter(() => matchesName("DSH Agent")).map((agent) => ({
+    key: agent.id,
+    avatar: (0, import_react12.createElement)("span", { className: "bt-palette-agent" }, (0, import_react12.createElement)(import_dsh_client_ui_primitives3.FishLogo, { size: 18 })),
+    title: "DSH Agent",
+    subtitle: t("Plain dsh session"),
+    run: () => actions.openAgent(agent.id)
+  }));
+  if (agents.length) sections.push(["DSH Agent", agents]);
+  const messages = JSON.parse(found).map(([id, turn, snippet]) => {
+    const bot = roster.byId[id];
+    const room2 = roster.roomsById[id];
+    return {
+      key: `${id}:${turn}`,
+      title: bot?.name ?? room2?.name ?? t("Bot"),
+      subtitle: snippet,
+      avatar: bot ? (0, import_react12.createElement)(BotAvatar, { bot, size: 24, badge: false, live: false }) : (0, import_react12.createElement)(RoomAvatar, { room: room2, roster, size: 24 }),
+      run: () => actions.openSession(id)
+    };
+  });
+  if (messages.length) sections.push([t("Messages"), messages]);
+  const commands = [
+    { key: "cmd:new", icon: (0, import_react12.createElement)(PlusIcon), title: t("New chat"), run: () => actions.openNewChat("new") },
+    { key: "cmd:bot", icon: (0, import_react12.createElement)(PlusIcon), title: t("Create Bot"), run: () => actions.openNewChat("create") },
+    { key: "cmd:group", icon: (0, import_react12.createElement)(PeopleIcon), title: t("Create group chat"), run: () => actions.openNewChat("group") },
+    { key: "cmd:settings", icon: (0, import_react12.createElement)(GearIcon), title: t("Bot settings"), run: () => actions.openSettings("general") }
+  ].filter((command) => matchesName(command.title));
+  if (commands.length) sections.push([t("Commands"), commands]);
+  const rows = sections.flatMap(([, items]) => items);
+  const active = Math.min(cursor, Math.max(rows.length - 1, 0));
+  const shown = rows.map((row) => row.key).join("\n");
+  const glide = useGlide(`${active}
+${shown}`, { axis: "y", ...QUICK_EDGES });
+  const listRef = glide.box;
+  useFlip(listRef, shown, "[data-flip]");
+  (0, import_react12.useEffect)(() => {
+    listRef.current?.querySelector("[aria-selected=true]")?.scrollIntoView({ block: "nearest" });
+  }, [active, query]);
+  const choose = (row) => {
+    if (!row || leaving) return;
+    void Promise.resolve(row.run()).catch((error) => actions.reportError(error, "menu"));
+    close();
+  };
+  let index = -1;
+  return (0, import_react12.createElement)(
+    "div",
+    { className: "bt-palette-layer", "data-leaving": leaving || void 0 },
+    (0, import_react12.createElement)("div", { className: "bt-backdrop", onMouseDown: close }),
+    (0, import_react12.createElement)(
+      "div",
+      { className: "bt-palette", role: "dialog", "aria-label": t("Search"), "aria-modal": true },
+      (0, import_react12.createElement)(
+        "div",
+        { className: "bt-palette-head" },
+        (0, import_react12.createElement)("span", { className: "bt-palette-glyph", "aria-hidden": true }, (0, import_react12.createElement)(SearchIcon)),
+        (0, import_react12.createElement)("input", {
+          autoFocus: true,
+          value: query,
+          placeholder: t("Search Bots, chats and messages"),
+          "aria-label": t("Search"),
+          role: "combobox",
+          "aria-expanded": true,
+          "aria-controls": "bt-palette-list",
+          onChange: (event) => {
+            setQuery(event.target.value);
+            setCursor(0);
+          },
+          onKeyDown: (event) => {
+            if (event.nativeEvent.isComposing) return;
+            if (event.key === "ArrowDown") {
+              event.preventDefault();
+              setCursor(Math.min(active + 1, rows.length - 1));
+            } else if (event.key === "ArrowUp") {
+              event.preventDefault();
+              setCursor(Math.max(active - 1, 0));
+            } else if (event.key === "Enter") {
+              event.preventDefault();
+              choose(rows[active]);
+            }
+          }
+        }),
+        query ? (0, import_react12.createElement)("button", { type: "button", className: "bt-palette-clear", "aria-label": t("Clear search"), onClick: () => {
+          setQuery("");
+          setCursor(0);
+        } }, (0, import_react12.createElement)(CloseIcon)) : null
+      ),
+      (0, import_react12.createElement)(
+        "div",
+        { ref: listRef, id: "bt-palette-list", className: "bt-palette-list", role: "listbox", "aria-label": t("Results") },
+        (0, import_react12.createElement)("span", { ref: glide.thumb, className: "bt-thumb", "aria-hidden": true }),
+        rows.length === 0 ? (0, import_react12.createElement)(
+          "div",
+          { className: "bt-palette-empty" },
+          (0, import_react12.createElement)("span", { className: "bt-palette-empty-icon", "aria-hidden": true }, (0, import_react12.createElement)(SearchIcon)),
+          (0, import_react12.createElement)("span", { className: "bt-palette-empty-label" }, t("No results")),
+          (0, import_react12.createElement)("span", { className: "bt-palette-empty-hint" }, t("Try a Bot name or words from a message"))
+        ) : sections.map(([title, items]) => (0, import_react12.createElement)(
+          import_react12.Fragment,
+          { key: title },
+          (0, import_react12.createElement)("div", { className: "bt-palette-section", role: "presentation", "data-flip": `section:${title}` }, title),
+          items.map((row) => {
+            index += 1;
+            const at = index;
+            return (0, import_react12.createElement)(
+              "button",
+              {
+                key: row.key,
+                type: "button",
+                role: "option",
+                className: "bt-palette-row",
+                "aria-selected": at === active,
+                "data-flip": row.key,
+                onMouseMove: () => {
+                  if (cursor !== at) setCursor(at);
+                },
+                onClick: () => choose(row)
+              },
+              (0, import_react12.createElement)("span", { className: "bt-palette-lead" }, row.avatar ?? (0, import_react12.createElement)("span", { className: "bt-palette-cmd" }, row.icon)),
+              (0, import_react12.createElement)(
+                "span",
+                { className: "bt-palette-text" },
+                (0, import_react12.createElement)("span", { className: "bt-palette-title" }, row.title),
+                row.subtitle ? (0, import_react12.createElement)("span", { className: "bt-palette-sub" }, row.subtitle) : null
+              ),
+              row.badge ? (0, import_react12.createElement)("span", { className: "bt-palette-badge" }, row.badge) : null
+            );
+          })
+        ))
+      )
+    )
+  );
+}
+
+// src/client/model-menu.js
+var import_react13 = require("react");
+var import_react_dom6 = require("react-dom");
+var MENU_EXIT_MS = 120;
+function groupModels(models) {
+  const groups = /* @__PURE__ */ new Map();
+  for (const model of models ?? []) {
+    if (!groups.has(model.providerName)) groups.set(model.providerName, []);
+    groups.get(model.providerName).push(model);
+  }
+  return [...groups];
+}
+var servedOf = (roster, ref) => (roster.models ?? []).find((model) => model.ref === ref);
+function modelOf(bot, roster) {
+  const ref = bot.model ?? bot.appliedModel;
+  if (!ref) return void 0;
+  const served = servedOf(roster, ref);
+  const [provider, ...rest] = ref.split("/");
+  return { ref, name: served?.name ?? rest.join("/"), provider: served?.providerName ?? provider, served: served !== void 0 };
+}
+function ModelRows({ roster, current, onPick }) {
+  return groupModels(roster.models).map(([provider, list]) => (0, import_react13.createElement)(
+    import_react13.Fragment,
+    { key: provider },
+    (0, import_react13.createElement)("div", { className: "bt-model-group", role: "presentation" }, provider),
+    list.map((model) => (0, import_react13.createElement)(
+      "button",
+      {
+        key: model.ref,
+        type: "button",
+        role: "menuitemradio",
+        "aria-checked": model.ref === current,
+        title: model.ref,
+        onClick: () => onPick(model.ref)
+      },
+      (0, import_react13.createElement)("span", { className: "bt-menu-label" }, model.name),
+      model.ref === roster.defaultModel ? (0, import_react13.createElement)("span", { className: "bt-menu-hint" }, t("Default")) : null,
+      (0, import_react13.createElement)("span", { className: "bt-model-tick", "aria-hidden": true }, model.ref === current ? (0, import_react13.createElement)(CheckIcon) : null)
+    ))
+  ));
+}
+function ModelMenu({ bot, roster, actions, run, wide = false, onPick }) {
+  const [place, setPlace] = (0, import_react13.useState)(null);
+  const [shownPlace, leaving] = useLinger(place, MENU_EXIT_MS);
+  const button = (0, import_react13.useRef)(null);
+  const menu = (0, import_react13.useRef)(null);
+  const shown = modelOf(bot, roster);
+  const current = bot.model ?? bot.appliedModel;
+  const close = () => setPlace(null);
+  (0, import_react13.useEffect)(() => {
+    if (place === null) return void 0;
+    const onDown = (event) => {
+      if (menu.current?.contains(event.target) || button.current?.contains(event.target)) return;
+      close();
+    };
+    const onKey = (event) => {
+      if (event.key === "Escape") {
+        event.stopPropagation();
+        close();
+        button.current?.focus();
+      }
+    };
+    const onScroll = (event) => {
+      if (!menu.current?.contains(event.target)) close();
+    };
+    window.addEventListener("mousedown", onDown);
+    window.addEventListener("keydown", onKey, true);
+    window.addEventListener("scroll", onScroll, true);
+    return () => {
+      window.removeEventListener("mousedown", onDown);
+      window.removeEventListener("keydown", onKey, true);
+      window.removeEventListener("scroll", onScroll, true);
+    };
+  }, [place]);
+  const toggle = () => {
+    if (place !== null) {
+      close();
+      return;
+    }
+    void actions?.refreshModels?.();
+    const rect = button.current.getBoundingClientRect();
+    const width = Math.max(240, rect.width);
+    const left = Math.max(8, Math.min(rect.right - width, window.innerWidth - width - 8));
+    const below = window.innerHeight - rect.bottom;
+    setPlace(below >= 260 || below >= rect.top ? { left, width, top: rect.bottom + 4, maxHeight: below - 16, "--bt-origin": "top right" } : { left, width, bottom: window.innerHeight - rect.top + 4, maxHeight: rect.top - 16, "--bt-origin": "bottom right" });
+  };
+  const pick2 = (ref) => {
+    close();
+    if (onPick) onPick(ref);
+    else if (ref !== current || !bot.model) void run(actions.updateBot(bot.id, { model: ref }));
+  };
+  const models = roster.models ?? [];
+  return (0, import_react13.createElement)(
+    import_react13.Fragment,
+    null,
+    (0, import_react13.createElement)(
+      "button",
+      {
+        ref: button,
+        type: "button",
+        className: "bt-model-trigger",
+        "data-wide": wide || void 0,
+        "aria-haspopup": "menu",
+        "aria-expanded": place !== null,
+        "aria-label": t("Model: {model}", { model: shown?.name ?? t("none") }),
+        "data-missing": shown !== void 0 && !shown.served && models.length > 0 ? "" : void 0,
+        onClick: toggle
+      },
+      (0, import_react13.createElement)(
+        "span",
+        { className: "bt-model-copy" },
+        (0, import_react13.createElement)("span", { className: "bt-model-name" }, shown?.name ?? t("Choose a model")),
+        shown ? (0, import_react13.createElement)("span", { className: "bt-model-provider" }, shown.served || models.length === 0 ? shown.provider : t("{provider} · not available", { provider: shown.provider })) : null
+      ),
+      (0, import_react13.createElement)("svg", { className: "bt-model-caret", width: 12, height: 12, viewBox: "0 0 20 20", fill: "none", stroke: "currentColor", strokeWidth: 1.8, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true }, (0, import_react13.createElement)("path", { d: "M5.5 8l4.5 4.5L14.5 8" }))
+    ),
+    shownPlace ? (0, import_react_dom6.createPortal)((0, import_react13.createElement)(
+      "div",
+      { ref: menu, className: `bt-menu bt-model-menu${shownPlace.bottom !== void 0 ? " bt-menu-up" : ""}`, role: "menu", "aria-label": t("Model for {name}", { name: bot.name }), style: shownPlace, "data-leaving": leaving || void 0 },
+      models.length > 0 ? (0, import_react13.createElement)(ModelRows, { roster, current, onPick: pick2 }) : (0, import_react13.createElement)("div", { className: "bt-model-none" }, t("No models are set up in DeepSeek Harness yet.")),
+      (0, import_react13.createElement)("div", { className: "bt-menu-sep", role: "separator" }),
+      (0, import_react13.createElement)("button", { type: "button", role: "menuitem", onClick: () => {
+        close();
+        openHarnessSettings();
+      } }, (0, import_react13.createElement)(SlidersIcon), (0, import_react13.createElement)("span", { className: "bt-menu-label" }, t("Models and providers…")))
+    ), document.body) : null
+  );
+}
+function ModelChoiceDock({ sessionId, useRoster, actions }) {
+  const roster = useRoster((value) => value);
+  const bot = roster.byId[sessionId];
+  const [busy, setBusy] = (0, import_react13.useState)("");
+  const [error, setError] = (0, import_react13.useState)("");
+  const shown = Boolean(bot) && currentPart(bot) === sessionId && roster.ready;
+  (0, import_react13.useEffect)(() => {
+    if (shown) void actions.refreshModels?.();
+  }, [shown, sessionId]);
+  if (!bot || currentPart(bot) !== sessionId || !roster.ready) return null;
+  const models = roster.models ?? [];
+  const lost = bot.model ? !models.some((model) => model.ref === bot.model) : false;
+  if (bot.model && (!lost || models.length === 0)) return null;
+  const pick2 = (ref) => {
+    setBusy(ref);
+    setError("");
+    void Promise.resolve(actions.updateBot(bot.id, { model: ref })).catch((failure) => {
+      setError(failure?.message ?? String(failure));
+      void actions.refreshModels?.();
+    }).finally(() => setBusy(""));
+  };
+  const text = lost ? t("{model} is not available anymore. Pick another model for me.", { model: bot.model.split("/").slice(1).join("/") }) : models.length === 0 ? t("Hi, I'm {name}. I don't have a model yet. How do you want to set one up?", { name: bot.name }) : t("Hi, I'm {name}. Pick a model for me first. You can change it later in my details.", { name: bot.name });
+  const choices = models.length === 0 ? setupChoices(actions).map(([label, run]) => (0, import_react13.createElement)("button", { key: label, type: "button", className: "bt-model-chip", onClick: run }, label)) : [
+    ...models.map((model) => (0, import_react13.createElement)("button", {
+      key: model.ref,
+      type: "button",
+      className: "bt-model-chip",
+      disabled: busy !== "",
+      "aria-busy": busy === model.ref || void 0,
+      title: model.ref === roster.defaultModel ? `${model.ref} · ${t("Harness default")}` : model.ref,
+      onClick: () => pick2(model.ref)
+    }, model.name, busy === model.ref ? (0, import_react13.createElement)("span", { className: "bt-model-spin", "aria-label": t("Saving…") }) : null)),
+    (0, import_react13.createElement)("button", { key: "manage", type: "button", className: "bt-model-chip bt-model-chip-quiet", onClick: openHarnessSettings }, (0, import_react13.createElement)(SlidersIcon), t("Manage models"))
+  ];
+  return (0, import_react13.createElement)(
+    "div",
+    { className: "bt-model-dock" },
+    (0, import_react13.createElement)(
+      "div",
+      { className: "bt-astack", "data-lead": "" },
+      (0, import_react13.createElement)(
+        "div",
+        { className: "bt-msg" },
+        (0, import_react13.createElement)(
+          "div",
+          { className: "bt-msg-line" },
+          (0, import_react13.createElement)(BotMark, { bot, size: 22 }),
+          (0, import_react13.createElement)("div", { className: "bt-bubble" }, text)
+        )
+      )
+    ),
+    (0, import_react13.createElement)("div", { className: "bt-model-chips", role: "group", "aria-label": t("Choose a model") }, choices),
+    error ? (0, import_react13.createElement)("div", { className: "bt-secret-error bt-model-error", role: "alert" }, error) : null
+  );
+}
+function setupChoices(actions) {
+  return [
+    actions.canSignIn?.() ? [t("Sign in to DeepSeek"), () => actions.signIn()] : null,
+    [t("Enter a DeepSeek API key"), () => openHarnessOnboarding("deepseek-official")],
+    [t("Open settings to set up a custom model"), openHarnessSettings]
+  ].filter(Boolean);
+}
+function DeepSeekSignIn({ useUi, actions }) {
+  const open = useUi((state) => state.signIn);
+  const entry = open ? actions.signInEntry?.() : null;
+  if (!entry) return null;
+  return (0, import_react13.createElement)(SignInHost, { key: open, entry, actions });
+}
+function SignInHost({ entry, actions }) {
+  const [ops] = (0, import_react13.useState)(() => entry.inject?.() ?? {});
+  const close = () => actions.closeSignIn();
+  const useHook = (source) => (selector) => (0, import_react13.useSyncExternalStore)(source.subscribe, () => selector(source.getSnapshot()));
+  const [hooks] = (0, import_react13.useState)(() => ({ useAccount: useHook(ops.hooks.account), useTheme: useHook(ops.hooks.theme) }));
+  return (0, import_react13.createElement)(entry.component, {
+    ...ops,
+    ...hooks,
+    t: actions.accountT(),
+    complete: close,
+    useApiKey: () => {
+      close();
+      openHarnessOnboarding("deepseek-official");
+    }
+  });
+}
+var MODEL_CSS = `
+.bt-model-trigger{display:inline-flex;align-items:center;gap:8px;max-width:100%;min-width:0;height:auto;min-height:32px;padding:4px 8px 4px 10px;border:0;border-radius:8px;background:var(--bt-hover);color:var(--bt-ink);font:inherit;text-align:left;cursor:pointer;transition:background-color .12s ease}
+.bt-model-trigger:hover,.bt-model-trigger[aria-expanded=true]{background:var(--bt-active)}
+.bt-model-trigger:focus-visible{outline:2px solid var(--bt-accent);outline-offset:1px}
+.bt-model-trigger[data-missing] .bt-model-provider{color:#c21d2e}
+.bt-model-trigger[data-wide]{display:flex;width:100%;min-height:48px;padding:7px 12px;justify-content:space-between;border-radius:12px;background:var(--bt-card);box-shadow:inset 0 0 0 1px var(--bt-line)}
+.bt-model-trigger[data-wide]:hover,.bt-model-trigger[data-wide][aria-expanded=true]{background:var(--bt-hover)}
+.bt-model-copy{display:flex;flex-direction:column;min-width:0}
+.bt-model-name{font-size:13px;line-height:18px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-model-provider{font-size:11px;line-height:14px;color:var(--bt-ink-3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-model-caret{flex:none;color:var(--bt-ink-3);transition:${spring(SPRING_SHAPE, "transform")}}
+.bt-model-trigger[aria-expanded=true] .bt-model-caret{transform:rotate(180deg)}
+.bt-model-menu{overflow-y:auto;scrollbar-width:thin}
+.bt-model-group{flex:none;padding:8px 8px 2px;font-size:11px;line-height:14px;font-weight:500;color:var(--bt-ink-3);text-transform:none}
+.bt-model-group:first-child{padding-top:2px}
+.bt-model-tick{flex:none;width:16px;height:16px;display:inline-flex;color:var(--bt-ink-2)}
+.bt-model-tick svg{animation:bt-check-pop ${SPRING_POP.duration}ms ${SPRING_POP.easing} 60ms backwards}
+.bt-model-none{padding:8px;font-size:13px;line-height:18px;color:var(--bt-ink-2)}
+.bt-model-dock{width:100%;max-width:var(--dsh-chat-content-width,748px);margin:0 auto;display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:0 0 10px;box-sizing:border-box;animation:bt-model-in ${SPRING_POP.duration}ms ${SPRING_POP.easing} backwards}
+.bt-model-chips{display:flex;flex-wrap:wrap;gap:6px;margin-left:30px;max-width:min(560px,calc(100% - 30px));max-height:min(240px,36vh);overflow-y:auto;scrollbar-width:thin}
+.bt-model-chip{display:inline-flex;align-items:center;gap:6px;min-height:30px;padding:5px 12px;border:.5px solid var(--bt-line-2);border-radius:999px;background:var(--bt-surface,transparent);color:var(--bt-ink);font:inherit;font-size:13px;line-height:18px;cursor:pointer;transition:background-color .12s ease,border-color .12s ease}
+.bt-model-chip:hover:not(:disabled){background:var(--bt-hover)}
+.bt-model-chip:focus-visible{outline:2px solid var(--bt-accent);outline-offset:1px}
+.bt-model-chip-quiet{color:var(--bt-ink-2)}
+.bt-model-chip svg{width:14px;height:14px}
+.bt-model-chip:disabled{cursor:default}
+.bt-model-chip:disabled:not([aria-busy]){opacity:.5}
+.bt-model-error{margin-left:30px}
+@keyframes bt-model-in{from{opacity:0;transform:translateY(6px)}}
+.bt-model-spin{flex:none;width:14px;height:14px;border-radius:50%;border:1.5px solid var(--bt-line-2);border-top-color:var(--bt-ink-2);animation:bt-model-spin .7s linear infinite}
+@keyframes bt-model-spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.bt-model-dock{animation:none}.bt-model-spin{animation-duration:2s}.bt-model-caret{transition:none}.bt-model-tick svg{animation:none}}
+`;
+
+// src/client/schedules.js
+var import_react14 = require("react");
+var POLL_MS = 3e4;
+var shared = null;
+var listeners = /* @__PURE__ */ new Set();
+function publish(view) {
+  shared = view;
+  for (const listener of listeners) listener(view);
+}
+function useSchedules(actions) {
+  const [view, setView] = (0, import_react14.useState)(shared);
+  (0, import_react14.useEffect)(() => {
+    listeners.add(setView);
+    let stopped = false;
+    let timer;
+    const load = () => actions.schedules?.().then((next) => {
+      if (!stopped) publish(next);
+    }).catch(() => {
+    }).finally(() => {
+      if (!stopped) timer = setTimeout(load, POLL_MS);
+    });
+    load();
+    return () => {
+      stopped = true;
+      clearTimeout(timer);
+      listeners.delete(setView);
+    };
+  }, []);
+  return view;
+}
+var localZone = () => Intl.DateTimeFormat().resolvedOptions().timeZone;
+var clock2 = (time) => String(time ?? "").slice(0, 5);
+var when2 = (ms, options) => new Intl.DateTimeFormat(dateLocale(), options).format(ms);
+function dayAndTime(ms) {
+  const sameYear = new Date(ms).getFullYear() === (/* @__PURE__ */ new Date()).getFullYear();
+  return when2(ms, { ...sameYear ? {} : { year: "numeric" }, month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
+}
+function weekdayNames(days) {
+  const names = days.map((day) => when2(Date.UTC(2024, 0, day), { weekday: "short", timeZone: "UTC" }));
+  return names.join(dateLocale().startsWith("zh") ? "、" : ", ");
+}
+function everyText(seconds) {
+  if (seconds % 86400 === 0) return seconds === 86400 ? t("Every day") : t("Every {count} days", { count: seconds / 86400 });
+  if (seconds % 3600 === 0) return seconds === 3600 ? t("Every hour") : t("Every {count} hours", { count: seconds / 3600 });
+  return t("Every {count} minutes", { count: Math.round(seconds / 60) });
+}
+function timingText(task) {
+  const zone = task.timeZone && task.timeZone !== localZone() ? ` (${task.timeZone})` : "";
+  switch (task.kind) {
+    case "after":
+    case "at":
+      return t("Once, {time}", { time: dayAndTime(Date.parse(task.scheduledAt)) });
+    case "every":
+      return everyText(task.everySeconds);
+    case "daily":
+      return `${t("Every day at {time}", { time: clock2(task.time) })}${zone}`;
+    case "weekly": {
+      const days = (task.weekdays ?? []).join();
+      const text = days === "1,2,3,4,5" ? t("Every weekday at {time}", { time: clock2(task.time) }) : days === "6,7" ? t("Every weekend at {time}", { time: clock2(task.time) }) : days === "1,2,3,4,5,6,7" ? t("Every day at {time}", { time: clock2(task.time) }) : t("Every {days} at {time}", { days: weekdayNames(task.weekdays ?? []), time: clock2(task.time) });
+      return `${text}${zone}`;
+    }
+    case "cron":
+      return `${t("On the schedule {expression}", { expression: task.expression })}${zone}`;
+    default:
+      return "";
+  }
+}
+var nextText = (task) => task.status === "active" ? t("Next: {time}", { time: dayAndTime(Date.parse(task.scheduledAt)) }) : t("Finished");
+function TaskRow({ task, actions, onView, showBot, roster }) {
+  const [confirming, setConfirming] = (0, import_react14.useState)(false);
+  const [busy, setBusy] = (0, import_react14.useState)(false);
+  (0, import_react14.useEffect)(() => {
+    if (!confirming) return void 0;
+    const timer = setTimeout(() => setConfirming(false), 3e3);
+    return () => clearTimeout(timer);
+  }, [confirming]);
+  const remove = () => {
+    if (!confirming) {
+      setConfirming(true);
+      return;
+    }
+    setBusy(true);
+    void actions.scheduleDelete(task.sessionId, task.id).then(onView, () => setBusy(false));
+  };
+  const room2 = task.roomId ? roster.roomsById[task.roomId] : void 0;
+  return (0, import_react14.createElement)(
+    "div",
+    { className: "bt-set-row bt-task", "data-done": task.status === "active" ? void 0 : "", "data-busy": busy || void 0 },
+    showBot ? (0, import_react14.createElement)(BotAvatar, { bot: roster.byId[task.botId], size: 28, badge: false, live: false }) : null,
+    (0, import_react14.createElement)(
+      "span",
+      { className: "bt-set-copy" },
+      (0, import_react14.createElement)("span", { className: "bt-task-title" }, task.title),
+      (0, import_react14.createElement)("span", { className: "bt-set-hint" }, [timingText(task), room2 ? t("in {name}", { name: room2.name }) : ""].filter(Boolean).join(" · ")),
+      task.prompt && task.prompt !== task.title ? (0, import_react14.createElement)("span", { className: "bt-task-prompt" }, task.prompt) : null
+    ),
+    (0, import_react14.createElement)("span", { className: "bt-task-next" }, nextText(task)),
+    (0, import_react14.createElement)("button", {
+      type: "button",
+      className: "bt-mini bt-task-remove",
+      "data-confirm": confirming || void 0,
+      disabled: busy,
+      "aria-label": confirming ? t("Click again to delete") : t("Delete task"),
+      title: confirming ? void 0 : t("Delete task"),
+      onClick: remove
+    }, confirming ? t("Delete") : (0, import_react14.createElement)(TrashIcon))
+  );
+}
+var pad = (number) => String(number).padStart(2, "0");
+function inAnHour() {
+  const date = new Date(Date.now() + 36e5);
+  date.setMinutes(0, 0, 0);
+  return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}T${pad(date.getHours())}:00`;
+}
+var KINDS = [["at", "Once"], ["daily", "Every day"], ["weekly", "Every week"], ["every", "Repeat"]];
+var UNITS = [["minutes", 1, "minutes"], ["hours", 60, "hours"], ["days", 1440, "days"]];
+function TaskForm({ roster, actions, start, onDone, onCancel }) {
+  const [target, setTarget] = (0, import_react14.useState)(start ?? roster.bots[0]?.id ?? "");
+  const [title, setTitle] = (0, import_react14.useState)("");
+  const [prompt, setPrompt] = (0, import_react14.useState)("");
+  const [kind, setKind] = (0, import_react14.useState)("daily");
+  const [at, setAt] = (0, import_react14.useState)(inAnHour);
+  const [time, setTime] = (0, import_react14.useState)("09:00");
+  const [weekdays, setWeekdays] = (0, import_react14.useState)([1, 2, 3, 4, 5]);
+  const [count, setCount] = (0, import_react14.useState)(1);
+  const [unit, setUnit] = (0, import_react14.useState)("hours");
+  const [busy, setBusy] = (0, import_react14.useState)(false);
+  const [error, setError] = (0, import_react14.useState)("");
+  const timing = () => {
+    if (kind === "at") return { kind, at: new Date(at).toISOString() };
+    if (kind === "every") return { kind, minutes: Math.round(Number(count) * UNITS.find(([id]) => id === unit)[1]) };
+    return { kind, time, timeZone: localZone(), ...kind === "weekly" ? { weekdays } : {} };
+  };
+  const submit = (event) => {
+    event.preventDefault();
+    if (busy) return;
+    setBusy(true);
+    setError("");
+    let when3;
+    try {
+      when3 = timing();
+    } catch {
+      setError(t("Pick a date and time"));
+      setBusy(false);
+      return;
+    }
+    void actions.scheduleCreate({ target, title, prompt, when: when3 }).then(onDone, (failure) => {
+      setError(hostText(failure?.message ?? String(failure)));
+      setBusy(false);
+    });
+  };
+  const toggleDay = (day) => setWeekdays((days) => days.includes(day) ? days.filter((item) => item !== day) : [...days, day].sort());
+  return (0, import_react14.createElement)(
+    "form",
+    { className: "bt-set-card bt-task-form", onSubmit: submit },
+    (0, import_react14.createElement)(
+      "label",
+      { className: "bt-set-row bt-bs-row" },
+      (0, import_react14.createElement)("span", { className: "bt-set-copy" }, (0, import_react14.createElement)("span", { className: "bt-bs-label" }, t("Send to"))),
+      (0, import_react14.createElement)(
+        "select",
+        { className: "bt-select bt-task-bot", value: target, onChange: (event) => setTarget(event.target.value) },
+        (0, import_react14.createElement)("optgroup", { label: t("Bots") }, roster.bots.map((bot) => (0, import_react14.createElement)("option", { key: bot.id, value: bot.id }, bot.name))),
+        roster.rooms.length > 0 ? (0, import_react14.createElement)("optgroup", { label: t("Group chats") }, roster.rooms.map((room2) => (0, import_react14.createElement)("option", { key: room2.id, value: room2.id }, room2.name))) : null
+      )
+    ),
+    (0, import_react14.createElement)(
+      "label",
+      { className: "bt-set-row bt-bs-row" },
+      (0, import_react14.createElement)("span", { className: "bt-set-copy" }, (0, import_react14.createElement)("span", { className: "bt-bs-label" }, t("Name"))),
+      (0, import_react14.createElement)("input", { className: "bt-bs-input", value: title, maxLength: 120, placeholder: t("Morning briefing"), autoFocus: true, onChange: (event) => setTitle(event.target.value) })
+    ),
+    (0, import_react14.createElement)(
+      "label",
+      { className: "bt-set-row bt-bs-row bt-bs-stack" },
+      (0, import_react14.createElement)("span", { className: "bt-set-copy" }, (0, import_react14.createElement)("span", { className: "bt-bs-label" }, t("What to do"))),
+      (0, import_react14.createElement)("textarea", { className: "bt-bs-input bt-bs-area", value: prompt, rows: 3, placeholder: t("Sum up what changed since yesterday and what needs me today."), onChange: (event) => setPrompt(event.target.value) })
+    ),
+    (0, import_react14.createElement)(
+      "div",
+      { className: "bt-set-row bt-bs-row bt-bs-stack" },
+      (0, import_react14.createElement)("span", { className: "bt-set-copy" }, (0, import_react14.createElement)("span", { className: "bt-bs-label" }, t("When"))),
+      (0, import_react14.createElement)(Segmented, { label: t("When"), value: kind }, KINDS.map(([id, label]) => (0, import_react14.createElement)("button", { key: id, type: "button", "aria-pressed": kind === id, onClick: () => setKind(id) }, t(label)))),
+      (0, import_react14.createElement)(
+        "div",
+        { key: kind, className: "bt-task-when bt-veil" },
+        kind === "at" ? (0, import_react14.createElement)("input", { className: "bt-input", type: "datetime-local", value: at, "aria-label": t("Date and time"), onChange: (event) => setAt(event.target.value) }) : null,
+        kind === "weekly" ? (0, import_react14.createElement)("div", { className: "bt-task-days", role: "group", "aria-label": t("Days") }, [1, 2, 3, 4, 5, 6, 7].map((day) => (0, import_react14.createElement)("button", {
+          key: day,
+          type: "button",
+          className: "bt-task-day",
+          "aria-pressed": weekdays.includes(day),
+          onClick: () => toggleDay(day)
+        }, when2(Date.UTC(2024, 0, day), { weekday: "narrow", timeZone: "UTC" })))) : null,
+        kind === "daily" || kind === "weekly" ? (0, import_react14.createElement)("input", { className: "bt-input bt-task-time", type: "time", value: time, "aria-label": t("Time"), onChange: (event) => setTime(event.target.value) }) : null,
+        kind === "every" ? (0, import_react14.createElement)(
+          import_react14.Fragment,
+          null,
+          (0, import_react14.createElement)("span", { className: "bt-task-every" }, t("Every")),
+          (0, import_react14.createElement)("input", { className: "bt-input bt-task-count", type: "number", min: 1, value: count, "aria-label": t("How many"), onChange: (event) => setCount(event.target.value) }),
+          (0, import_react14.createElement)(
+            "select",
+            { className: "bt-select bt-task-unit", value: unit, "aria-label": t("Unit"), onChange: (event) => setUnit(event.target.value) },
+            UNITS.map(([id, , label]) => (0, import_react14.createElement)("option", { key: id, value: id }, t(label)))
+          )
+        ) : null
+      )
+    ),
+    error ? (0, import_react14.createElement)("div", { className: "bt-set-row" }, (0, import_react14.createElement)("span", { className: "bt-danger bt-set-hint" }, error)) : null,
+    (0, import_react14.createElement)(
+      "div",
+      { className: "bt-set-row bt-task-foot" },
+      (0, import_react14.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: onCancel }, t("Cancel")),
+      (0, import_react14.createElement)("button", { type: "submit", className: "bt-send bt-soft-sm", disabled: busy || !target || title.trim() === "" || prompt.trim() === "" }, busy ? t("Creating…") : t("Create task"))
+    )
+  );
+}
+function AutomationOff() {
+  return (0, import_react14.createElement)(
+    "div",
+    { className: "bt-set-card bt-task-off" },
+    (0, import_react14.createElement)("span", { className: "bt-task-off-mark" }, (0, import_react14.createElement)(ClockIcon)),
+    (0, import_react14.createElement)("span", { className: "bt-task-off-title" }, t("Turn on Automation tasks in DSH")),
+    (0, import_react14.createElement)("span", { className: "bt-set-hint" }, t("Switch on Automation tasks on the Plugins page in Harness settings.")),
+    (0, import_react14.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: openHarnessSettings }, t("Open Harness settings"))
+  );
+}
+function SchedulesPage({ roster, actions, start }) {
+  const view = useSchedules(actions);
+  const [adding, setAdding] = (0, import_react14.useState)(Boolean(start));
+  if (view === null) return (0, import_react14.createElement)("div", { className: "bt-set-hint" }, t("Loading…"));
+  if (!view.available) return (0, import_react14.createElement)(AutomationOff);
+  const shown = (next) => {
+    publish(next);
+    setAdding(false);
+  };
+  const byChat = [
+    ...roster.bots.map((bot) => [bot.id, (0, import_react14.createElement)(BotAvatar, { bot, size: 18, badge: false, live: false }), bot.name, view.tasks.filter((task) => task.botId === bot.id)]),
+    ...roster.rooms.map((room2) => [room2.id, (0, import_react14.createElement)(RoomAvatar, { room: room2, roster, size: 18 }), room2.name, view.tasks.filter((task) => task.botId === void 0 && task.roomId === room2.id)])
+  ].filter(([, , , tasks]) => tasks.length > 0);
+  return [
+    adding ? (0, import_react14.createElement)(TaskForm, { key: "form", roster, actions, start, onDone: shown, onCancel: () => setAdding(false) }) : (0, import_react14.createElement)("div", { key: "add", className: "bt-actions" }, (0, import_react14.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm bt-with-icon", onClick: () => setAdding(true) }, (0, import_react14.createElement)(PlusIcon), t("New task"))),
+    byChat.length === 0 && !adding ? (0, import_react14.createElement)("div", { key: "none", className: "bt-set-card" }, (0, import_react14.createElement)("div", { className: "bt-set-row" }, (0, import_react14.createElement)("span", { className: "bt-set-hint" }, t("No scheduled tasks yet.")))) : byChat.map(([id, avatar, name, tasks]) => (0, import_react14.createElement)(
+      "section",
+      { key: id, className: "bt-set-section" },
+      (0, import_react14.createElement)("h3", { className: "bt-task-head" }, avatar, name),
+      (0, import_react14.createElement)("div", { className: "bt-set-card" }, tasks.map((task) => (0, import_react14.createElement)(TaskRow, { key: task.id, task, actions, roster, onView: publish })))
+    ))
+  ];
+}
+function BotSchedules({ bot, roster, actions }) {
+  const view = useSchedules(actions);
+  if (view === null) return null;
+  const tasks = view.available ? view.tasks.filter((task) => task.botId === bot.id) : [];
+  return (0, import_react14.createElement)(
+    "section",
+    { className: "bt-set-section" },
+    (0, import_react14.createElement)("h3", null, t("Scheduled tasks")),
+    (0, import_react14.createElement)(
+      "div",
+      { className: "bt-set-card" },
+      !view.available ? (0, import_react14.createElement)(
+        "div",
+        { className: "bt-set-row bt-bs-row" },
+        (0, import_react14.createElement)("span", { className: "bt-set-copy" }, (0, import_react14.createElement)("span", { className: "bt-set-hint" }, t("Switch on Automation tasks on the Plugins page in Harness settings."))),
+        (0, import_react14.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: openHarnessSettings }, t("Open Harness settings"))
+      ) : [
+        ...tasks.map((task) => (0, import_react14.createElement)(TaskRow, { key: task.id, task, actions, roster, onView: publish })),
+        (0, import_react14.createElement)("button", { key: "new", type: "button", className: "bt-set-row bt-bs-row bt-gs-add", onClick: () => actions.openSettings("schedules", bot.id) }, (0, import_react14.createElement)(PlusIcon), t("New task"))
+      ]
+    )
+  );
+}
+function ScheduleSummary({ bot, actions }) {
+  const view = useSchedules(actions);
+  const tasks = view?.available ? view.tasks.filter((task) => task.botId === bot.id && task.status === "active") : [];
+  return (0, import_react14.createElement)(
+    "div",
+    null,
+    (0, import_react14.createElement)("div", { className: "bt-section-title" }, t("Scheduled tasks")),
+    tasks.length === 0 ? (0, import_react14.createElement)("button", { type: "button", className: "bt-more", onClick: () => actions.openSettings("schedules", bot.id) }, view?.available === false ? t("Switch on Automation tasks on the Plugins page in Harness settings.") : t("No scheduled tasks yet. Add one")) : (0, import_react14.createElement)("div", { className: "bt-task-list" }, tasks.slice(0, 3).map((task) => (0, import_react14.createElement)(
+      "button",
+      { key: task.id, type: "button", className: "bt-task-line", onClick: () => actions.openSettings("schedules") },
+      (0, import_react14.createElement)(ClockIcon),
+      (0, import_react14.createElement)("span", { className: "bt-task-line-title" }, task.title),
+      (0, import_react14.createElement)("span", { className: "bt-task-line-when" }, timingText(task))
+    )))
+  );
+}
+var SCHEDULE_CSS = `
+.bt-task{gap:10px}
+.bt-task[data-done]{opacity:.6}
+.bt-task[data-busy]{opacity:.4}
+.bt-task-title{font-size:13px;line-height:18px;font-weight:500;overflow-wrap:anywhere}
+.bt-task-prompt{font-size:12px;line-height:16px;color:var(--bt-ink-2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bt-task-next{flex:none;font-size:12px;line-height:16px;color:var(--bt-ink-3);font-variant-numeric:tabular-nums;white-space:nowrap}
+.bt-task-remove{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:26px;color:var(--bt-ink-3)}
+.bt-task-remove svg{width:14px;height:14px}
+.bt-task-remove[data-confirm]{background:rgba(224,33,53,.1);color:#e02135}
+.bt-task-head{display:flex;align-items:center;gap:6px}
+.bt-task-form{animation:bt-q-in .4s cubic-bezier(.22,1,.36,1),bt-veil-in .2s ease-out}
+.bt-task-bot{width:auto;min-width:160px;max-width:58%}
+.bt-task-when{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.bt-task-when .bt-input{width:auto;height:32px}
+.bt-task-time{min-width:110px}
+.bt-task-count{width:72px!important}
+.bt-task-unit{width:auto;height:32px}
+.bt-task-every{font-size:13px;color:var(--bt-ink-2)}
+.bt-task-days{display:flex;gap:4px}
+.bt-task-day{width:30px;height:30px;border-radius:50%;border:1px solid var(--bt-line);background:none;color:var(--bt-ink-2);font:inherit;font-size:12px;cursor:pointer;transition:background-color .12s ease,color .12s ease,border-color .12s ease}
+.bt-task-day[aria-pressed=true]{background:var(--bt-user);border-color:var(--bt-user);color:var(--bt-user-ink)}
+.bt-task-foot{justify-content:flex-end;gap:8px}
+.bt-task-foot .bt-send{height:28px;font-size:12px}
+.bt-task-off{align-items:center;gap:8px;padding:28px 20px;text-align:center}
+.bt-task-off>*+*{border-top:0}
+.bt-task-off-mark{width:44px;height:44px;border-radius:50%;background:var(--bt-hover);display:flex;align-items:center;justify-content:center;color:var(--bt-ink-2)}
+.bt-task-off-mark svg{width:20px;height:20px}
+.bt-task-off-title{font-size:14px;line-height:20px;font-weight:600}
+.bt-task-off .bt-set-hint{max-width:380px}
+.bt-task-list{display:flex;flex-direction:column;gap:2px}
+.bt-task-line{display:flex;align-items:center;gap:8px;width:100%;min-width:0;padding:6px 8px;border:0;border-radius:8px;background:none;color:var(--bt-ink);font:inherit;font-size:13px;text-align:left;cursor:pointer;transition:background-color .12s ease}
+.bt-task-line:hover{background:var(--bt-hover)}
+.bt-task-line svg{flex:none;color:var(--bt-ink-3)}
+.bt-task-line-title{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-task-line-when{flex:none;font-size:12px;color:var(--bt-ink-3)}
+@media (prefers-reduced-motion:reduce){.bt-task-form{animation:none}}
+`;
+
+// src/client/memory-panel.js
+var import_react15 = require("react");
+var POLL_MS2 = 1500;
+var MENU_EXIT_MS2 = 120;
+var counts = /* @__PURE__ */ new Map();
+var countListeners = /* @__PURE__ */ new Set();
+function noteCount(botId, count) {
+  if (counts.get(botId) === count) return;
+  counts.set(botId, count);
+  for (const listener of countListeners) listener();
+}
+function useMemoryCount(botId, actions) {
+  const [count, setCount] = (0, import_react15.useState)(counts.get(botId) ?? null);
+  (0, import_react15.useEffect)(() => {
+    const listener = () => setCount(counts.get(botId) ?? null);
+    countListeners.add(listener);
+    listener();
+    let stop = false;
+    actions.memoryView?.(botId).then((view) => {
+      if (!stop) noteCount(botId, view.entries.length);
+    }).catch(() => {
+    });
+    return () => {
+      stop = true;
+      countListeners.delete(listener);
+    };
+  }, [botId]);
+  return count;
+}
+function MemoryRow({ bot, actions }) {
+  const count = useMemoryCount(bot.id, actions);
+  const label = count === null ? t("Loading…") : count === 0 ? t("Nothing saved yet") : count === 1 ? t("1 entry") : t("{count} entries", { count });
+  return (0, import_react15.createElement)(
+    "div",
+    null,
+    (0, import_react15.createElement)("div", { className: "bt-section-title" }, t("Memory")),
+    (0, import_react15.createElement)(
+      "button",
+      { type: "button", className: "bt-mem-row", "aria-label": t("Manage {name}'s memory", { name: bot.name }), onClick: () => actions.openMemory(bot.id) },
+      (0, import_react15.createElement)(MemoryIcon),
+      (0, import_react15.createElement)("span", { className: "bt-mem-row-copy" }, label),
+      (0, import_react15.createElement)("span", { className: "bt-mem-row-go" }, t("Manage"), (0, import_react15.createElement)(ChevronRightIcon))
+    )
+  );
+}
+function ago(at, now) {
+  const seconds = Math.max(0, Math.round((now - at) / 1e3));
+  if (seconds < 60) return null;
+  const format = new Intl.RelativeTimeFormat(dateLocale(), { numeric: "auto" });
+  const minutes = Math.round(seconds / 60);
+  if (minutes < 60) return format.format(-minutes, "minute");
+  const hours = Math.round(minutes / 60);
+  if (hours < 24) return format.format(-hours, "hour");
+  return format.format(-Math.round(hours / 24), "day");
+}
+function Skeleton({ label }) {
+  return (0, import_react15.createElement)(
+    "div",
+    { className: "bt-mem-skel", "aria-busy": true },
+    [0, 1].map((block) => (0, import_react15.createElement)(
+      "div",
+      { key: block, className: "bt-mem-skel-block" },
+      (0, import_react15.createElement)("span", { className: "bt-mem-skel-head" }),
+      (0, import_react15.createElement)("span", null),
+      (0, import_react15.createElement)("span", null),
+      (0, import_react15.createElement)("span", { style: { width: block === 0 ? "62%" : "48%" } })
+    )),
+    label ? (0, import_react15.createElement)("div", { className: "bt-mem-skel-label" }, label) : null
+  );
+}
+function Summary({ bot, view, regenerate }) {
+  if (view.entries.length === 0) {
+    return (0, import_react15.createElement)(
+      "div",
+      { className: "bt-mem-empty" },
+      (0, import_react15.createElement)("div", { className: "bt-mem-empty-mark" }, (0, import_react15.createElement)(MemoryIcon)),
+      (0, import_react15.createElement)("div", { className: "bt-mem-empty-title" }, t("{name} has not saved anything yet", { name: bot.name })),
+      (0, import_react15.createElement)("div", { className: "bt-mem-empty-text" }, t("Bots keep lasting preferences, decisions, and what you ask them to remember. Tell {name} below, or in its chat.", { name: bot.name }))
+    );
+  }
+  const failed = view.error && !view.summarizing ? (0, import_react15.createElement)(
+    "div",
+    { className: "bt-mem-failed", role: "alert" },
+    (0, import_react15.createElement)("span", null, view.summary ? t("The summary is out of date: {reason}", { reason: hostText(view.error) }) : t("The summary could not be written: {reason}", { reason: hostText(view.error) })),
+    (0, import_react15.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: regenerate }, t("Try again"))
+  ) : null;
+  if (!view.summary) return (0, import_react15.createElement)(import_react15.Fragment, null, failed, failed ? null : (0, import_react15.createElement)(Skeleton, { label: t("Writing the summary…") }));
+  return (0, import_react15.createElement)(
+    import_react15.Fragment,
+    null,
+    failed,
+    (0, import_react15.createElement)(
+      "div",
+      { key: view.summary.at, className: "bt-mem-summary", "data-stale": !view.fresh || void 0 },
+      summaryBlocks(view.summary.text).map((block, index) => block.kind === "h" ? (0, import_react15.createElement)("h3", { key: index }, block.text) : (0, import_react15.createElement)("p", { key: index }, block.text))
+    )
+  );
+}
+var groupEntries = (entries2) => entries2.reduce((groups, entry) => {
+  const key = `${entry.scope}:${entry.topic ?? ""}`;
+  const group = groups.find((item) => item.key === key);
+  if (group) group.entries.push(entry);
+  else groups.push({ key, scope: entry.scope, topic: entry.topic, entries: [entry] });
+  return groups;
+}, []);
+function EntryRow({ entry, remove }) {
+  const [confirming, setConfirming] = (0, import_react15.useState)(false);
+  const [busy, setBusy] = (0, import_react15.useState)(false);
+  (0, import_react15.useEffect)(() => {
+    if (!confirming) return void 0;
+    const timer = setTimeout(() => setConfirming(false), 3e3);
+    return () => clearTimeout(timer);
+  }, [confirming]);
+  const by = entry.source === "memory panel" ? t("by you") : entry.by ? t("by {name}", { name: entry.by }) : null;
+  const meta = [entry.added, by].filter(Boolean).join(" · ");
+  const click = async () => {
+    if (!confirming) {
+      setConfirming(true);
+      return;
+    }
+    setBusy(true);
+    if (!await remove(entry)) setBusy(false);
+  };
+  return (0, import_react15.createElement)(
+    "li",
+    { className: "bt-mem-entry", "data-busy": busy || void 0 },
+    (0, import_react15.createElement)(
+      "div",
+      { className: "bt-mem-entry-copy" },
+      (0, import_react15.createElement)("span", { className: "bt-mem-entry-text" }, entry.text),
+      meta ? (0, import_react15.createElement)("span", { className: "bt-mem-entry-meta" }, meta) : null
+    ),
+    (0, import_react15.createElement)("button", {
+      type: "button",
+      className: "bt-mem-remove",
+      "data-confirm": confirming || void 0,
+      disabled: busy,
+      "aria-label": confirming ? t("Click again to remove") : t("Remove from memory"),
+      title: confirming ? void 0 : t("Remove from memory"),
+      onClick: click
+    }, confirming ? t("Remove") : (0, import_react15.createElement)(TrashIcon))
+  );
+}
+function Entries({ bot, view, remove }) {
+  const groups = groupEntries(view.entries);
+  const sections = [
+    { scope: "own", title: t("{name}'s memory", { name: bot.name }), size: view.sizes.own },
+    { scope: "team", title: t("Team memory"), hint: t("Every Bot reads it"), size: view.sizes.team }
+  ];
+  return (0, import_react15.createElement)(
+    "div",
+    { className: "bt-mem-entries" },
+    sections.map((section) => (0, import_react15.createElement)(
+      "section",
+      { key: section.scope, className: "bt-mem-section" },
+      (0, import_react15.createElement)(
+        "div",
+        { className: "bt-mem-section-head" },
+        (0, import_react15.createElement)("h3", null, section.title),
+        section.hint ? (0, import_react15.createElement)("span", null, section.hint) : null,
+        (0, import_react15.createElement)("span", { className: "bt-mem-size", title: t("MEMORY.md, which every conversation reads") }, t("{used} of {limit} characters", { used: section.size.toLocaleString(dateLocale()), limit: view.limits.main.toLocaleString(dateLocale()) }))
+      ),
+      groups.some((group) => group.scope === section.scope) ? groups.filter((group) => group.scope === section.scope).map((group) => (0, import_react15.createElement)(
+        import_react15.Fragment,
+        { key: group.key },
+        group.topic ? (0, import_react15.createElement)("div", { className: "bt-mem-topic" }, group.topic) : null,
+        (0, import_react15.createElement)("ul", { className: "bt-mem-list" }, group.entries.map((entry) => (0, import_react15.createElement)(EntryRow, { key: `${entry.topic ?? ""}:${entry.text}`, entry, remove })))
+      )) : (0, import_react15.createElement)("div", { className: "bt-mem-none" }, t("Nothing saved yet"))
+    ))
+  );
+}
+function changeLine(change) {
+  const text = change.text.length > 120 ? `${change.text.slice(0, 120)}…` : change.text;
+  if (!change.ok) return t("Not changed: {text} ({reason})", { text, reason: hostText(change.error ?? "") });
+  if (change.op === "remove") return change.scope === "team" ? t("Removed from team memory: {text}", { text }) : t("Removed: {text}", { text });
+  if (change.op === "edit") return t("Updated: {text}", { text });
+  return change.scope === "team" ? t("Added to team memory: {text}", { text }) : t("Added: {text}", { text });
+}
+function Reply({ answer, dismiss }) {
+  return (0, import_react15.createElement)(
+    "div",
+    { className: "bt-mem-reply", role: "status" },
+    (0, import_react15.createElement)(
+      "div",
+      { className: "bt-mem-reply-head" },
+      (0, import_react15.createElement)("span", { className: "bt-mem-reply-asked" }, answer.asked),
+      answer.pending ? null : (0, import_react15.createElement)("button", { type: "button", className: "bt-icon-btn", "aria-label": t("Dismiss"), onClick: dismiss }, (0, import_react15.createElement)(CloseIcon))
+    ),
+    answer.pending ? (0, import_react15.createElement)("div", { className: "bt-mem-reply-text bt-shimmer" }, t("Thinking…")) : answer.error ? (0, import_react15.createElement)("div", { className: "bt-mem-reply-text bt-danger" }, hostText(answer.error)) : (0, import_react15.createElement)(
+      import_react15.Fragment,
+      null,
+      answer.reply ? (0, import_react15.createElement)("div", { className: "bt-mem-reply-text" }, answer.reply) : null,
+      answer.changes.length > 0 ? (0, import_react15.createElement)("ul", { className: "bt-mem-changes" }, answer.changes.map((change, index) => (0, import_react15.createElement)(
+        "li",
+        { key: index, "data-ok": change.ok || void 0 },
+        change.ok ? (0, import_react15.createElement)(CheckIcon) : (0, import_react15.createElement)(CloseIcon),
+        (0, import_react15.createElement)("span", null, changeLine(change))
+      ))) : null
+    )
+  );
+}
+function useMemoryView(botId, actions) {
+  const [view, setView] = (0, import_react15.useState)(null);
+  const [error, setError] = (0, import_react15.useState)("");
+  const timer = (0, import_react15.useRef)(0);
+  const latest = (0, import_react15.useRef)(0);
+  const alive = (0, import_react15.useRef)(true);
+  const show = (0, import_react15.useCallback)((next) => {
+    setView(next);
+    setError("");
+    noteCount(botId, next.entries.length);
+  }, [botId]);
+  const load = (0, import_react15.useCallback)(async (flags = {}) => {
+    clearTimeout(timer.current);
+    const ticket = ++latest.current;
+    try {
+      const next = await actions.memoryView(botId, flags);
+      if (!alive.current || ticket !== latest.current) return;
+      show(next);
+      if (next.summarizing) timer.current = setTimeout(() => void load({ summarize: flags.summarize || flags.regenerate }), POLL_MS2);
+    } catch (failure) {
+      if (alive.current && ticket === latest.current) setError(failure?.message ?? String(failure));
+    }
+  }, [botId]);
+  (0, import_react15.useEffect)(() => {
+    alive.current = true;
+    void load({ summarize: true });
+    return () => {
+      alive.current = false;
+      clearTimeout(timer.current);
+    };
+  }, [botId]);
+  return { view, error, load, show };
+}
+function useNow(every) {
+  const [now, setNow] = (0, import_react15.useState)(Date.now());
+  (0, import_react15.useEffect)(() => {
+    const id = setInterval(() => setNow(Date.now()), every);
+    return () => clearInterval(id);
+  }, [every]);
+  return now;
+}
+function MemoryDialog({ bot, actions, leaving = false }) {
+  const { view, error, load, show } = useMemoryView(bot.id, actions);
+  const [page, setPage] = (0, import_react15.useState)("summary");
+  const [menu, setMenu] = (0, import_react15.useState)(false);
+  const [menuShown, menuLeaving] = useLinger(menu, MENU_EXIT_MS2);
+  const [text, setText] = (0, import_react15.useState)("");
+  const [answer, setAnswer] = (0, import_react15.useState)(null);
+  const menuRef = (0, import_react15.useRef)(null);
+  const dotsRef = (0, import_react15.useRef)(null);
+  const inputRef = (0, import_react15.useRef)(null);
+  const now = useNow(3e4);
+  const close = (0, import_react15.useCallback)(() => actions.closeMemory(), []);
+  useEscape(close);
+  (0, import_react15.useEffect)(() => {
+    if (!menu) return void 0;
+    const onDown = (event) => {
+      if (menuRef.current?.contains(event.target) || dotsRef.current?.contains(event.target)) return;
+      setMenu(false);
+    };
+    const onKey = (event) => {
+      if (event.key === "Escape") {
+        event.stopPropagation();
+        setMenu(false);
+        dotsRef.current?.focus();
+      }
+    };
+    window.addEventListener("mousedown", onDown);
+    window.addEventListener("keydown", onKey, true);
+    return () => {
+      window.removeEventListener("mousedown", onDown);
+      window.removeEventListener("keydown", onKey, true);
+    };
+  }, [menu]);
+  const regenerate = () => {
+    setMenu(false);
+    setPage("summary");
+    void load({ regenerate: true });
+  };
+  const openEntries = () => {
+    setMenu(false);
+    setPage("entries");
+  };
+  const backToSummary = () => {
+    setPage("summary");
+    void load({ summarize: true });
+  };
+  const remove = async (entry) => {
+    try {
+      show(await actions.memoryForget(bot.id, entry));
+      return true;
+    } catch (failure) {
+      setAnswer({ asked: entry.text, error: failure?.message ?? String(failure) });
+      return false;
+    }
+  };
+  const ask = async (event) => {
+    event.preventDefault();
+    const asked = text.trim();
+    if (asked === "" || answer?.pending) return;
+    setText("");
+    setAnswer({ asked, pending: true });
+    try {
+      const result = await actions.memoryAsk(bot.id, asked);
+      setAnswer({ asked, reply: result.reply, changes: result.changes });
+      show(result.view);
+      if (result.changes.some((change) => change.ok)) void load({ summarize: page === "summary" });
+    } catch (failure) {
+      setAnswer({ asked, error: failure?.message ?? String(failure) });
+    }
+    inputRef.current?.focus();
+  };
+  const count = view?.entries.length ?? 0;
+  const when3 = view?.summary ? ago(view.summary.at, now) : null;
+  const status = view === null ? "" : page === "entries" ? count === 1 ? t("1 entry") : t("{count} entries", { count }) : view.summarizing && view.summary ? t("Updating…") : view.summary && view.fresh ? when3 ? t("Updated {time}", { time: when3 }) : t("Updated just now") : "";
+  const busy = answer?.pending === true;
+  return (0, import_react15.createElement)(
+    "div",
+    { className: "bt-mem-layer", "data-leaving": leaving || void 0 },
+    (0, import_react15.createElement)("div", { className: "bt-scrim bt-mem-scrim", onMouseDown: close }),
+    (0, import_react15.createElement)(
+      "div",
+      { className: "bt-mem", role: "dialog", "aria-modal": true, "aria-label": t("{name}'s memory", { name: bot.name }) },
+      (0, import_react15.createElement)(
+        "div",
+        { className: "bt-mem-head" },
+        page === "entries" ? (0, import_react15.createElement)("button", { type: "button", className: "bt-icon-btn", "aria-label": t("Back to the summary"), onClick: backToSummary }, (0, import_react15.createElement)(ChevronLeftIcon)) : null,
+        (0, import_react15.createElement)("h2", null, page === "entries" ? t("All entries") : t("Memory summary")),
+        (0, import_react15.createElement)("span", { className: "bt-mem-status" }, page === "summary" ? [bot.name, status].filter(Boolean).join(" · ") : status),
+        (0, import_react15.createElement)("span", { className: "bt-mem-head-gap" }),
+        (0, import_react15.createElement)("button", { ref: dotsRef, type: "button", className: "bt-icon-btn", "aria-label": t("Memory options"), "aria-haspopup": "menu", "aria-expanded": menu, onClick: () => setMenu((value) => !value) }, (0, import_react15.createElement)(DotsIcon)),
+        (0, import_react15.createElement)("button", { type: "button", className: "bt-icon-btn", "aria-label": t("Close memory"), onClick: close }, (0, import_react15.createElement)(CloseIcon)),
+        menuShown ? (0, import_react15.createElement)(
+          "div",
+          { ref: menuRef, className: "bt-menu bt-mem-menu", role: "menu", "aria-label": t("Memory options"), "data-leaving": menuLeaving || void 0 },
+          (0, import_react15.createElement)(
+            "button",
+            { type: "button", role: "menuitem", onClick: openEntries },
+            (0, import_react15.createElement)("span", { className: "bt-menu-label" }, t("All entries")),
+            (0, import_react15.createElement)("span", { className: "bt-menu-hint" }, String(count))
+          ),
+          (0, import_react15.createElement)(
+            "button",
+            { type: "button", role: "menuitem", disabled: count === 0 || view?.summarizing, onClick: regenerate },
+            (0, import_react15.createElement)("span", { className: "bt-menu-label" }, t("Regenerate summary"))
+          )
+        ) : null
+      ),
+      (0, import_react15.createElement)(
+        "div",
+        { className: "bt-mem-body" },
+        error ? (0, import_react15.createElement)("div", { className: "bt-error", role: "alert", style: { padding: 0 } }, hostText(error)) : null,
+        view === null ? error ? null : (0, import_react15.createElement)(Skeleton) : page === "entries" ? (0, import_react15.createElement)(Entries, { bot, view, remove }) : (0, import_react15.createElement)(Summary, { bot, view, regenerate })
+      ),
+      (0, import_react15.createElement)(
+        "div",
+        { className: "bt-mem-foot" },
+        answer ? (0, import_react15.createElement)(Reply, { answer, dismiss: () => setAnswer(null) }) : null,
+        (0, import_react15.createElement)(
+          "form",
+          { className: "bt-mem-ask", onSubmit: ask },
+          (0, import_react15.createElement)("input", {
+            ref: inputRef,
+            className: "bt-mem-input",
+            value: text,
+            maxLength: 2e3,
+            disabled: view === null,
+            placeholder: t("Ask or update"),
+            "aria-label": t("Ask about or update {name}'s memory", { name: bot.name }),
+            onChange: (event) => setText(event.target.value)
+          }),
+          (0, import_react15.createElement)(
+            "button",
+            { type: "submit", className: "bt-mem-send", disabled: busy || text.trim() === "", "aria-label": t("Send") },
+            busy ? (0, import_react15.createElement)("span", { className: "bt-mem-spin", "aria-hidden": true }) : (0, import_react15.createElement)(ArrowUpIcon)
+          )
+        )
+      )
+    )
+  );
+}
+
+// src/client/bot-settings.js
+var import_react16 = require("react");
+var capitalize = (word) => word[0].toUpperCase() + word.slice(1);
+async function avatarImage(file) {
+  if (!/^image\/(png|jpeg|webp|gif)$/.test(file.type)) throw new Error(t("Choose a PNG, JPEG, WebP, or GIF image"));
+  if (file.size > 25 * 1024 * 1024) throw new Error(t("Choose an image smaller than 25 MB"));
+  const bitmap = await createImageBitmap(file);
+  const side = 160;
+  const canvas = document.createElement("canvas");
+  canvas.width = side;
+  canvas.height = side;
+  const context = canvas.getContext("2d");
+  context.imageSmoothingQuality = "high";
+  const crop = Math.min(bitmap.width, bitmap.height);
+  context.drawImage(bitmap, (bitmap.width - crop) / 2, (bitmap.height - crop) / 2, crop, crop, 0, 0, side, side);
+  bitmap.close?.();
+  for (const quality of [0.9, 0.75, 0.6]) {
+    const url = canvas.toDataURL("image/webp", quality);
+    if (url.startsWith("data:image/webp") && url.length < 15e4) return url;
+  }
+  const png = canvas.toDataURL("image/png");
+  if (png.length < 15e4) return png;
+  throw new Error(t("That image is too large"));
+}
+function InlineText({ label, value, placeholder, required = false, maxLength, multiline = false, onSave }) {
+  const [draft, setDraft] = (0, import_react16.useState)(null);
+  const reverting = (0, import_react16.useRef)(false);
+  const commit = () => {
+    const next = draft?.trim();
+    setDraft(null);
+    if (reverting.current) {
+      reverting.current = false;
+      return;
+    }
+    if (next === void 0 || next === (value ?? "") || required && next === "") return;
+    void onSave(next);
+  };
+  return (0, import_react16.createElement)(multiline ? "textarea" : "input", {
+    className: multiline ? "bt-bs-input bt-bs-area" : "bt-bs-input",
+    value: draft ?? value ?? "",
+    placeholder,
+    maxLength,
+    required,
+    "aria-label": label,
+    spellCheck: false,
+    onChange: (event) => setDraft(event.target.value),
+    onBlur: commit,
+    onKeyDown: (event) => {
+      if (event.key === "Escape") {
+        event.stopPropagation();
+        reverting.current = true;
+        event.currentTarget.blur();
+      }
+      if (event.key === "Enter" && !multiline && !event.nativeEvent.isComposing) event.currentTarget.blur();
+    }
+  });
+}
+function Row({ label, hint, stack = false, children }) {
+  return (0, import_react16.createElement)(
+    "label",
+    { className: stack ? "bt-set-row bt-bs-row bt-bs-stack" : "bt-set-row bt-bs-row" },
+    (0, import_react16.createElement)("span", { className: "bt-set-copy" }, (0, import_react16.createElement)("span", { className: "bt-bs-label" }, label), hint ? (0, import_react16.createElement)("span", { className: "bt-set-hint" }, hint) : null),
+    children
+  );
+}
+function Card({ title, children }) {
+  return (0, import_react16.createElement)("section", { className: "bt-set-section" }, title ? (0, import_react16.createElement)("h3", null, title) : null, (0, import_react16.createElement)("div", { className: "bt-set-card" }, children));
+}
+function Switch({ on, label, disabled, onChange }) {
+  return (0, import_react16.createElement)(
+    "button",
+    { type: "button", role: "switch", className: "bt-switch", "aria-checked": on, "aria-label": label, disabled, onClick: () => onChange(!on) },
+    (0, import_react16.createElement)("span", { className: "bt-switch-knob", "aria-hidden": true })
+  );
+}
+function SwitchRow({ label, hint, on, disabled, onChange }) {
+  return (0, import_react16.createElement)(
+    "div",
+    { className: "bt-set-row bt-bs-row" },
+    (0, import_react16.createElement)("span", { className: "bt-set-copy" }, (0, import_react16.createElement)("span", { className: "bt-bs-label" }, label), hint ? (0, import_react16.createElement)("span", { className: "bt-set-hint" }, hint) : null),
+    (0, import_react16.createElement)(Switch, { on, label, disabled, onChange })
+  );
+}
+function modelHint(bot, roster) {
+  const shown = modelOf(bot, roster);
+  if (shown === void 0) return t("Pick the model this Bot runs on.");
+  if (!shown.served && (roster.models ?? []).length > 0) return t("This model is not available now. Pick another one.");
+  if (bot.appliedModel && bot.appliedModel === bot.model) return t("Every message of this Bot runs on it.");
+  return t("Applies from the next message.");
+}
+function ShapeRing({ shape, size }) {
+  const maskId = (0, import_react16.useRef)("");
+  if (maskId.current === "") maskId.current = `bt-ring-${nextMarkSerial()}`;
+  const def = shapeOf(shape);
+  const unit = def.size / size;
+  const markup = `<defs><mask id="${maskId.current}" ${maskBox(def.size)}>${holes(def, `<g stroke="#000" stroke-width="${6 * unit}" stroke-linejoin="round">${bodyOf(def, "#000", true)}</g>`)}</mask></defs><g mask="url(#${maskId.current})" stroke="currentColor" stroke-width="${8 * unit}" stroke-linejoin="round">${bodyOf(def, "currentColor", true)}</g>`;
+  return (0, import_react16.createElement)("svg", { className: "bt-ring", viewBox: `0 0 ${def.size} ${def.size}`, "aria-hidden": true, dangerouslySetInnerHTML: { __html: markup } });
+}
+function CharacterGrid({ look, hasPhoto = false, onShape, onColor }) {
+  const shapes = [...PICKER_SHAPES, ...Object.keys(SHAPES).filter((id) => !Object.hasOwn(CHARACTERS, id))];
+  if (!shapes.includes(look.shape)) shapes.push(look.shape);
+  const rows = [];
+  for (let index = 0; index < shapes.length; index += PICKER_COLUMNS) rows.push(shapes.slice(index, index + PICKER_COLUMNS));
+  return (0, import_react16.createElement)(
+    import_react16.Fragment,
+    null,
+    (0, import_react16.createElement)("div", { className: "bt-shapes", role: "group", "aria-label": t("Character shape") }, rows.map((row, index) => (0, import_react16.createElement)("div", { key: index, className: "bt-shape-row" }, row.map((id) => (0, import_react16.createElement)("button", {
+      key: id,
+      type: "button",
+      className: "bt-shape",
+      "aria-label": t(shapeOf(id).label),
+      title: t(shapeOf(id).label),
+      "aria-pressed": !hasPhoto && look.shape === id,
+      onClick: () => onShape(id)
+    }, (0, import_react16.createElement)(ShapeRing, { shape: id, size: 36 }), (0, import_react16.createElement)(BotMark, { look: { shape: id, color: look.color }, size: 36 })))))),
+    (0, import_react16.createElement)("div", { className: "bt-colors", role: "group", "aria-label": t("Character color") }, CHARACTER_COLORS.map((color) => (0, import_react16.createElement)("button", {
+      key: color,
+      type: "button",
+      className: "bt-color",
+      "aria-label": t(capitalize(color)),
+      title: t(capitalize(color)),
+      "aria-pressed": look.color === color,
+      onClick: () => onColor(color)
+    }, (0, import_react16.createElement)("span", { style: { background: paintCss(color) } }))))
+  );
+}
+function AvatarEditor({ bot, actions, run, onClose }) {
+  const look = lookOf(bot);
+  const [tab, setTab] = (0, import_react16.useState)(look.image ? "upload" : "bot");
+  const [over, setOver] = (0, import_react16.useState)(false);
+  const ref = (0, import_react16.useRef)(null);
+  const fileRef = (0, import_react16.useRef)(null);
+  const upload = (file) => {
+    if (file) void run(avatarImage(file).then((image) => actions.updateBot(bot.id, { avatar: { ...bot.avatar ?? {}, image } })));
+  };
+  (0, import_react16.useEffect)(() => {
+    const onDown = (event) => {
+      if (!(event.target instanceof Element) || ref.current?.contains(event.target) || event.target.closest(".bt-avatar-trigger")) return;
+      onClose();
+    };
+    const onKey = (event) => {
+      if (event.key === "Escape") {
+        event.stopPropagation();
+        onClose();
+      }
+    };
+    window.addEventListener("mousedown", onDown);
+    window.addEventListener("keydown", onKey, true);
+    return () => {
+      window.removeEventListener("mousedown", onDown);
+      window.removeEventListener("keydown", onKey, true);
+    };
+  }, [onClose]);
+  (0, import_react16.useEffect)(() => {
+    if (tab !== "upload") return void 0;
+    const onPaste = (event) => {
+      const file = [...event.clipboardData?.files ?? []].find((item) => item.type.startsWith("image/"));
+      if (file) {
+        event.preventDefault();
+        upload(file);
+      }
+    };
+    window.addEventListener("paste", onPaste);
+    return () => window.removeEventListener("paste", onPaste);
+  }, [tab, bot]);
+  const hasPhoto = Boolean(look.image);
+  const glide = useGlide(tab);
+  return (0, import_react16.createElement)(
+    "div",
+    { ref, className: "bt-avedit", role: "dialog", "aria-label": t("Avatar editor") },
+    (0, import_react16.createElement)(
+      "div",
+      { className: "bt-avedit-top" },
+      (0, import_react16.createElement)(
+        "div",
+        { ref: glide.box, role: "tablist", "aria-label": t("Avatar source"), className: "bt-avedit-tabs" },
+        (0, import_react16.createElement)("span", { ref: glide.thumb, className: "bt-thumb", "aria-hidden": true }),
+        [["bot", "Bot"], ["upload", "Upload"]].map(([id, label]) => (0, import_react16.createElement)("button", { key: id, type: "button", role: "tab", className: "bt-avedit-tab", "aria-selected": tab === id, onClick: () => setTab(id) }, t(label)))
+      ),
+      (0, import_react16.createElement)("button", {
+        type: "button",
+        className: "bt-avedit-tab bt-avedit-reset",
+        title: t("Reset character to default"),
+        onClick: () => run(actions.updateBot(bot.id, { avatar: null, color: null }))
+      }, t("Reset"))
+    ),
+    tab === "bot" ? (0, import_react16.createElement)(CharacterGrid, {
+      look,
+      hasPhoto,
+      onShape: (shape) => run(actions.updateBot(bot.id, { avatar: { shape } })),
+      onColor: (color) => run(actions.updateBot(bot.id, { color }))
+    }) : null,
+    tab === "upload" ? (0, import_react16.createElement)(
+      "div",
+      {
+        className: "bt-dropzone",
+        "data-over": over || void 0,
+        onDragOver: (event) => {
+          event.preventDefault();
+          setOver(true);
+        },
+        onDragLeave: () => setOver(false),
+        onDrop: (event) => {
+          event.preventDefault();
+          setOver(false);
+          upload(event.dataTransfer.files?.[0]);
+        }
+      },
+      hasPhoto ? (0, import_react16.createElement)("img", { src: look.image, alt: "" }) : null,
+      (0, import_react16.createElement)("div", null, t("Drag, drop, or paste an image")),
+      (0, import_react16.createElement)(
+        "div",
+        { className: "bt-actions", style: { justifyContent: "center" } },
+        (0, import_react16.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: () => fileRef.current?.click() }, hasPhoto ? t("Replace") : t("Browse files")),
+        hasPhoto ? (0, import_react16.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: () => run(actions.updateBot(bot.id, { avatar: hasShape(bot.avatar?.shape) ? { shape: bot.avatar.shape } : null })) }, t("Remove photo")) : null
+      ),
+      (0, import_react16.createElement)("input", { ref: fileRef, type: "file", accept: "image/png,image/jpeg,image/webp,image/gif", hidden: true, onChange: (event) => {
+        const file = event.target.files?.[0];
+        event.target.value = "";
+        upload(file);
+      } })
+    ) : null
+  );
+}
+function MemoryCard({ bot, actions }) {
+  const count = useMemoryCount(bot.id, actions);
+  const label = count === null ? t("Loading…") : count === 0 ? t("Nothing saved yet") : count === 1 ? t("1 entry") : t("{count} entries", { count });
+  return (0, import_react16.createElement)(
+    Card,
+    { title: t("Memory") },
+    (0, import_react16.createElement)(
+      "button",
+      { type: "button", className: "bt-set-row bt-bs-row", "aria-label": t("Manage {name}'s memory", { name: bot.name }), onClick: () => actions.openMemory(bot.id) },
+      (0, import_react16.createElement)("span", { className: "bt-set-copy" }, (0, import_react16.createElement)("span", { className: "bt-bs-label" }, label)),
+      (0, import_react16.createElement)("span", { className: "bt-mem-row-go" }, t("Manage"), (0, import_react16.createElement)(ChevronRightIcon))
+    )
+  );
+}
+function BotSettingsForm({ bot, roster, actions, run }) {
+  const [editing, setEditing] = (0, import_react16.useState)(false);
+  const [confirming, setConfirming] = (0, import_react16.useState)(false);
+  const closeEditor = (0, import_react16.useCallback)(() => setEditing(false), []);
+  (0, import_react16.useEffect)(() => {
+    if (!confirming) return void 0;
+    const timer = setTimeout(() => setConfirming(false), 4e3);
+    return () => clearTimeout(timer);
+  }, [confirming]);
+  const isMainBot = isMainOf(roster, bot.id);
+  const onlyMain = isMainBot && (roster.mainBotIds ?? []).length === 1;
+  const isTile = roster.mainBotId === bot.id;
+  const save = (patch) => run(actions.updateBot(bot.id, patch));
+  const duplicate = () => run(actions.duplicateBot(bot.id).then((copy2) => actions.openSession(copy2.id)));
+  const remove = () => {
+    if (confirming) void run(actions.deleteBot(bot.id));
+    else setConfirming(true);
+  };
+  (0, import_react16.useEffect)(() => {
+    void actions.refreshModels?.();
+  }, [bot.id]);
+  return (0, import_react16.createElement)(
+    "div",
+    { className: "bt-bs" },
+    (0, import_react16.createElement)(
+      "div",
+      { className: "bt-bs-hero" },
+      (0, import_react16.createElement)(
+        "div",
+        { className: "bt-avatar-anchor" },
+        (0, import_react16.createElement)(
+          "button",
+          { type: "button", className: "bt-avatar-trigger", "aria-label": t("Edit Bot avatar"), "aria-expanded": editing, onClick: () => setEditing((value) => !value) },
+          (0, import_react16.createElement)(BotMark, { bot, size: 64, live: true }),
+          (0, import_react16.createElement)("span", { className: "bt-avatar-pencil", "aria-hidden": true }, (0, import_react16.createElement)(PencilIcon))
+        ),
+        editing ? (0, import_react16.createElement)(AvatarEditor, { bot, actions, run, onClose: closeEditor }) : null
+      ),
+      (0, import_react16.createElement)(
+        "div",
+        { className: "bt-bs-who" },
+        (0, import_react16.createElement)("span", { className: "bt-bs-name" }, bot.name),
+        (0, import_react16.createElement)("span", { className: "bt-bs-sub" }, [bot.role, isMainBot ? t("Main Bot") : ""].filter(Boolean).join(" · ") || t("Bot"))
+      )
+    ),
+    (0, import_react16.createElement)(
+      Card,
+      { title: t("Profile") },
+      (0, import_react16.createElement)(Row, { label: t("Name") }, (0, import_react16.createElement)(InlineText, { label: t("Name"), value: bot.name, placeholder: "Bob", required: true, maxLength: 40, onSave: (name) => save({ name }) })),
+      (0, import_react16.createElement)(Row, { label: t("Label"), hint: t("Optional. Shown under the name.") }, (0, import_react16.createElement)(InlineText, { label: t("Label"), value: bot.role, placeholder: t("Research, admin…"), maxLength: 24, onSave: (role) => save({ role }) }))
+    ),
+    (0, import_react16.createElement)(
+      Card,
+      { title: t("Model") },
+      (0, import_react16.createElement)(
+        "div",
+        { className: "bt-set-row bt-bs-row" },
+        (0, import_react16.createElement)("span", { className: "bt-set-copy" }, (0, import_react16.createElement)("span", { className: "bt-bs-label" }, t("Model")), (0, import_react16.createElement)("span", { className: "bt-set-hint" }, modelHint(bot, roster))),
+        (0, import_react16.createElement)(ModelMenu, { bot, roster, actions, run })
+      )
+    ),
+    (0, import_react16.createElement)(
+      Card,
+      { title: t("Instructions") },
+      (0, import_react16.createElement)(
+        Row,
+        { label: t("What this Bot does"), hint: t("Its job on the team. Part of the Bot's system prompt."), stack: true },
+        (0, import_react16.createElement)(InlineText, { label: t("Instructions"), value: bot.instructions, multiline: true, placeholder: t("What this Bot is responsible for…"), onSave: (instructions) => save({ instructions }) })
+      )
+    ),
+    roster.memory === false ? null : (0, import_react16.createElement)(MemoryCard, { bot, actions }),
+    (0, import_react16.createElement)(BotSchedules, { bot, roster, actions }),
+    (0, import_react16.createElement)(
+      Card,
+      { title: t("Main Bot") },
+      onlyMain ? (0, import_react16.createElement)(
+        "div",
+        { className: "bt-set-row bt-bs-row" },
+        (0, import_react16.createElement)(
+          "span",
+          { className: "bt-set-copy" },
+          (0, import_react16.createElement)("span", { className: "bt-bs-label" }, t("Main Bot")),
+          (0, import_react16.createElement)("span", { className: "bt-set-hint" }, t("The only Main Bot. To hand the role to another Bot, use Main Bot on the Bots page."))
+        ),
+        (0, import_react16.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: () => actions.openSettings("bots") }, t("Change"))
+      ) : (0, import_react16.createElement)(SwitchRow, { label: t("Main Bot"), hint: t("Can create and change Bots, and runs every group chat."), on: isMainBot, onChange: (on) => run(actions.setMain(bot.id, on)) })
+    ),
+    // The Main Bot tile is always first and always shown, like in the context menu.
+    isTile ? null : (0, import_react16.createElement)(
+      Card,
+      { title: t("Sidebar") },
+      (0, import_react16.createElement)(SwitchRow, { label: t("Pin"), hint: t("Kept above the other chats."), on: bot.pinned === true, onChange: (pinned) => run(actions.setFlags(bot.id, { pinned })) }),
+      isMainBot ? null : (0, import_react16.createElement)(SwitchRow, { label: t("Hide from sidebar"), hint: t("Search still finds it."), on: bot.hidden === true, onChange: (hidden) => run(actions.setFlags(bot.id, { hidden })) })
+    ),
+    (0, import_react16.createElement)(
+      Card,
+      { title: t("Manage") },
+      (0, import_react16.createElement)(
+        "button",
+        { type: "button", className: "bt-set-row bt-bs-row", onClick: duplicate },
+        (0, import_react16.createElement)("span", { className: "bt-set-copy" }, (0, import_react16.createElement)("span", { className: "bt-bs-label" }, t("Duplicate")), (0, import_react16.createElement)("span", { className: "bt-set-hint" }, t("A copy with the same job and model, and fresh memory."))),
+        (0, import_react16.createElement)("span", { className: "bt-chevron" }, (0, import_react16.createElement)(ChevronRightIcon))
+      ),
+      isMainBot ? null : (0, import_react16.createElement)(
+        "button",
+        { type: "button", className: "bt-set-row bt-bs-row bt-bs-danger", "data-confirm": confirming || void 0, onClick: remove },
+        (0, import_react16.createElement)(
+          "span",
+          { className: "bt-set-copy" },
+          (0, import_react16.createElement)("span", { className: "bt-bs-label" }, confirming ? t("Delete {name}?", { name: bot.name }) : t("Delete Bot")),
+          (0, import_react16.createElement)("span", { className: "bt-set-hint" }, confirming ? t("Click again to delete. Its chats are archived.") : t("Removes the Bot from the team."))
+        ),
+        (0, import_react16.createElement)("span", { className: "bt-chevron" }, (0, import_react16.createElement)(ChevronRightIcon))
+      )
+    )
+  );
+}
+var BOT_SETTINGS_CSS = `
+.bt-bs{display:flex;flex-direction:column;gap:18px}
+.bt-bs-hero{display:flex;align-items:center;gap:14px;padding:2px 4px}
+.bt-bs-who{display:flex;flex-direction:column;min-width:0;gap:2px}
+.bt-bs-name{font-size:17px;line-height:24px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-bs-sub{font-size:13px;line-height:18px;color:var(--bt-ink-2)}
+.bt-bs .bt-avedit{left:0;transform:none}
+.bt-bs-row{min-height:48px}
+label.bt-bs-row{cursor:text}
+.bt-bs-row>.bt-set-copy{flex:1 1 auto}
+.bt-bs-label{font-size:13px;line-height:18px;font-weight:500}
+.bt-bs-row .bt-model-trigger{flex:none;max-width:58%}
+.bt-bs-input{flex:0 1 220px;width:0;min-width:96px;height:30px;box-sizing:border-box;margin:-4px -6px -4px 0;padding:0 8px;border:1px solid transparent;border-radius:8px;background:none;color:var(--bt-ink);font:inherit;font-size:13px;text-align:right;outline:none;transition:background-color .12s ease,border-color .12s ease}
+.bt-bs-input:hover{background:var(--bt-hover)}
+.bt-bs-input:focus{background:var(--bt-main);border-color:var(--bt-line-2);text-align:left}
+.bt-bs-input::placeholder{color:var(--bt-ink-3)}
+.bt-bs-stack{flex-direction:column;align-items:stretch;gap:8px}
+.bt-bs-area{flex:none;width:auto;min-height:112px;height:auto;margin:0 -6px -4px;padding:8px;line-height:19px;text-align:left;resize:vertical;background:var(--bt-hover)}
+.bt-bs-area:hover{background:var(--bt-active)}
+.bt-bs-danger .bt-bs-label{color:#c21d2e}
+.bt-bs-danger[data-confirm]{background:color-mix(in srgb,#e02135 8%,transparent)}
+.bt-bs-danger[data-confirm]:hover{background:color-mix(in srgb,#e02135 12%,transparent)}
+.bt-switch{position:relative;flex:none;width:36px;height:20px;padding:0;border:0;border-radius:999px;background:var(--bt-line-2);cursor:pointer;transition:background-color .2s ease}
+.bt-switch[aria-checked=true]{background:var(--bt-accent)}
+.bt-switch:disabled{opacity:.45;cursor:default}
+.bt-switch:focus-visible{outline:2px solid var(--bt-accent);outline-offset:2px}
+.bt-switch-knob{position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:999px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.2);transition:${spring(SPRING_SHAPE, "transform")},${spring(SPRING_TAP, "width")}}
+.bt-switch[aria-checked=true] .bt-switch-knob{transform:translateX(16px)}
+.bt-switch:active:not(:disabled) .bt-switch-knob{width:21px}
+.bt-switch[aria-checked=true]:active:not(:disabled) .bt-switch-knob{transform:translateX(11px)}
+.bt-avedit :is(.bt-shapes,.bt-colors,.bt-dropzone){animation:bt-veil-in .18s ease-out}
+@media (prefers-reduced-motion:reduce){.bt-switch,.bt-switch-knob{transition:none}.bt-avedit :is(.bt-shapes,.bt-colors,.bt-dropzone){animation:none}}
+`;
+
+// src/client/bot-draft.js
+function freshBotName(roster, base = "New Bot") {
+  const taken = new Set(roster.bots.map((bot) => bot.name.toLowerCase()));
+  if (!taken.has(base.toLowerCase())) return base;
+  let index = 2;
+  while (taken.has(`${base.toLowerCase()} ${index}`)) index += 1;
+  return `${base} ${index}`;
+}
+function startModel(roster) {
+  const models = roster.models ?? [];
+  return (models.find((model) => model.ref === roster.defaultModel) ?? models[0])?.ref ?? "";
+}
+function createPayload({ name, look, image, model, brief }) {
+  const payload = { name, color: look.color, avatar: image ? { shape: look.shape, image } : { shape: look.shape } };
+  if (model) payload.model = model;
+  if (brief) payload.brief = brief;
+  return payload;
+}
+
+// src/client/create-bot.js
+var import_react17 = require("react");
+var pick = (list) => list[Math.floor(Math.random() * list.length)];
+var randomLook = (avoid = {}) => {
+  const shapes = DEFAULT_SHAPES.filter((shape) => shape !== avoid.shape);
+  const colors = DEFAULT_COLORS.filter((color) => color !== avoid.color);
+  return { shape: pick(shapes), color: pick(colors) };
+};
+function CreateBot({ roster, actions, start, brief = "", onBack, canGoBack, onCreated, inline = false }) {
+  const [look, setLook] = (0, import_react17.useState)(() => randomLook());
+  const [image, setImage] = (0, import_react17.useState)(null);
+  const [name, setName] = (0, import_react17.useState)(start?.name ?? "");
+  const [model, setModel] = (0, import_react17.useState)(() => startModel(roster));
+  const [busy, setBusy] = (0, import_react17.useState)(false);
+  const [error, setError] = (0, import_react17.useState)("");
+  const fileRef = (0, import_react17.useRef)(null);
+  const frame = (0, import_react17.useRef)(null);
+  useEscape(onBack);
+  (0, import_react17.useEffect)(() => {
+    if (inline) frame.current?.scrollIntoView({ block: "start", behavior: "smooth" });
+  }, []);
+  const fallbackName = freshBotName(roster, t("New Bot"));
+  const finalName = name.trim() || fallbackName;
+  const clash = roster.bots.some((bot) => bot.name.toLowerCase() === finalName.toLowerCase());
+  const create = async () => {
+    if (busy || clash) return;
+    setError("");
+    setBusy(true);
+    try {
+      const bot = await actions.createBot(createPayload({ name: finalName, look, image, model, brief }));
+      onCreated(bot);
+    } catch (failure) {
+      setError(failure?.message ?? String(failure));
+      setBusy(false);
+    }
+  };
+  const upload = (file) => {
+    if (!file) return;
+    setError("");
+    avatarImage(file).then(setImage, (failure) => setError(failure?.message ?? String(failure)));
+  };
+  const previewLook = image ? { ...look, image } : look;
+  const card = (0, import_react17.createElement)(
+    "div",
+    { className: "bt-create-card" },
+    (0, import_react17.createElement)(
+      "div",
+      { className: "bt-create-preview" },
+      // The key remounts the mark, so every new pick plays the pop.
+      (0, import_react17.createElement)(
+        "span",
+        { key: `${look.shape}:${look.color}:${image ? "photo" : ""}`, className: "bt-create-pop" },
+        (0, import_react17.createElement)(BotMark, { look: previewLook, bot: { id: "new-bot" }, size: 88, live: true, gaze: true, pokeable: true })
+      ),
+      (0, import_react17.createElement)("span", { className: "bt-create-name" }, finalName)
+    ),
+    (0, import_react17.createElement)("div", { className: "bt-create-step" }, t("Look")),
+    (0, import_react17.createElement)(
+      "div",
+      { className: "bt-create-looks" },
+      (0, import_react17.createElement)(CharacterGrid, {
+        look,
+        hasPhoto: Boolean(image),
+        onShape: (shape) => {
+          setImage(null);
+          setLook((current) => ({ ...current, shape }));
+        },
+        onColor: (color) => {
+          setImage(null);
+          setLook((current) => ({ ...current, color }));
+        }
+      }),
+      (0, import_react17.createElement)(
+        "div",
+        { className: "bt-actions bt-create-lookbar" },
+        (0, import_react17.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: () => {
+          setImage(null);
+          setLook((current) => randomLook(current));
+        } }, t("Shuffle")),
+        (0, import_react17.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: () => fileRef.current?.click() }, image ? t("Replace photo") : t("Upload photo")),
+        image ? (0, import_react17.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: () => setImage(null) }, t("Remove photo")) : null,
+        (0, import_react17.createElement)("input", { ref: fileRef, type: "file", accept: "image/png,image/jpeg,image/webp,image/gif", hidden: true, onChange: (event) => {
+          const file = event.target.files?.[0];
+          event.target.value = "";
+          upload(file);
+        } })
+      )
+    ),
+    (0, import_react17.createElement)(
+      "label",
+      { className: "bt-field" },
+      (0, import_react17.createElement)("span", { className: "bt-field-label" }, t("Name")),
+      (0, import_react17.createElement)("input", {
+        className: "bt-input",
+        autoFocus: !inline,
+        value: name,
+        placeholder: fallbackName,
+        maxLength: 40,
+        "aria-label": t("Name"),
+        onChange: (event) => setName(event.target.value),
+        onKeyDown: (event) => {
+          if (event.key === "Enter" && !event.nativeEvent.isComposing) {
+            event.preventDefault();
+            void create();
+          }
+        }
+      }),
+      clash ? (0, import_react17.createElement)("span", { className: "bt-note bt-danger" }, t("A Bot named {name} already exists", { name: finalName })) : null
+    ),
+    (0, import_react17.createElement)(
+      "div",
+      { className: "bt-field" },
+      (0, import_react17.createElement)("span", { className: "bt-field-label" }, t("Model")),
+      (0, import_react17.createElement)(ModelMenu, { bot: { id: "new-bot", name: finalName, model: model || void 0 }, roster, actions, wide: true, onPick: setModel }),
+      (0, import_react17.createElement)("span", { className: "bt-note" }, (roster.models ?? []).length > 0 ? t("The Bot runs on this model. You can change it later in its details.") : t("Add a provider and a model in DeepSeek Harness first, or pick one in the Bot's chat later."))
+    ),
+    error ? (0, import_react17.createElement)("div", { className: "bt-error", role: "alert", style: { padding: 0 } }, error) : null,
+    (0, import_react17.createElement)(
+      "div",
+      { className: "bt-create-foot" },
+      (0, import_react17.createElement)("button", { type: "button", className: "bt-soft", onClick: onBack }, canGoBack ? t("Back") : t("Cancel")),
+      (0, import_react17.createElement)("button", { type: "button", className: "bt-send bt-create-go", disabled: busy || clash, onClick: () => void create() }, busy ? t("Creating…") : t("Create"))
+    )
+  );
+  if (inline) return (0, import_react17.createElement)("div", { ref: frame, className: "bt-create-inline", role: "group", "aria-label": t("Create Bot") }, card);
+  return (0, import_react17.createElement)(
+    "div",
+    { className: "bt-create", role: "dialog", "aria-label": t("Create Bot") },
+    (0, import_react17.createElement)(
+      "div",
+      { className: "bt-create-head" },
+      canGoBack ? (0, import_react17.createElement)("button", { type: "button", className: "bt-icon-btn", "aria-label": t("Back to new chat"), onClick: onBack }, (0, import_react17.createElement)(ChevronLeftIcon)) : (0, import_react17.createElement)("span", { className: "bt-create-gap" }),
+      (0, import_react17.createElement)("span", { className: "bt-create-title" }, t("Create Bot")),
+      (0, import_react17.createElement)("button", { type: "button", className: "bt-icon-btn", "aria-label": t("Close"), onClick: () => actions.closeOverlay() }, (0, import_react17.createElement)(CloseIcon))
+    ),
+    (0, import_react17.createElement)("div", { className: "bt-create-body" }, card)
+  );
+}
+
+// src/client/new-chat.js
+var import_react18 = require("react");
+var import_dsh_client_ui_primitives4 = require("@deepseek-ai/dsh-client-ui-primitives");
+function NewChat({ mode, roster, actions }) {
+  const [query, setQuery] = (0, import_react18.useState)("");
+  const [picked, setPicked] = (0, import_react18.useState)([]);
+  const [group, setGroup] = (0, import_react18.useState)(mode === "group");
+  const [admin, setAdmin] = (0, import_react18.useState)(null);
+  const [message, setMessage] = (0, import_react18.useState)("");
+  const [busy, setBusy] = (0, import_react18.useState)(false);
+  const [error, setError] = (0, import_react18.useState)("");
+  const [cursor, setCursor] = (0, import_react18.useState)(0);
+  const [draft, setDraft] = (0, import_react18.useState)(mode === "create" ? { name: "", fromList: false } : null);
+  const inputRef = (0, import_react18.useRef)(null);
+  const close = () => actions.closeOverlay();
+  useEscape(close);
+  const paneLeft = usePaneLeft();
+  const wanted = query.trim().toLowerCase();
+  const matches = roster.bots.filter((bot) => !picked.includes(bot.id) && bot.id !== admin && (wanted === "" || bot.name.toLowerCase().includes(wanted) || (bot.role ?? "").toLowerCase().includes(wanted)));
+  const choosingAdmin = group && admin === null;
+  const exact = roster.bots.some((bot) => bot.name.toLowerCase() === wanted);
+  const pickedBots = picked.map((id) => roster.byId[id]).filter(Boolean);
+  const run = async (task) => {
+    if (busy) return;
+    setError("");
+    setBusy(true);
+    try {
+      await task();
+    } catch (failure) {
+      setError(failure?.message ?? String(failure));
+    } finally {
+      setBusy(false);
+    }
+  };
+  const pick2 = (bot) => {
+    setPicked((current) => [...current, bot.id]);
+    setQuery("");
+    setCursor(0);
+    inputRef.current?.focus();
+  };
+  const chooseAdmin = (bot) => {
+    setAdmin(bot.id);
+    setQuery("");
+    setCursor(0);
+    inputRef.current?.focus();
+  };
+  const openBot = (bot) => run(async () => {
+    if (choosingAdmin) {
+      chooseAdmin(bot);
+      return;
+    }
+    if (group || picked.length > 0) {
+      pick2(bot);
+      return;
+    }
+    if (bot.hidden) await actions.setFlags(bot.id, { hidden: false });
+    if (message.trim()) await actions.send(bot.id, message.trim());
+    actions.openSession(bot.id);
+    close();
+  });
+  const createBot = () => {
+    if (busy) return;
+    setError("");
+    setDraft({ name: query.trim() !== "" && !exact ? query.trim() : "", fromList: true });
+  };
+  const created = (bot) => {
+    close();
+    actions.openSession(bot.id);
+    actions.showDetails(bot.id, "settings");
+  };
+  const makeGroup = async () => {
+    if (admin === null || picked.length === 0) return;
+    const text = message.trim();
+    const room2 = await actions.createRoom([admin, ...picked], { admin, ...text ? {} : { greet: true } });
+    if (text) await actions.send(room2.id, text);
+    actions.openSession(room2.id);
+    close();
+  };
+  const createGroup = () => run(makeGroup);
+  const sendMessage = () => run(async () => {
+    const text = message.trim();
+    if (group && admin !== null) {
+      await makeGroup();
+      return;
+    }
+    if (text === "" || picked.length === 0) return;
+    if (picked.length === 1) {
+      await actions.send(picked[0], text);
+      actions.openSession(picked[0]);
+      close();
+      return;
+    }
+    const room2 = await actions.createRoom(picked);
+    await actions.send(room2.id, text);
+    actions.openSession(room2.id);
+    close();
+  });
+  const options = [];
+  if (!group && picked.length === 0 && mode !== "search" && wanted === "") {
+    options.push({ key: "new", icon: (0, import_react18.createElement)(PlusIcon), label: t("Create new Bot"), run: createBot });
+    options.push({ key: "group", icon: (0, import_react18.createElement)(PeopleIcon), label: t("Create group chat"), run: () => {
+      setGroup(true);
+      setCursor(0);
+      inputRef.current?.focus();
+    } });
+    if ((roster.agents ?? []).length === 0) {
+      options.push({ key: "agent", icon: (0, import_react18.createElement)(import_dsh_client_ui_primitives4.FishLogo, { size: 16 }), label: t("Add DSH Agent"), run: () => run(async () => {
+        await actions.addAgent();
+        close();
+      }) });
+    }
+  }
+  for (const bot of matches) {
+    options.push({ key: bot.id, bot, label: bot.name, hint: choosingAdmin ? t("Make admin") : group || picked.length > 0 ? t("Add to group chat") : void 0, run: () => openBot(bot) });
+  }
+  if (wanted !== "" && !exact && mode !== "search") options.push({ key: "create", icon: (0, import_react18.createElement)(PlusIcon), label: t("Create new Bot “{name}”", { name: query.trim() }), run: createBot });
+  const active = Math.min(cursor, Math.max(options.length - 1, 0));
+  const listed = options.map((option) => option.key).join("\n");
+  const glide = useGlide(`${active}
+${listed}`, { axis: "y", ...QUICK_EDGES });
+  useFlip(glide.box, listed, "[data-flip]");
+  const drop = (0, import_react18.useRef)(null);
+  useMorph(drop, listed);
+  if (draft) {
+    return (0, import_react18.createElement)(
+      "div",
+      { className: "bt-pane", style: { left: paneLeft } },
+      (0, import_react18.createElement)(CreateBot, {
+        roster,
+        actions,
+        start: draft,
+        brief: message.trim(),
+        canGoBack: draft.fromList,
+        onBack: draft.fromList ? () => {
+          setDraft(null);
+          setTimeout(() => inputRef.current?.focus());
+        } : close,
+        onCreated: created
+      })
+    );
+  }
+  const adminBot = admin === null ? void 0 : roster.byId[admin];
+  const recipients = adminBot ? [adminBot, ...pickedBots] : pickedBots;
+  const placeholder = recipients.length > 0 ? t("Message {name}", { name: recipients.map((bot) => bot.name).join(t(" and ")) }) : t("Message Bot");
+  const unpick = () => {
+    if (picked.length > 0) setPicked((current) => current.slice(0, -1));
+    else if (admin !== null) setAdmin(null);
+  };
+  return (0, import_react18.createElement)(
+    "div",
+    { className: "bt-pane", style: { left: paneLeft } },
+    (0, import_react18.createElement)(
+      "div",
+      { className: "bt-newchat", role: "dialog", "aria-label": mode === "search" ? t("Search") : t("New chat") },
+      (0, import_react18.createElement)(
+        "div",
+        { className: "bt-to" },
+        (0, import_react18.createElement)("span", { className: "bt-to-label" }, t("To:")),
+        adminBot ? (0, import_react18.createElement)(
+          "span",
+          { key: adminBot.id, className: "bt-token bt-token-admin", title: t("Admin") },
+          (0, import_react18.createElement)(BotMark, { bot: adminBot, size: 16 }),
+          adminBot.name,
+          (0, import_react18.createElement)(AdminStar),
+          (0, import_react18.createElement)("button", { type: "button", "aria-label": t("Remove {name}", { name: adminBot.name }), onClick: () => setAdmin(null) }, "×")
+        ) : null,
+        choosingAdmin ? (0, import_react18.createElement)("span", { className: "bt-to-star", "aria-hidden": true }, (0, import_react18.createElement)(AdminStar)) : null,
+        pickedBots.map((bot) => (0, import_react18.createElement)(
+          "span",
+          { key: bot.id, className: "bt-token" },
+          (0, import_react18.createElement)(BotMark, { bot, size: 16 }),
+          bot.name,
+          (0, import_react18.createElement)("button", { type: "button", "aria-label": t("Remove {name}", { name: bot.name }), onClick: () => setPicked((current) => current.filter((id) => id !== bot.id)) }, "×")
+        )),
+        (0, import_react18.createElement)("input", {
+          ref: inputRef,
+          autoFocus: true,
+          value: query,
+          "aria-label": t("Recipient"),
+          placeholder: mode === "search" ? t("Search Bots…") : choosingAdmin ? t("Choose the group admin") : group ? t("Who to chat with…") : t("Start a chat with…"),
+          onChange: (event) => {
+            setQuery(event.target.value);
+            setCursor(0);
+          },
+          onKeyDown: (event) => {
+            if (event.nativeEvent.isComposing) return;
+            if (event.key === "ArrowDown") {
+              event.preventDefault();
+              setCursor(Math.min(active + 1, options.length - 1));
+            } else if (event.key === "ArrowUp") {
+              event.preventDefault();
+              setCursor(Math.max(active - 1, 0));
+            } else if (event.key === "Enter" && options[active]) {
+              event.preventDefault();
+              options[active].run();
+            } else if (event.key === "Backspace" && query === "") unpick();
+          }
+        }),
+        group && admin !== null ? (0, import_react18.createElement)("button", {
+          type: "button",
+          className: "bt-send bt-to-create",
+          disabled: busy || picked.length === 0,
+          title: picked.length === 0 ? t("Add at least one more Bot") : void 0,
+          onClick: createGroup
+        }, t("Create group chat")) : null,
+        (0, import_react18.createElement)("button", { type: "button", className: "bt-x", "aria-label": t("Close new chat"), onClick: close }, "×")
+      ),
+      (0, import_react18.createElement)("div", { ref: drop, className: "bt-drop" }, (0, import_react18.createElement)(
+        "div",
+        { ref: glide.box, role: "listbox", "aria-label": t("Recipients"), className: "bt-drop-list" },
+        (0, import_react18.createElement)("span", { ref: glide.thumb, className: "bt-thumb", "aria-hidden": true }),
+        options.length === 0 ? (0, import_react18.createElement)("div", { className: "bt-hint" }, mode === "search" ? t("No Bots match") : t("Type a name to create a Bot")) : options.map((option, index) => (0, import_react18.createElement)(
+          "button",
+          {
+            key: option.key,
+            type: "button",
+            role: "option",
+            className: "bt-option",
+            "aria-selected": index === active,
+            "data-flip": option.key,
+            onMouseEnter: () => setCursor(index),
+            onClick: option.run
+          },
+          option.bot ? (0, import_react18.createElement)(BotMark, { bot: option.bot, size: 22 }) : (0, import_react18.createElement)("span", { className: "bt-option-icon" }, option.icon),
+          (0, import_react18.createElement)("span", { className: "bt-option-label" }, option.label),
+          option.hint && index === active ? (0, import_react18.createElement)("span", { className: "bt-option-hint" }, option.hint) : null
+        ))
+      )),
+      (0, import_react18.createElement)("div", { className: "bt-nc-spacer" }),
+      error ? (0, import_react18.createElement)("div", { className: "bt-error" }, error) : null,
+      (0, import_react18.createElement)(
+        "div",
+        { className: "bt-nc-compose" },
+        (0, import_react18.createElement)(
+          "div",
+          { className: "bt-nc-card" },
+          (0, import_react18.createElement)("span", { className: "bt-nc-plus", "aria-hidden": true }, (0, import_react18.createElement)(PlusIcon)),
+          (0, import_react18.createElement)("textarea", {
+            rows: 1,
+            value: message,
+            placeholder,
+            "aria-label": placeholder,
+            onChange: (event) => setMessage(event.target.value),
+            onKeyDown: (event) => {
+              if (event.key === "Enter" && !event.shiftKey && !event.nativeEvent.isComposing) {
+                event.preventDefault();
+                sendMessage();
+              }
+            }
+          }),
+          (0, import_react18.createElement)("button", { type: "button", className: "bt-nc-send", "aria-label": t("Send message"), disabled: busy || message.trim() === "" || picked.length === 0, onClick: sendMessage }, (0, import_react18.createElement)(ArrowUpIcon))
+        )
+      )
+    )
+  );
+}
+
+// src/client/exchange.js
+var import_react19 = require("react");
+var SHEET_EXIT_MS = 220;
+function ExchangeDialog({ pair, roster, actions }) {
+  const [entries2, setEntries] = (0, import_react19.useState)(null);
+  const [leaving, setLeaving] = (0, import_react19.useState)(false);
+  const close = () => {
+    if (leaving) return;
+    setLeaving(true);
+    setTimeout(() => actions.closeOverlay(), SHEET_EXIT_MS);
+  };
+  useEscape(close);
+  (0, import_react19.useEffect)(() => {
+    let stop = false;
+    let timer;
+    let seen = null;
+    const load = async () => {
+      const result = await actions.exchange(pair[0], pair[1]);
+      if (stop) return;
+      const key = JSON.stringify(result ?? []);
+      if (key !== seen) {
+        seen = key;
+        setEntries(result ?? []);
+      }
+      timer = setTimeout(load, document.hidden ? 8e3 : 2e3);
+    };
+    void load();
+    return () => {
+      stop = true;
+      clearTimeout(timer);
+    };
+  }, [pair[0], pair[1]]);
+  const left = roster.byId[pair[0]];
+  const right = roster.byId[pair[1]];
+  let lastDay = 0;
+  const paneLeft = usePaneLeft();
+  return (0, import_react19.createElement)(
+    "div",
+    { className: "bt-pane bt-exchange", style: { left: paneLeft }, "data-leaving": leaving || void 0 },
+    (0, import_react19.createElement)(
+      "div",
+      { className: "bt-dialog", role: "dialog", "aria-label": t("Bot exchange") },
+      (0, import_react19.createElement)("div", { className: "bt-head" }, (0, import_react19.createElement)(
+        "span",
+        { className: "bt-pill", style: { cursor: "default" } },
+        left ? (0, import_react19.createElement)(BotMark, { bot: left, size: 22 }) : null,
+        left?.name ?? "?",
+        (0, import_react19.createElement)("span", { className: "bt-swap" }, "⇄"),
+        right ? (0, import_react19.createElement)(BotMark, { bot: right, size: 22 }) : null,
+        right?.name ?? "?"
+      )),
+      (0, import_react19.createElement)(
+        "div",
+        { className: "bt-dialog-log", role: "log", "aria-label": t("Bot exchange transcript") },
+        entries2 === null ? (0, import_react19.createElement)("div", { className: "bt-hint" }, t("Loading…")) : entries2.length === 0 ? (0, import_react19.createElement)("div", { className: "bt-hint" }, t("No messages yet")) : entries2.map((entry) => {
+          const bot = roster.byId[entry.from] ?? { id: entry.from, name: t("You"), color: "gray" };
+          const showDay = entry.time - lastDay > 30 * 60 * 1e3;
+          lastDay = entry.time;
+          return (0, import_react19.createElement)(
+            import_react19.Fragment,
+            { key: entry.id },
+            showDay ? (0, import_react19.createElement)("time", { className: "bt-time" }, dayLabel(entry.time)) : null,
+            (0, import_react19.createElement)(
+              "div",
+              { className: "bt-group-msg" },
+              (0, import_react19.createElement)("span", { className: "bt-group-name", style: { color: inkText(colorOf(bot)) } }, bot.name),
+              (0, import_react19.createElement)(Bubbles, { texts: [entry.text], roster, selfId: bot.id, actions, lead: (0, import_react19.createElement)("span", { className: "bt-lead" }, (0, import_react19.createElement)(BotMark, { bot, size: 22 })) })
+            )
+          );
+        })
+      ),
+      (0, import_react19.createElement)("div", { className: "bt-dialog-foot" }, (0, import_react19.createElement)("button", { type: "button", className: "bt-soft", onClick: close }, t("Close Chat")))
+    )
+  );
+}
+
+// src/client/voice.js
+var import_react20 = require("react");
+var plainSpeech = (text) => stripHeader(text).replace(/```[\s\S]*?```/g, " ").replace(/\[([^\]]*)\]\([^)]*\)/g, "$1").replace(/[*_`#>|~-]+/g, " ").replace(/\s+/g, " ").trim();
+var VOICE_LABELS = { listening: "Listening", thinking: "Thinking", speaking: "Speaking", paused: "Paused", unsupported: "Voice chat is not available in this browser" };
+function useMicLevel(enabled) {
+  const [level, setLevel] = (0, import_react20.useState)(0);
+  (0, import_react20.useEffect)(() => {
+    if (!enabled || !navigator.mediaDevices?.getUserMedia) return void 0;
+    let stream = null;
+    let audio = null;
+    let frame = 0;
+    let stopped = false;
+    navigator.mediaDevices.getUserMedia({ audio: true }).then((media) => {
+      if (stopped) {
+        media.getTracks().forEach((track) => track.stop());
+        return;
+      }
+      stream = media;
+      audio = new AudioContext();
+      const analyser = audio.createAnalyser();
+      analyser.fftSize = 256;
+      audio.createMediaStreamSource(media).connect(analyser);
+      const data = new Uint8Array(analyser.frequencyBinCount);
+      let smooth = 0;
+      const tick = () => {
+        analyser.getByteTimeDomainData(data);
+        let sum = 0;
+        for (const value of data) sum += ((value - 128) / 128) ** 2;
+        smooth = smooth * 0.8 + Math.min(1, Math.sqrt(sum / data.length) * 4) * 0.2;
+        setLevel(Math.round(smooth * 100) / 100);
+        frame = requestAnimationFrame(tick);
+      };
+      tick();
+    }).catch(() => {
+    });
+    return () => {
+      stopped = true;
+      cancelAnimationFrame(frame);
+      stream?.getTracks().forEach((track) => track.stop());
+      void audio?.close().catch(() => {
+      });
+      setLevel(0);
+    };
+  }, [enabled]);
+  return level;
+}
+function VoiceMode({ sessionId, roster, actions, useSessions, useSessionStatus }) {
+  const bot = roster.byId[sessionId];
+  const room2 = roster.roomsById[sessionId];
+  const name = bot?.name ?? room2?.name ?? t("Bot");
+  const running = useSessionStatus((map) => map.get(sessionId)?.running === true);
+  const lastReply = useSessions((list) => {
+    const outline = list.projectionsBySession?.[sessionId]?.values?.turnOutline ?? list.byId[sessionId]?.projectionValues?.turnOutline;
+    const entry = Array.isArray(outline) ? outline[outline.length - 1] : void 0;
+    return entry ? `${outline.length}|${entry.response ?? ""}` : "0|";
+  });
+  const [phase, setPhase] = (0, import_react20.useState)(speechApi() ? "listening" : "unsupported");
+  const [heard, setHeard] = (0, import_react20.useState)("");
+  const [said, setSaid] = (0, import_react20.useState)("");
+  const waiting = (0, import_react20.useRef)(null);
+  const paneLeft = usePaneLeft();
+  const close = () => {
+    window.speechSynthesis?.cancel();
+    actions.closeVoice();
+  };
+  useEscape(close);
+  const dictation = useDictation((text, final) => {
+    setHeard(text);
+    if (!final) return;
+    dictation.stop();
+    setPhase("thinking");
+    waiting.current = lastReply.split("|")[0];
+    void actions.send(sessionId, text.trim()).catch(() => setPhase("listening"));
+  });
+  const listen = phase === "listening";
+  (0, import_react20.useEffect)(() => {
+    if (!listen || dictation.listening) return void 0;
+    const timer = setTimeout(() => dictation.start({ continuous: false, onEnd: () => {
+    } }), 250);
+    return () => clearTimeout(timer);
+  }, [listen, dictation.listening]);
+  (0, import_react20.useEffect)(() => {
+    if (phase !== "listening") dictation.stop();
+  }, [phase]);
+  (0, import_react20.useEffect)(() => {
+    if (phase !== "thinking" || running || waiting.current === null) return;
+    const [count, text] = [lastReply.slice(0, lastReply.indexOf("|")), lastReply.slice(lastReply.indexOf("|") + 1)];
+    if (count === waiting.current || !text.trim()) return;
+    waiting.current = null;
+    const speech = plainSpeech(text);
+    setSaid(speech);
+    setHeard("");
+    if (!window.speechSynthesis || !speech) {
+      setPhase("listening");
+      return;
+    }
+    const utterance = new SpeechSynthesisUtterance(speech);
+    utterance.lang = /[\u3400-\u9fff]/.test(speech) ? "zh-CN" : "en-US";
+    utterance.onend = () => setPhase((current) => current === "speaking" ? "listening" : current);
+    utterance.onerror = utterance.onend;
+    setPhase("speaking");
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(utterance);
+  }, [phase, running, lastReply]);
+  (0, import_react20.useEffect)(() => () => window.speechSynthesis?.cancel(), []);
+  const level = useMicLevel(phase === "listening" && dictation.listening);
+  const markState = phase === "thinking" ? "thinking" : phase === "speaking" ? "sending" : "idle";
+  const togglePause = () => {
+    if (phase === "paused") {
+      setPhase("listening");
+      return;
+    }
+    window.speechSynthesis?.cancel();
+    setPhase("paused");
+  };
+  const caption = phase === "speaking" ? said : heard;
+  return (0, import_react20.createElement)(
+    "div",
+    { className: "bt-pane bt-voice-pane", style: { left: paneLeft } },
+    (0, import_react20.createElement)(
+      "div",
+      { className: "bt-voice-stage", role: "dialog", "aria-label": t("Voice chat with {name}", { name }), "data-phase": phase },
+      (0, import_react20.createElement)(
+        "div",
+        { className: "bt-voice-orb", style: { "--bt-level": level } },
+        (0, import_react20.createElement)("span", { className: "bt-voice-ring", "aria-hidden": true }),
+        (0, import_react20.createElement)("span", { className: "bt-voice-ring bt-voice-ring-2", "aria-hidden": true }),
+        bot ? (0, import_react20.createElement)(BotMark, { bot, size: 112, state: markState, live: true, gaze: phase === "listening" }) : room2 ? (0, import_react20.createElement)(RoomAvatar, { room: room2, roster, size: 112 }) : null
+      ),
+      (0, import_react20.createElement)("div", { className: "bt-voice-name" }, name),
+      (0, import_react20.createElement)(
+        "div",
+        { className: "bt-voice-status", role: "status" },
+        phase === "thinking" ? (0, import_react20.createElement)(Shimmer, null, t("Thinking…")) : VOICE_LABELS[phase] ? t(VOICE_LABELS[phase]) : ""
+      ),
+      (0, import_react20.createElement)("div", { className: "bt-voice-caption", key: `${phase}:${caption.slice(0, 12)}` }, caption),
+      dictation.note ? (0, import_react20.createElement)("div", { className: "bt-voice-note" }, dictation.note) : null
+    ),
+    (0, import_react20.createElement)(
+      "div",
+      { className: "bt-voice-bar" },
+      (0, import_react20.createElement)("button", {
+        type: "button",
+        className: "bt-voice-btn",
+        "aria-pressed": phase === "paused",
+        disabled: phase === "unsupported",
+        "aria-label": phase === "paused" ? t("Resume listening") : t("Pause"),
+        onClick: togglePause
+      }, (0, import_react20.createElement)(MicIcon, { size: 20 }), phase === "paused" ? (0, import_react20.createElement)("span", { className: "bt-voice-slash", "aria-hidden": true }) : null),
+      (0, import_react20.createElement)("button", { type: "button", className: "bt-voice-btn bt-voice-end", "aria-label": t("End voice chat"), onClick: close }, (0, import_react20.createElement)(CloseIcon))
+    )
+  );
+}
+
+// src/client/group-settings.js
+var import_react21 = require("react");
+var ROOM_MODES = [
+  ["admin", "Admin leads", "Plain messages go to the admin, who calls others with @Name."],
+  ["everyone", "Everyone", "Every member answers in turn, admin first."]
+];
+var shownMode = (room2, roster) => roster.byId[room2.admin] ? room2.mode : "everyone";
+function roomSubtitle(room2, roster) {
+  const admin = roster.byId[room2.admin];
+  return [t("{count} members", { count: room2.members.length }), admin ? t("Admin {name}", { name: admin.name }) : t("No admin")].join(" · ");
+}
+function GroupSettingsForm({ room: room2, roster, actions, run, onDeleted }) {
+  const [adding, setAdding] = (0, import_react21.useState)(false);
+  const [confirming, setConfirming] = (0, import_react21.useState)(false);
+  (0, import_react21.useEffect)(() => {
+    if (!confirming) return void 0;
+    const timer = setTimeout(() => setConfirming(false), 4e3);
+    return () => clearTimeout(timer);
+  }, [confirming]);
+  const members = room2.members.map((id) => roster.byId[id]).filter(Boolean);
+  const outside = roster.bots.filter((bot) => !room2.members.includes(bot.id));
+  const admin = roster.byId[room2.admin];
+  const mode = shownMode(room2, roster);
+  const modeHint = ROOM_MODES.find(([id]) => id === mode)?.[2] ?? "";
+  const update = (patch) => run(actions.updateRoom(room2.id, patch));
+  const openBot = (id) => {
+    actions.closeSettings();
+    actions.openSession(id);
+  };
+  const remove = () => {
+    if (!confirming) {
+      setConfirming(true);
+      return;
+    }
+    void Promise.resolve(run(actions.deleteRoom(room2.id))).then((done) => {
+      if (done) onDeleted?.();
+    });
+  };
+  return (0, import_react21.createElement)(
+    "div",
+    { className: "bt-bs" },
+    (0, import_react21.createElement)(
+      "div",
+      { className: "bt-bs-hero" },
+      (0, import_react21.createElement)(RoomAvatar, { room: room2, roster, size: 64 }),
+      (0, import_react21.createElement)(
+        "div",
+        { className: "bt-bs-who" },
+        (0, import_react21.createElement)("span", { className: "bt-bs-name" }, room2.name),
+        (0, import_react21.createElement)("span", { className: "bt-bs-sub" }, roomSubtitle(room2, roster))
+      )
+    ),
+    (0, import_react21.createElement)(
+      Card,
+      { title: t("Profile") },
+      (0, import_react21.createElement)(
+        Row,
+        { label: t("Name"), hint: t("Leave it empty to name the group after its members.") },
+        (0, import_react21.createElement)(InlineText, { label: t("Group name"), value: room2.named ? room2.name : "", placeholder: t("Name after members"), maxLength: 60, onSave: (name) => update({ name }) })
+      ),
+      (0, import_react21.createElement)(
+        Row,
+        { label: t("Notice"), hint: t("Every member reads it before speaking in this group."), stack: true },
+        (0, import_react21.createElement)(InlineText, { label: t("Group notice"), value: room2.notice, multiline: true, maxLength: 2e3, placeholder: t("Shared instructions every member reads before speaking…"), onSave: (notice) => update({ notice }) })
+      )
+    ),
+    (0, import_react21.createElement)(
+      Card,
+      { title: t("Who answers") },
+      (0, import_react21.createElement)(
+        "div",
+        { className: "bt-set-row bt-bs-row bt-bs-stack" },
+        (0, import_react21.createElement)(Segmented, { label: t("Who answers"), value: mode }, ROOM_MODES.map(([id, label]) => (0, import_react21.createElement)("button", {
+          key: id,
+          type: "button",
+          "aria-pressed": mode === id,
+          disabled: id === "admin" && !admin,
+          title: id === "admin" && !admin ? t("Choose an admin first") : void 0,
+          onClick: () => {
+            if (mode !== id) void update({ mode: id });
+          }
+        }, t(label)))),
+        (0, import_react21.createElement)("span", { key: mode, className: "bt-set-hint bt-veil" }, `${t(modeHint)} ${t("@mentions always pick who answers.")}`)
+      )
+    ),
+    (0, import_react21.createElement)(
+      Card,
+      { title: t("Members · {count}", { count: members.length }) },
+      members.map((member) => {
+        const leads = room2.admin === member.id;
+        return (0, import_react21.createElement)(
+          "div",
+          { key: member.id, className: "bt-set-row bt-bs-row bt-gs-member" },
+          (0, import_react21.createElement)(
+            "button",
+            { type: "button", className: "bt-gs-who", title: t("Open {name}'s chat", { name: member.name }), onClick: () => openBot(member.id) },
+            (0, import_react21.createElement)(BotAvatar, { bot: member, size: 26, main: isMainOf(roster, member.id), admin: leads, live: false }),
+            (0, import_react21.createElement)("span", { className: "bt-row-title" }, member.name),
+            leads ? (0, import_react21.createElement)("span", { className: "bt-tag" }, t("Admin")) : null
+          ),
+          leads ? (0, import_react21.createElement)("button", { type: "button", className: "bt-mini", title: t("Leave the group without an admin"), onClick: () => update({ admin: null }) }, t("Unset")) : (0, import_react21.createElement)("button", { type: "button", className: "bt-mini", onClick: () => update({ admin: member.id }) }, t("Make admin")),
+          members.length > 2 ? (0, import_react21.createElement)("button", { type: "button", className: "bt-x", "aria-label": t("Remove {name} from the group", { name: member.name }), title: t("Remove from group"), onClick: () => update({ remove: [member.id] }) }, "×") : null
+        );
+      }),
+      adding ? [
+        ...outside.map((bot) => (0, import_react21.createElement)(
+          "button",
+          { key: bot.id, type: "button", className: "bt-set-row bt-bs-row bt-gs-pick", onClick: () => {
+            setAdding(false);
+            void update({ add: [bot.id] });
+          } },
+          (0, import_react21.createElement)(BotMark, { bot, size: 22 }),
+          (0, import_react21.createElement)("span", { className: "bt-set-copy" }, (0, import_react21.createElement)("span", { className: "bt-bs-label" }, bot.name)),
+          (0, import_react21.createElement)("span", { className: "bt-set-hint" }, t("Add"))
+        )),
+        (0, import_react21.createElement)("button", { key: "cancel", type: "button", className: "bt-set-row bt-bs-row bt-gs-add", onClick: () => setAdding(false) }, t("Cancel"))
+      ] : outside.length > 0 ? (0, import_react21.createElement)("button", { type: "button", className: "bt-set-row bt-bs-row bt-gs-add", onClick: () => setAdding(true) }, (0, import_react21.createElement)(PlusIcon), t("Add member")) : null,
+      (0, import_react21.createElement)("div", { className: "bt-set-row bt-gs-note" }, (0, import_react21.createElement)(
+        "span",
+        { className: "bt-set-hint" },
+        // The host checks for two members on every change, even a rename.
+        members.length < 2 ? t("Add a Bot first: a group chat needs at least two.") : admin ? t("{name} leads this group: it can call members with @Name, change the group, and post here.", { name: admin.name }) : t("No admin yet. An admin can call members with @Name, change the group, and post here.")
+      ))
+    ),
+    (0, import_react21.createElement)(
+      Card,
+      { title: t("Sidebar") },
+      (0, import_react21.createElement)(SwitchRow, { label: t("Pin"), hint: t("Kept above the other chats."), on: room2.pinned === true, onChange: (pinned) => run(actions.setFlags(room2.id, { pinned })) }),
+      (0, import_react21.createElement)(SwitchRow, { label: t("Hide from sidebar"), hint: t("Search still finds it."), on: room2.hidden === true, onChange: (hidden) => run(actions.setFlags(room2.id, { hidden })) })
+    ),
+    (0, import_react21.createElement)(
+      Card,
+      { title: t("Manage") },
+      (0, import_react21.createElement)(
+        "button",
+        { type: "button", className: "bt-set-row bt-bs-row bt-bs-danger", "data-confirm": confirming || void 0, onClick: remove },
+        (0, import_react21.createElement)(
+          "span",
+          { className: "bt-set-copy" },
+          (0, import_react21.createElement)("span", { className: "bt-bs-label" }, confirming ? t("Delete {name}?", { name: room2.name }) : t("Delete group")),
+          (0, import_react21.createElement)("span", { className: "bt-set-hint" }, confirming ? t("Click again to delete. Its history is archived.") : t("Removes the group chat. Its members stay on the team."))
+        ),
+        (0, import_react21.createElement)("span", { className: "bt-chevron" }, (0, import_react21.createElement)(ChevronRightIcon))
+      )
+    )
+  );
+}
+function NewGroupForm({ roster, actions, run, onCreated, onCancel }) {
+  const [admin, setAdmin] = (0, import_react21.useState)(null);
+  const [members, setMembers] = (0, import_react21.useState)([]);
+  const [name, setName] = (0, import_react21.useState)("");
+  const [busy, setBusy] = (0, import_react21.useState)(false);
+  const toggle = (id) => setMembers((list) => list.includes(id) ? list.filter((item) => item !== id) : [...list, id]);
+  const pickAdmin = (id) => {
+    setAdmin(id);
+    setMembers((list) => list.filter((item) => item !== id));
+  };
+  const create = async () => {
+    if (busy || admin === null || members.length === 0) return;
+    setBusy(true);
+    let room2;
+    const done = await run(actions.createRoom([admin, ...members], { admin, greet: true, ...name.trim() ? { name: name.trim() } : {} }).then((value) => {
+      room2 = value;
+    }));
+    if (done && room2) onCreated(room2);
+    else setBusy(false);
+  };
+  const chip = (bot, on, onClick, role) => (0, import_react21.createElement)("button", {
+    key: bot.id,
+    type: "button",
+    role,
+    className: "bt-ng-chip",
+    "aria-checked": on,
+    onClick
+  }, (0, import_react21.createElement)(BotAvatar, { bot, size: 22, badge: false, live: false }), (0, import_react21.createElement)("span", { className: "bt-ng-name" }, bot.name), on && role === "radio" ? (0, import_react21.createElement)(AdminStar) : null);
+  return (0, import_react21.createElement)(
+    "div",
+    { className: "bt-set-card bt-ng" },
+    (0, import_react21.createElement)(
+      "div",
+      { className: "bt-set-row bt-bs-row bt-bs-stack" },
+      (0, import_react21.createElement)("span", { className: "bt-set-copy" }, (0, import_react21.createElement)("span", { className: "bt-bs-label bt-ng-label" }, (0, import_react21.createElement)(AdminStar), t("Choose the group admin"))),
+      (0, import_react21.createElement)(
+        "div",
+        { className: "bt-ng-picks", role: "radiogroup", "aria-label": t("Group admin") },
+        roster.bots.map((bot) => chip(bot, admin === bot.id, () => pickAdmin(bot.id), "radio"))
+      )
+    ),
+    admin === null ? null : (0, import_react21.createElement)(
+      "div",
+      { className: "bt-set-row bt-bs-row bt-bs-stack bt-ng-step" },
+      (0, import_react21.createElement)("span", { className: "bt-set-copy" }, (0, import_react21.createElement)("span", { className: "bt-bs-label" }, t("Who to chat with…"))),
+      (0, import_react21.createElement)(
+        "div",
+        { className: "bt-ng-picks", role: "group", "aria-label": t("Members") },
+        roster.bots.filter((bot) => bot.id !== admin).map((bot) => chip(bot, members.includes(bot.id), () => toggle(bot.id), "checkbox"))
+      )
+    ),
+    admin === null || members.length === 0 ? null : (0, import_react21.createElement)(
+      "label",
+      { className: "bt-set-row bt-bs-row bt-ng-step" },
+      (0, import_react21.createElement)("span", { className: "bt-set-copy" }, (0, import_react21.createElement)("span", { className: "bt-bs-label" }, t("Name"))),
+      (0, import_react21.createElement)("input", { className: "bt-bs-input", value: name, maxLength: 60, placeholder: t("Name after members"), onChange: (event) => setName(event.target.value) })
+    ),
+    (0, import_react21.createElement)(
+      "div",
+      { className: "bt-set-row bt-task-foot" },
+      (0, import_react21.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: onCancel }, t("Cancel")),
+      (0, import_react21.createElement)("button", { type: "button", className: "bt-send bt-soft-sm", disabled: busy || admin === null || members.length === 0, onClick: () => void create() }, t("Create group chat"))
+    )
+  );
+}
+var GROUP_SETTINGS_CSS = `
+.bt-ng{animation:bt-q-in .4s cubic-bezier(.22,1,.36,1),bt-veil-in .2s ease-out}
+.bt-ng-step{animation:bt-veil-in .22s ease-out}
+.bt-ng-label{display:inline-flex;align-items:center;gap:6px}
+.bt-ng-picks{display:flex;flex-wrap:wrap;gap:6px}
+.bt-ng-chip{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 10px 0 5px;border-radius:999px;border:.5px solid var(--bt-line);background:var(--bt-card);color:var(--bt-ink-2);font:inherit;font-size:13px;cursor:pointer;transition:background-color .12s ease,color .12s ease,border-color .12s ease,scale .3s cubic-bezier(.34,1.56,.64,1)}
+.bt-ng-chip:hover{background:var(--bt-hover);color:var(--bt-ink)}
+.bt-ng-chip:active{scale:.96}
+.bt-ng-chip[aria-checked=true]{background:var(--bt-active);border-color:var(--bt-line-2);color:var(--bt-ink)}
+.bt-ng-chip .bt-admin-star{animation:bt-check-pop .4s cubic-bezier(.34,1.56,.64,1)}
+.bt-ng-name{max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media (prefers-reduced-motion:reduce){.bt-ng,.bt-ng-step,.bt-ng-chip .bt-admin-star{animation:none}}
+.bt-gs-member{gap:8px}
+.bt-gs-who{flex:1;display:flex;align-items:center;gap:8px;min-width:0;padding:0;border:0;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer}
+.bt-gs-who .bt-row-title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-gs-who:hover .bt-row-title{text-decoration:underline;text-underline-offset:2px}
+.bt-gs-add{gap:8px;color:var(--bt-ink-2)}
+.bt-gs-pick{gap:10px;animation:bt-rise .16s ease-out}
+.bt-bs-stack .bt-seg{align-self:stretch}
+@media (prefers-reduced-motion:reduce){.bt-gs-pick{animation:none}}
+`;
+
+// src/client/usage-data.js
+var HOUR = 0;
+var OWNER = 1;
+var MODEL = 2;
+var KIND = 3;
+var HOUR_MS = 36e5;
+var DAY_MS = 864e5;
+var RANGES = [
+  { id: "24h", unit: "hour", count: 24, stride: 6 },
+  { id: "7d", unit: "day", count: 7, stride: 1 },
+  { id: "30d", unit: "day", count: 30, stride: 5 },
+  { id: "12w", unit: "week", count: 12, stride: 2 },
+  { id: "12m", unit: "month", count: 12, stride: 1 }
+];
+var hourMs = (key) => Date.UTC(Number(key.slice(0, 4)), Number(key.slice(5, 7)) - 1, Number(key.slice(8, 10)), Number(key.slice(11, 13)) || 0);
+var dayKey = (ms) => new Date(ms).toISOString().slice(0, 10);
+var hourKey = (ms) => new Date(ms).toISOString().slice(0, 13).replace("T", " ");
+var mondayOf = (ms) => ms - (new Date(ms).getUTCDay() + 6) % 7 * DAY_MS;
+function spanRange(from, to) {
+  if (to < from) [from, to] = [to, from];
+  const days = Math.round((hourMs(to) - hourMs(from)) / DAY_MS) + 1;
+  const unit = days <= 2 ? "hour" : days <= 62 ? "day" : days <= 182 ? "week" : "month";
+  const range = { id: "custom", unit, from, to, days };
+  const count = spanBuckets(range).length;
+  const stride = unit === "hour" ? 6 : [1, 2, 3, 5, 7, 10, 14].find((step) => count / step <= 12) ?? Math.ceil(count / 12);
+  return { ...range, count, stride };
+}
+function spanBuckets(range) {
+  const first = hourMs(range.from);
+  const end = hourMs(range.to) + DAY_MS;
+  const buckets = [];
+  if (range.unit === "hour" || range.unit === "day") {
+    const step = range.unit === "hour" ? HOUR_MS : DAY_MS;
+    for (let start = first; start < end; start += step) buckets.push({ start, end: start + step, key: range.unit === "hour" ? hourKey(start) : dayKey(start) });
+  } else if (range.unit === "week") {
+    for (let monday = mondayOf(first); monday < end; monday += 7 * DAY_MS) {
+      buckets.push({ start: Math.max(monday, first), end: Math.min(monday + 7 * DAY_MS, end), key: dayKey(monday) });
+    }
+  } else {
+    const year = new Date(first).getUTCFullYear();
+    for (let month = new Date(first).getUTCMonth(); Date.UTC(year, month, 1) < end; month += 1) {
+      const start = Date.UTC(year, month, 1);
+      buckets.push({ start: Math.max(start, first), end: Math.min(Date.UTC(year, month + 1, 1), end), key: dayKey(start).slice(0, 7) });
+    }
+  }
+  return buckets;
+}
+function spanOf(range, now) {
+  if (range.from) {
+    return { buckets: spanBuckets(range), from: `${range.from} 00`, to: `${range.to} 23`, before: hourKey(hourMs(range.from) - range.days * DAY_MS) };
+  }
+  const buckets = bucketsOf(range, now);
+  return { buckets: buckets.slice(range.count), from: hourKey(buckets[range.count].start), to: now, before: hourKey(buckets[0].start) };
+}
+function bucketsOf(range, now) {
+  const end = hourMs(now);
+  const today = end - end % DAY_MS;
+  const buckets = [];
+  for (let back = range.count * 2 - 1; back >= 0; back -= 1) {
+    let start;
+    if (range.unit === "hour") start = end - back * HOUR_MS;
+    else if (range.unit === "day") start = today - back * DAY_MS;
+    else if (range.unit === "week") start = mondayOf(today) - back * 7 * DAY_MS;
+    else start = Date.UTC(new Date(end).getUTCFullYear(), new Date(end).getUTCMonth() - back, 1);
+    buckets.push({ start, key: range.unit === "hour" ? hourKey(start) : range.unit === "month" ? dayKey(start).slice(0, 7) : dayKey(start) });
+  }
+  return buckets;
+}
+var tokensOf = (row) => row[4] + row[5] + row[6] + row[7];
+var blank = () => ({ input: 0, cacheRead: 0, output: 0, calls: 0, total: 0 });
+function addRow(sum, row) {
+  sum.input += row[4] + row[6];
+  sum.cacheRead += row[5];
+  sum.output += row[7];
+  sum.calls += row[8];
+  sum.total += tokensOf(row);
+  return sum;
+}
+function addTo(map, key, row) {
+  map.set(key, addRow(map.get(key) ?? blank(), row));
+}
+function summarize(view, range, keep = () => true, seriesOf = () => "all") {
+  const { buckets, from, to, before } = spanOf(range, view.now);
+  const index = new Map(buckets.map((bucket, at) => [bucket.key, at]));
+  const weeks = /* @__PURE__ */ new Map();
+  const keyOf = (hour) => {
+    if (range.unit === "hour") return hour;
+    if (range.unit === "day") return hour.slice(0, 10);
+    if (range.unit === "month") return hour.slice(0, 7);
+    const day = hour.slice(0, 10);
+    let week = weeks.get(day);
+    if (week === void 0) weeks.set(day, week = dayKey(mondayOf(hourMs(day))));
+    return week;
+  };
+  const current = buckets.map((bucket) => ({ ...bucket, sum: blank(), stacks: /* @__PURE__ */ new Map() }));
+  const result = { buckets: current, total: blank(), previous: 0, owners: /* @__PURE__ */ new Map(), models: /* @__PURE__ */ new Map(), kinds: /* @__PURE__ */ new Map() };
+  for (const row of view.rows) {
+    const hour = row[HOUR];
+    if (hour < before || hour > to || !keep(row)) continue;
+    if (hour < from) {
+      result.previous += tokensOf(row);
+      continue;
+    }
+    const at = index.get(keyOf(hour));
+    if (at === void 0) continue;
+    const bucket = current[at];
+    addRow(bucket.sum, row);
+    addRow(result.total, row);
+    const series = seriesOf(row);
+    bucket.stacks.set(series, (bucket.stacks.get(series) ?? 0) + tokensOf(row));
+    addTo(result.owners, row[OWNER], row);
+    addTo(result.models, row[MODEL], row);
+    addTo(result.kinds, row[KIND], row);
+  }
+  return result;
+}
+function trimmed(value) {
+  const text = value >= 100 ? value.toFixed(0) : value >= 10 ? value.toFixed(1) : value.toFixed(2);
+  return text.includes(".") ? text.replace(/\.?0+$/, "") : text;
+}
+function compact(count) {
+  for (const [size, unit] of [[1e9, "B"], [1e6, "M"], [1e3, "K"]]) {
+    if (count >= size * 0.9995) return `${trimmed(count / size)}${unit}`;
+  }
+  return String(Math.round(count));
+}
+function percent(part, whole) {
+  if (!(whole > 0) || !(part > 0)) return "0";
+  const value = part / whole * 100;
+  return value < 1 ? "<1" : String(Math.round(value));
+}
+
+// src/client/usage-page.js
+var import_react22 = require("react");
+var HEAT_WEEKS = 53;
+var TOP_SERIES = 7;
+var RING_R = 42;
+var RING = 2 * Math.PI * RING_R;
+var rangeLabel = (id) => ({ "24h": t("24 hours"), "7d": t("7 days"), "30d": t("30 days"), "12w": t("12 weeks"), "12m": t("12 months") })[id];
+var unitLabel = (unit) => ({ hour: t("Per hour"), day: t("Per day"), week: t("Per week"), month: t("Per month") })[unit];
+var MODEL_INKS = ["deepseek", "tangerine", "green", "violet", "sky", "rose", "yellow", "cyan", "magenta", "brown"];
+var PARTS = [["output", 1], ["input", 0.6], ["cacheRead", 0.32]];
+var partLabel = (part) => ({ output: t("Output"), input: t("Input"), cacheRead: t("Cache hit") })[part];
+var soften = (paint, strength = 1) => {
+  const mix = (color) => `color-mix(in srgb, ${color} ${Math.round(88 * strength)}%, var(--bt-card))`;
+  return paint.startsWith("linear-gradient(") ? paint.replace(/#[0-9a-f]{6}/gi, mix) : mix(paint);
+};
+var full = (count) => new Intl.NumberFormat(dateLocale()).format(Math.round(count));
+var hitRate = (sum) => percent(sum.cacheRead, sum.input + sum.cacheRead);
+var dates = (options) => new Intl.DateTimeFormat(dateLocale(), { timeZone: "UTC", ...options });
+var hourText = (ms) => `${String(new Date(ms).getUTCHours()).padStart(2, "0")}:00`;
+var yearOf = (ms) => new Date(ms).getUTCFullYear();
+function spanText(from, to) {
+  const start = hourMs(from);
+  const end = hourMs(to);
+  const year = (/* @__PURE__ */ new Date()).getFullYear();
+  const format = dates(yearOf(start) !== year || yearOf(end) !== year ? { year: "numeric", month: "short", day: "numeric" } : { month: "short", day: "numeric" });
+  return from === to ? format.format(start) : `${format.format(start)} – ${format.format(end)}`;
+}
+var daysText = (count) => count === 1 ? t("1 day") : t("{count} days", { count });
+var lastText = (range) => range.from ? spanText(range.from, range.to) : t("Last {range}", { range: rangeLabel(range.id) });
+function compareText(range) {
+  if (!range.from) return t("Compared with the {range} before", { range: rangeLabel(range.id) });
+  return range.days === 1 ? t("Compared with the day before") : t("Compared with the {count} days before", { count: range.days });
+}
+function tickOf(range, bucket) {
+  if (range.unit === "hour") {
+    return range.days > 1 && new Date(bucket.start).getUTCHours() === 0 ? dates({ month: "numeric", day: "numeric" }).format(bucket.start) : hourText(bucket.start);
+  }
+  if (range.unit === "month") return dates({ month: "short" }).format(bucket.start);
+  return dates({ month: "numeric", day: "numeric" }).format(bucket.start);
+}
+function titleOf(range, bucket) {
+  if (range.unit === "hour") return `${dates({ month: "short", day: "numeric" }).format(bucket.start)} ${hourText(bucket.start)}–${hourText(bucket.start + HOUR_MS)}`;
+  if (range.unit === "day") return dates({ month: "long", day: "numeric", weekday: "short" }).format(bucket.start);
+  if (range.unit === "week") return spanText(dayKey(bucket.start), dayKey((bucket.end ?? bucket.start + 7 * DAY_MS) - DAY_MS));
+  if (bucket.end && (new Date(bucket.start).getUTCDate() !== 1 || new Date(bucket.end).getUTCDate() !== 1)) return spanText(dayKey(bucket.start), dayKey(bucket.end - DAY_MS));
+  return dates({ year: "numeric", month: "long" }).format(bucket.start);
+}
+function useTween(value) {
+  const [shown, setShown] = (0, import_react22.useState)(0);
+  const from = (0, import_react22.useRef)(0);
+  (0, import_react22.useEffect)(() => {
+    if (reducedMotion() || typeof requestAnimationFrame !== "function") {
+      from.current = value;
+      setShown(value);
+      return void 0;
+    }
+    const begin = from.current;
+    const started = performance.now();
+    let frame;
+    const step = (now) => {
+      const progress = Math.min(1, (now - started) / 650);
+      from.current = begin + (value - begin) * (1 - (1 - progress) ** 3);
+      setShown(from.current);
+      if (progress < 1) frame = requestAnimationFrame(step);
+    };
+    frame = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(frame);
+  }, [value]);
+  return shown;
+}
+var glyphBox = (size, icon2) => (0, import_react22.createElement)("span", { className: "bt-us-glyph", style: { width: size, height: size } }, (0, import_react22.createElement)(icon2));
+function ModelGlyph({ name, paint, size }) {
+  return (0, import_react22.createElement)("span", {
+    className: "bt-us-model",
+    "aria-hidden": true,
+    style: { width: size, height: size, fontSize: Math.round(size * 0.42), background: `color-mix(in srgb, ${paint} 20%, var(--bt-card))`, color: `color-mix(in srgb, ${paint} 72%, var(--bt-ink))` }
+  }, (name.match(/[\p{L}\p{N}]/u)?.[0] ?? "?").toUpperCase());
+}
+function ownerFace(owner, roster) {
+  if (owner.kind === "bot") {
+    const bot = roster.byId[owner.id] ?? { id: owner.id, name: owner.name };
+    const name = bot.name || owner.name || t("Deleted Bot");
+    const role = bot.role?.trim() ?? "";
+    return {
+      kind: "bot",
+      name,
+      sub: owner.deleted ? t("Deleted") : role.toLowerCase() === name.toLowerCase() ? "" : role,
+      paint: paintCss(colorOf(bot)),
+      stops: GRADIENTS[colorOf(bot)],
+      glyph: (size) => (0, import_react22.createElement)(BotAvatar, { bot, size, badge: false, live: false })
+    };
+  }
+  if (owner.kind === "room") {
+    const room2 = roster.roomsById[owner.id];
+    return {
+      kind: "room",
+      name: owner.name || t("Deleted group chat"),
+      sub: owner.deleted ? t("Deleted") : t("Group chat"),
+      paint: "var(--bt-us-rest)",
+      glyph: (size) => room2 ? (0, import_react22.createElement)(RoomAvatar, { room: room2, roster, size }) : glyphBox(size, ChatsIcon)
+    };
+  }
+  if (owner.kind === "agent") {
+    return {
+      kind: "agent",
+      name: owner.name || "DSH Agent",
+      sub: owner.deleted ? t("Deleted") : "",
+      paint: "var(--bt-us-rest)",
+      glyph: (size) => glyphBox(size, ChatsIcon)
+    };
+  }
+  return { kind: "other", name: t("Other"), sub: "", paint: "var(--bt-us-rest)", glyph: (size) => glyphBox(size, ChatsIcon) };
+}
+function kindLabel(kind, botFocus) {
+  const labels = { chat: botFocus ? t("Own chat") : t("Conversations"), group: t("Group chats"), compaction: t("Compaction and handoff"), image: t("Image reading"), memory: t("Memory"), "session-title": t("Titles"), other: t("Other") };
+  return labels[kind] ?? kind;
+}
+function Tabs({ label, value, options, onChange, boxRef }) {
+  const names = options.map(([, text]) => text).join("\n");
+  const glide = useGlide(`${value}
+${names}`, { box: boxRef });
+  return (0, import_react22.createElement)(
+    "div",
+    { ref: glide.box, className: "bt-us-tabs", role: "group", "aria-label": label },
+    (0, import_react22.createElement)("span", { ref: glide.thumb, className: "bt-thumb", "aria-hidden": true }),
+    options.map(([id, text, icon2]) => (0, import_react22.createElement)("button", { key: id, type: "button", "aria-pressed": value === id, onClick: () => onChange(id) }, icon2 ? (0, import_react22.createElement)(icon2) : null, text))
+  );
+}
+function Stats({ range, total, previous }) {
+  const shown = useTween(total.total);
+  const change = previous > 0 ? Math.round((total.total - previous) / previous * 100) : null;
+  const cell = (label, value) => (0, import_react22.createElement)("div", { className: "bt-us-stat" }, (0, import_react22.createElement)("span", { className: "bt-us-stat-label" }, label), (0, import_react22.createElement)("span", { className: "bt-us-stat-value" }, value));
+  return (0, import_react22.createElement)(
+    "section",
+    { className: "bt-us-stats", style: { "--i": 0 } },
+    (0, import_react22.createElement)(
+      "div",
+      { className: "bt-us-stat bt-us-stat-main" },
+      (0, import_react22.createElement)("span", { className: "bt-us-stat-label" }, lastText(range)),
+      (0, import_react22.createElement)(
+        "span",
+        { className: "bt-us-stat-value" },
+        compact(shown),
+        (0, import_react22.createElement)("small", null, t("tokens")),
+        change === null ? null : (0, import_react22.createElement)(
+          "span",
+          { className: "bt-us-delta", title: compareText(range) },
+          `${change >= 0 ? "↑" : "↓"} ${Math.abs(change)}%`
+        )
+      )
+    ),
+    cell(t("Cache hit rate"), `${hitRate(total)}%`),
+    cell(t("Output"), compact(total.output)),
+    cell(t("Calls"), full(total.calls))
+  );
+}
+function niceTop(max) {
+  if (!(max > 0)) return 1;
+  const step = 10 ** Math.floor(Math.log10(max));
+  return [1, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10].map((scale) => scale * step).find((value) => value >= max);
+}
+function Chart({ range, columns, series, tipSeries, by, onBy, onPick }) {
+  const [hover, setHover] = (0, import_react22.useState)(null);
+  const top = niceTop(Math.max(0, ...columns.map((column) => column.total)));
+  const count = columns.length;
+  const fillOf = new Map(series.map((entry) => [entry.key, entry.fill]));
+  const tipOf = new Map(tipSeries.map((entry) => [entry.key, entry]));
+  const tip = hover === null ? null : columns[hover];
+  const tipSide = hover !== null && hover >= count / 2 ? { right: `calc(${(count - hover) / count * 100}% + 8px)` } : { left: `calc(${(hover + 1) / count * 100}% + 8px)` };
+  return (0, import_react22.createElement)(
+    "section",
+    { className: "bt-us-card bt-us-chart", style: { "--i": 1 } },
+    (0, import_react22.createElement)(
+      "div",
+      { className: "bt-us-card-head" },
+      (0, import_react22.createElement)("h3", null, t("Tokens over time"), (0, import_react22.createElement)("span", null, unitLabel(range.unit))),
+      onBy ? (0, import_react22.createElement)(Tabs, { label: t("Group usage by"), value: by, onChange: onBy, options: [["bot", t("By Bot")], ["model", t("By model")]] }) : null
+    ),
+    (0, import_react22.createElement)(
+      "div",
+      { className: "bt-us-chart-body" },
+      (0, import_react22.createElement)(
+        "div",
+        { className: "bt-us-plot", "data-hover": hover === null ? void 0 : "", onMouseLeave: () => setHover(null) },
+        [1, 0.5].map((level) => (0, import_react22.createElement)("div", { key: level, className: "bt-us-grid", style: { bottom: `${level * 100}%` } }, (0, import_react22.createElement)("span", null, compact(top * level)))),
+        (0, import_react22.createElement)("div", { className: "bt-us-grid bt-us-base", style: { bottom: 0 } }, (0, import_react22.createElement)("span", null, "0")),
+        (0, import_react22.createElement)(
+          "div",
+          { className: "bt-us-cols" },
+          columns.map((column, at) => (0, import_react22.createElement)("div", {
+            key: `${range.from ? `${range.from}~${range.to}` : range.id}:${column.key}`,
+            className: "bt-us-col",
+            "data-on": hover === at ? "" : void 0,
+            onMouseEnter: () => setHover(at)
+          }, column.total > 0 ? (0, import_react22.createElement)(
+            "div",
+            { className: "bt-us-stack", style: { height: `${column.total / top * 100}%`, "--i": at } },
+            column.parts.map(([key, value]) => value > 0 ? (0, import_react22.createElement)("i", { key, style: { flexGrow: value, background: fillOf.get(key) } }) : null)
+          ) : (0, import_react22.createElement)("div", { className: "bt-us-stub" })))
+        ),
+        tip ? (0, import_react22.createElement)(
+          "div",
+          { className: "bt-us-tip", style: tipSide },
+          (0, import_react22.createElement)("div", { className: "bt-us-tip-title" }, tip.title),
+          (0, import_react22.createElement)("div", { className: "bt-us-tip-total" }, t("{count} tokens", { count: full(tip.total) })),
+          tip.tip.filter(([, value]) => value > 0).sort((a, b) => b[1] - a[1]).map(([key, value]) => (0, import_react22.createElement)(
+            "div",
+            { key, className: "bt-us-tip-row" },
+            (0, import_react22.createElement)("i", { className: "bt-us-dot", style: { background: tipOf.get(key)?.fill } }),
+            (0, import_react22.createElement)("span", null, tipOf.get(key)?.name),
+            (0, import_react22.createElement)("b", null, compact(value))
+          ))
+        ) : null
+      ),
+      (0, import_react22.createElement)(
+        "div",
+        { className: "bt-us-ticks", "aria-hidden": true },
+        // A preset counts its labels back from now; a picked span forward from its first day.
+        columns.map((column, at) => (0, import_react22.createElement)(
+          "span",
+          { key: column.key, "data-now": at === count - 1 && range.ends !== false ? "" : void 0 },
+          (range.from ? at : count - 1 - at) % range.stride === 0 ? column.tick : ""
+        ))
+      )
+    ),
+    series.length > 1 || series[0]?.pick ? (0, import_react22.createElement)(
+      "div",
+      { className: "bt-us-legend" },
+      series.map((entry) => (0, import_react22.createElement)(entry.pick ? "button" : "span", {
+        key: entry.key,
+        className: "bt-us-key",
+        ...entry.pick ? { type: "button", onClick: () => onPick(entry.pick) } : {}
+      }, (0, import_react22.createElement)("i", { className: "bt-us-dot", style: { background: entry.fill } }), entry.name))
+    ) : null
+  );
+}
+function Row2({ kind, glyph, name, sub, sum, whole, fill: fill2, index, onClick }) {
+  const width = whole > 0 ? Math.max(sum.total > 0 ? 2 : 0, sum.total / whole * 100) : 0;
+  return (0, import_react22.createElement)(
+    onClick ? "button" : "div",
+    {
+      className: "bt-us-row",
+      "data-kind": kind,
+      style: { "--i": index },
+      title: t("{tokens} tokens · {calls} calls", { tokens: full(sum.total), calls: full(sum.calls) }),
+      ...onClick ? { type: "button", onClick } : {}
+    },
+    glyph ? (0, import_react22.createElement)("span", { className: "bt-us-row-glyph" }, glyph) : null,
+    (0, import_react22.createElement)(
+      "span",
+      { className: "bt-us-row-body" },
+      (0, import_react22.createElement)(
+        "span",
+        { className: "bt-us-row-line" },
+        (0, import_react22.createElement)("span", { className: "bt-us-row-name" }, name),
+        sub ? (0, import_react22.createElement)("span", { className: "bt-us-row-sub" }, sub) : null
+      ),
+      (0, import_react22.createElement)("span", { className: "bt-us-track" }, (0, import_react22.createElement)("span", { style: { width: `${width}%`, background: fill2 } }))
+    ),
+    (0, import_react22.createElement)("span", { className: "bt-us-row-num" }, (0, import_react22.createElement)("b", null, compact(sum.total)), (0, import_react22.createElement)("small", null, `${percent(sum.total, whole)}%`))
+  );
+}
+function ListCard({ title, count, index, children }) {
+  return (0, import_react22.createElement)(
+    "section",
+    { className: "bt-us-card", style: { "--i": index } },
+    (0, import_react22.createElement)("div", { className: "bt-us-card-head" }, (0, import_react22.createElement)("h3", null, title, count === void 0 ? null : (0, import_react22.createElement)("span", null, count))),
+    (0, import_react22.createElement)("div", { className: "bt-us-rows" }, children)
+  );
+}
+function Profile({ face, share, range }) {
+  const arc = Math.max(0, Math.min(1, share)) * RING;
+  return (0, import_react22.createElement)(
+    "section",
+    { className: "bt-us-profile" },
+    (0, import_react22.createElement)(
+      "span",
+      { className: "bt-us-ring" },
+      (0, import_react22.createElement)(
+        "svg",
+        { viewBox: "0 0 96 96", "aria-hidden": true },
+        face.stops ? (0, import_react22.createElement)("defs", null, (0, import_react22.createElement)(
+          "linearGradient",
+          { id: "bt-us-ring-paint", x1: 0, y1: 1, x2: 1, y2: 0 },
+          face.stops.map(([offset, color]) => (0, import_react22.createElement)("stop", { key: offset, offset, stopColor: color }))
+        )) : null,
+        (0, import_react22.createElement)("circle", { className: "bt-us-ring-track", cx: 48, cy: 48, r: RING_R }),
+        arc > 0 ? (0, import_react22.createElement)("circle", { className: "bt-us-ring-arc", cx: 48, cy: 48, r: RING_R, style: { stroke: face.stops ? "url(#bt-us-ring-paint)" : face.paint, strokeDasharray: `${arc} ${RING}` } }) : null
+      ),
+      (0, import_react22.createElement)("span", { className: "bt-us-ring-face" }, face.glyph(64))
+    ),
+    (0, import_react22.createElement)(
+      "div",
+      { className: "bt-us-profile-copy" },
+      (0, import_react22.createElement)("h3", null, face.name),
+      face.sub ? (0, import_react22.createElement)("span", { className: "bt-us-profile-sub" }, face.sub) : null,
+      (0, import_react22.createElement)("span", { className: "bt-us-profile-share" }, range.from ? t("{share}% of all usage from {span}", { share: percent(share, 1), span: spanText(range.from, range.to) }) : t("{share}% of all usage in the last {range}", { share: percent(share, 1), range: rangeLabel(range.id) }))
+    )
+  );
+}
+var monthOf = (ms) => Date.UTC(yearOf(ms), new Date(ms).getUTCMonth(), 1);
+var addMonths = (ms, count) => Date.UTC(yearOf(ms), new Date(ms).getUTCMonth() + count, 1);
+function SpanPicker({ span, today, oldest, active, near, onPick, onClose }) {
+  const box = (0, import_react22.useRef)(null);
+  const todayMs = hourMs(today);
+  const thisMonth = monthOf(todayMs);
+  const [right, setRight] = (0, import_react22.useState)(() => Math.max(addMonths(oldest, 1), monthOf(hourMs(span?.to ?? today))));
+  const [anchor, setAnchor] = (0, import_react22.useState)(null);
+  const [hover, setHover] = (0, import_react22.useState)(null);
+  (0, import_react22.useEffect)(() => {
+    const onDown = (event) => {
+      if (![box, near].some((ref) => ref.current?.contains(event.target))) onClose();
+    };
+    const onKey = (event) => {
+      if (event.key === "Escape") {
+        event.stopPropagation();
+        onClose();
+      }
+    };
+    window.addEventListener("mousedown", onDown);
+    window.addEventListener("keydown", onKey, true);
+    return () => {
+      window.removeEventListener("mousedown", onDown);
+      window.removeEventListener("keydown", onKey, true);
+    };
+  }, []);
+  const [low, high] = anchor ? [anchor, hover ?? anchor].sort() : span ? [span.from, span.to] : [null, null];
+  const press = (key) => {
+    if (!anchor) {
+      setAnchor(key);
+      return;
+    }
+    const [from, to] = [anchor, key].sort();
+    onPick(from, to);
+  };
+  const weekdays = (0, import_react22.useMemo)(() => Array.from({ length: 7 }, (_, at) => dates({ weekday: "narrow" }).format(Date.UTC(2024, 0, 1 + at))), []);
+  const month = (start, side) => {
+    const length = new Date(addMonths(start, 1) - DAY_MS).getUTCDate();
+    const lead = (new Date(start).getUTCDay() + 6) % 7;
+    const cells = Array.from({ length: lead }, (_, at) => (0, import_react22.createElement)("span", { key: `b${at}` }));
+    for (let day = 1; day <= length; day += 1) {
+      const ms = start + (day - 1) * DAY_MS;
+      const key = dayKey(ms);
+      const weekday = (lead + day - 1) % 7;
+      const flag = (on) => on ? "" : void 0;
+      cells.push((0, import_react22.createElement)("button", {
+        key,
+        type: "button",
+        className: "bt-us-day",
+        disabled: ms > todayMs,
+        "aria-label": dates({ year: "numeric", month: "long", day: "numeric", weekday: "short" }).format(ms),
+        "aria-pressed": key === low || key === high,
+        "data-in": flag(low !== null && key >= low && key <= high),
+        "data-start": flag(key === low),
+        "data-end": flag(key === high),
+        "data-l": flag(weekday === 0 || day === 1),
+        "data-r": flag(weekday === 6 || day === length),
+        "data-today": flag(key === today),
+        "data-has": flag(active.has(key)),
+        onMouseEnter: () => setHover(key),
+        onClick: () => press(key)
+      }, (0, import_react22.createElement)("b", null, day)));
+    }
+    const nav = side === "left" ? (0, import_react22.createElement)("button", { type: "button", className: "bt-us-month-nav", "data-side": "left", "aria-label": t("Previous month"), disabled: start <= oldest, onClick: () => setRight(addMonths(right, -1)) }, (0, import_react22.createElement)(ChevronLeftIcon)) : (0, import_react22.createElement)("button", { type: "button", className: "bt-us-month-nav", "data-side": "right", "aria-label": t("Next month"), disabled: start >= thisMonth, onClick: () => setRight(addMonths(right, 1)) }, (0, import_react22.createElement)(ChevronRightIcon));
+    return (0, import_react22.createElement)(
+      "div",
+      { key: start, className: "bt-us-month" },
+      (0, import_react22.createElement)("div", { className: "bt-us-month-head" }, nav, (0, import_react22.createElement)("span", null, dates({ year: "numeric", month: "long" }).format(start))),
+      (0, import_react22.createElement)("div", { className: "bt-us-weekdays", "aria-hidden": true }, weekdays.map((name, at) => (0, import_react22.createElement)("span", { key: at }, name))),
+      (0, import_react22.createElement)("div", { className: "bt-us-days", onMouseLeave: () => setHover(null) }, cells)
+    );
+  };
+  const shortcuts = [
+    ["month", t("This month"), dayKey(thisMonth), today],
+    ["last", t("Last month"), dayKey(addMonths(thisMonth, -1)), dayKey(thisMonth - DAY_MS)],
+    ["year", t("This year"), `${today.slice(0, 4)}-01-01`, today]
+  ];
+  const count = low === null ? 0 : Math.round((hourMs(high) - hourMs(low)) / DAY_MS) + 1;
+  return (0, import_react22.createElement)(
+    "div",
+    { ref: box, className: "bt-us-pick", role: "dialog", "aria-label": t("Custom range") },
+    (0, import_react22.createElement)(
+      "div",
+      { className: "bt-us-pick-quick" },
+      shortcuts.map(([id, label, from, to]) => (0, import_react22.createElement)("button", {
+        key: id,
+        type: "button",
+        "aria-pressed": span?.from === from && span?.to === to,
+        onClick: () => onPick(from, to)
+      }, label))
+    ),
+    (0, import_react22.createElement)("div", { className: "bt-us-pick-months" }, month(addMonths(right, -1), "left"), month(right, "right")),
+    (0, import_react22.createElement)(
+      "div",
+      { className: "bt-us-pick-foot", role: "status" },
+      (0, import_react22.createElement)("span", null, anchor ? t("Pick the last day") : t("Pick the first day")),
+      low === null ? null : (0, import_react22.createElement)("span", null, (0, import_react22.createElement)("b", null, spanText(low, high)), ` · ${daysText(count)}`)
+    )
+  );
+}
+function Heat({ view, keep, paint, index }) {
+  const today = hourMs(`${view.now.slice(0, 10)} 00`);
+  const first = mondayOf(today) - (HEAT_WEEKS - 1) * 7 * DAY_MS;
+  const from = dayKey(first);
+  const daily = /* @__PURE__ */ new Map();
+  for (const row of view.rows) {
+    const day = row[HOUR].slice(0, 10);
+    if (day >= from && keep(row)) daily.set(day, (daily.get(day) ?? 0) + tokensOf(row));
+  }
+  const most = Math.max(0, ...daily.values());
+  const levels = [0.3, 0.52, 0.76, 1];
+  const months = [];
+  const cells = [];
+  for (let week = 0; week < HEAT_WEEKS; week += 1) {
+    const monday = first + week * 7 * DAY_MS;
+    if (week > 0 && new Date(monday).getUTCMonth() !== new Date(monday - 7 * DAY_MS).getUTCMonth()) {
+      months.push((0, import_react22.createElement)("span", { key: week, style: { gridColumn: week + 1 } }, dates({ month: "short" }).format(monday)));
+    }
+    for (let day = 0; day < 7; day += 1) {
+      const ms = monday + day * DAY_MS;
+      const value = daily.get(dayKey(ms)) ?? 0;
+      const level = value > 0 ? Math.max(1, Math.ceil(4 * Math.sqrt(value / most))) : 0;
+      cells.push((0, import_react22.createElement)("span", {
+        key: ms,
+        className: "bt-us-cell",
+        style: { "--w": week },
+        "data-future": ms > today ? "" : void 0,
+        "data-today": ms === today ? "" : void 0,
+        title: ms > today ? void 0 : `${dates({ month: "long", day: "numeric", weekday: "short" }).format(ms)} · ${t("{count} tokens", { count: full(value) })}`
+      }, level > 0 ? (0, import_react22.createElement)("i", { style: { background: soften(paint, levels[level - 1]) } }) : null));
+    }
+  }
+  const active = [...daily.values()].filter((value) => value > 0).length;
+  const summary = active === 1 ? t("Active on 1 day in the last year") : t("Active on {count} days in the last year", { count: active });
+  return (0, import_react22.createElement)(
+    "section",
+    { className: "bt-us-card bt-us-heat", style: { "--i": index } },
+    (0, import_react22.createElement)("div", { className: "bt-us-card-head" }, (0, import_react22.createElement)("h3", null, t("Activity")), (0, import_react22.createElement)("span", { className: "bt-us-head-note" }, summary)),
+    (0, import_react22.createElement)("div", { className: "bt-us-heat-months", "aria-hidden": true }, months),
+    (0, import_react22.createElement)("div", { className: "bt-us-heat-grid", role: "img", "aria-label": summary }, cells),
+    (0, import_react22.createElement)(
+      "div",
+      { className: "bt-us-heat-scale", "aria-hidden": true },
+      t("Light"),
+      levels.map((level) => (0, import_react22.createElement)("span", { key: level, className: "bt-us-cell" }, (0, import_react22.createElement)("i", { style: { background: soften(paint, level) } }))),
+      t("Heavy")
+    )
+  );
+}
+function Skeleton2() {
+  return (0, import_react22.createElement)(
+    "div",
+    { className: "bt-us", "aria-busy": true },
+    (0, import_react22.createElement)("div", { className: "bt-us-skel", style: { height: 32, width: 320, borderRadius: 999 } }),
+    (0, import_react22.createElement)("div", { className: "bt-us-skel", style: { height: 94 } }),
+    (0, import_react22.createElement)("div", { className: "bt-us-skel", style: { height: 318 } }),
+    (0, import_react22.createElement)("div", { className: "bt-us-pair" }, (0, import_react22.createElement)("div", { className: "bt-us-skel", style: { height: 200 } }), (0, import_react22.createElement)("div", { className: "bt-us-skel", style: { height: 200 } }))
+  );
+}
+var focusOf = (id) => typeof id !== "string" ? null : id.startsWith("model:") ? { kind: "model", key: id.slice("model:".length) } : id.startsWith("owner:") ? { kind: "owner", key: id.slice("owner:".length) } : null;
+function UsagePage({ roster, actions, focusId }) {
+  const [view, setView] = (0, import_react22.useState)(null);
+  const [error, setError] = (0, import_react22.useState)("");
+  const [rangeId, setRangeId] = (0, import_react22.useState)("7d");
+  const [span, setSpan] = (0, import_react22.useState)(null);
+  const [picking, setPicking] = (0, import_react22.useState)(false);
+  const [by, setBy] = (0, import_react22.useState)("bot");
+  const tabs = (0, import_react22.useRef)(null);
+  const focus = focusOf(focusId);
+  (0, import_react22.useEffect)(() => {
+    let stopped = false;
+    let timer;
+    const resized = Promise.all((document.querySelector(".bt-settings")?.getAnimations() ?? []).filter((animation) => animation.transitionProperty === "width" || animation.transitionProperty === "height").map((animation) => animation.finished.catch(() => {
+    })));
+    const load = async () => {
+      try {
+        const value = await actions.usage();
+        await resized;
+        if (stopped) return;
+        (0, import_react22.startTransition)(() => setView(value));
+        setError("");
+        timer = setTimeout(load, value.scanning ? 3e3 : 2e4);
+      } catch (failure) {
+        if (stopped) return;
+        setError(failure?.message ?? String(failure));
+        timer = setTimeout(load, 1e4);
+      }
+    };
+    void load();
+    return () => {
+      stopped = true;
+      clearTimeout(timer);
+    };
+  }, []);
+  const today = view?.now.slice(0, 10);
+  const range = rangeId === "custom" && span ? { ...spanRange(span.from, span.to), ends: span.to >= today } : RANGES.find((item) => item.id === rangeId);
+  const shaped = (0, import_react22.useMemo)(() => {
+    if (!view) return null;
+    const faces2 = view.owners.map((owner) => ownerFace(owner, roster));
+    const lifetime = /* @__PURE__ */ new Map();
+    for (const row of view.rows) lifetime.set(row[MODEL], (lifetime.get(row[MODEL]) ?? 0) + tokensOf(row));
+    const modelPaint = new Map([...lifetime].sort((a, b) => b[1] - a[1]).map(([model], rank) => [model, `var(--bt-ink-${MODEL_INKS[rank % MODEL_INKS.length]})`]));
+    const models2 = view.models.map((model, at) => {
+      const name = model.name || model.model || t("Unknown model");
+      const paint = modelPaint.get(at) ?? "var(--bt-us-rest)";
+      return { kind: "model", name, sub: model.providerName ?? model.provider, paint, glyph: (size) => (0, import_react22.createElement)(ModelGlyph, { name, paint, size }) };
+    });
+    const ownerAt2 = focus?.kind === "owner" ? view.owners.findIndex((owner) => owner.key === focus.key) : -1;
+    const modelAt = focus?.kind === "model" ? view.models.findIndex((model) => model.key === focus.key) : -1;
+    const isBot2 = (at) => ["bot", "agent"].includes(view.owners[at]?.kind);
+    const all2 = summarize(view, range, void 0, (row) => by === "bot" ? isBot2(row[OWNER]) ? `o${row[OWNER]}` : "rest" : `m${row[MODEL]}`);
+    const keep2 = ownerAt2 >= 0 ? (row) => row[OWNER] === ownerAt2 : modelAt >= 0 ? (row) => row[MODEL] === modelAt : () => true;
+    const face2 = ownerAt2 >= 0 ? faces2[ownerAt2] : modelAt >= 0 ? models2[modelAt] : null;
+    const part2 = face2 ? summarize(view, range, keep2) : all2;
+    const activeDays2 = /* @__PURE__ */ new Set();
+    let first = view.now;
+    for (const row of view.rows) {
+      if (row[HOUR] < first) first = row[HOUR];
+      if (keep2(row) && tokensOf(row) > 0) activeDays2.add(row[HOUR].slice(0, 10));
+    }
+    const oldest2 = Math.min(monthOf(hourMs(first)), addMonths(monthOf(hourMs(view.now)), -12));
+    const ranked2 = (map) => [...map].filter(([, sum]) => sum.total > 0).sort((a, b) => b[1].total - a[1].total);
+    let series2;
+    if (face2) {
+      series2 = [{ key: "all", name: face2.name, fill: soften(face2.paint) }];
+    } else {
+      if (by === "bot") {
+        const bots = ranked2(all2.owners).filter(([at]) => isBot2(at));
+        series2 = bots.slice(0, TOP_SERIES).map(([at]) => ({ key: `o${at}`, name: faces2[at].name, paint: faces2[at].paint, pick: { kind: "owner", key: view.owners[at].key } }));
+        if (bots.length > TOP_SERIES) series2.push({ key: "more", name: t("More Bots"), paint: "var(--bt-us-more)" });
+        if (ranked2(all2.owners).some(([at]) => !isBot2(at))) series2.push({ key: "rest", name: t("Other"), paint: "var(--bt-us-rest)" });
+      } else {
+        const used = ranked2(all2.models);
+        series2 = used.slice(0, TOP_SERIES).map(([at]) => ({ key: `m${at}`, name: models2[at].name, paint: models2[at].paint, pick: { kind: "model", key: view.models[at].key } }));
+        if (used.length > TOP_SERIES) series2.push({ key: "more", name: t("More models"), paint: "var(--bt-us-more)" });
+      }
+      const repeats = /* @__PURE__ */ new Map();
+      for (const entry of series2) {
+        const seen = repeats.get(entry.paint) ?? 0;
+        repeats.set(entry.paint, seen + 1);
+        entry.fill = soften(entry.paint, [1, 0.6, 0.36][seen % 3]);
+      }
+    }
+    const tipSeries2 = face2 ? PARTS.map(([key, strength]) => ({ key, name: partLabel(key), fill: soften(face2.paint, strength) })) : series2;
+    const fillOf2 = new Map(series2.map((entry) => [entry.key, entry.fill]));
+    const shownKeys = new Set(series2.map((entry) => entry.key));
+    const columns2 = part2.buckets.map((bucket) => {
+      const parts = face2 ? [["all", bucket.sum.total]] : series2.map((entry) => [entry.key, entry.key === "more" ? [...bucket.stacks].filter(([key]) => key !== "rest" && !shownKeys.has(key)).reduce((sum, [, value]) => sum + value, 0) : bucket.stacks.get(entry.key) ?? 0]);
+      const tip = face2 ? PARTS.map(([key]) => [key, bucket.sum[key]]) : parts;
+      return { key: bucket.key, tick: tickOf(range, bucket), title: titleOf(range, bucket), total: bucket.sum.total, parts, tip };
+    });
+    return { faces: faces2, models: models2, ownerAt: ownerAt2, modelAt, face: face2, keep: keep2, all: all2, part: part2, series: series2, tipSeries: tipSeries2, fillOf: fillOf2, columns: columns2, ranked: ranked2, isBot: isBot2, activeDays: activeDays2, oldest: oldest2 };
+  }, [view, rangeId, span, by, focusId, roster]);
+  const root = (0, import_react22.useRef)(null);
+  (0, import_react22.useEffect)(() => {
+    root.current?.closest(".bt-settings-scroll")?.scrollTo?.({ top: 0 });
+  }, [focusId]);
+  if (!view) {
+    return error ? (0, import_react22.createElement)("div", { className: "bt-error", role: "alert", style: { padding: 0 } }, error) : (0, import_react22.createElement)(Skeleton2);
+  }
+  if (view.rows.length === 0) {
+    return (0, import_react22.createElement)(
+      "div",
+      { className: "bt-us" },
+      (0, import_react22.createElement)(
+        "div",
+        { className: "bt-us-empty" },
+        (0, import_react22.createElement)(BotMark, { look: MAIN_LOOK, size: 56, live: true }),
+        (0, import_react22.createElement)("b", null, view.scanning ? t("Reading your chats…") : t("No usage yet.")),
+        (0, import_react22.createElement)("span", null, t("Token usage shows up here after a model is called."))
+      )
+    );
+  }
+  const { faces, models, ownerAt, face, keep, all, part, series, tipSeries, fillOf, columns, ranked, isBot, activeDays, oldest } = shaped;
+  const pick2 = (next) => actions.openSettings("usage", `${next.kind}:${next.key}`);
+  const chooseRange = (id) => {
+    if (id !== "custom") {
+      setRangeId(id);
+      setPicking(false);
+      return;
+    }
+    if (span) setRangeId("custom");
+    setPicking((open) => !open);
+  };
+  const pickSpan = (from, to) => {
+    setSpan({ from, to });
+    setRangeId("custom");
+    setPicking(false);
+  };
+  const rangeOptions = [
+    ...RANGES.map((item) => [item.id, rangeLabel(item.id)]),
+    ["custom", rangeId === "custom" && span ? spanText(span.from, span.to) : t("Custom"), CalendarIcon]
+  ];
+  const whole = part.total.total;
+  const ownerRow = ([at, sum], index, total = whole) => (0, import_react22.createElement)(Row2, {
+    key: `o${at}`,
+    kind: faces[at].kind,
+    glyph: faces[at].glyph(32),
+    name: faces[at].name,
+    sub: faces[at].sub,
+    sum,
+    whole: total,
+    index,
+    fill: face ? soften(face.paint, 0.8) : fillOf.get(`o${at}`) ?? soften(faces[at].paint),
+    onClick: () => pick2({ kind: "owner", key: view.owners[at].key })
+  });
+  const modelRow = ([at, sum], index) => (0, import_react22.createElement)(Row2, {
+    key: `m${at}`,
+    kind: "model",
+    glyph: models[at].glyph(32),
+    name: models[at].name,
+    sub: models[at].sub,
+    sum,
+    whole,
+    index,
+    fill: face ? soften(face.paint, 0.8) : fillOf.get(`m${at}`) ?? soften(models[at].paint),
+    onClick: () => pick2({ kind: "model", key: view.models[at].key })
+  });
+  const nothing = (0, import_react22.createElement)("div", { className: "bt-us-none" }, t("Nothing in this range."));
+  let body;
+  if (face) {
+    const kinds = ranked(part.kinds);
+    const usedModels = ranked(part.models);
+    const owners = ranked(part.owners);
+    body = [
+      (0, import_react22.createElement)(Profile, { key: "profile", face, range, share: all.total.total > 0 ? whole / all.total.total : 0 }),
+      (0, import_react22.createElement)(Stats, { key: "stats", range, total: part.total, previous: part.previous }),
+      (0, import_react22.createElement)(Chart, { key: "chart", range, columns, series, tipSeries, onPick: pick2 }),
+      (0, import_react22.createElement)(
+        "div",
+        { key: "pair", className: "bt-us-pair" },
+        ownerAt >= 0 ? (0, import_react22.createElement)(ListCard, { title: t("Models"), count: usedModels.length, index: 2 }, usedModels.length > 0 ? usedModels.map(modelRow) : nothing) : (0, import_react22.createElement)(ListCard, { title: t("Who used it"), count: owners.length, index: 2 }, owners.length > 0 ? owners.map((entry, index) => ownerRow(entry, index)) : nothing),
+        (0, import_react22.createElement)(
+          ListCard,
+          { title: t("What for"), index: 3 },
+          kinds.length > 0 ? kinds.map(([at, sum], index) => (0, import_react22.createElement)(Row2, { key: at, name: kindLabel(view.kinds[at], ownerAt >= 0 && isBot(ownerAt)), sum, whole, index, fill: soften(face.paint, 0.8) })) : nothing
+        )
+      ),
+      (0, import_react22.createElement)(Heat, { key: "heat", view, keep, paint: face.paint, index: 4 })
+    ];
+  } else {
+    const owners = ranked(all.owners);
+    const bots = owners.filter(([at]) => isBot(at));
+    const rest = owners.filter(([at]) => !isBot(at));
+    const usedModels = ranked(all.models);
+    body = [
+      (0, import_react22.createElement)(Stats, { key: "stats", range, total: all.total, previous: all.previous }),
+      (0, import_react22.createElement)(Chart, { key: "chart", range, columns, series, tipSeries, by, onBy: setBy, onPick: pick2 }),
+      (0, import_react22.createElement)(
+        "div",
+        { key: "pair", className: "bt-us-pair" },
+        (0, import_react22.createElement)(
+          ListCard,
+          { title: t("Bots"), count: bots.length, index: 2 },
+          owners.length > 0 ? null : nothing,
+          bots.map((entry, index) => ownerRow(entry, index)),
+          bots.length > 0 && rest.length > 0 ? (0, import_react22.createElement)("div", { className: "bt-us-split", role: "separator" }) : null,
+          rest.map((entry, index) => ownerRow(entry, bots.length + index))
+        ),
+        (0, import_react22.createElement)(ListCard, { title: t("Models"), count: usedModels.length, index: 3 }, usedModels.length > 0 ? usedModels.map(modelRow) : nothing)
+      ),
+      (0, import_react22.createElement)(Heat, { key: "heat", view, keep, paint: "var(--bt-accent)", index: 4 })
+    ];
+  }
+  return (0, import_react22.createElement)(
+    "div",
+    { ref: root, className: "bt-us", key: focusId ?? "all" },
+    (0, import_react22.createElement)(
+      "div",
+      { className: "bt-us-top" },
+      (0, import_react22.createElement)(Tabs, { label: t("Time range"), value: rangeId, onChange: chooseRange, options: rangeOptions, boxRef: tabs }),
+      view.scanning ? (0, import_react22.createElement)("span", { className: "bt-us-note", role: "status" }, t("Still reading older chats; totals may grow.")) : null,
+      picking ? (0, import_react22.createElement)(SpanPicker, { span, today, oldest, active: activeDays, near: tabs, onPick: pickSpan, onClose: () => setPicking(false) }) : null
+    ),
+    error ? (0, import_react22.createElement)("div", { className: "bt-error", role: "alert", style: { padding: 0 } }, error) : null,
+    body
+  );
+}
+var USAGE_CSS = `
+.bt-us{--bt-us-ease:cubic-bezier(.22,1,.36,1);--bt-us-rest:color-mix(in srgb,var(--bt-ink) 30%,var(--bt-card));--bt-us-more:color-mix(in srgb,var(--bt-ink) 16%,var(--bt-card));display:flex;flex-direction:column;gap:14px;padding-bottom:4px}
+.bt-us-top{position:relative;z-index:4;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.bt-us-tabs{position:relative;display:inline-flex;flex:none;padding:3px;border-radius:999px;background:var(--bt-hover)}
+.bt-us-tabs button{position:relative;z-index:1;display:inline-flex;align-items:center;gap:5px;height:26px;padding:0 12px;border:0;border-radius:999px;background:none;color:var(--bt-ink-2);font:inherit;font-size:12px;line-height:26px;white-space:nowrap;cursor:pointer;transition:color .15s ease}
+.bt-us-tabs button svg{flex:none;width:13px;height:13px;margin-left:-2px}
+.bt-us-pick{position:absolute;top:calc(100% + 8px);left:0;max-width:100%;box-sizing:border-box;padding:14px 16px 12px;border-radius:18px;border:.5px solid var(--bt-line-2);background:var(--bt-card);box-shadow:0 22px 50px -18px rgba(0,0,0,.32),0 2px 8px rgba(0,0,0,.05);transform-origin:24px 0;animation:bt-us-drop .2s var(--bt-us-ease)}
+.bt-us-pick-quick{display:flex;gap:6px;margin-bottom:12px}
+.bt-us-pick-quick button{height:26px;padding:0 11px;border:0;border-radius:999px;background:var(--bt-hover);color:var(--bt-ink-2);font:inherit;font-size:12px;cursor:pointer;transition:background-color .12s ease,color .12s ease}
+.bt-us-pick-quick button:hover{background:var(--bt-active);color:var(--bt-ink)}
+.bt-us-pick-quick button[aria-pressed=true]{background:color-mix(in srgb,var(--bt-accent) 14%,transparent);color:var(--bt-accent)}
+.bt-us-pick-months{display:flex;flex-wrap:wrap;gap:8px 28px}
+.bt-us-month{width:252px;animation:bt-us-fade .22s ease}
+.bt-us-month-head{position:relative;display:flex;align-items:center;justify-content:center;height:28px;margin-bottom:4px;font-size:13px;line-height:18px;font-weight:600}
+.bt-us-month-nav{position:absolute;top:0;width:28px;height:28px;padding:0;border:0;border-radius:9px;background:none;color:var(--bt-ink-2);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background-color .12s ease}
+.bt-us-month-nav[data-side=left]{left:0}
+.bt-us-month-nav[data-side=right]{right:0}
+.bt-us-month-nav:hover:not(:disabled){background:var(--bt-hover);color:var(--bt-ink)}
+.bt-us-month-nav:disabled{opacity:.3;cursor:default}
+.bt-us-weekdays,.bt-us-days{display:grid;grid-template-columns:repeat(7,36px)}
+.bt-us-weekdays span{height:24px;font-size:11px;line-height:24px;text-align:center;color:var(--bt-ink-3)}
+.bt-us-day{position:relative;height:36px;padding:0;border:0;background:none;color:var(--bt-ink);font:inherit;font-size:12px;font-variant-numeric:tabular-nums;cursor:pointer}
+.bt-us-day::before{content:'';position:absolute;top:4px;bottom:4px;left:0;right:0;transition:background-color .12s ease}
+.bt-us-day>b{position:relative;z-index:1;display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;font-weight:400;transition:background-color .12s ease,color .12s ease}
+.bt-us-day:hover:not(:disabled)>b{background:var(--bt-hover)}
+.bt-us-day[data-today]>b{color:var(--bt-accent);font-weight:600}
+.bt-us-day[data-has]::after{content:'';position:absolute;z-index:2;left:50%;bottom:6px;width:3px;height:3px;margin-left:-1.5px;border-radius:50%;background:var(--bt-ink-3)}
+.bt-us-day[data-in]::before{background:color-mix(in srgb,var(--bt-accent) 13%,transparent)}
+.bt-us-day[data-in][data-l]::before{left:4px;border-radius:14px 0 0 14px}
+.bt-us-day[data-in][data-r]::before{right:4px;border-radius:0 14px 14px 0}
+.bt-us-day[data-in][data-l][data-r]::before{border-radius:14px}
+.bt-us-day[data-in][data-start]::before{left:50%;border-radius:0}
+.bt-us-day[data-in][data-end]::before{right:50%;border-radius:0}
+.bt-us-day[data-in][data-start][data-r]::before,.bt-us-day[data-in][data-end][data-l]::before,.bt-us-day[data-in][data-start][data-end]::before{display:none}
+.bt-us-day[data-start]>b,.bt-us-day[data-end]>b,.bt-us-day[data-start]:hover>b,.bt-us-day[data-end]:hover>b{background:var(--bt-accent);color:var(--bt-accent-ink,#fff);font-weight:600}
+.bt-us-day[data-start][data-has]::after,.bt-us-day[data-end][data-has]::after{background:color-mix(in srgb,var(--bt-accent-ink,#fff) 75%,transparent)}
+.bt-us-day:disabled{color:var(--bt-ink-3);opacity:.45;cursor:default}
+.bt-us-pick-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:8px;padding-top:10px;border-top:1px solid var(--bt-line);font-size:12px;line-height:16px;color:var(--bt-ink-3);white-space:nowrap}
+.bt-us-pick-foot b{color:var(--bt-ink);font-weight:500}
+.bt-us-tabs button:hover,.bt-us-tabs button[aria-pressed=true]{color:var(--bt-ink)}
+.bt-us-tabs:not([data-glide]) button[aria-pressed=true]{background:var(--bt-card)}
+.bt-us-tabs>.bt-thumb{top:3px;bottom:3px;border-radius:999px;background:var(--bt-card);box-shadow:0 1px 3px rgba(0,0,0,.08),0 0 0 .5px var(--bt-line-2)}
+.bt-us-note{display:inline-flex;align-items:center;gap:8px;font-size:12px;line-height:16px;color:var(--bt-ink-3)}
+.bt-us-note::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--bt-accent);animation:bt-us-pulse 1.4s ease-in-out infinite}
+.bt-us-stats{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;border-radius:16px;border:1px solid var(--bt-line);background:var(--bt-card);animation:bt-us-in .45s var(--bt-us-ease) backwards}
+.bt-us-stat{display:flex;flex-direction:column;justify-content:flex-end;gap:6px;min-width:0;padding:16px 18px}
+.bt-us-stat+.bt-us-stat{border-left:1px solid var(--bt-line)}
+.bt-us-stat-label{overflow:hidden;font-size:12px;line-height:16px;color:var(--bt-ink-3);white-space:nowrap;text-overflow:ellipsis}
+.bt-us-stat-value{display:flex;align-items:baseline;gap:6px;min-width:0;font-size:22px;line-height:28px;font-weight:600;letter-spacing:-.01em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.bt-us-stat-main .bt-us-stat-value{font-size:34px;line-height:40px;letter-spacing:-.025em}
+.bt-us-stat-value small{font-size:13px;font-weight:400;letter-spacing:0;color:var(--bt-ink-3)}
+.bt-us-delta{align-self:center;margin-left:2px;padding:0 8px;border-radius:999px;background:var(--bt-tag-bg);color:var(--bt-ink-2);font-size:11px;line-height:20px;font-weight:500;letter-spacing:0}
+.bt-us-card{display:flex;flex-direction:column;gap:12px;min-width:0;padding:14px 18px 16px;border-radius:16px;border:1px solid var(--bt-line);background:var(--bt-card);animation:bt-us-in .45s var(--bt-us-ease) backwards;animation-delay:calc(var(--i,0) * 45ms)}
+.bt-us-card-head{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:32px}
+.bt-us-card-head h3{display:flex;align-items:baseline;gap:8px;min-width:0;margin:0;font-size:13px;line-height:18px;font-weight:600}
+.bt-us-card-head h3 span,.bt-us-head-note{font-size:12px;font-weight:400;color:var(--bt-ink-3)}
+.bt-us-chart-body{display:flex;flex-direction:column;gap:8px;padding-top:6px}
+.bt-us-plot{position:relative;height:200px;margin-left:40px}
+.bt-us-grid{position:absolute;left:0;right:0;border-top:1px dashed var(--bt-line-2);pointer-events:none}
+.bt-us-grid.bt-us-base{border-top:1px solid var(--bt-line-2)}
+.bt-us-grid span{position:absolute;right:calc(100% + 8px);top:-8px;font-size:10px;line-height:16px;color:var(--bt-ink-3);font-variant-numeric:tabular-nums;white-space:nowrap}
+.bt-us-cols{position:absolute;inset:0;display:flex;align-items:flex-end}
+.bt-us-col{position:relative;flex:1 1 0;min-width:0;height:100%;display:flex;align-items:flex-end;justify-content:center}
+.bt-us-stack{display:flex;flex-direction:column-reverse;gap:2px;width:56%;min-width:4px;max-width:28px;transform-origin:50% 100%;animation:bt-us-grow .6s var(--bt-us-ease) backwards;animation-delay:calc(var(--i,0) * 14ms);transition:height .45s var(--bt-us-ease),opacity .18s ease}
+.bt-us-stack>i{flex:1 1 0;min-height:2px;border-radius:5px;transition:flex-grow .45s var(--bt-us-ease)}
+.bt-us-plot[data-hover] .bt-us-col:not([data-on]) .bt-us-stack{opacity:.3}
+.bt-us-stub{width:4px;height:4px;margin-bottom:-2px;border-radius:50%;background:var(--bt-line-2)}
+.bt-us-ticks{display:flex;margin-left:40px;font-size:11px;line-height:14px;color:var(--bt-ink-3);font-variant-numeric:tabular-nums}
+.bt-us-ticks span{flex:1 1 0;min-width:0;text-align:center;white-space:nowrap}
+.bt-us-ticks span[data-now]{color:var(--bt-ink);font-weight:500}
+.bt-us-tip{position:absolute;top:6px;z-index:3;min-width:160px;max-width:240px;padding:10px 12px;border-radius:12px;border:.5px solid var(--bt-line-2);background:color-mix(in srgb,var(--bt-card) 90%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 14px 34px -12px rgba(0,0,0,.28);font-size:12px;line-height:16px;pointer-events:none;animation:bt-us-pop .16s var(--bt-us-ease)}
+.bt-us-tip-title{color:var(--bt-ink-3)}
+.bt-us-tip-total{margin:2px 0 8px;font-size:15px;line-height:20px;font-weight:600;font-variant-numeric:tabular-nums}
+.bt-us-tip-total:last-child{margin-bottom:0}
+.bt-us-tip-row{display:flex;align-items:center;gap:8px;color:var(--bt-ink-2)}
+.bt-us-tip-row+.bt-us-tip-row{margin-top:5px}
+.bt-us-tip-row span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt-us-tip-row b{font-weight:500;color:var(--bt-ink);font-variant-numeric:tabular-nums}
+.bt-us-legend{display:flex;flex-wrap:wrap;gap:6px}
+.bt-us-key{display:inline-flex;align-items:center;gap:6px;min-width:0;height:24px;padding:0 10px 0 8px;border:0;border-radius:999px;background:var(--bt-hover);color:var(--bt-ink-2);font:inherit;font-size:12px;line-height:24px}
+button.bt-us-key{cursor:pointer;transition:background-color .12s ease,color .12s ease}
+button.bt-us-key:hover{background:var(--bt-active);color:var(--bt-ink)}
+.bt-us-dot{flex:none;width:8px;height:8px;border-radius:50%}
+.bt-us-pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.bt-us-rows{display:flex;flex-direction:column;margin:0 -8px}
+.bt-us-row{display:flex;align-items:center;gap:12px;width:100%;box-sizing:border-box;padding:8px;border:0;border-radius:12px;background:none;color:var(--bt-ink);font:inherit;text-align:left;animation:bt-us-in .4s var(--bt-us-ease) backwards;animation-delay:calc(var(--i,0) * 35ms + 90ms)}
+button.bt-us-row{cursor:pointer;transition:background-color .12s ease}
+button.bt-us-row:hover{background:var(--bt-hover)}
+.bt-us-row-glyph{flex:none;display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px}
+.bt-us-row-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:7px}
+.bt-us-row-line{display:flex;align-items:baseline;gap:8px;min-width:0;font-size:13px;line-height:18px}
+.bt-us-row-name{flex:0 1 auto;min-width:0;overflow:hidden;font-weight:500;text-overflow:ellipsis;white-space:nowrap}
+.bt-us-row-sub{flex:0 1 auto;min-width:0;overflow:hidden;font-size:12px;color:var(--bt-ink-3);text-overflow:ellipsis;white-space:nowrap}
+.bt-us-track{display:block;height:4px;border-radius:999px;background:var(--bt-hover);overflow:hidden}
+.bt-us-track>span{display:block;height:100%;border-radius:inherit;transform-origin:0 50%;animation:bt-us-fill .7s var(--bt-us-ease) backwards;animation-delay:calc(var(--i,0) * 35ms + 140ms);transition:width .45s var(--bt-us-ease)}
+.bt-us-row-num{flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:1px;min-width:52px;font-variant-numeric:tabular-nums}
+.bt-us-row-num b{font-size:13px;line-height:18px;font-weight:600}
+.bt-us-row-num small{font-size:11px;line-height:14px;color:var(--bt-ink-3)}
+.bt-us-split{height:1px;margin:6px 8px;background:var(--bt-line)}
+.bt-us-none{padding:18px 8px;font-size:12px;color:var(--bt-ink-3);text-align:center}
+.bt-us-glyph{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:var(--bt-hover);color:var(--bt-ink-2)}
+.bt-us-model{display:inline-flex;align-items:center;justify-content:center;border-radius:30%;font-weight:600;line-height:1}
+.bt-us-profile{display:flex;align-items:center;gap:20px;padding:6px 4px 2px;animation:bt-us-in .45s var(--bt-us-ease) backwards}
+.bt-us-ring{position:relative;flex:none;width:96px;height:96px}
+.bt-us-ring>svg{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
+.bt-us-ring>svg circle{fill:none;stroke-width:4}
+.bt-us-ring-track{stroke:var(--bt-line)}
+.bt-us-ring-arc{stroke-linecap:round;transition:stroke-dasharray .6s var(--bt-us-ease);animation:bt-us-ring 1s var(--bt-us-ease) .1s backwards}
+.bt-us-ring-face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.bt-us-profile-copy{display:flex;flex-direction:column;gap:3px;min-width:0}
+.bt-us-profile-copy h3{margin:0;overflow:hidden;font-size:22px;line-height:28px;font-weight:600;letter-spacing:-.01em;text-overflow:ellipsis;white-space:nowrap}
+.bt-us-profile-sub{font-size:13px;line-height:18px;color:var(--bt-ink-2)}
+.bt-us-profile-share{font-size:12px;line-height:16px;color:var(--bt-ink-3)}
+.bt-us-heat{gap:8px}
+.bt-us-heat-months,.bt-us-heat-grid{display:grid;grid-template-columns:repeat(${HEAT_WEEKS},1fr);gap:3px}
+.bt-us-heat-months{height:14px;font-size:10px;line-height:14px;color:var(--bt-ink-3)}
+.bt-us-heat-months span{white-space:nowrap}
+.bt-us-heat-grid{grid-template-rows:repeat(7,auto);grid-auto-flow:column}
+.bt-us-cell{position:relative;aspect-ratio:1;border-radius:3px;background:var(--bt-hover);overflow:hidden}
+.bt-us-heat-grid .bt-us-cell{animation:bt-us-cell .5s var(--bt-us-ease) backwards;animation-delay:calc(var(--w,0) * 7ms + 120ms)}
+.bt-us-cell>i{position:absolute;inset:0}
+.bt-us-cell[data-today]{outline:1.5px solid var(--bt-ink-3);outline-offset:1px}
+.bt-us-cell[data-future]{visibility:hidden}
+.bt-us-heat-scale{display:flex;align-items:center;justify-content:flex-end;gap:4px;font-size:11px;line-height:14px;color:var(--bt-ink-3)}
+.bt-us-heat-scale .bt-us-cell{width:10px}
+.bt-us-skel{border-radius:16px;background:linear-gradient(90deg,var(--bt-hover) 0%,var(--bt-active) 50%,var(--bt-hover) 100%);background-size:200% 100%;animation:bt-us-shine 1.4s ease-in-out infinite}
+.bt-us-empty{display:flex;flex-direction:column;align-items:center;gap:8px;padding:72px 16px;text-align:center;font-size:13px;line-height:18px;color:var(--bt-ink-3)}
+.bt-us-empty b{margin-top:6px;font-size:15px;font-weight:600;color:var(--bt-ink)}
+@keyframes bt-us-in{from{opacity:0;transform:translateY(6px)}}
+@keyframes bt-us-grow{from{transform:scaleY(0)}}
+@keyframes bt-us-fill{from{transform:scaleX(0)}}
+@keyframes bt-us-pop{from{opacity:0;transform:translateY(3px) scale(.97)}}
+@keyframes bt-us-drop{from{opacity:0;transform:translateY(-4px) scale(.96)}}
+@keyframes bt-us-fade{from{opacity:0}}
+@keyframes bt-us-cell{from{opacity:0;transform:scale(.5)}}
+@keyframes bt-us-ring{from{stroke-dasharray:0 ${Math.ceil(RING)}}}
+@keyframes bt-us-pulse{50%{opacity:.25}}
+@keyframes bt-us-shine{from{background-position:200% 0}to{background-position:-200% 0}}
+@media (prefers-reduced-motion:reduce){.bt-us *,.bt-us *::before{animation:none!important;transition:none!important}}
+`;
+
+// src/client/connectors.js
+var import_react23 = require("react");
+var TOKEN_URL = "https://github.com/settings/personal-access-tokens/new";
+var GitHubMark = () => (0, import_react23.createElement)(
+  "svg",
+  { width: 20, height: 20, viewBox: "0 0 16 16", fill: "currentColor", "aria-hidden": true },
+  (0, import_react23.createElement)("path", { d: "M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" })
+);
+var MARKS = { github: GitHubMark };
+var ABOUT = { github: () => t("Repositories, issues, and pull requests") };
+function statusText(connector) {
+  if (connector.state === "connecting") return t("Connecting…");
+  if (connector.state === "error") return t("Could not connect: {error}", { error: connector.error ?? "" });
+  if (connector.state === "ready") return connector.account ? t("Connected as {account}", { account: connector.account }) : t("Connected");
+  return ABOUT[connector.id]?.() ?? "";
+}
+function ConnectorRow({ connector, actions }) {
+  const [form, setForm] = (0, import_react23.useState)(false);
+  const [token, setToken] = (0, import_react23.useState)("");
+  const [busy, setBusy] = (0, import_react23.useState)(false);
+  const [error, setError] = (0, import_react23.useState)(null);
+  const run = (task, after) => {
+    setBusy(true);
+    setError(null);
+    return task.then(() => {
+      after?.();
+    }, (failure) => setError(failure?.message ?? String(failure))).finally(() => setBusy(false));
+  };
+  const connect = () => {
+    if (busy || token.trim() === "") return;
+    void run(actions.connectorConnect(connector.id, token), () => {
+      setToken("");
+      setForm(false);
+    });
+  };
+  const on = connector.state !== "off";
+  const Mark = MARKS[connector.id];
+  const row = (0, import_react23.useRef)(null);
+  useMorph(row, `${form}:${error !== null}:${connector.state}`);
+  return (0, import_react23.createElement)(
+    "div",
+    { ref: row, className: "bt-connector", "data-state": connector.state },
+    (0, import_react23.createElement)(
+      "div",
+      { className: "bt-connector-head" },
+      (0, import_react23.createElement)("span", { className: "bt-connector-mark" }, Mark ? (0, import_react23.createElement)(Mark) : null),
+      (0, import_react23.createElement)(
+        "span",
+        { className: "bt-connector-text" },
+        (0, import_react23.createElement)("span", { className: "bt-connector-name" }, connector.name),
+        (0, import_react23.createElement)("span", { className: "bt-connector-status" }, statusText(connector))
+      ),
+      (0, import_react23.createElement)(
+        "span",
+        { className: "bt-connector-actions" },
+        connector.state === "error" ? (0, import_react23.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", disabled: busy, onClick: () => void run(actions.connectorRetry(connector.id)) }, t("Try again")) : null,
+        on ? (0, import_react23.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", disabled: busy, onClick: () => void run(actions.connectorDisconnect(connector.id)) }, t("Disconnect")) : form ? null : (0, import_react23.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: () => setForm(true) }, t("Connect"))
+      )
+    ),
+    !on && form ? (0, import_react23.createElement)(
+      "div",
+      { className: "bt-connector-form" },
+      (0, import_react23.createElement)("label", { className: "bt-q-field bt-secret-field" }, (0, import_react23.createElement)(MaskedInput, { value: token, onChange: setToken, onEnter: connect, label: t("GitHub token"), autoFocus: true })),
+      (0, import_react23.createElement)(
+        "div",
+        { className: "bt-connector-form-row" },
+        (0, import_react23.createElement)("a", { className: "bt-connector-link", href: TOKEN_URL, target: "_blank", rel: "noopener noreferrer" }, t("Create a token on GitHub")),
+        (0, import_react23.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", disabled: busy, onClick: () => {
+          setForm(false);
+          setToken("");
+          setError(null);
+        } }, t("Cancel")),
+        (0, import_react23.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", disabled: busy || token.trim() === "", onClick: connect }, busy ? t("Connecting…") : t("Connect"))
+      )
+    ) : null,
+    error ? (0, import_react23.createElement)("div", { className: "bt-connector-error", role: "alert" }, error) : null
+  );
+}
+function ConnectorsPage({ roster, actions }) {
+  const list = roster?.connectors ?? [];
+  return (0, import_react23.createElement)(
+    "section",
+    { className: "bt-set-section" },
+    (0, import_react23.createElement)("div", { className: "bt-set-card bt-connectors-card" }, list.length === 0 ? (0, import_react23.createElement)("div", { className: "bt-set-row" }, (0, import_react23.createElement)("span", { className: "bt-set-hint" }, t("No connectors"))) : list.map((connector) => (0, import_react23.createElement)(ConnectorRow, { key: connector.id, connector, actions })))
+  );
+}
+
+// src/client/feedback.js
+var import_react24 = require("react");
+var FeedbackIcon = () => (0, import_react24.createElement)(
+  "svg",
+  { width: 15, height: 15, viewBox: "0 0 20 20", fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true },
+  (0, import_react24.createElement)("path", { d: "M4 4.5h12a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H9l-3.5 3v-3H4a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1z" }),
+  (0, import_react24.createElement)("path", { d: "M10 7v2.6M10 11.4h.01" })
+);
+function download(name, text) {
+  const url = URL.createObjectURL(new Blob([text], { type: "text/plain;charset=utf-8" }));
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = name;
+  anchor.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1e3);
+}
+var copy = (text) => navigator.clipboard === void 0 ? Promise.resolve(false) : navigator.clipboard.writeText(text).then(() => true, () => false);
+function whenText(time) {
+  const date = new Date(time);
+  const today = (/* @__PURE__ */ new Date()).toDateString() === date.toDateString();
+  const clock3 = date.toLocaleTimeString(dateLocale(), { hour: "2-digit", minute: "2-digit" });
+  return today ? clock3 : `${date.toLocaleDateString(dateLocale(), { month: "short", day: "numeric" })} ${clock3}`;
+}
+function entrySummary(entry) {
+  if (entry.source === "turn") return failureLabel(entry.code, entry.text);
+  return entry.text;
+}
+var SOURCES = { turn: "Model call", host: "DS Bot", api: "DS Bot", browser: "This window" };
+function FeedbackPage({ actions, run, Section, Row: Row3 }) {
+  const [what, setWhat] = (0, import_react24.useState)("");
+  const [report, setReport] = (0, import_react24.useState)(null);
+  const [preview, setPreview] = (0, import_react24.useState)(false);
+  const [note, setNote] = (0, import_react24.useState)("");
+  const fetchReport = () => actions.diagnostics({ client: clientFacts(), clientErrors: clientErrors() }).then((next) => {
+    setReport(next);
+    return next;
+  });
+  const load = () => fetchReport().then(() => void 0);
+  (0, import_react24.useEffect)(() => {
+    void run(load());
+  }, []);
+  const copyReport = () => run(fetchReport().then(async (next) => {
+    const copied = await copy(next.markdown);
+    setNote(copied ? t("Copied the diagnostics.") : t("Could not copy. Select the text below and copy it."));
+    if (!copied) setPreview(true);
+  }));
+  const [issueLink, setIssueLink] = (0, import_react24.useState)(null);
+  const openIssue = () => {
+    const win = window.open("", "_blank");
+    if (win !== null) win.opener = null;
+    run(fetchReport().then(async (next) => {
+      const copied = await copy(next.markdown);
+      const { url, inline } = issueUrl(next.issuesUrl, { what, diagnostics: next.markdown });
+      if (win !== null) {
+        win.location.href = url;
+        setIssueLink(null);
+        setNote(inline ? t("Opened a new GitHub issue with the diagnostics filled in. Check it before you submit.") : copied ? t("Opened a new GitHub issue. The diagnostics are long, so they are on the clipboard: paste them into the issue.") : t("Opened a new GitHub issue. Copy the diagnostics below into it."));
+      } else {
+        setIssueLink(url);
+        setNote(t("The browser blocked the new window."));
+      }
+      if (!inline && !copied) setPreview(true);
+    }));
+  };
+  const downloadLog = () => run(actions.diagnosticsLog().then((text) => {
+    download("ds-bot-diagnostics.log", text || "No entries.\n");
+    setNote(t("Downloaded the log. Keys, tokens, and your home folder are hidden in it."));
+  }));
+  const clearLog = () => run(actions.diagnosticsClear().then(clearClientErrors).then(load).then(() => setNote(t("Cleared the error log."))));
+  const browserErrors = report ? clientErrors().map((entry) => ({ ...entry, source: "browser" })) : [];
+  const entries2 = [...report?.entries ?? [], ...browserErrors].sort((a, b) => new Date(b.time) - new Date(a.time));
+  const total = (report?.total ?? 0) + browserErrors.length;
+  const shown = entries2.slice(0, 8);
+  return [
+    (0, import_react24.createElement)(
+      Section,
+      { key: "report", title: t("Report a problem") },
+      (0, import_react24.createElement)(
+        "div",
+        { className: "bt-set-row bt-set-paste bt-fb-what" },
+        (0, import_react24.createElement)(
+          "label",
+          { className: "bt-set-copy", htmlFor: "bt-fb-what" },
+          (0, import_react24.createElement)("span", null, t("What happened?")),
+          (0, import_react24.createElement)("span", { className: "bt-set-hint" }, t("What you did, what you expected, and what happened instead. It goes into the issue."))
+        ),
+        (0, import_react24.createElement)("textarea", { id: "bt-fb-what", className: "bt-input bt-input-area", value: what, maxLength: WHAT_MAX, placeholder: t("For example: I asked Writer in the group chat and it showed an error."), onChange: (event) => setWhat(event.target.value) })
+      ),
+      (0, import_react24.createElement)(
+        Row3,
+        { label: t("Diagnostics"), hint: t("Versions, system, models, and the latest errors. Saved keys, tokens, and your home folder are hidden.") },
+        (0, import_react24.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: () => setPreview(!preview), "aria-expanded": preview }, preview ? t("Hide") : t("Show")),
+        (0, import_react24.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: copyReport }, t("Copy"))
+      ),
+      preview ? (0, import_react24.createElement)("div", { className: "bt-set-row bt-fb-preview" }, (0, import_react24.createElement)("pre", { tabIndex: 0, "aria-label": t("Diagnostics") }, report?.markdown || t("Loading…"))) : null,
+      (0, import_react24.createElement)(
+        Row3,
+        { label: t("GitHub issue"), hint: t("Opens a new issue in the DS Bot repository with all of this filled in. Nothing is sent until you submit it there.") },
+        (0, import_react24.createElement)("button", { type: "button", className: "bt-fb-primary", onClick: openIssue }, t("Report on GitHub"))
+      )
+    ),
+    note ? (0, import_react24.createElement)(
+      "div",
+      { key: "note", className: "bt-note bt-fb-note", role: "status" },
+      note,
+      issueLink ? [" ", (0, import_react24.createElement)("a", { key: "link", href: issueLink, target: "_blank", rel: "noopener noreferrer" }, t("Open the issue"))] : null
+    ) : null,
+    (0, import_react24.createElement)(
+      Section,
+      { key: "errors", title: report ? t("Recent errors · {count}", { count: total }) : t("Recent errors") },
+      shown.length === 0 ? (0, import_react24.createElement)(Row3, { label: t("No errors recorded."), hint: t("Failed model calls and DS Bot problems show here, newest first.") }) : shown.map((entry, index) => (0, import_react24.createElement)(
+        "div",
+        { key: `${entry.time}-${index}`, className: "bt-set-row bt-fb-entry", title: entry.text },
+        (0, import_react24.createElement)("span", { className: "bt-fb-dot", "data-level": entry.level, "aria-hidden": true }),
+        (0, import_react24.createElement)(
+          "div",
+          { className: "bt-set-copy" },
+          (0, import_react24.createElement)("span", { className: "bt-fb-text" }, entrySummary(entry)),
+          (0, import_react24.createElement)("span", { className: "bt-set-hint" }, [whenText(entry.time), entry.bot, entry.where, t(SOURCES[entry.source] ?? "DS Bot")].filter(Boolean).join(" · "))
+        ),
+        entry.code ? (0, import_react24.createElement)("span", { className: "bt-tag bt-fb-code" }, entry.status ? `${entry.code} ${entry.status}` : entry.code) : null
+      )),
+      (0, import_react24.createElement)(
+        Row3,
+        { label: t("Error log"), hint: t("Kept on this computer across restarts, up to about 1 MB.") },
+        (0, import_react24.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: downloadLog }, t("Download")),
+        (0, import_react24.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: clearLog, disabled: !report || total === 0 }, t("Clear"))
+      )
+    )
+  ];
+}
+var TOAST_MS = 6e3;
+function ErrorToast({ useUi, actions }) {
+  const toast = useUi((state) => state.toast);
+  const [leaving, setLeaving] = (0, import_react24.useState)(false);
+  (0, import_react24.useEffect)(() => {
+    if (!toast) return void 0;
+    setLeaving(false);
+    const fade = setTimeout(() => setLeaving(true), TOAST_MS);
+    const gone = setTimeout(() => actions.dismissToast(toast.token), TOAST_MS + 200);
+    return () => {
+      clearTimeout(fade);
+      clearTimeout(gone);
+    };
+  }, [toast?.token]);
+  if (!toast) return null;
+  return (0, import_react24.createElement)(
+    "div",
+    { className: "bt-toast", role: "alert", "data-leaving": leaving || void 0 },
+    (0, import_react24.createElement)("span", { className: "bt-toast-text" }, toast.text),
+    (0, import_react24.createElement)("button", { type: "button", className: "bt-toast-link", onClick: () => {
+      actions.dismissToast(toast.token);
+      actions.openSettings("feedback");
+    } }, t("Details")),
+    (0, import_react24.createElement)("button", { type: "button", className: "bt-icon-btn bt-toast-close", "aria-label": t("Dismiss"), onClick: () => actions.dismissToast(toast.token) }, (0, import_react24.createElement)(CloseIcon))
+  );
+}
+var FEEDBACK_CSS = `
+.bt-fb-what{cursor:default}
+.bt-fb-what:hover,.bt-fb-entry:hover,.bt-fb-preview:hover{background:none}
+.bt-fb-what .bt-input-area{min-height:80px}
+.bt-fb-preview{cursor:default;padding:0}
+.bt-fb-preview pre{margin:0;width:100%;max-height:240px;overflow:auto;padding:10px 12px;box-sizing:border-box;font:11px/16px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--bt-ink-2);white-space:pre-wrap;word-break:break-word;outline:none}
+.bt-fb-primary{height:28px;border-radius:999px;border:0;background:var(--bt-accent);color:var(--bt-accent-ink,#fff);padding:0 14px;font-size:12px;cursor:pointer;transition:filter .12s ease}
+.bt-fb-primary:hover{filter:brightness(1.08)}
+.bt-fb-primary:active{filter:brightness(.94)}
+.bt-fb-note{margin:-8px 4px 0}
+.bt-fb-entry{cursor:default;align-items:flex-start}
+.bt-fb-dot{flex:none;width:6px;height:6px;border-radius:50%;margin-top:6px;background:#e02135}
+.bt-fb-dot[data-level=warn]{background:#e3a008}
+.bt-fb-text{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-word}
+.bt-fb-code{flex:none;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px}
+.bt-event-error{color:#e02135}
+.bt-toast{position:fixed;left:50%;bottom:28px;z-index:1000;display:flex;align-items:center;gap:8px;max-width:min(560px,calc(100vw - 32px));padding:8px 8px 8px 14px;border-radius:12px;background:var(--bt-card,#fff);color:var(--bt-ink,#141414);border:1px solid var(--bt-line-2,rgba(0,0,0,.15));box-shadow:0 8px 28px rgba(0,0,0,.14);font-size:13px;line-height:18px;transform:translateX(-50%);animation:bt-toast-in ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing},bt-veil-in .2s ease-out}
+.bt-toast[data-leaving]{opacity:0;transform:translate(-50%,6px) scale(.98);filter:blur(3px);transition:opacity .18s ease-in,transform .18s ease-in,filter .18s ease-in}
+.bt-toast-text{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}
+.bt-toast-text::before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:#e02135;margin:0 8px 1px 0}
+.bt-toast-link{flex:none;border:0;background:none;color:var(--bt-ink-2);font:inherit;font-size:12px;cursor:pointer;padding:4px 6px;border-radius:6px}
+.bt-toast-link:hover{background:var(--bt-hover);color:var(--bt-ink)}
+.bt-toast-close{flex:none}
+@keyframes bt-toast-in{from{transform:translate(-50%,16px) scale(.94)}}
+@media (prefers-reduced-motion:reduce){.bt-toast{animation:none}.bt-toast[data-leaving]{transition:none}}
+`;
+
+// src/client/settings.js
+var import_react25 = require("react");
+var capitalize2 = (word) => word[0].toUpperCase() + word.slice(1);
+var SETTINGS_PAGES = [["general", "General"], ["bots", "Bots"], ["groups", "Group chats"], ["connectors", "Connectors"], ["schedules", "Scheduled tasks"], ["usage", "Usage"], ["secrets", "Secrets"], ["feedback", "Feedback"]];
+var PAGE_ICONS = { ...SETTINGS_ICONS, connectors: ConnectorIcon, schedules: ClockIcon, secrets: KeyIcon, feedback: FeedbackIcon };
+function SetSection({ title, children }) {
+  return (0, import_react25.createElement)("section", { className: "bt-set-section" }, (0, import_react25.createElement)("h3", null, title), (0, import_react25.createElement)("div", { className: "bt-set-card" }, children));
+}
+function SetRow({ label, hint, children }) {
+  return (0, import_react25.createElement)(
+    "div",
+    { className: "bt-set-row" },
+    (0, import_react25.createElement)("div", { className: "bt-set-copy" }, (0, import_react25.createElement)("span", null, label), hint ? (0, import_react25.createElement)("span", { className: "bt-set-hint" }, hint) : null),
+    children ? (0, import_react25.createElement)("div", { className: "bt-set-control" }, children) : null
+  );
+}
+function GeneralPage({ roster, actions, run }) {
+  const prefs = roster.prefs ?? {};
+  const themes = allThemes();
+  const current = themes[prefs.theme] ? prefs.theme : "deepseek";
+  const [custom, setCustom] = (0, import_react25.useState)(prefs.accent ?? "#4d6bfe");
+  const timer = (0, import_react25.useRef)(0);
+  (0, import_react25.useEffect)(() => () => clearTimeout(timer.current), []);
+  const pickCustom = (value) => {
+    setCustom(value);
+    clearTimeout(timer.current);
+    timer.current = setTimeout(() => run(actions.setPrefs({ accent: value })), 350);
+  };
+  return [
+    (0, import_react25.createElement)(
+      SetSection,
+      { key: "look", title: t("Appearance") },
+      (0, import_react25.createElement)(
+        SetRow,
+        { label: t("Theme"), hint: t("Colors for the whole team, on every device.") },
+        (0, import_react25.createElement)(
+          "select",
+          { className: "bt-select", "aria-label": t("Theme"), value: current, onChange: (event) => run(actions.setPrefs({ theme: event.target.value })) },
+          Object.entries(themes).map(([id, theme]) => (0, import_react25.createElement)("option", { key: id, value: id }, t(theme.label)))
+        )
+      ),
+      (0, import_react25.createElement)(
+        SetRow,
+        { label: t("Accent"), hint: t("Unread marks, badges, and the brand mark.") },
+        (0, import_react25.createElement)(
+          "div",
+          { className: "bt-swatches" },
+          (0, import_react25.createElement)("button", { type: "button", className: "bt-swatch bt-swatch-default", title: t("Theme accent"), "aria-label": t("Theme accent"), "aria-pressed": !prefs.accent, onClick: () => run(actions.setPrefs({ accent: null })) }),
+          ACCENT_INKS.map((ink) => (0, import_react25.createElement)("button", {
+            key: ink,
+            type: "button",
+            className: "bt-swatch",
+            title: t(capitalize2(ink)),
+            "aria-label": t(capitalize2(ink)),
+            "aria-pressed": prefs.accent === INKS[ink][0],
+            style: { background: INKS[ink][0] },
+            onClick: () => run(actions.setPrefs({ accent: INKS[ink][0] }))
+          })),
+          (0, import_react25.createElement)(
+            "label",
+            { className: "bt-swatch bt-swatch-custom", title: t("Custom accent"), "data-on": Boolean(prefs.accent) && !ACCENT_INKS.some((ink) => INKS[ink][0] === prefs.accent) },
+            (0, import_react25.createElement)("input", { type: "color", value: custom, "aria-label": t("Custom accent"), onChange: (event) => pickCustom(event.target.value) })
+          )
+        )
+      )
+    ),
+    (0, import_react25.createElement)(
+      SetSection,
+      { key: "mode", title: t("Mode") },
+      (0, import_react25.createElement)(
+        SetRow,
+        { label: t("Classic Agent mode") },
+        (0, import_react25.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: () => actions.setSurface("agent") }, t("Switch"))
+      )
+    )
+  ];
+}
+function MainBotsSection({ roster, actions, run }) {
+  const mains = (roster.mainBotIds ?? []).map((id) => roster.byId[id]).filter(Boolean);
+  const [first, ...others] = mains;
+  const candidates = roster.bots.filter((bot) => !isMainOf(roster, bot.id));
+  return (0, import_react25.createElement)(
+    SetSection,
+    { title: t("Main Bot") },
+    (0, import_react25.createElement)(
+      SetRow,
+      {
+        label: t("Main Bot"),
+        hint: first ? t("First in the sidebar. Pick another Bot to hand it the role; {name} then stops being a Main Bot.", { name: first.name }) : void 0
+      },
+      (0, import_react25.createElement)("select", {
+        className: "bt-select",
+        "aria-label": t("Main Bot"),
+        value: first?.id ?? "",
+        onChange: (event) => run(actions.setMain(event.target.value, true, first ? { replace: first.id } : {}))
+      }, first ? null : (0, import_react25.createElement)("option", { value: "" }, t("Choose a Bot…")), roster.bots.map((bot) => (0, import_react25.createElement)("option", { key: bot.id, value: bot.id }, bot.name)))
+    ),
+    others.map((bot) => (0, import_react25.createElement)(
+      SetRow,
+      { key: bot.id, label: bot.name, hint: t("Also a Main Bot.") },
+      (0, import_react25.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: () => run(actions.setMain(bot.id, true, { primary: true })) }, t("Move to first")),
+      (0, import_react25.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm", onClick: () => run(actions.setMain(bot.id, false)) }, t("Remove Main Bot role"))
+    )),
+    candidates.length > 0 ? (0, import_react25.createElement)(
+      SetRow,
+      { label: t("Add a Main Bot"), hint: t("Main Bots can create and change Bots, and run every group chat.") },
+      (0, import_react25.createElement)("select", {
+        className: "bt-select",
+        "aria-label": t("Add a Main Bot"),
+        value: "",
+        onChange: (event) => {
+          if (event.target.value) void run(actions.setMain(event.target.value, true));
+        }
+      }, (0, import_react25.createElement)("option", { value: "" }, t("Choose a Bot…")), candidates.map((bot) => (0, import_react25.createElement)("option", { key: bot.id, value: bot.id }, bot.name)))
+    ) : null
+  );
+}
+var MOTIONS = [["quiet", "Quiet"], ["normal", "Normal"], ["lively", "Lively"]];
+function MotionSection({ roster, actions, run }) {
+  const motion = roster.prefs?.motion === "quiet" || roster.prefs?.motion === "lively" ? roster.prefs.motion : "normal";
+  return (0, import_react25.createElement)(
+    SetSection,
+    { title: t("Animation") },
+    (0, import_react25.createElement)(
+      SetRow,
+      { label: t("Bot animation") },
+      (0, import_react25.createElement)(Segmented, { label: t("Bot animation"), value: motion, className: "bt-motion-seg" }, MOTIONS.map(([id, label]) => (0, import_react25.createElement)("button", {
+        key: id,
+        type: "button",
+        "aria-pressed": motion === id,
+        onClick: () => {
+          if (motion !== id) run(actions.setPrefs({ motion: id }));
+        }
+      }, t(label))))
+    )
+  );
+}
+function BotsPage({ roster, actions, run }) {
+  const [creating, setCreating] = (0, import_react25.useState)(false);
+  return [
+    (0, import_react25.createElement)(MainBotsSection, { key: "main", roster, actions, run }),
+    (0, import_react25.createElement)(MotionSection, { key: "motion", roster, actions, run }),
+    creating ? (0, import_react25.createElement)(CreateBot, { key: "create", roster, actions, inline: true, onBack: () => setCreating(false), onCreated: (bot) => actions.openSettings("bots", bot.id) }) : (0, import_react25.createElement)(
+      "div",
+      { key: "new", className: "bt-actions" },
+      (0, import_react25.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm bt-with-icon", onClick: () => setCreating(true) }, (0, import_react25.createElement)(PlusIcon), t("New Bot"))
+    ),
+    (0, import_react25.createElement)(
+      SetSection,
+      { key: "bots", title: t("Bots · {count}", { count: roster.bots.length }) },
+      roster.bots.map((bot) => (0, import_react25.createElement)(
+        "button",
+        { key: bot.id, type: "button", className: "bt-set-row", onClick: () => actions.openSettings("bots", bot.id) },
+        (0, import_react25.createElement)(
+          "span",
+          { className: "bt-set-bot" },
+          (0, import_react25.createElement)(BotAvatar, { bot, size: 28, badge: false, live: false }),
+          (0, import_react25.createElement)("span", { className: "bt-row-title" }, bot.name),
+          bot.role ? (0, import_react25.createElement)("span", { className: "bt-tag" }, bot.role) : null,
+          isMainOf(roster, bot.id) ? (0, import_react25.createElement)("span", { className: "bt-tag" }, t("Main Bot")) : null,
+          bot.hidden && !isMainOf(roster, bot.id) ? (0, import_react25.createElement)("span", { className: "bt-tag" }, t("Hidden")) : null
+        ),
+        (0, import_react25.createElement)("span", { className: "bt-chevron" }, (0, import_react25.createElement)(ChevronRightIcon))
+      ))
+    )
+  ];
+}
+function GroupsPage({ roster, actions, run }) {
+  const [creating, setCreating] = (0, import_react25.useState)(false);
+  return [
+    creating ? (0, import_react25.createElement)(NewGroupForm, { key: "create", roster, actions, run, onCancel: () => setCreating(false), onCreated: (room2) => actions.openSettings("groups", room2.id) }) : (0, import_react25.createElement)(
+      "div",
+      { key: "new", className: "bt-actions" },
+      (0, import_react25.createElement)("button", { type: "button", className: "bt-soft bt-soft-sm bt-with-icon", disabled: roster.bots.length < 2, title: roster.bots.length < 2 ? t("A group chat needs at least two Bots") : void 0, onClick: () => setCreating(true) }, (0, import_react25.createElement)(PlusIcon), t("Create group chat"))
+    ),
+    (0, import_react25.createElement)(
+      SetSection,
+      { key: "groups", title: t("Group chats · {count}", { count: roster.rooms.length }) },
+      roster.rooms.length === 0 ? (0, import_react25.createElement)(SetRow, { label: t("No group chats yet."), hint: t("A group chat lets several Bots work on one thing with you.") }) : roster.rooms.map((room2) => {
+        const admin = roster.byId[room2.admin];
+        return (0, import_react25.createElement)(
+          "button",
+          { key: room2.id, type: "button", className: "bt-set-row", onClick: () => actions.openSettings("groups", room2.id) },
+          (0, import_react25.createElement)(
+            "span",
+            { className: "bt-set-bot" },
+            (0, import_react25.createElement)(RoomAvatar, { room: room2, roster, size: 28 }),
+            (0, import_react25.createElement)("span", { className: "bt-row-title" }, room2.name),
+            (0, import_react25.createElement)("span", { className: "bt-tag" }, t("{count} members", { count: room2.members.length })),
+            admin ? (0, import_react25.createElement)("span", { className: "bt-tag bt-tag-admin" }, (0, import_react25.createElement)(AdminStar), admin.name) : null,
+            room2.hidden ? (0, import_react25.createElement)("span", { className: "bt-tag" }, t("Hidden")) : null
+          ),
+          (0, import_react25.createElement)("span", { className: "bt-chevron" }, (0, import_react25.createElement)(ChevronRightIcon))
+        );
+      })
+    )
+  ];
+}
+function SettingsDialog({ page, id, roster, actions, leaving = false }) {
+  const [error, setError] = (0, import_react25.useState)("");
+  const close = (0, import_react25.useCallback)(() => actions.closeSettings(), []);
+  useEscape(close);
+  const run = (promise) => Promise.resolve(promise).then(() => {
+    setError("");
+    return true;
+  }).catch((failure) => {
+    setError(failure?.message ?? String(failure));
+    return false;
+  });
+  const bot = page === "bots" && id ? roster.byId[id] : void 0;
+  const room2 = page === "groups" && id ? roster.roomsById[id] : void 0;
+  const shown = SETTINGS_PAGES.some(([key]) => key === page) ? page : "general";
+  const usageFocus = shown === "usage" && id ? id : null;
+  const label = t(SETTINGS_PAGES.find(([key]) => key === shown)[1]);
+  const back = bot ? t("Back to Bots") : room2 ? t("Back to group chats") : usageFocus ? t("All usage") : null;
+  const nav = useGlide(shown, { axis: "y" });
+  const pageKey = `${shown}:${bot?.id ?? room2?.id ?? ""}`;
+  const depth = bot || room2 ? 1 : 0;
+  const last = (0, import_react25.useRef)({ key: pageKey, depth, move: "up" });
+  if (last.current.key !== pageKey) {
+    last.current = { key: pageKey, depth, move: depth > last.current.depth ? "in" : depth < last.current.depth ? "out" : "up" };
+  }
+  const [usageOpened, setUsageOpened] = (0, import_react25.useState)(shown === "usage");
+  if (shown === "usage" && !usageOpened) setUsageOpened(true);
+  const errorLine = error ? (0, import_react25.createElement)("div", { className: "bt-error", role: "alert", style: { padding: 0 } }, error) : null;
+  return (0, import_react25.createElement)(
+    "div",
+    { className: "bt-settings-layer", "data-leaving": leaving || void 0 },
+    (0, import_react25.createElement)("div", { className: "bt-scrim", onMouseDown: close }),
+    (0, import_react25.createElement)(
+      "div",
+      { className: "bt-settings", role: "dialog", "aria-modal": true, "aria-label": t("DS Bot settings"), "data-wide": shown === "usage" ? "" : void 0 },
+      (0, import_react25.createElement)(
+        "nav",
+        { ref: nav.box, className: "bt-settings-nav", "aria-label": t("Settings pages") },
+        (0, import_react25.createElement)("span", { ref: nav.thumb, className: "bt-thumb", "aria-hidden": true }),
+        SETTINGS_PAGES.map(([key, text]) => (0, import_react25.createElement)("button", {
+          key,
+          type: "button",
+          className: "bt-settings-item",
+          "aria-current": shown === key ? "page" : void 0,
+          onClick: () => actions.openSettings(key)
+        }, (0, import_react25.createElement)(PAGE_ICONS[key]), t(text))),
+        (0, import_react25.createElement)("button", {
+          type: "button",
+          className: "bt-settings-item bt-settings-shell",
+          title: t("Models, providers, and the rest of DeepSeek Harness"),
+          onClick: () => {
+            close();
+            openHarnessSettings();
+          }
+        }, (0, import_react25.createElement)(SlidersIcon), t("Harness settings"))
+      ),
+      (0, import_react25.createElement)(
+        "div",
+        { className: "bt-settings-main" },
+        (0, import_react25.createElement)(
+          "div",
+          { className: "bt-settings-head" },
+          back ? (0, import_react25.createElement)("button", { type: "button", className: "bt-icon-btn", "aria-label": back, title: back, onClick: () => actions.openSettings(shown) }, (0, import_react25.createElement)(ChevronLeftIcon)) : null,
+          (0, import_react25.createElement)("h2", { key: bot?.id ?? room2?.id ?? shown }, bot?.name ?? room2?.name ?? label)
+        ),
+        shown === "usage" ? null : (0, import_react25.createElement)(
+          "div",
+          { key: pageKey, className: "bt-settings-scroll bt-settings-page", "data-move": last.current.move },
+          errorLine,
+          shown === "general" ? (0, import_react25.createElement)(GeneralPage, { roster, actions, run }) : null,
+          bot ? (0, import_react25.createElement)("div", { className: "bt-settings-form" }, (0, import_react25.createElement)(BotSettingsForm, { key: bot.id, bot, roster, actions, run })) : null,
+          shown === "bots" && !bot ? (0, import_react25.createElement)(BotsPage, { roster, actions, run }) : null,
+          room2 ? (0, import_react25.createElement)("div", { className: "bt-settings-form" }, (0, import_react25.createElement)(GroupSettingsForm, { key: room2.id, room: room2, roster, actions, run })) : null,
+          shown === "groups" && !room2 ? (0, import_react25.createElement)(GroupsPage, { roster, actions, run }) : null,
+          shown === "connectors" ? (0, import_react25.createElement)(ConnectorsPage, { roster, actions }) : null,
+          shown === "schedules" ? (0, import_react25.createElement)(SchedulesPage, { roster, actions, start: id ?? void 0 }) : null,
+          shown === "secrets" ? (0, import_react25.createElement)(SecretsPage, { roster, actions, run, Section: SetSection }) : null,
+          shown === "feedback" ? (0, import_react25.createElement)(FeedbackPage, { actions, run, Section: SetSection, Row: SetRow }) : null
+        ),
+        usageOpened ? (0, import_react25.createElement)(
+          "div",
+          { key: "usage", className: "bt-settings-scroll bt-settings-usage", "data-off": shown === "usage" ? void 0 : "", "aria-hidden": shown === "usage" ? void 0 : true },
+          shown === "usage" ? errorLine : null,
+          (0, import_react25.createElement)(UsagePage, { roster, actions, focusId: usageFocus })
+        ) : null
+      ),
+      (0, import_react25.createElement)("button", { type: "button", className: "bt-settings-close", "aria-label": t("Close settings"), onClick: close }, (0, import_react25.createElement)(CloseIcon))
+    )
+  );
+}
+
+// src/client/context-menu.js
+var import_react26 = require("react");
+function ContextMenu({ menu, roster, actions, leaving = false }) {
+  useEscape(() => actions.closeMenu());
+  (0, import_react26.useEffect)(() => {
+    const onDown = (event) => {
+      if (!(event.target instanceof Element) || !event.target.closest(".bt-menu")) actions.closeMenu();
+    };
+    window.addEventListener("mousedown", onDown);
+    return () => window.removeEventListener("mousedown", onDown);
+  }, []);
+  const ref = (0, import_react26.useRef)(null);
+  const [place, setPlace] = (0, import_react26.useState)({ left: menu.x, top: menu.y });
+  (0, import_react26.useLayoutEffect)(() => {
+    const box = ref.current?.getBoundingClientRect();
+    if (!box) return;
+    setPlace({ left: Math.max(8, Math.min(menu.x, window.innerWidth - box.width - 8)), top: Math.max(8, Math.min(menu.y, window.innerHeight - box.height - 8)) });
+  }, [menu.x, menu.y]);
+  if (menu.kind === "agent" || menu.kind === "agent-session") return (0, import_react26.createElement)(AgentMenu, { menu, roster, actions, leaving });
+  const bot = roster.byId[menu.id];
+  const room2 = roster.roomsById[menu.id];
+  const entry = bot ?? room2;
+  if (entry === void 0) return null;
+  const isMainBot = isMainOf(roster, menu.id);
+  const isTile = roster.mainBotId === menu.id;
+  const mainCount = (roster.mainBotIds ?? []).length;
+  const groups = [
+    [
+      isTile ? null : [entry.pinned ? t("Unpin") : t("Pin"), PinIcon, () => actions.setFlags(menu.id, { pinned: !entry.pinned })],
+      [t("Mark as Unread"), UnreadIcon, () => actions.markUnread(menu.id)]
+    ],
+    [
+      bot ? [t("Rename Bot"), PencilIcon, () => actions.renameBot(bot.id)] : null,
+      bot ? [t("Edit Bot"), GearIcon, () => actions.openSettings("bots", bot.id)] : null,
+      room2 ? [t("Group settings"), GearIcon, () => actions.openSettings("groups", room2.id)] : null,
+      room2 ? [t("Rename group"), PencilIcon, () => actions.renameBot(room2.id)] : null,
+      bot ? [t("Duplicate"), DuplicateIcon, async () => {
+        const copy2 = await actions.duplicateBot(bot.id);
+        actions.openSession(copy2.id);
+      }] : null,
+      bot && !isMainBot ? [t("Make Main Bot"), StarLineIcon, () => actions.setMain(bot.id, true)] : null,
+      bot && isMainBot && mainCount > 1 ? [t("Remove Main Bot role"), StarLineIcon, () => actions.setMain(bot.id, false)] : null
+    ],
+    [[t("Copy conversation ID"), CopyIcon, () => navigator.clipboard?.writeText(bot ? currentPart(bot) : menu.id)]],
+    [
+      isMainBot ? null : [t("Hide from sidebar"), HideIcon, () => actions.setFlags(menu.id, { hidden: true })],
+      isMainBot ? null : [room2 ? t("Delete group") : t("Delete"), TrashIcon, () => bot ? actions.deleteBot(bot.id) : actions.deleteRoom(menu.id), true]
+    ]
+  ].map((group) => group.filter(Boolean)).filter((group) => group.length > 0);
+  return (0, import_react26.createElement)(
+    "div",
+    { ref, className: "bt-menu", role: "menu", "aria-label": t("{name} actions", { name: bot?.name ?? room2.name }), style: place, "data-leaving": leaving || void 0 },
+    groups.map((group, index) => (0, import_react26.createElement)(
+      import_react26.Fragment,
+      { key: index },
+      index > 0 ? (0, import_react26.createElement)("div", { className: "bt-menu-sep", role: "separator" }) : null,
+      group.map(([label, Icon, run, danger]) => (0, import_react26.createElement)("button", {
+        key: label,
+        type: "button",
+        role: "menuitem",
+        className: danger ? "bt-danger" : void 0,
+        onClick: () => {
+          actions.closeMenu();
+          void Promise.resolve(run()).catch((error) => actions.reportError(error, "menu"));
+        }
+      }, (0, import_react26.createElement)(Icon), label))
+    ))
+  );
+}
+function AgentMenu({ menu, roster, actions, leaving }) {
+  const ref = (0, import_react26.useRef)(null);
+  const [place, setPlace] = (0, import_react26.useState)({ left: menu.x, top: menu.y });
+  (0, import_react26.useLayoutEffect)(() => {
+    const box = ref.current?.getBoundingClientRect();
+    if (!box) return;
+    setPlace({ left: Math.max(8, Math.min(menu.x, window.innerWidth - box.width - 8)), top: Math.max(8, Math.min(menu.y, window.innerHeight - box.height - 8)) });
+  }, [menu.x, menu.y]);
+  const agent = roster.agentsById[menu.kind === "agent" ? menu.id : menu.agentId];
+  if (agent === void 0) return null;
+  const groups = menu.kind === "agent" ? [
+    [
+      [agent.pinned ? t("Unpin") : t("Pin"), PinIcon, () => actions.setFlags(agent.id, { pinned: !agent.pinned })]
+    ],
+    [
+      [t("Remove DSH Agent"), TrashIcon, () => actions.removeAgent(agent.id), true]
+    ]
+  ] : [
+    [
+      [t("Rename"), PencilIcon, () => actions.beginAgentRename(menu.id)]
+    ],
+    [
+      [t("Archive"), TrashIcon, () => actions.archiveAgentSession(agent.id, menu.id), true]
+    ]
+  ];
+  return (0, import_react26.createElement)(
+    "div",
+    { ref, className: "bt-menu", role: "menu", "aria-label": menu.kind === "agent" ? "DSH Agent" : t("Session actions"), style: place, "data-leaving": leaving || void 0 },
+    groups.map((group, index) => (0, import_react26.createElement)(
+      import_react26.Fragment,
+      { key: index },
+      index > 0 ? (0, import_react26.createElement)("div", { className: "bt-menu-sep", role: "separator" }) : null,
+      group.map(([label, Icon, run, danger]) => (0, import_react26.createElement)("button", {
+        key: label,
+        type: "button",
+        role: "menuitem",
+        className: danger ? "bt-danger" : void 0,
+        onClick: () => {
+          actions.closeMenu();
+          void Promise.resolve(run()).catch((error) => console.warn("[ds-bot]", error));
+        }
+      }, (0, import_react26.createElement)(Icon), label))
+    ))
+  );
+}
+
+// src/client/storage.js
+var STORAGE = {
+  unread: "ds-bot:unread",
+  reactions: "ds-bot:reactions",
+  seen: "ds-bot:seen",
+  prefs: "ds-bot:prefs",
+  surface: "ds-bot:surface",
+  agentSessions: "ds-bot:agent-sessions",
+  browserWidth: "ds-bot:browser-width",
+  browsers: "ds-bot.browser.v2"
+};
+var LEGACY_PREFIXES = ["dsh-bot:", "dsh-bot-team:"];
+var LEGACY_BROWSER_KEYS = ["ds-bot.browser.v1", "dsh-bot.browser.v1"];
+var LEGACY_THEMES = { grok: "mono" };
+function legacyKeys(key) {
+  if (key === STORAGE.browsers) return LEGACY_BROWSER_KEYS;
+  const name = key.slice(key.indexOf(":") + 1);
+  return LEGACY_PREFIXES.map((prefix) => `${prefix}${name}`);
+}
+var migrateBrowsers = (storage) => {
+  if (storage.getItem(STORAGE.browsers) !== null) {
+    for (const key of LEGACY_BROWSER_KEYS) storage.removeItem(key);
+    return;
+  }
+  for (const key of LEGACY_BROWSER_KEYS) {
+    try {
+      const value = storage.getItem(key);
+      if (value === null) continue;
+      const previous = JSON.parse(value) ?? {};
+      const tabs = Object.fromEntries(Object.entries(previous).filter(([, page]) => page && typeof page === "object").map(([botId, page]) => {
+        const tab = { id: `v1-${botId}`, url: page.url ?? "", title: page.title ?? "" };
+        return [botId, { tabs: [tab], active: tab.id }];
+      }));
+      storage.setItem(STORAGE.browsers, JSON.stringify(tabs));
+      for (const earlier of LEGACY_BROWSER_KEYS) storage.removeItem(earlier);
+      return;
+    } catch {
+    }
+  }
+};
+function migrateStorage(storage = globalThis.localStorage) {
+  for (const key of Object.values(STORAGE)) {
+    if (key === STORAGE.browsers) continue;
+    for (const legacy of legacyKeys(key)) {
+      try {
+        const value = storage.getItem(legacy);
+        if (value !== null && storage.getItem(key) === null) storage.setItem(key, value);
+        storage.removeItem(legacy);
+      } catch {
+      }
+    }
+  }
+  try {
+    migrateBrowsers(storage);
+  } catch {
+  }
+  try {
+    const prefs = JSON.parse(storage.getItem(STORAGE.prefs) ?? "null");
+    if (prefs && Object.hasOwn(LEGACY_THEMES, prefs.theme ?? "")) {
+      storage.setItem(STORAGE.prefs, JSON.stringify({ ...prefs, theme: LEGACY_THEMES[prefs.theme] }));
+    }
+  } catch {
+  }
+}
+
+// src/client/details-drawer.js
+var import_react27 = require("react");
+function transcriptOf(list, id, name, hiddenTurns = []) {
+  const outline = list.projectionsBySession?.[id]?.values?.turnOutline ?? list.byId[id]?.projectionValues?.turnOutline;
+  if (!Array.isArray(outline)) return "";
+  const lines = [];
+  for (const entry of outline) {
+    if (hiddenTurns.includes(entry.turn)) continue;
+    if (entry.prompt && !HEADER.test(entry.prompt)) lines.push(`**${t("You")}:** ${entry.prompt.trim()}`);
+    if (entry.response) lines.push(`**${name}:** ${stripHeader(entry.response).trim()}`);
+  }
+  return lines.join("\n\n");
+}
+var TAB_LABELS = { details: "Details", browser: "Browser" };
+var hostOf = (url) => {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return "";
+  }
+};
+var shortUrl = (url) => String(url ?? "").replace(/^https?:\/\//i, "").replace(/^www\./i, "").replace(/\/$/, "");
+var EMPTY_TABS = { ids: [], active: null };
+function BrowserCards({ bot, sessionId, roster, actions, useBrowserTabs, useBrowserPages }) {
+  const state = useBrowserTabs((map) => map[bot.id] ?? EMPTY_TABS);
+  const pages = useBrowserPages((map) => map);
+  (0, import_react27.useEffect)(() => {
+    actions.browserEnsure?.(bot.id);
+  }, [bot.id]);
+  if (roster.browser !== true || !actions.browserShow) {
+    return (0, import_react27.createElement)("div", { className: "bt-muted" }, t("The browser is in the DSH Desktop app."));
+  }
+  if (state.ids.length === 0) {
+    return (0, import_react27.createElement)(
+      "div",
+      { className: "bt-browser-empty-mark" },
+      (0, import_react27.createElement)(BotMark, { bot, size: 40, state: "idle", live: true }),
+      (0, import_react27.createElement)("div", { className: "bt-browser-empty-title" }, t("{name}'s browser", { name: bot.name })),
+      (0, import_react27.createElement)("div", { className: "bt-muted" }, t("Open a page here and {name} can read it with you. Logins and cookies stay with {name}; other Bots never see them.", { name: bot.name })),
+      (0, import_react27.createElement)("button", { type: "button", className: "bt-browser-retry", onClick: () => actions.openBrowser(sessionId) }, t("Open browser"))
+    );
+  }
+  return (0, import_react27.createElement)(
+    "div",
+    { className: "bt-bcards" },
+    state.ids.map((tabId, index) => {
+      const page = pages[tabId] ?? {};
+      const label = page.title || shortUrl(page.url) || t("New tab");
+      return (0, import_react27.createElement)(
+        "div",
+        { key: tabId, className: "bt-bcard", "data-active": state.active === tabId || void 0, style: { animationDelay: `${index * 30}ms` } },
+        (0, import_react27.createElement)(
+          "button",
+          { type: "button", className: "bt-bcard-shot", "aria-label": t("Open {title}", { title: label }), title: page.url, onClick: () => actions.browserPick(sessionId, tabId) },
+          page.excerpt ? (0, import_react27.createElement)(
+            "span",
+            { className: "bt-bcard-preview" },
+            (0, import_react27.createElement)("span", { className: "bt-bcard-ptitle" }, label),
+            (0, import_react27.createElement)("span", { className: "bt-bcard-excerpt" }, page.excerpt)
+          ) : (0, import_react27.createElement)("span", { className: "bt-bcard-blank" }, (0, import_react27.createElement)(GlobeIcon), (0, import_react27.createElement)("span", null, label))
+        ),
+        (0, import_react27.createElement)("button", {
+          type: "button",
+          className: "bt-bcard-x",
+          "aria-label": t("Close tab"),
+          title: t("Close tab"),
+          onClick: () => {
+            void actions.browserCloseTab(bot.id, tabId);
+          }
+        }, "×"),
+        (0, import_react27.createElement)(
+          "div",
+          { className: "bt-bcard-row" },
+          (0, import_react27.createElement)(Favicon, { src: page.favicon, className: "bt-bcard-fav" }),
+          (0, import_react27.createElement)("span", { className: "bt-bcard-title" }, label),
+          page.url ? (0, import_react27.createElement)("span", { className: "bt-bcard-host" }, hostOf(page.url)) : null
+        )
+      );
+    }),
+    (0, import_react27.createElement)("button", { type: "button", className: "bt-bcard-new", style: { animationDelay: `${state.ids.length * 30}ms` }, onClick: () => actions.browserNewTab(sessionId) }, (0, import_react27.createElement)(PlusIcon), t("New tab"))
+  );
+}
+function About({ text, title = "About" }) {
+  const [open, setOpen] = (0, import_react27.useState)(false);
+  const long = text.split("\n").length > 5 || text.length > 240;
+  const body = (0, import_react27.useRef)(null);
+  useMorph(body, open);
+  return (0, import_react27.createElement)(
+    "div",
+    null,
+    (0, import_react27.createElement)("div", { className: "bt-section-title" }, t(title)),
+    (0, import_react27.createElement)("div", { ref: body, className: "bt-about", "data-open": open || void 0 }, text),
+    long ? (0, import_react27.createElement)("button", { type: "button", className: "bt-more", onClick: () => setOpen((value) => !value) }, open ? t("Show less") : t("Show more")) : null
+  );
+}
+function GroupOverview({ room: room2, roster, actions, usage, openSettings }) {
+  const members = room2.members.map((id) => roster.byId[id]).filter(Boolean);
+  return [
+    room2.notice ? (0, import_react27.createElement)(About, { key: "notice", title: "Notice", text: room2.notice }) : (0, import_react27.createElement)("button", { key: "notice", type: "button", className: "bt-more", onClick: openSettings }, t("Add a notice in group settings")),
+    (0, import_react27.createElement)(
+      "div",
+      { key: "members" },
+      (0, import_react27.createElement)("div", { className: "bt-section-title" }, t("Members · {count}", { count: members.length })),
+      (0, import_react27.createElement)("div", { className: "bt-members", role: "list" }, members.map((member) => (0, import_react27.createElement)(
+        "div",
+        { key: member.id, className: "bt-member", role: "listitem" },
+        (0, import_react27.createElement)(
+          "button",
+          { type: "button", className: "bt-member-name", title: t("Open {name}'s chat", { name: member.name }), onClick: () => actions.openSession(member.id) },
+          (0, import_react27.createElement)(BotAvatar, { bot: member, size: 26, main: isMainOf(roster, member.id), admin: room2.admin === member.id, live: false }),
+          (0, import_react27.createElement)("span", null, member.name)
+        ),
+        room2.admin === member.id ? (0, import_react27.createElement)("span", { className: "bt-chip bt-chip-admin" }, t("Admin")) : null
+      )))
+    ),
+    (0, import_react27.createElement)(
+      "div",
+      { key: "mode" },
+      (0, import_react27.createElement)("div", { className: "bt-section-title" }, t("Who answers")),
+      (0, import_react27.createElement)("div", { className: "bt-kv" }, (0, import_react27.createElement)("span", null, t(ROOM_MODES.find(([id]) => id === shownMode(room2, roster))?.[1] ?? "Everyone")))
+    ),
+    usage ? (0, import_react27.createElement)(
+      "div",
+      { key: "usage" },
+      (0, import_react27.createElement)("div", { className: "bt-section-title" }, t("Usage")),
+      (0, import_react27.createElement)("div", { className: "bt-kv" }, (0, import_react27.createElement)("span", null, room2.name), (0, import_react27.createElement)("span", null, usage))
+    ) : null
+  ];
+}
+function DetailsDrawer({ sessionId, startRenaming, startTab, hasStrip, roster, actions, useSessions, useSessionStatus, useActivity, useBrowserTabs, useBrowserPages }) {
+  const owner = roster.byId[sessionId];
+  const part = owner ? currentPart(owner) : sessionId;
+  const isMainBot = isMainOf(roster, owner?.id);
+  const [tab, setTab] = (0, import_react27.useState)("details");
+  const room2 = roster.roomsById[sessionId];
+  const [view, setView] = (0, import_react27.useState)(startTab === "settings" && (owner || room2) ? "settings" : "overview");
+  const [editing, setEditing] = (0, import_react27.useState)(Boolean(startRenaming && (roster.byId[sessionId] || roster.roomsById[sessionId])));
+  const [draftName, setDraftName] = (0, import_react27.useState)(roster.byId[sessionId]?.name ?? (roster.roomsById[sessionId]?.named ? roster.roomsById[sessionId].name : ""));
+  const [copied, setCopied] = (0, import_react27.useState)(false);
+  const [error, setError] = (0, import_react27.useState)("");
+  const glide = useGlide(tab);
+  const last = (0, import_react27.useRef)({ view, tab, move: void 0 });
+  if (last.current.view !== view) last.current = { view, tab, move: view === "settings" ? "in" : "out" };
+  else if (last.current.tab !== tab) last.current = { view, tab, move: "tab" };
+  const move = last.current.move;
+  const side = move === "tab" ? void 0 : move;
+  const close = () => actions.closeOverlay();
+  useEscape(close);
+  const bot = owner;
+  const running = useSessionStatus((map) => map.get(part)?.running === true);
+  const doing = useActivity((map) => map[bot?.id ?? sessionId]);
+  const transcript = useSessions((list) => transcriptOf(list, part, bot?.name ?? room2?.name ?? t("Bot"), roster.exchangeTurns[part]));
+  const usage = useSessions((list) => usageOf(list, [part, ...bot?.parts ?? room2?.parts ?? []]));
+  const run = (promise) => Promise.resolve(promise).then(() => {
+    setError("");
+    return true;
+  }).catch((failure) => {
+    setError(failure?.message ?? String(failure));
+    return false;
+  });
+  const share = () => {
+    void navigator.clipboard?.writeText(transcript).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1600);
+    });
+  };
+  const errorLine = error ? (0, import_react27.createElement)("div", { className: "bt-error", role: "alert", style: { padding: 0 } }, error) : null;
+  if ((bot || room2) && view === "settings") {
+    return [
+      (0, import_react27.createElement)(
+        "div",
+        { key: "head", className: "bt-subhead", "data-move": move },
+        (0, import_react27.createElement)("button", { type: "button", className: "bt-icon-btn", "aria-label": t("Back to details"), onClick: () => setView("overview") }, (0, import_react27.createElement)(ChevronLeftIcon)),
+        (0, import_react27.createElement)("span", { className: "bt-subhead-title" }, bot ? t("Settings") : t("Group settings")),
+        hasStrip ? null : (0, import_react27.createElement)("button", { type: "button", className: "bt-icon-btn", "aria-label": t("Close details"), onClick: close }, (0, import_react27.createElement)(CloseIcon))
+      ),
+      (0, import_react27.createElement)(
+        "div",
+        { key: "set-body", className: "bt-drawer-body bt-set-body", "data-move": move },
+        errorLine,
+        bot ? (0, import_react27.createElement)(BotSettingsForm, { bot, roster, actions, run }) : (0, import_react27.createElement)(GroupSettingsForm, { room: room2, roster, actions, run, onDeleted: close })
+      )
+    ];
+  }
+  const top = (0, import_react27.createElement)(
+    "div",
+    { className: "bt-drawer-top", "data-move": side },
+    bot || room2 ? (0, import_react27.createElement)("button", { type: "button", className: "bt-round", "aria-label": bot ? t("Edit Bot") : t("Group settings"), title: bot ? t("Edit Bot") : t("Group settings"), "data-info-row": "settings", onClick: () => setView("settings") }, (0, import_react27.createElement)(GearIcon)) : null,
+    bot && roster.browser === true && actions.openBrowser ? (0, import_react27.createElement)("button", { type: "button", className: "bt-round", "aria-label": t("Open browser"), title: t("Open this Bot's browser"), onClick: () => actions.openBrowser(sessionId) }, (0, import_react27.createElement)(GlobeIcon)) : null,
+    bot || room2 ? (0, import_react27.createElement)("button", { type: "button", className: "bt-round", "aria-label": copied ? t("Copied conversation") : t("Share conversation"), title: copied ? t("Copied") : t("Copy conversation as Markdown"), onClick: share }, copied ? (0, import_react27.createElement)("span", { key: "copied", className: "bt-pop-in" }, "✓") : (0, import_react27.createElement)(ShareIcon)) : null,
+    hasStrip ? null : (0, import_react27.createElement)("button", { type: "button", className: "bt-round", "aria-label": t("Close details"), onClick: close }, (0, import_react27.createElement)(CloseIcon))
+  );
+  if (!bot && !room2) {
+    return [
+      (0, import_react27.createElement)(import_react27.Fragment, { key: "top" }, top),
+      (0, import_react27.createElement)("div", { key: "body", className: "bt-drawer-body" }, (0, import_react27.createElement)("div", { className: "bt-muted" }, t("This conversation is not part of your Bot team.")))
+    ];
+  }
+  const current = bot?.name ?? room2.name;
+  const saveName = async () => {
+    setEditing(false);
+    const next = draftName.trim();
+    if (next === current || room2 && !room2.named && next === "") return;
+    if (bot && next) await run(actions.updateBot(bot.id, { name: next }));
+    if (room2) await run(actions.updateRoom(room2.id, { name: next }));
+  };
+  const subtitle = bot ? bot.role : roomSubtitle(room2, roster);
+  const tabs = bot ? ["details", "browser"] : ["details"];
+  return [
+    (0, import_react27.createElement)(import_react27.Fragment, { key: "top" }, top),
+    (0, import_react27.createElement)(
+      "div",
+      { key: "id", className: "bt-drawer-id", "data-move": side },
+      bot ? (0, import_react27.createElement)(BotAvatar, { bot, size: 64, state: botState(running, doing, roster.questions?.[part] !== void 0), main: isMainBot, badge: false, gaze: true, pokeable: true }) : (0, import_react27.createElement)(RoomAvatar, { room: room2, roster, size: 64 }),
+      editing ? (0, import_react27.createElement)("input", {
+        className: "bt-drawer-name-input",
+        autoFocus: true,
+        value: draftName,
+        "aria-label": bot ? t("Bot name") : t("Group name"),
+        placeholder: room2 ? t("Name after members") : void 0,
+        onChange: (event) => setDraftName(event.target.value),
+        onBlur: saveName,
+        onKeyDown: (event) => {
+          if (event.key === "Enter") void saveName();
+          if (event.key === "Escape") {
+            event.stopPropagation();
+            setEditing(false);
+          }
+        }
+      }) : (0, import_react27.createElement)("button", { type: "button", className: "bt-drawer-name", "aria-label": t("Rename {name}", { name: current }), title: t("Rename"), onClick: () => {
+        setDraftName(room2 && !room2.named ? "" : current);
+        setEditing(true);
+      } }, current),
+      subtitle ? (0, import_react27.createElement)("span", { className: "bt-drawer-role" }, subtitle) : null
+    ),
+    (0, import_react27.createElement)(
+      "div",
+      { key: "tabs", ref: glide.box, className: "bt-tabs", role: "tablist", "data-move": side },
+      (0, import_react27.createElement)("span", { ref: glide.thumb, className: "bt-thumb", "aria-hidden": true }),
+      tabs.map((key) => (0, import_react27.createElement)("button", { key, type: "button", role: "tab", className: "bt-tab", "aria-selected": tab === key, onClick: () => setTab(key) }, t(TAB_LABELS[key])))
+    ),
+    (0, import_react27.createElement)(
+      "div",
+      { key: `body:${tab}`, className: "bt-drawer-body", "data-move": move },
+      errorLine,
+      room2 && tab === "details" ? (0, import_react27.createElement)(GroupOverview, { room: room2, roster, actions, usage, openSettings: () => setView("settings") }) : null,
+      bot && tab === "details" ? [
+        (0, import_react27.createElement)(
+          "div",
+          { key: "model", className: "bt-drawer-model" },
+          (0, import_react27.createElement)("div", { className: "bt-section-title" }, t("Model")),
+          (0, import_react27.createElement)(ModelMenu, { bot, roster, actions, run, wide: true }),
+          modelOf(bot, roster) ? null : (0, import_react27.createElement)("div", { className: "bt-note" }, t("Pick a model and {name} can start.", { name: bot.name }))
+        ),
+        bot.instructions ? (0, import_react27.createElement)(About, { key: "about", text: bot.instructions }) : (0, import_react27.createElement)("button", { key: "about", type: "button", className: "bt-more", onClick: () => setView("settings") }, t("Add instructions in Bot settings")),
+        roster.memory === false ? null : (0, import_react27.createElement)(MemoryRow, { key: "memory", bot, actions }),
+        usage ? (0, import_react27.createElement)(
+          "div",
+          { key: "usage" },
+          (0, import_react27.createElement)("div", { className: "bt-section-title" }, t("Usage")),
+          (0, import_react27.createElement)("div", { className: "bt-kv" }, (0, import_react27.createElement)("span", null, bot.name), (0, import_react27.createElement)("span", null, usage))
+        ) : null,
+        (0, import_react27.createElement)(ScheduleSummary, { key: "routines", bot, actions })
+      ] : null,
+      bot && tab === "browser" ? (0, import_react27.createElement)(BrowserCards, { bot, sessionId, roster, actions, useBrowserTabs, useBrowserPages }) : null
+    )
+  ];
+}
+
+// src/client/browser-pane.js
+var import_react28 = require("react");
+var import_react_dom7 = require("react-dom");
+var PANEL_LINGER_MS = 300;
+var WIDTH_KEY = STORAGE.browserWidth;
+var DEFAULT_WIDTH = 520;
+var DETAILS_WIDTH = 320;
+var DETAILS_MAX = 520;
+var MIN_WIDTH = 360;
+var MIN_CHAT = 420;
+var READ_FLASH_MS = 2400;
+var EMPTY_PAGE = { url: "", title: "", favicon: null, loading: false, canGoBack: false, canGoForward: false, error: null, excerpt: "" };
+var EMPTY_TABS2 = { ids: [], active: null };
+var SPRING_LEAD2 = springEasing(576, 39.4);
+var SPRING_TRAIL2 = springEasing(144, 19.7);
+var icon = (paths) => function BrowserIcon() {
+  return (0, import_react28.createElement)(
+    "svg",
+    { width: 16, height: 16, viewBox: "0 0 20 20", fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true },
+    paths.map((d, index) => (0, import_react28.createElement)("path", { key: index, d }))
+  );
+};
+var GlobeIcon = icon(["M10 3a7 7 0 1 0 0 14 7 7 0 0 0 0-14z", "M3 10h14", "M10 3c2 2.2 2.9 4.5 2.9 7S12 14.8 10 17c-2-2.2-2.9-4.5-2.9-7S8 5.2 10 3z"]);
+var BackIcon = icon(["M12.5 4.5L7 10l5.5 5.5"]);
+var ForwardIcon = icon(["M7.5 4.5L13 10l-5.5 5.5"]);
+var ReloadIcon = icon(["M15.5 10a5.5 5.5 0 1 1-1.6-3.9", "M15.5 3.5v3.5H12"]);
+var StopIcon = icon(["M5.5 5.5l9 9M14.5 5.5l-9 9"]);
+var CloseIcon2 = icon(["M5.5 5.5l9 9M14.5 5.5l-9 9"]);
+var PlusTabIcon = icon(["M10 5v10M5 10h10"]);
+var LockIcon2 = icon(["M6.5 9V7a3.5 3.5 0 0 1 7 0v2", "M5.5 9h9v7h-9z"]);
+function Favicon({ src, className }) {
+  const [failed, setFailed] = (0, import_react28.useState)(null);
+  if (!src || failed === src) return (0, import_react28.createElement)("span", { className: `${className} bt-ptab-globe` }, (0, import_react28.createElement)(GlobeIcon));
+  return (0, import_react28.createElement)("img", { className, src, alt: "", "aria-hidden": true, onError: () => setFailed(src) });
+}
+var savedWidth = () => {
+  try {
+    const value = Number(localStorage.getItem(WIDTH_KEY));
+    return Number.isFinite(value) && value >= DETAILS_WIDTH ? value : null;
+  } catch {
+    return null;
+  }
+};
+var widthRange = (view, viewport) => view === "browser" ? [MIN_WIDTH, viewport - MIN_CHAT] : [DETAILS_WIDTH, Math.min(DETAILS_MAX, viewport - MIN_CHAT)];
+var fitWidth = (width, [low, high]) => Math.round(Math.max(low, Math.min(width, high)));
+var room = { rule: null, selector: "" };
+var roomRule = () => {
+  const live = room.rule?.parentStyleSheet?.ownerNode?.isConnected;
+  if (live && room.selector) return room.rule;
+  const column = document.querySelector('[class*="_centerCol"]');
+  const selector = column ? [...column.classList].filter((name) => name.includes("_centerCol")).map((name) => `.${CSS.escape(name)}`).join(",") : "";
+  if (live && !selector) return room.rule;
+  const declarations2 = room.rule?.style.cssText ?? "";
+  room.rule?.parentStyleSheet?.ownerNode?.remove();
+  const style = document.createElement("style");
+  style.dataset.dshBot = "chat-room";
+  style.textContent = `${selector || '[class*="_centerCol"]'}{${declarations2}}`;
+  document.head.append(style);
+  room.rule = style.sheet.cssRules[0];
+  room.selector = selector;
+  return room.rule;
+};
+var roomHold = 0;
+var chatRoom = {
+  /** The column's right margin in px, or null for the shell's own. */
+  set(width) {
+    const { style } = roomRule();
+    if (width === null) style.removeProperty("margin-right");
+    else style.setProperty("margin-right", `${width}px`, "important");
+  },
+  /** While on, a margin change lands at once instead of gliding. */
+  hold(on) {
+    cancelAnimationFrame(roomHold);
+    if (on) {
+      roomRule().style.setProperty("transition", "none", "important");
+      return;
+    }
+    roomHold = requestAnimationFrame(() => {
+      roomHold = requestAnimationFrame(() => roomRule().style.removeProperty("transition"));
+    });
+  },
+  /** The columns themselves, for a drag's per-frame writes. */
+  columns() {
+    roomRule();
+    return room.selector ? [...document.querySelectorAll(room.selector)] : [];
+  }
+};
+var shortAddress = (url) => String(url ?? "").replace(/^https?:\/\//i, "").replace(/^www\./i, "").replace(/\/$/, "");
+var reducedMotion2 = () => typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches;
+var tabLabel = (page) => page.title || shortAddress(page.url) || t("New tab");
+function PanelStrip({ bot, subject, view, ids, active, reading, onView, actions, useBrowserPages }) {
+  const pages = useBrowserPages((map) => map);
+  const wrap = (0, import_react28.useRef)(null);
+  const ind = (0, import_react28.useRef)(null);
+  const spot = (0, import_react28.useRef)(null);
+  const under = (0, import_react28.useRef)(null);
+  (0, import_react28.useLayoutEffect)(() => {
+    const box = wrap.current;
+    const capsule = ind.current;
+    if (!box || !capsule) return void 0;
+    const node = view === "details" ? box.querySelector(".bt-ptab-bot") : box.querySelector(`[data-tab="${active}"]`);
+    under.current = node;
+    if (!node) {
+      capsule.style.opacity = "0";
+      spot.current = null;
+      return void 0;
+    }
+    if (view === "details") box.scrollLeft = 0;
+    else node.scrollIntoView?.({ block: "nearest", inline: "nearest" });
+    const to = { left: node.offsetLeft, right: box.offsetWidth - node.offsetLeft - node.offsetWidth };
+    const from = spot.current;
+    spot.current = to;
+    capsule.style.opacity = "1";
+    capsule.style.left = `${to.left}px`;
+    capsule.style.right = `${to.right}px`;
+    if (from === null || from.left === to.left && from.right === to.right || reducedMotion2()) return void 0;
+    const ahead = to.left > from.left ? "right" : "left";
+    const behind = ahead === "right" ? "left" : "right";
+    const lead = capsule.animate([{ [ahead]: `${from[ahead]}px` }, { [ahead]: `${to[ahead]}px` }], { duration: SPRING_LEAD2.duration, easing: SPRING_LEAD2.easing });
+    const trail = capsule.animate([{ [behind]: `${from[behind]}px` }, { [behind]: `${to[behind]}px` }], { duration: SPRING_TRAIL2.duration, easing: SPRING_TRAIL2.easing });
+    return () => {
+      lead.cancel();
+      trail.cancel();
+    };
+  });
+  (0, import_react28.useEffect)(() => {
+    const box = wrap.current;
+    if (!box) return void 0;
+    const observer = new ResizeObserver(() => {
+      const node = under.current;
+      const capsule = ind.current;
+      if (!node?.isConnected || !capsule || spot.current === null) return;
+      spot.current = { left: node.offsetLeft, right: box.offsetWidth - node.offsetLeft - node.offsetWidth };
+      capsule.style.left = `${spot.current.left}px`;
+      capsule.style.right = `${spot.current.right}px`;
+    });
+    observer.observe(box);
+    return () => observer.disconnect();
+  }, []);
+  return (0, import_react28.createElement)(
+    "div",
+    { className: "bt-ptabs", role: "tablist", "aria-label": t("Panel tabs") },
+    (0, import_react28.createElement)(
+      "div",
+      { className: "bt-ptabs-in", ref: wrap },
+      (0, import_react28.createElement)(
+        "button",
+        {
+          type: "button",
+          role: "tab",
+          "aria-selected": view === "details",
+          className: "bt-ptab bt-ptab-bot",
+          title: bot.name,
+          onClick: () => onView("details")
+        },
+        (0, import_react28.createElement)(BotMark, { bot, size: 20, state: reading ? "searching" : "idle" }),
+        view === "details" ? (0, import_react28.createElement)("span", { className: "bt-ptab-name" }, bot.name) : null
+      ),
+      ids.map((tabId) => {
+        const page = pages[tabId] ?? EMPTY_PAGE;
+        const on = view === "browser" && tabId === active;
+        return (0, import_react28.createElement)(
+          "button",
+          {
+            key: tabId,
+            type: "button",
+            role: "tab",
+            "aria-selected": on,
+            "data-tab": tabId,
+            className: "bt-ptab",
+            title: page.url || t("New tab"),
+            onClick: () => {
+              actions.browserActivate(bot.id, tabId);
+              onView("browser");
+            },
+            onAuxClick: (event) => {
+              if (event.button === 1) {
+                event.preventDefault();
+                void actions.browserCloseTab(bot.id, tabId);
+              }
+            }
+          },
+          (0, import_react28.createElement)(Favicon, { src: page.favicon, className: "bt-ptab-fav" }),
+          (0, import_react28.createElement)("span", { className: "bt-ptab-title" }, tabLabel(page)),
+          (0, import_react28.createElement)("span", {
+            className: "bt-ptab-x",
+            role: "button",
+            "aria-label": t("Close tab"),
+            title: t("Close tab"),
+            onClick: (event) => {
+              event.stopPropagation();
+              void actions.browserCloseTab(bot.id, tabId);
+            }
+          }, "×")
+        );
+      }),
+      (0, import_react28.createElement)("span", { ref: ind, className: "bt-ptab-ind", "aria-hidden": true })
+    ),
+    // New tab and Close stay outside the scrolling tabs, so a narrow panel keeps both.
+    (0, import_react28.createElement)("button", { type: "button", className: "bt-ptab-new", "aria-label": t("New tab"), title: t("New tab"), onClick: () => actions.browserNewTab(subject) }, (0, import_react28.createElement)(PlusTabIcon)),
+    (0, import_react28.createElement)("button", { type: "button", className: "bt-icon-btn bt-ptab-close", "aria-label": t("Close panel"), title: t("Close panel"), onClick: () => actions.closePanel() }, (0, import_react28.createElement)(CloseIcon2))
+  );
+}
+function BrowserView({ bot, tabId, leaving, landed, actions, useBrowserPages }) {
+  const page = useBrowserPages((pages) => pages[tabId ?? ""]) ?? EMPTY_PAGE;
+  const frame = (0, import_react28.useRef)(null);
+  const input = (0, import_react28.useRef)(null);
+  const [draft, setDraft] = (0, import_react28.useState)(null);
+  const showGuest = landed && !leaving && Boolean(page.url) && !page.error;
+  (0, import_react28.useLayoutEffect)(() => {
+    const element = frame.current;
+    if (!element || leaving || !tabId) {
+      void actions.browserShow(null);
+      return void 0;
+    }
+    let raf = 0;
+    const measure = () => {
+      cancelAnimationFrame(raf);
+      raf = 0;
+      const box = element.getBoundingClientRect();
+      void actions.browserShow(tabId, showGuest ? { left: box.left, top: box.top, width: box.width, height: box.height } : null);
+    };
+    const schedule = () => {
+      if (!raf) raf = requestAnimationFrame(measure);
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(element);
+    window.addEventListener("resize", schedule);
+    return () => {
+      cancelAnimationFrame(raf);
+      observer.disconnect();
+      window.removeEventListener("resize", schedule);
+    };
+  }, [tabId, showGuest, leaving]);
+  (0, import_react28.useEffect)(() => {
+    setDraft(null);
+    if (landed && !page.url) input.current?.focus();
+  }, [tabId, landed]);
+  const go = (event) => {
+    event.preventDefault();
+    const text = draft ?? "";
+    if (text.trim() === "") return;
+    setDraft(null);
+    input.current?.blur();
+    void actions.browserNavigate(tabId, text).then((opened) => {
+      if (opened) actions.browserFocus(tabId);
+    });
+  };
+  const editing = draft !== null;
+  const secure = /^https:/i.test(page.url);
+  return (0, import_react28.createElement)(
+    "div",
+    { className: "bt-panel-view bt-panel-browser", "aria-label": t("{name}'s browser", { name: bot.name }) },
+    (0, import_react28.createElement)(
+      "div",
+      { className: "bt-browser-bar" },
+      (0, import_react28.createElement)("button", { type: "button", className: "bt-icon-btn", "aria-label": t("Back"), title: t("Back"), disabled: !page.canGoBack, onClick: () => actions.browserCommand(tabId, "back") }, (0, import_react28.createElement)(BackIcon)),
+      (0, import_react28.createElement)("button", { type: "button", className: "bt-icon-btn", "aria-label": t("Forward"), title: t("Forward"), disabled: !page.canGoForward, onClick: () => actions.browserCommand(tabId, "forward") }, (0, import_react28.createElement)(ForwardIcon)),
+      (0, import_react28.createElement)("button", {
+        type: "button",
+        className: "bt-icon-btn",
+        disabled: !page.url,
+        "aria-label": page.loading ? t("Stop") : t("Reload"),
+        title: page.loading ? t("Stop") : t("Reload"),
+        onClick: () => actions.browserCommand(tabId, page.loading ? "stop" : "reload")
+      }, (0, import_react28.createElement)(page.loading ? StopIcon : ReloadIcon)),
+      (0, import_react28.createElement)(
+        "form",
+        { className: "bt-browser-address", onSubmit: go, "data-editing": editing || void 0 },
+        (0, import_react28.createElement)("span", { className: "bt-browser-scheme", "aria-hidden": true }, (0, import_react28.createElement)(secure && !editing ? LockIcon2 : GlobeIcon)),
+        (0, import_react28.createElement)("input", {
+          ref: input,
+          type: "text",
+          spellCheck: false,
+          autoComplete: "off",
+          "aria-label": t("Address"),
+          placeholder: t("Search or enter address"),
+          value: editing ? draft : shortAddress(page.url),
+          onFocus: (event) => {
+            setDraft(page.url);
+            const target = event.target;
+            requestAnimationFrame(() => target.select());
+          },
+          onBlur: () => setDraft(null),
+          onChange: (event) => setDraft(event.target.value),
+          onKeyDown: (event) => {
+            if (event.key === "Escape") {
+              event.stopPropagation();
+              setDraft(null);
+              event.currentTarget.blur();
+            }
+          }
+        })
+      ),
+      page.loading ? (0, import_react28.createElement)("span", { className: "bt-browser-progress", "aria-hidden": true }) : null
+    ),
+    (0, import_react28.createElement)(
+      "div",
+      { ref: frame, className: "bt-browser-frame", "data-guest": showGuest || void 0 },
+      page.error ? (0, import_react28.createElement)(
+        "div",
+        { className: "bt-browser-empty" },
+        (0, import_react28.createElement)("div", { className: "bt-browser-empty-title" }, t("This page didn’t load")),
+        (0, import_react28.createElement)("div", { className: "bt-browser-empty-text" }, t(page.error)),
+        page.url ? (0, import_react28.createElement)("button", { type: "button", className: "bt-browser-retry", onClick: () => {
+          void actions.browserNavigate(tabId, page.url);
+        } }, t("Try again")) : null
+      ) : !page.url ? (0, import_react28.createElement)(
+        "div",
+        { className: "bt-browser-empty" },
+        (0, import_react28.createElement)(BotMark, { bot, size: 48, state: "idle", live: true }),
+        (0, import_react28.createElement)("div", { className: "bt-browser-empty-title" }, t("{name}'s browser", { name: bot.name })),
+        (0, import_react28.createElement)("div", { className: "bt-browser-empty-text" }, t("Open a page here and {name} can read it with you. Logins and cookies stay with {name}; other Bots never see them.", { name: bot.name }))
+      ) : null
+    )
+  );
+}
+function BotPanel({ pane, leaving, roster, actions, useSessions, useSessionStatus, useActivity, useBrowserTabs, useBrowserPages }) {
+  const bot = roster.byId[pane.id];
+  const canBrowse = Boolean(bot && roster.browser === true && actions.browserShow);
+  const view = pane.view === "browser" && canBrowse ? "browser" : "details";
+  const tabState = useBrowserTabs((map) => bot ? map[bot.id] ?? EMPTY_TABS2 : EMPTY_TABS2);
+  const active = tabState.active;
+  const page = useBrowserPages((pages) => (active ? pages[active] : null) ?? EMPTY_PAGE);
+  const root = (0, import_react28.useRef)(null);
+  const fly = (0, import_react28.useRef)(null);
+  const [landed, setLanded] = (0, import_react28.useState)(false);
+  const [settling, setSettling] = (0, import_react28.useState)(false);
+  const [width, setWidth] = (0, import_react28.useState)(savedWidth);
+  const [viewport, setViewport] = (0, import_react28.useState)(() => window.innerWidth);
+  const [dragging, setDragging] = (0, import_react28.useState)(false);
+  const [resizing, setResizing] = (0, import_react28.useState)(false);
+  const instant = dragging || resizing;
+  const [reading, setReading] = (0, import_react28.useState)(false);
+  const panelWidth = fitWidth(width ?? (view === "browser" ? DEFAULT_WIDTH : DETAILS_WIDTH), widthRange(view, viewport));
+  (0, import_react28.useLayoutEffect)(() => {
+    if (view === "browser" && width === null) setWidth(DEFAULT_WIDTH);
+  }, [view, width]);
+  (0, import_react28.useLayoutEffect)(() => {
+    chatRoom.hold(instant);
+  }, [instant]);
+  const [last, setLast] = (0, import_react28.useState)({ view, width: panelWidth });
+  if (last.view !== view || last.width !== panelWidth) {
+    setLast({ view, width: panelWidth });
+    if (last.view !== view) setSettling(last.width !== panelWidth && !instant);
+  }
+  const shownView = (0, import_react28.useRef)(view);
+  (0, import_react28.useLayoutEffect)(() => {
+    const switched = settling && shownView.current !== view;
+    shownView.current = view;
+    if (switched) chatRoom.hold(true);
+    chatRoom.set(leaving ? null : panelWidth);
+    if (switched) chatRoom.hold(false);
+  }, [view, panelWidth, leaving]);
+  (0, import_react28.useEffect)(() => () => {
+    chatRoom.set(null);
+    chatRoom.hold(false);
+  }, []);
+  (0, import_react28.useEffect)(() => {
+    let timer;
+    const onResize = () => {
+      setResizing(true);
+      setViewport(window.innerWidth);
+      clearTimeout(timer);
+      timer = setTimeout(() => setResizing(false), 160);
+    };
+    window.addEventListener("resize", onResize);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("resize", onResize);
+    };
+  }, []);
+  (0, import_react28.useEffect)(() => {
+    if (!settling) return void 0;
+    const timer = setTimeout(() => setSettling(false), SPRING_SHAPE.duration + 40);
+    return () => clearTimeout(timer);
+  }, [settling, view]);
+  (0, import_react28.useEffect)(() => {
+    const timer = setTimeout(() => setLanded(true), 360);
+    return () => clearTimeout(timer);
+  }, []);
+  (0, import_react28.useEffect)(() => {
+    if (canBrowse) actions.browserEnsure(bot.id);
+  }, [bot?.id, canBrowse]);
+  (0, import_react28.useEffect)(() => {
+    if (view === "browser" && (active === null || !tabState.ids.includes(active))) actions.setPanelView("details");
+  }, [view, active, tabState.ids.length]);
+  (0, import_react28.useEffect)(() => {
+    if (view !== "browser" || leaving) void actions.browserShow?.(null);
+  }, [view, leaving]);
+  (0, import_react28.useEffect)(() => () => {
+    void actions.browserShow?.(null);
+  }, []);
+  (0, import_react28.useEffect)(() => {
+    if (!page.readAt || Date.now() - page.readAt > READ_FLASH_MS) return void 0;
+    setReading(true);
+    const timer = setTimeout(() => setReading(false), READ_FLASH_MS);
+    return () => clearTimeout(timer);
+  }, [page.readAt]);
+  const beginSwitch = (next) => {
+    if (reducedMotion2()) return;
+    const panel = root.current;
+    const outgoing = panel?.querySelector(".bt-panel-view");
+    if (outgoing) {
+      const ghostEl = document.createElement("div");
+      ghostEl.className = "bt-panel-ghost";
+      ghostEl.style.width = `${outgoing.offsetWidth}px`;
+      ghostEl.append(outgoing.cloneNode(true));
+      outgoing.parentElement.append(ghostEl);
+      void ghostEl.animate([
+        { opacity: 1, transform: "scale(1)" },
+        { opacity: 0, transform: "scale(0.985)" }
+      ], { duration: 160, easing: "ease-out", fill: "forwards" }).finished.catch(() => {
+      }).finally(() => ghostEl.remove());
+    }
+    const source = next === "browser" ? panel?.querySelector(".bt-drawer-id .bt-mark") : panel?.querySelector(".bt-ptab-bot .bt-mark");
+    if (source) fly.current = { node: source.cloneNode(true), from: source.getBoundingClientRect() };
+  };
+  const switchView = (next) => {
+    if (next === view || leaving) return;
+    beginSwitch(next);
+    actions.setPanelView(next);
+  };
+  const panelActions = { ...actions };
+  for (const name of ["openBrowser", "browserNewTab", "browserPick"]) {
+    if (actions[name]) panelActions[name] = (...args) => {
+      if (view !== "browser") beginSwitch("browser");
+      return actions[name](...args);
+    };
+  }
+  (0, import_react28.useLayoutEffect)(() => {
+    const move = fly.current;
+    if (!move) return;
+    fly.current = null;
+    const target = view === "browser" ? root.current?.querySelector(".bt-ptab-bot .bt-mark") : root.current?.querySelector(".bt-drawer-id .bt-mark");
+    if (!target || move.from.width === 0) return;
+    const growing = root.current.getAnimations({ subtree: true }).filter((animation) => animation.animationName === "bt-strip-in");
+    const at = growing.map((animation) => animation.currentTime);
+    for (const animation of growing) animation.currentTime = animation.effect.getComputedTiming().endTime;
+    const to = target.getBoundingClientRect();
+    growing.forEach((animation, index) => {
+      animation.currentTime = at[index];
+    });
+    const clone = move.node;
+    Object.assign(clone.style, {
+      position: "fixed",
+      left: `${move.from.left}px`,
+      top: `${move.from.top}px`,
+      width: `${move.from.width}px`,
+      height: `${move.from.height}px`,
+      margin: "0",
+      transformOrigin: "0 0",
+      zIndex: "80",
+      pointerEvents: "none",
+      visibility: ""
+    });
+    document.body.append(clone);
+    target.style.visibility = "hidden";
+    const scale = to.width / move.from.width;
+    const anim = clone.animate([
+      { transform: "translate(0px, 0px) scale(1)" },
+      { transform: `translate(${to.left - move.from.left}px, ${to.top - move.from.top}px) scale(${scale})` }
+    ], { duration: SPRING_SHAPE.duration, easing: SPRING_SHAPE.easing, fill: "forwards" });
+    void anim.finished.catch(() => {
+    }).finally(() => {
+      clone.remove();
+      target.style.visibility = "";
+    });
+  }, [view, pane.id]);
+  const startResize = (event) => {
+    if (event.button !== 0 || leaving) return;
+    event.preventDefault();
+    const panel = root.current;
+    const grip = event.currentTarget;
+    grip.setPointerCapture?.(event.pointerId);
+    const range = widthRange(view, window.innerWidth);
+    const from = { x: event.clientX, width: panelWidth };
+    let next = panelWidth;
+    setDragging(true);
+    setSettling(false);
+    chatRoom.hold(true);
+    const columns = chatRoom.columns();
+    for (const column of columns) column.style.setProperty("transition", "none", "important");
+    const onMove = (move) => {
+      next = fitWidth(from.width + from.x - move.clientX, range);
+      panel.style.width = `${next}px`;
+      if (columns.length === 0) chatRoom.set(next);
+      for (const column of columns) column.style.setProperty("margin-right", `${next}px`, "important");
+    };
+    const ends = ["pointerup", "pointercancel", "lostpointercapture"];
+    const onEnd = (end) => {
+      if (end.type === "pointerup") onMove(end);
+      grip.removeEventListener("pointermove", onMove);
+      for (const name of ends) grip.removeEventListener(name, onEnd);
+      chatRoom.set(next);
+      for (const column of columns) {
+        column.style.removeProperty("margin-right");
+        column.style.removeProperty("transition");
+      }
+      panel.style.setProperty("--bt-panel-w", `${next}px`);
+      panel.style.removeProperty("width");
+      setDragging(false);
+      if (next === from.width) return;
+      setWidth(next);
+      try {
+        localStorage.setItem(WIDTH_KEY, String(next));
+      } catch {
+      }
+    };
+    grip.addEventListener("pointermove", onMove);
+    for (const name of ends) grip.addEventListener(name, onEnd);
+  };
+  const hasStrip = canBrowse && tabState.ids.length > 0;
+  return (0, import_react28.createElement)(
+    "aside",
+    {
+      ref: root,
+      className: "bt-panel",
+      "data-view": view,
+      "aria-label": view === "browser" && bot ? t("{name}'s browser", { name: bot.name }) : t("Conversation details"),
+      "data-leaving": leaving || void 0,
+      "aria-hidden": leaving || void 0,
+      "data-settling": settling || void 0,
+      "data-instant": instant || void 0,
+      "data-dragging": dragging || void 0,
+      style: { "--bt-panel-w": `${panelWidth}px` },
+      onAnimationEnd: (event) => {
+        if (event.target === event.currentTarget) setLanded(true);
+      }
+    },
+    leaving ? null : (0, import_react28.createElement)("div", { className: "bt-panel-grip", role: "separator", "aria-orientation": "vertical", "aria-label": t("Resize panel"), onPointerDown: startResize }),
+    // Over the whole window while dragging: the cursor stays a resize cursor and the
+    // pages underneath (the chat, the guest) see no pointer.
+    dragging ? (0, import_react_dom7.createPortal)((0, import_react28.createElement)("div", { className: "bt-drag-shield", "aria-hidden": true }), document.body) : null,
+    hasStrip ? (0, import_react28.createElement)(PanelStrip, { bot, subject: pane.id, view, ids: tabState.ids, active, reading, onView: switchView, actions: panelActions, useBrowserPages }) : null,
+    view === "browser" && bot ? (0, import_react28.createElement)(BrowserView, { key: `browser:${active}`, bot, tabId: active, leaving, landed: landed && !settling, actions, useBrowserPages }) : (0, import_react28.createElement)(
+      "div",
+      { key: `details:${pane.id}:${pane.renaming ? "rename" : ""}:${pane.tab ?? ""}`, className: "bt-panel-view" },
+      (0, import_react28.createElement)(DetailsDrawer, {
+        sessionId: pane.id,
+        startRenaming: pane.renaming,
+        startTab: pane.tab,
+        hasStrip,
+        roster,
+        actions: panelActions,
+        useSessions,
+        useSessionStatus,
+        useActivity,
+        useBrowserTabs,
+        useBrowserPages
+      })
+    )
+  );
+}
+var BROWSER_CSS = `
+.bt-panel{--bt-panel-view-fade:${SPRING_SHAPE.duration}ms}
+.bt-ptabs{position:relative;display:flex;align-items:center;height:44px;flex:none;border-bottom:.5px solid var(--bt-line);padding:0 6px;gap:0;animation:bt-strip-in ${SPRING_SHAPE.duration}ms ${SPRING_SHAPE.easing}}
+@keyframes bt-strip-in{from{height:0;opacity:0}}
+.bt-ptabs-in{position:relative;display:flex;align-items:center;gap:2px;flex:1;min-width:0;height:100%;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;padding:4px 2px;scroll-padding-left:48px;mask-image:linear-gradient(to right,#000,#000 calc(100% - 10px),transparent)}
+.bt-ptabs-in>.bt-ptab-bot{position:sticky;left:0;z-index:2;background:var(--bt-main)}
+.bt-ptabs-in>.bt-ptab-bot[aria-selected=true]{background:transparent}
+.bt-ptabs-in::-webkit-scrollbar{display:none}
+.bt-ptab{position:relative;z-index:1;display:inline-flex;align-items:center;gap:6px;height:32px;max-width:180px;padding:0 8px;flex:none;border:0;border-radius:9px;background:none;color:var(--bt-ink-2);font:inherit;font-size:12.5px;cursor:pointer;white-space:nowrap;transition:color .12s ease}
+.bt-ptab:hover{color:var(--bt-ink)}
+.bt-ptab[aria-selected=true]{color:var(--bt-ink)}
+.bt-ptab-bot{padding:0 7px}
+.bt-ptab-bot .bt-mark{flex:none}
+.bt-ptab-name{max-width:96px;overflow:hidden;text-overflow:ellipsis;font-weight:500;animation:bt-ptab-label .18s ease}
+@keyframes bt-ptab-label{from{opacity:0;filter:blur(4px);max-width:0}}
+.bt-ptab-fav{width:14px;height:14px;flex:none;border-radius:3px;object-fit:cover;color:var(--bt-ink-3)}
+.bt-ptab-globe{display:inline-flex}
+.bt-ptab-globe svg{width:14px;height:14px}
+.bt-ptab-title{max-width:140px;overflow:hidden;text-overflow:ellipsis}
+.bt-ptab-x{flex:none;width:16px;height:16px;border-radius:5px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;line-height:1;color:var(--bt-ink-3);opacity:0;transition:opacity .12s ease,background-color .12s ease}
+.bt-ptab:hover .bt-ptab-x,.bt-ptab[aria-selected=true] .bt-ptab-x{opacity:1}
+.bt-ptab-x:hover{background:var(--bt-active);color:var(--bt-ink)}
+.bt-ptab-new{position:relative;z-index:1;flex:none;width:28px;height:32px;border:0;border-radius:9px;background:none;color:var(--bt-ink-3);display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.bt-ptab-new:hover{color:var(--bt-ink)}
+.bt-ptab-new svg{width:15px;height:15px}
+.bt-ptab-ind{position:absolute;top:4px;bottom:4px;border-radius:9px;background:var(--bt-hover);opacity:0;pointer-events:none;z-index:0;transition:opacity .15s ease}
+.bt-ptab-close{flex:none;margin-left:2px}
+.bt-panel-ghost{position:absolute;top:44px;right:0;bottom:0;overflow:hidden;pointer-events:none;z-index:2}
+.bt-panel-ghost>.bt-panel-view{position:absolute;inset:0}
+.bt-panel-view{flex:1;min-height:0;display:flex;flex-direction:column;animation:bt-panel-view-in .22s cubic-bezier(.16,1,.3,1)}
+@keyframes bt-panel-view-in{from{opacity:0}}
+/* While the panel changes width its views keep their final width on the right edge, so
+   only the panel edge moves and nothing inside reflows frame by frame. */
+.bt-panel[data-settling]{overflow:hidden}
+.bt-panel[data-settling]>.bt-ptabs,.bt-panel[data-settling]>.bt-panel-view{flex-shrink:0;align-self:flex-end;box-sizing:border-box;width:calc(var(--bt-panel-w,320px) - .5px)}
+.bt-panel-browser{position:relative}
+.bt-browser-bar{position:relative;display:flex;align-items:center;gap:2px;height:52px;padding:0 10px 0 12px;flex:none;border-bottom:.5px solid var(--bt-line)}
+.bt-browser-bar .bt-icon-btn:disabled{opacity:.35;cursor:default;background:none}
+.bt-browser-address{flex:1;min-width:0;display:flex;align-items:center;gap:6px;height:32px;margin:0 4px;padding:0 12px;border-radius:999px;background:var(--bt-hover);border:.5px solid transparent;transition:background-color .12s ease,border-color .12s ease,box-shadow .12s ease}
+.bt-browser-address:hover{background:var(--bt-active)}
+.bt-browser-address[data-editing]{background:var(--bt-main);border-color:var(--bt-line-2);box-shadow:0 2px 8px -1px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04)}
+.bt-browser-scheme{display:inline-flex;color:var(--bt-ink-3);flex:none}
+.bt-browser-scheme svg{width:14px;height:14px}
+.bt-browser-address input{flex:1;min-width:0;border:0;background:none;outline:none;color:var(--bt-ink);font:inherit;font-size:13px;line-height:18px;padding:0;text-overflow:ellipsis}
+.bt-browser-address input::placeholder{color:var(--bt-ink-3)}
+.bt-browser-progress{position:absolute;left:0;right:0;bottom:-1px;height:2px;overflow:hidden;pointer-events:none}
+.bt-browser-progress::after{content:"";position:absolute;inset:0;width:40%;background:var(--bt-accent,#4D6BFE);border-radius:2px;animation:bt-browser-load 1.1s cubic-bezier(.4,0,.2,1) infinite}
+@keyframes bt-browser-load{from{transform:translateX(-100%)}to{transform:translateX(250%)}}
+.bt-browser-frame{position:relative;flex:1;min-height:0;background:var(--bt-main)}
+.bt-browser-frame[data-guest]{background:#fff}
+.bt-browser-empty{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:32px;text-align:center;animation:bt-foot-in .3s ease}
+.bt-browser-empty-title{font-size:15px;line-height:22px;font-weight:500;margin-top:6px}
+.bt-browser-empty-text{max-width:300px;font-size:13px;line-height:19px;color:var(--bt-ink-2);overflow-wrap:anywhere}
+.bt-browser-retry{margin-top:6px;height:32px;padding:0 14px;border-radius:999px;border:.5px solid var(--bt-line-2);background:var(--bt-main);color:var(--bt-ink);font:inherit;font-size:13px;cursor:pointer}
+.bt-browser-retry:hover{background:var(--bt-hover)}
+.bt-bcards{display:flex;flex-direction:column;gap:12px}
+.bt-bcard{position:relative;border:.5px solid var(--bt-line-2);border-radius:12px;overflow:hidden;background:var(--bt-main);animation:bt-bcard-in .24s cubic-bezier(.16,1,.3,1) both;transition:border-color .12s ease,box-shadow .12s ease}
+@keyframes bt-bcard-in{from{opacity:0;filter:blur(4px);transform:translateY(4px)}}
+.bt-bcard[data-active]{border-color:var(--bt-accent,#4D6BFE);box-shadow:0 0 0 1px var(--bt-accent,#4D6BFE)}
+.bt-bcard-shot{position:relative;display:block;width:100%;aspect-ratio:16/10;border:0;background:var(--bt-hover);padding:0;cursor:pointer}
+.bt-bcard-blank{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--bt-ink-3);font-size:12px}
+.bt-bcard-blank svg{width:20px;height:20px}
+.bt-bcard-preview{position:absolute;inset:0;display:flex;flex-direction:column;gap:6px;padding:14px 16px;text-align:left;background:linear-gradient(to bottom,var(--bt-main),var(--bt-hover));overflow:hidden}
+.bt-bcard-ptitle{font-size:13px;line-height:18px;font-weight:600;color:var(--bt-ink);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bt-bcard-excerpt{font-size:12px;line-height:17px;color:var(--bt-ink-2);display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.bt-bcard-row{display:flex;align-items:center;gap:7px;padding:8px 10px;min-width:0}
+.bt-bcard-fav{width:14px;height:14px;flex:none;border-radius:3px;color:var(--bt-ink-3)}
+.bt-bcard-row svg.bt-bcard-fav{width:14px;height:14px}
+.bt-bcard-title{flex:1;min-width:0;font-size:12.5px;line-height:17px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--bt-ink)}
+.bt-bcard-host{flex:none;font-size:11px;line-height:15px;color:var(--bt-ink-3);max-width:38%;overflow:hidden;text-overflow:ellipsis}
+.bt-bcard-x{position:absolute;top:6px;right:6px;width:22px;height:22px;border:0;border-radius:7px;background:color-mix(in srgb,var(--bt-main) 88%,transparent);color:var(--bt-ink-2);display:flex;align-items:center;justify-content:center;font-size:14px;cursor:pointer;opacity:0;transition:opacity .12s ease;backdrop-filter:blur(4px)}
+.bt-bcard:hover .bt-bcard-x{opacity:1}
+.bt-bcard-new{display:flex;align-items:center;justify-content:center;gap:6px;height:40px;border:.5px dashed var(--bt-line-2);border-radius:12px;background:none;color:var(--bt-ink-3);font:inherit;font-size:12.5px;cursor:pointer}
+.bt-bcard-new:hover{color:var(--bt-ink);border-color:var(--bt-ink-3)}
+.bt-bcard-new svg{width:14px;height:14px}
+.bt-browser-empty-mark{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+@media (prefers-reduced-motion:reduce){.bt-ptabs,.bt-panel-view,.bt-bcard,.bt-ptab-name{animation:none}}
+`;
+
+// src/client/overlays.js
+var import_react29 = require("react");
+var import_react_dom8 = require("react-dom");
+var DIALOG_EXIT_MS = 160;
+var MENU_EXIT_MS3 = 120;
+function Overlays({ useRoster, useUi, useSessions, useSessionStatus, useActivity, useRegistry, useBrowserPages, useBrowserTabs, actions }) {
+  const roster = useRoster((value) => value);
+  const ui = useUi((value) => value);
+  useRegistry((value) => value);
+  const current = useSessions((list) => Object.values(list.byId).find((session) => (session?.retainedBy?.mainView ?? 0) > 0)?.id ?? null);
+  const previous = (0, import_react29.useRef)(current);
+  (0, import_react29.useEffect)(() => {
+    if (previous.current === current) return;
+    previous.current = current;
+    if (current) actions.followPanel?.(current);
+  }, [current]);
+  const open = ui.details ? { id: ui.details, view: ui.view ?? "details", renaming: ui.renaming, tab: ui.tab } : null;
+  const [kept, setKept] = (0, import_react29.useState)(open);
+  (0, import_react29.useEffect)(() => {
+    if (open) {
+      setKept(open);
+      return void 0;
+    }
+    const timer = setTimeout(() => setKept(null), PANEL_LINGER_MS);
+    return () => clearTimeout(timer);
+  }, [ui.details, ui.view, ui.renaming, ui.tab]);
+  const pane = open ?? kept;
+  const [settings, settingsLeaving] = useLinger(ui.settings, DIALOG_EXIT_MS);
+  const [memory, memoryLeaving] = useLinger(ui.memory && roster.byId[ui.memory] ? ui.memory : null, DIALOG_EXIT_MS);
+  const [menu, menuLeaving] = useLinger(ui.menu, MENU_EXIT_MS3);
+  return (0, import_react29.createElement)(
+    import_react29.Fragment,
+    null,
+    pane ? (0, import_react_dom8.createPortal)((0, import_react29.createElement)(BotPanel, { pane, leaving: open === null, roster, actions, useSessions, useSessionStatus, useActivity, useBrowserTabs, useBrowserPages }), document.body) : null,
+    ui.newChat ? (0, import_react_dom8.createPortal)((0, import_react29.createElement)(NewChat, { key: ui.newChat, mode: ui.newChat, roster, actions }), document.body) : null,
+    ui.palette ? (0, import_react_dom8.createPortal)((0, import_react29.createElement)(CommandPalette, { key: ui.palette.token, start: ui.palette.query, token: ui.palette.token, roster, actions, useSessions }), document.body) : null,
+    ui.exchange ? (0, import_react_dom8.createPortal)((0, import_react29.createElement)(ExchangeDialog, { pair: ui.exchange, roster, actions }), document.body) : null,
+    ui.voice ? (0, import_react_dom8.createPortal)((0, import_react29.createElement)(VoiceMode, { key: ui.voice, sessionId: ui.voice, roster, actions, useSessions, useSessionStatus }), document.body) : null,
+    menu ? (0, import_react_dom8.createPortal)((0, import_react29.createElement)(ContextMenu, { key: `${menu.kind ?? ""}:${menu.id}:${menu.x}:${menu.y}`, menu, roster, actions, leaving: menuLeaving }), document.body) : null,
+    settings ? (0, import_react_dom8.createPortal)((0, import_react29.createElement)(SettingsDialog, { page: settings.page, id: settings.id, roster, actions, leaving: settingsLeaving }), document.body) : null,
+    memory && roster.byId[memory] ? (0, import_react_dom8.createPortal)((0, import_react29.createElement)(MemoryDialog, { key: memory, bot: roster.byId[memory], actions, leaving: memoryLeaving }), document.body) : null
+  );
+}
+
+// src/client/read-page.js
+var READ_LIMITS = {
+  chars: 4e5,
+  nodes: 15e4,
+  depth: 400,
+  ms: 1500,
+  items: 3e3,
+  tableRows: 5e3,
+  tableCols: 30,
+  frameDepth: 3
+};
+function readPage(limits) {
+  const started = performance.now();
+  const SKIP = /* @__PURE__ */ new Set(["script", "style", "noscript", "template", "head", "title", "meta", "link", "svg", "object", "embed", "audio", "video", "source", "track", "map", "datalist", "option", "optgroup"]);
+  const ITEM = 'a[href], button, input:not([type=hidden]), textarea, select, summary, [role=button], [role=link], [role=tab], [role=menuitem], [role=checkbox], [role=switch], [role=radio], [contenteditable=""], [contenteditable=true]';
+  const ROLES = { a: "link", button: "button", select: "select", textarea: "textbox", summary: "button" };
+  const INPUT_ROLES = { checkbox: "checkbox", radio: "radio", submit: "button", button: "button", reset: "button", image: "button", search: "searchbox", range: "slider", file: "button", color: "button" };
+  const NO_VALUE_TYPES = /* @__PURE__ */ new Set(["checkbox", "radio", "submit", "button", "reset", "image", "file", "color"]);
+  const SECRET_HINT = /(^|[-_\s])(cvv|cvc|csc|cc-?(num|number|csc|exp)|card-?(num|number)|otp|one-?time-?code|pin)([-_\s]|$)/i;
+  const BLOCK_DISPLAY = /^(block|flex|grid|list-item|table|flow-root|table-caption|table-row-group|table-header-group|table-footer-group|table-row|-webkit-box)$/;
+  const INLINE_BLOCK = /^(inline-block|inline-flex|inline-grid|inline-table|table-cell|-webkit-inline-box)$/;
+  const SEMANTIC = /^(ul|ol|table|pre|blockquote|h[1-6]|code|details)$/;
+  const items = [];
+  const stash = [];
+  const stats = { nodes: 0, frames: 0 };
+  let chars = 0;
+  let stop = "";
+  const collapse = (value) => String(value || "").replace(/\s+/g, " ").trim();
+  const isSecret = (el) => {
+    if (el.localName !== "input" && el.localName !== "textarea") return false;
+    const auto = String(el.getAttribute("autocomplete") || "").toLowerCase();
+    return el.type === "password" || /(^|\s)(cc-|one-time-code)/.test(auto) || SECRET_HINT.test(`${el.getAttribute("name") || ""} ${el.id || ""}`);
+  };
+  const keep = (text2, end = "") => {
+    if (text2 === "") return "";
+    stash.push(text2);
+    return `
+
+${stash.length - 1}${end}
+
+`;
+  };
+  const expand = (text2) => text2.replace(/\u0001(\d+)[\u0002\u0003]/g, (_, index) => expand(stash[Number(index)]));
+  const flow = (text2) => text2.split("\n").map((line) => line.replace(/[ \t\f\v\u00a0\u2028\u2029]+/g, " ").trim().replace(/^· /, "")).join("\n").replace(/\n{3,}/g, "\n\n").replace(/\u0003\n\n(?=\u0001\d+\u0003)/g, "\n").trim();
+  const block = (text2) => expand(flow(text2));
+  const oneLine = (text2) => block(text2).replace(/\s*\n+\s*/g, " ").trim();
+  const styleOf = (el) => (el.ownerDocument.defaultView || window).getComputedStyle(el);
+  const childrenOf = (el) => {
+    if (el.shadowRoot) return el.shadowRoot.childNodes;
+    if (el.localName === "slot" && typeof el.assignedNodes === "function") {
+      const assigned = el.assignedNodes();
+      if (assigned.length > 0) return assigned;
+    }
+    return el.childNodes;
+  };
+  const over = () => {
+    if (stop) return true;
+    if (chars > limits.chars) stop = `the text passed ${limits.chars} characters`;
+    else if (stats.nodes > limits.nodes) stop = `the page has more than ${limits.nodes} nodes`;
+    else if (stats.nodes % 512 === 0 && performance.now() - started > limits.ms) stop = `reading took longer than ${limits.ms} ms`;
+    return stop !== "";
+  };
+  const roleOf = (el) => el.getAttribute("role") || ROLES[el.localName] || (el.localName === "input" ? INPUT_ROLES[el.type] || "textbox" : el.isContentEditable ? "textbox" : el.localName);
+  const sized = (el) => {
+    const box = el.getBoundingClientRect();
+    return box.width > 0 && box.height > 0;
+  };
+  const itemFor = (el, style) => {
+    if (items.length >= limits.items || style.visibility !== "visible" || !el.matches(ITEM) || !sized(el)) return null;
+    const item = { role: roleOf(el) };
+    const secret = isSecret(el);
+    if (el.href) item.href = String(el.href);
+    if ((el.localName === "input" || el.localName === "textarea") && !secret && !NO_VALUE_TYPES.has(el.type) && el.value) item.value = String(el.value).slice(0, 120);
+    if (el.localName === "select" && el.selectedOptions?.length) item.value = collapse([...el.selectedOptions].map((option) => option.label || option.text).join(", ")).slice(0, 120);
+    if (el.checked) item.checked = true;
+    if (el.disabled) item.disabled = true;
+    items.push(item);
+    return { item, number: items.length, secret };
+  };
+  const nameOf = (el, text2, secret) => collapse(
+    el.getAttribute("aria-label") || text2 || (el.localName === "input" && !secret && NO_VALUE_TYPES.has(el.type) ? el.value : "") || el.getAttribute("placeholder") || el.title || el.getAttribute("alt") || el.querySelector?.("img[alt]")?.alt || el.getAttribute("name") || ""
+  ).slice(0, 80);
+  const fenced = (code, lang) => {
+    const longest = Math.max(2, ...(code.match(/`{3,}/g) || []).map((run) => run.length));
+    const fence = "`".repeat(longest + 1);
+    return `${fence}${lang}
+${code.replace(/\n+$/, "")}
+${fence}`;
+  };
+  const langOf = (el) => {
+    const names = `${el.className || ""} ${el.querySelector?.("code")?.className || ""}`;
+    return /(?:^|\s)(?:lang|language)-([\w+#.-]+)/.exec(names)?.[1] || "";
+  };
+  const list = (el, ctx) => {
+    const ordered = el.localName === "ol";
+    let number = ordered ? Number(el.getAttribute("start") || 1) || 1 : 1;
+    const lines = [];
+    for (const child of childrenOf(el)) {
+      if (over()) break;
+      if (child.nodeType !== 1 || child.localName !== "li") {
+        const loose = block(render(child, ctx));
+        if (loose) lines.push(loose);
+        continue;
+      }
+      const style = styleOf(child);
+      if (style.display === "none") continue;
+      let body2 = block(children(child, { ...ctx, depth: ctx.depth + 1, shown: style.visibility === "visible" }));
+      if (!body2.includes("```")) body2 = body2.replace(/\n{2,}/g, "\n");
+      const marker = ordered ? `${number++}. ` : "- ";
+      if (body2 === "") continue;
+      const pad2 = " ".repeat(marker.length);
+      lines.push(body2.split("\n").map((line, index) => (index === 0 ? marker : line ? pad2 : "") + line).join("\n"));
+    }
+    return keep(lines.join("\n"));
+  };
+  const cellText = (cell, ctx) => block(children(cell, ctx)).replace(/\n+/g, " <br> ").replace(/\|/g, "\\|");
+  const layoutTable = (table, rows) => {
+    const role = table.getAttribute("role");
+    if (role === "presentation" || role === "none") return true;
+    if (table.querySelector("table")) return true;
+    return !rows.some((row) => row.cells.length > 1);
+  };
+  const tableMarkdown = (table, ctx) => {
+    const rows = [...table.rows].filter((row) => styleOf(row).display !== "none");
+    const caption = table.caption ? oneLine(children(table.caption, ctx)) : "";
+    if (layoutTable(table, rows)) {
+      return rows.map((row) => [...row.cells].map((cell) => `
+
+${children(cell, ctx)}
+
+`).join("")).join("");
+    }
+    const grid = [];
+    const carry = [];
+    let width = 0;
+    for (const row of rows.slice(0, limits.tableRows + 1)) {
+      if (over()) break;
+      const line = [];
+      let column = 0;
+      const place = () => {
+        while (carry[column]?.left > 0) {
+          line[column] = carry[column].text;
+          carry[column].left -= 1;
+          column += 1;
+        }
+      };
+      for (const cell of row.cells) {
+        place();
+        if (styleOf(cell).display === "none") continue;
+        const text2 = cellText(cell, ctx);
+        const span = Math.max(1, Math.min(limits.tableCols, Number(cell.colSpan) || 1));
+        const down = Math.max(1, Math.min(limits.tableRows, Number(cell.rowSpan) || 1));
+        for (let offset = 0; offset < span; offset += 1) {
+          line[column] = offset === 0 ? text2 : "";
+          if (down > 1) carry[column] = { text: offset === 0 ? text2 : "", left: down - 1 };
+          column += 1;
+        }
+      }
+      place();
+      width = Math.max(width, line.length);
+      grid.push(line);
+    }
+    width = Math.min(width, limits.tableCols);
+    if (grid.length === 0 || width === 0) return caption ? `
+
+${caption}
+
+` : "";
+    const format = (cells) => `| ${Array.from({ length: width }, (_, index) => cells[index] ?? "").join(" | ")} |`;
+    const out = [format(grid[0]), `|${" --- |".repeat(width)}`, ...grid.slice(1).map(format)];
+    if (rows.length > limits.tableRows + 1) out.push(`… (table cut: ${rows.length - limits.tableRows - 1} more rows)`);
+    return `${caption ? `
+
+Table: ${caption}` : ""}${keep(out.join("\n"))}`;
+  };
+  const frame = (el, ctx) => {
+    let doc = null;
+    try {
+      doc = el.contentDocument;
+    } catch {
+      doc = null;
+    }
+    const address = (() => {
+      try {
+        return doc?.location?.href || el.src || el.getAttribute("src") || "about:blank";
+      } catch {
+        return el.src || "about:blank";
+      }
+    })();
+    if (!doc) return `
+
+[iframe (cross-origin, not readable): ${address}]
+
+`;
+    if (ctx.frames >= limits.frameDepth) return `
+
+[iframe (nested too deep, not read): ${address}]
+
+`;
+    stats.frames += 1;
+    const title = collapse(el.title || doc.title);
+    const body2 = doc.body ? block(children(doc.body, { ...ctx, frames: ctx.frames + 1, depth: ctx.depth + 1, shown: true, pre: false })) : "";
+    return keep(`[iframe: ${title ? `${title} (${address})` : address}]
+${body2 || "(no text)"}
+[iframe end]`);
+  };
+  function children(el, ctx) {
+    let out = "";
+    for (const child of childrenOf(el)) {
+      if (over()) break;
+      out += render(child, ctx);
+    }
+    return out;
+  }
+  function render(node, ctx) {
+    stats.nodes += 1;
+    if (node.nodeType === 3) {
+      if (!ctx.shown) return "";
+      const data = node.data.replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g, "");
+      const text2 = ctx.pre ? data : data.replace(/[\t\n\r ]+/g, " ");
+      chars += text2.length;
+      return text2;
+    }
+    if (node.nodeType !== 1) return "";
+    const el = node;
+    const tag = el.localName;
+    if (SKIP.has(tag) || ctx.depth > limits.depth || over()) return "";
+    const style = styleOf(el);
+    const display = style.display;
+    if (display === "none" || style.contentVisibility === "hidden") return "";
+    const shown = style.visibility === "visible";
+    const keepsSpace = String(style.whiteSpace || "").startsWith("pre") || style.whiteSpace === "break-spaces";
+    const next = { ...ctx, depth: ctx.depth + 1, shown };
+    if (display === "contents" && !SEMANTIC.test(tag) && !el.matches(ITEM)) return children(el, next);
+    if (style.overflowX !== "visible" || style.overflowY !== "visible") {
+      const box = el.getBoundingClientRect();
+      if (box.width === 0 || box.height === 0) return "";
+    }
+    if (tag === "br") return "\n";
+    if (tag === "hr") return "\n\n---\n\n";
+    if (tag === "img") {
+      const alt = collapse(el.getAttribute("alt"));
+      return shown && alt ? `[image: ${alt}]` : "";
+    }
+    if (tag === "canvas") {
+      const box = el.getBoundingClientRect();
+      return box.width >= 200 && box.height >= 100 ? "\n\n[canvas: drawn content, not readable]\n\n" : "";
+    }
+    if (tag === "iframe" || tag === "frame") {
+      const box = el.getBoundingClientRect();
+      return tag === "iframe" && (box.width < 2 || box.height < 2) ? "" : frame(el, next);
+    }
+    const found = itemFor(el, style);
+    const mark = found ? `[#${found.number}]` : "";
+    if (tag === "input" || tag === "textarea" || tag === "select") {
+      if (found) found.item.name = nameOf(el, tag === "select" ? "" : el.labels?.[0] ? collapse(el.labels[0].textContent) : "", found.secret);
+      return mark ? ` ${mark} ` : "";
+    }
+    let body2;
+    if (tag === "pre") {
+      const code = shown ? String(el.innerText || el.textContent || "") : "";
+      chars += code.length;
+      body2 = code.trim() ? keep(fenced(code, langOf(el))) : "";
+    } else if (tag === "table") {
+      body2 = tableMarkdown(el, next);
+    } else if (tag === "ul" || tag === "ol") {
+      body2 = list(el, next);
+    } else if (tag === "details" && !el.open) {
+      const summary = [...el.children].find((child) => child.localName === "summary");
+      body2 = summary ? render(summary, next) : "";
+    } else {
+      body2 = children(el, { ...next, pre: keepsSpace });
+    }
+    if (found) found.item.name = nameOf(el, oneLine(body2), found.secret);
+    const level = /^h([1-6])$/.exec(tag)?.[1] || (el.getAttribute("role") === "heading" ? el.getAttribute("aria-level") || "2" : "");
+    if (level) {
+      const title = oneLine(body2);
+      return title ? `
+
+${"#".repeat(Math.min(6, Number(level) || 2))} ${title}${mark}
+
+` : mark;
+    }
+    if (tag === "code" && !ctx.pre) {
+      const code = oneLine(body2);
+      if (!code) return mark;
+      const ticks = code.includes("`") ? "``" : "`";
+      return `${ticks}${code}${ticks}${mark}`;
+    }
+    if (tag === "blockquote") {
+      const quoted = block(body2);
+      return quoted ? keep(quoted.split("\n").map((line) => line ? `> ${line}` : ">").join("\n")) : "";
+    }
+    const end = body2.trimEnd().length;
+    const marked = mark ? `${body2.slice(0, end)}${mark}${body2.slice(end)}` : body2;
+    if (ctx.pre && !BLOCK_DISPLAY.test(display)) return marked;
+    if (keepsSpace && BLOCK_DISPLAY.test(display) && tag !== "pre") {
+      return keep(expand(marked).replace(/[ \t]+$/gm, "").replace(/\n{3,}/g, "\n\n").replace(/^\n+|\s+$/g, ""), "");
+    }
+    if (BLOCK_DISPLAY.test(display)) return `
+
+${marked}
+
+`;
+    if (INLINE_BLOCK.test(display)) return ` ${marked} `;
+    if (tag === "li") return ` · ${marked}`;
+    return marked;
+  }
+  const body = document.body;
+  let text = "";
+  if (body) {
+    text = block(render(body, { depth: 0, frames: 0, shown: true, pre: false })).replace(/\u00a0/g, " ");
+  }
+  if (text.length > limits.chars) {
+    text = text.slice(0, limits.chars);
+    stop ||= `the text passed ${limits.chars} characters`;
+  }
+  const page = {
+    url: location.href,
+    title: document.title,
+    lang: document.documentElement.lang || "",
+    description: document.querySelector('meta[name="description"]')?.content || "",
+    selection: String(getSelection() || "").slice(0, 4e3),
+    format: "markdown",
+    text,
+    items,
+    stats: { ...stats, ms: Math.round(performance.now() - started) }
+  };
+  if (stop) page.truncated = stop;
+  return page;
+}
+var readPageScript = (limits = READ_LIMITS) => `(${readPage})(${JSON.stringify(limits)})`;
+var READ_PAGE_SCRIPT = readPageScript();
+
+// src/client/bot-browsers.js
+var STORE_KEY = STORAGE.browsers;
+var MAX_LIVE = 6;
+var READ_TIMEOUT_MS = 1e4;
+var PREVIEW_TIMEOUT_MS = 3e3;
+var RESIZE_LATER_MS = 200;
+var SEARCH_URL = "https://www.bing.com/search?q=";
+var PREVIEW_SCRIPT = `(() => {
+  const meta = key => document.querySelector('meta[name="' + key + '"],meta[property="' + key + '"]')?.content ?? ''
+  const paragraph = [...document.querySelectorAll('main p, article p, p')].map(node => node.innerText ?? '').find(text => text.trim().length > 40) ?? ''
+  const text = meta('description') || meta('og:description') || paragraph || document.body?.innerText || ''
+  return text.replace(/\\s+/g, ' ').trim().slice(0, 200)
+})()`;
+var EMPTY = { url: "", title: "", favicon: null, loading: false, canGoBack: false, canGoForward: false, error: null, live: false, excerpt: "" };
+var METADATA_HOST = /^(169\.254\.\d+\.\d+|\[fd00:ec2::254\]|metadata\.google\.internal)$/i;
+var BLOCKED = "Cloud metadata addresses do not open here.";
+var blockedAddress = (url) => URL.canParse(url) && METADATA_HOST.test(new URL(url).hostname);
+function browserAddress(input) {
+  const text = String(input ?? "").trim();
+  if (text === "") return null;
+  if (/^[a-z][a-z\d+.-]*:\/\//i.test(text)) return /^https?:\/\//i.test(text) && URL.canParse(text) ? new URL(text).href : null;
+  if (/^(about|javascript|data|file|blob|chrome|devtools|view-source):/i.test(text)) return null;
+  const host = text.split(/[/?#]/)[0];
+  const local = /^(localhost|127(\.\d+){3}|10(\.\d+){3}|192\.168(\.\d+){2}|172\.(1[6-9]|2\d|3[01])(\.\d+){2}|\[[\da-f:]+\])(:\d+)?$/i.test(host);
+  const looksLikeHost = !/\s/.test(text) && (local || /^[^\s.]+(\.[^\s.]+)+(:\d+)?$/.test(host));
+  if (looksLikeHost && URL.canParse(`http://${text}`)) return new URL(`${local ? "http" : "https"}://${text}`).href;
+  return `${SEARCH_URL}${encodeURIComponent(text)}`;
+}
+function createBotBrowsers({ bridge, createSource: createSource2, storage = globalThis.localStorage, document: doc = globalThis.document }) {
+  const views = /* @__PURE__ */ new Map();
+  const owner = /* @__PURE__ */ new Map();
+  const tabs = createSource2({});
+  const pages = createSource2({});
+  let saved = {};
+  try {
+    saved = JSON.parse(storage?.getItem(STORE_KEY) ?? "{}") ?? {};
+  } catch {
+    saved = {};
+  }
+  let layer;
+  let shown = null;
+  let rect = null;
+  let visible = false;
+  let resizeLater = 0;
+  let disposed = false;
+  let serial = 0;
+  const savedTab = (botId, tabId) => saved[botId]?.tabs?.find((entry) => entry.id === tabId);
+  const publish2 = (tabId, patch) => pages.set((state) => {
+    const botId = owner.get(tabId);
+    return { ...state, [tabId]: { ...EMPTY, ...savedTab(botId, tabId), ...state[tabId], ...patch } };
+  });
+  const writeSaved = () => {
+    try {
+      storage?.setItem(STORE_KEY, JSON.stringify(saved));
+    } catch {
+    }
+  };
+  const persist = (botId) => {
+    const state = tabs.getSnapshot()[botId];
+    if (state === void 0) {
+      if (saved[botId] === void 0) return;
+      const { [botId]: _, ...rest } = saved;
+      saved = rest;
+    } else {
+      const snapshot = pages.getSnapshot();
+      saved = {
+        ...saved,
+        [botId]: {
+          tabs: state.ids.map((id) => ({ id, url: snapshot[id]?.url ?? "", title: snapshot[id]?.title ?? "" })),
+          active: state.active
+        }
+      };
+    }
+    writeSaved();
+  };
+  const ensureTabs = (botId) => {
+    if (tabs.getSnapshot()[botId] !== void 0) return;
+    const entries2 = saved[botId]?.tabs ?? [];
+    const ids = entries2.map((entry) => entry.id);
+    const active = ids.includes(saved[botId]?.active) ? saved[botId].active : ids.at(-1) ?? null;
+    for (const entry of entries2) owner.set(entry.id, botId);
+    tabs.set((state) => ({ ...state, [botId]: { ids, active } }));
+    for (const entry of entries2) publish2(entry.id, { url: entry.url ?? "", title: entry.title ?? "", live: false });
+  };
+  const ensureLayer = () => {
+    if (layer?.isConnected) return layer;
+    layer = doc.createElement("div");
+    layer.className = "bt-browser-layer";
+    Object.assign(layer.style, { position: "fixed", inset: "0", zIndex: "41", pointerEvents: "none" });
+    doc.body.append(layer);
+    return layer;
+  };
+  const place = (entry) => {
+    const box = rect ?? { left: 0, top: 0, width: 800, height: 600 };
+    Object.assign(entry.element.style, {
+      left: `${box.left}px`,
+      top: `${box.top}px`,
+      width: `${box.width}px`,
+      height: `${box.height}px`,
+      visibility: shown === entry.tabId && visible && rect ? "visible" : "hidden"
+    });
+  };
+  async function preview(tabId) {
+    const entry = views.get(tabId);
+    if (entry === void 0 || !entry.ready || !/^https?:/i.test(entry.element.getURL())) return false;
+    let timer;
+    const timeout = new Promise((resolve) => {
+      timer = setTimeout(() => resolve(""), PREVIEW_TIMEOUT_MS);
+    });
+    try {
+      const excerpt = await Promise.race([entry.element.executeJavaScript(PREVIEW_SCRIPT), timeout]);
+      if (typeof excerpt !== "string" || excerpt === "" || views.get(tabId) !== entry) return false;
+      publish2(tabId, { excerpt });
+      return true;
+    } catch {
+      return false;
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+  const observe = (entry) => {
+    const { element } = entry;
+    if (!entry.ready) return;
+    const url = element.getURL();
+    if (url.startsWith("about:blank#")) return;
+    if (entry.fresh) {
+      element.clearHistory();
+      entry.fresh = false;
+    }
+    const title = element.getTitle();
+    publish2(entry.tabId, { url, title, loading: element.isLoading(), canGoBack: element.canGoBack(), canGoForward: element.canGoForward(), live: true });
+    persist(entry.botId);
+  };
+  async function create(tabId) {
+    const botId = owner.get(tabId);
+    const reservation = await bridge.acquire(`bot:${botId}`);
+    if (disposed) {
+      await bridge.release(reservation.lease).catch(() => {
+      });
+      return void 0;
+    }
+    const element = doc.createElement("webview");
+    element.dataset.sidebarBrowserFrame = "webview";
+    Object.assign(element.style, { position: "fixed", display: "flex", border: "0", pointerEvents: "auto", background: "#fff" });
+    element.dataset.btBrowser = tabId;
+    element.setAttribute("name", reservation.lease);
+    element.setAttribute("partition", reservation.partition);
+    element.setAttribute("allowpopups", "");
+    element.setAttribute("src", `about:blank#${reservation.lease}`);
+    const entry = { botId, tabId, element, lease: reservation.lease, ready: false, fresh: true, pending: pages.getSnapshot()[tabId]?.url || savedTab(botId, tabId)?.url, usedAt: Date.now() };
+    const lifetime = new AbortController();
+    entry.stop = () => lifetime.abort();
+    const { signal } = lifetime;
+    const unsubscribe = bridge.onOpenRequested(reservation.lease, (url) => void openTab(botId, url));
+    signal.addEventListener("abort", unsubscribe, { once: true });
+    element.addEventListener("dom-ready", () => {
+      entry.ready = true;
+      observe(entry);
+      if (entry.pending) {
+        const url = entry.pending;
+        entry.pending = void 0;
+        void element.loadURL(url).catch(() => {
+        });
+      }
+    }, { signal });
+    for (const name of ["did-navigate", "did-navigate-in-page", "did-start-loading", "did-stop-loading", "page-title-updated"]) {
+      element.addEventListener(name, () => observe(entry), { signal });
+    }
+    element.addEventListener("did-stop-loading", () => {
+      void preview(tabId);
+    }, { signal });
+    element.addEventListener("page-favicon-updated", (event) => {
+      const favicon = event.favicons?.[0];
+      if (typeof favicon === "string" && favicon.startsWith("data:")) publish2(tabId, { favicon });
+    }, { signal });
+    element.addEventListener("did-start-navigation", (event) => {
+      if (!event.isMainFrame) return;
+      if (blockedAddress(event.url)) {
+        element.stop();
+        publish2(tabId, { loading: false, error: BLOCKED });
+        return;
+      }
+      publish2(tabId, { loading: true, error: null });
+    }, { signal });
+    element.addEventListener("did-fail-load", (event) => {
+      if (event.isMainFrame && event.errorCode !== -3) publish2(tabId, { loading: false, error: event.errorDescription || `Error ${event.errorCode}` });
+    }, { signal });
+    element.addEventListener("render-process-gone", () => {
+      if (views.get(tabId) === void 0) return;
+      void release(tabId);
+      publish2(tabId, { loading: false, error: "The page crashed." });
+    }, { signal });
+    views.set(tabId, entry);
+    ensureLayer().append(element);
+    place(entry);
+    publish2(tabId, { live: true, loading: Boolean(entry.pending) });
+    return entry;
+  }
+  const opening = /* @__PURE__ */ new Map();
+  function open(tabId) {
+    const entry = views.get(tabId);
+    if (entry) return Promise.resolve(entry);
+    let job = opening.get(tabId);
+    if (job === void 0) {
+      job = create(tabId).catch((error) => {
+        console.warn("[ds-bot] browser acquire", error);
+        publish2(tabId, { loading: false, error: String(error?.message ?? error) });
+        return void 0;
+      }).finally(() => opening.delete(tabId));
+      opening.set(tabId, job);
+      void job.then(() => trim());
+    }
+    return job;
+  }
+  function trim() {
+    const idle = [...views.values()].filter((entry) => entry.tabId !== shown).sort((a, b) => a.usedAt - b.usedAt);
+    while (views.size > MAX_LIVE && idle.length > 0) void release(idle.shift().tabId);
+  }
+  async function release(tabId) {
+    const entry = views.get(tabId);
+    if (entry === void 0) return;
+    views.delete(tabId);
+    entry.stop();
+    entry.element.remove();
+    publish2(tabId, { live: false, loading: false });
+    await bridge.release(entry.lease).catch((error) => console.warn("[ds-bot] browser release", error));
+  }
+  function openTab(botId, url) {
+    ensureTabs(botId);
+    const tabId = `t${Date.now().toString(36)}-${++serial}`;
+    owner.set(tabId, botId);
+    tabs.set((state) => {
+      const own = state[botId] ?? { ids: [], active: null };
+      return { ...state, [botId]: { ids: [...own.ids, tabId], active: tabId } };
+    });
+    publish2(tabId, { url: "", title: "", live: false });
+    if (typeof url === "string" && url !== "") void navigate(tabId, url);
+    persist(botId);
+    return tabId;
+  }
+  async function closeTab(botId, tabId) {
+    const state = tabs.getSnapshot()[botId];
+    if (state === void 0 || !state.ids.includes(tabId)) return;
+    await opening.get(tabId)?.catch(() => {
+    });
+    if (shown === tabId) await show(null);
+    await release(tabId);
+    tabs.set((snapshot) => {
+      const current = snapshot[botId];
+      if (current === void 0 || !current.ids.includes(tabId)) return snapshot;
+      const at = current.ids.indexOf(tabId);
+      const ids = current.ids.filter((id) => id !== tabId);
+      const active = current.active === tabId ? ids[Math.min(at, ids.length - 1)] ?? null : current.active;
+      const next = { ...snapshot };
+      if (ids.length === 0) delete next[botId];
+      else next[botId] = { ids, active };
+      return next;
+    });
+    owner.delete(tabId);
+    pages.set((snapshot) => {
+      if (snapshot[tabId] === void 0) return snapshot;
+      const { [tabId]: _, ...rest } = snapshot;
+      return rest;
+    });
+    persist(botId);
+  }
+  function activate(botId, tabId) {
+    ensureTabs(botId);
+    const state = tabs.getSnapshot()[botId];
+    if (state === void 0 || !state.ids.includes(tabId) || state.active === tabId) return;
+    tabs.set((snapshot) => ({ ...snapshot, [botId]: { ...state, active: tabId } }));
+    persist(botId);
+  }
+  const activeTab = (botId) => tabs.getSnapshot()[botId]?.active ?? null;
+  async function show(tabId, box = null) {
+    if (tabId !== null && tabId === shown && visible && box !== null) {
+      rect = box;
+      const entry2 = views.get(tabId);
+      if (entry2) place(entry2);
+      clearTimeout(resizeLater);
+      resizeLater = setTimeout(() => {
+        for (const other of views.values()) place(other);
+      }, RESIZE_LATER_MS);
+      return;
+    }
+    shown = tabId;
+    if (box) rect = box;
+    visible = tabId !== null && box !== null;
+    for (const entry2 of views.values()) place(entry2);
+    if (tabId === null) return;
+    const entry = await open(tabId);
+    if (entry === void 0 || shown !== tabId) return;
+    entry.usedAt = Date.now();
+    place(entry);
+  }
+  async function navigate(tabId, input) {
+    const url = browserAddress(input);
+    if (url === null || blockedAddress(url)) {
+      publish2(tabId, { error: url === null ? "Only http and https addresses open here." : BLOCKED });
+      return false;
+    }
+    const entry = await open(tabId);
+    if (entry === void 0) return false;
+    publish2(tabId, { url, loading: true, error: null });
+    persist(owner.get(tabId));
+    if (!entry.ready) entry.pending = url;
+    else void entry.element.loadURL(url).catch(() => {
+    });
+    return true;
+  }
+  async function forget(botId) {
+    ensureTabs(botId);
+    for (const tabId of tabs.getSnapshot()[botId]?.ids ?? []) {
+      await opening.get(tabId)?.catch(() => {
+      });
+      if (shown === tabId) await show(null);
+      await release(tabId);
+      owner.delete(tabId);
+      pages.set((snapshot) => {
+        if (snapshot[tabId] === void 0) return snapshot;
+        const { [tabId]: _, ...rest } = snapshot;
+        return rest;
+      });
+    }
+    tabs.set((snapshot) => {
+      if (snapshot[botId] === void 0) return snapshot;
+      const { [botId]: _, ...rest } = snapshot;
+      return rest;
+    });
+    if (saved[botId] !== void 0) {
+      const { [botId]: _, ...rest } = saved;
+      saved = rest;
+      writeSaved();
+    }
+  }
+  return {
+    tabs,
+    pages,
+    /** Restore a Bot's saved strip (or an empty one) so the panel can render it. */
+    ensureTabs,
+    openTab,
+    closeTab,
+    activate,
+    preview,
+    show,
+    navigate,
+    command(tabId, name) {
+      const entry = views.get(tabId);
+      if (!entry?.ready) return;
+      if (name === "back" && entry.element.canGoBack()) entry.element.goBack();
+      else if (name === "forward" && entry.element.canGoForward()) entry.element.goForward();
+      else if (name === "reload") entry.element.reload();
+      else if (name === "stop") entry.element.stop();
+    },
+    focus(tabId) {
+      views.get(tabId)?.element.focus();
+    },
+    /** Pages a read can reach: each Bot's active tab, live and showing a document. */
+    openPages() {
+      const open2 = {};
+      const snapshot = pages.getSnapshot();
+      for (const [botId, state] of Object.entries(tabs.getSnapshot())) {
+        const tabId = state.active;
+        const entry = tabId ? views.get(tabId) : void 0;
+        const page = tabId ? snapshot[tabId] : void 0;
+        if (entry?.ready && page?.url) open2[botId] = { url: page.url, title: page.title };
+      }
+      return open2;
+    },
+    /** A Bot's read reaches its active tab. */
+    async read(botId) {
+      const tabId = activeTab(botId);
+      const entry = tabId ? views.get(tabId) : void 0;
+      if (!entry?.ready) throw new Error("This Bot has no browser page open.");
+      let timer;
+      const timeout = new Promise((_, reject) => {
+        timer = setTimeout(() => reject(new Error("The page took too long to read.")), READ_TIMEOUT_MS);
+      });
+      try {
+        return await Promise.race([entry.element.executeJavaScript(READ_PAGE_SCRIPT), timeout]);
+      } finally {
+        clearTimeout(timer);
+      }
+    },
+    noteRead(botId) {
+      const tabId = activeTab(botId);
+      if (tabId) publish2(tabId, { readAt: Date.now() });
+    },
+    release,
+    forget,
+    /** Forget every Bot outside `botIds`, as when Bots were deleted from another window. */
+    retain(botIds) {
+      const keep = new Set(botIds);
+      const known = /* @__PURE__ */ new Set([...Object.keys(tabs.getSnapshot()), ...Object.keys(saved), ...owner.values()]);
+      for (const entry of views.values()) known.add(entry.botId);
+      return Promise.all([...known].filter((botId) => !keep.has(botId)).map(forget));
+    },
+    dispose() {
+      disposed = true;
+      clearTimeout(resizeLater);
+      for (const entry of views.values()) void release(entry.tabId);
+      layer?.remove();
+    }
+  };
+}
+var sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+function serveBrowserReads({ browsers, post, clientId = globalThis.crypto.randomUUID(), retryMs = 1e3 }) {
+  let stopped = false;
+  let poll;
+  let reported = "";
+  const answered = /* @__PURE__ */ new Map();
+  const answer = async ({ id, botId }) => {
+    let job = answered.get(id);
+    if (job === void 0) {
+      job = (async () => {
+        try {
+          const result = { id, ok: true, page: await browsers.read(botId) };
+          browsers.noteRead(botId);
+          return result;
+        } catch (error) {
+          return { id, ok: false, error: error instanceof Error ? error.message : String(error) };
+        }
+      })();
+      answered.set(id, job);
+      if (answered.size > 200) answered.delete(answered.keys().next().value);
+    }
+    await post("browser-result", await job).catch((error) => console.warn("[ds-bot] browser result", error));
+  };
+  const loop = async () => {
+    let failures = 0;
+    while (!stopped) {
+      poll = new AbortController();
+      const open = browsers.openPages();
+      reported = JSON.stringify(open);
+      try {
+        const requests = await post("browser-wait", { clientId, open }, poll.signal);
+        failures = 0;
+        for (const request of Array.isArray(requests) ? requests : []) void answer(request);
+      } catch {
+        if (stopped) return;
+        if (poll.signal.aborted) continue;
+        failures += 1;
+        await sleep(Math.min(3e4, retryMs * 2 ** Math.min(failures, 5)));
+      }
+    }
+  };
+  const offPages = browsers.pages.subscribe(() => {
+    if (JSON.stringify(browsers.openPages()) !== reported) poll?.abort();
+  });
+  void loop();
+  return () => {
+    stopped = true;
+    offPages();
+    poll?.abort();
+  };
+}
+
+// src/client/flat-transcript.js
+var FLAT_TRANSCRIPT_VIEW = "verbose";
+function holdFlatTranscript(form) {
+  let tried;
+  const check = () => {
+    const snapshot = form.getSnapshot();
+    if (snapshot.status !== "ready" || snapshot.value === void 0 || !snapshot.writable) return;
+    if (snapshot.value.transcriptView === FLAT_TRANSCRIPT_VIEW) return;
+    if (tried === snapshot.revision) return;
+    tried = snapshot.revision;
+    void Promise.resolve(form.set("transcriptView", FLAT_TRANSCRIPT_VIEW)).catch(() => {
+    });
+  };
+  check();
+  return form.subscribe(check);
+}
+
+// src/client/surface.js
+function groupsFor({ mode, plain = false }) {
+  return { shell: mode === "bot", conversation: mode === "bot" && !plain };
+}
+function readMode(storage = globalThis.localStorage) {
+  try {
+    return storage.getItem(STORAGE.surface) === "agent" ? "agent" : "bot";
+  } catch {
+    return "bot";
+  }
+}
+function writeMode(mode, storage = globalThis.localStorage) {
+  try {
+    storage.setItem(STORAGE.surface, mode);
+  } catch {
+  }
+}
+
+// src/client/index.js
+var inject = ["sessions", "uiWorkspace", "slots", "theme", "layout", "configForms"];
+function apply(ctx) {
+  ctx.effect(() => installLocale(ctx.get("locale")), "ds-bot: interface copy");
+  const roster = createSource(EMPTY_ROSTER);
+  migrateStorage();
+  const UNREAD_KEY = STORAGE.unread;
+  let savedUnread = {};
+  try {
+    savedUnread = JSON.parse(localStorage.getItem(UNREAD_KEY) ?? "{}") ?? {};
+  } catch {
+    savedUnread = {};
+  }
+  const REACTIONS_KEY = STORAGE.reactions;
+  let savedReactions = {};
+  try {
+    savedReactions = JSON.parse(localStorage.getItem(REACTIONS_KEY) ?? "{}") ?? {};
+  } catch {
+    savedReactions = {};
+  }
+  const SEEN_KEY = STORAGE.seen;
+  let seenAt = {};
+  try {
+    seenAt = JSON.parse(localStorage.getItem(SEEN_KEY) ?? "{}") ?? {};
+  } catch {
+    seenAt = {};
+  }
+  const ui = createSource({ details: null, view: "details", renaming: false, tab: null, newChat: null, exchange: null, menu: null, voice: null, palette: null, quote: null, settings: null, memory: null, toast: null, signIn: null, renameAgent: null, unread: savedUnread, reactions: savedReactions, visits: {} });
+  const surface = createSource({ mode: readMode(), plain: false });
+  let agentSessionCache = /* @__PURE__ */ new Set();
+  try {
+    agentSessionCache = new Set(JSON.parse(localStorage.getItem(STORAGE.agentSessions) ?? "[]"));
+  } catch {
+    agentSessionCache = /* @__PURE__ */ new Set();
+  }
+  const pendingAdopt = /* @__PURE__ */ new Map();
+  const isAgentSessionId = (id) => isAgentSession(roster.getSnapshot(), agentSessionCache, id) || pendingAdopt.has(id);
+  const agentOfSession = (id) => roster.getSnapshot().agentOf[id] ?? pendingAdopt.get(id);
+  const workspaces = ctx.get("workspaces");
+  const workspaceOf = (sessionId) => {
+    const items = workspaces?.list?.getSnapshot()?.items ?? [];
+    return items.find((item) => item.sessionIds?.includes(sessionId))?.workspaceId;
+  };
+  let expected = null;
+  const setPlain = (plain) => surface.set((state) => state.plain === plain ? state : { ...state, plain });
+  const dropPanels = () => ui.set((state) => state.details || state.renaming ? { ...state, details: null, view: "details", renaming: false, tab: null } : state);
+  const seenKey = (id) => roster.getSnapshot().byId?.[id]?.id ?? id;
+  const leaveVisits = (ids) => {
+    const now = Date.now();
+    for (const id of ids) seenAt[seenKey(id)] = now;
+    try {
+      localStorage.setItem(SEEN_KEY, JSON.stringify(seenAt));
+    } catch {
+    }
+  };
+  ctx.effect(() => {
+    const onPageHide = () => leaveVisits(Object.keys(ui.getSnapshot().visits ?? {}));
+    window.addEventListener("pagehide", onPageHide);
+    return () => window.removeEventListener("pagehide", onPageHide);
+  }, "ds-bot: remember visits on page hide");
+  const activity = createSource({});
+  const live = createSource({});
+  const turnClock = createSource({});
+  let activityKey = "{}";
+  const memoryNews = createSource({});
+  let memoryNewsKey;
+  const noteMemoryNews = (next) => {
+    const key = JSON.stringify(next);
+    if (key === memoryNewsKey) return;
+    const opening = memoryNewsKey === void 0;
+    memoryNewsKey = key;
+    memoryNews.set((state) => Object.fromEntries(Object.entries(next).map(([id, entry]) => [
+      id,
+      state[id]?.at === entry.at ? state[id] : { ...entry, seen: opening ? 0 : Date.now() }
+    ])));
+  };
+  const PREFS_KEY = STORAGE.prefs;
+  let savedPrefs = {};
+  try {
+    savedPrefs = JSON.parse(localStorage.getItem(PREFS_KEY) ?? "{}") ?? {};
+  } catch {
+    savedPrefs = {};
+  }
+  const setUnread = (id, value) => ui.set((state) => {
+    if (Boolean(state.unread[id]) === value) return state;
+    const unread = { ...state.unread };
+    if (value) unread[id] = true;
+    else delete unread[id];
+    try {
+      localStorage.setItem(UNREAD_KEY, JSON.stringify(unread));
+    } catch {
+    }
+    return { ...state, unread };
+  });
+  const refreshed = /* @__PURE__ */ new Set();
+  let pulls = 0;
+  let applied = 0;
+  const pull = async () => {
+    const order = ++pulls;
+    const known = roster.getSnapshot();
+    const value = await call("state", { since: known.revision, models: known.modelsKey ?? "", locale: language() });
+    if (order < applied) return;
+    applied = order;
+    const nextActivity = JSON.stringify(value.activity ?? {});
+    if (nextActivity !== activityKey) {
+      activityKey = nextActivity;
+      activity.set(value.activity ?? {});
+    }
+    noteMemoryNews(value.memoryNews ?? {});
+    const current = roster.getSnapshot();
+    if (value.connectors !== void 0 && current.ready && JSON.stringify(value.connectors) !== JSON.stringify(current.connectors ?? [])) {
+      roster.set({ ...current, connectors: value.connectors });
+    }
+    if (value.unchanged || value.revision === current.revision && value.modelsKey === current.modelsKey) return;
+    if (Object.keys(seenAt).length === 0) leaveVisits([...value.bots, ...value.rooms].map((entry) => entry.id));
+    roster.set(indexRoster(value));
+    try {
+      const ids = (value.agents ?? []).flatMap((agent) => agent.sessions ?? []);
+      localStorage.setItem(STORAGE.agentSessions, JSON.stringify(ids));
+      agentSessionCache = new Set(ids);
+    } catch {
+    }
+    const listed = ctx.sessions.list.getSnapshot().byId ?? {};
+    for (const id of pendingAdopt.keys()) {
+      if (roster.getSnapshot().agentOf[id] !== void 0 || listed[id] === void 0) pendingAdopt.delete(id);
+    }
+    for (const id of [...value.bots.map(currentPart), ...value.rooms.map((room2) => room2.id)]) {
+      if (refreshed.has(id)) continue;
+      refreshed.add(id);
+      void Promise.resolve(ctx.sessions.refreshProjections?.(id)).catch(quietly("refresh projections"));
+    }
+  };
+  ctx.effect(() => {
+    let stopped = false;
+    let running = false;
+    let timer;
+    const loop = async () => {
+      clearTimeout(timer);
+      if (running || stopped) return;
+      running = true;
+      try {
+        await pull();
+      } catch (error) {
+        if (!stopped) console.warn("[ds-bot] state", error);
+      } finally {
+        running = false;
+      }
+      if (!stopped) timer = setTimeout(loop, document.hidden ? 1e4 : 1500);
+    };
+    const wake = () => {
+      if (!document.hidden) void loop();
+    };
+    document.addEventListener("visibilitychange", wake);
+    void loop();
+    return () => {
+      stopped = true;
+      clearTimeout(timer);
+      document.removeEventListener("visibilitychange", wake);
+    };
+  }, "ds-bot: roster poll");
+  const update = createSource({ available: false, phase: "idle" });
+  let wakeUpdate = () => {
+  };
+  ctx.effect(() => {
+    let stopped = false;
+    let timer;
+    const loop = async () => {
+      clearTimeout(timer);
+      if (stopped) return;
+      const value = await call("update-check", { fresh: false }).catch(() => null);
+      if (stopped) return;
+      if (value) update.set(value);
+      timer = setTimeout(loop, value?.phase === "installing" ? 2e3 : 60 * 6e4);
+    };
+    wakeUpdate = loop;
+    void loop();
+    return () => {
+      stopped = true;
+      clearTimeout(timer);
+      wakeUpdate = () => {
+      };
+    };
+  }, "ds-bot: update check");
+  const bridge = window.dshDesktop?.protocolVersion === 1 ? window.dshDesktop.browser ?? null : null;
+  const browsers = bridge ? createBotBrowsers({ bridge, createSource }) : null;
+  if (browsers) {
+    ctx.effect(() => {
+      let stopReads = null;
+      const sync = () => {
+        const snapshot = roster.getSnapshot();
+        if (!snapshot.ready) return;
+        const on = snapshot.browser === true;
+        if (on && !stopReads) stopReads = serveBrowserReads({ browsers, post: call });
+        if (!on && stopReads) {
+          stopReads();
+          stopReads = null;
+        }
+        void browsers.retain(snapshot.bots.map((bot) => bot.id));
+        ui.set((state) => state.details && state.view === "browser" && (!on || !snapshot.byId[state.details]) ? { ...state, view: "details" } : state);
+      };
+      sync();
+      const offRoster = roster.subscribe(sync);
+      return () => {
+        offRoster();
+        stopReads?.();
+        browsers.dispose();
+      };
+    }, "ds-bot: Bot browsers");
+  }
+  ctx.effect(() => () => {
+    markupCache.clear();
+  }, "ds-bot: character markup");
+  const installMentions = () => {
+    const style = installStyles("", "mentions");
+    let last = "";
+    const render = () => {
+      const next = roster.getSnapshot().bots.map((bot) => {
+        const anchor = `.bt-bubble a[href="${MENTION_ORIGIN}${bot.id}"]`;
+        const look = lookOf(bot);
+        const mark = look.image ? `${anchor}::before{background:center/cover url("${look.image}");-webkit-mask:none;mask:none;border-radius:50%}` : `${anchor}::before{background:${paintCss(look.color)};-webkit-mask-image:${maskOf(look.shape)};mask-image:${maskOf(look.shape)}}`;
+        return `${anchor}{color:${inkText(look.color)}}${mark}`;
+      }).join("\n");
+      if (next !== last) style.textContent = last = next;
+    };
+    render();
+    const offRoster = roster.subscribe(render);
+    const offRegistry = registry.subscribe(render);
+    return () => {
+      offRoster();
+      offRegistry();
+      style.remove();
+    };
+  };
+  const installTheme = () => {
+    const style = installStyles("", "theme");
+    let key = "";
+    let releaseTokens = null;
+    const render = () => {
+      const snapshot = roster.getSnapshot();
+      const prefs = snapshot.ready ? snapshot.prefs ?? {} : savedPrefs;
+      const themes = allThemes();
+      const id = themes[prefs.theme] ? prefs.theme : "deepseek";
+      const accent = isHex(prefs.accent) ? prefs.accent : void 0;
+      const motion = prefs.motion === "quiet" || prefs.motion === "lively" ? prefs.motion : "normal";
+      document.body.dataset.btMotion = motion;
+      const next = `${id}|${accent ?? ""}|${motion}|${registry.getSnapshot()}`;
+      if (next === key) return;
+      key = next;
+      style.textContent = themeCss(themes[id], accent);
+      const release = releaseTokens;
+      releaseTokens = ctx.theme.overrideTokens("ds-bot", shellTokens(themes[id]));
+      if (typeof release === "function") release();
+      if (snapshot.ready) {
+        try {
+          localStorage.setItem(PREFS_KEY, JSON.stringify({ theme: prefs.theme, accent: prefs.accent, motion: prefs.motion }));
+        } catch {
+        }
+      }
+    };
+    render();
+    const offRoster = roster.subscribe(render);
+    const offRegistry = registry.subscribe(render);
+    return () => {
+      offRoster();
+      offRegistry();
+      if (typeof releaseTokens === "function") releaseTokens();
+      delete document.body.dataset.btMotion;
+      style.remove();
+    };
+  };
+  const installBubbleTokens = () => {
+    let release = null;
+    let key = "";
+    const render = () => {
+      const snapshot = roster.getSnapshot();
+      const prefs = snapshot.ready ? snapshot.prefs ?? {} : savedPrefs;
+      const themes = allThemes();
+      const id = themes[prefs.theme] ? prefs.theme : "deepseek";
+      const next = `${id}|${registry.getSnapshot()}`;
+      if (next === key) return;
+      key = next;
+      const drop = release;
+      release = ctx.theme.overrideTokens("ds-bot: conversation", conversationTokens(themes[id]));
+      if (typeof drop === "function") drop();
+    };
+    render();
+    const offRoster = roster.subscribe(render);
+    const offRegistry = registry.subscribe(render);
+    return () => {
+      offRoster();
+      offRegistry();
+      if (typeof release === "function") release();
+    };
+  };
+  ctx.effect(() => {
+    const hub = { registerShape, registerTheme, themes: () => Object.keys(allThemes()), shapes: () => Object.keys(SHAPES) };
+    const queued = Array.isArray(window.dshBotQueue) ? window.dshBotQueue : [];
+    window.dshBot = hub;
+    window.dshBotQueue = { push: (task) => {
+      try {
+        task(hub);
+      } catch (error) {
+        console.warn("[ds-bot] registration", error);
+        noteClientError("registration", error);
+      }
+    } };
+    for (const task of queued) window.dshBotQueue.push(task);
+    return () => {
+      if (window.dshBot === hub) delete window.dshBot;
+      delete window.dshBotQueue;
+    };
+  }, "ds-bot: registry");
+  ctx.inject(["shortcuts"], (scope) => {
+    scope.effect(() => holdShellShortcuts(scope.shortcuts), "ds-bot: settings shortcut");
+  });
+  const after = (promise) => promise.then(async (value) => {
+    await pull().catch(() => {
+    });
+    return value;
+  });
+  const partFor = (id) => {
+    const bot = roster.getSnapshot().byId[id];
+    return bot ? currentPart(bot) : id;
+  };
+  const agentSessions = (agentId) => {
+    const ids = [...roster.getSnapshot().agentsById[agentId]?.sessions ?? []];
+    for (const [id, owner] of pendingAdopt) if (owner === agentId && !ids.includes(id)) ids.push(id);
+    return ids;
+  };
+  const actions = {
+    // The full-pane overlays sit above the conversation, so opening one must dismiss them
+    // or the click appears to do nothing.
+    isAgentSession: (id) => isAgentSessionId(id),
+    openSession: (id) => {
+      if (isAgentSessionId(id)) return actions.openAgentSession(id);
+      ui.set((state) => state.newChat || state.exchange || state.menu || state.palette ? { ...state, newChat: null, exchange: null, menu: null, palette: null } : state);
+      setPlain(false);
+      const target = partFor(id);
+      expected = target;
+      ctx.uiWorkspace.openSession(target);
+    },
+    // The conversation replacements withdraw for a plain Session; set the surface
+    // before the navigation so the Bot skin never flashes.
+    openAgentSession: (sessionId) => {
+      ui.set((state) => ({ ...state, newChat: null, exchange: null, menu: null, palette: null, details: null, view: "details", renaming: false, tab: null }));
+      setPlain(true);
+      expected = sessionId;
+      ctx.uiWorkspace.openSession(sessionId);
+    },
+    addAgent: async () => {
+      const agent = await after(call("add-agent"));
+      if (agent?.sessions?.[0] !== void 0) actions.openAgentSession(agent.sessions[0]);
+      return agent;
+    },
+    openAgent: (agentId) => {
+      const agent = roster.getSnapshot().agentsById[agentId];
+      if (agent === void 0) return;
+      const list = ctx.sessions.list.getSnapshot();
+      const recent = agentSessions(agentId).sort((a, b) => (list.byId[b]?.updatedAt ?? 0) - (list.byId[a]?.updatedAt ?? 0));
+      if (recent.length === 0) return actions.newAgentSession(agentId);
+      actions.openAgentSession(recent[0]);
+    },
+    newAgentSession: async (agentId) => {
+      const agent = roster.getSnapshot().agentsById[agentId];
+      if (agent === void 0) return;
+      const list = ctx.sessions.list.getSnapshot();
+      const recent = agentSessions(agentId).sort((a, b) => (list.byId[b]?.updatedAt ?? 0) - (list.byId[a]?.updatedAt ?? 0));
+      if (recent.length > 0 && list.byId[recent[0]]?.blank === true) {
+        actions.openAgentSession(recent[0]);
+        return recent[0];
+      }
+      const { sessionId } = await after(call("agent-session", { agentId, workspaceId: workspaceOf(recent[0]) }));
+      actions.openAgentSession(sessionId);
+      return sessionId;
+    },
+    archiveAgentSession: async (agentId, sessionId) => {
+      await after(call("agent-archive", { agentId, sessionId }));
+      const list = ctx.sessions.list.getSnapshot();
+      const main = Object.values(list.byId ?? {}).find((session) => (session?.retainedBy?.mainView ?? 0) > 0)?.id;
+      if (main !== sessionId) return;
+      const rest = roster.getSnapshot().agentsById[agentId]?.sessions ?? [];
+      if (rest.length > 0) actions.openAgent(agentId);
+      else if (roster.getSnapshot().mainBotId) actions.openSession(roster.getSnapshot().mainBotId);
+    },
+    renameAgentSession: (agentId, sessionId, title) => after(call("agent-rename", { agentId, sessionId, title })),
+    beginAgentRename: (sessionId) => ui.set((state) => ({ ...state, renameAgent: sessionId })),
+    endAgentRename: () => ui.set((state) => state.renameAgent ? { ...state, renameAgent: null } : state),
+    // Removing the Agent archives every Session it owns; one of them may fill the
+    // main view, and it must not stay there wearing the Bot surface afterwards.
+    removeAgent: async (agentId) => {
+      const owned = agentSessions(agentId);
+      const result = await after(call("remove-agent", { agentId }));
+      const list = ctx.sessions.list.getSnapshot();
+      const main = Object.values(list.byId ?? {}).find((session) => (session?.retainedBy?.mainView ?? 0) > 0)?.id;
+      if (main !== void 0 && owned.includes(main) && roster.getSnapshot().mainBotId) actions.openSession(roster.getSnapshot().mainBotId);
+      return result;
+    },
+    // `last` is the Bot conversation the view held before it cleared: when that part
+    // was archived for a fresh one, the view goes on in the fresh one.
+    landOn: async (id, last) => {
+      if (last) await pull().catch(() => {
+      });
+      const bot = last ? roster.getSnapshot().byId[last.botId] : void 0;
+      setPlain(false);
+      const target = bot && currentPart(bot) !== last.sessionId ? currentPart(bot) : partFor(id);
+      expected = target;
+      ctx.uiWorkspace.openSession(target);
+    },
+    selectPanel: (id) => {
+      ctx.layout.selectPanel(id);
+    },
+    openNewChat: (mode) => {
+      ui.set((state) => ({ ...state, newChat: mode, menu: null, palette: null }));
+    },
+    openPalette: (query = "") => {
+      ui.set((state) => ({ ...state, palette: { query, token: Date.now() }, newChat: null, menu: null }));
+    },
+    // The token keeps a late exit timer from closing a palette opened again since.
+    closePalette: (token) => {
+      ui.set((state) => state.palette && (token === void 0 || state.palette.token === token) ? { ...state, palette: null } : state);
+    },
+    openExchange: (a, b) => {
+      if (a && b) ui.set((state) => ({ ...state, exchange: [a, b] }));
+    },
+    openVoice: (id) => {
+      if (id) ui.set((state) => ({ ...state, voice: id, menu: null }));
+    },
+    closeVoice: () => {
+      ui.set((state) => state.voice ? { ...state, voice: null } : state);
+    },
+    toggleDetails: (id, force) => {
+      ui.set((state) => {
+        const details = force || state.details !== id || state.view !== "details" ? id : null;
+        return { ...state, renaming: false, tab: null, details, view: "details" };
+      });
+    },
+    // The open panel follows the main view; a subject with no browser (a group
+    // chat, an outside Session) settles on the details view.
+    followPanel: (id) => {
+      ui.set((state) => {
+        if (!state.details || state.details === id) return state;
+        const view = state.view === "browser" && roster.getSnapshot().byId[id] === void 0 ? "details" : state.view;
+        return { ...state, details: id, view, renaming: false, tab: null };
+      });
+    },
+    showDetails: (id, tab = null) => {
+      ui.set((state) => ({ ...state, details: id, view: "details", renaming: false, tab }));
+    },
+    // Opening the conversation would move focus to its composer and blur the name field.
+    renameBot: (id) => {
+      ui.set((state) => ({ ...state, details: id, view: "details", renaming: true, tab: null }));
+    },
+    // `id` opens one Bot (page 'bots') or one group chat (page 'groups').
+    openSettings: (page = "general", id = null) => {
+      ui.set((state) => ({ ...state, settings: { page, id }, menu: null, palette: null, newChat: null }));
+    },
+    closeSettings: () => {
+      ui.set((state) => state.settings ? { ...state, settings: null } : state);
+    },
+    openMemory: (botId) => {
+      ui.set((state) => ({ ...state, memory: botId, menu: null, palette: null }));
+    },
+    closeMemory: () => {
+      ui.set((state) => state.memory ? { ...state, memory: null } : state);
+    },
+    openConnectors: () => {
+      ui.set((state) => ({ ...state, settings: { page: "connectors", id: null }, menu: null, palette: null, newChat: null }));
+    },
+    // Agent mode hands the surface back to the shell; everything open on the Bot
+    // surface closes first so nothing stale reopens on the way back.
+    setSurface: (mode) => {
+      if (mode !== "bot" && mode !== "agent") return;
+      if (surface.getSnapshot().mode === mode) return;
+      if (mode === "agent") {
+        ui.set((state) => ({ ...state, details: null, view: "details", settings: null, palette: null, newChat: null, menu: null, voice: null, exchange: null, memory: null, toast: null }));
+      }
+      writeMode(mode);
+      surface.set((state) => ({ ...state, mode }));
+      if (mode !== "bot") return;
+      const home = () => {
+        const snapshot = roster.getSnapshot();
+        if (!snapshot.ready || !snapshot.mainBotId) return;
+        const list = ctx.sessions.list.getSnapshot();
+        const main = Object.values(list.byId ?? {}).find((session) => (session?.retainedBy?.mainView ?? 0) > 0)?.id;
+        if (main !== void 0 && snapshot.byId[main] === void 0 && snapshot.roomsById[main] === void 0) {
+          actions.openSession(snapshot.mainBotId);
+        }
+      };
+      if (roster.getSnapshot().ready) home();
+      else {
+        const off = roster.subscribe(() => {
+          if (!roster.getSnapshot().ready) return;
+          off();
+          home();
+        });
+      }
+    },
+    markUnread: (id) => setUnread(id, true),
+    beginVisit: (id) => {
+      const made = roster.getSnapshot().byId[id] ?? roster.getSnapshot().roomsById[id];
+      const seen = seenAt[seenKey(id)] ?? (made?.createdBy && Number.isFinite(made.createdAt) ? made.createdAt : null);
+      ui.set((state) => ({ ...state, visits: { ...state.visits, [id]: { seen, entered: Date.now() } } }));
+    },
+    endVisit: (id) => {
+      leaveVisits([id]);
+      ui.set((state) => {
+        if (!(id in (state.visits ?? {}))) return state;
+        const visits = { ...state.visits };
+        delete visits[id];
+        return { ...state, visits };
+      });
+    },
+    toggleReaction: (key, index, emoji) => ui.set((state) => {
+      const entry = { ...state.reactions?.[key] ?? {} };
+      const list = entry[index] ?? [];
+      entry[index] = list.includes(emoji) ? list.filter((item) => item !== emoji) : [...list, emoji];
+      if (entry[index].length === 0) delete entry[index];
+      const reactions = { ...state.reactions };
+      if (Object.keys(entry).length) reactions[key] = entry;
+      else delete reactions[key];
+      try {
+        localStorage.setItem(REACTIONS_KEY, JSON.stringify(reactions));
+      } catch {
+      }
+      return { ...state, reactions };
+    }),
+    quote: (sessionId, text) => ui.set((state) => ({ ...state, quote: { sessionId, text, token: Date.now() } })),
+    clearQuote: (token) => ui.set((state) => state.quote?.token === token ? { ...state, quote: null } : state),
+    clearUnread: (id) => setUnread(id, false),
+    setFlags: (id, flags) => after(call("set-flags", { id, ...flags })),
+    deleteRoom: (id) => after(call("delete-room", { id })),
+    openMenu: (menu) => {
+      ui.set((state) => ({ ...state, menu }));
+    },
+    closeMenu: () => {
+      ui.set((state) => state.menu ? { ...state, menu: null } : state);
+    },
+    closeOverlay: () => {
+      ui.set((state) => ({ ...state, newChat: null, exchange: null, details: state.newChat || state.exchange ? state.details : null }));
+    },
+    createBot: (payload) => after(call("create-bot", payload)),
+    createRoom: (members, options = {}) => after(call("create-room", { members, ...options })),
+    updateBot: (id, patch) => after(call("update-bot", { id, ...patch })),
+    refreshModels: () => after(call("models")).catch(() => {
+    }),
+    deleteBot: (id) => after(call("delete-bot", { id })),
+    duplicateBot: (id) => after(call("duplicate-bot", { id })),
+    setPrefs: (prefs) => after(call("set-prefs", prefs)),
+    setMain: (id, main = true, options = {}) => after(call("set-main", { id, main, ...options })),
+    updateRoom: (id, patch) => after(call("update-room", { id, ...patch })),
+    send: (sessionId, text) => after(call("send", { sessionId: partFor(sessionId), text })),
+    answerQuestion: (sessionId, questionId, answer) => after(call("answer-question", { sessionId: partFor(sessionId), questionId, answer })),
+    dismissQuestion: (sessionId) => after(call("dismiss-question", { sessionId })),
+    // Values go out in these requests and never come back in a response.
+    secretSet: (payload) => after(call("secret-set", payload)),
+    secretAllow: (requestId) => after(call("secret-allow", { requestId })),
+    secretCancel: (requestId) => after(call("secret-cancel", { requestId })),
+    secretUpdate: (name, scope) => after(call("secret-update", { name, scope })),
+    secretDelete: (name) => after(call("secret-delete", { name })),
+    connectorConnect: (id, token) => after(call("connector-connect", { id, token })),
+    connectorDisconnect: (id) => after(call("connector-disconnect", { id })),
+    connectorRetry: (id) => after(call("connector-retry", { id })),
+    schedules: () => call("schedules"),
+    scheduleCreate: (task) => call("schedule-create", task),
+    scheduleDelete: (sessionId, id) => call("schedule-delete", { sessionId, id }),
+    exchange: (a, b) => call("exchange", { a, b }).catch(() => []),
+    roomProgress: (roomId) => call("room-progress", { roomId }).catch(() => []),
+    earlier: (sessionId, cursor) => call("earlier", { sessionId, cursor: cursor ?? null }),
+    // Hours come back in this browser's time zone, so days start at local midnight.
+    usage: () => call("usage", { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone }),
+    // `summarize` starts a summary when the entries changed; `regenerate` always does.
+    memoryView: (botId, flags = {}) => call("memory-view", { botId, ...flags }),
+    memoryAsk: (botId, text) => call("memory-ask", { botId, text }),
+    memoryForget: (botId, entry) => call("memory-forget", { botId, scope: entry.scope, topic: entry.topic, text: entry.text }),
+    diagnostics: (payload) => call("diagnostics", payload),
+    diagnosticsLog: () => call("diagnostics-log"),
+    diagnosticsClear: () => call("diagnostics-clear"),
+    // A failed action away from any form (a menu, the palette) shows as a toast.
+    reportError: (error, where = "action") => {
+      noteClientError(where, error);
+      ui.set((state) => ({ ...state, toast: { text: error?.message ?? String(error), token: Date.now() } }));
+    },
+    dismissToast: (token) => ui.set((state) => state.toast && (token === void 0 || state.toast.token === token) ? { ...state, toast: null } : state)
+  };
+  if (browsers) {
+    Object.assign(actions, {
+      // The globe button: the Bot's active tab in the browser view, or a new tab.
+      openBrowser: (id) => {
+        const bot = roster.getSnapshot().byId[id];
+        if (!bot) return;
+        browsers.ensureTabs(bot.id);
+        if (browsers.tabs.getSnapshot()[bot.id]?.active == null) browsers.openTab(bot.id);
+        ui.set((state) => ({ ...state, details: id, view: "browser", renaming: false, tab: null }));
+      },
+      // '+' on the strip or the drawer's new-tab card: a blank tab in the browser view.
+      browserNewTab: (id) => {
+        const bot = roster.getSnapshot().byId[id];
+        if (!bot) return null;
+        browsers.ensureTabs(bot.id);
+        const tabId = browsers.openTab(bot.id);
+        ui.set((state) => ({ ...state, details: id, view: "browser", renaming: false, tab: null }));
+        return tabId;
+      },
+      // A drawer card: its tab active, the panel on the browser view.
+      browserPick: (id, tabId) => {
+        const bot = roster.getSnapshot().byId[id];
+        if (!bot) return;
+        browsers.activate(bot.id, tabId);
+        ui.set((state) => ({ ...state, details: id, view: "browser" }));
+      },
+      browserEnsure: (botId) => browsers.ensureTabs(botId),
+      browserCloseTab: (botId, tabId) => browsers.closeTab(botId, tabId),
+      browserActivate: (botId, tabId) => browsers.activate(botId, tabId),
+      browserShow: (tabId, box) => browsers.show(tabId, box),
+      browserNavigate: (tabId, input) => browsers.navigate(tabId, input),
+      browserCommand: (tabId, name) => browsers.command(tabId, name),
+      browserFocus: (tabId) => browsers.focus(tabId)
+    });
+  }
+  actions.setPanelView = (view) => {
+    if (view !== "details" && view !== "browser") return;
+    ui.set((state) => state.details && state.view !== view ? { ...state, view } : state);
+  };
+  actions.closePanel = () => {
+    ui.set((state) => state.details ? { ...state, details: null, view: "details", renaming: false, tab: null } : state);
+  };
+  actions.signInEntry = () => ctx.slots.entries?.("settings.models.sign-in")?.[0] ?? null;
+  actions.canSignIn = () => Boolean(actions.signInEntry());
+  actions.signIn = () => ui.set((state) => ({ ...state, signIn: (state.signIn ?? 0) + 1 }));
+  actions.closeSignIn = () => ui.set((state) => ({ ...state, signIn: null }));
+  actions.accountT = () => ctx.get("locale").bind("settings.account");
+  actions.seatAccount = (on) => ui.set((state) => state.accountSeated === on ? state : { ...state, accountSeated: on });
+  actions.installUpdate = async () => {
+    update.set(await call("update-install"));
+    wakeUpdate();
+  };
+  actions.noteTurnTime = (sessionId, turn, key, time) => {
+    if (sessionId === void 0 || !Number.isFinite(turn) || !Number.isFinite(time)) return;
+    turnClock.set((state) => {
+      const turns = state[sessionId] ?? {};
+      const entry = turns[turn] ?? {};
+      const next = key === "first" && entry.first !== void 0 ? Math.min(entry.first, time) : time;
+      if (entry[key] === next) return state;
+      return { ...state, [sessionId]: { ...turns, [turn]: { ...entry, [key]: next } } };
+    });
+  };
+  actions.noteTurnPeer = (sessionId, turn, peerId) => {
+    if (sessionId === void 0 || !Number.isFinite(turn)) return;
+    turnClock.set((state) => {
+      const turns = state[sessionId] ?? {};
+      const entry = turns[turn] ?? {};
+      if (entry.peer === peerId) return state;
+      return { ...state, [sessionId]: { ...turns, [turn]: { ...entry, peer: peerId } } };
+    });
+  };
+  actions.noteLive = (sessionId, id, entry) => {
+    if (sessionId === void 0) return;
+    live.set((state) => {
+      const own = state[sessionId] ?? {};
+      const prev = own[id];
+      if (entry === null ? prev === void 0 : prev !== void 0 && JSON.stringify({ ...prev, at: 0 }) === JSON.stringify({ ...entry, at: 0 })) return state;
+      const next = { ...own };
+      if (entry === null) delete next[id];
+      else next[id] = { ...entry, at: prev?.at ?? Date.now() };
+      return { ...state, [sessionId]: next };
+    });
+  };
+  actions.clearLive = (sessionId) => live.set((state) => {
+    if (!state[sessionId]) return state;
+    const next = { ...state };
+    delete next[sessionId];
+    return next;
+  });
+  const browserPages = browsers?.pages ?? createSource({});
+  const browserTabs = browsers?.tabs ?? createSource({});
+  const face = () => ({ actions, hooks: { roster, ui, activity, memoryNews, registry, turnClock, live, browserPages, browserTabs, surface, update } });
+  const shadow = (name, options, component) => ctx.slots.inject(name, () => ctx.slots.register({ name, ...options }, component));
+  const installShell = () => [
+    installCompiledStyles(SHELL_CSS, "shell"),
+    installCompiledStyles(SIDEBAR_CSS, "sidebar"),
+    installCompiledStyles(SECRET_CSS, "secrets"),
+    installCompiledStyles(MODEL_CSS + BOT_SETTINGS_CSS + GROUP_SETTINGS_CSS, "models"),
+    installCompiledStyles(USAGE_CSS, "usage"),
+    installCompiledStyles(SCHEDULE_CSS, "schedules"),
+    installCompiledStyles(FEEDBACK_CSS, "feedback"),
+    browsers ? installCompiledStyles(BROWSER_CSS, "browser") : null,
+    installTheme(),
+    shadow("sidebar.workspaces", { priority: -10, inject: face }, TeamSidebar),
+    shadow("sidebar.brand.mark", { priority: -10 }, BrandMark),
+    shadow("sidebar.brand.name", { priority: -10 }, BrandName),
+    shadow("sidebar.footer.action", { id: "bot-account", order: -200, inject: face }, FooterAccount),
+    shadow("sidebar.footer.action", { id: "bot-connect", order: -100, inject: face }, ConnectPlugins),
+    shadow("settings.trigger", { priority: -10 }, YouAvatar),
+    // ui-chat's "Transcript view" row: a lower priority on the same list id shadows it.
+    shadow("settings.general.item", { id: "transcript-view", priority: -10 }, Nothing),
+    // At priority -10 the whale wins the seat over a shell account plugin's own
+    // launcher (the Desktop's "··· More"), which comes back in Agent mode.
+    shadow("settings.launcher", { priority: -10, inject: face }, AccountLauncher),
+    shadow("shell.overlay", { id: "bot", order: 50, inject: face }, Overlays),
+    shadow("shell.overlay", { id: "bot-signin", order: 55, inject: face }, DeepSeekSignIn),
+    shadow("shell.overlay", { id: "bot-toast", order: 60, inject: face }, ErrorToast)
+  ];
+  const installConversation = () => [
+    installCompiledStyles(CONVERSATION_CSS, "conversation"),
+    installBubbleTokens(),
+    installMentions(),
+    // Bot conversations are always flat, so the work-details mode is not a choice:
+    // the mode is held at `verbose` while this group is mounted.
+    holdFlatTranscript(ctx.configForms.get("ui-chat")),
+    shadow("conversation.session.header", { priority: -10, inject: face }, HeaderPill),
+    shadow("conversation.chat.node", { key: "assistant-step", priority: -10, locale: "chat", inject: face }, AssistantCell),
+    shadow("conversation.chat.node", { key: "turn-trigger", priority: -10, locale: "chat", inject: face }, TriggerCell),
+    shadow("conversation.chat.node", { key: "tool-call", priority: -10, locale: "chat", inject: face }, ToolCell),
+    shadow("conversation.chat.node", { key: "turn-process", priority: -10, locale: "chat", inject: face }, TurnProcessCell),
+    shadow("conversation.chat.node", { key: "turn-tail", priority: -10, locale: "chat", inject: face }, TurnTailCell),
+    // A Bot condenses its conversation without telling anyone; the chat keeps showing
+    // every message.
+    shadow("conversation.chat.node", { key: "question-reply", priority: -10, locale: "chat" }, AnsweredCell),
+    shadow("conversation.chat.node", { key: "compaction", priority: -10, locale: "chat" }, Nothing),
+    shadow("conversation.input.permission", { priority: -10 }, Nothing),
+    shadow("conversation.input.plan", { priority: -10 }, Nothing),
+    // The composer carries no model picker or run statistics; a Bot's model lives
+    // in its details panel.
+    shadow("conversation.input.model", { priority: -10 }, Nothing),
+    shadow("conversation.composer.dock", { id: "activity", order: 0, priority: -10 }, Nothing),
+    shadow("conversation.composer.dock", { id: "usage", order: 1, priority: -10 }, Nothing),
+    shadow("conversation.input.left", { id: "bot-plus", order: -100, inject: face }, ComposerPlus),
+    shadow("conversation.input.right", { id: "bot-voice", order: 100, inject: face }, ComposerVoice),
+    shadow("conversation.composer", {
+      priority: -10,
+      select: (owner) => owner.pendingInteraction?.kind === "question" ? owner.pendingInteraction : null
+    }, QuestionCard),
+    shadow("conversation.input.dock", { id: "bot-model", order: -110, inject: face }, ModelChoiceDock),
+    shadow("conversation.input.dock", { id: "bot-question", order: -100, inject: face }, QuestionDock),
+    shadow("conversation.input.dock", { id: "bot-secret", order: -90, inject: face }, SecretDock)
+  ];
+  ctx.effect(() => {
+    const style = installStyles(RETURN_CSS, "return");
+    return () => style.remove();
+  }, "ds-bot: return styles");
+  shadow("sidebar.footer.action", { id: "bot-return", order: -300, inject: face }, BotReturn);
+  ctx.effect(() => {
+    let previous;
+    const sync = () => {
+      const list = ctx.sessions.list.getSnapshot();
+      const main = Object.values(list.byId ?? {}).find((session) => (session?.retainedBy?.mainView ?? 0) > 0)?.id;
+      const plain = isAgentSessionId(main);
+      setPlain(plain);
+      if (plain) dropPanels();
+      if (main === previous) return;
+      const before = previous;
+      previous = main;
+      const ours = expected !== null && main === expected;
+      expected = null;
+      if (ours || main === void 0) return;
+      if (surface.getSnapshot().mode !== "bot") return;
+      const agentId = before !== void 0 ? agentOfSession(before) : void 0;
+      if (agentId === void 0) return;
+      const snapshot = roster.getSnapshot();
+      if (snapshot.byId[main] !== void 0 || snapshot.roomsById[main] !== void 0 || agentOfSession(main) !== void 0) return;
+      const row = list.byId[main];
+      const parent = row?.parentId ?? row?.parentSessionId;
+      const forkedFromAgent = parent !== void 0 && agentOfSession(parent) === agentId;
+      if (row?.blank !== true && !forkedFromAgent) return;
+      pendingAdopt.set(main, agentId);
+      setPlain(true);
+      void call("agent-adopt", { agentId, sessionId: main }).then(() => pull()).catch((error) => {
+        pendingAdopt.delete(main);
+        console.warn("[ds-bot] agent-adopt", error);
+        sync();
+        actions.reportError(error, "agent-adopt");
+      });
+      const next = workspaceOf(main);
+      if (list.byId[before]?.blank === true && next !== void 0 && workspaceOf(before) !== next) {
+        void call("agent-archive", { agentId, sessionId: before }).then(() => pull()).catch(() => {
+        });
+      }
+    };
+    const offList = ctx.sessions.list.subscribe(sync);
+    const offRoster = roster.subscribe(sync);
+    sync();
+    return () => {
+      offList();
+      offRoster();
+    };
+  }, "ds-bot: agent surface");
+  ctx.effect(() => {
+    const mounted = { shell: [], conversation: [] };
+    const reconcile = () => {
+      const wanted = groupsFor(surface.getSnapshot());
+      for (const group of ["shell", "conversation"]) {
+        if (wanted[group] === mounted[group].length > 0) continue;
+        if (wanted[group]) mounted[group] = (group === "shell" ? installShell : installConversation)();
+        else {
+          for (const dispose of mounted[group]) dispose?.();
+          mounted[group] = [];
+        }
+      }
+    };
+    reconcile();
+    const unsub = surface.subscribe(reconcile);
+    return () => {
+      unsub();
+      for (const group of ["shell", "conversation"]) {
+        for (const dispose of mounted[group]) dispose?.();
+        mounted[group] = [];
+      }
+    };
+  }, "ds-bot: surface");
+}
+return Object.defineProperty({ ...module.exports }, Symbol.toStringTag, { value: 'Module' })
+  },
+})

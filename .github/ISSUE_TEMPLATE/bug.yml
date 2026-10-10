@@ -1,0 +1,48 @@
+name: Bug report
+description: Something in DS Bot does not work. Settings → Feedback → Report on GitHub fills most of this in.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for the report. Before you submit, check that the text below has no API keys, tokens or personal data.
+        For a security problem, do not open a public issue: use **Report a vulnerability** on the **Security** tab.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead. Copy the exact error text.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the group chat "…"
+        2. Send "…"
+        3. Writer shows "could not answer"
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: In DS Bot, open Settings → Feedback and select Copy. It lists the versions, the system, the models and the latest errors, with keys and your home folder hidden.
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: How did you install DS Bot?
+      options:
+        - npm
+        - Release file
+        - Git address
+        - Command line (dsh plugin)
+        - Other
+  - type: checkboxes
+    id: clean
+    attributes:
+      label: Privacy
+      options:
+        - label: I checked that this report has no API keys, tokens or personal data.
+          required: true

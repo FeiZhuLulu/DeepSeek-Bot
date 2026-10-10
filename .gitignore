@@ -1,0 +1,10 @@
+node_modules/
+*.tgz
+
+# A DeepSeek Harness checkout for the tests and the test bench.
+/deepseek-harness/
+
+# Test bench, local DSH data and the screenshots of dev/check.sh.
+.dsh-test*/
+.dsh-home/
+/shots/

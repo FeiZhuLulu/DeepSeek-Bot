@@ -1,0 +1,7 @@
+{
+  "env": { "browser": true, "node": true, "es2024": true },
+  "rules": {
+    "no-undef": "error",
+    "no-unused-vars": ["error", { "ignoreRestSiblings": true }]
+  }
+}

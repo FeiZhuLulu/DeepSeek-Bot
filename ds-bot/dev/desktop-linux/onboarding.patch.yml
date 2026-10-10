@@ -1,0 +1,23 @@
+# cordis.patch.yml for a Desktop test profile (desktop.sh copies it once): the settings
+# that dsh Desktop's first-run onboarding writes, so the window opens straight onto the
+# app. transcriptView: standard is what a real Windows install chose during onboarding;
+# keep it, so checks see the same work-details mode as the user.
+- id: ui-chat
+  name: "@deepseek-ai/dsh-client-ui-chat"
+  config:
+    transcriptView: standard
+    performanceUsage: detailed
+- id: ui-settings
+  name: "@deepseek-ai/dsh-client-ui-settings"
+  config:
+    enabled: true
+- id: ui-settings-account
+  name: "@deepseek-ai/dsh-client-ui-settings-account"
+  config:
+    version: 1
+    step: done
+    usage: detailed
+    developerTools: true
+    purpose: null
+    process: standard
+    completion: api-key

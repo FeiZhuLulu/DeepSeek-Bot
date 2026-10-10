@@ -1,0 +1,64 @@
+{
+  "name": "ds-bot",
+  "version": "0.1.0",
+  "description": "DS Bot: a team of long-lived Bots for DeepSeek Harness, with Main Bots, Bot-to-Bot messages and group chats",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "deepseek",
+    "bot",
+    "multi-agent",
+    "agents"
+  ],
+  "homepage": "https://github.com/FeiZhuLulu/DeepSeek-Bot#readme",
+  "bugs": {
+    "url": "https://github.com/FeiZhuLulu/DeepSeek-Bot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FeiZhuLulu/DeepSeek-Bot.git",
+    "directory": "ds-bot"
+  },
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./web-search": "./web-search.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "src/host/",
+    "client.js",
+    "web-search.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build-client.mjs",
+    "test": "node --import ./test/harness-resolve.mjs --test \"test/*.test.js\"",
+    "lint": "node scripts/lint.mjs",
+    "check": "sh dev/check.sh"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/dsh-llm": "*",
+    "@deepseek-ai/dsh-tools": "*",
+    "@deepseek-ai/dsh-web": "*"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}
